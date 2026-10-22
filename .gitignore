@@ -1,0 +1,6 @@
+projects/*/raw.wav
+projects/*/tmp/
+projects/*/*.mp4
+projects/*/music.wav
+__pycache__/
+*.pyc
