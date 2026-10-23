@@ -22,7 +22,56 @@ NAVY, MUSTARD, RED, CREAM = motion.NAVY, motion.MUSTARD, motion.RED, motion.CREA
 INK = (14, 22, 38)
 DISSOLVE = 0.25
 back_out, ease_out = motion.back_out, motion.ease_out
-build.KEEP_PAUSE, build.PAD = 0.45, 0.14         # long-form keeps a little more breath
+# pause targets (seconds of silence kept), chosen per gap by what the gap sits between
+PAUSE_WORD, PAUSE_COMMA, PAUSE_SENT, PAUSE_BEAT = 0.20, 0.28, 0.38, 0.55
+
+
+def smart_pieces(wav, total, words, beat_starts):
+    """Cut every silence down to a target that depends on its position:
+    inside a sentence (hesitations while reading) -> short, after a comma -> a bit more,
+    between sentences -> a breath, at a new picture (beat) -> a slightly longer breath.
+    words: [(word, sentence_idx, start, end)] on the raw timeline. Returns (pieces, total_new, tmap)."""
+    log = subprocess.run(["ffmpeg", "-i", str(wav), "-af", "silencedetect=noise=-38dB:d=0.18", "-f", "null", "-"],
+                         capture_output=True, text=True).stderr
+    import re
+    st = [float(x) for x in re.findall(r"silence_start: (-?[\d.]+)", log)]
+    en = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", log)]
+    sil = [(max(0.0, a), b) for a, b in zip(st, en + [total] * (len(st) - len(en)))]
+    bounds = []                                    # (time, target) at each word boundary
+    for i in range(len(words) - 1):
+        w, si, s, e = words[i]; nxt = words[i + 1]
+        t = (e + nxt[2]) / 2
+        if nxt[1] != si:
+            target = PAUSE_BEAT if nxt[1] in beat_starts else PAUSE_SENT
+        elif w.endswith((",", ":", ";")):
+            target = PAUSE_COMMA
+        else:
+            target = PAUSE_WORD
+        bounds.append((t, target))
+    pieces, cur, newt = [], 0.0, 0.0
+    for a, b in sil:
+        if a <= 0.01:                              # leading silence: keep 0.15 s
+            cur = max(0.0, b - 0.15); continue
+        mid = (a + b) / 2
+        near = [x for x in bounds if a - 0.35 <= x[0] <= b + 0.35]
+        target = max((x[1] for x in near), default=PAUSE_WORD)
+        keep = min(b - a, target)
+        cut_s, cut_e = a + keep / 2, b - keep / 2
+        if cut_e - cut_s < 0.02 or cut_s <= cur:
+            continue
+        pieces.append((cur, cut_s, newt)); newt += cut_s - cur; cur = cut_e
+    end = total
+    if end > cur:
+        pieces.append((cur, end, newt)); newt += end - cur
+
+    def tmap(x):
+        for s, e, ns in pieces:
+            if x < s:
+                return ns
+            if x <= e:
+                return ns + (x - s)
+        return newt
+    return pieces, newt, tmap
 
 
 # ---------------- cut-outs ----------------
@@ -103,6 +152,43 @@ def push(bg, t, dur, idx, amount=0.06):
     dx = (18 if idx % 3 else -18) * p
     M = np.float32([[s, 0, (1 - s) * W / 2 + dx], [0, s, (1 - s) * H / 2]])
     return cv2.warpAffine(bg, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+
+
+SHOT = 4.5          # long beats are split into "shots" of about this length
+
+
+def smooth(x):
+    x = min(1.0, max(0.0, x)); return x * x * (3 - 2 * x)
+
+
+def camera(c, t, dur, idx, kind):
+    """Virtual camera over the composed world layer. Short beats get a slow push;
+    long beats get a new framing (zoom + focus point) every ~SHOT seconds with a quick eased move."""
+    maxz = 1.20 if kind in ("scene", "map", "portrait") else 1.07
+    n = max(1, int(dur // SHOT))
+    rng = random.Random(idx * 7919 + 17)
+    keys = []
+    for j in range(n):
+        if j == 0:
+            z = 1.0 + (0.03 if idx % 2 else 0.0); fx, fy = 0.5, 0.5
+        else:
+            z = rng.uniform(1.10, maxz) if j % 2 else rng.uniform(1.0, 1.05)
+            fx, fy = rng.uniform(0.3, 0.7), rng.uniform(0.35, 0.6)
+        keys.append((z, fx, fy))
+    L = dur / n; j = min(n - 1, int(t // L)); u = t - j * L
+    z, fx, fy = keys[j]
+    if j > 0 and u < 0.8:
+        w = smooth(u / 0.8); z0, fx0, fy0 = keys[j - 1]
+        z0 *= 1 + (0.035 if kind in ("scene", "map") else 0.015)   # where the previous shot's drift ended
+        z, fx, fy = z0 + (z - z0) * w, fx0 + (fx - fx0) * w, fy0 + (fy - fy0) * w
+    z *= 1 + (0.035 if kind in ("scene", "map") else 0.015) * (u / L)
+    dx = (12 if idx % 3 else -12) * (u / L)
+    tx = min(0.0, max(W - z * W, W / 2 - z * fx * W + dx))
+    ty = min(0.0, max(H - z * H, H / 2 - z * fy * H))
+    if abs(z - 1) < 1e-4 and abs(tx) < 0.5 and abs(ty) < 0.5:
+        return c
+    M = np.float32([[z, 0, tx], [0, z, ty]])
+    return cv2.warpAffine(c, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
 
 
 # ---------------- text sprites ----------------
@@ -219,18 +305,23 @@ def main():
     sw = [(w, si) for si, s in enumerate(sentences) for w in s.split()]
     times, matched = build.align([w for w, _ in sw], asr)
     print(f"Aligned {matched}/{len(sw)} words")
-    regions = build.speech_regions(work / "raw.wav", total)
-    tmap, pieces, T = build.make_timemap(regions)
+    beat_starts = {b["at"][0] for b in beats[1:]}
+    pieces, T, tmap = smart_pieces(work / "raw.wav", total,
+                                   [(w, si, s, e) for (w, si), (s, e) in zip(sw, times)], beat_starts)
     nt = [(tmap(s), tmap(e)) for s, e in times]
-    print(f"Voice {total:.1f}s -> {T:.1f}s")
+    print(f"Voice {total:.1f}s -> {T:.1f}s ({len(pieces)} pieces)")
 
+    import difflib
     def wt(at):
         si, pre = at
-        for (w, s_i), (s, e) in zip(sw, nt):
-            if s_i == si and build.norm(w).startswith(build.norm(pre)):
+        cands = [((w, s_i), (s, e)) for (w, s_i), (s, e) in zip(sw, nt) if s_i == si]
+        for (w, _), (s, e) in cands:
+            if build.norm(w).startswith(build.norm(pre)):
                 return s
-        print(f"  ! '{pre}' not found in sentence {si}, using sentence start")
-        return next(s for (w, s_i), (s, e) in zip(sw, nt) if s_i == si)
+        # fuzzy fallback: the script line was reworded after the beat sheet was written
+        best = max(cands, key=lambda c: difflib.SequenceMatcher(None, build.norm(c[0][0]), build.norm(pre)).ratio())
+        print(f"  ~ '{pre}' not exact in sentence {si}, using closest word '{best[0][0]}'")
+        return best[1][0]
 
     # --- clean voice (same chain as build.py) ---
     parts = "".join(f"[0:a]atrim={s:.3f}:{e:.3f},asetpts=PTS-STARTPTS[p{i}];" for i, (s, e, _) in enumerate(pieces))
@@ -254,7 +345,10 @@ def main():
     def pose(i, side):
         key = (i, side)
         if key not in pose_sprites:
-            pose_sprites[key] = sticker(layers / "mascot_sheet.jpg", cache, H * (0.78 if side == "center" else 0.68), part=i, nparts=3)
+            m = cfg.get("mascot", {"img": "mascot_sheet", "parts": 3, "full_body": False})
+            h = (1.32 if side == "center" else 1.15) if m.get("full_body") else (0.78 if side == "center" else 0.68)
+            pose_sprites[key] = sticker(layers / f"{m['img']}.jpg", cache, H * h, part=i, nparts=m["parts"])
+            pose_sprites[key].full = m.get("full_body", False)
         return pose_sprites[key]
 
     print("Preparing beats...")
@@ -349,10 +443,7 @@ def main():
 
     def render(bi, t):
         b = beats[bi]; dur = b["t1"] - b["t0"]; typ = b["type"]
-        if typ in ("scene", "map"):
-            c = push(b["_bg"], t, dur, bi, 0.07 if typ == "scene" else 0.05)
-        else:
-            c = b["_bg"].copy()
+        c = b["_bg"].copy()
         if typ == "scene" and "_fig" in b:
             f = b["fig"]; tx = f["x"] * W
             x = tx - (1 - ease_out(t / 0.7)) * W * 0.55
@@ -391,11 +482,20 @@ def main():
                 b["_t"].draw(c, W / 2, H * 0.56, 1.6 - 0.6 * ease_out(lt / 0.2), 0, min(1, lt / 0.08))
                 cv2.line(c, (int(W * 0.3), int(H * 0.73)), (int(W * 0.3 + W * 0.4 * ease_out(lt / 0.5)), int(H * 0.73)),
                          tuple(v / 255 for v in RED), 10, cv2.LINE_AA)
+        c = draw_events(c, b, t, dur, WORLD)
+        if typ not in ("title", "chapter", "number"):
+            c = camera(c, t, dur, bi, typ)
+        return draw_events(c, b, t, dur, SCREEN)
+
+    WORLD = {"circle", "arrow", "pin", "rings", "prop"}
+    SCREEN = {"label", "tag", "stamp", "mascot", "counter", "bigtext"}
+
+    def draw_events(c, b, t, dur, kinds):
         for e in b["_ev"]:
             lt = t - e["t"]
-            if lt < 0:
-                continue
             k = e["k"]
+            if lt < 0 or k not in kinds:
+                continue
             if k in ("label", "tag"):
                 sc = back_out(lt / 0.38)
                 e["_s"].draw(c, e["x"], e["y"], sc, e["rot"] * sc, min(1, lt / 0.08))
@@ -413,8 +513,12 @@ def main():
                 r = int(14 + (lt % 1.2) * 60)
                 cv2.circle(c, (x, y), r, tuple(v / 255 for v in RED), 3, cv2.LINE_AA)
             elif k == "mascot":
-                sp = e["_s"]; x = W * (0.83 if e["side"] == "right" else 0.5)
-                y = H - sp.h / 2 + 25 + (1 - ease_out(lt / 0.6)) * sp.h * 0.9
+                sp = e["_s"]; x = W * (0.81 if e["side"] == "right" else 0.5)
+                if getattr(sp, "full", False):      # full-body sheet: frame him waist-up, legs below the edge
+                    top = H * (0.16 if e["side"] == "center" else 0.30)
+                    y = top + sp.h / 2 + (1 - ease_out(lt / 0.6)) * H * 0.8
+                else:
+                    y = H - sp.h / 2 + 25 + (1 - ease_out(lt / 0.6)) * sp.h * 0.9
                 sp.draw(c, x, y + 4 * math.sin(lt * 2), 1.0)
             elif k == "prop":
                 sc = back_out(lt / 0.4) * ((0.8 + 0.5 * ease_out(lt / max(dur - e["t"], 1))) if e.get("grow") else 1)

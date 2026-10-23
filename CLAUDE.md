@@ -21,10 +21,14 @@ about political ideas, systems and historical figures (democracy, communism, Sta
 1. **Script** (Claude): English draft → Uzbek translation (owner reviews). 250–400 words.
 2. **Pictures**: one image per scene in the locked style (below). Today: Gemini/Nano Banana by hand.
    Next: Higgsfield via the connector, generated **in layers** (background / character / props).
-3. **Voiceover** (owner): one take, **1-second pause after every sentence**, phone or RØDECaster.
+3. **Voiceover** (owner): phone or RØDECaster. Long-form: record **one paragraph per file** (01.m4a, 02.m4a…),
+   re-record a piece instead of cutting audio by hand; `join_voice.py` levels and joins them into raw.wav.
+   The owner never trims pauses himself: the engine does it.
 4. **Align**: `transcribe.py` (faster-whisper medium, `language=uz`) gives word times; `build.py`
    aligns the *exact script* to them (DP alignment), so captions always use correct spelling.
-5. **Trim**: pauses shortened to ~0.3 s (a 2:13 recording became 1:45).
+5. **Trim**: v1/v2 cap every pause at ~0.3 s. v3 is position-aware (`smart_pieces`): 0.20 s inside a
+   sentence (reading hesitations), 0.28 s after a comma, 0.38 s between sentences, 0.55 s at a new
+   picture. Ep01 test: 5:01 raw → 4:12.
 6. **Render**: `motion.py` (v2) → layered motion graphics + captions + SFX + ducked music.
 
 See `README.md` for commands.
@@ -94,6 +98,13 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   track, 150 credits/month). Never reuse other creators' audio.
 - 2-core CPU: v2 render of a 105 s video takes ~5 min.
 
+- **v3** (`v3.py`, 16:9): beat sheet (`projects/<ep>/test_beats.json`) with scene types scene/object/map/
+  number/title/chapter/portrait and word-triggered events. Two layers per frame: *world* (background,
+  figures, props, circles, arrows, pins, rings) goes through a virtual camera that reframes every ~4.5 s
+  on long beats; *screen* (labels, tags, stamps, mascot, counters) stays fixed on top. Word triggers fall
+  back to the closest word when a line was reworded. Mascot sheet set in the beat sheet (`mascot`:
+  img, parts, full_body → framed waist-up).
+
 ## Long-form decisions (2026-10-23)
 
 - Main product is now **YouTube long-form, 16:9 (1920x1080), 12–18 min**; reels/Shorts are 9:16 clips cut from it.
@@ -106,4 +117,7 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 
 - Pilot picture 13 (two ballot boxes) reads as ballot stuffing → owner is regenerating it.
 - Owner will send 3–5 more reference reels with timestamped notes → add to `docs/reference-analysis.md`.
-- Higgsfield paid plan and ElevenLabs Uzbek test are pending.
+- ElevenLabs Uzbek test is pending.
+- Mascot: `layers/mascot_v2.jpg` (Higgsfield job cacb2082, 4 poses: thinking, pointing, surprised,
+  presenting). Face is close to the owner, clean-shaven; build is still shorter/stockier than asked
+  ("slimmer and taller") → owner to judge.

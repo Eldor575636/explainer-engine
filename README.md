@@ -16,6 +16,9 @@ python3 build.py projects/X        # alignment + clean voice (+ v1 video)
 python3 motion.py projects/X       # v2 video -> projects/X/final_v2.mp4
 (Each project also needs raw.wav, layers/NN_mask.png from rembg, optional music.wav)
 
-## Next (v3)
-Layered scenes (background / character / props), walk-ins, draw-on pen circles, counters,
-faster pacing (new visual every 2-3s), hook, bigger tags, narrator character.
+## Long-form (v3, 16:9)
+1. Voice: record one paragraph per file, then join them:
+   python3 join_voice.py WORK/raw.wav voice/01.m4a voice/02.m4a ...
+2. python3 transcribe.py WORK/raw.wav medium WORK/words.json
+3. python3 v3.py projects/ep01-dollar/test_beats.json WORK WORK/out.mp4
+   (pauses are trimmed automatically; the beat sheet holds sentences, beats, events, music and mascot)
