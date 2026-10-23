@@ -94,6 +94,14 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   track, 150 credits/month). Never reuse other creators' audio.
 - 2-core CPU: v2 render of a 105 s video takes ~5 min.
 
+## Long-form decisions (2026-10-23)
+
+- Main product is now **YouTube long-form, 16:9 (1920x1080), 12–18 min**; reels/Shorts are 9:16 clips cut from it.
+- Owner voice + cartoon mascot; no on-camera footage for now.
+- Shared assets: `assets/music/` (curious, dramatic, calm; rotate, never regenerate per episode).
+- First episode: `projects/ep01-dollar/` — layers for the test segment + `storyboard_test.md`.
+- The v1/v2 engine is vertical; v3 must render 16:9 and support the 10 scene types in the storyboard.
+
 ## Open items
 
 - Pilot picture 13 (two ballot boxes) reads as ballot stuffing → owner is regenerating it.
