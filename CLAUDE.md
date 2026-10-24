@@ -62,6 +62,10 @@ See `README.md` for commands.
 | Motifs | torn-paper mustard labels, white paper tags, red editor's-pen circles/arrows/✓/✗, red rubber stamps |
 | Dark variant | navy-black `#0E1626` background for heavy topics (purges, famines, wars) |
 
+**On-screen text uses the new Uzbek alphabet** (law signed 21 Oct 2026: oʻ→ö, gʻ→ğ, sh→ş, ch→ç,
+apostrophe → ʼ). Scripts stay in current spelling; `v3.new_alphabet()` converts captions and labels at
+render time. Fonts in `fonts/` include the extended-Latin glyphs.
+
 **Image prompts never contain text** — every word on screen is added by the engine (correct Uzbek
 spelling, editable). Full prompt templates: `docs/style-guide.md`.
 

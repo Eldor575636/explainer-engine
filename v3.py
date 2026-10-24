@@ -191,6 +191,21 @@ def camera(c, t, dur, idx, kind):
     return cv2.warpAffine(c, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
 
 
+# ---------------- new Uzbek alphabet (law signed 21 Oct 2026) ----------------
+# On-screen text uses the new letters: oʻ→ö, gʻ→ğ, sh→ş, ch→ç; the remaining apostrophe is the
+# tutuq belgisi ʼ. The script and the alignment keep the current spelling; only what is drawn changes.
+import re as _re
+_APOS = "'ʻʼ‘’`"
+def new_alphabet(text):
+    if not text:
+        return text
+    t = _re.sub(f"([oO])[{_APOS}]", lambda m: "ö" if m.group(1) == "o" else "Ö", text)
+    t = _re.sub(f"([gG])[{_APOS}]", lambda m: "ğ" if m.group(1) == "g" else "Ğ", t)
+    for a, b in (("SH", "Ş"), ("Sh", "Ş"), ("sh", "ş"), ("CH", "Ç"), ("Ch", "Ç"), ("ch", "ç")):
+        t = t.replace(a, b)
+    return _re.sub(f"[{_APOS}]", "ʼ", t)
+
+
 # ---------------- text sprites ----------------
 def text_sprite(text, font, size, fill, stroke=0, stroke_fill=NAVY):
     f = ImageFont.truetype(font, size)
@@ -380,16 +395,16 @@ def main():
         if typ == "number":
             b["_prop"] = sticker(layers / f"{b['prop']}.jpg", cache, H * 0.55)
             b["_val"] = text_sprite(b["value"], motion.ANTON, 300, MUSTARD, 12)
-            b["_sub"] = seeded(motion.tag_sprite, b["sub"], 50)
+            b["_sub"] = seeded(motion.tag_sprite, new_alphabet(b["sub"]), 50)
             b["_show"] = wt(b["show"]) - b["t0"]
             sfx.append((b["t0"] + b["_show"], "thud"))
         if typ == "title":
-            b["_t1"] = text_sprite(b["title"], motion.ANTON, 120, CREAM)
-            b["_t2"] = text_sprite(b["title2"], motion.ANTON, 150, MUSTARD)
+            b["_t1"] = text_sprite(new_alphabet(b["title"]), motion.ANTON, 120, CREAM)
+            b["_t2"] = text_sprite(new_alphabet(b["title2"]), motion.ANTON, 150, MUSTARD)
             sfx += [(b["t0"] + 0.05, "riser"), (b["t0"] + 0.15, "thud")]
         if typ == "chapter":
-            b["_n"] = text_sprite(b["num"], motion.ANTON, 80, MUSTARD)
-            b["_t"] = text_sprite(b["title"], motion.ANTON, 220, CREAM)
+            b["_n"] = text_sprite(new_alphabet(b["num"]), motion.ANTON, 80, MUSTARD)
+            b["_t"] = text_sprite(new_alphabet(b["title"]), motion.ANTON, 220, CREAM)
             sfx += [(b["t0"] + 0.05, "riser"), (b["t0"] + 0.2, "thud")]
         if bi:
             sfx.append((b["t0"], "whoosh"))
@@ -398,18 +413,18 @@ def main():
         for e in b.get("ev", []):
             e = dict(e); e["t"] = wt(e["at"]) - b["t0"]; k = e["k"]
             if k == "label":
-                e["_s"] = seeded(motion.label_sprite, e["text"], 84); e["x"], e["y"] = W / 2, 105
+                e["_s"] = seeded(motion.label_sprite, new_alphabet(e["text"]), 84); e["x"], e["y"] = W / 2, 105
                 e["rot"] = random.choice([-1.5, 1.5]); sfx.append((b["t0"] + e["t"], "pop"))
             elif k == "tag":
                 fg = RED if e.get("fg") == "red" else NAVY
-                e["_s"] = seeded(motion.tag_sprite, e["text"], 50, fg)
+                e["_s"] = seeded(motion.tag_sprite, new_alphabet(e["text"]), 50, fg)
                 if "x" in e:
                     e["x"], e["y"] = e["x"] * W, e["y"] * H
                 else:
                     e["x"], e["y"] = W * 0.74, 230 + 92 * tag_slot; tag_slot += 1
                 e["rot"] = random.uniform(-2, 2); sfx.append((b["t0"] + e["t"], "pop"))
             elif k == "stamp":
-                e["_s"] = seeded(motion.stamp_sprite, e["text"], 130); e["x"], e["y"] = W * 0.5, H * 0.46
+                e["_s"] = seeded(motion.stamp_sprite, new_alphabet(e["text"]), 130); e["x"], e["y"] = W * 0.5, H * 0.46
                 sfx.append((b["t0"] + e["t"] + 0.14, "thud")); shakes.append(b["t0"] + e["t"] + 0.14)
             elif k == "circle":
                 e["_pts"] = ellipse_pts(e["x"] * W, e["y"] * H, e["rx"] * W, e["ry"] * H); sfx.append((b["t0"] + e["t"], "draw"))
@@ -421,17 +436,17 @@ def main():
             elif k == "prop":
                 e["_s"] = sticker(layers / f"{e['img']}.jpg", cache, H * e["h"]); sfx.append((b["t0"] + e["t"], "pop"))
             elif k == "counter":
-                e["_frames"] = [seeded(motion.label_sprite, f"{v}{e.get('suffix', '')}", 150) for v in range(e["to"] + 1)]
+                e["_frames"] = [seeded(motion.label_sprite, new_alphabet(f"{v}{e.get('suffix', '')}"), 150) for v in range(e["to"] + 1)]
                 sfx += [(b["t0"] + e["t"] + 0.9 * i / 12, "tick") for i in range(12)]
             elif k == "bigtext":
-                e["_s"] = text_sprite(e["text"], motion.ANTON, 300, RED, 0); sfx.append((b["t0"] + e["t"], "pop"))
+                e["_s"] = text_sprite(new_alphabet(e["text"]), motion.ANTON, 300, RED, 0); sfx.append((b["t0"] + e["t"], "pop"))
             evs.append(e)
         b["_ev"] = evs
 
     # --- captions: up to 5 words, never across sentences ---
     chunks, cur = [], []
     for k, ((w, si), (s, e)) in enumerate(zip(sw, nt)):
-        cur.append((w.upper(), s, e))
+        cur.append((new_alphabet(w).upper(), s, e))
         last = k == len(sw) - 1 or sw[k + 1][1] != si
         if len(cur) == 5 or last or w.endswith((",", ":")):
             chunks.append(cur); cur = []
