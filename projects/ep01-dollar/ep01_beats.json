@@ -1,0 +1,3466 @@
+{
+ "layers": "layers",
+ "music": {
+  "curious": "../../assets/music/curious.mp3",
+  "dramatic": "../../assets/music/dramatic.mp3",
+  "calm": "../../assets/music/calm.mp3"
+ },
+ "mascot": {
+  "img": "mascot_v2",
+  "parts": 4,
+  "full_body": true
+ },
+ "ui": {
+  "subscribe": "OBUNA BO'LING",
+  "subscribed": "OBUNA BO'LDINGIZ",
+  "like": "LAYK",
+  "next": "KEYINGI VIDEO"
+ },
+ "sentences": [
+  "Bu odam Toshkentda ishlaydi.",
+  "Maoshini so'mda oladi, so'mda sarflaydi.",
+  "Umrida Amerikaga bormagan.",
+  "Lekin u telefon xarid qilsa, narxi dollarga bog'liq.",
+  "Mashina olsa, u ham dollarga bog'langan.",
+  "Hatto yeydigan nonining uni ham dollarga bog'liq.",
+  "Minglab kilometr naridagi AQShda bosib chiqarilgan yashil qog'oz uning maoshi qiymatiga ta'sir qiladi.",
+  "Qanday qilib AQSh dollari butun dunyo puliga aylandi?",
+  "Va AQShning bu kuchi tugab borayotgani rostmi?",
+  "Mening ismim Bilmas.",
+  "Negadir odamlar meni Bilmasboy deb chaqirishadi.",
+  "Bilganlarim meni boy qilgandir, ammo hanuzgacha bilmaganlarim bisyor va ularni doim so'rab, izlab yuraman.",
+  "Topganlarimni esa shu yerda siz bilan ulashaman.",
+  "Tan olamanki, umrim davomida dollarni ko'p sanaganman.",
+  "Lekin nega butun dunyo aynan shu yashil qog'ozga ishonishini hech o'zimdan so'rab ko'rmagan ekanman.",
+  "Buni men ham bilmasdim.",
+  "Endi esa barchamiz birga bilib olamiz.",
+  "Demak, bugungi mavzu — AQSh dollari.",
+  "Boshlashdan oldin: agar siz ham men bilan birga bilib olishni xohlasangiz, kanalga obuna bo'ling va qo'ng'iroqchani bosing.",
+  "Yuz yil oldin dunyoning eng kuchli puli dollar emas edi.",
+  "Ha, hozir ishonish qiyin.",
+  "U paytda yetakchi pul Britaniya funti edi.",
+  "Britaniya esa yer yuzidagi eng katta imperiya edi.",
+  "Uning kemalari barcha okeanlarda yuk tashirdi, xalqaro savdoning katta qismi Britaniya funtida to'lanardi.",
+  "London esa jahon moliyasining markazi edi.",
+  "Keyin esa birin-ketin ikki jahon urushi bo'lib o'tdi.",
+  "Urushlar Britaniyaga juda qimmatga tushdi.",
+  "Qurol, oziq-ovqat va askarlar uchun Britaniya ko'p qarz oldi, bu pulning katta qismi aynan Amerikadan keldi.",
+  "Urush so'nggida Britaniya Amerikadan juda katta qarzdor bo'lib qoldi.",
+  "Amerikada esa ahvol boshqacharoq edi.",
+  "Urush Amerika shaharlariga yetib kelmagandi.",
+  "Zavodlari butun va to'liq quvvat bilan ishlardi.",
+  "Davlatlar qurol-yarog' uchun oltin bilan to'lagani sababli, Amerika dunyodagi rasmiy oltinning taxminan uchdan ikki qismini o'z zaxiralarida saqlab turardi.",
+  "Shunday qilib, 1944-yilda dunyo davlatlari qarshisida katta savol paydo bo'ldi: urush tugagach, dunyo savdo uchun qaysi puldan foydalanadi?",
+  "1944-yil iyul oyi.",
+  "Amerikadagi Bretton-Vuds degan kichik shaharcha.",
+  "44 davlat vakillari bitta mehmonxonaga yig'iladi.",
+  "Ular 1930-yillarni eslaydi.",
+  "O'shanda davlatlar o'z pulini arzonlashtirib, chetga ko'proq sotishga urinishgan.",
+  "Boshqalar ham xuddi shunday javob qaytargan.",
+  "Savdo qulagan, dunyo inqirozga yanada chuqurroq botgan.",
+  "Bu hodisalarning takrorlanishini hech kim istamasdi.",
+  "Yig'ilgan davlat vakillari uch hafta bahslashishdi.",
+  "Britaniya esa o'zining mashhur iqtisodchisi Jon Meynard Keynsni yuborgandi.",
+  "U hech bir davlat nazorat qilmaydigan yangi xalqaro valyutani taklif qildi.",
+  "Ammo, oltin Amerikada edi, kuch-qudrat ham Amerikada edi.",
+  "Kimning oltini ko'p bo'lsa, qoidani albatta o'sha davlat yozishini hamma tushunib turgandi.",
+  "Oxir-oqibat kelishuv oddiy bo'ldi.",
+  "Dollar oltinga bog'lanadi: bir unsiya oltin 35 dollar.",
+  "Boshqa barcha valyutalar esa dollarga bog'lanadi.",
+  "Dollari bor davlat istalgan vaqt uni Amerikadan haqiqiy oltinga almashtirib olishi mumkin bo'ladi.",
+  "Shu daqiqadan boshlab AQSh dollari \"oltin bilan teng\" bo'lib qoladi.",
+  "Markaziy banklar jamg'armalarini oltin o'rniga dollarda saqlay boshlaydi.",
+  "Dollarni tashish va ko'chirish oson edi, uning ustiga foiz asosida foyda ham keltirardi.",
+  "Shu yig'ilishda bugun ham bot-bot eshitib turadigan ikki tashkilotga asos solindi: Xalqaro valyuta jamg'armasi va Jahon banki.",
+  "Shu tariqa AQSh birorta o'q uzmasdan o'z dollarini jahon iqtisodining markaziga qo'ya oldi.",
+  "Tizim taxminan 25 yil ishladi.",
+  "Lekin uning zaif joylari bor edi.",
+  "U bitta va'daga tayanardi: Amerika bosib chiqargan har bir dollar uchun yetarli oltin bo'ladi.",
+  "1960-yillarda Amerika juda ko'p sarf-xarajat qildi: Vetnam urushi, ichkaridagi yangi dasturlar, dunyo bo'ylab harbiy bazalar.",
+  "Bularning hammasi uchun tobora ko'proq dollar bosib chiqarildi.",
+  "Tez orada dunyodagi dollar miqdori Amerikadagi oltindan ancha oshib ketdi.",
+  "Ko'pchilik buni payqab qoldi.",
+  "Fransiya Prezidenti Sharl de Goll mamlakat dollarlarini Amerika oltiniga qayta almashtira boshladi va oltinni Fransiyaga qaytarish uchun hatto kemalar yubordi.",
+  "Boshqa davlatlar ham Fransiyaga ergashdi.",
+  "Amerika omborlarida esa oltin tobora kamayib borardi.",
+  "1971-yil 15-avgust kuni kechqurun Prezident Richard Nikson televizorda chiqib, Amerika endi dollarni oltinga almashtirmasligini e'lon qildi.",
+  "Ayni shu kundan Bretton-Vuds va'dasi tugadi.",
+  "Ya'ni Amerika dunyoga go'yo shunday dedi: endi oltin yo'q, shunchaki bizga va pul bosish salohiyatimizga ishoning.",
+  "Hmm, agar menga qarzdor odam shunday desa bormi?",
+  "Tuni bilan uxlay olmagan bo'lardim ehtimol.",
+  "Xullas, o'shanda ko'p mutaxassislar dollar o'z o'rnini yo'qotadi deb kutgandi.",
+  "Lekin dollar qulamadi.",
+  "Aksincha, dunyoni dollarga yanada ko'proq muhtoj qilib qo'yadigan bir voqea sodir bo'ldi.",
+  "Bir soniya to'xtab, agar video yoqayotgan bo'lsa, layk bosib, obuna bo'lishni unutmang.",
+  "Bu mehnatimizning ko'proq odamga yetib borishiga yordam beradi.",
+  "Davom etamiz.",
+  "Demak, 1973-yilda Yaqin Sharqda urush boshlandi.",
+  "Arab neft ishlab chiqaruvchilari Amerika va uning ba'zi ittifoqchilariga neft sotishni to'xtatdi.",
+  "Bir necha oyda neft narxi taxminan to'rt barobar oshdi.",
+  "Amerika bo'ylab yoqilg'i shoxobchalarida uzun navbatlar paydo bo'ldi.",
+  "Dunyo neftga qanchalik bog'liq ekanini birdaniga tushundi.",
+  "Qo'shimcha neft chiqarish imkoni bor eng yirik davlat esa Saudiya Arabistoni edi.",
+  "1974-yilda Amerika va Saudiya Arabistoni o'zaro kelishuvga erishdi.",
+  "Kelishuvga ko'ra, Saudiya neftini dollarda sotadigan bo'ldi.",
+  "Evaziga esa Amerika Saudiyaga harbiy yordam va qurol berdi.",
+  "Saudiya esa neft daromadining katta qismini Amerika davlat obligatsiyalariga qo'ya boshladi.",
+  "Boshqa neft sotuvchilari ham shu yo'ldan bordi va tez orada deyarli butun dunyo nefti dollarda narxlana boshladi.",
+  "O'ylab ko'ring.",
+  "Bu tizimda har bir davlatga neft kerak.",
+  "Agar neft dollarda sotilsa, har bir davlatga dollar kerak bo'lib qoladi.",
+  "Yaponiya, Germaniya, Hindiston, hatto Amerika bilan savdo qilmaydigan davlatlar ham faqat energiya sotib olish uchun dollar saqlashga majbur bo'ladi.",
+  "Ayni shu neft dollarlari Yaqin Sharqning o'zida qolmadi.",
+  "Neft sotuvchilari dollarlarni Amerika banklariga va davlat obligatsiyalariga qo'yib, Amerikaga qaytarib yubordi.",
+  "Bu tizim ko'p manbalarda \"petrodollar\" deb nom olgan.",
+  "Shunday qilib, dollar oltin bilan aloqasini yo'qotganiga qaramay, dunyodagi eng muhim strategik mahsulot bilan yangi aloqa topgandi.",
+  "Bugun markaziy banklar saqlaydigan barcha xorijiy valyuta zaxiralarining taxminan 57 foizi dollarda.",
+  "Eng yaqin raqibi yevro taxminan 20 foiz.",
+  "Xitoy yuani esa atigi 2 foiz atrofida.",
+  "Dunyoda valyuta ayirboshlanganda, deyarli har 10 bitimdan 9 tasining bir tomonida dollar turadi.",
+  "O'zbekistondagi kompaniya Koreyadan mahsulot olsa, to'lov katta ehtimol bilan dollar orqali o'tadi, garchi ikkalasi ham Amerika bo'lmasa va har birining o'z milliy pul birligi bo'lsa ham.",
+  "Bu Amerikaga ikki katta ustunlik beradi.",
+  "Birinchisi — arzon qarz.",
+  "Butun dunyo dollar va Amerika davlat obligatsiyalarini xohlaydi, shuning uchun Amerika boshqa deyarli har qanday davlatdan arzonroq qarz oladi.",
+  "Masalan, men bankka borsam, menga bunday foiz berishmaydi.",
+  "Ikkinchisi — kuch.",
+  "Xalqaro dollar to'lovlari qachondir Amerika banklari orqali o'tadi.",
+  "Demak, Amerika ularni to'xtatib qo'yishi mumkin.",
+  "Sanksiya qo'yilgan davlatning banklari dollar tizimidan va SWIFT tarmog'idan uzib qo'yilishi mumkin.",
+  "Masalan, Eron buni yillardan beri boshidan kechirib kelmoqda.",
+  "Rossiya esa 2022-yildan keyin buni his qilishni boshladi.",
+  "Shu sababli ko'pchilik davlatlar uchun dollardan uzilish — jahon iqtisodiyotidan uzilish bilan barobardir.",
+  "Endi Toshkentdagi o'sha odamga qaytaylik.",
+  "O'zbekiston chetdan ko'p narsa oladi: mashinalar, telefonlar, dori-darmonlar, texnika, bug'doy va hatto unning bir qismini ham.",
+  "Bu importning asosiy qismi dollarda to'lanadi.",
+  "Dollar so'mga nisbatan qimmatlashsa, boshqa hech narsa o'zgarmasa ham, bu mahsulotlar do'konda qimmatlashadi.",
+  "2017-yil sentabrda O'zbekiston valyuta tizimini isloh qildi va odamlarga chet el valyutasini erkin sotib olishga ruxsat berdi.",
+  "O'sha kuni rasmiy kurs deyarli ikki barobar o'zgardi: bir dollar uchun taxminan 4 200 so'mdan 8 100 so'mgacha ko'tarildi.",
+  "Shu sababli import mahsulotlari narxi bozorda keskin oshdi.",
+  "Pul teskari yo'nalishda ham oqadi.",
+  "Millionlab O'zbekiston fuqarolari chet elda ishlab, oilalariga pul jo'natadi.",
+  "2025-yilda ular taxminan 19 milliard dollar yubordi, uning qariyb to'rtdan uch qismi Rossiyadan keldi.",
+  "Shuning uchun ko'p oilalar jamg'armasini dollarda saqlaydi.",
+  "Odamlar so'm tez qadrsizlangan davrlarni eslaydi.",
+  "Uy va mashina narxlari ham ko'pincha dollarda gaplashiladi.",
+  "Demak, Vashingtondagi Amerika markaziy banki foiz stavkasi haqida qaror qilsa, bu qaror Toshkentdagi bozorgacha yetib keladi.",
+  "Ana endi so'nggi savol: xo'sh, dollar hukmronligi tugayaptimi?",
+  "O'zgarish belgilari bor.",
+  "Xitoy savdoda yuanni ilgari surmoqda.",
+  "BRIKS davlatlari o'z valyutalarida to'lash haqida gapirmoqda.",
+  "Markaziy banklar esa katta miqdorda oltin sotib olmoqda.",
+  "Bu yil O'zbekiston markaziy banki eng yirik xaridorlardan biri bo'ldi.",
+  "Lekin jahon valyutasi bo'lish uchun katta iqtisodiyotning o'zi yetmaydi.",
+  "Ishonch, ochiq bozorlar va erkin harakatlanadigan pul kerak.",
+  "Bugun boshqa hech bir valyuta bularning hammasini birga taklif qilolmaydi.",
+  "Savolga javob esa shunday: to'g'ri, dollar asta-sekin kuchining bir qismini yo'qotib bormoqda, lekin unga haqiqiy o'rinbosar hozircha mavjud emas.",
+  "Bu haqida men ham bilmas edim, endi esa hammamiz bilamiz.",
+  "Ana endi sizga savol: siz o'z jamg'armalaringizni nimada saqlaysiz: so'mdami, dollardami yoki oltindami?",
+  "Keyingi sonlarimizda yana nima yoki kim haqida bilishni xohlashingizni izohlarda yozib qoldiring.",
+  "Eng ko'p layk to'plagan mavzuni albatta yoritamiz.",
+  "Keyingi qismda Amerika bu kuchni qanday ishlatishini va sanksiyalar aslida qanday ishlashini bilib olamiz.",
+  "O'tkazib yubormaslik uchun obuna bo'lishni, qo'ng'iroqchani bosishni va videoni do'stlaringizga ulashishni unutmang.",
+  "Loyihamiz hamkorlari: California Uzbek jamoasi va Bysmillah halol moliyalash platformasi.",
+  "Ularga o'z minnatdorchiligimizni bildiramiz.",
+  "Sizlar bilan boylikni bilimdan topgan, savol berishdan tortinmaydigan Bilmasboy bo'ldi."
+ ],
+ "beats": [
+  {
+   "at": [
+    0,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_bazaar",
+   "fig": {
+    "img": "fig_worker",
+    "x": 0.3,
+    "h": 0.78
+   },
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      0,
+      "Bu"
+     ],
+     "k": "label",
+     "text": "TOSHKENT"
+    },
+    {
+     "at": [
+      1,
+      "Maoshini"
+     ],
+     "k": "tag",
+     "text": "MAOSH: SO'M"
+    },
+    {
+     "at": [
+      2,
+      "Umrida"
+     ],
+     "k": "tag",
+     "text": "AMERIKADA BO'LMAGAN",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    3,
+    "Lekin"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_shopping",
+     "x": 0.2,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      3,
+      "telefon"
+     ],
+     "part": 0
+    },
+    {
+     "img": "prop_shopping",
+     "x": 0.5,
+     "y": 0.52,
+     "h": 0.32,
+     "at": [
+      4,
+      "Mashina"
+     ],
+     "part": 1
+    },
+    {
+     "img": "prop_shopping",
+     "x": 0.8,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      5,
+      "uni"
+     ],
+     "part": 2
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      3,
+      "dollarga"
+     ],
+     "k": "label",
+     "text": "NARX = DOLLAR"
+    },
+    {
+     "at": [
+      3,
+      "dollarga"
+     ],
+     "k": "tag",
+     "text": "$",
+     "x": 0.2,
+     "y": 0.8,
+     "fg": "red"
+    },
+    {
+     "at": [
+      4,
+      "dollarga"
+     ],
+     "k": "tag",
+     "text": "$",
+     "x": 0.5,
+     "y": 0.8,
+     "fg": "red"
+    },
+    {
+     "at": [
+      5,
+      "dollarga"
+     ],
+     "k": "tag",
+     "text": "$",
+     "x": 0.8,
+     "y": 0.8,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    6,
+    "Minglab"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.5,
+     "y": 0.52,
+     "h": 0.72,
+     "at": [
+      6,
+      "Minglab"
+     ],
+     "slam": true
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      6,
+      "yashil"
+     ],
+     "k": "circle",
+     "x": 0.5,
+     "y": 0.52,
+     "rx": 0.3,
+     "ry": 0.36
+    },
+    {
+     "at": [
+      6,
+      "maoshi"
+     ],
+     "k": "label",
+     "text": "YASHIL QOG'OZ"
+    }
+   ]
+  },
+  {
+   "at": [
+    7,
+    "Qanday"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.75,
+    0.7
+   ],
+   "ev": [
+    {
+     "at": [
+      7,
+      "dollari"
+     ],
+     "k": "arrow",
+     "from": [
+      0.22,
+      0.37
+     ],
+     "to": [
+      0.65,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      7,
+      "dunyo"
+     ],
+     "k": "pin",
+     "x": 0.65,
+     "y": 0.38
+    },
+    {
+     "at": [
+      7,
+      "dunyo"
+     ],
+     "k": "tag",
+     "text": "DUNYO PULI?",
+     "x": 0.5,
+     "y": 0.82
+    },
+    {
+     "at": [
+      8,
+      "Va"
+     ],
+     "k": "mascot",
+     "pose": 0,
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "at": [
+    9,
+    "Mening"
+   ],
+   "type": "intro",
+   "pose": 3
+  },
+  {
+   "at": [
+    11,
+    "Bilganlarim"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      11,
+      "Bilganlarim"
+     ],
+     "k": "mascot",
+     "pose": 3,
+     "side": "right"
+    },
+    {
+     "at": [
+      11,
+      "Bilganlarim"
+     ],
+     "k": "tag",
+     "text": "BILIM = BOYLIK",
+     "x": 0.32,
+     "y": 0.3
+    },
+    {
+     "at": [
+      11,
+      "so'rab"
+     ],
+     "k": "tag",
+     "text": "SO'RAYMAN",
+     "x": 0.32,
+     "y": 0.45
+    },
+    {
+     "at": [
+      11,
+      "izlab"
+     ],
+     "k": "tag",
+     "text": "IZLAYMAN",
+     "x": 0.32,
+     "y": 0.58
+    },
+    {
+     "at": [
+      12,
+      "ulashaman"
+     ],
+     "k": "tag",
+     "text": "ULASHAMAN",
+     "x": 0.32,
+     "y": 0.71,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    13,
+    "Tan"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      13,
+      "Tan"
+     ],
+     "k": "prop",
+     "img": "prop_dollar",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.5
+    },
+    {
+     "at": [
+      13,
+      "ko'p"
+     ],
+     "k": "counter",
+     "from": 0,
+     "to": 1000,
+     "prefix": "$",
+     "x": 0.3,
+     "y": 0.82
+    },
+    {
+     "at": [
+      14,
+      "nega"
+     ],
+     "k": "bigtext",
+     "text": "?",
+     "x": 0.62,
+     "y": 0.45
+    },
+    {
+     "at": [
+      15,
+      "Buni"
+     ],
+     "k": "mascot",
+     "pose": 2,
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "at": [
+    17,
+    "Demak"
+   ],
+   "type": "title",
+   "title": "BUGUNGI MAVZU",
+   "title2": "AQSH DOLLARI"
+  },
+  {
+   "at": [
+    18,
+    "Boshlashdan"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      18,
+      "Boshlashdan"
+     ],
+     "k": "mascot",
+     "pose": 1,
+     "side": "right"
+    },
+    {
+     "at": [
+      18,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.36,
+     "y": 0.5,
+     "dur": 3.4
+    }
+   ]
+  },
+  {
+   "at": [
+    19,
+    "Yuz"
+   ],
+   "type": "scene",
+   "bg": "bg_london",
+   "ev": [
+    {
+     "at": [
+      19,
+      "Yuz"
+     ],
+     "k": "tag",
+     "text": "100 YIL OLDIN"
+    },
+    {
+     "at": [
+      19,
+      "dollar"
+     ],
+     "k": "tag",
+     "text": "DOLLAR EMAS",
+     "fg": "red"
+    },
+    {
+     "at": [
+      21,
+      "Britaniya"
+     ],
+     "k": "label",
+     "text": "BRITANIYA FUNTI"
+    },
+    {
+     "at": [
+      21,
+      "funti"
+     ],
+     "k": "prop",
+     "img": "prop_currencies",
+     "x": 0.2,
+     "y": 0.6,
+     "h": 0.42
+    },
+    {
+     "at": [
+      22,
+      "imperiya"
+     ],
+     "k": "tag",
+     "text": "ENG KATTA IMPERIYA"
+    },
+    {
+     "at": [
+      23,
+      "funtida"
+     ],
+     "k": "tag",
+     "text": "SAVDO = FUNTDA"
+    },
+    {
+     "at": [
+      24,
+      "London"
+     ],
+     "k": "tag",
+     "text": "LONDON: MOLIYA MARKAZI"
+    }
+   ]
+  },
+  {
+   "at": [
+    25,
+    "Keyin"
+   ],
+   "type": "scene",
+   "bg": "bg_war",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      25,
+      "ikki"
+     ],
+     "k": "label",
+     "text": "1914–1918 · 1939–1945"
+    }
+   ]
+  },
+  {
+   "at": [
+    26,
+    "Urushlar"
+   ],
+   "type": "scene",
+   "bg": "bg_london",
+   "tint": 0.55,
+   "ev": [
+    {
+     "at": [
+      26,
+      "qimmatga"
+     ],
+     "k": "tag",
+     "text": "JUDA QIMMAT",
+     "fg": "red"
+    },
+    {
+     "at": [
+      27,
+      "Qurol"
+     ],
+     "k": "tag",
+     "text": "QUROL"
+    },
+    {
+     "at": [
+      27,
+      "oziq-ovqat"
+     ],
+     "k": "tag",
+     "text": "OZIQ-OVQAT"
+    },
+    {
+     "at": [
+      27,
+      "askarlar"
+     ],
+     "k": "tag",
+     "text": "ASKARLAR"
+    },
+    {
+     "at": [
+      27,
+      "qarz"
+     ],
+     "k": "stamp",
+     "text": "QARZ"
+    }
+   ]
+  },
+  {
+   "at": [
+    27,
+    "aynan"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "ev": [
+    {
+     "at": [
+      27,
+      "Amerikadan"
+     ],
+     "k": "arrow",
+     "from": [
+      0.27,
+      0.38
+     ],
+     "to": [
+      0.475,
+      0.29
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      27,
+      "Amerikadan"
+     ],
+     "k": "pin",
+     "x": 0.475,
+     "y": 0.29
+    },
+    {
+     "at": [
+      27,
+      "keldi"
+     ],
+     "k": "label",
+     "text": "QARZ: AQSHDAN"
+    },
+    {
+     "at": [
+      28,
+      "qarzdor"
+     ],
+     "k": "stamp",
+     "text": "QARZDOR"
+    }
+   ]
+  },
+  {
+   "at": [
+    29,
+    "Amerikada"
+   ],
+   "type": "scene",
+   "bg": "bg_us_factory",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      29,
+      "Amerikada"
+     ],
+     "k": "label",
+     "text": "AQSH"
+    },
+    {
+     "at": [
+      30,
+      "Urush"
+     ],
+     "k": "tag",
+     "text": "URUSH YETIB KELMADI"
+    },
+    {
+     "at": [
+      31,
+      "Zavodlari"
+     ],
+     "k": "tag",
+     "text": "ZAVODLAR TO'LIQ ISHLARDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    32,
+    "Davlatlar"
+   ],
+   "type": "number",
+   "prop": "prop_gold",
+   "value": "2/3",
+   "sub": "DUNYO OLTIN ZAXIRASI AQSHDA",
+   "show": [
+    32,
+    "uchdan"
+   ]
+  },
+  {
+   "at": [
+    33,
+    "Shunday"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      33,
+      "1944-yilda"
+     ],
+     "k": "label",
+     "text": "1944"
+    },
+    {
+     "at": [
+      33,
+      "savol"
+     ],
+     "k": "mascot",
+     "pose": 2,
+     "side": "right"
+    },
+    {
+     "at": [
+      33,
+      "urush"
+     ],
+     "k": "tag",
+     "text": "URUSH TUGAGACH...",
+     "x": 0.32,
+     "y": 0.42
+    },
+    {
+     "at": [
+      33,
+      "qaysi"
+     ],
+     "k": "tag",
+     "text": "QAYSI PUL?",
+     "x": 0.32,
+     "y": 0.6,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    34,
+    "1944-yil"
+   ],
+   "type": "chapter",
+   "num": "1-QISM",
+   "title": "KELISHUV"
+  },
+  {
+   "at": [
+    35,
+    "Amerikadagi"
+   ],
+   "type": "scene",
+   "bg": "bg_hotel",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      35,
+      "Bretton-Vuds"
+     ],
+     "k": "label",
+     "text": "BRETTON-VUDS · 1944"
+    },
+    {
+     "at": [
+      36,
+      "44"
+     ],
+     "k": "counter",
+     "to": 44,
+     "suffix": " DAVLAT",
+     "x": 0.5,
+     "y": 0.5
+    }
+   ]
+  },
+  {
+   "at": [
+    37,
+    "Ular"
+   ],
+   "type": "scene",
+   "bg": "bg_depression",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      37,
+      "1930-yillarni"
+     ],
+     "k": "label",
+     "text": "1930-YILLAR"
+    },
+    {
+     "at": [
+      38,
+      "arzonlashtirib"
+     ],
+     "k": "tag",
+     "text": "PULNI ARZONLASHTIRISH"
+    },
+    {
+     "at": [
+      39,
+      "Boshqalar"
+     ],
+     "k": "tag",
+     "text": "BOSHQALAR HAM"
+    },
+    {
+     "at": [
+      40,
+      "Savdo"
+     ],
+     "k": "stamp",
+     "text": "SAVDO QULADI"
+    },
+    {
+     "at": [
+      41,
+      "takrorlanishini"
+     ],
+     "k": "tag",
+     "text": "QAYTA TAKRORLANMASIN",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    42,
+    "Yig'ilgan"
+   ],
+   "type": "scene",
+   "bg": "bg_conference",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      42,
+      "uch"
+     ],
+     "k": "tag",
+     "text": "3 HAFTA BAHS"
+    }
+   ]
+  },
+  {
+   "at": [
+    43,
+    "Britaniya"
+   ],
+   "type": "portrait",
+   "fig": "fig_keynes",
+   "ev": [
+    {
+     "at": [
+      43,
+      "Jon"
+     ],
+     "k": "label",
+     "text": "JON MEYNARD KEYNS"
+    },
+    {
+     "at": [
+      43,
+      "iqtisodchisi"
+     ],
+     "k": "tag",
+     "text": "BRITANIYA"
+    },
+    {
+     "at": [
+      44,
+      "yangi"
+     ],
+     "k": "tag",
+     "text": "YANGI XALQARO VALYUTA?"
+    }
+   ]
+  },
+  {
+   "at": [
+    45,
+    "Ammo"
+   ],
+   "type": "split",
+   "left": "bg_vault",
+   "right": "bg_us_factory",
+   "ev": [
+    {
+     "at": [
+      45,
+      "oltin"
+     ],
+     "k": "tag",
+     "text": "OLTIN: AQSHDA",
+     "x": 0.25,
+     "y": 0.22
+    },
+    {
+     "at": [
+      45,
+      "kuch-qudrat"
+     ],
+     "k": "tag",
+     "text": "KUCH: AQSHDA",
+     "x": 0.75,
+     "y": 0.22
+    },
+    {
+     "at": [
+      46,
+      "qoidani"
+     ],
+     "k": "stamp",
+     "text": "QOIDANI AQSH YOZADI"
+    }
+   ]
+  },
+  {
+   "at": [
+    47,
+    "Oxir-oqibat"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      48,
+      "Dollar"
+     ]
+    },
+    {
+     "img": "prop_gold",
+     "x": 0.82,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      48,
+      "oltinga"
+     ]
+    },
+    {
+     "img": "prop_currencies",
+     "x": 0.17,
+     "y": 0.5,
+     "h": 0.46,
+     "at": [
+      49,
+      "Boshqa"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      48,
+      "oltinga"
+     ],
+     "k": "arrow",
+     "from": [
+      0.62,
+      0.5
+     ],
+     "to": [
+      0.71,
+      0.5
+     ],
+     "straight": true
+    },
+    {
+     "at": [
+      48,
+      "35"
+     ],
+     "k": "counter",
+     "to": 35,
+     "prefix": "$",
+     "suffix": " = 1 UNSIYA",
+     "x": 0.74,
+     "y": 0.8
+    },
+    {
+     "at": [
+      49,
+      "dollarga"
+     ],
+     "k": "arrow",
+     "from": [
+      0.29,
+      0.5
+     ],
+     "to": [
+      0.38,
+      0.5
+     ],
+     "straight": true
+    }
+   ]
+  },
+  {
+   "at": [
+    50,
+    "Dollari"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "ev": [
+    {
+     "at": [
+      50,
+      "Amerikadan"
+     ],
+     "k": "arrow",
+     "from": [
+      0.49,
+      0.33
+     ],
+     "to": [
+      0.27,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      50,
+      "Amerikadan"
+     ],
+     "k": "arrow",
+     "from": [
+      0.86,
+      0.38
+     ],
+     "to": [
+      0.3,
+      0.4
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      50,
+      "haqiqiy"
+     ],
+     "k": "arrow",
+     "from": [
+      0.475,
+      0.29
+     ],
+     "to": [
+      0.28,
+      0.36
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      50,
+      "Amerikadan"
+     ],
+     "k": "pin",
+     "x": 0.27,
+     "y": 0.38
+    },
+    {
+     "at": [
+      50,
+      "almashtirib"
+     ],
+     "k": "label",
+     "text": "DOLLARNI OLTINGA"
+    },
+    {
+     "at": [
+      50,
+      "istalgan"
+     ],
+     "k": "tag",
+     "text": "ISTALGAN VAQT"
+    },
+    {
+     "at": [
+      50,
+      "mumkin"
+     ],
+     "k": "mascot",
+     "pose": 3,
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "at": [
+    51,
+    "Shu"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      51,
+      "AQSh"
+     ]
+    },
+    {
+     "img": "prop_gold",
+     "x": 0.7,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      51,
+      "oltin"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      51,
+      "teng"
+     ],
+     "k": "bigtext",
+     "text": "=",
+     "x": 0.5,
+     "y": 0.5
+    },
+    {
+     "at": [
+      51,
+      "oltin"
+     ],
+     "k": "label",
+     "text": "OLTIN BILAN TENG"
+    }
+   ]
+  },
+  {
+   "at": [
+    52,
+    "Markaziy"
+   ],
+   "type": "scene",
+   "bg": "bg_vault",
+   "ev": [
+    {
+     "at": [
+      52,
+      "Markaziy"
+     ],
+     "k": "label",
+     "text": "MARKAZIY BANKLAR"
+    },
+    {
+     "at": [
+      53,
+      "tashish"
+     ],
+     "k": "tag",
+     "text": "OSON TASHILADI"
+    },
+    {
+     "at": [
+      53,
+      "foiz"
+     ],
+     "k": "tag",
+     "text": "+ FOIZ DAROMAD"
+    }
+   ]
+  },
+  {
+   "at": [
+    54,
+    "Shu"
+   ],
+   "type": "scene",
+   "bg": "bg_conference",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      54,
+      "Xalqaro"
+     ],
+     "k": "tag",
+     "text": "XALQARO VALYUTA JAMG'ARMASI"
+    },
+    {
+     "at": [
+      54,
+      "Jahon"
+     ],
+     "k": "tag",
+     "text": "JAHON BANKI"
+    }
+   ]
+  },
+  {
+   "at": [
+    55,
+    "Shu"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.5,
+    0.5
+   ],
+   "ev": [
+    {
+     "at": [
+      55,
+      "Shu"
+     ],
+     "k": "prop",
+     "img": "prop_dollar",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.4,
+     "grow": true
+    },
+    {
+     "at": [
+      55,
+      "markaziga"
+     ],
+     "k": "rings",
+     "x": 0.5,
+     "y": 0.5
+    },
+    {
+     "at": [
+      55,
+      "markaziga"
+     ],
+     "k": "label",
+     "text": "DOLLAR: DUNYO MARKAZIDA"
+    }
+   ]
+  },
+  {
+   "at": [
+    56,
+    "Tizim"
+   ],
+   "type": "chapter",
+   "num": "2-QISM",
+   "title": "BUZILGAN VA'DA"
+  },
+  {
+   "at": [
+    57,
+    "Lekin"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      58,
+      "va'daga"
+     ]
+    },
+    {
+     "img": "prop_gold",
+     "x": 0.7,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      58,
+      "oltin"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      58,
+      "va'daga"
+     ],
+     "k": "label",
+     "text": "VA'DA"
+    },
+    {
+     "at": [
+      58,
+      "har"
+     ],
+     "k": "bigtext",
+     "text": "=",
+     "x": 0.5,
+     "y": 0.5
+    }
+   ]
+  },
+  {
+   "at": [
+    59,
+    "1960-yillarda"
+   ],
+   "type": "scene",
+   "bg": "bg_printing",
+   "ev": [
+    {
+     "at": [
+      59,
+      "1960-yillarda"
+     ],
+     "k": "label",
+     "text": "1960-YILLAR"
+    },
+    {
+     "at": [
+      59,
+      "Vetnam"
+     ],
+     "k": "tag",
+     "text": "VETNAM URUSHI"
+    },
+    {
+     "at": [
+      59,
+      "yangi"
+     ],
+     "k": "tag",
+     "text": "YANGI DASTURLAR"
+    },
+    {
+     "at": [
+      59,
+      "harbiy"
+     ],
+     "k": "tag",
+     "text": "HARBIY BAZALAR"
+    }
+   ]
+  },
+  {
+   "at": [
+    60,
+    "Bularning"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      60,
+      "dollar"
+     ],
+     "k": "label",
+     "text": "TOBORA KO'P DOLLAR"
+    },
+    {
+     "at": [
+      61,
+      "Tez"
+     ],
+     "k": "bars",
+     "novalue": true,
+     "items": [
+      {
+       "label": "AQSHDAGI OLTIN",
+       "value": 35,
+       "color": "mustard"
+      },
+      {
+       "label": "DUNYODAGI DOLLAR",
+       "value": 100,
+       "color": "red",
+       "hl": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    62,
+    "Ko'pchilik"
+   ],
+   "type": "portrait",
+   "fig": "fig_degaulle",
+   "ev": [
+    {
+     "at": [
+      63,
+      "Fransiya"
+     ],
+     "k": "tag",
+     "text": "FRANSIYA"
+    },
+    {
+     "at": [
+      63,
+      "Sharl"
+     ],
+     "k": "label",
+     "text": "SHARL DE GOLL"
+    },
+    {
+     "at": [
+      63,
+      "almashtira"
+     ],
+     "k": "tag",
+     "text": "DOLLARNI OLTINGA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    63,
+    "oltinni"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_ships",
+   "ev": [
+    {
+     "at": [
+      63,
+      "kemalar"
+     ],
+     "k": "tag",
+     "text": "KEMALARDA OLTIN"
+    }
+   ]
+  },
+  {
+   "at": [
+    64,
+    "Boshqa"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "ev": [
+    {
+     "at": [
+      64,
+      "Boshqa"
+     ],
+     "k": "arrow",
+     "from": [
+      0.27,
+      0.38
+     ],
+     "to": [
+      0.49,
+      0.33
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      64,
+      "Fransiyaga"
+     ],
+     "k": "arrow",
+     "from": [
+      0.27,
+      0.38
+     ],
+     "to": [
+      0.51,
+      0.3
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      64,
+      "ergashdi"
+     ],
+     "k": "arrow",
+     "from": [
+      0.27,
+      0.38
+     ],
+     "to": [
+      0.475,
+      0.29
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      64,
+      "ergashdi"
+     ],
+     "k": "label",
+     "text": "OLTIN KETMOQDA"
+    }
+   ]
+  },
+  {
+   "at": [
+    65,
+    "Amerika"
+   ],
+   "type": "scene",
+   "bg": "bg_vault_empty",
+   "ev": [
+    {
+     "at": [
+      65,
+      "kamayib"
+     ],
+     "k": "stamp",
+     "text": "OLTIN KAMAYMOQDA"
+    }
+   ]
+  },
+  {
+   "at": [
+    66,
+    "1971-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_tv_1971",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      66,
+      "1971-yil"
+     ],
+     "k": "label",
+     "text": "1971 · 15-AVGUST"
+    }
+   ]
+  },
+  {
+   "at": [
+    66,
+    "Prezident"
+   ],
+   "type": "portrait",
+   "fig": "fig_nixon",
+   "ev": [
+    {
+     "at": [
+      66,
+      "Richard"
+     ],
+     "k": "label",
+     "text": "RICHARD NIKSON"
+    },
+    {
+     "at": [
+      66,
+      "almashtirmasligini"
+     ],
+     "k": "tag",
+     "text": "OLTINGA ALMASHTIRILMAYDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    67,
+    "Ayni"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      67,
+      "Ayni"
+     ],
+     "k": "news",
+     "text": "VA'DA TUGADI"
+    }
+   ]
+  },
+  {
+   "at": [
+    68,
+    "Ya'ni"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.38,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      68,
+      "Ya'ni"
+     ],
+     "slam": true
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      68,
+      "oltin"
+     ],
+     "k": "tag",
+     "text": "ENDI OLTIN YO'Q",
+     "x": 0.38,
+     "y": 0.18,
+     "fg": "red"
+    },
+    {
+     "at": [
+      68,
+      "ishoning"
+     ],
+     "k": "tag",
+     "text": "SHUNCHAKI ISHONING",
+     "x": 0.38,
+     "y": 0.84
+    },
+    {
+     "at": [
+      69,
+      "Hmm"
+     ],
+     "k": "mascot",
+     "pose": 0,
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "at": [
+    71,
+    "Xullas"
+   ],
+   "type": "object",
+   "mood": "curious",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      71,
+      "Xullas"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      71,
+      "yo'qotadi"
+     ],
+     "k": "tag",
+     "text": "DOLLAR TUSHADI?",
+     "x": 0.5,
+     "y": 0.18
+    },
+    {
+     "at": [
+      72,
+      "qulamadi"
+     ],
+     "k": "stamp",
+     "text": "QULAMADI"
+    }
+   ]
+  },
+  {
+   "at": [
+    73,
+    "Aksincha"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "trans": "zoom",
+   "zf": [
+    0.58,
+    0.44
+   ],
+   "ev": [
+    {
+     "at": [
+      73,
+      "voqea"
+     ],
+     "k": "pin",
+     "x": 0.58,
+     "y": 0.44
+    },
+    {
+     "at": [
+      73,
+      "voqea"
+     ],
+     "k": "rings",
+     "x": 0.58,
+     "y": 0.44
+    }
+   ]
+  },
+  {
+   "at": [
+    74,
+    "Bir"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      74,
+      "Bir"
+     ],
+     "k": "mascot",
+     "pose": 1,
+     "side": "right"
+    },
+    {
+     "at": [
+      74,
+      "layk"
+     ],
+     "k": "like",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      74,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.36,
+     "y": 0.62,
+     "dur": 3.4
+    }
+   ]
+  },
+  {
+   "at": [
+    77,
+    "Demak"
+   ],
+   "type": "chapter",
+   "num": "3-QISM",
+   "title": "NEFT DOLLARNI QUTQARADI"
+  },
+  {
+   "at": [
+    78,
+    "Arab"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      78,
+      "Arab"
+     ],
+     "k": "pin",
+     "x": 0.58,
+     "y": 0.44
+    },
+    {
+     "at": [
+      78,
+      "neft"
+     ],
+     "k": "label",
+     "text": "NEFT EMBARGOSI"
+    },
+    {
+     "at": [
+      78,
+      "Amerika"
+     ],
+     "k": "arrow",
+     "from": [
+      0.58,
+      0.44
+     ],
+     "to": [
+      0.27,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      78,
+      "to'xtatdi"
+     ],
+     "k": "stamp",
+     "text": "TO'XTATILDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    79,
+    "Bir"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      79,
+      "neft"
+     ],
+     "k": "label",
+     "text": "NEFT NARXI"
+    },
+    {
+     "at": [
+      79,
+      "neft"
+     ],
+     "k": "prop",
+     "img": "prop_sheet2",
+     "x": 0.2,
+     "y": 0.55,
+     "h": 0.34,
+     "part": 0,
+     "nparts": 4
+    },
+    {
+     "at": [
+      79,
+      "to'rt"
+     ],
+     "k": "bars",
+     "suffix": "x",
+     "x": 0.6,
+     "w": 0.5,
+     "items": [
+      {
+       "label": "1973 BOSHI",
+       "value": 1
+      },
+      {
+       "label": "1974",
+       "value": 4,
+       "color": "red",
+       "hl": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    80,
+    "Amerika"
+   ],
+   "type": "scene",
+   "bg": "bg_gas_queue",
+   "ev": [
+    {
+     "at": [
+      80,
+      "uzun"
+     ],
+     "k": "tag",
+     "text": "UZUN NAVBATLAR",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    81,
+    "Dunyo"
+   ],
+   "type": "scene",
+   "bg": "bg_oil_field",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      81,
+      "neftga"
+     ],
+     "k": "tag",
+     "text": "DUNYO NEFTGA BOG'LIQ"
+    },
+    {
+     "at": [
+      82,
+      "Saudiya"
+     ],
+     "k": "label",
+     "text": "SAUDIYA ARABISTONI"
+    }
+   ]
+  },
+  {
+   "at": [
+    83,
+    "1974-yilda"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "ev": [
+    {
+     "at": [
+      83,
+      "1974-yilda"
+     ],
+     "k": "label",
+     "text": "1974 · KELISHUV"
+    },
+    {
+     "at": [
+      83,
+      "Saudiya"
+     ],
+     "k": "pin",
+     "x": 0.6,
+     "y": 0.48
+    },
+    {
+     "at": [
+      84,
+      "dollarda"
+     ],
+     "k": "arrow",
+     "from": [
+      0.6,
+      0.48
+     ],
+     "to": [
+      0.27,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      84,
+      "dollarda"
+     ],
+     "k": "tag",
+     "text": "NEFT DOLLARDA",
+     "x": 0.45,
+     "y": 0.8
+    },
+    {
+     "at": [
+      85,
+      "Evaziga"
+     ],
+     "k": "arrow",
+     "from": [
+      0.27,
+      0.38
+     ],
+     "to": [
+      0.6,
+      0.48
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      85,
+      "harbiy"
+     ],
+     "k": "tag",
+     "text": "QUROL VA HIMOYA",
+     "x": 0.45,
+     "y": 0.9
+    }
+   ]
+  },
+  {
+   "at": [
+    86,
+    "Saudiya"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_sheet2",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.55,
+     "at": [
+      86,
+      "Saudiya"
+     ],
+     "part": 1,
+     "nparts": 4
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      86,
+      "obligatsiyalariga"
+     ],
+     "k": "tag",
+     "text": "AQSH DAVLAT OBLIGATSIYALARI",
+     "x": 0.5,
+     "y": 0.84
+    }
+   ]
+  },
+  {
+   "at": [
+    87,
+    "Boshqa"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "ev": [
+    {
+     "at": [
+      87,
+      "Boshqa"
+     ],
+     "k": "rings",
+     "x": 0.58,
+     "y": 0.44
+    },
+    {
+     "at": [
+      87,
+      "dollarda"
+     ],
+     "k": "label",
+     "text": "NEFT = DOLLAR"
+    }
+   ]
+  },
+  {
+   "at": [
+    88,
+    "O'ylab"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_sheet2",
+     "x": 0.22,
+     "y": 0.5,
+     "h": 0.38,
+     "at": [
+      89,
+      "neft"
+     ],
+     "part": 0,
+     "nparts": 4
+    },
+    {
+     "img": "prop_dollar",
+     "x": 0.52,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      90,
+      "dollar"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      88,
+      "O'ylab"
+     ],
+     "k": "mascot",
+     "pose": 0,
+     "side": "right"
+    },
+    {
+     "at": [
+      90,
+      "Agar"
+     ],
+     "k": "arrow",
+     "from": [
+      0.31,
+      0.5
+     ],
+     "to": [
+      0.4,
+      0.5
+     ],
+     "straight": true
+    }
+   ]
+  },
+  {
+   "at": [
+    91,
+    "Yaponiya"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "ev": [
+    {
+     "at": [
+      91,
+      "Yaponiya"
+     ],
+     "k": "pin",
+     "x": 0.86,
+     "y": 0.38
+    },
+    {
+     "at": [
+      91,
+      "Germaniya"
+     ],
+     "k": "pin",
+     "x": 0.51,
+     "y": 0.3
+    },
+    {
+     "at": [
+      91,
+      "Hindiston"
+     ],
+     "k": "pin",
+     "x": 0.69,
+     "y": 0.5
+    },
+    {
+     "at": [
+      91,
+      "dollar"
+     ],
+     "k": "tag",
+     "text": "HAMMAGA DOLLAR KERAK",
+     "x": 0.5,
+     "y": 0.85
+    }
+   ]
+  },
+  {
+   "at": [
+    92,
+    "Ayni"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "ev": [
+    {
+     "at": [
+      93,
+      "qaytarib"
+     ],
+     "k": "arrow",
+     "from": [
+      0.58,
+      0.44
+     ],
+     "to": [
+      0.27,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      93,
+      "Amerikaga"
+     ],
+     "k": "pin",
+     "x": 0.27,
+     "y": 0.38
+    },
+    {
+     "at": [
+      93,
+      "banklariga"
+     ],
+     "k": "tag",
+     "text": "AQSH BANKLARI",
+     "x": 0.3,
+     "y": 0.6
+    }
+   ]
+  },
+  {
+   "at": [
+    94,
+    "Bu"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      94,
+      "Bu"
+     ],
+     "k": "news",
+     "text": "PETRODOLLAR"
+    }
+   ]
+  },
+  {
+   "at": [
+    95,
+    "Shunday"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_gold",
+     "x": 0.2,
+     "y": 0.5,
+     "h": 0.36,
+     "at": [
+      95,
+      "oltin"
+     ]
+    },
+    {
+     "img": "prop_dollar",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.36,
+     "at": [
+      95,
+      "strategik"
+     ]
+    },
+    {
+     "img": "prop_sheet2",
+     "x": 0.8,
+     "y": 0.5,
+     "h": 0.36,
+     "at": [
+      95,
+      "mahsulot"
+     ],
+     "part": 0,
+     "nparts": 4
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      95,
+      "yo'qotganiga"
+     ],
+     "k": "stamp",
+     "text": "OLTIN EMAS"
+    },
+    {
+     "at": [
+      95,
+      "yangi"
+     ],
+     "k": "tag",
+     "text": "YANGI TAYANCH: NEFT",
+     "x": 0.5,
+     "y": 0.84,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    96,
+    "Bugun"
+   ],
+   "type": "chapter",
+   "num": "4-QISM",
+   "title": "BUGUNGI KUCH"
+  },
+  {
+   "at": [
+    96,
+    "saqlaydigan"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      96,
+      "saqlaydigan"
+     ],
+     "k": "label",
+     "text": "ZAXIRA VALYUTALARI"
+    },
+    {
+     "at": [
+      96,
+      "57"
+     ],
+     "k": "pie",
+     "slices": [
+      {
+       "label": "DOLLAR",
+       "value": 57
+      },
+      {
+       "label": "YEVRO",
+       "value": 20
+      },
+      {
+       "label": "YUAN",
+       "value": 2
+      },
+      {
+       "label": "BOSHQA",
+       "value": 21
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    99,
+    "Dunyoda"
+   ],
+   "type": "number",
+   "prop": "prop_dollar",
+   "value": "9/10",
+   "sub": "VALYUTA BITIMLARIDA DOLLAR BOR",
+   "show": [
+    99,
+    "9"
+   ]
+  },
+  {
+   "at": [
+    100,
+    "O'zbekistondagi"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "ev": [
+    {
+     "at": [
+      100,
+      "O'zbekistondagi"
+     ],
+     "k": "pin",
+     "x": 0.65,
+     "y": 0.38
+    },
+    {
+     "at": [
+      100,
+      "Koreyadan"
+     ],
+     "k": "pin",
+     "x": 0.82,
+     "y": 0.38
+    },
+    {
+     "at": [
+      100,
+      "dollar"
+     ],
+     "k": "arrow",
+     "from": [
+      0.65,
+      0.38
+     ],
+     "to": [
+      0.27,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      100,
+      "o'tadi"
+     ],
+     "k": "arrow",
+     "from": [
+      0.27,
+      0.38
+     ],
+     "to": [
+      0.82,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      100,
+      "Amerika"
+     ],
+     "k": "tag",
+     "text": "IKKALASI HAM AQSH EMAS",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    101,
+    "Bu"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      101,
+      "Bu"
+     ],
+     "k": "mascot",
+     "pose": 3,
+     "side": "right"
+    },
+    {
+     "at": [
+      101,
+      "ikki"
+     ],
+     "k": "label",
+     "text": "IKKI USTUNLIK"
+    },
+    {
+     "at": [
+      102,
+      "arzon"
+     ],
+     "k": "tag",
+     "text": "1. ARZON QARZ",
+     "x": 0.32,
+     "y": 0.4
+    }
+   ]
+  },
+  {
+   "at": [
+    103,
+    "Butun"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      103,
+      "Butun"
+     ],
+     "k": "label",
+     "text": "ARZON QARZ"
+    },
+    {
+     "at": [
+      103,
+      "obligatsiyalarini"
+     ],
+     "k": "prop",
+     "img": "prop_sheet2",
+     "x": 0.2,
+     "y": 0.55,
+     "h": 0.36,
+     "part": 1,
+     "nparts": 4
+    },
+    {
+     "at": [
+      104,
+      "men"
+     ],
+     "k": "mascot",
+     "pose": 2,
+     "side": "right"
+    },
+    {
+     "at": [
+      104,
+      "foiz"
+     ],
+     "k": "bars",
+     "novalue": true,
+     "x": 0.5,
+     "w": 0.4,
+     "items": [
+      {
+       "label": "AQSH FOIZI",
+       "value": 30
+      },
+      {
+       "label": "MENING FOIZIM",
+       "value": 90,
+       "color": "red",
+       "hl": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    105,
+    "Ikkinchisi"
+   ],
+   "type": "scene",
+   "bg": "bg_bank_network",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      105,
+      "kuch"
+     ],
+     "k": "label",
+     "text": "2. KUCH"
+    },
+    {
+     "at": [
+      106,
+      "banklari"
+     ],
+     "k": "tag",
+     "text": "TO'LOVLAR AQSH ORQALI"
+    },
+    {
+     "at": [
+      108,
+      "SWIFT"
+     ],
+     "k": "tag",
+     "text": "SWIFT"
+    },
+    {
+     "at": [
+      108,
+      "uzib"
+     ],
+     "k": "stamp",
+     "text": "UZILDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    109,
+    "Masalan"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "ev": [
+    {
+     "at": [
+      109,
+      "Eron"
+     ],
+     "k": "pin",
+     "x": 0.63,
+     "y": 0.43
+    },
+    {
+     "at": [
+      109,
+      "Eron"
+     ],
+     "k": "tag",
+     "text": "ERON",
+     "x": 0.63,
+     "y": 0.53
+    },
+    {
+     "at": [
+      110,
+      "Rossiya"
+     ],
+     "k": "pin",
+     "x": 0.57,
+     "y": 0.27
+    },
+    {
+     "at": [
+      110,
+      "2022-yildan"
+     ],
+     "k": "tag",
+     "text": "ROSSIYA · 2022",
+     "x": 0.57,
+     "y": 0.17
+    }
+   ]
+  },
+  {
+   "at": [
+    111,
+    "Shu"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      111,
+      "Shu"
+     ],
+     "k": "mascot",
+     "pose": 2,
+     "side": "right"
+    },
+    {
+     "at": [
+      111,
+      "dollardan"
+     ],
+     "k": "tag",
+     "text": "DOLLARDAN UZILISH",
+     "x": 0.36,
+     "y": 0.4
+    },
+    {
+     "at": [
+      111,
+      "jahon"
+     ],
+     "k": "tag",
+     "text": "= JAHONDAN UZILISH",
+     "x": 0.36,
+     "y": 0.58,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    112,
+    "Endi"
+   ],
+   "type": "chapter",
+   "num": "5-QISM",
+   "title": "O'ZBEKISTON UCHUN",
+   "mood": "curious"
+  },
+  {
+   "at": [
+    113,
+    "O'zbekiston"
+   ],
+   "type": "scene",
+   "bg": "bg_bazaar",
+   "fig": {
+    "img": "fig_worker",
+    "x": 0.3,
+    "h": 0.78
+   },
+   "ev": [
+    {
+     "at": [
+      113,
+      "mashinalar"
+     ],
+     "k": "tag",
+     "text": "MASHINALAR"
+    },
+    {
+     "at": [
+      113,
+      "telefonlar"
+     ],
+     "k": "tag",
+     "text": "TELEFONLAR"
+    },
+    {
+     "at": [
+      113,
+      "dori-darmonlar"
+     ],
+     "k": "tag",
+     "text": "DORI-DARMON"
+    },
+    {
+     "at": [
+      113,
+      "bug'doy"
+     ],
+     "k": "tag",
+     "text": "BUG'DOY VA UN"
+    }
+   ]
+  },
+  {
+   "at": [
+    114,
+    "Bu"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      114,
+      "Bu"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      114,
+      "dollarda"
+     ],
+     "k": "label",
+     "text": "IMPORT = DOLLAR"
+    },
+    {
+     "at": [
+      115,
+      "Dollar"
+     ],
+     "k": "tag",
+     "text": "DOLLAR QIMMATLASHSA",
+     "x": 0.68,
+     "y": 0.4
+    },
+    {
+     "at": [
+      115,
+      "qimmatlashadi"
+     ],
+     "k": "tag",
+     "text": "NARXLAR OSHADI",
+     "x": 0.68,
+     "y": 0.58,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    116,
+    "2017-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_tashkent_exchange",
+   "ev": [
+    {
+     "at": [
+      116,
+      "2017-yil"
+     ],
+     "k": "label",
+     "text": "2017 · SENTABR"
+    },
+    {
+     "at": [
+      116,
+      "erkin"
+     ],
+     "k": "tag",
+     "text": "VALYUTA ERKIN"
+    }
+   ]
+  },
+  {
+   "at": [
+    117,
+    "O'sha"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      117,
+      "kurs"
+     ],
+     "k": "label",
+     "text": "1 DOLLAR NARXI"
+    },
+    {
+     "at": [
+      117,
+      "taxminan"
+     ],
+     "k": "bars",
+     "suffix": " SO'M",
+     "x": 0.5,
+     "w": 0.5,
+     "items": [
+      {
+       "label": "OLDIN",
+       "value": 4200
+      },
+      {
+       "label": "KEYIN",
+       "value": 8100,
+       "color": "red",
+       "hl": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    118,
+    "Shu"
+   ],
+   "type": "scene",
+   "bg": "bg_bazaar",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      118,
+      "keskin"
+     ],
+     "k": "stamp",
+     "text": "NARXLAR SAKRADI"
+    }
+   ]
+  },
+  {
+   "at": [
+    119,
+    "Pul"
+   ],
+   "type": "scene",
+   "bg": "bg_migrant_work",
+   "ev": [
+    {
+     "at": [
+      119,
+      "teskari"
+     ],
+     "k": "tag",
+     "text": "PUL QAYTIB KELADI"
+    },
+    {
+     "at": [
+      120,
+      "Millionlab"
+     ],
+     "k": "tag",
+     "text": "MILLIONLAB ISHCHI"
+    }
+   ]
+  },
+  {
+   "at": [
+    121,
+    "2025-yilda"
+   ],
+   "type": "number",
+   "prop": "prop_dollar",
+   "value": "$19 MLRD",
+   "sub": "2025: PUL O'TKAZMALARI",
+   "show": [
+    121,
+    "19"
+   ]
+  },
+  {
+   "at": [
+    121,
+    "uning"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "ev": [
+    {
+     "at": [
+      121,
+      "Rossiyadan"
+     ],
+     "k": "arrow",
+     "from": [
+      0.57,
+      0.27
+     ],
+     "to": [
+      0.65,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      121,
+      "Rossiyadan"
+     ],
+     "k": "pin",
+     "x": 0.65,
+     "y": 0.38
+    },
+    {
+     "at": [
+      121,
+      "uch"
+     ],
+     "k": "tag",
+     "text": "QARIYB 3/4 ROSSIYADAN",
+     "x": 0.5,
+     "y": 0.85
+    }
+   ]
+  },
+  {
+   "at": [
+    122,
+    "Shuning"
+   ],
+   "type": "scene",
+   "bg": "bg_family_home",
+   "ev": [
+    {
+     "at": [
+      122,
+      "dollarda"
+     ],
+     "k": "tag",
+     "text": "JAMG'ARMA: DOLLARDA"
+    },
+    {
+     "at": [
+      123,
+      "qadrsizlangan"
+     ],
+     "k": "tag",
+     "text": "SO'M QADRSIZLANGAN"
+    },
+    {
+     "at": [
+      124,
+      "dollarda"
+     ],
+     "k": "tag",
+     "text": "UY, MASHINA: DOLLARDA"
+    }
+   ]
+  },
+  {
+   "at": [
+    125,
+    "Demak"
+   ],
+   "type": "split",
+   "left": "bg_fed",
+   "right": "bg_bazaar",
+   "ev": [
+    {
+     "at": [
+      125,
+      "Vashingtondagi"
+     ],
+     "k": "tag",
+     "text": "VASHINGTON",
+     "x": 0.25,
+     "y": 0.22
+    },
+    {
+     "at": [
+      125,
+      "foiz"
+     ],
+     "k": "label",
+     "text": "FOIZ STAVKASI"
+    },
+    {
+     "at": [
+      125,
+      "Toshkentdagi"
+     ],
+     "k": "tag",
+     "text": "TOSHKENT",
+     "x": 0.75,
+     "y": 0.22
+    },
+    {
+     "at": [
+      125,
+      "yetib"
+     ],
+     "k": "arrow",
+     "from": [
+      0.3,
+      0.55
+     ],
+     "to": [
+      0.7,
+      0.55
+     ],
+     "straight": false
+    }
+   ]
+  },
+  {
+   "at": [
+    126,
+    "Ana"
+   ],
+   "type": "title",
+   "title": "SO'NGGI SAVOL:",
+   "title2": "DOLLAR TUGAYAPTIMI?"
+  },
+  {
+   "at": [
+    127,
+    "O'zgarish"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      128,
+      "yuanni"
+     ],
+     "k": "prop",
+     "img": "prop_sheet2",
+     "x": 0.2,
+     "y": 0.45,
+     "h": 0.36,
+     "part": 3,
+     "nparts": 4
+    },
+    {
+     "at": [
+      129,
+      "BRIKS"
+     ],
+     "k": "tag",
+     "text": "BRIKS",
+     "x": 0.5,
+     "y": 0.3
+    },
+    {
+     "at": [
+      130,
+      "oltin"
+     ],
+     "k": "prop",
+     "img": "prop_gold",
+     "x": 0.8,
+     "y": 0.45,
+     "h": 0.36
+    },
+    {
+     "at": [
+      131,
+      "O'zbekiston"
+     ],
+     "k": "tag",
+     "text": "O'ZBEKISTON HAM OLTIN OLMOQDA",
+     "x": 0.5,
+     "y": 0.8,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    132,
+    "Lekin"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_sheet2",
+     "x": 0.3,
+     "y": 0.52,
+     "h": 0.6,
+     "at": [
+      132,
+      "Lekin"
+     ],
+     "part": 2,
+     "nparts": 4
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      133,
+      "Ishonch"
+     ],
+     "k": "tag",
+     "text": "ISHONCH",
+     "x": 0.7,
+     "y": 0.3
+    },
+    {
+     "at": [
+      133,
+      "ochiq"
+     ],
+     "k": "tag",
+     "text": "OCHIQ BOZOR",
+     "x": 0.7,
+     "y": 0.45
+    },
+    {
+     "at": [
+      133,
+      "erkin"
+     ],
+     "k": "tag",
+     "text": "ERKIN PUL",
+     "x": 0.7,
+     "y": 0.6
+    },
+    {
+     "at": [
+      134,
+      "taklif"
+     ],
+     "k": "stamp",
+     "text": "RAQIB YO'Q"
+    }
+   ]
+  },
+  {
+   "at": [
+    135,
+    "Savolga"
+   ],
+   "type": "object",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      135,
+      "Savolga"
+     ],
+     "k": "mascot",
+     "pose": 3,
+     "side": "right"
+    },
+    {
+     "at": [
+      135,
+      "yo'qotib"
+     ],
+     "k": "tag",
+     "text": "ASTA-SEKIN ZAIFLASHMOQDA",
+     "x": 0.36,
+     "y": 0.4
+    },
+    {
+     "at": [
+      135,
+      "o'rinbosar"
+     ],
+     "k": "tag",
+     "text": "O'RINBOSAR HOZIRCHA YO'Q",
+     "x": 0.36,
+     "y": 0.58,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    136,
+    "Bu"
+   ],
+   "type": "title",
+   "title": "BU HAQIDA MEN HAM BILMAS EDIM",
+   "title2": "ENDI HAMMAMIZ BILAMIZ"
+  },
+  {
+   "at": [
+    137,
+    "Ana"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_currencies",
+     "x": 0.2,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      137,
+      "so'mdami"
+     ]
+    },
+    {
+     "img": "prop_dollar",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.38,
+     "at": [
+      137,
+      "dollardami"
+     ]
+    },
+    {
+     "img": "prop_gold",
+     "x": 0.8,
+     "y": 0.5,
+     "h": 0.38,
+     "at": [
+      137,
+      "oltindami"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      137,
+      "sizga"
+     ],
+     "k": "label",
+     "text": "SIZ-CHI?"
+    }
+   ]
+  },
+  {
+   "at": [
+    138,
+    "Keyingi"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      138,
+      "Keyingi"
+     ],
+     "k": "mascot",
+     "pose": 1,
+     "side": "right"
+    },
+    {
+     "at": [
+      138,
+      "izohlarda"
+     ],
+     "k": "tag",
+     "text": "IZOHDA YOZING",
+     "x": 0.36,
+     "y": 0.4
+    },
+    {
+     "at": [
+      139,
+      "layk"
+     ],
+     "k": "like",
+     "x": 0.36,
+     "y": 0.6
+    }
+   ]
+  },
+  {
+   "at": [
+    140,
+    "Keyingi"
+   ],
+   "type": "end",
+   "pose": 1,
+   "ev": [
+    {
+     "at": [
+      141,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.5,
+     "y": 0.11,
+     "dur": 3.4
+    },
+    {
+     "at": [
+      142,
+      "Loyihamiz"
+     ],
+     "k": "tag",
+     "text": "HAMKORLAR: CALIFORNIA UZBEK · BYSMILLAH",
+     "x": 0.5,
+     "y": 0.1
+    },
+    {
+     "at": [
+      144,
+      "Bilmasboy"
+     ],
+     "k": "tag",
+     "text": "BILMASBOY",
+     "x": 0.5,
+     "y": 0.9,
+     "fg": "red"
+    }
+   ]
+  }
+ ],
+ "shorts": [
+  {
+   "name": "hook",
+   "from": [
+    0,
+    "Bu"
+   ],
+   "to": [
+    8,
+    "Va"
+   ],
+   "hook": ""
+  },
+  {
+   "name": "bretton_woods",
+   "from": [
+    34,
+    "1944-yil"
+   ],
+   "to": [
+    55,
+    "Shu"
+   ],
+   "hook": "1944: DOLLAR QANDAY SHOH BO'LDI?"
+  },
+  {
+   "name": "petrodollar",
+   "from": [
+    77,
+    "Demak"
+   ],
+   "to": [
+    95,
+    "Shunday"
+   ],
+   "hook": "NEFT DOLLARNI QANDAY QUTQARDI?"
+  },
+  {
+   "name": "power",
+   "from": [
+    99,
+    "Dunyoda"
+   ],
+   "to": [
+    111,
+    "Shu"
+   ],
+   "hook": "AQSH DAVLATNI DOLLARDAN QANDAY UZADI?"
+  },
+  {
+   "name": "uzbekistan",
+   "from": [
+    112,
+    "Endi"
+   ],
+   "to": [
+    125,
+    "Demak"
+   ],
+   "hook": "SO'M NEGA DOLLARGA BOG'LIQ?"
+  }
+ ]
+}

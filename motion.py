@@ -45,7 +45,8 @@ class Sprite:
         M[1, 2] += cy - self.h / 2
         pts = np.array([[0, 0, 1], [self.w, 0, 1], [0, self.h, 1], [self.w, self.h, 1]]) @ M.T
         x0, y0 = np.floor(pts.min(0)).astype(int); x1, y1 = np.ceil(pts.max(0)).astype(int)
-        x0, y0 = max(x0, 0), max(y0, 0); x1, y1 = min(x1, W), min(y1, H)
+        CH, CW = canvas.shape[:2]
+        x0, y0 = max(x0, 0), max(y0, 0); x1, y1 = min(x1, CW), min(y1, CH)
         if x1 <= x0 or y1 <= y0:
             return
         M2 = M.copy(); M2[0, 2] -= x0; M2[1, 2] -= y0

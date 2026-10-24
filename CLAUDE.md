@@ -112,6 +112,21 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   back to the closest word when a line was reworded. Mascot sheet set in the beat sheet (`mascot`:
   img, parts, full_body → framed waist-up).
 
+- **v3 presets** (`fx.py`): animated bar chart (rising/falling tones, optional `novalue`), donut chart,
+  subscribe button (cursor, click, bell), like pill, newspaper collage with highlighted word, intro
+  wordmark (Bilmas cream + boy mustard), end screen with 4 "watch next" slots, zoom-through and whip
+  transitions, extra SFX (ding, bell, click, cash register, swoosh, paper, hit, typewriter, shutter).
+  Beat types added: `intro`, `end`, `split`. Transitions are chosen automatically (zoom into chapter/
+  title cards, whip between same-type scenes, dissolve otherwise) unless a beat sets `trans`.
+- **Auto-director**: adds keyword tags (numbers, names) in any stretch >4 s without a new visual, and an
+  extra camera reframe + swoosh in any gap >3.5 s. `edit_report.json` lists what is still slow.
+- **Shorts**: `shorts` list in the beat sheet → `<out>_short_<name>.mp4`, 1080x1920, cut from the long
+  render: 9:16 crop of the world layer (`vfocus` per beat), re-laid-out labels/charts, 3-word captions
+  at 76 px, hook banner for the first 3 s, audio taken from the final long mix.
+- **Preview**: `PREVIEW="12.5,@96:57+2" python3 v3.py …` saves 16:9 and 9:16 stills and exits.
+- Memory: backgrounds load on demand (LRU 4), captions build on demand; a 13-min episode fits in 8 GB.
+- Full episode beat sheet: `projects/ep01-dollar/make_beats.py` → `ep01_beats.json` (84 beats).
+
 ## Long-form decisions (2026-10-23)
 
 - Main product is now **YouTube long-form, 16:9 (1920x1080), 12–18 min**; reels/Shorts are 9:16 clips cut from it.

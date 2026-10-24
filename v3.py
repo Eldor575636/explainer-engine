@@ -14,13 +14,15 @@ from PIL import Image, ImageDraw, ImageFont
 
 HERE = Path(__file__).parent
 sys.path.insert(0, str(HERE))
-import build, motion
+import build, motion, fx
 
 W, H, FPS, SR = 1920, 1080, 25, 48000
 motion.W, motion.H = W, H                       # Sprite.draw / captions read these
 NAVY, MUSTARD, RED, CREAM = motion.NAVY, motion.MUSTARD, motion.RED, motion.CREAM
 INK = (14, 22, 38)
 DISSOLVE = 0.25
+VW, VH = 1080, 1920                              # Shorts / Reels canvas
+FONTS = None
 back_out, ease_out = motion.back_out, motion.ease_out
 # pause targets (seconds of silence kept), chosen per gap by what the gap sits between
 PAUSE_WORD, PAUSE_COMMA, PAUSE_SENT, PAUSE_BEAT = 0.20, 0.28, 0.38, 0.55
@@ -86,7 +88,15 @@ def mask_for(path, cache):
     return np.array(Image.open(mp).convert("L"))
 
 
+_STK = {}
 def sticker(path, cache, height_px, part=None, nparts=3, outline=14):
+    key = (str(path), int(height_px), part, nparts)
+    if key not in _STK:
+        _STK[key] = _sticker(path, cache, height_px, part, nparts, outline)
+    return _STK[key]
+
+
+def _sticker(path, cache, height_px, part=None, nparts=3, outline=14):
     rgb = np.array(Image.open(path).convert("RGB"))
     hard = (mask_for(path, cache) > 110).astype(np.uint8)
     if part is not None:
@@ -161,11 +171,15 @@ def smooth(x):
     x = min(1.0, max(0.0, x)); return x * x * (3 - 2 * x)
 
 
-def camera(c, t, dur, idx, kind):
+def camera(c, t, dur, idx, kind, shots=None):
     """Virtual camera over the composed world layer. Short beats get a slow push;
     long beats get a new framing (zoom + focus point) every ~SHOT seconds with a quick eased move."""
     maxz = 1.20 if kind in ("scene", "map", "portrait") else 1.07
-    n = max(1, int(dur // SHOT))
+    if shots:
+        bounds = sorted(set([0.0] + [x for x in shots if 0.5 < x < dur - 0.5]))
+    else:
+        n0 = max(1, int(dur // SHOT)); bounds = [j * dur / n0 for j in range(n0)]
+    n = len(bounds)
     rng = random.Random(idx * 7919 + 17)
     keys = []
     for j in range(n):
@@ -175,7 +189,7 @@ def camera(c, t, dur, idx, kind):
             z = rng.uniform(1.10, maxz) if j % 2 else rng.uniform(1.0, 1.05)
             fx, fy = rng.uniform(0.3, 0.7), rng.uniform(0.35, 0.6)
         keys.append((z, fx, fy))
-    L = dur / n; j = min(n - 1, int(t // L)); u = t - j * L
+    j = max(i for i, x in enumerate(bounds) if x <= t + 1e-9); L = (bounds[j + 1] if j + 1 < n else dur) - bounds[j]; u = t - bounds[j]
     z, fx, fy = keys[j]
     if j > 0 and u < 0.8:
         w = smooth(u / 0.8); z0, fx0, fy0 = keys[j - 1]
@@ -354,7 +368,9 @@ def main():
     # --- beats ---
     starts = [0.0] + [max(0.0, wt(b["at"]) - 0.12) for b in beats[1:]]
     ends = starts[1:] + [T]
-    sfx, shakes, music_segs, mood = [], [], [], "curious"
+    sfx, xsfx, shakes, music_segs, mood = [], [], [], [], "curious"
+    F = {"anton": motion.ANTON, "mont": motion.MONT}
+    LBL = {k: new_alphabet(v) for k, v in cfg.get("ui", {}).items()}
     cream = cream_bg()
     pose_sprites = {}
     def pose(i, side):
@@ -373,11 +389,15 @@ def main():
             mood = b.get("mood", mood); music_segs.append((starts[bi], mood))
         typ = b["type"]
         if typ in ("scene", "map"):
-            b["_bg"] = cover(Image.open(layers / f"{b['bg']}.jpg"), b.get("crop"), b.get("tint", 0))
+            b["_bgkey"] = ("cover", b["bg"], b.get("crop"), b.get("tint", 0))
         elif typ in ("object", "number"):
             b["_bg"] = cream
-        elif typ in ("title", "chapter"):
+        elif typ in ("title", "chapter", "intro"):
             b["_bg"] = solid(NAVY)
+        elif typ == "end":
+            b["_bg"] = cream
+        elif typ == "split":
+            b["_bgkey"] = ("split", b["left"], b["right"], b.get("tint", 0))
         elif typ == "portrait":
             bg = cream.copy(); bg[:, : int(W * 0.46)] = np.array(MUSTARD, np.float32) / 255
             b["_bg"] = bg
@@ -386,7 +406,7 @@ def main():
             b["_fig"] = sticker(layers / f"{b['fig']['img']}.jpg", cache, H * b["fig"]["h"])
         b["_props"] = []
         for p in b.get("props", []):
-            sp = sticker(layers / f"{p['img']}.jpg", cache, H * p["h"], part=p.get("part"))
+            sp = sticker(layers / f"{p['img']}.jpg", cache, H * p["h"], part=p.get("part"), nparts=p.get("nparts", 3))
             at = wt(p["at"]) - b["t0"]
             b["_props"].append((sp, p, at))
             sfx.append((b["t0"] + at, "thud" if p.get("slam") else "pop"))
@@ -406,8 +426,27 @@ def main():
             b["_n"] = text_sprite(new_alphabet(b["num"]), motion.ANTON, 80, MUSTARD)
             b["_t"] = text_sprite(new_alphabet(b["title"]), motion.ANTON, 220, CREAM)
             sfx += [(b["t0"] + 0.05, "riser"), (b["t0"] + 0.2, "thud")]
+        if typ == "intro":
+            b["_wm"] = fx.wordmark(F, 190)
+            b["_pose"] = pose(b.get("pose", 3), "center")
+            xsfx += [(b["t0"] + 0.1, "swoosh", None), (b["t0"] + 0.55, "hit", None), (b["t0"] + 0.9, "ding", None)]
+        if typ == "end":
+            b["_pose"] = pose(b.get("pose", 1), "center")
+            xsfx += [(b["t0"] + 0.15 * k, "pop", None) for k in range(4)]
+        if typ == "chapter":
+            xsfx.append((b["t0"] + 0.2, "hit", None))
         if bi:
-            sfx.append((b["t0"], "whoosh"))
+            prev = beats[bi - 1]
+            tr = prev.get("trans") or ("zoom" if typ in ("chapter", "title", "intro") else
+                                       "whip" if typ == prev["type"] and typ in ("scene", "map") and bi % 2 else "dissolve")
+            prev["_trans"] = tr
+            if tr == "dissolve":
+                sfx.append((b["t0"], "whoosh"))
+            else:
+                xsfx.append((b["t0"], "swoosh", None))
+        if typ in ("scene", "map", "portrait", "split"):     # soft swoosh on every camera reframe
+            nshot = max(1, int((b["t1"] - b["t0"]) // SHOT))
+            xsfx += [(b["t0"] + j * (b["t1"] - b["t0"]) / nshot + 0.2, "paper" if j % 2 else "swoosh", None) for j in range(1, nshot)]
         tag_slot = 0
         evs = []
         for e in b.get("ev", []):
@@ -434,12 +473,33 @@ def main():
             elif k == "mascot":
                 e["_s"] = pose(e["pose"], e["side"]); sfx.append((b["t0"] + e["t"], "whoosh"))
             elif k == "prop":
-                e["_s"] = sticker(layers / f"{e['img']}.jpg", cache, H * e["h"]); sfx.append((b["t0"] + e["t"], "pop"))
+                e["_s"] = sticker(layers / f"{e['img']}.jpg", cache, H * e["h"], part=e.get("part"), nparts=e.get("nparts", 3)); sfx.append((b["t0"] + e["t"], "pop"))
             elif k == "counter":
-                e["_frames"] = [seeded(motion.label_sprite, new_alphabet(f"{v}{e.get('suffix', '')}"), 150) for v in range(e["to"] + 1)]
+                lo = e.get("from", 0); stp = max(1, (e["to"] - lo) // 60)
+                vals = list(range(lo, e["to"] + 1, stp)) + ([e["to"]] if (e["to"] - lo) % stp else [])
+                e["_frames"] = [seeded(motion.label_sprite, new_alphabet(f"{e.get('prefix', '')}{v}{e.get('suffix', '')}"), 150) for v in vals]
                 sfx += [(b["t0"] + e["t"] + 0.9 * i / 12, "tick") for i in range(12)]
+                xsfx.append((b["t0"] + e["t"] + 0.95, "ding", None))
+            elif k in ("bars", "pie", "subscribe", "like", "news"):
+                def mk(ee, Wd, Hd):
+                    if k == "bars":
+                        return fx.Bars(dict(ee, suffix=new_alphabet(ee.get("suffix", "")), items=[dict(i, label=new_alphabet(i["label"])) for i in ee["items"]]), F, Wd, Hd)
+                    if k == "pie":
+                        return fx.Pie(dict(ee, slices=[dict(i, label=new_alphabet(i["label"])) for i in ee["slices"]]), F, Wd, Hd)
+                    if k == "subscribe":
+                        return fx.Subscribe(ee, F, Wd, Hd, LBL.get("subscribe", "OBUNA"), LBL.get("subscribed", "OBUNA"))
+                    if k == "like":
+                        return fx.Like(ee, F, Wd, Hd, LBL.get("like", "LAYK"))
+                    return fx.News(ee, F, Wd, Hd, new_alphabet(ee["text"]))
+                e["_o"] = mk(e, W, H)
+                vert = {"bars": dict(x=0.5, y=0.42, w=0.9, h=0.32), "pie": dict(x=0.32, y=0.4, r=0.13),
+                        "subscribe": dict(x=0.42, y=0.84), "like": dict(x=0.5, y=0.9), "news": {}}[k]
+                e["_ov"] = mk(dict(e, **vert), VW, VH)
+                xsfx += e["_o"].sounds(b["t0"] + e["t"])
             elif k == "bigtext":
                 e["_s"] = text_sprite(new_alphabet(e["text"]), motion.ANTON, 300, RED, 0); sfx.append((b["t0"] + e["t"], "pop"))
+            if k in ("label", "tag", "stamp"):
+                e["vx"], e["vy"] = VW / 2, {"label": 260, "stamp": VH * 0.45}.get(k, 470 + 110 * sum(1 for x in evs if x["k"] == "tag"))
             evs.append(e)
         b["_ev"] = evs
 
@@ -454,11 +514,84 @@ def main():
     for ci, ch in enumerate(chunks):
         st = ch[0][1]; en = chunks[ci + 1][0][1] if ci + 1 < len(chunks) else T
         en = min(en, max(ch[-1][2] + 0.5, st + 0.5))
-        caps.append((st, en, [x[1] for x in ch], motion.caption_sprites([x[0] for x in ch], 50)))
+        caps.append((st, en, [x[1] for x in ch], tuple(x[0] for x in ch)))
+    from functools import lru_cache as _lru
+    @_lru(maxsize=6)
+    def cap_sprites(words):
+        return motion.caption_sprites(list(words), 50)
 
-    def render(bi, t):
+    # --- auto-director: fill dead stretches (>4 s with no new visual) with keyword tags ---
+    def vis_times():
+        return sorted([b["t0"] for b in beats] + [b["t0"] + e["t"] for b in beats for e in b["_ev"]] +
+                      [b["t0"] + at for b in beats for _, _, at in b["_props"]] + [T])
+    shown = {new_alphabet(e.get("text", "")).upper() for b in beats for e in b["_ev"]}
+    added = 0
+    for _ in range(3):
+        v = vis_times()
+        for a_, b_ in zip(v, v[1:]):
+            if b_ - a_ <= 4.0:
+                continue
+            bi_ = max(i for i, bb in enumerate(beats) if bb["t0"] <= a_ + 1e-6)
+            bb = beats[bi_]
+            if bb["type"] in ("title", "chapter", "intro", "end"):
+                continue
+            cands = []
+            for k, ((w, si), (s0, e0)) in enumerate(zip(sw, nt)):
+                if a_ + 1.2 < s0 < b_ - 1.0:
+                    clean = w.strip(".,:;?!\"—()")
+                    first = k == 0 or sw[k - 1][1] != si
+                    if any(ch.isdigit() for ch in clean) or (clean[:1].isupper() and not first and len(clean) > 3):
+                        cands.append((s0, clean))
+            cands = [c_ for c_ in cands if new_alphabet(c_[1]).upper() not in shown]
+            if not cands:
+                continue
+            s0, word = cands[len(cands) // 2]
+            slot = sum(1 for e in bb["_ev"] if e["k"] == "tag")
+            e = {"k": "tag", "text": word.upper(), "t": s0 - bb["t0"], "auto": True,
+                 "_s": seeded(motion.tag_sprite, new_alphabet(word.upper()), 50, NAVY), "rot": random.uniform(-2, 2),
+                 "x": W * 0.74 if bb["type"] != "portrait" else W * 0.74, "y": 230 + 92 * slot, "vx": VW / 2, "vy": 470 + 110 * slot}
+            bb["_ev"].append(e); shown.add(new_alphabet(word).upper()); sfx.append((bb["t0"] + e["t"], "pop")); added += 1
+    print(f"Auto-director: added {added} keyword tags")
+
+    # --- camera shots: uniform every SHOT s, plus an extra reframe in the middle of any gap > 3.5 s ---
+    for bb in beats:
+        if bb["type"] in ("title", "chapter", "intro", "end"):
+            continue
+        d = bb["t1"] - bb["t0"]; n0 = max(1, int(d // SHOT))
+        sh = [j * d / n0 for j in range(n0)]
+        evt = sorted([0.0] + [e["t"] for e in bb["_ev"]] + [at for _, _, at in bb["_props"]] + sh + [d])
+        for a_, b_ in zip(evt, evt[1:]):
+            if b_ - a_ > 3.5:
+                sh.append((a_ + b_) / 2); xsfx.append((bb["t0"] + (a_ + b_) / 2 + 0.2, "swoosh", None))
+        bb["_shots"] = sorted(sh)
+
+    # --- automatic edit check: no dead stretches, sound under motion ---
+    vis = sorted([b["t0"] for b in beats] + [b["t0"] + e["t"] for b in beats for e in b["_ev"]] +
+                 [b["t0"] + at for b in beats for _, _, at in b["_props"]] +
+                 [b["t0"] + x for b in beats for x in b.get("_shots", [])] + [T])
+    def beat_at(x):
+        i = max(i for i, bb in enumerate(beats) if bb["t0"] <= x + 1e-6); return f"{i}:{beats[i]['type']}"
+    dead = [(round(a, 1), round(b_ - a, 1), beat_at(a)) for a, b_ in zip(vis, vis[1:]) if b_ - a > 4.0 and "end" not in beat_at(a)]
+    snd = sorted([t for t, _ in sfx] + [t for t, _, _ in xsfx] + [0, T])
+    quiet = [(round(a, 1), round(b_ - a, 1)) for a, b_ in zip(snd, snd[1:]) if b_ - a > 7.0]
+    report = {"visual_events": len(vis), "avg_gap_s": round(T / max(1, len(vis)), 2), "dead_stretches_over_4s": dead,
+              "no_sfx_over_7s": quiet}
+    (work / "edit_report.json").write_text(json.dumps(report, indent=1))
+    print(f"Edit check: {len(vis)} visual events, avg every {report['avg_gap_s']}s, "
+          f"{len(dead)} stretches >4s without a change, {len(quiet)} stretches >7s without SFX")
+
+    from functools import lru_cache
+    @lru_cache(maxsize=4)
+    def bg_for(key):
+        if key[0] == "cover":
+            return cover(Image.open(layers / f"{key[1]}.jpg"), key[2], key[3])
+        l = cover(Image.open(layers / f"{key[1]}.jpg"), None, key[3]); r = cover(Image.open(layers / f"{key[2]}.jpg"), None, key[3])
+        bg = l.copy(); bg[:, : W // 2] = l[:, W // 4: W // 4 + W // 2]; bg[:, W // 2:] = r[:, W // 4: W // 4 + W - W // 2]
+        return bg
+
+    def render_world(bi, t):
         b = beats[bi]; dur = b["t1"] - b["t0"]; typ = b["type"]
-        c = b["_bg"].copy()
+        c = (bg_for(b["_bgkey"]) if "_bgkey" in b else b["_bg"]).copy()
         if typ == "scene" and "_fig" in b:
             f = b["fig"]; tx = f["x"] * W
             x = tx - (1 - ease_out(t / 0.7)) * W * 0.55
@@ -481,41 +614,78 @@ def main():
             b["_prop"].draw(c, W * 0.27, H * 0.5 + 6 * math.sin(t * 2), back_out(t / 0.4))
             lt = t - b["_show"]
             if lt >= 0:
-                b["_val"].draw(c, W * 0.66, H * 0.43, 1.8 - 0.8 * ease_out(lt / 0.2), 0, min(1, lt / 0.08))
+                b["_val"].draw(c, W * 0.66, H * 0.43, (1.8 - 0.8 * ease_out(lt / 0.2)) * min(1, W * 0.6 / b["_val"].w), 0, min(1, lt / 0.08))
                 b["_sub"].draw(c, W * 0.66, H * 0.68, back_out((lt - 0.3) / 0.4), -1.5, min(1, max(0, lt - 0.3) / 0.1))
         if typ == "title":
-            b["_t1"].draw(c, W / 2, H * 0.40, 1.5 - 0.5 * ease_out(t / 0.25), 0, min(1, t / 0.1))
+            b["_t1"].draw(c, W / 2, H * 0.40, (1.5 - 0.5 * ease_out(t / 0.25)) * min(1, W * 0.9 / b["_t1"].w), 0, min(1, t / 0.1))
             lt = t - 0.35
             if lt > 0:
-                b["_t2"].draw(c, W / 2, H * 0.58, 1.5 - 0.5 * ease_out(lt / 0.25), 0, min(1, lt / 0.1))
+                b["_t2"].draw(c, W / 2, H * 0.58, (1.5 - 0.5 * ease_out(lt / 0.25)) * min(1, W * 0.9 / b["_t2"].w), 0, min(1, lt / 0.1))
                 cv2.line(c, (int(W * 0.25), int(H * 0.72)), (int(W * 0.25 + W * 0.5 * ease_out(lt / 0.6)), int(H * 0.72)),
                          tuple(v / 255 for v in RED), 8, cv2.LINE_AA)
         if typ == "chapter":
             b["_n"].draw(c, W / 2, H * 0.36, back_out(t / 0.35), 0, min(1, t / 0.1))
             lt = t - 0.2
             if lt > 0:
-                b["_t"].draw(c, W / 2, H * 0.56, 1.6 - 0.6 * ease_out(lt / 0.2), 0, min(1, lt / 0.08))
+                b["_t"].draw(c, W / 2, H * 0.56, (1.6 - 0.6 * ease_out(lt / 0.2)) * min(1, W * 0.9 / b["_t"].w), 0, min(1, lt / 0.08))
                 cv2.line(c, (int(W * 0.3), int(H * 0.73)), (int(W * 0.3 + W * 0.4 * ease_out(lt / 0.5)), int(H * 0.73)),
                          tuple(v / 255 for v in RED), 10, cv2.LINE_AA)
+        if typ == "split":
+            p = ease_out(t / 0.5)
+            cv2.line(c, (W // 2, int(H * (1 - p))), (W // 2, H), (1, 1, 1), 14)
+            cv2.line(c, (W // 2, int(H * (1 - p))), (W // 2, H), fx.c01(RED), 6)
         c = draw_events(c, b, t, dur, WORLD)
-        if typ not in ("title", "chapter", "number"):
-            c = camera(c, t, dur, bi, typ)
-        return draw_events(c, b, t, dur, SCREEN)
+        if typ not in ("title", "chapter", "intro", "end"):
+            c = camera(c, t, dur, bi, typ, b.get("_shots"))
+        return c
+
+    def render(bi, t, V=False):
+        b = beats[bi]; dur = b["t1"] - b["t0"]
+        c = render_world(bi, t)
+        if V:
+            c = vcrop(c, b, t)
+        Wd, Hd = (VW, VH) if V else (W, H)
+        if b["type"] == "intro":
+            sp = b["_pose"]
+            sp.draw(c, Wd * (0.5 if V else 0.74), Hd * (0.62 if V else 0.16) + sp.h / 2 * (0.8 if V else 1) + (1 - ease_out(t / 0.6)) * Hd * 0.7, 0.8 if V else 1.0)
+            wm = b["_wm"]; sc = (0.55 if V else 1.0) * (1.6 - 0.6 * ease_out((t - 0.45) / 0.25))
+            if t > 0.45:
+                fx.paste(c, wm, Wd * (0.5 if V else 0.34), Hd * (0.3 if V else 0.45), sc, min(1, (t - 0.45) / 0.1))
+                q = ease_out((t - 0.7) / 0.5); y = int(Hd * (0.3 if V else 0.45) + wm.height * sc / 2 + 10)
+                x0 = int(Wd * (0.5 if V else 0.34) - wm.width * sc / 2)
+                cv2.line(c, (x0, y), (int(x0 + wm.width * sc * q), y), fx.c01(RED), 10, cv2.LINE_AA)
+        if b["type"] == "end":
+            if not V:
+                fx.end_frames(c, t, W, H, F, LBL.get("next", "KEYINGI VIDEO"))
+            sp = b["_pose"]
+            sp.draw(c, Wd * 0.5, Hd * (0.55 if V else 0.2) + sp.h / 2 + (1 - ease_out(t / 0.6)) * Hd * 0.7, 0.85 if V else 0.9)
+        return draw_events(c, b, t, dur, SCREEN, V)
+
+    def vcrop(c, b, t):
+        """9:16 window out of the 16:9 world frame, centred on the beat's focus, scaled to 1080x1920."""
+        fxp = b.get("vfocus", 0.5)
+        cw = int(H * VW / VH)
+        x0 = int(min(W - cw, max(0, fxp * W - cw / 2)))
+        return cv2.resize(c[:, x0:x0 + cw], (VW, VH), interpolation=cv2.INTER_LINEAR)
 
     WORLD = {"circle", "arrow", "pin", "rings", "prop"}
-    SCREEN = {"label", "tag", "stamp", "mascot", "counter", "bigtext"}
+    SCREEN = {"label", "tag", "stamp", "mascot", "counter", "bigtext", "bars", "pie", "subscribe", "like", "news"}
 
-    def draw_events(c, b, t, dur, kinds):
+    def draw_events(c, b, t, dur, kinds, V=False):
+        Wd, Hd = (VW, VH) if V else (W, H)
         for e in b["_ev"]:
             lt = t - e["t"]
             k = e["k"]
             if lt < 0 or k not in kinds:
                 continue
+            ex, ey = (e.get("vx"), e.get("vy")) if V else (e.get("x"), e.get("y"))
             if k in ("label", "tag"):
-                sc = back_out(lt / 0.38)
-                e["_s"].draw(c, e["x"], e["y"], sc, e["rot"] * sc, min(1, lt / 0.08))
+                sc = back_out(lt / 0.38) * (1.15 if V else 1)
+                e["_s"].draw(c, ex, ey, sc, e["rot"] * sc, min(1, lt / 0.08))
             elif k == "stamp":
-                e["_s"].draw(c, e["x"], e["y"], 2.3 - 1.3 * ease_out(lt / 0.16), -7, min(1, lt / 0.06))
+                e["_s"].draw(c, ex, ey, 2.3 - 1.3 * ease_out(lt / 0.16), -7, min(1, lt / 0.06))
+            elif k in ("bars", "pie", "subscribe", "like", "news"):
+                (e["_ov"] if V else e["_o"]).draw(c, lt)
             elif k == "circle":
                 draw_partial(c, e["_pts"], ease_out(lt / 0.7), RED, 9)
             elif k == "arrow":
@@ -528,7 +698,12 @@ def main():
                 r = int(14 + (lt % 1.2) * 60)
                 cv2.circle(c, (x, y), r, tuple(v / 255 for v in RED), 3, cv2.LINE_AA)
             elif k == "mascot":
-                sp = e["_s"]; x = W * (0.81 if e["side"] == "right" else 0.5)
+                sp = e["_s"]
+                if V:
+                    vs = 0.8
+                    sp.draw(c, VW * 0.72, VH * 0.6 + sp.h * vs / 2 + (1 - ease_out(lt / 0.6)) * VH * 0.5 + 4 * math.sin(lt * 2), vs)
+                    continue
+                x = W * (0.81 if e["side"] == "right" else 0.5)
                 if getattr(sp, "full", False):      # full-body sheet: frame him waist-up, legs below the edge
                     top = H * (0.16 if e["side"] == "center" else 0.30)
                     y = top + sp.h / 2 + (1 - ease_out(lt / 0.6)) * H * 0.8
@@ -540,9 +715,9 @@ def main():
                 e["_s"].draw(c, e["x"] * W, e["y"] * H + 6 * math.sin(lt * 2), sc, 0, min(1, lt / 0.1))
             elif k == "counter":
                 fr = e["_frames"]; v = int(round((len(fr) - 1) * ease_out(lt / 0.9)))
-                fr[v].draw(c, e["x"] * W, e["y"] * H, back_out(lt / 0.3), 0, min(1, lt / 0.08))
+                fr[v].draw(c, (0.5 if V else e["x"]) * Wd, (0.38 if V else e["y"]) * Hd, back_out(lt / 0.3), 0, min(1, lt / 0.08))
             elif k == "bigtext":
-                e["_s"].draw(c, e["x"] * W, e["y"] * H, back_out(lt / 0.35), 0, min(1, lt / 0.08))
+                e["_s"].draw(c, (0.5 if V else e["x"]) * Wd, (0.42 if V else e["y"]) * Hd, back_out(lt / 0.35) * (0.8 if V else 1), 0, min(1, lt / 0.08))
             elif k == "rings":
                 for j in range(3):
                     ph = (lt - j * 0.45) % 1.35
@@ -553,6 +728,25 @@ def main():
                     cv2.circle(ov, (int(e["x"] * W), int(e["y"] * H)), r, tuple(v / 255 for v in RED), 6, cv2.LINE_AA)
                     c = c * (1 - a) + ov * a
         return c
+
+    # --- preview mode: PREVIEW="12.5,40,..." saves stills (16:9 and 9:16) and exits ---
+    import os
+    if os.environ.get("PREVIEW"):
+        def ptime(x):
+            if x.startswith("@"):                     # @sentence:word[+offset]
+                sw_, off = (x[1:].split("+") + ["1.5"])[:2]; si_, w_ = sw_.split(":")
+                return wt([int(si_), w_]) + float(off)
+            return float(x)
+        for tt in [ptime(x) for x in os.environ["PREVIEW"].split(",")]:
+            bi_ = max(i for i, b in enumerate(beats) if b["t0"] <= tt)
+            for V in (False, True):
+                fr = render(bi_, tt - beats[bi_]["t0"], V)
+                if not V:
+                    ci_ = max([i for i, cp in enumerate(caps) if cp[0] <= tt] or [0]); st, en, wst, sprs = caps[ci_]
+                    if st <= tt < en:
+                        cap_sprites(sprs)[max(j for j in range(len(wst)) if wst[j] <= tt or j == 0)].draw(fr, W / 2, H - 78)
+                Image.fromarray((np.clip(fr, 0, 1) * 255).astype(np.uint8)).save(work / f"prev_{'v' if V else 'h'}_{tt:06.1f}.jpg", quality=85)
+        print("preview saved"); return
 
     # --- render ---
     nframes = int(T * FPS)
@@ -568,15 +762,24 @@ def main():
         while bi + 1 < len(beats) and beats[bi + 1]["t0"] <= t:
             bi += 1
         frame = render(bi, t - beats[bi]["t0"])
-        if bi + 1 < len(beats) and beats[bi]["t1"] - t < DISSOLVE:
-            w = 1 - (beats[bi]["t1"] - t) / DISSOLVE
-            frame = frame * (1 - w) + render(bi + 1, 0.0) * w
+        if bi + 1 < len(beats):
+            tr = beats[bi].get("_trans", "dissolve"); left = beats[bi]["t1"] - t
+            if tr == "zoom" and left < 0.45:
+                p = 1 - left / 0.45; zf = beats[bi].get("zf", [0.5, 0.45])
+                frame = fx.zoom_into(frame, zf[0], zf[1], p, W, H)
+                if p > 0.55:
+                    w = (p - 0.55) / 0.45; frame = frame * (1 - w) + render(bi + 1, 0.0) * w
+            elif tr == "whip" and left < 0.3:
+                frame = fx.whip(frame, render(bi + 1, 0.0), 1 - left / 0.3, W)
+            elif tr == "dissolve" and left < DISSOLVE:
+                w = 1 - left / DISSOLVE
+                frame = frame * (1 - w) + render(bi + 1, 0.0) * w
         while ci + 1 < len(caps) and caps[ci + 1][0] <= t:
             ci += 1
         st, en, wst, sprs = caps[ci]
         if st <= t < en:
             k = max(j for j in range(len(wst)) if wst[j] <= t or j == 0)
-            sprs[k].draw(frame, W / 2, H - 78, 0.94 + 0.06 * back_out((t - st) / 0.18))
+            cap_sprites(sprs)[k].draw(frame, W / 2, H - 78, 0.94 + 0.06 * back_out((t - st) / 0.18))
         for hit in shakes:
             if 0 <= t - hit < 0.25:
                 amp = 16 * (1 - (t - hit) / 0.25)
@@ -589,7 +792,7 @@ def main():
 
     # --- audio mix ---
     n = int(T * SR)
-    motion.write_wav(work / "sfx.wav", synth_sfx(n, sfx))
+    motion.write_wav(work / "sfx.wav", 0.85 * fx.extra_sfx(synth_sfx(n, sfx), xsfx))
     files = {m: (proj / p).resolve() for m, p in cfg["music"].items()}
     motion.write_wav(work / "music.wav", 0.9 * music_bed(n, music_segs, files))
     fc = ("[1:a]asplit=2[v][vk];[3:a]volume=0.30,afade=t=in:d=1.0,afade=t=out:st=%.2f:d=2.5[m];"
@@ -601,6 +804,59 @@ def main():
                     "-ar", "48000", "-movflags", "+faststart", str(out_path)], check=True)
     (work / "beat_times.json").write_text(json.dumps([[b["type"], round(b["t0"], 2), round(b["t1"], 2)] for b in beats]))
     print("Done:", out_path)
+
+    # --- Shorts / Reels: 9:16 clips cut from the long episode ---
+    for sh in cfg.get("shorts", []):
+        ta = max(0.0, wt(sh["from"]) - 0.15)
+        si_end = sh["to"][0]
+        tb = max(e for (w, s_i), (s, e) in zip(sw, nt) if s_i == si_end) + 0.45
+        name = out_path.parent / f"{out_path.stem}_short_{sh['name']}.mp4"
+        print(f"Short {sh['name']}: {ta:.1f}-{tb:.1f}s -> {name.name}")
+        motion.W, motion.H = VW, VH
+        vchunks, cur = [], []
+        for k, ((w, si), (s0, e0)) in enumerate(zip(sw, nt)):
+            if s0 < ta - 0.01 or s0 > tb:
+                continue
+            cur.append((new_alphabet(w).upper(), s0, e0))
+            last = k == len(sw) - 1 or sw[k + 1][1] != si
+            if len(cur) == 3 or last or w.endswith((",", ":")):
+                vchunks.append(cur); cur = []
+        if cur:
+            vchunks.append(cur)
+        vcaps = []
+        for ci_, ch in enumerate(vchunks):
+            st = ch[0][1]; en = vchunks[ci_ + 1][0][1] if ci_ + 1 < len(vchunks) else tb
+            vcaps.append((st, min(en, max(ch[-1][2] + 0.5, st + 0.5)), [x[1] for x in ch], motion.caption_sprites([x[0] for x in ch], 76)))
+        hook = seeded(motion.label_sprite, new_alphabet(sh.get("hook", "")), 70) if sh.get("hook") else None
+        motion.W, motion.H = W, H
+        tmpv = work / f"short_{sh['name']}_v.mp4"
+        ff = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{VW}x{VH}",
+                               "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+                               "-pix_fmt", "yuv420p", str(tmpv)], stdin=subprocess.PIPE)
+        bi = 0; cj = 0
+        for fi in range(int((tb - ta) * FPS)):
+            t = ta + fi / FPS
+            while bi + 1 < len(beats) and beats[bi + 1]["t0"] <= t:
+                bi += 1
+            frame = render(bi, t - beats[bi]["t0"], True)
+            if bi + 1 < len(beats) and beats[bi]["t1"] - t < DISSOLVE:
+                w = 1 - (beats[bi]["t1"] - t) / DISSOLVE
+                frame = frame * (1 - w) + render(bi + 1, 0.0, True) * w
+            if hook is not None and t - ta < 3.0:
+                hook.draw(frame, VW / 2, 150, back_out((t - ta) / 0.35) * (1 - ease_out((t - ta - 2.7) / 0.3)), -1.5)
+            while cj + 1 < len(vcaps) and vcaps[cj + 1][0] <= t:
+                cj += 1
+            if vcaps:
+                st, en, wst, sprs = vcaps[cj]
+                if st <= t < en:
+                    k = max(j for j in range(len(wst)) if wst[j] <= t or j == 0)
+                    sprs[k].draw(frame, VW / 2, VH * 0.76, 0.94 + 0.06 * back_out((t - st) / 0.18))
+            ff.stdin.write((np.clip(frame, 0, 1) * 255).astype(np.uint8).tobytes())
+        ff.stdin.close(); ff.wait()
+        d = tb - ta
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(tmpv), "-ss", f"{ta:.2f}", "-t", f"{d:.2f}", "-i", str(out_path),
+                        "-map", "0:v", "-map", "1:a", "-af", f"afade=t=in:d=0.25,afade=t=out:st={max(0, d - 0.4):.2f}:d=0.4",
+                        "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", str(name)], check=True)
 
 
 if __name__ == "__main__":
