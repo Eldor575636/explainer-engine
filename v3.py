@@ -499,7 +499,7 @@ def main():
             elif k == "bigtext":
                 e["_s"] = text_sprite(new_alphabet(e["text"]), motion.ANTON, 300, RED, 0); sfx.append((b["t0"] + e["t"], "pop"))
             if k in ("label", "tag", "stamp"):
-                e["vx"], e["vy"] = VW / 2, {"label": 260, "stamp": VH * 0.45}.get(k, 470 + 110 * sum(1 for x in evs if x["k"] == "tag"))
+                e["vx"], e["vy"] = VW / 2, {"label": 190, "stamp": VH * 0.45}.get(k, 330 + 92 * sum(1 for x in evs if x["k"] == "tag"))
             evs.append(e)
         b["_ev"] = evs
 
@@ -549,7 +549,7 @@ def main():
             slot = sum(1 for e in bb["_ev"] if e["k"] == "tag")
             e = {"k": "tag", "text": word.upper(), "t": s0 - bb["t0"], "auto": True,
                  "_s": seeded(motion.tag_sprite, new_alphabet(word.upper()), 50, NAVY), "rot": random.uniform(-2, 2),
-                 "x": W * 0.74 if bb["type"] != "portrait" else W * 0.74, "y": 230 + 92 * slot, "vx": VW / 2, "vy": 470 + 110 * slot}
+                 "x": W * 0.74, "y": 230 + 92 * slot, "vx": VW / 2, "vy": 330 + 92 * slot}
             bb["_ev"].append(e); shown.add(new_alphabet(word).upper()); sfx.append((bb["t0"] + e["t"], "pop")); added += 1
     print(f"Auto-director: added {added} keyword tags")
 
@@ -663,7 +663,25 @@ def main():
 
     def vcrop(c, b, t):
         """9:16 window out of the 16:9 world frame, centred on the beat's focus, scaled to 1080x1920."""
-        fxp = b.get("vfocus", 0.5)
+        if b["type"] in ("object", "number", "split", "title", "chapter", "intro", "end") and "vfocus" not in b:
+            # spread-out layouts: show the whole 16:9 frame, scaled to width, on a matching background
+            out = np.empty((VH, VW, 3), np.float32); out[:] = c[5, 5]
+            sc = VW / W; hh = int(H * sc); y0 = int(VH * 0.42 - hh / 2)
+            out[y0:y0 + hh] = cv2.resize(c, (VW, hh), interpolation=cv2.INTER_AREA)
+            return out
+        fxp = b.get("vfocus")
+        if fxp is None:
+            xs = [e["x"] for e in b["_ev"] if e["k"] in ("pin",)] + [e["to"][0] for e in b["_ev"] if e["k"] == "arrow"]
+            if isinstance(b.get("fig"), dict):
+                fxp = b["fig"]["x"]
+            elif b["type"] == "portrait":
+                fxp = 0.26
+            elif xs:
+                lt_ = t
+                cur = [e for e in b["_ev"] if e["k"] in ("pin", "arrow") and e["t"] <= lt_] or [e for e in b["_ev"] if e["k"] in ("pin", "arrow")]
+                e = cur[-1]; fxp = e["x"] if e["k"] == "pin" else e["to"][0]
+            else:
+                fxp = 0.5
         cw = int(H * VW / VH)
         x0 = int(min(W - cw, max(0, fxp * W - cw / 2)))
         return cv2.resize(c[:, x0:x0 + cw], (VW, VH), interpolation=cv2.INTER_LINEAR)
