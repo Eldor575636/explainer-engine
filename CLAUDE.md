@@ -9,7 +9,10 @@ A partly automated pipeline for **daily 1–3 minute vertical (9:16) explainer r
 about political ideas, systems and historical figures (democracy, communism, Stalin, NATO…).
 
 - New channel, run in collaboration with the creator's existing Instagram account **california_uzbek**
-  (37k Uzbek YouTube subscribers on the related channel). Channel name: **not decided yet**.
+  (37k Uzbek YouTube subscribers on the related channel). Channel name: **Bilmasboy** ("the one who
+  doesn't know" + "boy" = rich man). Handles: YouTube @bilmasboy, Instagram/TikTok @bilmas.boy,
+  Telegram @bilmas_boy. Closing line: "Bu haqida men ham bilmas edim. Endi hammamiz bilamiz."
+  Character bible: https://claude.ai/artifact/Wh7S4aWNjcpK8cCpQyyxm6
 - Cadence goal: **one video per day**, produced in weekly batches of 7.
 - Quality bar: the "Bir Foiz" (@birfoiz_) Marco Rubio reel. See `docs/reference-analysis.md`.
   We must match its polish while keeping a clearly different look of our own.
