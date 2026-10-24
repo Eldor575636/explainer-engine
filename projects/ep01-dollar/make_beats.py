@@ -1,6 +1,6 @@
 """Builds ep01_beats.json (full episode) from the final script sentences + this beat plan."""
 import json
-S = json.load(open("/tmp/ep01_sents.json"))["sentences"]
+S = json.load(open("ep01_sentences.json", encoding="utf-8"))["sentences"]
 US, DC, UK, FR, DE, SA, TAS, MOS, IRN, JP, IN, KR, ME = (0.22, .37), (.27, .38), (.475, .29), (.49, .33), (.51, .30), (.60, .48), (.65, .38), (.57, .27), (.63, .43), (.86, .38), (.69, .50), (.82, .38), (.58, .44)
 def L(at, t): return {"at": at, "k": "label", "text": t}
 def T(at, t, red=False, **kw):
