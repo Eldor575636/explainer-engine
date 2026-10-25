@@ -331,7 +331,17 @@ def main():
     asr = json.loads((work / "words.json").read_text(encoding="utf-8"))
     total = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
                                   work / "raw.wav"], capture_output=True, text=True).stdout)
-    sw = [(w, si) for si, s in enumerate(sentences) for w in s.split()]
+    # lines the recording skipped: left out of alignment and captions; their beats and events are dropped
+    skip = set(cfg.get("skip_sentences", []))
+    if skip:
+        beats = [b for i, b in enumerate(beats) if i == 0 or b["at"][0] not in skip]
+        for b in beats:
+            b["ev"] = [e for e in b.get("ev", []) if e["at"][0] not in skip]
+            b["props"] = [p for p in b.get("props", []) if p["at"][0] not in skip]
+            if "show" in b and b["show"][0] in skip:
+                b["show"] = b["at"]
+        print(f"Skipping sentences {sorted(skip)} (not in the recording)")
+    sw = [(w, si) for si, s in enumerate(sentences) if si not in skip for w in s.split()]
     times, matched = build.align([w for w, _ in sw], asr)
     print(f"Aligned {matched}/{len(sw)} words")
     beat_starts = {b["at"][0] for b in beats[1:]}

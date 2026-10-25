@@ -27,6 +27,9 @@ if not (work / "words.json").exists() or (work / "words.json").stat().st_mtime <
     print("Transcribing…")
     subprocess.run([sys.executable, str(HERE / "transcribe.py"), str(work / "raw.wav"), "medium", str(work / "words.json")],
                    check=True, env=env)
+    print("Patching stretches Whisper dropped…")
+    subprocess.run([sys.executable, str(HERE / "patch_transcript.py"), str(work / "raw.wav"), str(work / "words.json")],
+                   check=True, env=env)
 print("Rendering…")
 subprocess.run([sys.executable, str(HERE / "v3.py"), str(beats), str(work), str(out)], check=True, env=env)
 print("All done:", out)
