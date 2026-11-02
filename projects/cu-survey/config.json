@@ -44,22 +44,10 @@
     "Haqiqiy"
    ],
    "k": "title",
-   "text": "HALOL MOLIYA",
-   "y": 0.15,
-   "size": 110,
+   "text": "HALOL MOLIYA UCHUN",
+   "y": 0.09,
+   "size": 96,
    "dur": 9
-  },
-  {
-   "at": [
-    0,
-    "Haqiqiy"
-   ],
-   "k": "title",
-   "text": "PLATFORMASI UCHUN",
-   "y": 0.26,
-   "size": 84,
-   "dur": 9,
-   "delay": 0.25
   },
   {
    "at": [
@@ -68,8 +56,8 @@
    ],
    "k": "title",
    "text": "NIMA KERAK?",
-   "y": 0.37,
-   "size": 110,
+   "y": 0.185,
+   "size": 130,
    "dur": 9
   },
   {
@@ -78,22 +66,9 @@
     "bozor"
    ],
    "k": "card",
-   "text": "BOZOR",
-   "x": 0.3,
-   "y": 0.13,
-   "size": 80,
-   "dur": 9
-  },
-  {
-   "at": [
-    1,
-    "mijozlarni"
-   ],
-   "k": "card",
-   "text": "MIJOZLAR",
-   "x": 0.68,
-   "y": 0.13,
-   "size": 80,
+   "text": "BOZOR VA MIJOZLAR",
+   "y": 0.12,
+   "size": 84,
    "dur": 9
   },
   {
@@ -103,13 +78,13 @@
    ],
    "k": "card",
    "text": "XALQARO ILMIY JURNAL",
-   "y": 0.06,
+   "y": 0.035,
    "bg": [
-    12,
-    12,
-    12
+    226,
+    35,
+    26
    ],
-   "size": 66,
+   "size": 62,
    "dur": 9
   },
   {
@@ -119,8 +94,18 @@
    ],
    "k": "card",
    "text": "MUROBAHA",
-   "y": 0.43,
-   "size": 80,
+   "y": 0.255,
+   "size": 72,
+   "bg": [
+    255,
+    210,
+    0
+   ],
+   "fg": [
+    12,
+    12,
+    12
+   ],
    "dur": 9
   },
   {
@@ -130,8 +115,8 @@
    ],
    "k": "title",
    "text": "MAXSUS SO'ROVNOMA",
-   "y": 0.06,
-   "size": 72,
+   "y": 0.035,
+   "size": 66,
    "dur": 9
   },
   {
@@ -142,21 +127,10 @@
    "k": "link",
    "text": "HAVOLA IZOHDA VA BIODA",
    "x": 0.4,
-   "y": 0.86,
+   "y": 0.87,
    "tx": 0.92,
-   "ty": 0.74,
+   "ty": 0.75,
    "dur": 3.4
-  },
-  {
-   "at": [
-    4,
-    "bozorni"
-   ],
-   "k": "card",
-   "text": "BOZORNI O'RGANAMIZ",
-   "y": 0.11,
-   "size": 76,
-   "dur": 12
   },
   {
    "at": [
@@ -165,13 +139,8 @@
    ],
    "k": "card",
    "text": "ISLOMIY MOLIYA XIZMATLARI",
-   "y": 0.19,
-   "bg": [
-    12,
-    12,
-    12
-   ],
-   "size": 66,
+   "y": 0.12,
+   "size": 70,
    "dur": 12
   },
   {
@@ -182,7 +151,7 @@
    "k": "check",
    "text": "SHAXSIY SAVOLLAR YO'Q",
    "x": 0.55,
-   "y": 0.44,
+   "y": 0.255,
    "dur": 9
   },
   {
@@ -195,9 +164,9 @@
    "from": 0,
    "label": "SAVOL",
    "x": 0.5,
-   "y": 0.13,
-   "size": 150,
-   "lsize": 56,
+   "y": 0.12,
+   "size": 180,
+   "lsize": 70,
    "dur": 12
   },
   {
@@ -210,9 +179,9 @@
    "from": 0,
    "label": "DAQIQA",
    "x": 0.5,
-   "y": 0.37,
-   "size": 150,
-   "lsize": 56,
+   "y": 0.36,
+   "size": 180,
+   "lsize": 70,
    "dur": 12
   },
   {
@@ -223,11 +192,11 @@
    "k": "stat",
    "to": 3,
    "from": 1,
-   "label": "TIL: UZ · RU · EN",
+   "label": "UZ · RU · EN",
    "x": 0.5,
-   "y": 0.61,
-   "size": 150,
-   "lsize": 56,
+   "y": 0.6,
+   "size": 180,
+   "lsize": 70,
    "dur": 12
   },
   {
@@ -238,9 +207,9 @@
    "k": "link",
    "text": "HOZIR TO'LDIRING",
    "x": 0.4,
-   "y": 0.86,
+   "y": 0.87,
    "tx": 0.92,
-   "ty": 0.74,
+   "ty": 0.75,
    "dur": 3.4
   },
   {
@@ -250,9 +219,9 @@
    ],
    "k": "card",
    "text": "AQSH",
-   "x": 0.28,
-   "y": 0.43,
-   "size": 80,
+   "x": 0.27,
+   "y": 0.255,
+   "size": 72,
    "dur": 9
   },
   {
@@ -262,9 +231,9 @@
    ],
    "k": "card",
    "text": "BUTUN DUNYO",
-   "x": 0.68,
-   "y": 0.43,
-   "size": 80,
+   "x": 0.66,
+   "y": 0.255,
+   "size": 72,
    "dur": 9
   },
   {
@@ -274,8 +243,8 @@
    ],
    "k": "title",
    "text": "KATTA RAHMAT!",
-   "y": 0.86,
-   "size": 90,
+   "y": 0.12,
+   "size": 110,
    "dur": 4
   }
  ],
@@ -283,7 +252,7 @@
  "layout": [
   {
    "at": 0,
-   "mode": "split",
+   "mode": "cut",
    "bg": [
     226,
     35,
@@ -303,30 +272,50 @@
     1,
     "ammo"
    ],
-   "mode": "face"
+   "mode": "cut",
+   "bg": [
+    244,
+    240,
+    232
+   ]
   },
   {
    "at": [
     2,
     "Hozirda"
    ],
-   "mode": "split",
-   "img": "pics/p2.png"
+   "mode": "cut",
+   "bg": [
+    18,
+    18,
+    18
+   ],
+   "card": "pics/p2.png"
   },
   {
    "at": [
     2,
     "maxsus"
    ],
-   "mode": "split",
-   "img": "pics/p5.png"
+   "mode": "cut",
+   "bg": [
+    226,
+    35,
+    26
+   ],
+   "card": "pics/p5.png"
   },
   {
    "at": [
     3,
     "Havolani"
    ],
-   "mode": "face"
+   "mode": "cut",
+   "bg": [
+    244,
+    240,
+    232
+   ]
   },
   {
    "at": [
@@ -341,15 +330,25 @@
     4,
     "yordam"
    ],
-   "mode": "face"
+   "mode": "cut",
+   "bg": [
+    18,
+    18,
+    18
+   ]
   },
   {
    "at": [
     5,
     "So'rovnomada"
    ],
-   "mode": "split",
-   "img": "pics/p6.png"
+   "mode": "cut",
+   "bg": [
+    244,
+    240,
+    232
+   ],
+   "card": "pics/p6.png"
   },
   {
    "at": [
@@ -368,22 +367,52 @@
     6,
     "javob"
    ],
-   "mode": "face"
+   "mode": "cut",
+   "bg": [
+    226,
+    35,
+    26
+   ]
+  },
+  {
+   "at": [
+    7,
+    "Hozir"
+   ],
+   "mode": "cut",
+   "bg": [
+    244,
+    240,
+    232
+   ]
   },
   {
    "at": [
     7,
     "nafaqat"
    ],
-   "mode": "split",
-   "img": "pics/p4.png"
+   "mode": "cut",
+   "bg": [
+    18,
+    18,
+    18
+   ],
+   "card": "pics/p4.png"
   },
   {
    "at": [
     8,
     "Sizga"
    ],
-   "mode": "face"
+   "mode": "cut",
+   "bg": [
+    226,
+    35,
+    26
+   ]
   }
+ ],
+ "nocap_sentences": [
+  0
  ]
 }

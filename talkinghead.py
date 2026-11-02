@@ -57,6 +57,53 @@ def card(text, size=64, fg=WHITE, bg=RED, pad=(34, 18)):
     return img
 
 
+def picture_card(path, cw, ch, border=12, radius=34):
+    """Generated picture as a floating card: cover-cropped, rounded, white border, soft shadow."""
+    from PIL import ImageDraw, ImageFilter
+    im = Image.open(path).convert("RGB")
+    sc = max(cw / im.width, ch / im.height)
+    im = im.resize((math.ceil(im.width * sc), math.ceil(im.height * sc)), Image.LANCZOS)
+    x0, y0 = (im.width - cw) // 2, (im.height - ch) // 2
+    im = im.crop((x0, y0, x0 + cw, y0 + ch))
+    pad = 30
+    out = Image.new("RGBA", (cw + 2 * border + 2 * pad, ch + 2 * border + 2 * pad), (0, 0, 0, 0))
+    sh = Image.new("L", out.size, 0)
+    ImageDraw.Draw(sh).rounded_rectangle((pad, pad + 10, out.width - pad, out.height - pad + 10), radius + border, fill=110)
+    out.putalpha(sh.filter(ImageFilter.GaussianBlur(14)))
+    fr_ = Image.new("RGBA", out.size, (0, 0, 0, 0))
+    ImageDraw.Draw(fr_).rounded_rectangle((pad, pad, out.width - pad, out.height - pad), radius + border, fill=(255, 255, 255, 255))
+    out.alpha_composite(fr_)
+    m = Image.new("L", (cw, ch), 0); ImageDraw.Draw(m).rounded_rectangle((0, 0, cw - 1, ch - 1), radius, fill=255)
+    out.paste(im, (pad + border, pad + border), m)
+    return out
+
+
+def person_masks(video, T, mw=270, mh=480):
+    """Person alpha per frame (MediaPipe multiclass selfie segmenter), lightly smoothed over time."""
+    import mediapipe as mp
+    from mediapipe.tasks.python import vision, BaseOptions
+    seg = vision.ImageSegmenter.create_from_options(vision.ImageSegmenterOptions(
+        base_options=BaseOptions(model_asset_path=str(HERE / "assets" / "selfie_multiclass.tflite")),
+        output_confidence_masks=True, running_mode=vision.RunningMode.IMAGE))
+    dec = subprocess.Popen(["ffmpeg", "-v", "error", "-i", video, "-vf", f"scale=540:960,fps={FPS}", "-f", "rawvideo",
+                            "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+    out, prev = [], None
+    while True:
+        buf = dec.stdout.read(540 * 960 * 3)
+        if len(buf) < 540 * 960 * 3:
+            break
+        img = np.frombuffer(buf, np.uint8).reshape(960, 540, 3)
+        r = seg.segment(mp.Image(image_format=mp.ImageFormat.SRGB, data=np.ascontiguousarray(img)))
+        a = 1 - cv2.resize(r.confidence_masks[0].numpy_view(), (mw, mh))
+        a = np.clip((a - 0.15) / 0.7, 0, 1)
+        prev = a if prev is None else 0.55 * a + 0.45 * prev
+        out.append((prev * 255).astype(np.uint8))
+        if len(out) % 300 == 0:
+            print("  masks", len(out))
+    dec.wait()
+    return np.stack(out)
+
+
 def main():
     cfg = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
     video, wpath, out = sys.argv[2], sys.argv[3], Path(sys.argv[4])
@@ -137,6 +184,8 @@ def main():
             fy = L.get("fy", 0.5); x0 = (im.width - size[0]) // 2; y0 = int((im.height - size[1]) * fy)
             bg = np.asarray(im.crop((x0, y0, x0 + size[0], y0 + size[1])), np.float32) / 255
         L["bgimg"] = bg
+        if L.get("card"):
+            L["cardimg"] = picture_card(Path(sys.argv[1]).parent / L["card"], int(W * 0.86), int(H * 0.25))
         segs.append(L)
     segs.sort(key=lambda L: L["t"])
     for L in segs[1:]:
@@ -170,6 +219,20 @@ def main():
             out[PH:] = cv2.warpAffine(src, np.float32([[z, 0, W / 2 - z * cx], [0, z, PH / 2 - z * cy]]), (W, PH), flags=cv2.INTER_LINEAR)
             out[PH - 5:PH + 5] = np.float32(RED) / 255
             return out
+        if m == "cut":
+            out = panel(L, t)
+            if "cardimg" in L:
+                lt = t - L["t"]
+                fx.paste(out, L["cardimg"], W / 2, H * 0.145, back(lt / 0.4) * (1 + 0.008 * lt), min(1, lt / 0.1))
+            a = mask_at(fi_now[0])
+            z = 0.64 + 0.55 * (zoom_at(t) - 1)          # sentence framing 0.64-0.83, punches bigger
+            tx = W / 2 - z * fxp * W; ty = H - z * H
+            Mx = np.float32([[z, 0, tx], [0, z, ty]])
+            ps = cv2.warpAffine(src, Mx, (W, H), flags=cv2.INTER_LINEAR)
+            pa = cv2.warpAffine(a, Mx, (W, H), flags=cv2.INTER_LINEAR)[..., None]
+            rim = np.clip(cv2.GaussianBlur(cv2.dilate(pa[..., 0], np.ones((13, 13), np.uint8)), (0, 0), 2)[..., None] - pa, 0, 1)
+            out = out * (1 - rim) + rim
+            return out * (1 - pa) + ps * pa
         z = zoom_at(t); fr = src
         if abs(z - 1) > 1e-3:
             tx = min(0, max(W - z * W, W / 2 - z * fxp * W)); ty = min(0, max(H - z * H, H * 0.36 - z * fyp * H))
@@ -179,11 +242,27 @@ def main():
         nxt = [L["t"] for L in segs if L["t"] > e["t"] + 0.01]
         if nxt:
             e["dur"] = min(e.get("dur", 2.6), nxt[0] - e["t"] + 0.1)
-    CAPY = {"face": 0.70, "split": 0.50, "full": 0.82}
+    CAPY = {"face": 0.70, "split": 0.50, "full": 0.82, "cut": 0.70}
+    nocap = set(cfg.get("nocap_sentences", []))
+
+    # person masks (only when a 'cut' layout is used), cached in the work dir
+    masks = None
+    if any(L["mode"] == "cut" for L in segs):
+        mp_ = work / "masks.npy"
+        if not mp_.exists():
+            np.save(mp_, person_masks(video, T))
+        masks = np.load(mp_, mmap_mode="r")
+    fi_now = [0]
+
+    def mask_at(fi):
+        m_ = masks[min(fi, len(masks) - 1)].astype(np.float32) / 255
+        return cv2.resize(m_, (W, H), interpolation=cv2.INTER_LINEAR)
 
     # captions (3 words, never across sentences)
     chunks, cur = [], []
     for k, ((w, si), (s, e)) in enumerate(zip(sw, times)):
+        if si in cfg.get("nocap_sentences", []):
+            continue
         cur.append((new_alphabet(w).upper().strip("«»"), s, e))
         last = k == len(sw) - 1 or sw[k + 1][1] != si
         if len(cur) == 3 or last or w.endswith((",", ":")):
@@ -207,6 +286,7 @@ def main():
             break
         t = fi / FPS
         src = np.frombuffer(buf, np.uint8).reshape(H, W, 3).astype(np.float32) / 255
+        fi_now[0] = fi
         si_ = seg_at(t); L = segs[si_]; fr = compose(L, src, t)
         lt_ = t - L["t"]
         if si_ > 0 and lt_ < 0.2:                       # quick slide-in of the new layout
