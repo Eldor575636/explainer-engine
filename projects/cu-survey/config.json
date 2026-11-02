@@ -1,0 +1,269 @@
+{
+ "sentences": [
+  "Haqiqiy halol moliyalash platformasi uchun nima qilish kerak?",
+  "Albatta, avvalo bozor va mijozlarni chuqurroq o'rganish kerak, ammo buning uchun menga sizning yordamingiz kerak bo'ladi.",
+  "Hozirda xalqaro ilmiy jurnal uchun «Iqtisodiy e'tiqod va ko'rinmas qarzdorlar: murobaha shartnomalari asosida moliyalash» deb nomlangan ilmiy izlanish uchun maxsus so'rovnoma tayyorladik.",
+  "Havolani asosiy qismda va izohlarda qoldirganman.",
+  "Bu so'rovnomani to'ldirish orqali ayni bozorni chuqurroq o'rganishimizga va islomiy moliya asosidagi xizmatlarimizni takomillashtirishimizga yordam bergan bo'lasiz.",
+  "So'rovnomada shaxsiy savollar so'ralmaydi.",
+  "Yigirmata savoldan iborat so'rovnoma to'rt daqiqa vaqtingizni oladi, hamda o'zbek, rus va ingliz tillarida javob berishingiz mumkin bo'ladi.",
+  "Hozir havola orqali o'tib so'rovnomani to'ldiring va nafaqat AQShda, balki butun dunyo bo'ylab islomiy moliya rivoji uchun hissangizni qo'shing.",
+  "Sizga esa oldindan katta rahmat."
+ ],
+ "face": [
+  0.52,
+  0.28
+ ],
+ "music": "assets/music/curious.mp3",
+ "punch": [
+  [
+   0,
+   "kerak?"
+  ],
+  [
+   1,
+   "yordamingiz"
+  ],
+  [
+   5,
+   "shaxsiy"
+  ],
+  [
+   7,
+   "to'ldiring"
+  ],
+  [
+   8,
+   "katta"
+  ]
+ ],
+ "events": [
+  {
+   "at": [
+    0,
+    "Haqiqiy"
+   ],
+   "k": "title",
+   "text": "HALOL MOLIYA PLATFORMASI",
+   "y": 0.1,
+   "dur": 3.6,
+   "size": 66
+  },
+  {
+   "at": [
+    0,
+    "Haqiqiy"
+   ],
+   "k": "title",
+   "text": "UCHUN NIMA KERAK?",
+   "y": 0.165,
+   "dur": 3.6,
+   "size": 66,
+   "delay": 0.25
+  },
+  {
+   "at": [
+    1,
+    "bozor"
+   ],
+   "k": "card",
+   "text": "BOZOR",
+   "x": 0.3,
+   "y": 0.47,
+   "dur": 2.2
+  },
+  {
+   "at": [
+    1,
+    "mijozlarni"
+   ],
+   "k": "card",
+   "text": "MIJOZLAR",
+   "x": 0.7,
+   "y": 0.47,
+   "dur": 2.0
+  },
+  {
+   "at": [
+    1,
+    "yordamingiz"
+   ],
+   "k": "title",
+   "text": "SIZNING YORDAMINGIZ KERAK!",
+   "y": 0.12,
+   "dur": 2.4,
+   "size": 64
+  },
+  {
+   "at": [
+    2,
+    "xalqaro"
+   ],
+   "k": "card",
+   "text": "XALQARO ILMIY JURNAL",
+   "x": 0.5,
+   "y": 0.12,
+   "dur": 3.0,
+   "bg": [
+    12,
+    12,
+    12
+   ]
+  },
+  {
+   "at": [
+    2,
+    "murobaha"
+   ],
+   "k": "card",
+   "text": "MUROBAHA",
+   "x": 0.5,
+   "y": 0.47,
+   "dur": 2.2
+  },
+  {
+   "at": [
+    2,
+    "maxsus"
+   ],
+   "k": "title",
+   "text": "MAXSUS SO'ROVNOMA",
+   "y": 0.12,
+   "dur": 2.2,
+   "size": 70
+  },
+  {
+   "at": [
+    3,
+    "Havolani"
+   ],
+   "k": "link",
+   "text": "HAVOLA IZOHDA VA BIODA",
+   "y": 0.47,
+   "dur": 3.4
+  },
+  {
+   "at": [
+    4,
+    "chuqurroq"
+   ],
+   "k": "card",
+   "text": "BOZORNI O'RGANAMIZ",
+   "x": 0.5,
+   "y": 0.12,
+   "dur": 2.0,
+   "bg": [
+    12,
+    12,
+    12
+   ]
+  },
+  {
+   "at": [
+    4,
+    "islomiy"
+   ],
+   "k": "card",
+   "text": "ISLOMIY MOLIYA XIZMATLARI",
+   "x": 0.5,
+   "y": 0.47,
+   "dur": 3.2
+  },
+  {
+   "at": [
+    5,
+    "shaxsiy"
+   ],
+   "k": "check",
+   "text": "SHAXSIY SAVOLLAR YO'Q",
+   "x": 0.56,
+   "y": 0.47,
+   "dur": 2.4
+  },
+  {
+   "at": [
+    6,
+    "Yigirmata"
+   ],
+   "k": "stat",
+   "to": 20,
+   "label": "SAVOL",
+   "x": 0.2,
+   "y": 0.47,
+   "dur": 8.4
+  },
+  {
+   "at": [
+    6,
+    "to'rt"
+   ],
+   "k": "stat",
+   "to": 4,
+   "label": "DAQIQA",
+   "x": 0.5,
+   "y": 0.47,
+   "dur": 6.5
+  },
+  {
+   "at": [
+    6,
+    "o'zbek"
+   ],
+   "k": "stat",
+   "from": 1,
+   "to": 3,
+   "label": "TIL: UZ RU EN",
+   "x": 0.8,
+   "y": 0.47,
+   "dur": 4.4
+  },
+  {
+   "at": [
+    7,
+    "Hozir"
+   ],
+   "k": "link",
+   "text": "HOZIR TO'LDIRING",
+   "y": 0.47,
+   "dur": 3.2
+  },
+  {
+   "at": [
+    7,
+    "AQShda"
+   ],
+   "k": "card",
+   "text": "AQSH",
+   "x": 0.3,
+   "y": 0.47,
+   "dur": 2.2,
+   "bg": [
+    12,
+    12,
+    12
+   ]
+  },
+  {
+   "at": [
+    7,
+    "butun"
+   ],
+   "k": "card",
+   "text": "BUTUN DUNYO",
+   "x": 0.7,
+   "y": 0.47,
+   "dur": 2.6
+  },
+  {
+   "at": [
+    8,
+    "katta"
+   ],
+   "k": "title",
+   "text": "KATTA RAHMAT!",
+   "y": 0.47,
+   "dur": 1.6,
+   "size": 90
+  }
+ ]
+}
