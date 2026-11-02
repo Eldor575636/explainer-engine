@@ -225,7 +225,7 @@ def main():
                 lt = t - L["t"]
                 fx.paste(out, L["cardimg"], W / 2, H * 0.145, back(lt / 0.4) * (1 + 0.008 * lt), min(1, lt / 0.1))
             a = mask_at(fi_now[0])
-            z = 0.64 + 0.55 * (zoom_at(t) - 1)          # sentence framing 0.64-0.83, punches bigger
+            z = L.get("z", 0.64 if "cardimg" in L else 0.8) + 0.55 * (zoom_at(t) - 1)   # smaller under a picture card
             tx = W / 2 - z * fxp * W; ty = H - z * H
             Mx = np.float32([[z, 0, tx], [0, z, ty]])
             ps = cv2.warpAffine(src, Mx, (W, H), flags=cv2.INTER_LINEAR)
