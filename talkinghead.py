@@ -255,9 +255,13 @@ def main():
     motion.write_wav(work / "sfx.wav", 0.8 * fx.extra_sfx(motion.sfx_track(N, [(a, b) for a, b in sfx if b in ("pop", "whoosh", "thud")]) +
                                                      _ticks(N, [a for a, b in sfx if b == "tick"]), xsfx))
     music = cfg.get("music")
-    inputs = ["-i", str(tmpv), "-i", video, "-i", str(work / "sfx.wav")]
-    fc = ("[1:a]highpass=f=80,acompressor=threshold=0.1:ratio=3:attack=10:release=200,loudnorm=I=-16:TP=-2[v];"
-          "[v]asplit=2[vv][vk];")
+    # voice is levelled in its own pass: loudnorm feeding asplit+sidechaincompress drops the last ~3 s
+    voice = work / "voice.wav"
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", video, "-vn", "-af",
+                    "highpass=f=80,acompressor=threshold=0.1:ratio=3:attack=10:release=200,loudnorm=I=-16:TP=-2",
+                    "-ar", str(SR), str(voice)], check=True)
+    inputs = ["-i", str(tmpv), "-i", str(voice), "-i", str(work / "sfx.wav")]
+    fc = "[1:a]asplit=2[vv][vk];"
     if music:
         inputs += ["-stream_loop", "-1", "-i", str(HERE / music)]
         fc += (f"[3:a]volume={cfg.get('music_vol', 0.22)},afade=t=in:d=0.8,afade=t=out:st={max(0, T - 2):.2f}:d=2[m];"
