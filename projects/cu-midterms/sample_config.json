@@ -1,0 +1,230 @@
+{
+ "sentences": [
+  "Amerikada Tramp uchun siyosiy hayot endi deyarli muddatidan avval yakuniga yetdi.",
+  "Prezidentning qo'lida Oq uy bor, lekin Kongress va xatto Senat ustidan nazorat ham Demokratlarga o'tmoqda.",
+  "Xullas, Trampning siyosiy rejalari endilikda, Washington koridorlarida katta tirbandlikka tushib qoladiganga o'xshaydi.",
+  "Nega?",
+  "Bugun 2026-yilgi oraliq saylovlarda Demokratlar Senat nazoratini qo'lga kiritdi.",
+  "Respublikachilardan kamida 6 ta Senat o'rni Demokratlar tomoniga o'tdi."
+ ],
+ "face": [
+  0.52,
+  0.3
+ ],
+ "music": "assets/music/dramatic.mp3",
+ "music_vol": 0.5,
+ "overlay": "ig_card.png",
+ "capy": {
+  "full": 0.7
+ },
+ "punch": [
+  [
+   0,
+   "yakuniga"
+  ],
+  [
+   3,
+   "Nega?"
+  ],
+  [
+   4,
+   "Demokratlar"
+  ]
+ ],
+ "layout": [
+  {
+   "at": 0,
+   "mode": "face"
+  },
+  {
+   "at": [
+    1,
+    "Prezidentning"
+   ],
+   "mode": "full",
+   "img": "pics/p2.png"
+  },
+  {
+   "at": [
+    1,
+    "lekin"
+   ],
+   "mode": "full",
+   "img": "pics/p3.png"
+  },
+  {
+   "at": [
+    2,
+    "Xullas,"
+   ],
+   "mode": "full",
+   "img": "pics/p1.png"
+  },
+  {
+   "at": [
+    3,
+    "Nega?"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    5,
+    "Respublikachilardan"
+   ],
+   "mode": "full",
+   "bg": [
+    18,
+    30,
+    60
+   ]
+  }
+ ],
+ "events": [
+  {
+   "at": [
+    0,
+    "Amerikada"
+   ],
+   "k": "title",
+   "text": "TRAMP UCHUN",
+   "y": 0.09,
+   "size": 100,
+   "dur": 9
+  },
+  {
+   "at": [
+    0,
+    "muddatidan"
+   ],
+   "k": "card",
+   "text": "MUDDATIDAN AVVAL YAKUN?",
+   "y": 0.17,
+   "size": 78,
+   "dur": 9
+  },
+  {
+   "at": [
+    1,
+    "Oq"
+   ],
+   "k": "card",
+   "text": "OQ UY — TRAMP",
+   "y": 0.1,
+   "size": 84,
+   "bg": [
+    226,
+    35,
+    26
+   ],
+   "dur": 9
+  },
+  {
+   "at": [
+    1,
+    "Kongress"
+   ],
+   "k": "card",
+   "text": "KONGRESS + SENAT",
+   "y": 0.1,
+   "size": 84,
+   "bg": [
+    12,
+    12,
+    12
+   ],
+   "dur": 9
+  },
+  {
+   "at": [
+    1,
+    "Demokratlarga"
+   ],
+   "k": "card",
+   "text": "DEMOKRATLARGA",
+   "y": 0.18,
+   "size": 84,
+   "bg": [
+    30,
+    95,
+    210
+   ],
+   "dur": 9
+  },
+  {
+   "at": [
+    2,
+    "tirbandlikka"
+   ],
+   "k": "title",
+   "text": "KATTA TIRBANDLIK",
+   "y": 0.1,
+   "size": 100,
+   "dur": 9
+  },
+  {
+   "at": [
+    3,
+    "Nega?"
+   ],
+   "k": "card",
+   "text": "NEGA?",
+   "y": 0.13,
+   "size": 150,
+   "dur": 2
+  },
+  {
+   "at": [
+    4,
+    "oraliq"
+   ],
+   "k": "card",
+   "text": "2026 ORALIQ SAYLOVLAR",
+   "y": 0.1,
+   "size": 80,
+   "bg": [
+    12,
+    12,
+    12
+   ],
+   "dur": 9
+  },
+  {
+   "at": [
+    4,
+    "Senat"
+   ],
+   "k": "card",
+   "text": "SENAT → DEMOKRATLAR",
+   "y": 0.18,
+   "size": 80,
+   "bg": [
+    30,
+    95,
+    210
+   ],
+   "dur": 9
+  },
+  {
+   "at": [
+    5,
+    "kamida"
+   ],
+   "k": "stat",
+   "from": 0,
+   "to": 6,
+   "suffix": "+",
+   "label": "SENAT O'RNI",
+   "x": 0.5,
+   "y": 0.3,
+   "size": 220,
+   "lsize": 70,
+   "lbg": [
+    255,
+    255,
+    255
+   ],
+   "dur": 9
+  }
+ ]
+}

@@ -243,6 +243,8 @@ def main():
         if nxt:
             e["dur"] = min(e.get("dur", 2.6), nxt[0] - e["t"] + 0.1)
     CAPY = {"face": 0.70, "split": 0.50, "full": 0.82, "cut": 0.70}
+    CAPY.update(cfg.get("capy", {}))
+    overlay = Image.open(Path(sys.argv[1]).parent / cfg["overlay"]).convert("RGBA") if cfg.get("overlay") else None
     nocap = set(cfg.get("nocap_sentences", []))
 
     # person masks (only when a 'cut' layout is used), cached in the work dir
@@ -327,6 +329,8 @@ def main():
             fx.paste(fr, imgs[k], W / 2, H * CAPY[L['mode']], 0.94 + 0.06 * back((t - st) / 0.15))
         # progress bar
         cv2.rectangle(fr, (0, 0), (int(W * t / T), 12), tuple(c / 255 for c in RED), -1)
+        if overlay is not None:                      # fixed top layer (e.g. the account card added in Instagram)
+            fx.paste(fr, overlay, W / 2, H / 2, 1.0, 1.0)
         enc.stdin.write((np.clip(fr, 0, 1) * 255).astype(np.uint8).tobytes())
     enc.stdin.close(); enc.wait(); dec.stdout.close(); dec.wait()
 
