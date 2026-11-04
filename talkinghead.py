@@ -135,6 +135,8 @@ def main():
     zooms.sort()
 
     def zoom_at(t):
+        if cfg.get("zoom") is False:
+            return 1.0
         z, prev, tz = 1.0, 1.0, 0.0
         for k, (a, zz) in enumerate(zooms):
             if a <= t:
@@ -329,8 +331,10 @@ def main():
             fx.paste(fr, imgs[k], W / 2, H * CAPY[L['mode']], 0.94 + 0.06 * back((t - st) / 0.15))
         # progress bar
         cv2.rectangle(fr, (0, 0), (int(W * t / T), 12), tuple(c / 255 for c in RED), -1)
-        if overlay is not None:                      # fixed top layer (e.g. the account card added in Instagram)
-            fx.paste(fr, overlay, W / 2, H / 2, 1.0, 1.0)
+        if overlay is not None and L["mode"] in cfg.get("overlay_modes", ["face", "split", "full", "cut"]):
+            fx.paste(fr, overlay, W / 2, H / 2, 1.0, 1.0)   # fixed top layer (e.g. the account card added in Instagram)
+        if t >= cfg.get("untouched_from", 1e9):          # end screen (ads) passes through as filmed
+            fr = src
         enc.stdin.write((np.clip(fr, 0, 1) * 255).astype(np.uint8).tobytes())
     enc.stdin.close(); enc.wait(); dec.stdout.close(); dec.wait()
 

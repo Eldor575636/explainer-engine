@@ -1,0 +1,389 @@
+{
+ "sentences": [
+  "Amerikada Tramp uchun siyosiy hayot endi deyarli muddatidan avval yakuniga yetdi.",
+  "Prezidentning qo'lida Oq uy bor, lekin Kongress va xatto Senat ustidan nazorat ham Demokratlarga o'tmoqda.",
+  "Xullas, Trampning siyosiy rejalari endilikda, Washington koridorlarida katta tirbandlikka tushib qoladiganga o'xshaydi.",
+  "Nega?",
+  "Bugun 2026-yilgi oraliq saylovlarda Demokratlar Senat nazoratini qo'lga kiritdi.",
+  "Respublikachilardan kamida 6 ta Senat o'rni Demokratlar tomoniga o'tdi.",
+  "Vakillar palatasida yani Kongressda yoki bizning tilda Parlamentda ham Demokratlar katta yutuqlarga erishdi va kamida 12 o'rinni qaytarib olishgani takidlanmoqda.",
+  "Endi esa eng qiziq joyiga keldik!",
+  "Trampning katta-katta rejalari bor, lekin ularni Kongressdan o'tkazish oson bo'lmaydi.",
+  "Aniqrogi endilik deyarli imkonsiz bo'lib qoladi.",
+  "Respublikachilar qonun taklif qilsa, Demokratlar qonunni ovozdan o'tkazishmaydi, xattoki ovozga qo'ymasliklari ham mumkin.",
+  "Demokratlar qonun taklif qilgan taqdirda esa, Tramp veto qo'yishi yani so'nggi nuqtada Prezident sifatida imzolab qonunni tasdiqlab, kuchga kirishiga imkon bermaydi.",
+  "Xullas, keyingi ikki yillik davomida AQSh siyosatida ikki tomonning biri gazni bosadi, ikkinchisi tormozni!",
+  "Mashina esa joyidan deyarli qimirlamasdan turaveradi.",
+  "Ikkinchidan, Tramp ma'muriyati yani vazirlar uchun Kongress eshiklari endi haqiqiy prokroturaga aylanadi.",
+  "Demokratlar vazirlarni chaqirishi, hujjatlar talab qilishi, hukumat faoliyatini tekshirishi va ayrim qarorlar yuzasidan tergovlar boshlashga kirishib ketishadi.",
+  "Buning ortidan esa ko'plab vazirlab istefo beradi.",
+  "Trampning o'zi esa endi siyosiy raqiblari bilan kurashishdan tashqari, Kongressdagi eshituvlar va tekshiruvlarga ham vaqt ajratishiga to'g'ri keladi.",
+  "Eng muhimi, Senat federal sudyalar va yuqori lavozimli amaldorlarni tasdiqlashda katta rol o'ynaydi va bu qudrat endilikda demokratlar qo'liga o'tadi.",
+  "Demak, Tramp kimnidir muhim lavozimga tayinlamoqchi bo'lsa, endi Demokratlarning roziligiga olishga majbur bo'ladi.",
+  "Bu degani tomonlar kelisholmasligi va qaysar Trampning odatiga ko'ra, oldimizda balki bir necha government shutdown yani hukumat o'z faoliyatini to'xtatishi hodisalari sodir bo'ladi.",
+  "Bu o'zgarishlar 2027-yil 3-yanvardan, yangi Kongress ish boshlaganidan keyin kuchga kiradi.",
+  "Trampning prezidentlik muddati davom etadi, lekin uning siyosiy rejalarini amalga oshirish ancha qiyinlashadi.",
+  "Demokratlar tomoni allaqachon Trampning qolgan ikki yillik Prezidentlik davrini, soxta qo'g'irchoqqa va xatto qo'lidan hech bir ish kelmaydigan irkit o'rdakchaga taqqoslashmoqda.",
+  "Xullas, Oq uyda Tramp, Kongressda esa Demokratlar hukmronlik qilishadi.",
+  "Keyingi ikki yil Amerikada siyosiy o'zgaruvchan boshqaruvdan ko'ra siyosiy besamar tortishuvlar ko'proq bo'ladiganga o'xshaydi!",
+  "Sizningcha, Tramp keyingi ikki yilni samarali o'tkaza oladimi yoki Vashingtonda katta siyosiy tirbandlik boshlanadimi?"
+ ],
+ "face": [
+  0.52,
+  0.3
+ ],
+ "zoom": false,
+ "events": [],
+ "music": "assets/music/dramatic.mp3",
+ "music_vol": 0.14,
+ "overlay": "ig_card_clean.png",
+ "overlay_modes": [
+  "full"
+ ],
+ "capy": {
+  "full": 0.7,
+  "face": 0.7
+ },
+ "untouched_from": 171.7,
+ "layout": [
+  {
+   "at": 0,
+   "mode": "face"
+  },
+  {
+   "at": [
+    0,
+    "Tramp"
+   ],
+   "mode": "full",
+   "img": "photos/trump.jpg",
+   "fy": 0.25
+  },
+  {
+   "at": [
+    0,
+    "deyarli"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    1,
+    "Oq"
+   ],
+   "mode": "full",
+   "img": "pics/p2.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    1,
+    "Kongress"
+   ],
+   "mode": "full",
+   "img": "pics/p3.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    2,
+    "Xullas,"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    2,
+    "Washington"
+   ],
+   "mode": "full",
+   "img": "pics/p1.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    3,
+    "Nega?"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    4,
+    "Demokratlar"
+   ],
+   "mode": "full",
+   "img": "photos/senate_vote.jpg",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    5,
+    "Respublikachilardan"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    6,
+    "Vakillar"
+   ],
+   "mode": "full",
+   "img": "pics/p3.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    6,
+    "katta"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    8,
+    "Trampning"
+   ],
+   "mode": "full",
+   "img": "pics/p5.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    9,
+    "Aniqrogi"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    10,
+    "Respublikachilar"
+   ],
+   "mode": "full",
+   "img": "pics/p3.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    11,
+    "Demokratlar"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    11,
+    "veto"
+   ],
+   "mode": "full",
+   "img": "pics/p5.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    12,
+    "Xullas,"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    12,
+    "gazni"
+   ],
+   "mode": "full",
+   "img": "pics/p4.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    13,
+    "Mashina"
+   ],
+   "mode": "full",
+   "img": "pics/p1.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    14,
+    "Ikkinchidan,"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    14,
+    "Kongress"
+   ],
+   "mode": "full",
+   "img": "pics/p6.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    15,
+    "tekshirishi"
+   ],
+   "mode": "full",
+   "img": "pics/p6.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    16,
+    "Buning"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    17,
+    "Trampning"
+   ],
+   "mode": "full",
+   "img": "photos/trump.jpg",
+   "fy": 0.25
+  },
+  {
+   "at": [
+    17,
+    "Kongressdagi"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    18,
+    "federal"
+   ],
+   "mode": "full",
+   "img": "pics/p7.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    18,
+    "qudrat"
+   ],
+   "mode": "full",
+   "img": "photos/senate_vote.jpg",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    19,
+    "Demak,"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    19,
+    "tayinlamoqchi"
+   ],
+   "mode": "full",
+   "img": "pics/p5.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    20,
+    "Bu"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    20,
+    "government"
+   ],
+   "mode": "full",
+   "img": "pics/p8.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    21,
+    "Bu"
+   ],
+   "mode": "full",
+   "img": "pics/p9.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    22,
+    "Trampning"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    22,
+    "siyosiy"
+   ],
+   "mode": "full",
+   "img": "photos/trump.jpg",
+   "fy": 0.25
+  },
+  {
+   "at": [
+    23,
+    "Demokratlar"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    23,
+    "irkit"
+   ],
+   "mode": "full",
+   "img": "pics/p10.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    24,
+    "Oq"
+   ],
+   "mode": "full",
+   "img": "pics/p2.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    24,
+    "Kongressda"
+   ],
+   "mode": "full",
+   "img": "pics/p3.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    25,
+    "Keyingi"
+   ],
+   "mode": "face"
+  },
+  {
+   "at": [
+    26,
+    "Vashingtonda"
+   ],
+   "mode": "full",
+   "img": "pics/p1.png",
+   "fy": 0.5
+  },
+  {
+   "at": [
+    26,
+    "boshlanadimi?"
+   ],
+   "mode": "face"
+  }
+ ]
+}
