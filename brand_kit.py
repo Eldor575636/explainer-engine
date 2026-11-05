@@ -17,7 +17,7 @@ from avatar import bubble
 NAVY, RED, MUSTARD, CREAM = (27, 42, 74), (200, 16, 46), (212, 162, 58), (244, 238, 223)
 MONT = str(HERE / "fonts" / "Montserrat-ExtraBold.ttf")
 RUBIK = str(HERE / "fonts" / "brand" / "Rubik-ExtraBold.ttf")
-SOCIALS = [("youtube", "@bilmasboy"), ("instagram", "@bilmas.boy"), ("tiktok", "@bilmas.boy"), ("telegram", "@bilmas_boy"), ("facebook", "@bilmas.boy")]
+SOCIALS = [("youtube", "@bilmasboy"), ("instagram", "@bilmas.boy"), ("tiktok", "@bilmas.boy"), ("facebook", "@bilmas.boy"), ("telegram", "@bilmas_boy")]
 SUB = "o'zbek tilida, oddiy qilib"
 
 
