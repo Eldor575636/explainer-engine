@@ -1,0 +1,258 @@
+{
+ "layers": "layers",
+ "music": {
+  "curious": "../../assets/music/curious.mp3",
+  "dramatic": "../../assets/music/dramatic.mp3",
+  "calm": "../../assets/music/calm.mp3"
+ },
+ "mascot": {
+  "img": "mascot_v2",
+  "parts": 4,
+  "full_body": true
+ },
+ "ui": {
+  "subscribe": "OBUNA BO'LING",
+  "subscribed": "OBUNA BO'LDINGIZ",
+  "like": "LAYK",
+  "next": "KEYINGI VIDEO"
+ },
+ "sentences": [
+  "Bu odam Toshkentda ishlaydi.",
+  "Maoshini so'mda oladi, so'mda sarflaydi.",
+  "Umrida Amerikaga bormagan.",
+  "Lekin u telefon xarid qilsa, narxi dollarga bog'liq.",
+  "Mashina olsa, u ham dollarga bog'langan.",
+  "Hatto yeydigan nonining uni ham dollarga bog'liq.",
+  "Minglab kilometr naridagi AQShda bosib chiqarilgan yashil qog'oz uning maoshi qiymatiga ta'sir qiladi.",
+  "Qanday qilib AQSh dollari butun dunyo puliga aylandi?",
+  "Va AQShning bu kuchi tugab borayotgani rostmi?"
+ ],
+ "beats": [
+  {
+   "at": [
+    0,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_bazaar",
+   "fig": {
+    "img": "fig_worker",
+    "x": 0.3,
+    "h": 0.78
+   },
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      0,
+      "Bu"
+     ],
+     "k": "label",
+     "text": "TOSHKENT"
+    },
+    {
+     "at": [
+      1,
+      "Maoshini"
+     ],
+     "k": "tag",
+     "text": "MAOSH: SO'M"
+    },
+    {
+     "at": [
+      2,
+      "Umrida"
+     ],
+     "k": "tag",
+     "text": "AMERIKADA BO'LMAGAN",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    3,
+    "Lekin"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_shopping",
+     "x": 0.2,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      3,
+      "telefon"
+     ],
+     "part": 0
+    },
+    {
+     "img": "prop_shopping",
+     "x": 0.5,
+     "y": 0.52,
+     "h": 0.32,
+     "at": [
+      4,
+      "Mashina"
+     ],
+     "part": 1
+    },
+    {
+     "img": "prop_shopping",
+     "x": 0.8,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      5,
+      "uni"
+     ],
+     "part": 2
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      3,
+      "dollarga"
+     ],
+     "k": "label",
+     "text": "NARX = DOLLAR"
+    },
+    {
+     "at": [
+      3,
+      "dollarga"
+     ],
+     "k": "tag",
+     "text": "$",
+     "x": 0.2,
+     "y": 0.8,
+     "fg": "red"
+    },
+    {
+     "at": [
+      4,
+      "dollarga"
+     ],
+     "k": "tag",
+     "text": "$",
+     "x": 0.5,
+     "y": 0.8,
+     "fg": "red"
+    },
+    {
+     "at": [
+      5,
+      "dollarga"
+     ],
+     "k": "tag",
+     "text": "$",
+     "x": 0.8,
+     "y": 0.8,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    6,
+    "Minglab"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.5,
+     "y": 0.52,
+     "h": 0.72,
+     "at": [
+      6,
+      "Minglab"
+     ],
+     "slam": true
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      6,
+      "yashil"
+     ],
+     "k": "circle",
+     "x": 0.5,
+     "y": 0.52,
+     "rx": 0.3,
+     "ry": 0.36
+    },
+    {
+     "at": [
+      6,
+      "maoshi"
+     ],
+     "k": "label",
+     "text": "YASHIL QOG'OZ"
+    }
+   ]
+  },
+  {
+   "at": [
+    7,
+    "Qanday"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.75,
+    0.7
+   ],
+   "ev": [
+    {
+     "at": [
+      7,
+      "dollari"
+     ],
+     "k": "arrow",
+     "from": [
+      0.22,
+      0.37
+     ],
+     "to": [
+      0.65,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      7,
+      "dunyo"
+     ],
+     "k": "pin",
+     "x": 0.65,
+     "y": 0.38
+    },
+    {
+     "at": [
+      7,
+      "dunyo"
+     ],
+     "k": "tag",
+     "text": "DUNYO PULI?",
+     "x": 0.5,
+     "y": 0.82
+    },
+    {
+     "at": [
+      8,
+      "Va"
+     ],
+     "k": "mascot",
+     "pose": 0,
+     "side": "right"
+    }
+   ]
+  }
+ ],
+ "shorts": []
+}
