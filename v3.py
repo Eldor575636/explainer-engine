@@ -772,8 +772,7 @@ def main():
                 fr = e["_frames"]; v = int(round((len(fr) - 1) * ease_out(lt / 0.9)))
                 fr[v].draw(c, (0.5 if V else e["x"]) * Wd, (0.38 if V else e["y"]) * Hd, back_out(lt / 0.3), 0, min(1, lt / 0.08))
             elif k == "flag":
-                if any(o is not e and o["k"] == "flag" and e["t"] < o["t"] <= t and abs(o["x"] - e["x"]) < 0.05
-                       and abs(o["y"] - e["y"]) < 0.05 for o in b["_ev"]):
+                if any(o is not e and o["k"] == "flag" and e["t"] < o["t"] <= t for o in b["_ev"]):
                     continue                                   # a newer flag took this spot
                 e["_s"].draw(c, (0.5 if V else e["x"]) * Wd, (0.6 if V else e["y"]) * Hd + 3 * math.sin(lt * 2.2),
                              back_out(lt / 0.35), e["rot"], min(1, lt / 0.08))

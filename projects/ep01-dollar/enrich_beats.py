@@ -50,7 +50,17 @@ for si, pre, codes in FLAGS:
         ev["y"] = 0.80
     if beat["type"] == "portrait":
         ev.update(x=0.86, y=0.2)
+    if len(ev["code"]) == 5 if isinstance(ev["code"], list) else False:   # BRIKS row: wide, centred low
+        ev.update(x=0.5, y=0.76)
     beat.setdefault("ev", []).append(ev)
 
+# no empty moments: a keyword on "O'zgarish belgilari bor", gold bars right on "Markaziy banklar"
+for x in b["beats"]:
+    if x["at"][0] == 127:
+        x.setdefault("ev", []).append({"at": [127, "O'zgarish"], "k": "label", "text": "O'ZGARISH BELGILARI"})
+    for e in x.get("ev", []):
+        if e["k"] == "prop" and e.get("img") == "prop_gold" and e["at"][0] == 130:
+            e["at"] = [130, "Markaziy"]
+b["shorts"] = []   # Shorts from the first render are unaffected by these fixes
 json.dump(b, open(here / "ep01_beats_enriched.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(len(b["beats"]), "beats,", sum(1 for x in b["beats"] for e in x.get("ev", []) if e["k"] == "flag"), "flags")
