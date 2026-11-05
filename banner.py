@@ -13,6 +13,7 @@ from v3 import new_alphabet
 
 NAVY, RED, MUSTARD, CREAM, INK = (27, 42, 74), (200, 16, 46), (212, 162, 58), (244, 238, 223), (14, 22, 38)
 W, H = 2560, 1440
+SLOGAN = "Bilmaganimizni birga bilib olamiz"
 SAFE = (507, 508, 2053, 931)          # visible on all devices
 DESK = (0, 508, 2560, 931)            # visible on desktop
 ANTON = str(HERE / "fonts" / "Anton-Regular.ttf")
@@ -83,7 +84,7 @@ def banner():
     lg = _shadow(logo("rubik", 210, "dark"), (0, 10), 12, 0.45)
     if lg.width > (x1 - x0) - 120:
         lg = lg.resize(((x1 - x0) - 120, int(lg.height * ((x1 - x0) - 120) / lg.width)), Image.LANCZOS)
-    tag = _shadow(torn_label(new_alphabet("DUNYONI O'ZGARTIRGAN G'OYALAR"), 74), (0, 8), 8, 0.35)
+    tag = _shadow(torn_label(new_alphabet(SLOGAN.upper()), 70), (0, 8), 8, 0.35)
     sub = _txt(new_alphabet("o'zbek tilida, oddiy qilib"), ImageFont.truetype(MONT, 44), CREAM + (230,))
     gap1, gap2 = 22, 18
     total = lg.height + gap1 + tag.height + gap2 + sub.height
