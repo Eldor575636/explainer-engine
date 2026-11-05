@@ -1,0 +1,28 @@
+{
+ "bg": "../../layers/bg_tv_1971.jpg",
+ "badge": "1-QISM",
+ "headline": [
+  "1971:",
+  "OLTIN",
+  "TUGADI"
+ ],
+ "accent": 1,
+ "red": [
+  "1971:"
+ ],
+ "hero": {
+  "img": "../../layers/fig_nixon.jpg",
+  "h": 0.93,
+  "x": 0.8
+ },
+ "props": [
+  {
+   "img": "../../layers/prop_gold.jpg",
+   "h": 0.25,
+   "x": 0.57,
+   "y": 0.74,
+   "rot": -6,
+   "circle": true
+  }
+ ]
+}

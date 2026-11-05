@@ -87,6 +87,7 @@ def render(spec_path):
     grad = np.clip(1.15 - np.linspace(0, 1, W) * 1.1, 0, 1)[None, :, None] * 0.45
     a = a * (1 - grad) + wash * grad
     img = Image.fromarray(a.astype(np.uint8)).convert("RGB")
+    bg_lum = float(np.asarray(img.convert("L"), np.float32)[100:H - 120, 40:int(W * 0.55)].mean())
 
     # props (behind the hero) with optional pen circle
     circles = []
@@ -132,6 +133,7 @@ def render(spec_path):
             break
         scale -= 0.05
     y = top
+    min_cap = min(p[3] - (34 if i == accent else 0) for i, p in enumerate(pl))
     for i, (line, f, bb, hh) in enumerate(pl):
         if i == accent:                                   # mustard torn label, navy text, slight tilt
             tw = f.getlength(line)
@@ -166,16 +168,21 @@ def render(spec_path):
         d.rounded_rectangle((x0, 36, x0 + tw + 36, 98), 10, fill=RED)
         d.text((x0 + 18, 36 + 31 - (bf.getbbox(t)[1] + bf.getbbox(t)[3]) / 2), t, font=bf, fill=(255, 255, 255))
 
-    wm = fx.wordmark({"anton": ANTON}, 64)                 # brand, bottom-left
-    if s.get("theme") == "light":                          # "Bilmas" in navy on light thumbnails
-        wa = np.array(wm); cream = (np.abs(wa[..., :3].astype(int) - np.array(CREAM)).sum(-1) < 60) & (wa[..., 3] > 0)
-        wa[cream, :3] = NAVY; wm = Image.fromarray(wa)
-    sh = Image.new("RGBA", wm.size, (0, 0, 0, 0)); sh.putalpha(wm.split()[3])
-    img.paste((0, 0, 0), (x0 + 3, H - wm.height - 28 + 3), sh.split()[3])
-    img.paste(wm, (x0, H - wm.height - 28), wm)
+    import logo as _logo                                   # brand, bottom-left
+    wm = _logo.logo(s.get("logo", "rubik"), 58, "light" if s.get("theme") == "light" else "dark")
+    img.paste(wm, (x0 - 8, H - wm.height - 22), wm)
 
     out = spec_path.with_suffix(".jpg")
     img.convert("RGB").save(out, quality=93)
+    def lum(c):
+        c = [((v / 255) / 12.92 if v / 255 <= 0.04045 else ((v / 255 + 0.055) / 1.055) ** 2.4) for v in c]
+        return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]
+    text_col = NAVY if s.get("theme") == "light" else (255, 255, 255)
+    L1, L2 = lum(text_col), lum([bg_lum] * 3)
+    contrast = (max(L1, L2) + 0.05) / (min(L1, L2) + 0.05)
+    words = sum(len(l.split()) for l in s["headline"])
+    metrics = {"words": words, "cap_px": int(min_cap), "cap_px_phone": round(min_cap * 168 / W, 1), "contrast": round(contrast, 1)}
+    json.dump(metrics, open(spec_path.with_suffix(".metrics.json"), "w"))
     return out
 
 

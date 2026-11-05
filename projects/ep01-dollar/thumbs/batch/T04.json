@@ -1,0 +1,28 @@
+{
+ "bg": "../../layers/bg_bazaar.jpg",
+ "badge": "1-QISM",
+ "headline": [
+  "SO'MINGIZ",
+  "DOLLARGA",
+  "BOG'LIQMI?"
+ ],
+ "accent": 2,
+ "red": [
+  "DOLLARGA"
+ ],
+ "hero": {
+  "img": "../../layers/fig_worker.jpg",
+  "h": 0.93,
+  "x": 0.8
+ },
+ "props": [
+  {
+   "img": "../../layers/prop_dollar.jpg",
+   "h": 0.26,
+   "x": 0.58,
+   "y": 0.74,
+   "rot": -10,
+   "circle": true
+  }
+ ]
+}

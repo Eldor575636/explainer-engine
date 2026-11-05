@@ -1,0 +1,29 @@
+{
+ "bg": "../../layers/bg_tashkent_exchange.jpg",
+ "badge": "1-QISM",
+ "headline": [
+  "SO'M VA",
+  "DOLLAR"
+ ],
+ "accent": 1,
+ "red": [
+  "SO'M"
+ ],
+ "hero": {
+  "img": "../../layers/mascot_v2.jpg",
+  "part": 2,
+  "nparts": 4,
+  "h": 0.98,
+  "x": 0.83
+ },
+ "props": [
+  {
+   "img": "../../layers/prop_dollar.jpg",
+   "h": 0.28,
+   "x": 0.58,
+   "y": 0.74,
+   "rot": -10,
+   "circle": true
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "bg": "../../layers/bg_gold_ships.jpg",
+ "badge": "1-QISM",
+ "headline": [
+  "DOLLAR",
+  "QANDAY QIROL",
+  "BO'LDI?"
+ ],
+ "accent": 1,
+ "red": [
+  "DOLLAR"
+ ],
+ "hero": {
+  "img": "../../layers/mascot_v2.jpg",
+  "part": 0,
+  "nparts": 4,
+  "h": 0.98,
+  "x": 0.83
+ },
+ "props": [
+  {
+   "img": "../../layers/prop_gold.jpg",
+   "h": 0.25,
+   "x": 0.58,
+   "y": 0.74,
+   "rot": -6,
+   "circle": true
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "bg": "../../layers/bg_vault_empty.jpg",
+ "badge": "1-QISM",
+ "headline": [
+  "OLTIN",
+  "ENDI YO'Q"
+ ],
+ "accent": 1,
+ "red": [
+  "OLTIN"
+ ],
+ "hero": {
+  "img": "../../layers/fig_nixon.jpg",
+  "h": 0.93,
+  "x": 0.8
+ },
+ "props": [
+  {
+   "img": "../../layers/prop_gold.jpg",
+   "h": 0.25,
+   "x": 0.57,
+   "y": 0.74,
+   "rot": -6,
+   "circle": true
+  }
+ ]
+}

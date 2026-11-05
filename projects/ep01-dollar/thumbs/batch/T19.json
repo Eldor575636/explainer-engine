@@ -1,0 +1,32 @@
+{
+ "bg": "../../layers/bg_oil_field.jpg",
+ "badge": "1-QISM",
+ "headline": [
+  "NEFT +",
+  "DOLLAR =",
+  "KUCH"
+ ],
+ "accent": 2,
+ "red": [
+  "NEFT"
+ ],
+ "hero": {
+  "img": "../../layers/mascot_v2.jpg",
+  "part": 1,
+  "nparts": 4,
+  "h": 0.98,
+  "x": 0.83
+ },
+ "props": [
+  {
+   "img": "../../layers/prop_sheet2.jpg",
+   "part": 0,
+   "nparts": 4,
+   "h": 0.4,
+   "x": 0.6,
+   "y": 0.66,
+   "rot": -6,
+   "circle": true
+  }
+ ]
+}

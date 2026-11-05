@@ -1,0 +1,30 @@
+{
+ "bg": "../../layers/map_world.jpg",
+ "badge": "1-QISM",
+ "headline": [
+  "DOLLARSIZ",
+  "YASHAB",
+  "BO'LADIMI?"
+ ],
+ "accent": 2,
+ "red": [
+  "DOLLARSIZ"
+ ],
+ "hero": {
+  "img": "../../layers/mascot_v2.jpg",
+  "part": 0,
+  "nparts": 4,
+  "h": 0.98,
+  "x": 0.83
+ },
+ "props": [
+  {
+   "img": "../../layers/prop_dollar.jpg",
+   "h": 0.3,
+   "x": 0.58,
+   "y": 0.68,
+   "rot": 10,
+   "circle": true
+  }
+ ]
+}

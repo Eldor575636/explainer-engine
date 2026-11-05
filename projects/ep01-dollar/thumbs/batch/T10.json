@@ -1,0 +1,30 @@
+{
+ "bg": "../../layers/bg_bank_network.jpg",
+ "badge": "1-QISM",
+ "headline": [
+  "AMERIKANING",
+  "ENG KUCHLI",
+  "QUROLI"
+ ],
+ "accent": 2,
+ "red": [
+  "AMERIKANING"
+ ],
+ "hero": {
+  "img": "../../layers/mascot_v2.jpg",
+  "part": 2,
+  "nparts": 4,
+  "h": 0.98,
+  "x": 0.83
+ },
+ "props": [
+  {
+   "img": "../../layers/prop_dollar.jpg",
+   "h": 0.3,
+   "x": 0.6,
+   "y": 0.7,
+   "rot": 14,
+   "circle": true
+  }
+ ]
+}
