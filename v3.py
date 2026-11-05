@@ -253,6 +253,37 @@ def flag_sprite(codes, h=120):
     return motion.Sprite(img)
 
 
+def short_endcard(series, clip_start, handle, VW=1080, VH=1920):
+    """End card for a Short: avatar, logo, 'full video on the channel', episode, where this clip sits, handle.
+    Returns a list of (RGBA sprite, y, delay) so the pieces can pop in one after another."""
+    from PIL import ImageDraw
+    import logo as _logo
+    out = []
+    av = Image.open(HERE / "assets" / "brand" / "avatar.png").convert("RGBA").resize((300, 300), Image.LANCZOS)
+    m = Image.new("L", (300, 300), 0); ImageDraw.Draw(m).ellipse((0, 0, 299, 299), fill=255)
+    ring = Image.new("RGBA", (320, 320), (0, 0, 0, 0)); ImageDraw.Draw(ring).ellipse((0, 0, 319, 319), fill=(255, 255, 255, 255))
+    ring.paste(av, (10, 10), m)
+    out.append((motion.Sprite(ring), 520, 0.0))
+    out.append((motion.Sprite(_logo.logo("rubik", 104, "dark")), 760, 0.12))
+    out.append((text_sprite(new_alphabet("TO'LIQ VIDEO KANALDA"), motion.ANTON, 104, (255, 255, 255), 6, (14, 22, 38)), 920, 0.24))
+    out.append((motion.label_sprite(new_alphabet(series), 76), 1065, 0.36))
+    mm = int(clip_start // 60); ss = int(clip_start % 60)
+    out.append((motion.tag_sprite(new_alphabet(f"BU LAVHA: {mm:02d}:{ss:02d} DAN"), 50), 1185, 0.48))
+    out.append((text_sprite(handle, motion.MONT, 60, (212, 162, 58), 0), 1290, 0.6))
+    return out
+
+
+def short_badge(series):
+    """Small pill shown at the top of a Short after the hook: which episode this clip comes from."""
+    from PIL import ImageDraw, ImageFont
+    f = ImageFont.truetype(motion.MONT, 40); t = new_alphabet(series)
+    w = int(f.getlength(t)) + 56; h = 70
+    img = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
+    d.rounded_rectangle((0, 0, w - 1, h - 1), 35, fill=(27, 42, 74, 235))
+    bb = f.getbbox(t); d.text(((w - (bb[2] - bb[0])) / 2 - bb[0], (h - (bb[3] - bb[1])) / 2 - bb[1]), t, font=f, fill=(212, 162, 58, 255))
+    return motion.Sprite(img)
+
+
 def seeded(fn, *a, **k):
     random.seed(7)
     return fn(*a, **k)
@@ -868,7 +899,8 @@ def main():
         print("Done:", out_path)
 
     # --- Shorts / Reels: 9:16 clips cut from the long episode ---
-    for sh in cfg.get("shorts", []):
+    only = [x for x in os.environ.get("SHORTS_NAMES", "").split(",") if x]
+    for sh in [x for x in cfg.get("shorts", []) if not only or x["name"] in only]:
         ta = max(0.0, wt(sh["from"]) - 0.15)
         b_start = next((b for b in beats if ta - 0.01 <= b["t0"] <= ta + 0.4), None)
         if b_start is not None:                            # start exactly on the scene, never on the tail of the last one
@@ -898,6 +930,7 @@ def main():
             st = ch[0][1]; en = vchunks[ci_ + 1][0][1] if ci_ + 1 < len(vchunks) else tb
             vcaps.append((st, min(en, max(ch[-1][2] + 0.5, st + 0.5)), [x[1] for x in ch], motion.caption_sprites([x[0] for x in ch], 76)))
         hook = seeded(motion.label_sprite, new_alphabet(sh.get("hook", "")), 70) if sh.get("hook") else None
+        badge = short_badge(cfg["series_label"]) if cfg.get("series_label") else None
         motion.W, motion.H = W, H
         tmpv = work / f"short_{sh['name']}_v.mp4"
         ff = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{VW}x{VH}",
@@ -914,6 +947,8 @@ def main():
                 frame = frame * (1 - w) + render(bi + 1, 0.0, True) * w
             if hook is not None and t - ta < 3.0:
                 hook.draw(frame, VW / 2, 150, back_out((t - ta) / 0.35) * (1 - ease_out((t - ta - 2.7) / 0.3)), -1.5)
+            if badge is not None and t - ta >= (3.0 if hook is not None else 0.3):
+                badge.draw(frame, VW / 2, 58, back_out((t - ta - (3.0 if hook is not None else 0.3)) / 0.3), 0, 0.95)
             while cj + 1 < len(vcaps) and vcaps[cj + 1][0] <= t:
                 cj += 1
             if vcaps:
@@ -922,11 +957,29 @@ def main():
                     k = max(j for j in range(len(wst)) if wst[j] <= t or j == 0)
                     sprs[k].draw(frame, VW / 2, VH * 0.76, 0.94 + 0.06 * back_out((t - st) / 0.18))
             ff.stdin.write((np.clip(frame, 0, 1) * 255).astype(np.uint8).tobytes())
+            last = frame
+        END = 2.4 if cfg.get("series_label") else 0.0           # end card: darkened, blurred last frame + channel reference
+        if END:
+            card = short_endcard(cfg["series_label"], ta, cfg.get("handle", "@bilmasboy"), VW, VH)
+            base = cv2.GaussianBlur(last, (0, 0), 9)
+            for fi in range(int(END * FPS)):
+                lt = fi / FPS; p = ease_out(lt / 0.35)
+                frame = last * (1 - p) + base * 0.32 * p
+                for sp, y, dl in card:
+                    if lt >= dl:
+                        sp.draw(frame, VW / 2, y, back_out((lt - dl) / 0.35), 0, min(1, (lt - dl) / 0.1))
+                ff.stdin.write((np.clip(frame, 0, 1) * 255).astype(np.uint8).tobytes())
         ff.stdin.close(); ff.wait()
         d = tb - ta
-        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(tmpv), "-ss", f"{ta:.2f}", "-t", f"{d:.2f}", "-i", str(out_path),
-                        "-map", "0:v", "-map", "1:a", "-af", f"afade=t=in:d=0.2,afade=t=out:st={max(0, d - 0.35):.2f}:d=0.35",
-                        "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", str(name)], check=True)
+        fc = (f"[1:a]aformat=sample_rates=48000:channel_layouts=stereo,afade=t=in:d=0.2,afade=t=out:st={max(0, d - 0.35):.2f}:d=0.35[a1];"
+              f"[2:a]aformat=sample_rates=48000:channel_layouts=stereo,volume=0.9,afade=t=in:d=0.3,afade=t=out:st={max(0, END - 0.7):.2f}:d=0.7[a2];"
+              "[a1][a2]concat=n=2:v=0:a=1[a]") if END else \
+             f"[1:a]afade=t=in:d=0.2,afade=t=out:st={max(0, d - 0.35):.2f}:d=0.35[a]"
+        ins = ["-i", str(tmpv), "-ss", f"{ta:.2f}", "-t", f"{d:.2f}", "-i", str(out_path)]
+        if END:
+            ins += ["-ss", f"{tb:.2f}", "-t", f"{END:.2f}", "-i", str(work / "music.wav")]
+        subprocess.run(["ffmpeg", "-y", "-v", "error", *ins, "-filter_complex", fc, "-map", "0:v", "-map", "[a]",
+                        "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(name)], check=True)
 
 
 if __name__ == "__main__":
