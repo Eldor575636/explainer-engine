@@ -231,6 +231,28 @@ def text_sprite(text, font, size, fill, stroke=0, stroke_fill=NAVY):
     return motion.Sprite(img)
 
 
+def flag_sprite(codes, h=120):
+    """Row of country flags as cards: white border, rounded corners, soft shadow."""
+    from PIL import ImageDraw, ImageFilter
+    fw = int(h * 4 / 3); b = 8; gap = 22; pad = 18
+    W_ = len(codes) * (fw + 2 * b) + (len(codes) - 1) * gap + 2 * pad; H_ = h + 2 * b + 2 * pad
+    img = Image.new("RGBA", (W_, H_), (0, 0, 0, 0))
+    sh = Image.new("L", (W_, H_), 0); d = ImageDraw.Draw(sh)
+    for i in range(len(codes)):
+        x = pad + i * (fw + 2 * b + gap)
+        d.rounded_rectangle((x + 4, pad + 8, x + fw + 2 * b + 4, pad + h + 2 * b + 8), 16, fill=120)
+    img.putalpha(sh.filter(ImageFilter.GaussianBlur(7)))
+    for i, c in enumerate(codes):
+        x = pad + i * (fw + 2 * b + gap)
+        card = Image.new("RGBA", (fw + 2 * b, h + 2 * b), (0, 0, 0, 0))
+        ImageDraw.Draw(card).rounded_rectangle((0, 0, fw + 2 * b - 1, h + 2 * b - 1), 16, fill=(255, 255, 255, 255))
+        fl = Image.open(HERE / "assets" / "flags" / f"{c}.png").convert("RGBA").resize((fw, h), Image.LANCZOS)
+        m = Image.new("L", (fw, h), 0); ImageDraw.Draw(m).rounded_rectangle((0, 0, fw - 1, h - 1), 10, fill=255)
+        card.paste(fl, (b, b), m)
+        img.alpha_composite(card, (x, pad))
+    return motion.Sprite(img)
+
+
 def seeded(fn, *a, **k):
     random.seed(7)
     return fn(*a, **k)
@@ -508,6 +530,11 @@ def main():
                 xsfx += e["_o"].sounds(b["t0"] + e["t"])
             elif k == "bigtext":
                 e["_s"] = text_sprite(new_alphabet(e["text"]), motion.ANTON, 300, RED, 0); sfx.append((b["t0"] + e["t"], "pop"))
+            elif k == "flag":
+                codes = e["code"] if isinstance(e["code"], list) else [e["code"]]
+                e["_s"] = flag_sprite(codes, e.get("h", 120)); sfx.append((b["t0"] + e["t"], "pop"))
+                e.setdefault("x", 0.14 + 0.06 * (len(codes) - 1)); e.setdefault("y", 0.24)
+                e["rot"] = random.uniform(-3, 3)
             if k in ("label", "tag", "stamp"):
                 e["vx"], e["vy"] = VW / 2, {"label": 190, "stamp": VH * 0.45}.get(k, 330 + 92 * sum(1 for x in evs if x["k"] == "tag"))
             evs.append(e)
@@ -697,7 +724,7 @@ def main():
         return cv2.resize(c[:, x0:x0 + cw], (VW, VH), interpolation=cv2.INTER_LINEAR)
 
     WORLD = {"circle", "arrow", "pin", "rings", "prop"}
-    SCREEN = {"label", "tag", "stamp", "mascot", "counter", "bigtext", "bars", "pie", "subscribe", "like", "news"}
+    SCREEN = {"label", "tag", "stamp", "mascot", "counter", "bigtext", "bars", "pie", "subscribe", "like", "news", "flag"}
 
     def draw_events(c, b, t, dur, kinds, V=False):
         Wd, Hd = (VW, VH) if V else (W, H)
@@ -744,6 +771,12 @@ def main():
             elif k == "counter":
                 fr = e["_frames"]; v = int(round((len(fr) - 1) * ease_out(lt / 0.9)))
                 fr[v].draw(c, (0.5 if V else e["x"]) * Wd, (0.38 if V else e["y"]) * Hd, back_out(lt / 0.3), 0, min(1, lt / 0.08))
+            elif k == "flag":
+                if any(o is not e and o["k"] == "flag" and e["t"] < o["t"] <= t and abs(o["x"] - e["x"]) < 0.05
+                       and abs(o["y"] - e["y"]) < 0.05 for o in b["_ev"]):
+                    continue                                   # a newer flag took this spot
+                e["_s"].draw(c, (0.5 if V else e["x"]) * Wd, (0.6 if V else e["y"]) * Hd + 3 * math.sin(lt * 2.2),
+                             back_out(lt / 0.35), e["rot"], min(1, lt / 0.08))
             elif k == "bigtext":
                 e["_s"].draw(c, (0.5 if V else e["x"]) * Wd, (0.42 if V else e["y"]) * Hd, back_out(lt / 0.35) * (0.8 if V else 1), 0, min(1, lt / 0.08))
             elif k == "rings":
