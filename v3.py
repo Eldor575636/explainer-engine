@@ -276,7 +276,7 @@ def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None):
     return out
 
 
-PLATFORM_COL = {"youtube": (255, 0, 0), "instagram": (225, 48, 108), "tiktok": (12, 12, 12), "telegram": (38, 165, 228)}
+PLATFORM_COL = {"youtube": (255, 0, 0), "instagram": (225, 48, 108), "tiktok": (12, 12, 12), "telegram": (38, 165, 228), "facebook": (8, 102, 255)}
 
 
 def socials_sprite(socials, icon=46, font=40, cols=None, gapx=46, gapy=18):
@@ -300,8 +300,9 @@ def socials_sprite(socials, icon=46, font=40, cols=None, gapx=46, gapy=18):
     cw = [max(r[c].width for r in rows if c < len(r)) for c in range(cols)]
     rh = max(i.height for i in items)
     out = Image.new("RGBA", (sum(cw) + gapx * (cols - 1) + 20, len(rows) * rh + gapy * (len(rows) - 1) + 20), (0, 0, 0, 0))
+    full = sum(cw) + gapx * (cols - 1)
     for ri, r in enumerate(rows):
-        x = 10
+        x = 10 + (full - (sum(cw[:len(r)]) + gapx * (len(r) - 1))) // 2      # short last row is centred
         for ci, it in enumerate(r):
             out.alpha_composite(it, (x, 10 + ri * (rh + gapy))); x += cw[ci] + gapx
     return motion.Sprite(out)

@@ -99,7 +99,8 @@ def banner():
     img.alpha_composite(tag, (cx - tag.width // 2, y)); y += tag.height + gap2
     img.alpha_composite(sub, (cx - sub.width // 2, y))
     col = socials_column([("youtube", "@bilmasboy"), ("instagram", "@bilmas.boy"),
-                          ("tiktok", "@bilmas.boy"), ("telegram", "@bilmas_boy")])
+                          ("tiktok", "@bilmas.boy"), ("telegram", "@bilmas_boy"),
+                          ("facebook", "@bilmas.boy")])
     col = _shadow(col, (0, 4), 4, 0.5)
     img.alpha_composite(col, (x1 + 70, (y0 + y1) // 2 - col.height // 2))
     return img.convert("RGB")
