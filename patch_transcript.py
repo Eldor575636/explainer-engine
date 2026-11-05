@@ -8,6 +8,7 @@ Usage: python3 patch_transcript.py <raw.wav> <words.json> [model=medium]
 import json, subprocess, sys
 import numpy as np
 from faster_whisper import WhisperModel
+import os; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from translit import to_latin
 
 wav, wpath = sys.argv[1], sys.argv[2]
 model = sys.argv[3] if len(sys.argv) > 3 else "medium"
@@ -43,7 +44,7 @@ for a, b in gaps:
     lo, hi = max(0.0, a - 1.0), min(total, b + 1.0)
     segs, _ = m.transcribe(audio[int(lo * SR):int(hi * SR)], language="uz", word_timestamps=True,
                            vad_filter=True, condition_on_previous_text=False)
-    new = [[w.word.strip(), round(w.start + lo, 3), round(w.end + lo, 3)] for s in segs for w in s.words]
+    new = [[to_latin(w.word.strip()), round(w.start + lo, 3), round(w.end + lo, 3)] for s in segs for w in s.words]
     new = [w for w in new if a - 0.05 <= w[1] <= b + 0.05]
     print(f"  {a:.1f}-{b:.1f}s: +{len(new)} words")
     words = [w for w in words if not (a < w[1] < b)] + new
