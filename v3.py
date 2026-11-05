@@ -253,7 +253,7 @@ def flag_sprite(codes, h=120):
     return motion.Sprite(img)
 
 
-def short_endcard(series, clip_start, handle, VW=1080, VH=1920):
+def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None):
     """End card for a Short: avatar, logo, 'full video on the channel', episode, where this clip sits, handle.
     Returns a list of (RGBA sprite, y, delay) so the pieces can pop in one after another."""
     from PIL import ImageDraw
@@ -269,8 +269,67 @@ def short_endcard(series, clip_start, handle, VW=1080, VH=1920):
     out.append((motion.label_sprite(new_alphabet(series), 76), 1065, 0.36))
     mm = int(clip_start // 60); ss = int(clip_start % 60)
     out.append((motion.tag_sprite(new_alphabet(f"BU LAVHA: {mm:02d}:{ss:02d} DAN"), 50), 1185, 0.48))
-    out.append((text_sprite(handle, motion.MONT, 60, (212, 162, 58), 0), 1290, 0.6))
+    if socials:
+        out.append((socials_sprite(socials, icon=54, font=42, cols=2, gapx=40, gapy=22), 1330, 0.6))
+    else:
+        out.append((text_sprite(handle, motion.MONT, 60, (212, 162, 58), 0), 1290, 0.6))
     return out
+
+
+PLATFORM_COL = {"youtube": (255, 0, 0), "instagram": (225, 48, 108), "tiktok": (12, 12, 12), "telegram": (38, 165, 228)}
+
+
+def socials_sprite(socials, icon=46, font=40, cols=None, gapx=46, gapy=18):
+    """Platform icon tiles + handles, as one sprite (row or grid)."""
+    from PIL import ImageDraw, ImageFont
+    f = ImageFont.truetype(motion.MONT, font)
+    items = []
+    for plat, handle in socials:
+        tile = Image.new("RGBA", (icon, icon), (0, 0, 0, 0))
+        ImageDraw.Draw(tile).rounded_rectangle((0, 0, icon - 1, icon - 1), int(icon * 0.26), fill=PLATFORM_COL.get(plat, NAVY) + (255,))
+        gl = Image.open(HERE / "assets" / "brand" / "platforms" / f"{plat}.png").convert("RGBA").resize((int(icon * 0.62),) * 2, Image.LANCZOS)
+        tile.alpha_composite(gl, ((icon - gl.width) // 2, (icon - gl.height) // 2))
+        bb = f.getbbox(handle); tw = bb[2] - bb[0]
+        it = Image.new("RGBA", (icon + 14 + tw + 8, max(icon, bb[3] - bb[1]) + 8), (0, 0, 0, 0))
+        it.alpha_composite(tile, (0, (it.height - icon) // 2))
+        d = ImageDraw.Draw(it)
+        d.text((icon + 14 - bb[0], (it.height - (bb[3] - bb[1])) / 2 - bb[1]), handle, font=f, fill=(255, 255, 255, 255),
+               stroke_width=4, stroke_fill=(14, 22, 38, 255))
+        items.append(it)
+    cols = cols or len(items); rows = [items[i:i + cols] for i in range(0, len(items), cols)]
+    cw = [max(r[c].width for r in rows if c < len(r)) for c in range(cols)]
+    rh = max(i.height for i in items)
+    out = Image.new("RGBA", (sum(cw) + gapx * (cols - 1) + 20, len(rows) * rh + gapy * (len(rows) - 1) + 20), (0, 0, 0, 0))
+    for ri, r in enumerate(rows):
+        x = 10
+        for ci, it in enumerate(r):
+            out.alpha_composite(it, (x, 10 + ri * (rh + gapy))); x += cw[ci] + gapx
+    return motion.Sprite(out)
+
+
+class LogoBug:
+    """Corner logo: the red '?' bubble most of the time; every `period` s it unrolls into the full wordmark."""
+    def __init__(self, height=56, period=18.0, alpha=0.92):
+        import logo as _logo
+        im = _logo.logo("rubik", height, "dark")
+        a = np.asarray(im)[..., 3]
+        cols = np.where(a.max(0) > 30)[0]
+        gaps = np.where(np.diff(cols) > 3)[0]                 # first transparent gap = end of the bubble
+        self.bw = int(cols[gaps[0]] + 6) if len(gaps) else im.width // 4
+        self.img = im; self.period = period; self.alpha = alpha
+        self.cache = {}
+
+    def draw(self, frame, t, x0, y0):
+        ph = t % self.period
+        open_ = 1.0 if 13.4 <= ph <= 16.6 else (ease_out((ph - 12.8) / 0.6) if 12.8 < ph < 13.4 else
+                 (1 - ease_out((ph - 16.6) / 0.6) if 16.6 < ph < 17.2 else 0.0))
+        w = int(self.bw + (self.img.width - self.bw) * open_)
+        key = w // 4
+        if key not in self.cache:
+            self.cache[key] = motion.Sprite(self.img.crop((0, 0, max(self.bw, key * 4), self.img.height)))
+        sp = self.cache[key]
+        wig = 7 * math.sin(ph * 9) * max(0, 1 - abs(ph - 6) / 0.5) if open_ == 0 else 0   # a little shake mid-cycle
+        sp.draw(frame, x0 + sp.w / 2, y0 + sp.h / 2, 1.0, wig, self.alpha)
 
 
 def short_badge(series):
@@ -850,6 +909,8 @@ def main():
                                "-pix_fmt", "yuv420p", str(tmp_video)], stdin=subprocess.PIPE)
         ci, bi = 0, 0
         rng = random.Random(3)
+        bug = LogoBug(54) if cfg.get("logo_bug", True) else None
+        soc_row = socials_sprite(cfg["socials"], icon=40, font=32, gapx=40) if cfg.get("socials") else None
         for fi in range(nframes):
             t = fi / FPS
             while bi + 1 < len(beats) and beats[bi + 1]["t0"] <= t:
@@ -878,6 +939,11 @@ def main():
                     amp = 16 * (1 - (t - hit) / 0.25)
                     M = np.float32([[1, 0, rng.uniform(-amp, amp)], [0, 1, rng.uniform(-amp, amp)]])
                     frame = cv2.warpAffine(frame, M, (W, H), borderMode=cv2.BORDER_REFLECT)
+            if bug is not None and beats[bi]["type"] not in ("intro", "end"):
+                bug.draw(frame, t, 34, 26)
+            if soc_row is not None and beats[bi]["type"] == "end":
+                lt = t - beats[bi]["t0"]
+                soc_row.draw(frame, W / 2, 40, back_out(lt / 0.4), 0, min(1, lt / 0.15))
             ff.stdin.write((np.clip(frame, 0, 1) * 255).astype(np.uint8).tobytes())
             if fi % 500 == 0:
                 print(f"  {fi}/{nframes}", flush=True)
@@ -931,6 +997,7 @@ def main():
             vcaps.append((st, min(en, max(ch[-1][2] + 0.5, st + 0.5)), [x[1] for x in ch], motion.caption_sprites([x[0] for x in ch], 76)))
         hook = seeded(motion.label_sprite, new_alphabet(sh.get("hook", "")), 70) if sh.get("hook") else None
         badge = short_badge(cfg["series_label"]) if cfg.get("series_label") else None
+        sbug = LogoBug(52) if cfg.get("logo_bug", True) else None
         motion.W, motion.H = W, H
         tmpv = work / f"short_{sh['name']}_v.mp4"
         ff = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{VW}x{VH}",
@@ -947,6 +1014,8 @@ def main():
                 frame = frame * (1 - w) + render(bi + 1, 0.0, True) * w
             if hook is not None and t - ta < 3.0:
                 hook.draw(frame, VW / 2, 150, back_out((t - ta) / 0.35) * (1 - ease_out((t - ta - 2.7) / 0.3)), -1.5)
+            if sbug is not None:
+                sbug.draw(frame, t, 30, 30)
             if badge is not None and t - ta >= (3.0 if hook is not None else 0.3):
                 badge.draw(frame, VW / 2, 58, back_out((t - ta - (3.0 if hook is not None else 0.3)) / 0.3), 0, 0.95)
             while cj + 1 < len(vcaps) and vcaps[cj + 1][0] <= t:
@@ -960,7 +1029,7 @@ def main():
             last = frame
         END = 2.4 if cfg.get("series_label") else 0.0           # end card: darkened, blurred last frame + channel reference
         if END:
-            card = short_endcard(cfg["series_label"], ta, cfg.get("handle", "@bilmasboy"), VW, VH)
+            card = short_endcard(cfg["series_label"], ta, cfg.get("handle", "@bilmasboy"), VW, VH, cfg.get("socials"))
             base = cv2.GaussianBlur(last, (0, 0), 9)
             for fi in range(int(END * FPS)):
                 lt = fi / FPS; p = ease_out(lt / 0.35)
