@@ -143,3 +143,15 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - Mascot: `layers/mascot_v2.jpg` (Higgsfield job cacb2082, 4 poses: thinking, pointing, surprised,
   presenting). Face is close to the owner, clean-shaven; build is still shorter/stockier than asked
   ("slimmer and taller") → owner to judge.
+
+## AI narration (2026-11-04)
+
+- Owner's ElevenLabs clone: "Eldor British" (voice_id 1azPJbJwsAdHELWK7HI3), model eleven_v4, via the ElevenLabs connector.
+  ~1 credit per character (a 12-min episode ≈ 10,600 credits for one take). Higgsfield clones did not sound like him.
+- `voice_text.py` + `lexicon.json`: text for the voice only (captions keep the script). Years/dates/numbers in Uzbek
+  words, "AQSh dollari" → "Amerika dollari" first time then "dollar", "AQSh" → "Amerika Qo'shma Shtatlari" then "Amerika".
+- Voice in ~2,000-char parts (01.mp3…), then `check_voice.py` transcribes each part back and scores every sentence;
+  low scores are often Whisper errors (digits, Turkish-like spelling), so re-check a slice before regenerating.
+- Whisper sometimes answers Uzbek in Cyrillic: `translit.py` converts; transcribe/patch use it automatically.
+- `v3.py` event `flag` (code or list of ISO codes; flag-icons SVGs in assets/flags): pops on the spoken word;
+  a newer flag in the same beat replaces the older one. `projects/ep01-dollar/enrich_beats.py` shows the pattern.
