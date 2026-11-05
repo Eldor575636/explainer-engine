@@ -308,27 +308,45 @@ def socials_sprite(socials, icon=46, font=40, cols=None, gapx=46, gapy=18):
 
 
 class LogoBug:
-    """Corner logo: the red '?' bubble most of the time; every `period` s it unrolls into the full wordmark."""
-    def __init__(self, height=56, period=18.0, alpha=0.92):
+    """Corner logo: a round navy badge with the red '?' most of the time; every `period` s the navy pill grows
+    to the right and the full 'bilmasboy' wordmark is revealed inside it, then it folds back."""
+    def __init__(self, height=56, period=18.0, alpha=0.95):
         import logo as _logo
-        im = _logo.logo("rubik", height, "dark")
-        a = np.asarray(im)[..., 3]
-        cols = np.where(a.max(0) > 30)[0]
-        gaps = np.where(np.diff(cols) > 3)[0]                 # first transparent gap = end of the bubble
-        self.bw = int(cols[gaps[0]] + 6) if len(gaps) else im.width // 4
-        self.img = im; self.period = period; self.alpha = alpha
-        self.cache = {}
+        lg = _logo.logo("rubik", height, "dark")
+        a = np.asarray(lg)[..., 3]
+        cols = np.where(a.max(0) > 200)[0]
+        gaps = np.where(np.diff(cols) > 3)[0]
+        self.bub = int(cols[gaps[0]] + 2) if len(gaps) else lg.width // 4      # bubble width inside the logo
+        self.lg = lg; self.pad = int(height * 0.24)
+        self.D = lg.height + 2 * self.pad                                      # badge diameter
+        self.lp = max(self.pad, (self.D - self.bub) // 2)                      # left padding: bubble centred when closed
+        self.full = self.lp + lg.width + self.pad
+        self.period = period; self.alpha = alpha; self.cache = {}
+
+    def sprite(self, w):
+        from PIL import ImageDraw
+        key = int(w) // 3 * 3
+        if key not in self.cache:
+            w = max(self.D, min(self.full, key))
+            img = Image.new("RGBA", (w, self.D), (0, 0, 0, 0))
+            ImageDraw.Draw(img).rounded_rectangle((0, 0, w - 1, self.D - 1), self.D // 2, fill=(27, 42, 74, 230))
+            vis = max(self.bub, w - 2 * self.lp)                                 # reveal the logo up to the pill's inner edge
+            img.alpha_composite(self.lg.crop((0, 0, min(self.lg.width, vis), self.lg.height)), (self.lp, self.pad))
+            self.cache[key] = motion.Sprite(img)
+        return self.cache[key]
 
     def draw(self, frame, t, x0, y0):
         ph = t % self.period
-        open_ = 1.0 if 13.4 <= ph <= 16.6 else (ease_out((ph - 12.8) / 0.6) if 12.8 < ph < 13.4 else
-                 (1 - ease_out((ph - 16.6) / 0.6) if 16.6 < ph < 17.2 else 0.0))
-        w = int(self.bw + (self.img.width - self.bw) * open_)
-        key = w // 4
-        if key not in self.cache:
-            self.cache[key] = motion.Sprite(self.img.crop((0, 0, max(self.bw, key * 4), self.img.height)))
-        sp = self.cache[key]
-        wig = 7 * math.sin(ph * 9) * max(0, 1 - abs(ph - 6) / 0.5) if open_ == 0 else 0   # a little shake mid-cycle
+        if 13.4 <= ph <= 16.6:
+            o = 1.0
+        elif 12.8 < ph < 13.4:
+            o = ease_out((ph - 12.8) / 0.6)
+        elif 16.6 < ph < 17.2:
+            o = 1 - ease_out((ph - 16.6) / 0.6)
+        else:
+            o = 0.0
+        sp = self.sprite(self.D + (self.full - self.D) * o)
+        wig = 8 * math.sin(ph * 10) * max(0, 1 - abs(ph - 6) / 0.45) if o == 0 else 0   # a little shake mid-cycle
         sp.draw(frame, x0 + sp.w / 2, y0 + sp.h / 2, 1.0, wig, self.alpha)
 
 
@@ -978,6 +996,12 @@ def main():
         nb = [b["t0"] for b in beats if b["t0"] > last_end - 0.05]
         if nb:
             tb = min(tb, nb[0] - 0.03)                     # and before the next scene appears
+        ns = [s for (w, s_i), (s, e) in zip(sw, nt) if s_i == si_end + 1]
+        if ns:                                             # word timings can overlap: also stop before the next sentence
+            tb = min(tb, ns[0] - 0.05)
+        nb2 = [b["t0"] for b in beats if b["at"][0] > si_end]
+        if nb2:                                            # and before the first scene that belongs to it
+            tb = min(tb, nb2[0] - 0.03)
         name = out_path.parent / f"{out_path.stem}_short_{sh['name']}.mp4"
         print(f"Short {sh['name']}: {ta:.1f}-{tb:.1f}s -> {name.name}")
         motion.W, motion.H = VW, VH
