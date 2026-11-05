@@ -1,0 +1,31 @@
+{
+ "theme": "light",
+ "bg": "../layers/bg_printing.jpg",
+ "badge": "1-QISM",
+ "headline": [
+  "YASHIL QOG'OZ",
+  "DUNYONI",
+  "BOSHQARADI"
+ ],
+ "accent": 1,
+ "red": [
+  "YASHIL"
+ ],
+ "hero": {
+  "img": "../layers/mascot_v2.jpg",
+  "part": 3,
+  "nparts": 4,
+  "h": 0.98,
+  "x": 0.84
+ },
+ "props": [
+  {
+   "img": "../layers/prop_dollar.jpg",
+   "h": 0.34,
+   "x": 0.58,
+   "y": 0.68,
+   "rot": 8,
+   "circle": true
+  }
+ ]
+}

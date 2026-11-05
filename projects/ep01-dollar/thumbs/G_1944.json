@@ -1,0 +1,28 @@
+{
+ "bg": "../layers/bg_hotel.jpg",
+ "badge": "1-QISM",
+ "headline": [
+  "1944:",
+  "DUNYO PULI",
+  "TANLANDI"
+ ],
+ "accent": 1,
+ "red": [
+  "1944:"
+ ],
+ "hero": {
+  "img": "../layers/fig_keynes.jpg",
+  "h": 0.92,
+  "x": 0.8
+ },
+ "props": [
+  {
+   "img": "../layers/prop_gold.jpg",
+   "h": 0.24,
+   "x": 0.58,
+   "y": 0.76,
+   "rot": -6,
+   "circle": true
+  }
+ ]
+}

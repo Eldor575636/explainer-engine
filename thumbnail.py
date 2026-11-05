@@ -80,10 +80,12 @@ def render(spec_path):
     bg = bg.resize((math.ceil(bg.width * sc), math.ceil(bg.height * sc)), Image.LANCZOS)
     bg = bg.crop(((bg.width - W) // 2, (bg.height - H) // 2, (bg.width - W) // 2 + W, (bg.height - H) // 2 + H))
     a = np.asarray(bg, np.float32)
-    dark = s.get("dark", 0.55)
-    a = a * (1 - dark) + np.array(INK, np.float32) * dark
+    light = s.get("theme") == "light"                     # light theme: cream wash, navy text
+    wash = np.array(CREAM if light else INK, np.float32)
+    dark = s.get("dark", 0.7 if light else 0.55)
+    a = a * (1 - dark) + wash * dark
     grad = np.clip(1.15 - np.linspace(0, 1, W) * 1.1, 0, 1)[None, :, None] * 0.45
-    a = a * (1 - grad) + np.array(INK, np.float32) * grad
+    a = a * (1 - grad) + wash * grad
     img = Image.fromarray(a.astype(np.uint8)).convert("RGB")
 
     # props (behind the hero) with optional pen circle
@@ -146,8 +148,9 @@ def render(spec_path):
         else:                                             # white Anton with ink outline; chosen words in red
             xx = x0
             for word in line.split(" "):
-                col = RED if word.strip("?!.,:") in red_words or word in red_words else (255, 255, 255)
-                d.text((xx, y - bb[1]), word, font=f, fill=col, stroke_width=7, stroke_fill=INK)
+                base = NAVY if light else (255, 255, 255)
+                col = RED if word.strip("?!.,:") in red_words or word in red_words else base
+                d.text((xx, y - bb[1]), word, font=f, fill=col, stroke_width=7, stroke_fill=CREAM if light else INK)
                 xx += f.getlength(word + " ")
         y += hh + gap
 
@@ -164,6 +167,9 @@ def render(spec_path):
         d.text((x0 + 18, 36 + 31 - (bf.getbbox(t)[1] + bf.getbbox(t)[3]) / 2), t, font=bf, fill=(255, 255, 255))
 
     wm = fx.wordmark({"anton": ANTON}, 64)                 # brand, bottom-left
+    if s.get("theme") == "light":                          # "Bilmas" in navy on light thumbnails
+        wa = np.array(wm); cream = (np.abs(wa[..., :3].astype(int) - np.array(CREAM)).sum(-1) < 60) & (wa[..., 3] > 0)
+        wa[cream, :3] = NAVY; wm = Image.fromarray(wa)
     sh = Image.new("RGBA", wm.size, (0, 0, 0, 0)); sh.putalpha(wm.split()[3])
     img.paste((0, 0, 0), (x0 + 3, H - wm.height - 28 + 3), sh.split()[3])
     img.paste(wm, (x0, H - wm.height - 28), wm)

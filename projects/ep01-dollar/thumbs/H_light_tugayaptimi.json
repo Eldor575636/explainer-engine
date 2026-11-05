@@ -1,0 +1,30 @@
+{
+ "theme": "light",
+ "bg": "../layers/map_world.jpg",
+ "badge": "1-QISM",
+ "headline": [
+  "DOLLAR",
+  "TUGAYAPTIMI?"
+ ],
+ "accent": 1,
+ "red": [
+  "DOLLAR"
+ ],
+ "hero": {
+  "img": "../layers/mascot_v2.jpg",
+  "part": 2,
+  "nparts": 4,
+  "h": 0.98,
+  "x": 0.82
+ },
+ "props": [
+  {
+   "img": "../layers/prop_dollar.jpg",
+   "h": 0.3,
+   "x": 0.6,
+   "y": 0.72,
+   "rot": -14,
+   "circle": true
+  }
+ ]
+}
