@@ -808,68 +808,78 @@ def main():
                 Image.fromarray((np.clip(fr, 0, 1) * 255).astype(np.uint8)).save(work / f"prev_{'v' if V else 'h'}_{tt:06.1f}.jpg", quality=85)
         print("preview saved"); return
 
-    # --- render ---
-    nframes = int(T * FPS)
-    print(f"Rendering {nframes} frames at {W}x{H}...")
-    tmp_video = work / "v3_video.mp4"
-    ff = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
-                           "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
-                           "-pix_fmt", "yuv420p", str(tmp_video)], stdin=subprocess.PIPE)
-    ci, bi = 0, 0
-    rng = random.Random(3)
-    for fi in range(nframes):
-        t = fi / FPS
-        while bi + 1 < len(beats) and beats[bi + 1]["t0"] <= t:
-            bi += 1
-        frame = render(bi, t - beats[bi]["t0"])
-        if bi + 1 < len(beats):
-            tr = beats[bi].get("_trans", "dissolve"); left = beats[bi]["t1"] - t
-            if tr == "zoom" and left < 0.45:
-                p = 1 - left / 0.45; zf = beats[bi].get("zf", [0.5, 0.45])
-                frame = fx.zoom_into(frame, zf[0], zf[1], p, W, H)
-                if p > 0.55:
-                    w = (p - 0.55) / 0.45; frame = frame * (1 - w) + render(bi + 1, 0.0) * w
-            elif tr == "whip" and left < 0.3:
-                frame = fx.whip(frame, render(bi + 1, 0.0), 1 - left / 0.3, W)
-            elif tr == "dissolve" and left < DISSOLVE:
-                w = 1 - left / DISSOLVE
-                frame = frame * (1 - w) + render(bi + 1, 0.0) * w
-        while ci + 1 < len(caps) and caps[ci + 1][0] <= t:
-            ci += 1
-        st, en, wst, sprs = caps[ci]
-        if st <= t < en:
-            k = max(j for j in range(len(wst)) if wst[j] <= t or j == 0)
-            cap_sprites(sprs)[k].draw(frame, W / 2, H - 78, 0.94 + 0.06 * back_out((t - st) / 0.18))
-        for hit in shakes:
-            if 0 <= t - hit < 0.25:
-                amp = 16 * (1 - (t - hit) / 0.25)
-                M = np.float32([[1, 0, rng.uniform(-amp, amp)], [0, 1, rng.uniform(-amp, amp)]])
-                frame = cv2.warpAffine(frame, M, (W, H), borderMode=cv2.BORDER_REFLECT)
-        ff.stdin.write((np.clip(frame, 0, 1) * 255).astype(np.uint8).tobytes())
-        if fi % 500 == 0:
-            print(f"  {fi}/{nframes}", flush=True)
-    ff.stdin.close(); ff.wait()
+    shorts_only = bool(os.environ.get("SHORTS_ONLY")) and out_path.exists()   # re-cut Shorts from an existing render
+    if not shorts_only:
+        # --- render ---
+        nframes = int(T * FPS)
+        print(f"Rendering {nframes} frames at {W}x{H}...")
+        tmp_video = work / "v3_video.mp4"
+        ff = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
+                               "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+                               "-pix_fmt", "yuv420p", str(tmp_video)], stdin=subprocess.PIPE)
+        ci, bi = 0, 0
+        rng = random.Random(3)
+        for fi in range(nframes):
+            t = fi / FPS
+            while bi + 1 < len(beats) and beats[bi + 1]["t0"] <= t:
+                bi += 1
+            frame = render(bi, t - beats[bi]["t0"])
+            if bi + 1 < len(beats):
+                tr = beats[bi].get("_trans", "dissolve"); left = beats[bi]["t1"] - t
+                if tr == "zoom" and left < 0.45:
+                    p = 1 - left / 0.45; zf = beats[bi].get("zf", [0.5, 0.45])
+                    frame = fx.zoom_into(frame, zf[0], zf[1], p, W, H)
+                    if p > 0.55:
+                        w = (p - 0.55) / 0.45; frame = frame * (1 - w) + render(bi + 1, 0.0) * w
+                elif tr == "whip" and left < 0.3:
+                    frame = fx.whip(frame, render(bi + 1, 0.0), 1 - left / 0.3, W)
+                elif tr == "dissolve" and left < DISSOLVE:
+                    w = 1 - left / DISSOLVE
+                    frame = frame * (1 - w) + render(bi + 1, 0.0) * w
+            while ci + 1 < len(caps) and caps[ci + 1][0] <= t:
+                ci += 1
+            st, en, wst, sprs = caps[ci]
+            if st <= t < en:
+                k = max(j for j in range(len(wst)) if wst[j] <= t or j == 0)
+                cap_sprites(sprs)[k].draw(frame, W / 2, H - 78, 0.94 + 0.06 * back_out((t - st) / 0.18))
+            for hit in shakes:
+                if 0 <= t - hit < 0.25:
+                    amp = 16 * (1 - (t - hit) / 0.25)
+                    M = np.float32([[1, 0, rng.uniform(-amp, amp)], [0, 1, rng.uniform(-amp, amp)]])
+                    frame = cv2.warpAffine(frame, M, (W, H), borderMode=cv2.BORDER_REFLECT)
+            ff.stdin.write((np.clip(frame, 0, 1) * 255).astype(np.uint8).tobytes())
+            if fi % 500 == 0:
+                print(f"  {fi}/{nframes}", flush=True)
+        ff.stdin.close(); ff.wait()
 
-    # --- audio mix ---
-    n = int(T * SR)
-    motion.write_wav(work / "sfx.wav", 0.85 * fx.extra_sfx(synth_sfx(n, sfx), xsfx))
-    files = {m: (proj / p).resolve() for m, p in cfg["music"].items()}
-    motion.write_wav(work / "music.wav", 0.9 * music_bed(n, music_segs, files))
-    fc = ("[1:a]asplit=2[v][vk];[3:a]volume=0.30,afade=t=in:d=1.0,afade=t=out:st=%.2f:d=2.5[m];"
-          "[m][vk]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=450[md];"
-          "[v][2:a][md]amix=inputs=3:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]") % max(0, T - 2.5)
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(tmp_video), "-i", str(work / "voice_clean.wav"),
-                    "-i", str(work / "sfx.wav"), "-i", str(work / "music.wav"), "-filter_complex", fc,
-                    "-map", "0:v", "-map", "[a]", "-t", f"{T:.2f}", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
-                    "-ar", "48000", "-movflags", "+faststart", str(out_path)], check=True)
-    (work / "beat_times.json").write_text(json.dumps([[b["type"], round(b["t0"], 2), round(b["t1"], 2)] for b in beats]))
-    print("Done:", out_path)
+        # --- audio mix ---
+        n = int(T * SR)
+        motion.write_wav(work / "sfx.wav", 0.85 * fx.extra_sfx(synth_sfx(n, sfx), xsfx))
+        files = {m: (proj / p).resolve() for m, p in cfg["music"].items()}
+        motion.write_wav(work / "music.wav", 0.9 * music_bed(n, music_segs, files))
+        fc = ("[1:a]asplit=2[v][vk];[3:a]volume=0.30,afade=t=in:d=1.0,afade=t=out:st=%.2f:d=2.5[m];"
+              "[m][vk]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=450[md];"
+              "[v][2:a][md]amix=inputs=3:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]") % max(0, T - 2.5)
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(tmp_video), "-i", str(work / "voice_clean.wav"),
+                        "-i", str(work / "sfx.wav"), "-i", str(work / "music.wav"), "-filter_complex", fc,
+                        "-map", "0:v", "-map", "[a]", "-t", f"{T:.2f}", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+                        "-ar", "48000", "-movflags", "+faststart", str(out_path)], check=True)
+        (work / "beat_times.json").write_text(json.dumps([[b["type"], round(b["t0"], 2), round(b["t1"], 2)] for b in beats]))
+        print("Done:", out_path)
 
     # --- Shorts / Reels: 9:16 clips cut from the long episode ---
     for sh in cfg.get("shorts", []):
         ta = max(0.0, wt(sh["from"]) - 0.15)
+        b_start = next((b for b in beats if ta - 0.01 <= b["t0"] <= ta + 0.4), None)
+        if b_start is not None:                            # start exactly on the scene, never on the tail of the last one
+            ta = b_start["t0"]
         si_end = sh["to"][0]
-        tb = max(e for (w, s_i), (s, e) in zip(sw, nt) if s_i == si_end) + 0.45
+        last_end = max(e for (w, s_i), (s, e) in zip(sw, nt) if s_i == si_end)
+        nxt = [s for (w, s_i), (s, e) in zip(sw, nt) if s > last_end + 0.01]
+        tb = min(last_end + 0.5, (nxt[0] - 0.05) if nxt else last_end + 0.5)   # end on the last word, before the next one
+        nb = [b["t0"] for b in beats if b["t0"] > last_end - 0.05]
+        if nb:
+            tb = min(tb, nb[0] - 0.03)                     # and before the next scene appears
         name = out_path.parent / f"{out_path.stem}_short_{sh['name']}.mp4"
         print(f"Short {sh['name']}: {ta:.1f}-{tb:.1f}s -> {name.name}")
         motion.W, motion.H = VW, VH
@@ -899,7 +909,7 @@ def main():
             while bi + 1 < len(beats) and beats[bi + 1]["t0"] <= t:
                 bi += 1
             frame = render(bi, t - beats[bi]["t0"], True)
-            if bi + 1 < len(beats) and beats[bi]["t1"] - t < DISSOLVE:
+            if bi + 1 < len(beats) and beats[bi]["t1"] - t < DISSOLVE and beats[bi]["t1"] < tb - 0.05:   # no peek at the next scene
                 w = 1 - (beats[bi]["t1"] - t) / DISSOLVE
                 frame = frame * (1 - w) + render(bi + 1, 0.0, True) * w
             if hook is not None and t - ta < 3.0:
@@ -915,7 +925,7 @@ def main():
         ff.stdin.close(); ff.wait()
         d = tb - ta
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(tmpv), "-ss", f"{ta:.2f}", "-t", f"{d:.2f}", "-i", str(out_path),
-                        "-map", "0:v", "-map", "1:a", "-af", f"afade=t=in:d=0.25,afade=t=out:st={max(0, d - 0.4):.2f}:d=0.4",
+                        "-map", "0:v", "-map", "1:a", "-af", f"afade=t=in:d=0.2,afade=t=out:st={max(0, d - 0.35):.2f}:d=0.35",
                         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", str(name)], check=True)
 
 

@@ -3675,5 +3675,66 @@
    ]
   }
  ],
- "shorts": []
+ "shorts": [
+  {
+   "name": "hook",
+   "from": [
+    0,
+    "Bu"
+   ],
+   "to": [
+    8,
+    "Va"
+   ],
+   "hook": ""
+  },
+  {
+   "name": "bretton_woods",
+   "from": [
+    34,
+    "1944-yil"
+   ],
+   "to": [
+    55,
+    "Shu"
+   ],
+   "hook": "1944: DOLLAR QANDAY SHOH BO'LDI?"
+  },
+  {
+   "name": "petrodollar",
+   "from": [
+    77,
+    "Demak"
+   ],
+   "to": [
+    95,
+    "Shunday"
+   ],
+   "hook": "NEFT DOLLARNI QANDAY QUTQARDI?"
+  },
+  {
+   "name": "power",
+   "from": [
+    99,
+    "Dunyoda"
+   ],
+   "to": [
+    111,
+    "Shu"
+   ],
+   "hook": "AQSH DAVLATNI DOLLARDAN QANDAY UZADI?"
+  },
+  {
+   "name": "uzbekistan",
+   "from": [
+    112,
+    "Endi"
+   ],
+   "to": [
+    125,
+    "Demak"
+   ],
+   "hook": "SO'M NEGA DOLLARGA BOG'LIQ?"
+  }
+ ]
 }

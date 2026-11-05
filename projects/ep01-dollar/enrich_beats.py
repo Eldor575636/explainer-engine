@@ -61,6 +61,5 @@ for x in b["beats"]:
     for e in x.get("ev", []):
         if e["k"] == "prop" and e.get("img") == "prop_gold" and e["at"][0] == 130:
             e["at"] = [130, "Markaziy"]
-b["shorts"] = []   # Shorts from the first render are unaffected by these fixes
 json.dump(b, open(here / "ep01_beats_enriched.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(len(b["beats"]), "beats,", sum(1 for x in b["beats"] for e in x.get("ev", []) if e["k"] == "flag"), "flags")
