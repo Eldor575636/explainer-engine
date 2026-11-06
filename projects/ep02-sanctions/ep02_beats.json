@@ -1,0 +1,3516 @@
+{
+ "layers": "layers",
+ "music": {
+  "curious": "../../assets/music/curious.mp3",
+  "dramatic": "../../assets/music/dramatic.mp3",
+  "calm": "../../assets/music/calm.mp3"
+ },
+ "mascot": {
+  "img": "mascot_v2",
+  "parts": 4,
+  "full_body": true
+ },
+ "ui": {
+  "subscribe": "OBUNA BO'LING",
+  "subscribed": "OBUNA BO'LDINGIZ",
+  "like": "LAYK",
+  "next": "KEYINGI VIDEO"
+ },
+ "sentences": [
+  "Tasavvur qiling: 2022-yil sentabr.",
+  "Samarqanddagi bir ona Rossiyada ishlayotgan o'g'li yuborgan pulni olish uchun bankka keldi.",
+  "O'g'li unga Rossiyaning \"Mir\" kartasini qoldirib ketgan edi.",
+  "Lekin o'sha kuni karta ishlamadi.",
+  "Ertasiga ham ishlamadi.",
+  "O'zbekistonda \"Mir\" kartalariga xizmat ko'rsatish to'xtatilgan edi.",
+  "Hech kim o'q uzmadi, hech qanday armiya chegarani kesib o'tmadi.",
+  "Lekin minglab kilometr uzoqdagi qarorlar oddiy bir oilaning hamyoniga yetib keldi.",
+  "Bu qurolning nomi, sanksiya.",
+  "Bugun Amerika va Yevropa minglab odamlar, kompaniyalar va butun davlatlarga sanksiya qo'ygan.",
+  "Xo'sh, sanksiyalar aslida qanday ishlaydi?",
+  "Va eng muhimi, ular haqiqatan ishlaydimi?",
+  "Mening ismim Bilmas, negadir odamlar meni Bilmasboy deb tanishadi.",
+  "Bilganlarim meni boy qilgan bo'lsa, bilmaganlarim ustida hanuzgacha savollar so'rayman, izlanaman.",
+  "Hamda shu yo'lda topganlarimni siz bilan ulashib boraman.",
+  "O'tgan safar dollar qanday qilib dunyo puliga aylanganini bilib oldik.",
+  "Bugun esa shu kuch qanday ishlatilishini bilib olamiz.",
+  "Demak, bugungi mavzu: sanksiyalar.",
+  "Sanksiya yangi narsa emas.",
+  "Miloddan avvalgi 432-yilda Afina shahri qo'shni Megara shahri savdogarlariga o'z bozorlari va portlarini yopib qo'ydi.",
+  "Bu tarixdagi eng mashhur ilk sanksiyalardan biri edi.",
+  "Megara iqtisodi qiynaldi, lekin taslim bo'lmadi.",
+  "Aksincha, bu qaror Yunonistonda katta urush boshlanishiga sabab bo'lgan omillardan biri bo'ldi.",
+  "Ya'ni sanksiya urushning o'rnini bosish uchun o'ylab topilgan, lekin ba'zan urushga olib boradi.",
+  "Yana bir saboq yigirmanchi asrdan.",
+  "1935-yilda Italiya Efiopiyaga bostirib kirdi.",
+  "O'sha paytdagi Millatlar Ligasi Italiyaga sanksiya qo'ydi.",
+  "Lekin eng muhim mahsulot, neft, ro'yxatga kiritilmadi.",
+  "Italiya urushni davom ettirdi va sanksiyalar bir yildan keyin bekor qilindi.",
+  "Saboq oddiy: sanksiya faqat og'riydigan joyga tegsagina natija beradi.",
+  "Xo'sh, sanksiya o'zi nima?",
+  "Oddiy qilib aytganda, bu \"siz bilan ishlamaymiz\" degan qaror.",
+  "Uning bir necha turi bor.",
+  "Birinchisi, savdo embargosi.",
+  "Bunda butun davlat bilan savdo to'xtatiladi.",
+  "Eng uzun misol, Kuba.",
+  "Amerika Kubaga 1962-yilda embargo qo'ygan va u hozirgacha davom etmoqda.",
+  "Ikkinchisi, shaxsiy sanksiyalar.",
+  "Muayyan odamlar va kompaniyalarning chet eldagi pullari muzlatiladi, ular chet elga chiqa olmaydi.",
+  "Uchinchisi, moliyaviy sanksiyalar.",
+  "Bunda davlat yoki bankni xalqaro pul tizimidan uzib qo'yishadi.",
+  "To'rtinchisi esa eng kuchlisi, ikkilamchi sanksiyalar.",
+  "U shunday ishlaydi: \"Agar siz sanksiya qo'yilgan davlat bilan ishlasangiz, biz siz bilan ham ishlamaymiz.\"",
+  "Aynan shu turdagi sanksiya butun dunyo banklarini qo'rqitadi.",
+  "Nega aynan Amerika sanksiyalari bunchalik kuchli?",
+  "Javob o'tgan qismda: dollar.",
+  "Dunyodagi valyuta bitimlarining deyarli har 10 tasidan 9 tasida dollar bor.",
+  "Dollar o'tkazmalari esa qachondir Amerika banklari orqali o'tadi.",
+  "Demak, Amerika \"bu odam bilan ishlamang\" desa, dunyo banklari uni tinglashga majbur.",
+  "Aks holda ularning o'zi Amerika moliya tizimidan uzilib qolishi mumkin.",
+  "Bu ishni Vashingtondagi bitta idora boshqaradi: Moliya vazirligi qoshidagi Xorijiy aktivlarni nazorat qilish idorasi, qisqacha OFAK.",
+  "U 1950-yilda, Koreya urushi paytida tashkil topgan.",
+  "Bugun uning qora ro'yxatida minglab odamlar, kompaniyalar, kemalar va hatto samolyotlar bor.",
+  "Bu ro'yxatga tushgan odam uchun dunyo birdan juda kichrayib qoladi.",
+  "Uning bank kartasi ishlamaydi, hisobi muzlaydi, hech bir jiddiy bank u bilan aloqa qilmaydi.",
+  "Sanksiya qanday qo'yiladi?",
+  "Amerikada odatda Prezident farmon imzolaydi, OFAK esa kimlar ro'yxatga tushishini e'lon qiladi.",
+  "Yevropa Ittifoqida esa yangi sanksiya uchun barcha 27 davlat rozi bo'lishi kerak.",
+  "Shuning uchun Yevropa sanksiyalari sekinroq qabul qilinadi, lekin qabul qilingach, butun bir bozorni yopadi.",
+  "Bir soniya to'xtab: agar bu kabi mavzular sizga qiziq bo'lsa, kanalga obuna bo'ling va qo'ng'iroqchani bosib, qo'llab-quvvatlashni unutmang.",
+  "Davom etamiz.",
+  "Sanksiya amalda qanday ishlashini Eron misolida ko'raylik.",
+  "2012-yil mart oyida Eronning o'ttizga yaqin banki, jumladan markaziy banki ham, xalqaro bank tarmog'i SWIFT dan uzib qo'yildi.",
+  "SWIFT, bu banklar bir-biriga to'lov haqida xabar yuboradigan tizim.",
+  "Undan uzilgan bank telefoni o'chirilgan odamga o'xshaydi: pul bor, lekin hech kimga yubora olmaydi.",
+  "Eron neftini sotish qiyinlashdi, neft eksporti bir necha yilda deyarli yarmiga qisqardi.",
+  "Eron puli, riyol, keskin qadrsizlandi, narxlar tez oshdi.",
+  "Va 2015-yilda Eron yadro dasturini cheklash bo'yicha kelishuvga rozi bo'ldi.",
+  "Ko'pchilik buni sanksiyalarning eng katta muvaffaqiyati deb biladi.",
+  "Lekin hikoya shu bilan tugamadi.",
+  "2018-yilda Amerika bu kelishuvdan chiqdi va sanksiyalar qaytdi.",
+  "Ya'ni sanksiya Eronni muzokara stoliga olib keldi, lekin muammoni butunlay hal qilmadi.",
+  "Endi eng katta sinovga o'taylik: Rossiya.",
+  "2022-yil fevralda Rossiya Ukrainaga bostirib kirgandan keyin G'arb tarixdagi eng katta sanksiyalarni qo'ydi.",
+  "Rossiya markaziy bankining chet eldagi taxminan 300 milliard dollarlik zaxirasi muzlatildi.",
+  "Bu uning zaxiralarining taxminan yarmi edi.",
+  "Eng yirik Rossiya banklari SWIFT dan uzildi.",
+  "Visa va Mastercard Rossiyadan chiqib ketdi.",
+  "Yevropa Rossiya neftining katta qismini sotib olishni to'xtatdi, G'arb davlatlari esa Rossiya nefti narxiga chegara qo'ydi.",
+  "Ko'pchilik Rossiya iqtisodi bir necha oyda qulaydi, deb kutgandi.",
+  "Lekin bunday bo'lmadi.",
+  "Rossiya neftini Xitoy va Hindistonga sotishni boshladi.",
+  "To'lovlar uchun boshqa yo'llar, boshqa valyutalar va vositachi davlatlar topildi.",
+  "Iqtisod qiynaldi, lekin qulamadi.",
+  "Muzlatilgan pullar masalasi esa hozirgacha hal bo'lmagan.",
+  "Faqat Belgiyadagi Euroclear tashkilotining o'zida 2026-yil boshida Rossiyaga tegishli 200 milliard yevro atrofidagi aktiv saqlanib turibdi.",
+  "Ular atrofidagi sud janjallari hali davom etmoqda.",
+  "Aytgancha, agar video foydali bo'layotgan bo'lsa, layk bosing, bu kanalning ko'proq odamga yetib borishiga yordam beradi.",
+  "Mavzuga qaytamiz.",
+  "Xo'sh, sanksiyalar ishlaydimi?",
+  "Olimlar yuzlab sanksiya holatlarini o'rganib chiqqan.",
+  "Eng mashhur tadqiqotlardan biriga ko'ra, sanksiyalarning taxminan har uchtadan bittasigina o'z maqsadiga erishgan.",
+  "Ular ko'proq maqsad kichik va aniq bo'lsa, sanksiya qo'yilgan davlat kichik bo'lsa va unga boshqa yo'l qolmasa ishlaydi.",
+  "Masalan, Janubiy Afrikada aparteid tizimi tugashida xalqaro sanksiyalar ham muhim rol o'ynagan deb hisoblanadi.",
+  "Kuba esa buning teskarisi: oltmish yildan ortiq embargodan keyin ham u yerdagi tuzum o'zgarmadi.",
+  "Sanksiyalarning yana bir muammosi bor.",
+  "Ko'pincha ulardan hokimiyatdagilar emas, oddiy odamlar ko'proq jabr ko'radi.",
+  "Narxlar oshadi, dori-darmon topish qiyinlashadi, qora bozor kuchayadi.",
+  "Va eng qizig'i: sanksiyalar ko'paygani sari, davlatlar dollarsiz yashash yo'llarini qidira boshlaydi.",
+  "Xususan, Xitoy va Rossiya o'z to'lov tizimlarini qurmoqda.",
+  "Ya'ni Amerika dollar kuchini qancha ko'p ishlatsa, dunyo undan qochish yo'llarini shuncha ko'p izlaydi.",
+  "Endi yana O'zbekistonga qaytaylik.",
+  "O'zbekistonga sanksiya qo'yilmagan.",
+  "Lekin baribir sanksiyalar bizga ta'sir qiladi.",
+  "2022-yil 23-sentabrda O'zbekistonda Rossiyaning \"Mir\" kartalariga xizmat ko'rsatish to'xtatildi.",
+  "Rasmiy sabab \"texnik sabablar\" deb aytildi.",
+  "Lekin xuddi shu kunlarda Turkiya, Qozog'iston va Armaniston banklari ham Amerikaning ikkilamchi sanksiyalaridan xavotirlanib, \"Mir\" kartalarini to'xtatgan edi.",
+  "Bundan tashqari, Amerika O'zbekistonda ro'yxatdan o'tgan bir necha kompaniyani Rossiya harbiy sanoatiga yordam bergani uchun sanksiya ro'yxatiga kiritgan.",
+  "Shuning uchun o'zbek banklari Rossiya bilan bog'liq har bir o'tkazmaga juda ehtiyotkorlik bilan qaraydi.",
+  "Esingizda bo'lsa, o'tgan qismda, migrantlar yuboradigan pulning qariyb to'rtdan uch qismi Rossiyadan kelishini aytgandim.",
+  "Demak, Vashington va Bryusseldagi qarorlar Toshkent, Samarqand va Farg'onadagi oilalarning hamyoniga to'g'ridan-to'g'ri ta'sir qiladi.",
+  "Xo'sh, savolimizga javob.",
+  "Sanksiyalar qanday ishlaydi?",
+  "Ular dollar va xalqaro bank tizimi orqali ishlaydi: kim shu tizimga muhtoj bo'lsa, uning qoidalariga bo'ysunishga majbur.",
+  "Ular ishlaydimi?",
+  "Ba'zan.",
+  "Sanksiya davlatni qiynashi, muzokaraga majbur qilishi mumkin, lekin katta davlatning siyosatini kamdan-kam o'zgartiradi.",
+  "Va har bir sanksiya dunyoni dollarsiz yo'llar qidirishga biroz ko'proq undaydi.",
+  "Sanksiyalar haqida men ham bilmas edim.",
+  "Endi esa hammamiz bilamiz.",
+  "Ana endi sizga savol: sizningcha, sanksiya adolatli qurolmi, yoki u ko'proq oddiy odamlarni jazolaydimi?",
+  "Fikringizni izohlarda yozib qoldiring.",
+  "Keyingi qismda esa boshqa savol: qanday qilib botqoqlik bo'lgan kichik orol bir avlod ichida dunyoning eng boy davlatlaridan biriga aylandi?",
+  "Gap Singapur va uni qurgan odam, Li Kuan Yu haqida.",
+  "O'tkazib yubormaslik uchun obuna bo'ling, qo'ng'iroqchani bosing va videoni do'stlaringizga ulashing.",
+  "Sizlar bilan boylikni bilimdan topgan, savol berishdan tortinmaydigan Bilmasboy bo'ldi."
+ ],
+ "beats": [
+  {
+   "at": [
+    0,
+    "Tasavvur"
+   ],
+   "type": "scene",
+   "bg": "bg_samarkand_bank",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      0,
+      "2022-yil"
+     ],
+     "k": "label",
+     "text": "2022 · SENTABR"
+    },
+    {
+     "at": [
+      1,
+      "Samarqanddagi"
+     ],
+     "k": "flag",
+     "code": "uz"
+    },
+    {
+     "at": [
+      1,
+      "Samarqanddagi"
+     ],
+     "k": "tag",
+     "text": "SAMARQAND"
+    },
+    {
+     "at": [
+      1,
+      "Rossiyada"
+     ],
+     "k": "tag",
+     "text": "O'G'LI ROSSIYADA ISHLAYDI"
+    },
+    {
+     "at": [
+      3,
+      "ishlamadi"
+     ],
+     "k": "circle",
+     "x": 0.44,
+     "y": 0.45,
+     "rx": 0.07,
+     "ry": 0.1
+    }
+   ]
+  },
+  {
+   "at": [
+    2,
+    "O'g'li"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_card_x",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      2,
+      "Mir"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      2,
+      "Mir"
+     ],
+     "k": "tag",
+     "text": "\"MIR\" KARTASI",
+     "x": 0.3,
+     "y": 0.82
+    },
+    {
+     "at": [
+      3,
+      "ishlamadi"
+     ],
+     "k": "stamp",
+     "text": "ISHLAMADI"
+    },
+    {
+     "at": [
+      4,
+      "Ertasiga"
+     ],
+     "k": "tag",
+     "text": "ERTASIGA HAM...",
+     "x": 0.7,
+     "y": 0.4,
+     "fg": "red"
+    },
+    {
+     "at": [
+      5,
+      "to'xtatilgan"
+     ],
+     "k": "tag",
+     "text": "XIZMAT TO'XTATILDI",
+     "x": 0.7,
+     "y": 0.58
+    }
+   ]
+  },
+  {
+   "at": [
+    6,
+    "Hech"
+   ],
+   "type": "scene",
+   "bg": "bg_war",
+   "tint": 0.55,
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      6,
+      "o'q"
+     ],
+     "k": "tag",
+     "text": "O'Q UZILMADI"
+    },
+    {
+     "at": [
+      6,
+      "armiya"
+     ],
+     "k": "tag",
+     "text": "ARMIYA KIRMADI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    7,
+    "Lekin"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.6,
+    0.4
+   ],
+   "ev": [
+    {
+     "at": [
+      7,
+      "minglab"
+     ],
+     "k": "arrow",
+     "from": [
+      0.27,
+      0.38
+     ],
+     "to": [
+      0.65,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      7,
+      "qarorlar"
+     ],
+     "k": "arrow",
+     "from": [
+      0.485,
+      0.3
+     ],
+     "to": [
+      0.65,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      7,
+      "oilaning"
+     ],
+     "k": "pin",
+     "x": 0.65,
+     "y": 0.38
+    },
+    {
+     "at": [
+      7,
+      "hamyoniga"
+     ],
+     "k": "rings",
+     "x": 0.65,
+     "y": 0.38
+    }
+   ]
+  },
+  {
+   "at": [
+    8,
+    "Bu"
+   ],
+   "type": "title",
+   "title": "BU QUROLNING NOMI",
+   "title2": "SANKSIYA"
+  },
+  {
+   "at": [
+    9,
+    "Bugun"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dossier",
+     "x": 0.2,
+     "y": 0.5,
+     "h": 0.36,
+     "at": [
+      9,
+      "odamlar"
+     ]
+    },
+    {
+     "img": "prop_card_frozen",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.36,
+     "at": [
+      9,
+      "kompaniyalar"
+     ]
+    },
+    {
+     "img": "prop_phone_cut",
+     "x": 0.8,
+     "y": 0.5,
+     "h": 0.36,
+     "at": [
+      9,
+      "davlatlarga"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      9,
+      "Amerika"
+     ],
+     "k": "flag",
+     "code": [
+      "us",
+      "eu"
+     ],
+     "x": 0.5,
+     "y": 0.18
+    },
+    {
+     "at": [
+      9,
+      "odamlar"
+     ],
+     "k": "tag",
+     "text": "ODAMLAR",
+     "x": 0.2,
+     "y": 0.8
+    },
+    {
+     "at": [
+      9,
+      "kompaniyalar"
+     ],
+     "k": "tag",
+     "text": "KOMPANIYALAR",
+     "x": 0.5,
+     "y": 0.8
+    },
+    {
+     "at": [
+      9,
+      "davlatlarga"
+     ],
+     "k": "tag",
+     "text": "DAVLATLAR",
+     "x": 0.8,
+     "y": 0.8,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    10,
+    "Xo'sh"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      10,
+      "Xo'sh"
+     ],
+     "k": "mascot",
+     "pose": 0,
+     "side": "right"
+    },
+    {
+     "at": [
+      10,
+      "qanday"
+     ],
+     "k": "tag",
+     "text": "QANDAY ISHLAYDI?",
+     "x": 0.36,
+     "y": 0.4
+    },
+    {
+     "at": [
+      11,
+      "haqiqatan"
+     ],
+     "k": "tag",
+     "text": "ISHLAYDIMI O'ZI?",
+     "x": 0.36,
+     "y": 0.58,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    12,
+    "Mening"
+   ],
+   "type": "intro",
+   "pose": 3
+  },
+  {
+   "at": [
+    13,
+    "Bilganlarim"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      13,
+      "Bilganlarim"
+     ],
+     "k": "mascot",
+     "pose": 3,
+     "side": "right"
+    },
+    {
+     "at": [
+      13,
+      "Bilganlarim"
+     ],
+     "k": "tag",
+     "text": "BILIM = BOYLIK",
+     "x": 0.32,
+     "y": 0.3
+    },
+    {
+     "at": [
+      13,
+      "savollar"
+     ],
+     "k": "tag",
+     "text": "SO'RAYMAN",
+     "x": 0.32,
+     "y": 0.45
+    },
+    {
+     "at": [
+      13,
+      "izlanaman"
+     ],
+     "k": "tag",
+     "text": "IZLANAMAN",
+     "x": 0.32,
+     "y": 0.58
+    },
+    {
+     "at": [
+      14,
+      "ulashib"
+     ],
+     "k": "tag",
+     "text": "ULASHAMAN",
+     "x": 0.32,
+     "y": 0.71,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    15,
+    "O'tgan"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      15,
+      "dollar"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      15,
+      "O'tgan"
+     ],
+     "k": "label",
+     "text": "1-QISM: DOLLAR"
+    },
+    {
+     "at": [
+      16,
+      "kuch"
+     ],
+     "k": "arrow",
+     "from": [
+      0.43,
+      0.5
+     ],
+     "to": [
+      0.66,
+      0.5
+     ],
+     "straight": true
+    },
+    {
+     "at": [
+      16,
+      "ishlatilishini"
+     ],
+     "k": "prop",
+     "img": "prop_phone_cut",
+     "x": 0.78,
+     "y": 0.5,
+     "h": 0.4
+    }
+   ]
+  },
+  {
+   "at": [
+    17,
+    "Demak"
+   ],
+   "type": "title",
+   "title": "BUGUNGI MAVZU",
+   "title2": "SANKSIYALAR"
+  },
+  {
+   "at": [
+    18,
+    "Sanksiya"
+   ],
+   "type": "chapter",
+   "num": "1-QISM",
+   "title": "ESKI QUROL"
+  },
+  {
+   "at": [
+    19,
+    "Miloddan"
+   ],
+   "type": "scene",
+   "bg": "bg_ancient_harbor",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      19,
+      "432-yilda"
+     ],
+     "k": "label",
+     "text": "MIL. AVV. 432"
+    },
+    {
+     "at": [
+      19,
+      "Afina"
+     ],
+     "k": "flag",
+     "code": "gr"
+    },
+    {
+     "at": [
+      19,
+      "Afina"
+     ],
+     "k": "tag",
+     "text": "AFINA"
+    },
+    {
+     "at": [
+      19,
+      "Megara"
+     ],
+     "k": "tag",
+     "text": "MEGARA SAVDOGARLARI",
+     "fg": "red"
+    },
+    {
+     "at": [
+      19,
+      "yopib"
+     ],
+     "k": "stamp",
+     "text": "YOPIQ"
+    },
+    {
+     "at": [
+      20,
+      "ilk"
+     ],
+     "k": "tag",
+     "text": "ILK SANKSIYALARDAN BIRI"
+    }
+   ]
+  },
+  {
+   "at": [
+    21,
+    "Megara"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.53,
+    0.37
+   ],
+   "ev": [
+    {
+     "at": [
+      21,
+      "Megara"
+     ],
+     "k": "pin",
+     "x": 0.53,
+     "y": 0.37
+    },
+    {
+     "at": [
+      21,
+      "qiynaldi"
+     ],
+     "k": "rings",
+     "x": 0.53,
+     "y": 0.37
+    },
+    {
+     "at": [
+      21,
+      "taslim"
+     ],
+     "k": "tag",
+     "text": "TASLIM BO'LMADI",
+     "x": 0.5,
+     "y": 0.82
+    }
+   ]
+  },
+  {
+   "at": [
+    22,
+    "Aksincha"
+   ],
+   "type": "scene",
+   "bg": "bg_war",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      22,
+      "urush"
+     ],
+     "k": "tag",
+     "text": "KATTA URUSH"
+    },
+    {
+     "at": [
+      23,
+      "o'rnini"
+     ],
+     "k": "tag",
+     "text": "URUSH O'RNIGA...",
+     "x": 0.3,
+     "y": 0.3
+    },
+    {
+     "at": [
+      23,
+      "urushga"
+     ],
+     "k": "stamp",
+     "text": "URUSHGA OLIB KELDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    24,
+    "Yana"
+   ],
+   "type": "scene",
+   "bg": "bg_ethiopia_1935",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      24,
+      "yigirmanchi"
+     ],
+     "k": "label",
+     "text": "XX ASR"
+    },
+    {
+     "at": [
+      25,
+      "1935-yilda"
+     ],
+     "k": "label",
+     "text": "1935"
+    },
+    {
+     "at": [
+      25,
+      "Italiya"
+     ],
+     "k": "flag",
+     "code": "it"
+    },
+    {
+     "at": [
+      25,
+      "Efiopiyaga"
+     ],
+     "k": "flag",
+     "code": [
+      "it",
+      "et"
+     ]
+    },
+    {
+     "at": [
+      25,
+      "bostirib"
+     ],
+     "k": "tag",
+     "text": "ITALIYA BOSTIRIB KIRDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    26,
+    "O'sha"
+   ],
+   "type": "scene",
+   "bg": "bg_league_nations",
+   "ev": [
+    {
+     "at": [
+      26,
+      "Millatlar"
+     ],
+     "k": "label",
+     "text": "MILLATLAR LIGASI"
+    },
+    {
+     "at": [
+      26,
+      "sanksiya"
+     ],
+     "k": "tag",
+     "text": "ITALIYAGA SANKSIYA"
+    }
+   ]
+  },
+  {
+   "at": [
+    27,
+    "Lekin"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_sheet2",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      27,
+      "neft"
+     ],
+     "part": 0,
+     "nparts": 4
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      27,
+      "muhim"
+     ],
+     "k": "label",
+     "text": "ENG MUHIM MAHSULOT"
+    },
+    {
+     "at": [
+      27,
+      "neft"
+     ],
+     "k": "tag",
+     "text": "NEFT",
+     "x": 0.5,
+     "y": 0.82
+    },
+    {
+     "at": [
+      27,
+      "kiritilmadi"
+     ],
+     "k": "stamp",
+     "text": "RO'YXATDA YO'Q"
+    }
+   ]
+  },
+  {
+   "at": [
+    28,
+    "Italiya"
+   ],
+   "type": "scene",
+   "bg": "bg_ethiopia_1935",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      28,
+      "davom"
+     ],
+     "k": "tag",
+     "text": "URUSH DAVOM ETDI"
+    },
+    {
+     "at": [
+      28,
+      "bekor"
+     ],
+     "k": "stamp",
+     "text": "BEKOR QILINDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    29,
+    "Saboq"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      29,
+      "Saboq"
+     ],
+     "k": "mascot",
+     "pose": 1,
+     "side": "right"
+    },
+    {
+     "at": [
+      29,
+      "Saboq"
+     ],
+     "k": "label",
+     "text": "SABOQ"
+    },
+    {
+     "at": [
+      29,
+      "og'riydigan"
+     ],
+     "k": "tag",
+     "text": "OG'RIYDIGAN JOYGA TEGSA",
+     "x": 0.36,
+     "y": 0.45
+    },
+    {
+     "at": [
+      29,
+      "natija"
+     ],
+     "k": "tag",
+     "text": "NATIJA BERADI",
+     "x": 0.36,
+     "y": 0.6,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    30,
+    "Xo'sh"
+   ],
+   "type": "chapter",
+   "num": "2-QISM",
+   "title": "SANKSIYA NIMA?"
+  },
+  {
+   "at": [
+    31,
+    "Oddiy"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      31,
+      "siz"
+     ],
+     "k": "bigtext",
+     "text": "X",
+     "x": 0.5,
+     "y": 0.45
+    },
+    {
+     "at": [
+      31,
+      "ishlamaymiz"
+     ],
+     "k": "label",
+     "text": "\"SIZ BILAN ISHLAMAYMIZ\""
+    },
+    {
+     "at": [
+      32,
+      "turi"
+     ],
+     "k": "tag",
+     "text": "4 TURI",
+     "x": 0.5,
+     "y": 0.8
+    }
+   ]
+  },
+  {
+   "at": [
+    33,
+    "Birinchisi"
+   ],
+   "type": "scene",
+   "bg": "bg_havana",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      33,
+      "Birinchisi"
+     ],
+     "k": "label",
+     "text": "1. SAVDO EMBARGOSI"
+    },
+    {
+     "at": [
+      34,
+      "savdo"
+     ],
+     "k": "tag",
+     "text": "BUTUN DAVLAT BILAN SAVDO YO'Q"
+    },
+    {
+     "at": [
+      35,
+      "Kuba"
+     ],
+     "k": "flag",
+     "code": "cu"
+    },
+    {
+     "at": [
+      35,
+      "Kuba"
+     ],
+     "k": "tag",
+     "text": "KUBA"
+    },
+    {
+     "at": [
+      36,
+      "Amerika"
+     ],
+     "k": "flag",
+     "code": [
+      "us",
+      "cu"
+     ]
+    },
+    {
+     "at": [
+      36,
+      "1962-yilda"
+     ],
+     "k": "counter",
+     "from": 1962,
+     "to": 2026,
+     "x": 0.5,
+     "y": 0.5
+    },
+    {
+     "at": [
+      36,
+      "hozirgacha"
+     ],
+     "k": "tag",
+     "text": "HALI HAM DAVOM ETMOQDA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    37,
+    "Ikkinchisi"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_card_frozen",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.46,
+     "at": [
+      37,
+      "Ikkinchisi"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      37,
+      "Ikkinchisi"
+     ],
+     "k": "label",
+     "text": "2. SHAXSIY SANKSIYALAR"
+    },
+    {
+     "at": [
+      38,
+      "muzlatiladi"
+     ],
+     "k": "tag",
+     "text": "PULLARI MUZLATILADI",
+     "x": 0.7,
+     "y": 0.42
+    },
+    {
+     "at": [
+      38,
+      "chiqa"
+     ],
+     "k": "tag",
+     "text": "CHET ELGA CHIQA OLMAYDI",
+     "x": 0.7,
+     "y": 0.6,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    39,
+    "Uchinchisi"
+   ],
+   "type": "scene",
+   "bg": "bg_bank_network",
+   "ev": [
+    {
+     "at": [
+      39,
+      "Uchinchisi"
+     ],
+     "k": "label",
+     "text": "3. MOLIYAVIY SANKSIYALAR"
+    },
+    {
+     "at": [
+      40,
+      "uzib"
+     ],
+     "k": "tag",
+     "text": "XALQARO TIZIMDAN UZILADI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    41,
+    "To'rtinchisi"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      41,
+      "To'rtinchisi"
+     ],
+     "k": "label",
+     "text": "4. IKKILAMCHI SANKSIYALAR"
+    },
+    {
+     "at": [
+      41,
+      "kuchlisi"
+     ],
+     "k": "stamp",
+     "text": "ENG KUCHLISI"
+    },
+    {
+     "at": [
+      42,
+      "Agar"
+     ],
+     "k": "tag",
+     "text": "SIZ ULAR BILAN ISHLASANGIZ...",
+     "x": 0.5,
+     "y": 0.55
+    },
+    {
+     "at": [
+      42,
+      "biz"
+     ],
+     "k": "tag",
+     "text": "...BIZ SIZ BILAN ISHLAMAYMIZ",
+     "x": 0.5,
+     "y": 0.7,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    43,
+    "Aynan"
+   ],
+   "type": "scene",
+   "bg": "bg_bank_network",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      43,
+      "banklarini"
+     ],
+     "k": "tag",
+     "text": "DUNYO BANKLARI QO'RQADI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    44,
+    "Nega"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      44,
+      "Nega"
+     ],
+     "k": "mascot",
+     "pose": 0,
+     "side": "right"
+    },
+    {
+     "at": [
+      44,
+      "kuchli"
+     ],
+     "k": "tag",
+     "text": "NEGA AMERIKA?",
+     "x": 0.36,
+     "y": 0.4
+    },
+    {
+     "at": [
+      44,
+      "Amerika"
+     ],
+     "k": "flag",
+     "code": "us",
+     "x": 0.36,
+     "y": 0.2
+    }
+   ]
+  },
+  {
+   "at": [
+    45,
+    "Javob"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.5,
+     "y": 0.48,
+     "h": 0.6,
+     "at": [
+      45,
+      "dollar"
+     ],
+     "slam": true
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      45,
+      "Javob"
+     ],
+     "k": "label",
+     "text": "JAVOB: DOLLAR"
+    }
+   ]
+  },
+  {
+   "at": [
+    46,
+    "Dunyodagi"
+   ],
+   "type": "number",
+   "prop": "prop_dollar",
+   "value": "9/10",
+   "sub": "VALYUTA BITIMLARIDA DOLLAR BOR",
+   "show": [
+    46,
+    "9"
+   ]
+  },
+  {
+   "at": [
+    47,
+    "Dollar"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.4,
+    0.4
+   ],
+   "ev": [
+    {
+     "at": [
+      47,
+      "o'tkazmalari"
+     ],
+     "k": "arrow",
+     "from": [
+      0.65,
+      0.38
+     ],
+     "to": [
+      0.27,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      47,
+      "Amerika"
+     ],
+     "k": "arrow",
+     "from": [
+      0.49,
+      0.33
+     ],
+     "to": [
+      0.27,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      47,
+      "banklari"
+     ],
+     "k": "arrow",
+     "from": [
+      0.76,
+      0.4
+     ],
+     "to": [
+      0.27,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      47,
+      "orqali"
+     ],
+     "k": "pin",
+     "x": 0.27,
+     "y": 0.38
+    },
+    {
+     "at": [
+      47,
+      "orqali"
+     ],
+     "k": "label",
+     "text": "AMERIKA BANKLARI ORQALI"
+    }
+   ]
+  },
+  {
+   "at": [
+    48,
+    "Demak"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      48,
+      "ishlamang"
+     ],
+     "k": "tag",
+     "text": "\"BU ODAM BILAN ISHLAMANG\"",
+     "x": 0.5,
+     "y": 0.35
+    },
+    {
+     "at": [
+      48,
+      "majbur"
+     ],
+     "k": "tag",
+     "text": "BANKLAR TINGLAYDI",
+     "x": 0.5,
+     "y": 0.55,
+     "fg": "red"
+    },
+    {
+     "at": [
+      49,
+      "uzilib"
+     ],
+     "k": "tag",
+     "text": "AKS HOLDA: TIZIMDAN UZILADI",
+     "x": 0.5,
+     "y": 0.72
+    }
+   ]
+  },
+  {
+   "at": [
+    50,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_treasury",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      50,
+      "Vashingtondagi"
+     ],
+     "k": "flag",
+     "code": "us"
+    },
+    {
+     "at": [
+      50,
+      "Vashingtondagi"
+     ],
+     "k": "label",
+     "text": "VASHINGTON"
+    },
+    {
+     "at": [
+      50,
+      "Moliya"
+     ],
+     "k": "tag",
+     "text": "MOLIYA VAZIRLIGI"
+    },
+    {
+     "at": [
+      50,
+      "OFAK"
+     ],
+     "k": "stamp",
+     "text": "OFAK"
+    },
+    {
+     "at": [
+      51,
+      "1950-yilda"
+     ],
+     "k": "label",
+     "text": "1950 · KOREYA URUSHI"
+    }
+   ]
+  },
+  {
+   "at": [
+    52,
+    "Bugun"
+   ],
+   "type": "scene",
+   "bg": "bg_treasury",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      52,
+      "ro'yxatida"
+     ],
+     "k": "label",
+     "text": "QORA RO'YXAT"
+    },
+    {
+     "at": [
+      52,
+      "odamlar"
+     ],
+     "k": "tag",
+     "text": "ODAMLAR"
+    },
+    {
+     "at": [
+      52,
+      "kompaniyalar"
+     ],
+     "k": "tag",
+     "text": "KOMPANIYALAR"
+    },
+    {
+     "at": [
+      52,
+      "kemalar"
+     ],
+     "k": "tag",
+     "text": "KEMALAR"
+    },
+    {
+     "at": [
+      52,
+      "samolyotlar"
+     ],
+     "k": "tag",
+     "text": "SAMOLYOTLAR",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    53,
+    "Bu"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_card_x",
+     "x": 0.2,
+     "y": 0.5,
+     "h": 0.36,
+     "at": [
+      54,
+      "kartasi"
+     ]
+    },
+    {
+     "img": "prop_card_frozen",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.36,
+     "at": [
+      54,
+      "muzlaydi"
+     ]
+    },
+    {
+     "img": "prop_phone_cut",
+     "x": 0.8,
+     "y": 0.5,
+     "h": 0.36,
+     "at": [
+      54,
+      "aloqa"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      53,
+      "kichrayib"
+     ],
+     "k": "label",
+     "text": "DUNYO KICHRAYADI"
+    },
+    {
+     "at": [
+      54,
+      "kartasi"
+     ],
+     "k": "tag",
+     "text": "KARTA ISHLAMAYDI",
+     "x": 0.2,
+     "y": 0.8
+    },
+    {
+     "at": [
+      54,
+      "muzlaydi"
+     ],
+     "k": "tag",
+     "text": "HISOB MUZLAYDI",
+     "x": 0.5,
+     "y": 0.8
+    },
+    {
+     "at": [
+      54,
+      "aloqa"
+     ],
+     "k": "tag",
+     "text": "BANKLAR YO'Q",
+     "x": 0.8,
+     "y": 0.8,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    55,
+    "Sanksiya"
+   ],
+   "type": "scene",
+   "bg": "bg_fed",
+   "ev": [
+    {
+     "at": [
+      55,
+      "qo'yiladi"
+     ],
+     "k": "label",
+     "text": "QANDAY QO'YILADI?"
+    },
+    {
+     "at": [
+      56,
+      "Amerikada"
+     ],
+     "k": "flag",
+     "code": "us"
+    },
+    {
+     "at": [
+      56,
+      "Prezident"
+     ],
+     "k": "tag",
+     "text": "PREZIDENT FARMONI"
+    },
+    {
+     "at": [
+      56,
+      "OFAK"
+     ],
+     "k": "tag",
+     "text": "OFAK: RO'YXAT"
+    }
+   ]
+  },
+  {
+   "at": [
+    57,
+    "Yevropa"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.5,
+    0.3
+   ],
+   "ev": [
+    {
+     "at": [
+      57,
+      "Yevropa"
+     ],
+     "k": "flag",
+     "code": "eu"
+    },
+    {
+     "at": [
+      57,
+      "Ittifoqida"
+     ],
+     "k": "rings",
+     "x": 0.485,
+     "y": 0.3
+    },
+    {
+     "at": [
+      57,
+      "27"
+     ],
+     "k": "counter",
+     "to": 27,
+     "suffix": " DAVLAT ROZI",
+     "x": 0.5,
+     "y": 0.8
+    },
+    {
+     "at": [
+      58,
+      "sekinroq"
+     ],
+     "k": "tag",
+     "text": "SEKIN QABUL QILINADI",
+     "x": 0.5,
+     "y": 0.2
+    },
+    {
+     "at": [
+      58,
+      "yopadi"
+     ],
+     "k": "stamp",
+     "text": "BOZOR YOPILADI"
+    }
+   ]
+  },
+  {
+   "at": [
+    59,
+    "Bir"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      59,
+      "Bir"
+     ],
+     "k": "mascot",
+     "pose": 1,
+     "side": "right"
+    },
+    {
+     "at": [
+      59,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.36,
+     "y": 0.5,
+     "dur": 3.4
+    }
+   ]
+  },
+  {
+   "at": [
+    61,
+    "Sanksiya"
+   ],
+   "type": "chapter",
+   "num": "3-QISM",
+   "title": "ERON"
+  },
+  {
+   "at": [
+    62,
+    "2012-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_bank_network",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      62,
+      "2012-yil"
+     ],
+     "k": "label",
+     "text": "2012 · MART"
+    },
+    {
+     "at": [
+      62,
+      "Eronning"
+     ],
+     "k": "flag",
+     "code": "ir"
+    },
+    {
+     "at": [
+      62,
+      "o'ttizga"
+     ],
+     "k": "counter",
+     "to": 30,
+     "prefix": "~",
+     "suffix": " BANK",
+     "x": 0.5,
+     "y": 0.78
+    },
+    {
+     "at": [
+      62,
+      "markaziy"
+     ],
+     "k": "tag",
+     "text": "MARKAZIY BANK HAM"
+    },
+    {
+     "at": [
+      62,
+      "uzib"
+     ],
+     "k": "stamp",
+     "text": "SWIFT'DAN UZILDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    63,
+    "SWIFT"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_phone_cut",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.55,
+     "at": [
+      63,
+      "SWIFT"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      63,
+      "SWIFT"
+     ],
+     "k": "label",
+     "text": "SWIFT = BANKLAR XABAR TIZIMI"
+    },
+    {
+     "at": [
+      64,
+      "pul"
+     ],
+     "k": "tag",
+     "text": "PUL BOR...",
+     "x": 0.25,
+     "y": 0.75
+    },
+    {
+     "at": [
+      64,
+      "yubora"
+     ],
+     "k": "tag",
+     "text": "...YUBORIB BO'LMAYDI",
+     "x": 0.75,
+     "y": 0.75,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    65,
+    "Eron"
+   ],
+   "type": "scene",
+   "bg": "bg_oil_field",
+   "ev": [
+    {
+     "at": [
+      65,
+      "Eron"
+     ],
+     "k": "flag",
+     "code": "ir"
+    },
+    {
+     "at": [
+      65,
+      "neftini"
+     ],
+     "k": "label",
+     "text": "ERON NEFTI"
+    },
+    {
+     "at": [
+      65,
+      "yarmiga"
+     ],
+     "k": "bars",
+     "novalue": true,
+     "x": 0.5,
+     "w": 0.4,
+     "items": [
+      {
+       "label": "OLDIN",
+       "value": 100
+      },
+      {
+       "label": "KEYIN",
+       "value": 50,
+       "color": "red",
+       "hl": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    66,
+    "Eron"
+   ],
+   "type": "scene",
+   "bg": "bg_tehran_exchange",
+   "ev": [
+    {
+     "at": [
+      66,
+      "riyol"
+     ],
+     "k": "label",
+     "text": "ERON RIYOLI"
+    },
+    {
+     "at": [
+      66,
+      "qadrsizlandi"
+     ],
+     "k": "tag",
+     "text": "KESKIN QADRSIZLANDI",
+     "fg": "red"
+    },
+    {
+     "at": [
+      66,
+      "narxlar"
+     ],
+     "k": "tag",
+     "text": "NARXLAR OSHDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    67,
+    "Va"
+   ],
+   "type": "scene",
+   "bg": "bg_conference",
+   "ev": [
+    {
+     "at": [
+      67,
+      "2015-yilda"
+     ],
+     "k": "label",
+     "text": "2015 · YADRO KELISHUVI"
+    },
+    {
+     "at": [
+      67,
+      "Eron"
+     ],
+     "k": "flag",
+     "code": "ir"
+    },
+    {
+     "at": [
+      68,
+      "muvaffaqiyati"
+     ],
+     "k": "stamp",
+     "text": "MUVAFFAQIYAT?"
+    }
+   ]
+  },
+  {
+   "at": [
+    69,
+    "Lekin"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      69,
+      "Lekin"
+     ],
+     "k": "mascot",
+     "pose": 2,
+     "side": "right"
+    },
+    {
+     "at": [
+      70,
+      "2018-yilda"
+     ],
+     "k": "label",
+     "text": "2018"
+    },
+    {
+     "at": [
+      70,
+      "Amerika"
+     ],
+     "k": "flag",
+     "code": "us",
+     "x": 0.36,
+     "y": 0.25
+    },
+    {
+     "at": [
+      70,
+      "chiqdi"
+     ],
+     "k": "tag",
+     "text": "AMERIKA KELISHUVDAN CHIQDI",
+     "x": 0.36,
+     "y": 0.45
+    },
+    {
+     "at": [
+      70,
+      "qaytdi"
+     ],
+     "k": "tag",
+     "text": "SANKSIYALAR QAYTDI",
+     "x": 0.36,
+     "y": 0.6,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    71,
+    "Ya'ni"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      71,
+      "muzokara"
+     ],
+     "k": "tag",
+     "text": "MUZOKARAGA OLIB KELDI",
+     "x": 0.5,
+     "y": 0.4
+    },
+    {
+     "at": [
+      71,
+      "hal"
+     ],
+     "k": "tag",
+     "text": "MUAMMONI HAL QILMADI",
+     "x": 0.5,
+     "y": 0.6,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    72,
+    "Endi"
+   ],
+   "type": "chapter",
+   "num": "4-QISM",
+   "title": "ROSSIYA"
+  },
+  {
+   "at": [
+    73,
+    "2022-yil"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.56,
+    0.3
+   ],
+   "ev": [
+    {
+     "at": [
+      73,
+      "2022-yil"
+     ],
+     "k": "label",
+     "text": "2022 · FEVRAL"
+    },
+    {
+     "at": [
+      73,
+      "Rossiya"
+     ],
+     "k": "flag",
+     "code": "ru"
+    },
+    {
+     "at": [
+      73,
+      "Ukrainaga"
+     ],
+     "k": "pin",
+     "x": 0.555,
+     "y": 0.3
+    },
+    {
+     "at": [
+      73,
+      "Ukrainaga"
+     ],
+     "k": "rings",
+     "x": 0.555,
+     "y": 0.3
+    },
+    {
+     "at": [
+      73,
+      "eng"
+     ],
+     "k": "tag",
+     "text": "TARIXDAGI ENG KATTA SANKSIYALAR",
+     "x": 0.5,
+     "y": 0.82
+    }
+   ]
+  },
+  {
+   "at": [
+    74,
+    "Rossiya"
+   ],
+   "type": "scene",
+   "bg": "bg_moscow_vault",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      74,
+      "Rossiya"
+     ],
+     "k": "flag",
+     "code": "ru"
+    },
+    {
+     "at": [
+      74,
+      "markaziy"
+     ],
+     "k": "label",
+     "text": "MARKAZIY BANK ZAXIRASI"
+    },
+    {
+     "at": [
+      74,
+      "300"
+     ],
+     "k": "counter",
+     "to": 300,
+     "prefix": "$",
+     "suffix": " MLRD",
+     "x": 0.5,
+     "y": 0.3
+    },
+    {
+     "at": [
+      74,
+      "muzlatildi"
+     ],
+     "k": "stamp",
+     "text": "MUZLATILDI"
+    },
+    {
+     "at": [
+      75,
+      "yarmi"
+     ],
+     "k": "tag",
+     "text": "ZAXIRANING YARMI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    76,
+    "Eng"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_phone_cut",
+     "x": 0.25,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      76,
+      "SWIFT"
+     ]
+    },
+    {
+     "img": "prop_card_x",
+     "x": 0.75,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      77,
+      "Visa"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      76,
+      "SWIFT"
+     ],
+     "k": "tag",
+     "text": "SWIFT'DAN UZILDI",
+     "x": 0.25,
+     "y": 0.82
+    },
+    {
+     "at": [
+      77,
+      "Visa"
+     ],
+     "k": "tag",
+     "text": "VISA VA MASTERCARD KETDI",
+     "x": 0.75,
+     "y": 0.82,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    78,
+    "Yevropa"
+   ],
+   "type": "scene",
+   "bg": "bg_oil_field",
+   "ev": [
+    {
+     "at": [
+      78,
+      "Yevropa"
+     ],
+     "k": "flag",
+     "code": "eu"
+    },
+    {
+     "at": [
+      78,
+      "to'xtatdi"
+     ],
+     "k": "tag",
+     "text": "YEVROPA NEFT OLMAYDI"
+    },
+    {
+     "at": [
+      78,
+      "chegara"
+     ],
+     "k": "prop",
+     "img": "prop_sheet2",
+     "x": 0.8,
+     "y": 0.55,
+     "h": 0.35,
+     "part": 0,
+     "nparts": 4
+    },
+    {
+     "at": [
+      78,
+      "chegara"
+     ],
+     "k": "tag",
+     "text": "NARX CHEGARASI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    79,
+    "Ko'pchilik"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      79,
+      "Ko'pchilik"
+     ],
+     "k": "mascot",
+     "pose": 2,
+     "side": "right"
+    },
+    {
+     "at": [
+      79,
+      "qulaydi"
+     ],
+     "k": "tag",
+     "text": "BIR NECHA OYDA QULAYDI?",
+     "x": 0.36,
+     "y": 0.4
+    },
+    {
+     "at": [
+      80,
+      "bunday"
+     ],
+     "k": "stamp",
+     "text": "YO'Q"
+    }
+   ]
+  },
+  {
+   "at": [
+    81,
+    "Rossiya"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.66,
+    0.36
+   ],
+   "ev": [
+    {
+     "at": [
+      81,
+      "Xitoy"
+     ],
+     "k": "arrow",
+     "from": [
+      0.57,
+      0.27
+     ],
+     "to": [
+      0.76,
+      0.4
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      81,
+      "Xitoy"
+     ],
+     "k": "flag",
+     "code": "cn"
+    },
+    {
+     "at": [
+      81,
+      "Hindistonga"
+     ],
+     "k": "arrow",
+     "from": [
+      0.57,
+      0.27
+     ],
+     "to": [
+      0.69,
+      0.5
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      81,
+      "Hindistonga"
+     ],
+     "k": "flag",
+     "code": [
+      "cn",
+      "in"
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    82,
+    "To'lovlar"
+   ],
+   "type": "scene",
+   "bg": "bg_china_port",
+   "ev": [
+    {
+     "at": [
+      82,
+      "yo'llar"
+     ],
+     "k": "tag",
+     "text": "BOSHQA YO'LLAR"
+    },
+    {
+     "at": [
+      82,
+      "valyutalar"
+     ],
+     "k": "tag",
+     "text": "BOSHQA VALYUTALAR"
+    },
+    {
+     "at": [
+      82,
+      "vositachi"
+     ],
+     "k": "tag",
+     "text": "VOSITACHI DAVLATLAR",
+     "fg": "red"
+    },
+    {
+     "at": [
+      83,
+      "qulamadi"
+     ],
+     "k": "tag",
+     "text": "QIYNALDI, LEKIN QULAMADI"
+    }
+   ]
+  },
+  {
+   "at": [
+    84,
+    "Muzlatilgan"
+   ],
+   "type": "scene",
+   "bg": "bg_brussels_vault",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      85,
+      "Belgiyadagi"
+     ],
+     "k": "flag",
+     "code": "be"
+    },
+    {
+     "at": [
+      85,
+      "Euroclear"
+     ],
+     "k": "label",
+     "text": "EUROCLEAR · BELGIYA"
+    },
+    {
+     "at": [
+      85,
+      "200"
+     ],
+     "k": "counter",
+     "to": 200,
+     "prefix": "€",
+     "suffix": " MLRD",
+     "x": 0.5,
+     "y": 0.3
+    },
+    {
+     "at": [
+      86,
+      "sud"
+     ],
+     "k": "tag",
+     "text": "SUD JANJALLARI DAVOM ETMOQDA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    87,
+    "Aytgancha"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      87,
+      "Aytgancha"
+     ],
+     "k": "mascot",
+     "pose": 1,
+     "side": "right"
+    },
+    {
+     "at": [
+      87,
+      "layk"
+     ],
+     "k": "like",
+     "x": 0.36,
+     "y": 0.45
+    }
+   ]
+  },
+  {
+   "at": [
+    89,
+    "Xo'sh"
+   ],
+   "type": "chapter",
+   "num": "5-QISM",
+   "title": "ISHLAYDIMI?"
+  },
+  {
+   "at": [
+    90,
+    "Olimlar"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      90,
+      "yuzlab"
+     ],
+     "k": "label",
+     "text": "YUZLAB HOLAT O'RGANILGAN"
+    },
+    {
+     "at": [
+      91,
+      "uchtadan"
+     ],
+     "k": "pie",
+     "x": 0.35,
+     "y": 0.55,
+     "r": 0.25,
+     "slices": [
+      {
+       "label": "MAQSADGA ERISHGAN",
+       "value": 33
+      },
+      {
+       "label": "ERISHMAGAN",
+       "value": 67
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    92,
+    "Ular"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      92,
+      "ishlaydi"
+     ],
+     "k": "label",
+     "text": "QACHON ISHLAYDI?"
+    },
+    {
+     "at": [
+      92,
+      "aniq"
+     ],
+     "k": "tag",
+     "text": "1. MAQSAD KICHIK VA ANIQ",
+     "x": 0.5,
+     "y": 0.4
+    },
+    {
+     "at": [
+      92,
+      "davlat"
+     ],
+     "k": "tag",
+     "text": "2. DAVLAT KICHIK",
+     "x": 0.5,
+     "y": 0.55
+    },
+    {
+     "at": [
+      92,
+      "boshqa"
+     ],
+     "k": "tag",
+     "text": "3. BOSHQA YO'L YO'Q",
+     "x": 0.5,
+     "y": 0.7
+    }
+   ]
+  },
+  {
+   "at": [
+    93,
+    "Masalan"
+   ],
+   "type": "scene",
+   "bg": "bg_south_africa",
+   "ev": [
+    {
+     "at": [
+      93,
+      "Janubiy"
+     ],
+     "k": "flag",
+     "code": "za"
+    },
+    {
+     "at": [
+      93,
+      "aparteid"
+     ],
+     "k": "label",
+     "text": "JANUBIY AFRIKA · APARTEID"
+    },
+    {
+     "at": [
+      93,
+      "muhim"
+     ],
+     "k": "tag",
+     "text": "SANKSIYA YORDAM BERGAN"
+    }
+   ]
+  },
+  {
+   "at": [
+    94,
+    "Kuba"
+   ],
+   "type": "scene",
+   "bg": "bg_havana",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      94,
+      "Kuba"
+     ],
+     "k": "flag",
+     "code": "cu"
+    },
+    {
+     "at": [
+      94,
+      "oltmish"
+     ],
+     "k": "counter",
+     "to": 60,
+     "suffix": "+ YIL",
+     "x": 0.5,
+     "y": 0.3
+    },
+    {
+     "at": [
+      94,
+      "o'zgarmadi"
+     ],
+     "k": "stamp",
+     "text": "O'ZGARMADI"
+    }
+   ]
+  },
+  {
+   "at": [
+    95,
+    "Sanksiyalarning"
+   ],
+   "type": "scene",
+   "bg": "bg_shortage",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      96,
+      "hokimiyatdagilar"
+     ],
+     "k": "tag",
+     "text": "HOKIMIYAT EMAS..."
+    },
+    {
+     "at": [
+      96,
+      "oddiy"
+     ],
+     "k": "tag",
+     "text": "...ODDIY ODAMLAR",
+     "fg": "red"
+    },
+    {
+     "at": [
+      97,
+      "Narxlar"
+     ],
+     "k": "tag",
+     "text": "NARXLAR ↑"
+    },
+    {
+     "at": [
+      97,
+      "dori-darmon"
+     ],
+     "k": "tag",
+     "text": "DORI YO'Q"
+    },
+    {
+     "at": [
+      97,
+      "qora"
+     ],
+     "k": "stamp",
+     "text": "QORA BOZOR"
+    }
+   ]
+  },
+  {
+   "at": [
+    98,
+    "Va"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.6,
+    0.38
+   ],
+   "ev": [
+    {
+     "at": [
+      98,
+      "dollarsiz"
+     ],
+     "k": "label",
+     "text": "DOLLARSIZ YO'LLAR"
+    },
+    {
+     "at": [
+      99,
+      "Xitoy"
+     ],
+     "k": "flag",
+     "code": [
+      "cn",
+      "ru"
+     ]
+    },
+    {
+     "at": [
+      99,
+      "Xitoy"
+     ],
+     "k": "rings",
+     "x": 0.76,
+     "y": 0.4
+    },
+    {
+     "at": [
+      99,
+      "Rossiya"
+     ],
+     "k": "rings",
+     "x": 0.57,
+     "y": 0.27
+    },
+    {
+     "at": [
+      99,
+      "to'lov"
+     ],
+     "k": "tag",
+     "text": "O'Z TO'LOV TIZIMLARI",
+     "x": 0.5,
+     "y": 0.82
+    }
+   ]
+  },
+  {
+   "at": [
+    100,
+    "Ya'ni"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      100,
+      "dollar"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      100,
+      "ko'p"
+     ],
+     "k": "tag",
+     "text": "KUCHNI KO'P ISHLATSA...",
+     "x": 0.5,
+     "y": 0.2
+    },
+    {
+     "at": [
+      100,
+      "qochish"
+     ],
+     "k": "tag",
+     "text": "...DUNYO QOCHADI",
+     "x": 0.5,
+     "y": 0.82,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    101,
+    "Endi"
+   ],
+   "type": "chapter",
+   "num": "6-QISM",
+   "title": "O'ZBEKISTON"
+  },
+  {
+   "at": [
+    102,
+    "O'zbekistonga"
+   ],
+   "type": "scene",
+   "bg": "bg_tashkent_exchange",
+   "ev": [
+    {
+     "at": [
+      102,
+      "O'zbekistonga"
+     ],
+     "k": "flag",
+     "code": "uz"
+    },
+    {
+     "at": [
+      102,
+      "qo'yilmagan"
+     ],
+     "k": "tag",
+     "text": "SANKSIYA YO'Q"
+    },
+    {
+     "at": [
+      103,
+      "ta'sir"
+     ],
+     "k": "tag",
+     "text": "LEKIN TA'SIRI BOR",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    104,
+    "2022-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_samarkand_bank",
+   "ev": [
+    {
+     "at": [
+      104,
+      "2022-yil"
+     ],
+     "k": "label",
+     "text": "23-SENTABR 2022"
+    },
+    {
+     "at": [
+      104,
+      "Mir"
+     ],
+     "k": "tag",
+     "text": "\"MIR\" TO'XTATILDI"
+    },
+    {
+     "at": [
+      105,
+      "texnik"
+     ],
+     "k": "tag",
+     "text": "RASMIY SABAB: \"TEXNIK\"",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    106,
+    "Lekin"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.6,
+    0.36
+   ],
+   "ev": [
+    {
+     "at": [
+      106,
+      "Turkiya"
+     ],
+     "k": "flag",
+     "code": "tr"
+    },
+    {
+     "at": [
+      106,
+      "Turkiya"
+     ],
+     "k": "pin",
+     "x": 0.56,
+     "y": 0.37
+    },
+    {
+     "at": [
+      106,
+      "Qozog'iston"
+     ],
+     "k": "flag",
+     "code": [
+      "tr",
+      "kz"
+     ]
+    },
+    {
+     "at": [
+      106,
+      "Qozog'iston"
+     ],
+     "k": "pin",
+     "x": 0.66,
+     "y": 0.33
+    },
+    {
+     "at": [
+      106,
+      "Armaniston"
+     ],
+     "k": "flag",
+     "code": [
+      "tr",
+      "kz",
+      "am"
+     ]
+    },
+    {
+     "at": [
+      106,
+      "Armaniston"
+     ],
+     "k": "pin",
+     "x": 0.6,
+     "y": 0.36
+    },
+    {
+     "at": [
+      106,
+      "ikkilamchi"
+     ],
+     "k": "tag",
+     "text": "IKKILAMCHI SANKSIYA QO'RQUVI",
+     "x": 0.5,
+     "y": 0.82
+    }
+   ]
+  },
+  {
+   "at": [
+    107,
+    "Bundan"
+   ],
+   "type": "scene",
+   "bg": "bg_treasury",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      107,
+      "O'zbekistonda"
+     ],
+     "k": "flag",
+     "code": [
+      "us",
+      "uz"
+     ]
+    },
+    {
+     "at": [
+      107,
+      "kompaniyani"
+     ],
+     "k": "tag",
+     "text": "O'ZBEK KOMPANIYALARI"
+    },
+    {
+     "at": [
+      107,
+      "ro'yxatiga"
+     ],
+     "k": "stamp",
+     "text": "QORA RO'YXAT"
+    }
+   ]
+  },
+  {
+   "at": [
+    108,
+    "Shuning"
+   ],
+   "type": "scene",
+   "bg": "bg_bank_network",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      108,
+      "ehtiyotkorlik"
+     ],
+     "k": "tag",
+     "text": "BANKLAR EHTIYOTKOR",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    109,
+    "Esingizda"
+   ],
+   "type": "scene",
+   "bg": "bg_migrant_work",
+   "ev": [
+    {
+     "at": [
+      109,
+      "Rossiyadan"
+     ],
+     "k": "flag",
+     "code": "ru"
+    },
+    {
+     "at": [
+      109,
+      "to'rtdan"
+     ],
+     "k": "pie",
+     "x": 0.56,
+     "y": 0.55,
+     "r": 0.2,
+     "slices": [
+      {
+       "label": "ROSSIYADAN",
+       "value": 75
+      },
+      {
+       "label": "BOSHQA",
+       "value": 25
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    110,
+    "Demak"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.45,
+    0.33
+   ],
+   "ev": [
+    {
+     "at": [
+      110,
+      "Vashington"
+     ],
+     "k": "arrow",
+     "from": [
+      0.27,
+      0.38
+     ],
+     "to": [
+      0.65,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      110,
+      "Bryusseldagi"
+     ],
+     "k": "arrow",
+     "from": [
+      0.485,
+      0.3
+     ],
+     "to": [
+      0.65,
+      0.38
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      110,
+      "Toshkent"
+     ],
+     "k": "pin",
+     "x": 0.65,
+     "y": 0.38
+    },
+    {
+     "at": [
+      110,
+      "hamyoniga"
+     ],
+     "k": "tag",
+     "text": "SIZNING HAMYONINGIZ",
+     "x": 0.5,
+     "y": 0.82,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    111,
+    "Xo'sh"
+   ],
+   "type": "title",
+   "title": "JAVOB",
+   "title2": "SANKSIYALAR QANDAY ISHLAYDI?"
+  },
+  {
+   "at": [
+    113,
+    "Ular"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.45,
+     "at": [
+      113,
+      "dollar"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      113,
+      "bank"
+     ],
+     "k": "tag",
+     "text": "DOLLAR + BANK TIZIMI",
+     "x": 0.7,
+     "y": 0.4
+    },
+    {
+     "at": [
+      113,
+      "majbur"
+     ],
+     "k": "tag",
+     "text": "MUHTOJ BO'LSANG, BO'YSUNASAN",
+     "x": 0.7,
+     "y": 0.58,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    114,
+    "Ular"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      114,
+      "Ular"
+     ],
+     "k": "mascot",
+     "pose": 1,
+     "side": "right"
+    },
+    {
+     "at": [
+      115,
+      "Ba'zan"
+     ],
+     "k": "bigtext",
+     "text": "BA'ZAN",
+     "x": 0.36,
+     "y": 0.45
+    },
+    {
+     "at": [
+      116,
+      "qiynashi"
+     ],
+     "k": "tag",
+     "text": "QIYNAYDI",
+     "x": 0.36,
+     "y": 0.62
+    },
+    {
+     "at": [
+      116,
+      "kamdan-kam"
+     ],
+     "k": "tag",
+     "text": "SIYOSATNI KAMDAN-KAM O'ZGARTIRADI",
+     "x": 0.36,
+     "y": 0.75,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    117,
+    "Va"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.5,
+    0.45
+   ],
+   "ev": [
+    {
+     "at": [
+      117,
+      "dollarsiz"
+     ],
+     "k": "prop",
+     "img": "prop_dollar",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.3
+    },
+    {
+     "at": [
+      117,
+      "dollarsiz"
+     ],
+     "k": "circle",
+     "x": 0.5,
+     "y": 0.5,
+     "rx": 0.2,
+     "ry": 0.24
+    },
+    {
+     "at": [
+      117,
+      "yo'llar"
+     ],
+     "k": "label",
+     "text": "DOLLARSIZ YO'LLAR"
+    }
+   ]
+  },
+  {
+   "at": [
+    118,
+    "Sanksiyalar"
+   ],
+   "type": "title",
+   "title": "SANKSIYALAR HAQIDA MEN HAM BILMAS EDIM",
+   "title2": "ENDI ESA HAMMAMIZ BILAMIZ"
+  },
+  {
+   "at": [
+    120,
+    "Ana"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      120,
+      "Ana"
+     ],
+     "k": "mascot",
+     "pose": 0,
+     "side": "right"
+    },
+    {
+     "at": [
+      120,
+      "adolatli"
+     ],
+     "k": "tag",
+     "text": "ADOLATLI QUROLMI?",
+     "x": 0.36,
+     "y": 0.38
+    },
+    {
+     "at": [
+      120,
+      "jazolaydimi"
+     ],
+     "k": "tag",
+     "text": "YOKI ODDIY ODAMLARNI JAZOLAYDIMI?",
+     "x": 0.36,
+     "y": 0.55,
+     "fg": "red"
+    },
+    {
+     "at": [
+      121,
+      "izohlarda"
+     ],
+     "k": "tag",
+     "text": "IZOHDA YOZING",
+     "x": 0.36,
+     "y": 0.72
+    }
+   ]
+  },
+  {
+   "at": [
+    122,
+    "Keyingi"
+   ],
+   "type": "scene",
+   "bg": "bg_singapore",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      122,
+      "Keyingi"
+     ],
+     "k": "label",
+     "text": "KEYINGI QISM"
+    },
+    {
+     "at": [
+      123,
+      "Singapur"
+     ],
+     "k": "flag",
+     "code": "sg"
+    },
+    {
+     "at": [
+      123,
+      "Singapur"
+     ],
+     "k": "tag",
+     "text": "SINGAPUR"
+    },
+    {
+     "at": [
+      123,
+      "Li"
+     ],
+     "k": "tag",
+     "text": "LI KUAN YU",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    124,
+    "O'tkazib"
+   ],
+   "type": "end",
+   "pose": 1,
+   "ev": [
+    {
+     "at": [
+      124,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.5,
+     "y": 0.11,
+     "dur": 3.4
+    },
+    {
+     "at": [
+      125,
+      "Bilmasboy"
+     ],
+     "k": "tag",
+     "text": "BILMASBOY",
+     "x": 0.5,
+     "y": 0.9,
+     "fg": "red"
+    }
+   ]
+  }
+ ],
+ "shorts": [
+  {
+   "name": "hook",
+   "from": [
+    0,
+    "Tasavvur"
+   ],
+   "to": [
+    11,
+    "Va"
+   ],
+   "hook": ""
+  },
+  {
+   "name": "types",
+   "from": [
+    30,
+    "Xo'sh"
+   ],
+   "to": [
+    43,
+    "Aynan"
+   ],
+   "hook": "SANKSIYANING 4 TURI"
+  },
+  {
+   "name": "ofac",
+   "from": [
+    44,
+    "Nega"
+   ],
+   "to": [
+    54,
+    "Uning"
+   ],
+   "hook": "NEGA AMERIKA SANKSIYASI BUNCHALIK KUCHLI?"
+  },
+  {
+   "name": "russia",
+   "from": [
+    72,
+    "Endi"
+   ],
+   "to": [
+    86,
+    "Ular"
+   ],
+   "hook": "300 MLRD DOLLAR QANDAY MUZLATILDI?"
+  },
+  {
+   "name": "uzbekistan",
+   "from": [
+    101,
+    "Endi"
+   ],
+   "to": [
+    110,
+    "Demak"
+   ],
+   "hook": "SANKSIYA O'ZBEKISTONGA QANDAY TA'SIR QILADI?"
+  }
+ ],
+ "series_label": "2-QISM: SANKSIYALAR",
+ "handle": "@bilmasboy",
+ "socials": [
+  [
+   "youtube",
+   "@bilmasboy"
+  ],
+  [
+   "instagram",
+   "@bilmas.boy"
+  ],
+  [
+   "tiktok",
+   "@bilmas.boy"
+  ],
+  [
+   "facebook",
+   "@bilmas.boy"
+  ],
+  [
+   "telegram",
+   "@bilmas_boy"
+  ]
+ ]
+}
