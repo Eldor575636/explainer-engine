@@ -155,3 +155,11 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - Whisper sometimes answers Uzbek in Cyrillic: `translit.py` converts; transcribe/patch use it automatically.
 - `v3.py` event `flag` (code or list of ISO codes; flag-icons SVGs in assets/flags): pops on the spoken word;
   a newer flag in the same beat replaces the older one. `projects/ep01-dollar/enrich_beats.py` shows the pattern.
+
+## Voice: name pronunciation and reusable lines (2026-11-06)
+
+- "Bilmas" / "Bilmasboy" are sent to the voice as IPA with final stress (/bilˈmas/, /bilmasˈboj/), set in lexicon.json.
+- The intro block and sign-off are recorded once in `assets/voice/` (see its README) and spliced into each episode
+  instead of being regenerated. E02 uses them.
+- ElevenLabs audio tags ([curious], [serious]...) were tested on E02's opening; owner chose no tags for now.
+- ElevenLabs credits are limited (~39.5k/month on the current plan; a 10-min episode is ~9k). Estimate before big runs.
