@@ -1,0 +1,3 @@
+{"bg": "../layers/bg_brussels_vault.jpg", "badge": "2-QISM", "headline": ["$300 MLRD", "MUZLATILDI"], "accent": 1, "red": ["$300"],
+ "hero": {"img": "../layers/mascot_v2.jpg", "part": 2, "nparts": 4, "h": 0.98, "x": 0.83},
+ "props": [{"img": "../layers/prop_card_frozen.jpg", "h": 0.3, "x": 0.58, "y": 0.72, "rot": -10, "circle": true}], "theme": "light"}
