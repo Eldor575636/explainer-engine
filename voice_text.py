@@ -35,6 +35,8 @@ def words(n):
 
 def ordinal(n):
     w = words(n)
+    if w.endswith("ellik"):                     # ellik -> elliginchi (k softens before a vowel)
+        w = w[:-1] + "g"
     return w + ("nchi" if w[-1] in "aeiou" else "inchi")
 
 
