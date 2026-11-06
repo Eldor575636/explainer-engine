@@ -83,7 +83,7 @@ beat([37, "Ikkinchisi"], "object", props=[P([37, "Ikkinchisi"], "prop_card_froze
      ev=[L([37, "Ikkinchisi"], "2. SHAXSIY SANKSIYALAR"), T([38, "muzlatiladi"], "PULLARI MUZLATILADI", x=.7, y=.42), T([38, "chiqa"], "CHET ELGA CHIQA OLMAYDI", True, x=.7, y=.6)])
 beat([39, "Uchinchisi"], "scene", bg="bg_bank_network",
      ev=[L([39, "Uchinchisi"], "3. MOLIYAVIY SANKSIYALAR"), T([40, "uzib"], "XALQARO TIZIMDAN UZILADI", True)])
-beat([41, "To'rtinchisi"], "object", ev=[L([41, "To'rtinchisi"], "4. IKKILAMCHI SANKSIYALAR"), ST([41, "kuchlisi"], "ENG KUCHLISI"),
+beat([41, "To'rtinchisi"], "object", props=[P([41, "To'rtinchisi"], "prop_card_x", .14, .5, .3), P([41, "kuchlisi"], "prop_dossier", .86, .5, .3)], ev=[L([41, "To'rtinchisi"], "4. IKKILAMCHI SANKSIYALAR"), ST([41, "kuchlisi"], "ENG KUCHLISI"),
      T([42, "Agar"], "SIZ ULAR BILAN ISHLASANGIZ...", x=.5, y=.55), T([42, "biz"], "...BIZ SIZ BILAN ISHLAMAYMIZ", True, x=.5, y=.7)])
 beat([43, "Aynan"], "scene", bg="bg_bank_network", crop="left", ev=[T([43, "banklarini"], "DUNYO BANKLARI QO'RQADI", True)])
 # ---------------- Nega Amerika kuchli ----------------
@@ -122,7 +122,7 @@ beat([66, "Eron"], "scene", bg="bg_tehran_exchange", ev=[L([66, "riyol"], "ERON 
 beat([67, "Va"], "scene", bg="bg_conference", ev=[L([67, "2015-yilda"], "2015 · YADRO KELISHUVI"), F([67, "Eron"], "ir"), ST([68, "muvaffaqiyati"], "MUVAFFAQIYAT?")])
 beat([69, "Lekin"], "object", ev=[M([69, "Lekin"], 2), L([70, "2018-yilda"], "2018"), F([70, "Amerika"], "us", x=.36, y=.25), T([70, "chiqdi"], "AMERIKA KELISHUVDAN CHIQDI", x=.36, y=.45),
      T([70, "qaytdi"], "SANKSIYALAR QAYTDI", True, x=.36, y=.6)])
-beat([71, "Ya'ni"], "object", ev=[T([71, "muzokara"], "MUZOKARAGA OLIB KELDI", x=.5, y=.4), T([71, "hal"], "MUAMMONI HAL QILMADI", True, x=.5, y=.6)])
+beat([71, "Ya'ni"], "object", ev=[M([71, "Ya'ni"], 3), T([71, "muzokara"], "MUZOKARAGA OLIB KELDI", x=.36, y=.4), T([71, "hal"], "MUAMMONI HAL QILMADI", True, x=.36, y=.58)])
 # ---------------- 4-qism: Rossiya ----------------
 beat([72, "Endi"], "chapter", num="4-QISM", title="ROSSIYA")
 beat([73, "2022-yil"], "map", bg="map_world", zf=[.56, .3], ev=[L([73, "2022-yil"], "2022 · FEVRAL"), F([73, "Rossiya"], "ru"), PIN([73, "Ukrainaga"], UA),
@@ -134,7 +134,7 @@ beat([76, "Eng"], "object", props=[P([76, "SWIFT"], "prop_phone_cut", .25, .5, .
      ev=[T([76, "SWIFT"], "SWIFT'DAN UZILDI", x=.25, y=.82), T([77, "Visa"], "VISA VA MASTERCARD KETDI", True, x=.75, y=.82)])
 beat([78, "Yevropa"], "scene", bg="bg_oil_field", ev=[F([78, "Yevropa"], "eu"), T([78, "to'xtatdi"], "YEVROPA NEFT OLMAYDI"), PR([78, "chegara"], SH, .8, .55, .35, part=0, nparts=4),
      T([78, "chegara"], "NARX CHEGARASI", True)])
-beat([79, "Ko'pchilik"], "object", ev=[M([79, "Ko'pchilik"], 2), T([79, "qulaydi"], "BIR NECHA OYDA QULAYDI?", x=.36, y=.4), ST([80, "bunday"], "YO'Q")])
+beat([79, "Ko'pchilik"], "object", ev=[M([79, "Ko'pchilik"], 2), T([79, "qulaydi"], "BIR NECHA OYDA QULAYDI?", x=.36, y=.24), ST([80, "bunday"], "YO'Q")])
 beat([81, "Rossiya"], "map", bg="map_world", zf=[.66, .36], ev=[AR([81, "Xitoy"], MOS, CN), F([81, "Xitoy"], "cn"), AR([81, "Hindistonga"], MOS, IN), F([81, "Hindistonga"], ["cn", "in"])])
 beat([82, "To'lovlar"], "scene", bg="bg_china_port", ev=[T([82, "yo'llar"], "BOSHQA YO'LLAR"), T([82, "valyutalar"], "BOSHQA VALYUTALAR"), T([82, "vositachi"], "VOSITACHI DAVLATLAR", True),
      T([83, "qulamadi"], "QIYNALDI, LEKIN QULAMADI")])
@@ -144,7 +144,7 @@ beat([84, "Muzlatilgan"], "scene", bg="bg_brussels_vault", mood="curious",
 beat([87, "Aytgancha"], "object", ev=[M([87, "Aytgancha"], 1), {"at": [87, "layk"], "k": "like", "x": .36, "y": .45}])
 # ---------------- 5-qism: ishlaydimi ----------------
 beat([89, "Xo'sh"], "chapter", num="5-QISM", title="ISHLAYDIMI?")
-beat([90, "Olimlar"], "object", ev=[L([90, "yuzlab"], "YUZLAB HOLAT O'RGANILGAN"),
+beat([90, "Olimlar"], "object", ev=[L([90, "Olimlar"], "YUZLAB HOLAT O'RGANILGAN"),
      {"at": [91, "uchtadan"], "k": "pie", "x": .35, "y": .55, "r": .25, "slices": [{"label": "MAQSADGA ERISHGAN", "value": 33}, {"label": "ERISHMAGAN", "value": 67}]}])
 beat([92, "Ular"], "object", ev=[L([92, "ishlaydi"], "QACHON ISHLAYDI?"), T([92, "aniq"], "1. MAQSAD KICHIK VA ANIQ", x=.5, y=.4), T([92, "davlat"], "2. DAVLAT KICHIK", x=.5, y=.55),
      T([92, "boshqa"], "3. BOSHQA YO'L YO'Q", x=.5, y=.7)])

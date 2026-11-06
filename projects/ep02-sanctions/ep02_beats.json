@@ -1172,6 +1172,28 @@
     "To'rtinchisi"
    ],
    "type": "object",
+   "props": [
+    {
+     "img": "prop_card_x",
+     "x": 0.14,
+     "y": 0.5,
+     "h": 0.3,
+     "at": [
+      41,
+      "To'rtinchisi"
+     ]
+    },
+    {
+     "img": "prop_dossier",
+     "x": 0.86,
+     "y": 0.5,
+     "h": 0.3,
+     "at": [
+      41,
+      "kuchlisi"
+     ]
+    }
+   ],
    "ev": [
     {
      "at": [
@@ -2044,11 +2066,20 @@
     {
      "at": [
       71,
+      "Ya'ni"
+     ],
+     "k": "mascot",
+     "pose": 3,
+     "side": "right"
+    },
+    {
+     "at": [
+      71,
       "muzokara"
      ],
      "k": "tag",
      "text": "MUZOKARAGA OLIB KELDI",
-     "x": 0.5,
+     "x": 0.36,
      "y": 0.4
     },
     {
@@ -2058,8 +2089,8 @@
      ],
      "k": "tag",
      "text": "MUAMMONI HAL QILMADI",
-     "x": 0.5,
-     "y": 0.6,
+     "x": 0.36,
+     "y": 0.58,
      "fg": "red"
     }
    ]
@@ -2311,7 +2342,7 @@
      "k": "tag",
      "text": "BIR NECHA OYDA QULAYDI?",
      "x": 0.36,
-     "y": 0.4
+     "y": 0.24
     },
     {
      "at": [
@@ -2525,7 +2556,7 @@
     {
      "at": [
       90,
-      "yuzlab"
+      "Olimlar"
      ],
      "k": "label",
      "text": "YUZLAB HOLAT O'RGANILGAN"
