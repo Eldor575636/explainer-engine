@@ -1020,7 +1020,12 @@ def main():
         for ci_, ch in enumerate(vchunks):
             st = ch[0][1]; en = vchunks[ci_ + 1][0][1] if ci_ + 1 < len(vchunks) else tb
             vcaps.append((st, min(en, max(ch[-1][2] + 0.5, st + 0.5)), [x[1] for x in ch], motion.caption_sprites([x[0] for x in ch], 76)))
-        hook = seeded(motion.label_sprite, new_alphabet(sh.get("hook", "")), 70) if sh.get("hook") else None
+        hook = None
+        if sh.get("hook"):                       # shrink the hook banner until it fits the 9:16 width with margins
+            for hsz in (70, 62, 56, 50, 44):
+                hook = seeded(motion.label_sprite, new_alphabet(sh["hook"]), hsz)
+                if hook.w <= VW - 90:
+                    break
         badge = short_badge(cfg["series_label"]) if cfg.get("series_label") else None
         sbug = LogoBug(52) if cfg.get("logo_bug", True) else None
         motion.W, motion.H = W, H

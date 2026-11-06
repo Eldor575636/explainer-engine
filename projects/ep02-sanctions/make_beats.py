@@ -191,9 +191,9 @@ cfg = {"layers": "layers", "music": {"curious": "../../assets/music/curious.mp3"
        "sentences": S, "beats": B,
        "shorts": [{"name": "hook", "from": [0, "Tasavvur"], "to": [11, "Va"], "hook": ""},
                   {"name": "types", "from": [30, "Xo'sh"], "to": [43, "Aynan"], "hook": "SANKSIYANING 4 TURI"},
-                  {"name": "ofac", "from": [44, "Nega"], "to": [54, "Uning"], "hook": "NEGA AMERIKA SANKSIYASI BUNCHALIK KUCHLI?"},
-                  {"name": "russia", "from": [72, "Endi"], "to": [86, "Ular"], "hook": "300 MLRD DOLLAR QANDAY MUZLATILDI?"},
-                  {"name": "uzbekistan", "from": [101, "Endi"], "to": [110, "Demak"], "hook": "SANKSIYA O'ZBEKISTONGA QANDAY TA'SIR QILADI?"}],
+                  {"name": "ofac", "from": [44, "Nega"], "to": [54, "Uning"], "hook": "NEGA AMERIKA SANKSIYASI KUCHLI?"},
+                  {"name": "russia", "from": [72, "Endi"], "to": [86, "Ular"], "hook": "$300 MLRD QANDAY MUZLATILDI?"},
+                  {"name": "uzbekistan", "from": [101, "Endi"], "to": [110, "Demak"], "hook": "SANKSIYA VA O'ZBEKISTON"}],
        "series_label": "2-QISM: SANKSIYALAR", "handle": "@bilmasboy",
        "socials": [["youtube", "@bilmasboy"], ["instagram", "@bilmas.boy"], ["tiktok", "@bilmas.boy"], ["facebook", "@bilmas.boy"], ["telegram", "@bilmas_boy"]]}
 json.dump(cfg, open("ep02_beats.json", "w"), ensure_ascii=False, indent=1)
