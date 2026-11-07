@@ -3496,6 +3496,18 @@
    "hook": "NEGA AMERIKA SANKSIYASI KUCHLI?"
   },
   {
+   "name": "iran",
+   "from": [
+    61,
+    "Sanksiya"
+   ],
+   "to": [
+    71,
+    "Ya'ni"
+   ],
+   "hook": "ERON SWIFT'DAN QANDAY UZILDI?"
+  },
+  {
    "name": "russia",
    "from": [
     72,
@@ -3506,6 +3518,18 @@
     "Ular"
    ],
    "hook": "$300 MLRD QANDAY MUZLATILDI?"
+  },
+  {
+   "name": "works",
+   "from": [
+    89,
+    "Xo'sh"
+   ],
+   "to": [
+    100,
+    "Ya'ni"
+   ],
+   "hook": "SANKSIYALAR ISHLAYDIMI?"
   },
   {
    "name": "uzbekistan",

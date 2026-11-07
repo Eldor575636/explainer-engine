@@ -3735,6 +3735,30 @@
     "Demak"
    ],
    "hook": "SO'M NEGA DOLLARGA BOG'LIQ?"
+  },
+  {
+   "name": "nixon",
+   "from": [
+    59,
+    "1960-yillarda"
+   ],
+   "to": [
+    72,
+    "Lekin"
+   ],
+   "hook": "1971: OLTIN VA'DASI QANDAY TUGADI?"
+  },
+  {
+   "name": "future",
+   "from": [
+    126,
+    "Ana"
+   ],
+   "to": [
+    135,
+    "Savolga"
+   ],
+   "hook": "DOLLAR HUKMRONLIGI TUGAYAPTIMI?"
   }
  ],
  "series_label": "1-QISM: DOLLAR",

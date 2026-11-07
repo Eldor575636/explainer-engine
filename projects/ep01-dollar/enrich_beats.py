@@ -61,6 +61,8 @@ for x in b["beats"]:
     for e in x.get("ev", []):
         if e["k"] == "prop" and e.get("img") == "prop_gold" and e["at"][0] == 130:
             e["at"] = [130, "Markaziy"]
+b["shorts"] += [{"name": "nixon", "from": [59, "1960-yillarda"], "to": [72, "Lekin"], "hook": "1971: OLTIN VA'DASI QANDAY TUGADI?"},
+                {"name": "future", "from": [126, "Ana"], "to": [135, "Savolga"], "hook": "DOLLAR HUKMRONLIGI TUGAYAPTIMI?"}]
 b["series_label"] = "1-QISM: DOLLAR"
 b["handle"] = "@bilmasboy"
 b["socials"] = [["youtube", "@bilmasboy"], ["instagram", "@bilmas.boy"], ["tiktok", "@bilmas.boy"], ["facebook", "@bilmas.boy"], ["telegram", "@bilmas_boy"]]

@@ -192,7 +192,9 @@ cfg = {"layers": "layers", "music": {"curious": "../../assets/music/curious.mp3"
        "shorts": [{"name": "hook", "from": [0, "Tasavvur"], "to": [11, "Va"], "hook": ""},
                   {"name": "types", "from": [30, "Xo'sh"], "to": [43, "Aynan"], "hook": "SANKSIYANING 4 TURI"},
                   {"name": "ofac", "from": [44, "Nega"], "to": [54, "Uning"], "hook": "NEGA AMERIKA SANKSIYASI KUCHLI?"},
+                  {"name": "iran", "from": [61, "Sanksiya"], "to": [71, "Ya'ni"], "hook": "ERON SWIFT'DAN QANDAY UZILDI?"},
                   {"name": "russia", "from": [72, "Endi"], "to": [86, "Ular"], "hook": "$300 MLRD QANDAY MUZLATILDI?"},
+                  {"name": "works", "from": [89, "Xo'sh"], "to": [100, "Ya'ni"], "hook": "SANKSIYALAR ISHLAYDIMI?"},
                   {"name": "uzbekistan", "from": [101, "Endi"], "to": [110, "Demak"], "hook": "SANKSIYA VA O'ZBEKISTON"}],
        "series_label": "2-QISM: SANKSIYALAR", "handle": "@bilmasboy",
        "socials": [["youtube", "@bilmasboy"], ["instagram", "@bilmas.boy"], ["tiktok", "@bilmas.boy"], ["facebook", "@bilmas.boy"], ["telegram", "@bilmas_boy"]]}
