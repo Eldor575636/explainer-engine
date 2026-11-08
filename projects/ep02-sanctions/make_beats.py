@@ -196,7 +196,7 @@ cfg = {"layers": "layers", "music": {"curious": "../../assets/music/curious.mp3"
                   {"name": "russia", "from": [72, "Endi"], "to": [86, "Ular"], "hook": "$300 MLRD QANDAY MUZLATILDI?"},
                   {"name": "works", "from": [89, "Xo'sh"], "to": [100, "Ya'ni"], "hook": "SANKSIYALAR ISHLAYDIMI?"},
                   {"name": "uzbekistan", "from": [101, "Endi"], "to": [110, "Demak"], "hook": "SANKSIYA VA O'ZBEKISTON"}],
-       "series_label": "2-QISM: SANKSIYALAR", "handle": "@bilmasboy",
+       "series_label": "2-QISM: SANKSIYALAR", "partners": "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari.", "handle": "@bilmasboy",
        "socials": [["youtube", "@bilmasboy"], ["instagram", "@bilmas.boy"], ["tiktok", "@bilmas.boy"], ["facebook", "@bilmas.boy"], ["telegram", "@bilmas_boy"]]}
 json.dump(cfg, open("ep02_beats.json", "w"), ensure_ascii=False, indent=1)
 print(len(B), "beats")

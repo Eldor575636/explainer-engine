@@ -253,7 +253,7 @@ def flag_sprite(codes, h=120):
     return motion.Sprite(img)
 
 
-def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None):
+def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None, partners=None):
     """End card for a Short: avatar, logo, 'full video on the channel', episode, where this clip sits, handle.
     Returns a list of (RGBA sprite, y, delay) so the pieces can pop in one after another."""
     from PIL import ImageDraw
@@ -273,6 +273,15 @@ def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None):
         out.append((socials_sprite(socials, icon=54, font=42, cols=2, gapx=40, gapy=22), 1330, 0.6))
     else:
         out.append((text_sprite(handle, motion.MONT, 60, (212, 162, 58), 0), 1290, 0.6))
+    if partners:                                  # "Hamkorlarimiz:" on one line, the projects below, shrunk to fit
+        head, _, rest = partners.partition(":")
+        lines = [(head + ":", (212, 162, 58)), (rest.strip(), (255, 255, 255))] if rest else [(partners, (255, 255, 255))]
+        for i, (txt, col) in enumerate(lines):
+            for sz in (46, 42, 38, 34, 30):
+                ps = text_sprite(new_alphabet(txt), motion.MONT, sz, col, 4, (14, 22, 38))
+                if ps.w <= VW - 80:
+                    break
+            out.append((ps, 1550 + 62 * i, 0.72 + 0.08 * i))
     return out
 
 
@@ -930,6 +939,7 @@ def main():
         rng = random.Random(3)
         bug = LogoBug(54) if cfg.get("logo_bug", True) else None
         soc_row = socials_sprite(cfg["socials"], icon=40, font=32, gapx=40) if cfg.get("socials") else None
+        partners = seeded(motion.tag_sprite, new_alphabet(cfg["partners"]), 34, NAVY) if cfg.get("partners") else None
         for fi in range(nframes):
             t = fi / FPS
             while bi + 1 < len(beats) and beats[bi + 1]["t0"] <= t:
@@ -963,6 +973,10 @@ def main():
             if soc_row is not None and beats[bi]["type"] == "end":
                 lt = t - beats[bi]["t0"]
                 soc_row.draw(frame, W / 2, 40, back_out(lt / 0.4), 0, min(1, lt / 0.15))
+            if partners is not None and beats[bi]["type"] == "end":
+                lt = t - beats[bi]["t0"] - 0.3
+                if lt > 0:
+                    partners.draw(frame, W / 2, 104, back_out(min(1, lt / 0.4)), 0, min(1, lt / 0.15))
             ff.stdin.write((np.clip(frame, 0, 1) * 255).astype(np.uint8).tobytes())
             if fi % 500 == 0:
                 print(f"  {fi}/{nframes}", flush=True)
@@ -1059,7 +1073,7 @@ def main():
             last = frame
         END = 2.4 if cfg.get("series_label") else 0.0           # end card: darkened, blurred last frame + channel reference
         if END:
-            card = short_endcard(cfg["series_label"], ta, cfg.get("handle", "@bilmasboy"), VW, VH, cfg.get("socials"))
+            card = short_endcard(cfg["series_label"], ta, cfg.get("handle", "@bilmasboy"), VW, VH, cfg.get("socials"), cfg.get("partners"))
             base = cv2.GaussianBlur(last, (0, 0), 9)
             for fi in range(int(END * FPS)):
                 lt = fi / FPS; p = ease_out(lt / 0.35)
