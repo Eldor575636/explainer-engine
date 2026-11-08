@@ -173,4 +173,7 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   written with the script, each with a "Show at" time just after the answer is explained, listed in the schedule's "Quizzes" tab and added in YouTube Studio at upload.
 - Partners line (from E03 on, everywhere): "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari." Set `partners` in the
   beat sheet cfg: v3.py shows it on the long-video end screen (under the socials row) and on every Short's end card; also end
-  every YouTube description, Shorts caption and Telegram post with it.
+  every YouTube description, Shorts caption and Telegram post with it. In text (not on screen) tag the accounts:
+  "Hamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com)." Handles per platform:
+  California Uzbek = @california_uzbek (YouTube, Instagram, Telegram), @california_uz (TikTok), @california.uzbek (Facebook);
+  Bysmillah = @bysmillahcom everywhere.
