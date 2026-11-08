@@ -169,6 +169,8 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - Owner's rule: every episode gets **3 titles + 3 thumbnails** (A/B/C, different angles), all run together in YouTube Test & Compare.
   Specs live in `projects/<ep>/thumbs/A.json`, `B.json`, `C.json` (thumbnail.py). Track results in the schedule's "AB tests" tab.
 - Every episode gets **7 Shorts** (one a day until the next Friday episode).
+- Every long episode gets a **3-question quiz** (4 options max, one correct, one marked Main in case YouTube allows only one),
+  written with the script, listed in the schedule's "Quizzes" tab and added in YouTube Studio at upload.
 - Partners line (from E03 on, everywhere): "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari." Set `partners` in the
   beat sheet cfg: v3.py shows it on the long-video end screen (under the socials row) and on every Short's end card; also end
   every YouTube description, Shorts caption and Telegram post with it.
