@@ -31,7 +31,8 @@ for r in ws.iter_rows(min_row=5, values_only=True):
              "video_title": yt_title.replace(" #shorts", ""), "full_title": FULL[code], "text": text}
     elif post == "Telegram post":
         text = r[10].replace("[YouTube link]", "{link}").strip() + "\n@bilmas_boy"
-        p = {"id": f"{code}_episode", "at_utc": at.isoformat(), "video_title": FULL[code], "text": text}
+        p = {"id": f"{code}_episode", "at_utc": at.isoformat(), "video_title": FULL[code], "text": text,
+             "photo": f"photos/{code}_thumb_A.jpg"}
     else:
         continue
     if p["id"] in skip:

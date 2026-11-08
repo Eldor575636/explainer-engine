@@ -59,12 +59,24 @@ def find(titles, videos):
     return None
 
 
-def send(text):
+def send(text, photo=None):
     if DRY:
-        print("---- would post ----\n" + text + "\n")
+        print("---- would post" + (f" with photo {photo}" if photo else "") + " ----\n" + text + "\n")
         return
-    data = urllib.parse.urlencode({"chat_id": CHANNEL, "text": text}).encode()
-    r = json.loads(urllib.request.urlopen(f"https://api.telegram.org/bot{TOKEN}/sendMessage", data, timeout=30).read())
+    if photo:                                   # photo post with the text as caption (max 1024 chars)
+        path = os.path.join(HERE, photo); boundary = "----bilmasboy"
+        parts = []
+        for k, v in (("chat_id", CHANNEL), ("caption", text)):
+            parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode())
+        parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="photo"; filename="{os.path.basename(path)}"\r\n'
+                     f'Content-Type: image/jpeg\r\n\r\n'.encode() + open(path, "rb").read() + b"\r\n")
+        parts.append(f"--{boundary}--\r\n".encode())
+        req = urllib.request.Request(f"https://api.telegram.org/bot{TOKEN}/sendPhoto", b"".join(parts),
+                                     {"Content-Type": f"multipart/form-data; boundary={boundary}"})
+    else:
+        req = urllib.request.Request(f"https://api.telegram.org/bot{TOKEN}/sendMessage",
+                                     urllib.parse.urlencode({"chat_id": CHANNEL, "text": text}).encode())
+    r = json.loads(urllib.request.urlopen(req, timeout=60).read())
     if not r.get("ok"):
         raise RuntimeError(r)
 
@@ -87,7 +99,7 @@ def main():
             print(p["id"], "video not live yet, will retry"); continue
         fallback = f"https://www.youtube.com/@{HANDLE}"
         text = p["text"].replace("{link}", link or fallback).replace("{full}", full or fallback)
-        send(text)
+        send(text, p.get("photo"))
         if not DRY:
             sent[p["id"]] = datetime.now(timezone.utc).isoformat()
             json.dump(sent, open(SENT, "w"), indent=1)

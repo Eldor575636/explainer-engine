@@ -14,6 +14,7 @@ automatically from the channel's public RSS feed (no YouTube API key). Runs from
 - Copy posts.json to the VPS folder (sent.json remembers what already went out, so nothing posts twice).
 
 ## Rules
+- Episode announcements are photo posts (thumbnail A from photos/, caption + link); Shorts posts are text + link.
 - Shorts posts go out 5 min after the Short is live on YouTube; if YouTube has not published it yet the
   post waits (checks every 5 min, up to 3 h, then posts with the channel link instead).
 - Titles must match the YouTube titles in the schedule; for long episodes all three Test & Compare titles are tried.
