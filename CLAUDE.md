@@ -163,3 +163,9 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   instead of being regenerated. E02 uses them.
 - ElevenLabs audio tags ([curious], [serious]...) were tested on E02's opening; owner chose no tags for now.
 - ElevenLabs credits are limited (~39.5k/month on the current plan; a 10-min episode is ~9k). Estimate before big runs.
+
+## Thumbnails and titles (2026-11-08)
+
+- Owner's rule: every episode gets **3 titles + 3 thumbnails** (A/B/C, different angles), all run together in YouTube Test & Compare.
+  Specs live in `projects/<ep>/thumbs/A.json`, `B.json`, `C.json` (thumbnail.py). Track results in the schedule's "AB tests" tab.
+- Every episode gets **7 Shorts** (one a day until the next Friday episode).

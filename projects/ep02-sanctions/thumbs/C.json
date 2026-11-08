@@ -1,0 +1,3 @@
+{"bg": "../layers/bg_samarkand_bank.jpg", "badge": "2-QISM", "headline": ["MIR KARTASI", "NEGA TO'XTADI?"], "accent": 1, "red": ["MIR"],
+ "hero": {"img": "../layers/mascot_v2.jpg", "part": 2, "nparts": 4, "h": 0.98, "x": 0.83},
+ "props": [{"img": "../layers/prop_card_x.jpg", "h": 0.3, "x": 0.58, "y": 0.72, "rot": -10, "circle": true}], "theme": "light"}
