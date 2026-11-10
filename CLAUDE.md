@@ -164,6 +164,14 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - ElevenLabs audio tags ([curious], [serious]...) were tested on E02's opening; owner chose no tags for now.
 - ElevenLabs credits are limited (~39.5k/month on the current plan; a 10-min episode is ~9k). Estimate before big runs.
 
+## Calls to action (2026-11-10)
+
+- Spoken asks only three times: one short subscribe line (<5 s) at the first curiosity point (~first third),
+  one yes/no-style opinion question at the end, and the final subscribe/bell/share line before the sign-off.
+- Like button mid-video is on screen only (animated pill + SFX), never spoken.
+- "Which topic next?" goes in the pinned comment and as end-screen text, not in the voice:
+  "Keyingi qismda kim yoki nima haqida bilishni xohlaysiz? Yozing, eng ko'p layk to'plagan mavzuni albatta yoritamiz 👇"
+
 ## Thumbnails and titles (2026-11-08)
 
 - Owner's rule: every episode gets **3 titles + 3 thumbnails** (A/B/C, different angles), all run together in YouTube Test & Compare.
