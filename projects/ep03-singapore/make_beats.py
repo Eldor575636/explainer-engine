@@ -64,7 +64,7 @@ beat([22, "Urushdan"], "scene", bg="bg_kampong", mood="calm", ev=[T([22, "port"]
      T([23, "suvsiz"], "SUVSIZ"), T([23, "kanalizatsiyasiz"], "KANALIZATSIYASIZ")])
 beat([24, "Ishsizlik"], "scene", bg="bg_kampong", crop="left", ev=[T([24, "Ishsizlik"], "ISHSIZLIK YUQORI", True), T([24, "jinoiy"], "JINOIY GURUHLAR")])
 beat([25, "1959-yilda"], "portrait", fig="portrait_lky", ev=[L([25, "1959-yilda"], "1959"), T([25, "boshqarish"], "O'ZINI O'ZI BOSHQARISH"),
-     T([25, "bosh"], "LI KUAN YU · BOSH VAZIR", True), T([26, "Kembrijda"], "KEMBRIJ · HUQUQSHUNOS"), CT([26, "o'ttiz"], 35, suffix=" YOSH", x=.25, y=.3)])
+     T([25, "bosh"], "LI KUAN YU · BOSH VAZIR", True), T([26, "Kembrijda"], "KEMBRIJ · HUQUQSHUNOS"), CT([26, "o'ttiz"], 35, suffix=" YOSH", x=.72, y=.8)])
 beat([27, "Uning"], "object", ev=[M([27, "Uning"], 1), T([27, "yolg'iz"], "KICHIK OROL YOLG'IZ YASHAY OLMAYDI", x=.36, y=.45)])
 beat([28, "Shuning"], "map", bg="map_malacca", zf=[.5, .45], ev=[L([28, "1963-yilda"], "1963"), F([28, "Malayziya"], ["sg", "my"]), AR([28, "qo'shildi"], SGM, MYM),
      T([28, "federatsiyasiga"], "MALAYZIYA FEDERATSIYASI", x=.5, y=.85)])
