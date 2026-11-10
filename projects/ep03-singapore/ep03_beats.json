@@ -1,0 +1,3044 @@
+{
+ "layers": "layers",
+ "music": {
+  "curious": "../../assets/music/curious.mp3",
+  "dramatic": "../../assets/music/dramatic.mp3",
+  "calm": "../../assets/music/calm.mp3"
+ },
+ "mascot": {
+  "img": "mascot_v2",
+  "parts": 4,
+  "full_body": true
+ },
+ "ui": {
+  "subscribe": "OBUNA BO'LING",
+  "subscribed": "OBUNA BO'LDINGIZ",
+  "like": "LAYK",
+  "next": "KEYINGI VIDEO"
+ },
+ "sentences": [
+  "1965-yil, 9-avgust.",
+  "Bir davlat rahbari televizorda xalqiga murojaat qilyapti va to'satdan yig'lab yuboradi.",
+  "Bu odamning davlati o'sha kuni mustaqil bo'lgan edi.",
+  "Odatda mustaqillik kuni bayram bo'ladi.",
+  "Lekin bu rahbar xursand emas edi, chunki uning yangi davlatida deyarli hech narsa yo'q edi.",
+  "Na neft, na gaz, na oltin, hatto ichimlik suvi ham yetarli emas edi.",
+  "Bu yangi davlatning maydoni Toshkent shahridan atigi ikki baravarga yaqin katta bo'lgan kichik bir orol.",
+  "Oradan bir avlod o'tib, shu orol dunyoning eng boy davlatlaridan biriga aylandi.",
+  "Bu davlat Singapur, u odam esa Li Kuan Yu edi.",
+  "Xo'sh, resurssiz kichik orol qanday qilib boyib ketdi?",
+  "Va bu mashaqqatli yo'lning narxi qancha bo'ldi?",
+  "Mening ismim Bilmas, negadir odamlar meni Bilmasboy deb tanishadi.",
+  "Bilganlarim meni boy qilgan bo'lsa, bilmaganlarim ustida hanuzgacha savollar so'rayman, izlanaman.",
+  "Hamda shu yo'lda topganlarimni siz bilan ulashib boraman.",
+  "O'tgan safar sanksiyalar qanday ishlashini bilib olgandik.",
+  "Bugun esa boshqa savol: davlatni nima boy qiladi, yer ostidagi boylikmi yoki to'g'ri qarorlar?",
+  "Demak, bugungi mavzu: Singapur va Li Kuan Yu.",
+  "Avval tarixga qisqacha nazar tashlaylik.",
+  "Singapur Malakka bo'g'ozida, Hind okeani va Tinch okeanini bog'laydigan dengiz yo'lining ustida joylashgan.",
+  "1819-yilda inglizlar bu yerda savdo porti qurishdi.",
+  "Deyarli bir yarim asr davomida Singapur Britaniya mustamlakasi bo'lib qoldi.",
+  "Ikkinchi jahon urushida esa uni Yaponiya bosib oldi.",
+  "Urushdan keyin port qayta tiklandi, lekin baribir aholining ko'pchiligi qashshoqlikda yashardi.",
+  "Odamlar gavjum kulbalarda, suvsiz va kanalizatsiyasiz hayot kechirishardi.",
+  "Ishsizlik yuqori, ko'chalarda jinoiy guruhlar hukmronlik qilardi.",
+  "1959-yilda Singapur o'zini o'zi boshqarish huquqini oldi va Li Kuan Yu bosh vazir bo'ldi.",
+  "U Kembrijda huquqshunoslikni o'qigan, o'ttiz besh yoshli advokat edi.",
+  "Uning fikricha, bunday kichik orol yolg'iz yashay olmasdi.",
+  "Shuning uchun 1963-yilda Singapur Malayziya federatsiyasiga qo'shildi.",
+  "Lekin bu ittifoq uzoq davom etmadi.",
+  "Siyosiy kelishmovchiliklar va millatlararo to'qnashuvlar boshlandi.",
+  "Ikki yildan keyin Malayziya parlamenti Singapurni federatsiyadan chiqarishga ovoz berdi.",
+  "Ya'ni Singapur mustaqillikni so'rab olmagan, uni mustaqil bo'lishga majbur qilishgan.",
+  "Li Kuan Yuning ko'z yoshlari ayni shu sababdan edi.",
+  "Endi o'sha paytdagi Singapurni tasavvur qiling.",
+  "Aholisi ikki millionga yaqin, ularning ko'pchiligi xitoylar, malaylar va hindlar.",
+  "Bir yil oldin shu xalqlar o'rtasida qonli to'qnashuvlar bo'lgan.",
+  "Armiya deyarli yo'q.",
+  "Ichimlik suvining katta qismi qo'shni Malayziyadan quvur orqali keladi.",
+  "Aholi jon boshiga daromad yiliga taxminan besh yuz dollar atrofida edi.",
+  "Ko'pchilik bu davlat uzoq yashamaydi, deb o'ylardi.",
+  "Bir soniya to'xtab: agar bunday hikoyalar sizga qiziq bo'lsa, mehnatimizni qo'llab-quvvatlab, kanalga obuna bo'lishni unutmang.",
+  "Davom etamiz.",
+  "Li Kuan Yu va uning jamoasi nima qildi?",
+  "Birinchi qaror: tashqi dunyoga eshikni ochish.",
+  "O'sha davrda ko'plab yangi mustaqil davlatlar xorijiy kompaniyalardan qo'rqardi.",
+  "Ular xorijiy zavodlarni milliylashtirar, chet el sarmoyasini mustamlakaning davomi deb bilardi.",
+  "Singapur buning teskarisini qildi.",
+  "Ular dunyoning eng katta kompaniyalarini \"Kelinglar, zavodingizni shu yerda quring.\" deb taklif qilishdi.",
+  "Buning uchun maxsus davlat idorasi, Iqtisodiy rivojlanish kengashi tuzildi.",
+  "Sanoat hududlari qurildi, soliqlar kamaytirildi, ruxsatnomalar tezlashtirildi.",
+  "Golland iqtisodchi Albert Vinsemius Singapur hukumatiga yillar davomida maslahatchi bo'ldi.",
+  "Avval kiyim va elektronika zavodlari keldi, keyin neftni qayta ishlash, keyinroq esa banklar.",
+  "Ish o'rinlari paydo bo'ldi, ishsizlik tez kamaydi.",
+  "Ikkinchi qaror: korrupsiyaga qarshi qattiq kurash.",
+  "Li Kuan Yu korrupsiya kichik davlatni ichidan yemiradi, deb hisoblardi.",
+  "Korrupsiyani tergov qiladigan alohida byuro katta vakolatlarga ega bo'ldi.",
+  "Qonun bo'yicha, amaldorning daromadidan ortiq boyligi pora olganining dalili sifatida qaralishi mumkin edi.",
+  "Hatto vazirlar ham tergovdan qochib qutula olmadi.",
+  "Shu bilan birga, davlat xizmatchilariga yuqori maosh belgilandi.",
+  "G'oya oddiy edi: halol ishlaganga yaxshi haq to'la, pora olganni esa qattiq jazola.",
+  "Bugungacha Singapur doimo dunyodagi eng kam korrupsiyali davlatlar qatorida turadi.",
+  "Uchinchi qaror: uy-joy.",
+  "1960-yilda davlat uy-joy qurish kengashi tuzildi.",
+  "Kulbalar o'rnida minglab ko'p qavatli uylar qurildi.",
+  "Eng muhimi, odamlarga bu uylarni ijaraga emas, sotib olishga imkon berildi.",
+  "Buning uchun har bir ishchining maoshidan majburiy jamg'arma fondiga pul ajratilardi.",
+  "Odamlar shu jamg'arma hisobidan o'z uyini sotib olishi mumkin edi.",
+  "Bugun Singapur aholisining har o'n kishisidan qariyb sakkiztasi davlat qurgan uylarda yashaydi.",
+  "Va ularning ko'pchiligi o'sha uyning egasi.",
+  "Li Kuan Yuning fikricha, uyi bor odam o'z davlatini doimo himoya qiladi.",
+  "To'rtinchi qaror: til va ta'lim.",
+  "Singapurda to'rtta rasmiy til bor: ingliz, xitoy, malay va tamil tillari.",
+  "Li Kuan Yu ingliz tilini ish va ta'lim tili qilib tanladi.",
+  "Bu hech bir millatni ustun qo'ymaydigan umumiy til edi, hamda butun dunyo bilan savdo qilish tili edi.",
+  "Shu bilan birga, har bir bola o'z ona tilini ham o'qishi ta'minlandi.",
+  "Maktablarda matematika va fanlarga katta e'tibor berildi.",
+  "Bugungacha Singapur o'quvchilari xalqaro baholash sinovlarida doimiy birinchi o'rinlarni egallab kelmoqda.",
+  "Natijasi qanday bo'ldi?",
+  "Aholi jon boshiga daromad besh yuz dollar atrofidan sakson ming dollardan ko'proqqa ko'tarildi.",
+  "Bu ko'rsatkich bo'yicha Singapur Amerikadan ham oldinda.",
+  "Singapur porti dunyodagi eng gavjum portlardan biriga aylandi.",
+  "Orol hatto kattalashdi: dengizni to'ldirish orqali uning maydoni chorak qismga yaqin oshdi.",
+  "Suv muammosini ham yomg'ir suvini yig'ish, dengiz suvini chuchuklashtirish va oqova suvni qayta tozalash orqali hal qilishdi.",
+  "Li Kuan Yu buni o'z kitobida shunday atadi: \"Uchinchi dunyodan birinchi dunyoga\".",
+  "Lekin har bir hikoyaning boshqa tomoni ham bor.",
+  "Singapur bu muvaffaqiyatining o'z narxini to'ladi.",
+  "Li Kuan Yuning partiyasi 1959-yildan beri hokimiyatda va hech qachon saylovda yutqazmagan.",
+  "Muxolifat siyosatchilari ko'p marta tuhmat uchun sudga berilgan va katta jarimalar to'lagan.",
+  "Ba'zi muxoliflar yillar davomida sudsiz qamoqda saqlangan.",
+  "Gazeta va televideniye uzoq yillar davomida hukumat nazoratida bo'lgan.",
+  "Qonunlar juda qattiq edi: ko'chaga axlat tashlaganga katta jarima, ayrim jinoyatlar uchun esa kaltak bilan jazolash amaliyoti bor edi.",
+  "1992-yildan boshlab hatto saqich sotish ham taqiqlangan.",
+  "Giyohvand moddalar savdosi uchun hozirgacha o'lim jazosi bor.",
+  "Li Kuan Yuning o'zi bu haqda ochiq gapirardi: uning fikricha, tartib va rivojlanish birinchi o'rinda, erkinlik esa keyin keladi.",
+  "Shu sababli Singapur haqida bahs hozirgacha davom etadi.",
+  "Bir tomon fikriga ko'ra: Singapur qashshoqlikdan boylikka eng tez chiqqan davlatlardan biri, natija hammasini oqlaydi.",
+  "Boshqa tomonga ko'ra esa: rivojlanish uchun erkinlikdan voz kechish shart emas.",
+  "Misol uchun, Janubiy Koreya va Tayvan ham tez boyidi, keyin esa erkin saylovli demokratiyalarga aylana oldi.",
+  "Yana bir muhim fikr bor: Singapur juda kichik va dengiz yo'lining o'rtasida joylashgan.",
+  "Katta davlatda xuddi shu usullar xuddi shunday ishlaydi, deb hech kim kafolat bera olmaydi.",
+  "Xo'sh, bu bizga nima uchun muhim?",
+  "Ko'plab davlatlar, jumladan Markaziy Osiyo davlatlari ham Singapur tajribasini o'rganadi, ko'p holatlarda misol qilib ko'rsatishadi.",
+  "Lekin Singapurning asosiy saboqlari yer osti boyliklari haqida emas.",
+  "Ular aslida qonunning hamma uchun bir xil ishlashi, korrupsiyaga qarshi kurash, ta'limga sarmoya va investorga ishonch haqida.",
+  "Masalan, O'zbekistonning dengizga chiqish yo'li yo'q: u dunyodagi ikki karra dengizsiz bo'lgan ikki davlatdan biri.",
+  "Demak, nusxa ko'chirish emas, saboqlarni o'z sharoitiga moslash kerak.",
+  "Xo'sh, resurssiz kichik orol qanday boyib ketdi?",
+  "Yer ostidagi boylik bilan emas, qarorlar bilan.",
+  "Xorijiy sarmoya uchun eshikni ochdi, korrupsiyaga qarshi kurashdi, odamlarni uy egasi qildi va ta'limga sarmoya kiritdi.",
+  "Lekin buning narxi siyosiy erkinlikning cheklanishi bo'ldi.",
+  "Li Kuan Yu 1990-yilgacha, ya'ni o'ttiz bir yil bosh vazir bo'ldi va 2015-yilda to'qson bir yoshida vafot etdi.",
+  "Singapur haqida men ham bilmas edim.",
+  "Endi esa hammamiz bilamiz.",
+  "Ana endi sizga savol: sizningcha, tez rivojlanish uchun erkinlikning bir qismidan voz kechish to'g'rimi?",
+  "Fikringizni izohlarda yozib qoldiring.",
+  "Keyingi qismda esa: nega bir parcha toshning narxi uyning narxidan ham qimmat bo'lishi mumkin degan savolga javob qidiramiz.",
+  "Gap olmoslar va dunyodagi eng muvaffaqiyatli reklama haqida bo'ladi.",
+  "O'tkazib yubormaslik uchun obuna bo'ling, qo'ng'iroqchani bosing va ko'rsatuvni do'stlaringizga ulashing.",
+  "Sizlar bilan boylikni bilimdan topgan, savol berishdan tortinmaydigan Bilmasboy bo'ldi."
+ ],
+ "beats": [
+  {
+   "at": [
+    0,
+    "1965-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_tv_1965",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      0,
+      "1965-yil"
+     ],
+     "k": "label",
+     "text": "1965 · 9-AVGUST"
+    },
+    {
+     "at": [
+      1,
+      "televizorda"
+     ],
+     "k": "tag",
+     "text": "TELEVIZORDA MUROJAAT"
+    },
+    {
+     "at": [
+      1,
+      "yig'lab"
+     ],
+     "k": "circle",
+     "x": 0.41,
+     "y": 0.33,
+     "rx": 0.1,
+     "ry": 0.14
+    },
+    {
+     "at": [
+      1,
+      "yig'lab"
+     ],
+     "k": "tag",
+     "text": "RAHBAR YIG'LAYAPTI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    2,
+    "Bu"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      2,
+      "mustaqil"
+     ],
+     "k": "bigtext",
+     "text": "MUSTAQILLIK",
+     "x": 0.5,
+     "y": 0.4
+    },
+    {
+     "at": [
+      3,
+      "bayram"
+     ],
+     "k": "tag",
+     "text": "ODATDA: BAYRAM",
+     "x": 0.5,
+     "y": 0.6
+    },
+    {
+     "at": [
+      4,
+      "xursand"
+     ],
+     "k": "stamp",
+     "text": "XURSAND EMAS"
+    }
+   ]
+  },
+  {
+   "at": [
+    5,
+    "Na"
+   ],
+   "type": "scene",
+   "bg": "bg_oil_field",
+   "tint": 0.55,
+   "ev": [
+    {
+     "at": [
+      5,
+      "neft"
+     ],
+     "k": "tag",
+     "text": "NEFT YO'Q",
+     "x": 0.25,
+     "y": 0.35,
+     "fg": "red"
+    },
+    {
+     "at": [
+      5,
+      "gaz"
+     ],
+     "k": "tag",
+     "text": "GAZ YO'Q",
+     "x": 0.5,
+     "y": 0.35,
+     "fg": "red"
+    },
+    {
+     "at": [
+      5,
+      "oltin"
+     ],
+     "k": "tag",
+     "text": "OLTIN YO'Q",
+     "x": 0.75,
+     "y": 0.35,
+     "fg": "red"
+    },
+    {
+     "at": [
+      5,
+      "suvi"
+     ],
+     "k": "stamp",
+     "text": "SUV HAM YETMAYDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    6,
+    "Bu"
+   ],
+   "type": "map",
+   "bg": "map_malacca",
+   "zf": [
+    0.59,
+    0.68
+   ],
+   "ev": [
+    {
+     "at": [
+      6,
+      "orol"
+     ],
+     "k": "pin",
+     "x": 0.59,
+     "y": 0.71
+    },
+    {
+     "at": [
+      6,
+      "kichik"
+     ],
+     "k": "rings",
+     "x": 0.59,
+     "y": 0.71
+    },
+    {
+     "at": [
+      6,
+      "Toshkent"
+     ],
+     "k": "tag",
+     "text": "MAYDONI ~2 TA TOSHKENT",
+     "x": 0.5,
+     "y": 0.85
+    }
+   ]
+  },
+  {
+   "at": [
+    7,
+    "Oradan"
+   ],
+   "type": "scene",
+   "bg": "bg_singapore",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      7,
+      "avlod"
+     ],
+     "k": "tag",
+     "text": "BIR AVLOD O'TIB..."
+    },
+    {
+     "at": [
+      7,
+      "boy"
+     ],
+     "k": "stamp",
+     "text": "ENG BOY DAVLATLARDAN"
+    }
+   ]
+  },
+  {
+   "at": [
+    8,
+    "Bu"
+   ],
+   "type": "portrait",
+   "fig": "portrait_lky",
+   "ev": [
+    {
+     "at": [
+      8,
+      "Singapur"
+     ],
+     "k": "flag",
+     "code": "sg"
+    },
+    {
+     "at": [
+      8,
+      "Singapur"
+     ],
+     "k": "label",
+     "text": "SINGAPUR"
+    },
+    {
+     "at": [
+      8,
+      "Li"
+     ],
+     "k": "tag",
+     "text": "LI KUAN YU",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    9,
+    "Xo'sh"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      9,
+      "Xo'sh"
+     ],
+     "k": "mascot",
+     "pose": 0,
+     "side": "right"
+    },
+    {
+     "at": [
+      9,
+      "resurssiz"
+     ],
+     "k": "tag",
+     "text": "RESURSSIZ OROL...",
+     "x": 0.36,
+     "y": 0.38
+    },
+    {
+     "at": [
+      9,
+      "boyib"
+     ],
+     "k": "tag",
+     "text": "QANDAY BOYIDI?",
+     "x": 0.36,
+     "y": 0.54
+    },
+    {
+     "at": [
+      10,
+      "narxi"
+     ],
+     "k": "tag",
+     "text": "NARXI QANCHA?",
+     "x": 0.36,
+     "y": 0.7,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    11,
+    "Mening"
+   ],
+   "type": "intro",
+   "pose": 3
+  },
+  {
+   "at": [
+    12,
+    "Bilganlarim"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      12,
+      "Bilganlarim"
+     ],
+     "k": "mascot",
+     "pose": 3,
+     "side": "right"
+    },
+    {
+     "at": [
+      12,
+      "Bilganlarim"
+     ],
+     "k": "tag",
+     "text": "BILIM = BOYLIK",
+     "x": 0.32,
+     "y": 0.3
+    },
+    {
+     "at": [
+      12,
+      "savollar"
+     ],
+     "k": "tag",
+     "text": "SO'RAYMAN",
+     "x": 0.32,
+     "y": 0.45
+    },
+    {
+     "at": [
+      12,
+      "izlanaman"
+     ],
+     "k": "tag",
+     "text": "IZLANAMAN",
+     "x": 0.32,
+     "y": 0.58
+    },
+    {
+     "at": [
+      13,
+      "ulashib"
+     ],
+     "k": "tag",
+     "text": "ULASHAMAN",
+     "x": 0.32,
+     "y": 0.71,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    14,
+    "O'tgan"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.45,
+     "at": [
+      14,
+      "sanksiyalar"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      14,
+      "O'tgan"
+     ],
+     "k": "label",
+     "text": "2-QISM: SANKSIYALAR"
+    },
+    {
+     "at": [
+      15,
+      "yer"
+     ],
+     "k": "tag",
+     "text": "YER OSTIDAGI BOYLIK?",
+     "x": 0.7,
+     "y": 0.4
+    },
+    {
+     "at": [
+      15,
+      "qarorlar"
+     ],
+     "k": "tag",
+     "text": "YOKI TO'G'RI QARORLAR?",
+     "x": 0.7,
+     "y": 0.58,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    16,
+    "Demak"
+   ],
+   "type": "title",
+   "title": "BUGUNGI MAVZU",
+   "title2": "SINGAPUR VA LI KUAN YU"
+  },
+  {
+   "at": [
+    17,
+    "Avval"
+   ],
+   "type": "chapter",
+   "num": "1-QISM",
+   "title": "OROL TARIXI"
+  },
+  {
+   "at": [
+    18,
+    "Singapur"
+   ],
+   "type": "map",
+   "bg": "map_malacca",
+   "zf": [
+    0.5,
+    0.5
+   ],
+   "ev": [
+    {
+     "at": [
+      18,
+      "Malakka"
+     ],
+     "k": "label",
+     "text": "MALAKKA BO'G'OZI"
+    },
+    {
+     "at": [
+      18,
+      "Singapur"
+     ],
+     "k": "pin",
+     "x": 0.59,
+     "y": 0.71
+    },
+    {
+     "at": [
+      18,
+      "Hind"
+     ],
+     "k": "tag",
+     "text": "HIND OKEANI",
+     "x": 0.15,
+     "y": 0.75
+    },
+    {
+     "at": [
+      18,
+      "Tinch"
+     ],
+     "k": "tag",
+     "text": "TINCH OKEANI",
+     "x": 0.85,
+     "y": 0.2
+    },
+    {
+     "at": [
+      18,
+      "yo'lining"
+     ],
+     "k": "tag",
+     "text": "DUNYO SAVDO YO'LI",
+     "x": 0.5,
+     "y": 0.9,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    19,
+    "1819-yilda"
+   ],
+   "type": "scene",
+   "bg": "bg_port_1819",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      19,
+      "1819-yilda"
+     ],
+     "k": "label",
+     "text": "1819"
+    },
+    {
+     "at": [
+      19,
+      "inglizlar"
+     ],
+     "k": "flag",
+     "code": "gb"
+    },
+    {
+     "at": [
+      19,
+      "savdo"
+     ],
+     "k": "tag",
+     "text": "INGLIZ SAVDO PORTI"
+    }
+   ]
+  },
+  {
+   "at": [
+    20,
+    "Deyarli"
+   ],
+   "type": "scene",
+   "bg": "bg_port_1819",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      20,
+      "bir"
+     ],
+     "k": "counter",
+     "to": 146,
+     "x": 0.5,
+     "y": 0.3,
+     "suffix": " YIL"
+    },
+    {
+     "at": [
+      20,
+      "mustamlakasi"
+     ],
+     "k": "tag",
+     "text": "BRITANIYA MUSTAMLAKASI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    21,
+    "Ikkinchi"
+   ],
+   "type": "scene",
+   "bg": "bg_ww2",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      21,
+      "Ikkinchi"
+     ],
+     "k": "label",
+     "text": "1942 · IKKINCHI JAHON URUSHI"
+    },
+    {
+     "at": [
+      21,
+      "Yaponiya"
+     ],
+     "k": "flag",
+     "code": "jp"
+    },
+    {
+     "at": [
+      21,
+      "bosib"
+     ],
+     "k": "stamp",
+     "text": "BOSIB OLINDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    22,
+    "Urushdan"
+   ],
+   "type": "scene",
+   "bg": "bg_kampong",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      22,
+      "port"
+     ],
+     "k": "tag",
+     "text": "PORT TIKLANDI"
+    },
+    {
+     "at": [
+      22,
+      "qashshoqlikda"
+     ],
+     "k": "tag",
+     "text": "LEKIN QASHSHOQLIK",
+     "fg": "red"
+    },
+    {
+     "at": [
+      23,
+      "suvsiz"
+     ],
+     "k": "tag",
+     "text": "SUVSIZ"
+    },
+    {
+     "at": [
+      23,
+      "kanalizatsiyasiz"
+     ],
+     "k": "tag",
+     "text": "KANALIZATSIYASIZ"
+    }
+   ]
+  },
+  {
+   "at": [
+    24,
+    "Ishsizlik"
+   ],
+   "type": "scene",
+   "bg": "bg_kampong",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      24,
+      "Ishsizlik"
+     ],
+     "k": "tag",
+     "text": "ISHSIZLIK YUQORI",
+     "fg": "red"
+    },
+    {
+     "at": [
+      24,
+      "jinoiy"
+     ],
+     "k": "tag",
+     "text": "JINOIY GURUHLAR"
+    }
+   ]
+  },
+  {
+   "at": [
+    25,
+    "1959-yilda"
+   ],
+   "type": "portrait",
+   "fig": "portrait_lky",
+   "ev": [
+    {
+     "at": [
+      25,
+      "1959-yilda"
+     ],
+     "k": "label",
+     "text": "1959"
+    },
+    {
+     "at": [
+      25,
+      "boshqarish"
+     ],
+     "k": "tag",
+     "text": "O'ZINI O'ZI BOSHQARISH"
+    },
+    {
+     "at": [
+      25,
+      "bosh"
+     ],
+     "k": "tag",
+     "text": "LI KUAN YU · BOSH VAZIR",
+     "fg": "red"
+    },
+    {
+     "at": [
+      26,
+      "Kembrijda"
+     ],
+     "k": "tag",
+     "text": "KEMBRIJ · HUQUQSHUNOS"
+    },
+    {
+     "at": [
+      26,
+      "o'ttiz"
+     ],
+     "k": "counter",
+     "to": 35,
+     "x": 0.25,
+     "y": 0.3,
+     "suffix": " YOSH"
+    }
+   ]
+  },
+  {
+   "at": [
+    27,
+    "Uning"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      27,
+      "Uning"
+     ],
+     "k": "mascot",
+     "pose": 1,
+     "side": "right"
+    },
+    {
+     "at": [
+      27,
+      "yolg'iz"
+     ],
+     "k": "tag",
+     "text": "KICHIK OROL YOLG'IZ YASHAY OLMAYDI",
+     "x": 0.36,
+     "y": 0.45
+    }
+   ]
+  },
+  {
+   "at": [
+    28,
+    "Shuning"
+   ],
+   "type": "map",
+   "bg": "map_malacca",
+   "zf": [
+    0.5,
+    0.45
+   ],
+   "ev": [
+    {
+     "at": [
+      28,
+      "1963-yilda"
+     ],
+     "k": "label",
+     "text": "1963"
+    },
+    {
+     "at": [
+      28,
+      "Malayziya"
+     ],
+     "k": "flag",
+     "code": [
+      "sg",
+      "my"
+     ]
+    },
+    {
+     "at": [
+      28,
+      "qo'shildi"
+     ],
+     "k": "arrow",
+     "from": [
+      0.59,
+      0.71
+     ],
+     "to": [
+      0.47,
+      0.35
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      28,
+      "federatsiyasiga"
+     ],
+     "k": "tag",
+     "text": "MALAYZIYA FEDERATSIYASI",
+     "x": 0.5,
+     "y": 0.85
+    }
+   ]
+  },
+  {
+   "at": [
+    29,
+    "Lekin"
+   ],
+   "type": "scene",
+   "bg": "bg_parliament_1965",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      29,
+      "davom"
+     ],
+     "k": "tag",
+     "text": "UZOQ DAVOM ETMADI"
+    },
+    {
+     "at": [
+      30,
+      "to'qnashuvlar"
+     ],
+     "k": "tag",
+     "text": "TO'QNASHUVLAR",
+     "fg": "red"
+    },
+    {
+     "at": [
+      31,
+      "Ikki"
+     ],
+     "k": "label",
+     "text": "1965"
+    },
+    {
+     "at": [
+      31,
+      "chiqarishga"
+     ],
+     "k": "stamp",
+     "text": "CHIQARILDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    32,
+    "Ya'ni"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      32,
+      "Ya'ni"
+     ],
+     "k": "mascot",
+     "pose": 2,
+     "side": "right"
+    },
+    {
+     "at": [
+      32,
+      "so'rab"
+     ],
+     "k": "tag",
+     "text": "MUSTAQILLIKNI SO'RAMAGAN",
+     "x": 0.36,
+     "y": 0.38
+    },
+    {
+     "at": [
+      32,
+      "majbur"
+     ],
+     "k": "tag",
+     "text": "MAJBUR QILISHGAN",
+     "x": 0.36,
+     "y": 0.55,
+     "fg": "red"
+    },
+    {
+     "at": [
+      33,
+      "ko'z"
+     ],
+     "k": "tag",
+     "text": "KO'Z YOSHLARI SHUNDAN",
+     "x": 0.36,
+     "y": 0.72
+    }
+   ]
+  },
+  {
+   "at": [
+    34,
+    "Endi"
+   ],
+   "type": "scene",
+   "bg": "bg_kampong",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      34,
+      "tasavvur"
+     ],
+     "k": "label",
+     "text": "1965-YILDAGI SINGAPUR"
+    },
+    {
+     "at": [
+      35,
+      "ikki"
+     ],
+     "k": "counter",
+     "to": 2,
+     "x": 0.5,
+     "y": 0.25,
+     "suffix": " MLN AHOLI"
+    },
+    {
+     "at": [
+      35,
+      "xitoylar"
+     ],
+     "k": "tag",
+     "text": "XITOYLAR"
+    },
+    {
+     "at": [
+      35,
+      "malaylar"
+     ],
+     "k": "tag",
+     "text": "MALAYLAR"
+    },
+    {
+     "at": [
+      35,
+      "hindlar"
+     ],
+     "k": "tag",
+     "text": "HINDLAR"
+    }
+   ]
+  },
+  {
+   "at": [
+    36,
+    "Bir"
+   ],
+   "type": "scene",
+   "bg": "bg_war",
+   "tint": 0.5,
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      36,
+      "Bir"
+     ],
+     "k": "label",
+     "text": "1964"
+    },
+    {
+     "at": [
+      36,
+      "qonli"
+     ],
+     "k": "tag",
+     "text": "QONLI TO'QNASHUVLAR",
+     "fg": "red"
+    },
+    {
+     "at": [
+      37,
+      "Armiya"
+     ],
+     "k": "stamp",
+     "text": "ARMIYA YO'Q"
+    }
+   ]
+  },
+  {
+   "at": [
+    38,
+    "Ichimlik"
+   ],
+   "type": "scene",
+   "bg": "bg_water_pipe",
+   "ev": [
+    {
+     "at": [
+      38,
+      "Malayziyadan"
+     ],
+     "k": "flag",
+     "code": "my"
+    },
+    {
+     "at": [
+      38,
+      "quvur"
+     ],
+     "k": "tag",
+     "text": "SUV MALAYZIYADAN QUVUR ORQALI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    39,
+    "Aholi"
+   ],
+   "type": "number",
+   "prop": "prop_dollar",
+   "value": "$500",
+   "sub": "AHOLI JON BOSHIGA DAROMAD (YILIGA)",
+   "show": [
+    39,
+    "besh"
+   ]
+  },
+  {
+   "at": [
+    40,
+    "Ko'pchilik"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      40,
+      "Ko'pchilik"
+     ],
+     "k": "mascot",
+     "pose": 2,
+     "side": "right"
+    },
+    {
+     "at": [
+      40,
+      "uzoq"
+     ],
+     "k": "tag",
+     "text": "UZOQ YASHAMAYDI...",
+     "x": 0.36,
+     "y": 0.45,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    41,
+    "Bir"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      41,
+      "Bir"
+     ],
+     "k": "mascot",
+     "pose": 1,
+     "side": "right"
+    },
+    {
+     "at": [
+      41,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.36,
+     "y": 0.5,
+     "dur": 3.4
+    }
+   ]
+  },
+  {
+   "at": [
+    43,
+    "Li"
+   ],
+   "type": "chapter",
+   "num": "2-QISM",
+   "title": "TO'RT QAROR"
+  },
+  {
+   "at": [
+    44,
+    "Birinchi"
+   ],
+   "type": "scene",
+   "bg": "bg_china_port",
+   "ev": [
+    {
+     "at": [
+      44,
+      "Birinchi"
+     ],
+     "k": "label",
+     "text": "1. ESHIKNI OCHISH"
+    },
+    {
+     "at": [
+      45,
+      "qo'rqardi"
+     ],
+     "k": "tag",
+     "text": "KO'PCHILIK XORIJIY KOMPANIYADAN QO'RQARDI"
+    },
+    {
+     "at": [
+      46,
+      "milliylashtirar"
+     ],
+     "k": "stamp",
+     "text": "MILLIYLASHTIRISH"
+    }
+   ]
+  },
+  {
+   "at": [
+    47,
+    "Singapur"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      47,
+      "Singapur"
+     ],
+     "k": "mascot",
+     "pose": 3,
+     "side": "right"
+    },
+    {
+     "at": [
+      47,
+      "teskarisini"
+     ],
+     "k": "bigtext",
+     "text": "TESKARISI",
+     "x": 0.36,
+     "y": 0.4
+    },
+    {
+     "at": [
+      48,
+      "Kelinglar"
+     ],
+     "k": "tag",
+     "text": "\"KELINGLAR, ZAVODINGIZNI SHU YERDA QURING\"",
+     "x": 0.36,
+     "y": 0.62,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    49,
+    "Buning"
+   ],
+   "type": "scene",
+   "bg": "bg_conference",
+   "ev": [
+    {
+     "at": [
+      49,
+      "Iqtisodiy"
+     ],
+     "k": "label",
+     "text": "IQTISODIY RIVOJLANISH KENGASHI"
+    },
+    {
+     "at": [
+      50,
+      "Sanoat"
+     ],
+     "k": "tag",
+     "text": "SANOAT HUDUDLARI"
+    },
+    {
+     "at": [
+      50,
+      "soliqlar"
+     ],
+     "k": "tag",
+     "text": "SOLIQLAR ↓"
+    },
+    {
+     "at": [
+      50,
+      "ruxsatnomalar"
+     ],
+     "k": "tag",
+     "text": "RUXSATNOMA TEZ",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    51,
+    "Golland"
+   ],
+   "type": "scene",
+   "bg": "bg_conference",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      51,
+      "Golland"
+     ],
+     "k": "flag",
+     "code": "nl"
+    },
+    {
+     "at": [
+      51,
+      "Vinsemius"
+     ],
+     "k": "tag",
+     "text": "ALBERT VINSEMIUS"
+    },
+    {
+     "at": [
+      51,
+      "maslahatchi"
+     ],
+     "k": "tag",
+     "text": "MASLAHATCHI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    52,
+    "Avval"
+   ],
+   "type": "scene",
+   "bg": "bg_factories",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      52,
+      "kiyim"
+     ],
+     "k": "tag",
+     "text": "KIYIM"
+    },
+    {
+     "at": [
+      52,
+      "elektronika"
+     ],
+     "k": "tag",
+     "text": "ELEKTRONIKA"
+    },
+    {
+     "at": [
+      52,
+      "neftni"
+     ],
+     "k": "tag",
+     "text": "NEFTNI QAYTA ISHLASH"
+    },
+    {
+     "at": [
+      52,
+      "banklar"
+     ],
+     "k": "tag",
+     "text": "BANKLAR",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    53,
+    "Ish"
+   ],
+   "type": "scene",
+   "bg": "bg_factories",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      53,
+      "ishsizlik"
+     ],
+     "k": "bars",
+     "novalue": true,
+     "x": 0.5,
+     "w": 0.4,
+     "items": [
+      {
+       "label": "OLDIN",
+       "value": 100,
+       "color": "red"
+      },
+      {
+       "label": "KEYIN",
+       "value": 25,
+       "hl": true
+      }
+     ]
+    },
+    {
+     "at": [
+      53,
+      "ishsizlik"
+     ],
+     "k": "tag",
+     "text": "ISHSIZLIK TEZ KAMAYDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    54,
+    "Ikkinchi"
+   ],
+   "type": "scene",
+   "bg": "bg_anticorruption",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      54,
+      "Ikkinchi"
+     ],
+     "k": "label",
+     "text": "2. KORRUPSIYAGA QARSHI"
+    },
+    {
+     "at": [
+      55,
+      "yemiradi"
+     ],
+     "k": "tag",
+     "text": "KORRUPSIYA ICHIDAN YEMIRADI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    56,
+    "Korrupsiyani"
+   ],
+   "type": "scene",
+   "bg": "bg_anticorruption",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      56,
+      "byuro"
+     ],
+     "k": "tag",
+     "text": "KORRUPSIYA BYUROSI"
+    },
+    {
+     "at": [
+      57,
+      "daromadidan"
+     ],
+     "k": "tag",
+     "text": "DAROMADDAN ORTIQ BOYLIK = DALIL",
+     "fg": "red"
+    },
+    {
+     "at": [
+      58,
+      "vazirlar"
+     ],
+     "k": "stamp",
+     "text": "VAZIRLAR HAM"
+    }
+   ]
+  },
+  {
+   "at": [
+    59,
+    "Shu"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_gold",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      59,
+      "maosh"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      59,
+      "maosh"
+     ],
+     "k": "tag",
+     "text": "YUQORI MAOSH",
+     "x": 0.3,
+     "y": 0.82
+    },
+    {
+     "at": [
+      60,
+      "halol"
+     ],
+     "k": "tag",
+     "text": "HALOLGA: YAXSHI HAQ",
+     "x": 0.7,
+     "y": 0.4
+    },
+    {
+     "at": [
+      60,
+      "jazola"
+     ],
+     "k": "tag",
+     "text": "PORAXO'RGA: QATTIQ JAZO",
+     "x": 0.7,
+     "y": 0.58,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    61,
+    "Bugungacha"
+   ],
+   "type": "scene",
+   "bg": "bg_singapore",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      61,
+      "Singapur"
+     ],
+     "k": "flag",
+     "code": "sg"
+    },
+    {
+     "at": [
+      61,
+      "kam"
+     ],
+     "k": "tag",
+     "text": "ENG KAM KORRUPSIYALI DAVLATLAR QATORIDA"
+    }
+   ]
+  },
+  {
+   "at": [
+    62,
+    "Uchinchi"
+   ],
+   "type": "scene",
+   "bg": "bg_hdb",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      62,
+      "Uchinchi"
+     ],
+     "k": "label",
+     "text": "3. UY-JOY"
+    },
+    {
+     "at": [
+      63,
+      "1960-yilda"
+     ],
+     "k": "label",
+     "text": "1960"
+    },
+    {
+     "at": [
+      63,
+      "kengashi"
+     ],
+     "k": "tag",
+     "text": "UY-JOY KENGASHI"
+    },
+    {
+     "at": [
+      64,
+      "ko'p"
+     ],
+     "k": "tag",
+     "text": "MINGLAB KO'P QAVATLI UYLAR"
+    }
+   ]
+  },
+  {
+   "at": [
+    65,
+    "Eng"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_key",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      65,
+      "sotib"
+     ],
+     "slam": true
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      65,
+      "ijaraga"
+     ],
+     "k": "tag",
+     "text": "IJARA EMAS",
+     "x": 0.7,
+     "y": 0.4
+    },
+    {
+     "at": [
+      65,
+      "sotib"
+     ],
+     "k": "tag",
+     "text": "SOTIB OLISH",
+     "x": 0.7,
+     "y": 0.58,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    66,
+    "Buning"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_gold",
+     "x": 0.25,
+     "y": 0.5,
+     "h": 0.38,
+     "at": [
+      66,
+      "maoshidan"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      66,
+      "majburiy"
+     ],
+     "k": "tag",
+     "text": "MAJBURIY JAMG'ARMA",
+     "x": 0.25,
+     "y": 0.82
+    },
+    {
+     "at": [
+      67,
+      "hisobidan"
+     ],
+     "k": "arrow",
+     "from": [
+      0.4,
+      0.5
+     ],
+     "to": [
+      0.62,
+      0.5
+     ],
+     "straight": true
+    },
+    {
+     "at": [
+      67,
+      "uyini"
+     ],
+     "k": "prop",
+     "img": "prop_key",
+     "x": 0.78,
+     "y": 0.5,
+     "h": 0.38
+    }
+   ]
+  },
+  {
+   "at": [
+    68,
+    "Bugun"
+   ],
+   "type": "scene",
+   "bg": "bg_hdb",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      68,
+      "sakkiztasi"
+     ],
+     "k": "pie",
+     "x": 0.3,
+     "y": 0.55,
+     "r": 0.22,
+     "slices": [
+      {
+       "label": "DAVLAT UYLARIDA",
+       "value": 80
+      },
+      {
+       "label": "BOSHQA",
+       "value": 20
+      }
+     ]
+    },
+    {
+     "at": [
+      69,
+      "egasi"
+     ],
+     "k": "tag",
+     "text": "KO'PCHILIGI UY EGASI",
+     "x": 0.7,
+     "y": 0.5,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    70,
+    "Li"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      70,
+      "Li"
+     ],
+     "k": "mascot",
+     "pose": 1,
+     "side": "right"
+    },
+    {
+     "at": [
+      70,
+      "uyi"
+     ],
+     "k": "tag",
+     "text": "UYI BOR ODAM...",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      70,
+      "himoya"
+     ],
+     "k": "tag",
+     "text": "...DAVLATINI HIMOYA QILADI",
+     "x": 0.36,
+     "y": 0.58,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    71,
+    "To'rtinchi"
+   ],
+   "type": "scene",
+   "bg": "bg_classroom",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      71,
+      "To'rtinchi"
+     ],
+     "k": "label",
+     "text": "4. TIL VA TA'LIM"
+    },
+    {
+     "at": [
+      72,
+      "to'rtta"
+     ],
+     "k": "counter",
+     "to": 4,
+     "x": 0.5,
+     "y": 0.25,
+     "suffix": " RASMIY TIL"
+    },
+    {
+     "at": [
+      72,
+      "ingliz"
+     ],
+     "k": "tag",
+     "text": "INGLIZ"
+    },
+    {
+     "at": [
+      72,
+      "xitoy"
+     ],
+     "k": "tag",
+     "text": "XITOY"
+    },
+    {
+     "at": [
+      72,
+      "malay"
+     ],
+     "k": "tag",
+     "text": "MALAY"
+    },
+    {
+     "at": [
+      72,
+      "tamil"
+     ],
+     "k": "tag",
+     "text": "TAMIL"
+    }
+   ]
+  },
+  {
+   "at": [
+    73,
+    "Li"
+   ],
+   "type": "scene",
+   "bg": "bg_classroom",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      73,
+      "ingliz"
+     ],
+     "k": "flag",
+     "code": "gb"
+    },
+    {
+     "at": [
+      73,
+      "ish"
+     ],
+     "k": "tag",
+     "text": "INGLIZ TILI = ISH TILI",
+     "fg": "red"
+    },
+    {
+     "at": [
+      74,
+      "ustun"
+     ],
+     "k": "tag",
+     "text": "HECH KIM USTUN EMAS"
+    },
+    {
+     "at": [
+      75,
+      "ona"
+     ],
+     "k": "tag",
+     "text": "+ ONA TILI"
+    }
+   ]
+  },
+  {
+   "at": [
+    76,
+    "Maktablarda"
+   ],
+   "type": "scene",
+   "bg": "bg_classroom",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      76,
+      "matematika"
+     ],
+     "k": "tag",
+     "text": "MATEMATIKA VA FANLAR"
+    },
+    {
+     "at": [
+      77,
+      "birinchi"
+     ],
+     "k": "stamp",
+     "text": "1-O'RIN"
+    }
+   ]
+  },
+  {
+   "at": [
+    78,
+    "Natijasi"
+   ],
+   "type": "chapter",
+   "num": "3-QISM",
+   "title": "NATIJA"
+  },
+  {
+   "at": [
+    79,
+    "Aholi"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      79,
+      "Aholi"
+     ],
+     "k": "label",
+     "text": "AHOLI JON BOSHIGA DAROMAD"
+    },
+    {
+     "at": [
+      79,
+      "sakson"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.5,
+     "items": [
+      {
+       "label": "1965",
+       "value": 500,
+       "color": "red"
+      },
+      {
+       "label": "BUGUN",
+       "value": 80000,
+       "hl": true
+      }
+     ],
+     "suffix": "$"
+    }
+   ]
+  },
+  {
+   "at": [
+    80,
+    "Bu"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.5,
+    0.45
+   ],
+   "ev": [
+    {
+     "at": [
+      80,
+      "Amerikadan"
+     ],
+     "k": "flag",
+     "code": [
+      "sg",
+      "us"
+     ]
+    },
+    {
+     "at": [
+      80,
+      "Singapur"
+     ],
+     "k": "pin",
+     "x": 0.765,
+     "y": 0.58
+    },
+    {
+     "at": [
+      80,
+      "Amerikadan"
+     ],
+     "k": "pin",
+     "x": 0.22,
+     "y": 0.37
+    },
+    {
+     "at": [
+      80,
+      "oldinda"
+     ],
+     "k": "tag",
+     "text": "AMERIKADAN HAM OLDINDA",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    81,
+    "Singapur"
+   ],
+   "type": "scene",
+   "bg": "bg_ships",
+   "ev": [
+    {
+     "at": [
+      81,
+      "porti"
+     ],
+     "k": "tag",
+     "text": "SINGAPUR PORTI"
+    },
+    {
+     "at": [
+      81,
+      "gavjum"
+     ],
+     "k": "stamp",
+     "text": "ENG GAVJUMLARDAN"
+    }
+   ]
+  },
+  {
+   "at": [
+    82,
+    "Orol"
+   ],
+   "type": "scene",
+   "bg": "bg_reclamation",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      82,
+      "to'ldirish"
+     ],
+     "k": "tag",
+     "text": "DENGIZNI TO'LDIRISH"
+    },
+    {
+     "at": [
+      82,
+      "chorak"
+     ],
+     "k": "counter",
+     "to": 25,
+     "x": 0.3,
+     "y": 0.3,
+     "prefix": "+",
+     "suffix": "% YER"
+    }
+   ]
+  },
+  {
+   "at": [
+    83,
+    "Suv"
+   ],
+   "type": "scene",
+   "bg": "bg_reclamation",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      83,
+      "yomg'ir"
+     ],
+     "k": "tag",
+     "text": "YOMG'IR SUVI"
+    },
+    {
+     "at": [
+      83,
+      "chuchuklashtirish"
+     ],
+     "k": "tag",
+     "text": "DENGIZ SUVI"
+    },
+    {
+     "at": [
+      83,
+      "oqova"
+     ],
+     "k": "tag",
+     "text": "QAYTA TOZALASH",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    84,
+    "Li"
+   ],
+   "type": "title",
+   "title": "\"UCHINCHI DUNYODAN\"",
+   "title2": "\"BIRINCHI DUNYOGA\""
+  },
+  {
+   "at": [
+    85,
+    "Lekin"
+   ],
+   "type": "chapter",
+   "num": "4-QISM",
+   "title": "NARXI"
+  },
+  {
+   "at": [
+    87,
+    "Li"
+   ],
+   "type": "scene",
+   "bg": "bg_conference",
+   "tint": 0.5,
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      87,
+      "1959-yildan"
+     ],
+     "k": "label",
+     "text": "1959-YILDAN BERI"
+    },
+    {
+     "at": [
+      87,
+      "hokimiyatda"
+     ],
+     "k": "tag",
+     "text": "BIR PARTIYA HOKIMIYATDA"
+    },
+    {
+     "at": [
+      87,
+      "yutqazmagan"
+     ],
+     "k": "stamp",
+     "text": "HECH QACHON YUTQAZMAGAN"
+    }
+   ]
+  },
+  {
+   "at": [
+    88,
+    "Muxolifat"
+   ],
+   "type": "scene",
+   "bg": "bg_courtroom",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      88,
+      "tuhmat"
+     ],
+     "k": "tag",
+     "text": "TUHMAT DA'VOLARI"
+    },
+    {
+     "at": [
+      88,
+      "jarimalar"
+     ],
+     "k": "tag",
+     "text": "KATTA JARIMALAR",
+     "fg": "red"
+    },
+    {
+     "at": [
+      89,
+      "sudsiz"
+     ],
+     "k": "tag",
+     "text": "SUDSIZ QAMOQ",
+     "fg": "red"
+    },
+    {
+     "at": [
+      90,
+      "Gazeta"
+     ],
+     "k": "tag",
+     "text": "OAV NAZORATDA"
+    }
+   ]
+  },
+  {
+   "at": [
+    91,
+    "Qonunlar"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_gum_x",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      92,
+      "saqich"
+     ],
+     "slam": true
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      91,
+      "axlat"
+     ],
+     "k": "tag",
+     "text": "AXLAT = KATTA JARIMA",
+     "x": 0.7,
+     "y": 0.3
+    },
+    {
+     "at": [
+      91,
+      "kaltak"
+     ],
+     "k": "tag",
+     "text": "KALTAK JAZOSI",
+     "x": 0.7,
+     "y": 0.46,
+     "fg": "red"
+    },
+    {
+     "at": [
+      92,
+      "1992-yildan"
+     ],
+     "k": "label",
+     "text": "1992"
+    },
+    {
+     "at": [
+      92,
+      "saqich"
+     ],
+     "k": "tag",
+     "text": "SAQICH TAQIQLANGAN",
+     "x": 0.3,
+     "y": 0.85
+    },
+    {
+     "at": [
+      93,
+      "o'lim"
+     ],
+     "k": "tag",
+     "text": "GIYOHVAND SAVDOSI: O'LIM JAZOSI",
+     "x": 0.7,
+     "y": 0.64,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    94,
+    "Li"
+   ],
+   "type": "portrait",
+   "fig": "portrait_lky",
+   "ev": [
+    {
+     "at": [
+      94,
+      "tartib"
+     ],
+     "k": "tag",
+     "text": "1. TARTIB VA RIVOJLANISH"
+    },
+    {
+     "at": [
+      94,
+      "erkinlik"
+     ],
+     "k": "tag",
+     "text": "2. KEYIN ERKINLIK",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    95,
+    "Shu"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      95,
+      "bahs"
+     ],
+     "k": "label",
+     "text": "BAHS DAVOM ETADI"
+    },
+    {
+     "at": [
+      96,
+      "natija"
+     ],
+     "k": "tag",
+     "text": "\"NATIJA HAMMASINI OQLAYDI\"",
+     "x": 0.5,
+     "y": 0.4
+    },
+    {
+     "at": [
+      97,
+      "Boshqa"
+     ],
+     "k": "bigtext",
+     "text": "VS",
+     "x": 0.5,
+     "y": 0.55
+    },
+    {
+     "at": [
+      97,
+      "shart"
+     ],
+     "k": "tag",
+     "text": "\"ERKINLIKDAN VOZ KECHISH SHART EMAS\"",
+     "x": 0.5,
+     "y": 0.7,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    98,
+    "Misol"
+   ],
+   "type": "scene",
+   "bg": "bg_korea_taiwan",
+   "ev": [
+    {
+     "at": [
+      98,
+      "Koreya"
+     ],
+     "k": "flag",
+     "code": "kr"
+    },
+    {
+     "at": [
+      98,
+      "Tayvan"
+     ],
+     "k": "flag",
+     "code": [
+      "kr",
+      "tw"
+     ]
+    },
+    {
+     "at": [
+      98,
+      "boyidi"
+     ],
+     "k": "tag",
+     "text": "TEZ BOYIDI"
+    },
+    {
+     "at": [
+      98,
+      "demokratiyalarga"
+     ],
+     "k": "tag",
+     "text": "KEYIN DEMOKRATIYA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    99,
+    "Yana"
+   ],
+   "type": "map",
+   "bg": "map_malacca",
+   "zf": [
+    0.55,
+    0.6
+   ],
+   "ev": [
+    {
+     "at": [
+      99,
+      "kichik"
+     ],
+     "k": "pin",
+     "x": 0.59,
+     "y": 0.71
+    },
+    {
+     "at": [
+      99,
+      "o'rtasida"
+     ],
+     "k": "rings",
+     "x": 0.59,
+     "y": 0.71
+    },
+    {
+     "at": [
+      100,
+      "kafolat"
+     ],
+     "k": "tag",
+     "text": "KATTA DAVLATDA HAM ISHLAYDIMI?",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    101,
+    "Xo'sh"
+   ],
+   "type": "chapter",
+   "num": "5-QISM",
+   "title": "BIZ UCHUN SABOQ"
+  },
+  {
+   "at": [
+    102,
+    "Ko'plab"
+   ],
+   "type": "map",
+   "bg": "map_central_asia",
+   "zf": [
+    0.45,
+    0.5
+   ],
+   "ev": [
+    {
+     "at": [
+      102,
+      "Markaziy"
+     ],
+     "k": "tag",
+     "text": "MARKAZIY OSIYO HAM O'RGANADI",
+     "x": 0.5,
+     "y": 0.12
+    }
+   ]
+  },
+  {
+   "at": [
+    103,
+    "Lekin"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      103,
+      "Lekin"
+     ],
+     "k": "mascot",
+     "pose": 3,
+     "side": "right"
+    },
+    {
+     "at": [
+      103,
+      "emas"
+     ],
+     "k": "stamp",
+     "text": "YER OSTIDA EMAS"
+    },
+    {
+     "at": [
+      104,
+      "qonunning"
+     ],
+     "k": "tag",
+     "text": "QONUN HAMMAGA BIR XIL",
+     "x": 0.36,
+     "y": 0.3
+    },
+    {
+     "at": [
+      104,
+      "korrupsiyaga"
+     ],
+     "k": "tag",
+     "text": "KORRUPSIYAGA QARSHI",
+     "x": 0.36,
+     "y": 0.43
+    },
+    {
+     "at": [
+      104,
+      "ta'limga"
+     ],
+     "k": "tag",
+     "text": "TA'LIMGA SARMOYA",
+     "x": 0.36,
+     "y": 0.56
+    },
+    {
+     "at": [
+      104,
+      "investorga"
+     ],
+     "k": "tag",
+     "text": "INVESTORGA ISHONCH",
+     "x": 0.36,
+     "y": 0.69,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    105,
+    "Masalan"
+   ],
+   "type": "map",
+   "bg": "map_central_asia",
+   "zf": [
+    0.45,
+    0.55
+   ],
+   "ev": [
+    {
+     "at": [
+      105,
+      "O'zbekistonning"
+     ],
+     "k": "flag",
+     "code": "uz"
+    },
+    {
+     "at": [
+      105,
+      "O'zbekistonning"
+     ],
+     "k": "pin",
+     "x": 0.45,
+     "y": 0.55
+    },
+    {
+     "at": [
+      105,
+      "ikki"
+     ],
+     "k": "tag",
+     "text": "IKKI KARRA DENGIZSIZ",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    106,
+    "Demak"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      106,
+      "Demak"
+     ],
+     "k": "mascot",
+     "pose": 1,
+     "side": "right"
+    },
+    {
+     "at": [
+      106,
+      "nusxa"
+     ],
+     "k": "stamp",
+     "text": "NUSXA EMAS"
+    },
+    {
+     "at": [
+      106,
+      "moslash"
+     ],
+     "k": "tag",
+     "text": "O'Z SHAROITIGA MOSLASH",
+     "x": 0.36,
+     "y": 0.7,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    107,
+    "Xo'sh"
+   ],
+   "type": "title",
+   "title": "JAVOB",
+   "title2": "RESURSSIZ OROL QANDAY BOYIDI?"
+  },
+  {
+   "at": [
+    108,
+    "Yer"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      108,
+      "qarorlar"
+     ],
+     "k": "bigtext",
+     "text": "QARORLAR",
+     "x": 0.5,
+     "y": 0.3
+    },
+    {
+     "at": [
+      109,
+      "eshikni"
+     ],
+     "k": "tag",
+     "text": "1. ESHIKNI OCHDI",
+     "x": 0.25,
+     "y": 0.55
+    },
+    {
+     "at": [
+      109,
+      "korrupsiyaga"
+     ],
+     "k": "tag",
+     "text": "2. KORRUPSIYAGA QARSHI",
+     "x": 0.75,
+     "y": 0.55
+    },
+    {
+     "at": [
+      109,
+      "uy"
+     ],
+     "k": "tag",
+     "text": "3. UY EGASI QILDI",
+     "x": 0.25,
+     "y": 0.7
+    },
+    {
+     "at": [
+      109,
+      "ta'limga"
+     ],
+     "k": "tag",
+     "text": "4. TA'LIM",
+     "x": 0.75,
+     "y": 0.7
+    }
+   ]
+  },
+  {
+   "at": [
+    110,
+    "Lekin"
+   ],
+   "type": "portrait",
+   "fig": "portrait_lky",
+   "ev": [
+    {
+     "at": [
+      110,
+      "erkinlikning"
+     ],
+     "k": "tag",
+     "text": "NARXI: CHEKLANGAN ERKINLIK",
+     "fg": "red"
+    },
+    {
+     "at": [
+      111,
+      "1990-yilgacha"
+     ],
+     "k": "label",
+     "text": "1959–1990 · BOSH VAZIR"
+    },
+    {
+     "at": [
+      111,
+      "vafot"
+     ],
+     "k": "tag",
+     "text": "2015 · 91 YOSHDA VAFOT ETDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    112,
+    "Singapur"
+   ],
+   "type": "title",
+   "title": "SINGAPUR HAQIDA MEN HAM BILMAS EDIM",
+   "title2": "ENDI ESA HAMMAMIZ BILAMIZ"
+  },
+  {
+   "at": [
+    114,
+    "Ana"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      114,
+      "Ana"
+     ],
+     "k": "mascot",
+     "pose": 0,
+     "side": "right"
+    },
+    {
+     "at": [
+      114,
+      "rivojlanish"
+     ],
+     "k": "tag",
+     "text": "TEZ RIVOJLANISH UCHUN...",
+     "x": 0.36,
+     "y": 0.38
+    },
+    {
+     "at": [
+      114,
+      "erkinlikning"
+     ],
+     "k": "tag",
+     "text": "...ERKINLIKDAN VOZ KECHISH TO'G'RIMI?",
+     "x": 0.36,
+     "y": 0.55,
+     "fg": "red"
+    },
+    {
+     "at": [
+      115,
+      "izohlarda"
+     ],
+     "k": "tag",
+     "text": "IZOHDA YOZING",
+     "x": 0.36,
+     "y": 0.72
+    },
+    {
+     "at": [
+      114,
+      "sizningcha"
+     ],
+     "k": "like",
+     "x": 0.82,
+     "y": 0.2
+    }
+   ]
+  },
+  {
+   "at": [
+    116,
+    "Keyingi"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_gold",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      116,
+      "toshning"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      116,
+      "Keyingi"
+     ],
+     "k": "label",
+     "text": "KEYINGI QISM"
+    },
+    {
+     "at": [
+      117,
+      "olmoslar"
+     ],
+     "k": "tag",
+     "text": "OLMOSLAR",
+     "x": 0.7,
+     "y": 0.42,
+     "fg": "red"
+    },
+    {
+     "at": [
+      117,
+      "reklama"
+     ],
+     "k": "tag",
+     "text": "ENG MUVAFFAQIYATLI REKLAMA",
+     "x": 0.7,
+     "y": 0.6
+    }
+   ]
+  },
+  {
+   "at": [
+    118,
+    "O'tkazib"
+   ],
+   "type": "end",
+   "pose": 1,
+   "ev": [
+    {
+     "at": [
+      118,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.5,
+     "y": 0.11,
+     "dur": 3.4
+    },
+    {
+     "at": [
+      119,
+      "Bilmasboy"
+     ],
+     "k": "tag",
+     "text": "BILMASBOY",
+     "x": 0.5,
+     "y": 0.9,
+     "fg": "red"
+    }
+   ]
+  }
+ ],
+ "shorts": [
+  {
+   "name": "hook",
+   "from": [
+    0,
+    "1965-yil"
+   ],
+   "to": [
+    10,
+    "Va"
+   ],
+   "hook": ""
+  },
+  {
+   "name": "independence",
+   "from": [
+    25,
+    "1959-yilda"
+   ],
+   "to": [
+    33,
+    "Li"
+   ],
+   "hook": "MUSTAQILLIKKA MAJBUR QILINGAN DAVLAT"
+  },
+  {
+   "name": "doors",
+   "from": [
+    44,
+    "Birinchi"
+   ],
+   "to": [
+    53,
+    "Ish"
+   ],
+   "hook": "SINGAPUR SARMOYANI QANDAY JALB QILDI?"
+  },
+  {
+   "name": "corruption",
+   "from": [
+    54,
+    "Ikkinchi"
+   ],
+   "to": [
+    61,
+    "Bugungacha"
+   ],
+   "hook": "KORRUPSIYAGA QARSHI SINGAPUR USULI"
+  },
+  {
+   "name": "housing",
+   "from": [
+    62,
+    "Uchinchi"
+   ],
+   "to": [
+    70,
+    "Li"
+   ],
+   "hook": "10 KISHIDAN 8 TASI DAVLAT UYIDA"
+  },
+  {
+   "name": "price",
+   "from": [
+    85,
+    "Lekin"
+   ],
+   "to": [
+    94,
+    "Li"
+   ],
+   "hook": "SINGAPUR MUVAFFAQIYATINING NARXI"
+  },
+  {
+   "name": "lesson",
+   "from": [
+    101,
+    "Xo'sh"
+   ],
+   "to": [
+    106,
+    "Demak"
+   ],
+   "hook": "SINGAPUR VA O'ZBEKISTON"
+  }
+ ],
+ "series_label": "3-QISM: SINGAPUR",
+ "partners": "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari.",
+ "handle": "@bilmasboy",
+ "socials": [
+  [
+   "youtube",
+   "@bilmasboy"
+  ],
+  [
+   "instagram",
+   "@bilmas.boy"
+  ],
+  [
+   "tiktok",
+   "@bilmas.boy"
+  ],
+  [
+   "facebook",
+   "@bilmas.boy"
+  ],
+  [
+   "telegram",
+   "@bilmas_boy"
+  ]
+ ]
+}

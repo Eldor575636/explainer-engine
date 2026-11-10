@@ -1,0 +1,1 @@
+{"bg": "../layers/bg_kampong.jpg", "badge": "3-QISM", "headline": ["$500 DAN", "$80 000 GA"], "accent": 1, "red": ["$500"], "hero": {"img": "../layers/mascot_v2.jpg", "part": 2, "nparts": 4, "h": 0.98, "x": 0.83}, "props": [{"img": "../layers/prop_dollar.jpg", "h": 0.3, "x": 0.52, "y": 0.8, "rot": -10, "circle": true}], "theme": "light"}
