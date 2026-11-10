@@ -168,7 +168,7 @@ cfg = {"layers": "layers", "music": {"curious": "../../assets/music/curious.mp3"
        "ui": {"subscribe": "OBUNA BO'LING", "subscribed": "OBUNA BO'LDINGIZ", "like": "LAYK", "next": "KEYINGI VIDEO"},
        "sentences": S, "beats": B,
        "shorts": [{"name": "hook", "from": [0, "1965-yil"], "to": [10, "Va"], "hook": ""},
-                  {"name": "independence", "from": [25, "1959-yilda"], "to": [33, "Li"], "hook": "MUSTAQILLIKKA MAJBUR QILINGAN DAVLAT"},
+                  {"name": "independence", "from": [27, "Uning"], "to": [34, "Endi"], "hook": "MUSTAQILLIKKA MAJBUR QILINGAN DAVLAT"},
                   {"name": "doors", "from": [44, "Birinchi"], "to": [53, "Ish"], "hook": "SINGAPUR SARMOYANI QANDAY JALB QILDI?"},
                   {"name": "corruption", "from": [54, "Ikkinchi"], "to": [61, "Bugungacha"], "hook": "KORRUPSIYAGA QARSHI SINGAPUR USULI"},
                   {"name": "housing", "from": [62, "Uchinchi"], "to": [70, "Li"], "hook": "10 KISHIDAN 8 TASI DAVLAT UYIDA"},
