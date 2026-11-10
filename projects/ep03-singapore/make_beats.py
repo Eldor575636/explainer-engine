@@ -42,7 +42,7 @@ beat([5, "Na"], "scene", bg="bg_oil_field", tint=.55,
 beat([6, "Bu"], "map", bg="map_malacca", zf=[.59, .68], ev=[PIN([6, "orol"], SGM), RG([6, "kichik"], SGM),
      T([6, "Toshkent"], "MAYDONI ~2 TA TOSHKENT", x=.5, y=.85)])
 beat([7, "Oradan"], "scene", bg="bg_singapore", mood="curious", ev=[T([7, "avlod"], "BIR AVLOD O'TIB..."), ST([7, "boy"], "ENG BOY DAVLATLARDAN")])
-beat([8, "Bu"], "portrait", fig="portrait_lky", ev=[F([8, "Singapur"], "sg"), L([8, "Singapur"], "SINGAPUR"), T([8, "Li"], "LI KUAN YU", True)])
+beat([8, "Bu"], "portrait", fig="portrait_lky", vfocus=.3, ev=[F([8, "Singapur"], "sg"), L([8, "Singapur"], "SINGAPUR"), T([8, "Li"], "LI KUAN YU", True)])
 beat([9, "Xo'sh"], "object", ev=[M([9, "Xo'sh"], 0), T([9, "resurssiz"], "RESURSSIZ OROL...", x=.36, y=.38), T([9, "boyib"], "QANDAY BOYIDI?", x=.36, y=.54),
      T([10, "narxi"], "NARXI QANCHA?", True, x=.36, y=.7)])
 # ---------------- Intro ----------------
@@ -63,7 +63,7 @@ beat([21, "Ikkinchi"], "scene", bg="bg_ww2", mood="dramatic", ev=[L([21, "Ikkinc
 beat([22, "Urushdan"], "scene", bg="bg_kampong", mood="calm", ev=[T([22, "port"], "PORT TIKLANDI"), T([22, "qashshoqlikda"], "LEKIN QASHSHOQLIK", True),
      T([23, "suvsiz"], "SUVSIZ"), T([23, "kanalizatsiyasiz"], "KANALIZATSIYASIZ")])
 beat([24, "Ishsizlik"], "scene", bg="bg_kampong", crop="left", ev=[T([24, "Ishsizlik"], "ISHSIZLIK YUQORI", True), T([24, "jinoiy"], "JINOIY GURUHLAR")])
-beat([25, "1959-yilda"], "portrait", fig="portrait_lky", ev=[L([25, "1959-yilda"], "1959"), T([25, "boshqarish"], "O'ZINI O'ZI BOSHQARISH"),
+beat([25, "1959-yilda"], "portrait", fig="portrait_lky", vfocus=.3, ev=[L([25, "1959-yilda"], "1959"), T([25, "boshqarish"], "O'ZINI O'ZI BOSHQARISH"),
      T([25, "bosh"], "LI KUAN YU · BOSH VAZIR", True), T([26, "Kembrijda"], "KEMBRIJ · HUQUQSHUNOS"), CT([26, "o'ttiz"], 35, suffix=" YOSH", x=.72, y=.8)])
 beat([27, "Uning"], "object", ev=[M([27, "Uning"], 1), T([27, "yolg'iz"], "KICHIK OROL YOLG'IZ YASHAY OLMAYDI", x=.36, y=.45)])
 beat([28, "Shuning"], "map", bg="map_malacca", zf=[.5, .45], ev=[L([28, "1963-yilda"], "1963"), F([28, "Malayziya"], ["sg", "my"]), AR([28, "qo'shildi"], SGM, MYM),
@@ -99,7 +99,7 @@ beat([56, "Korrupsiyani"], "scene", bg="bg_anticorruption", crop="right", ev=[T(
 beat([59, "Shu"], "object", props=[P([59, "maosh"], "prop_gold", .3, .5, .42)], ev=[T([59, "maosh"], "YUQORI MAOSH", x=.3, y=.82),
      T([60, "halol"], "HALOLGA: YAXSHI HAQ", x=.7, y=.4), T([60, "jazola"], "PORAXO'RGA: QATTIQ JAZO", True, x=.7, y=.58)])
 beat([61, "Bugungacha"], "scene", bg="bg_singapore", crop="right", ev=[F([61, "Singapur"], "sg"), T([61, "kam"], "ENG KAM KORRUPSIYALI DAVLATLAR QATORIDA")])
-beat([62, "Uchinchi"], "scene", bg="bg_hdb", mood="calm", ev=[L([62, "Uchinchi"], "3. UY-JOY"), L([63, "1960-yilda"], "1960"), T([63, "kengashi"], "UY-JOY KENGASHI"),
+beat([62, "Uchinchi"], "scene", bg="bg_hdb", mood="calm", ev=[L([62, "Uchinchi"], "3. UY-JOY"), T([63, "kengashi"], "1960 · UY-JOY KENGASHI"),
      T([64, "ko'p"], "MINGLAB KO'P QAVATLI UYLAR")])
 beat([65, "Eng"], "object", props=[P([65, "sotib"], "prop_key", .3, .5, .5, slam=True)], ev=[T([65, "ijaraga"], "IJARA EMAS", x=.7, y=.4),
      T([65, "sotib"], "SOTIB OLISH", True, x=.7, y=.58)])
@@ -134,7 +134,7 @@ beat([88, "Muxolifat"], "scene", bg="bg_courtroom", mood="dramatic", ev=[T([88, 
 beat([91, "Qonunlar"], "object", props=[P([92, "saqich"], "prop_gum_x", .3, .5, .5, slam=True)], ev=[T([91, "axlat"], "AXLAT = KATTA JARIMA", x=.7, y=.3),
      T([91, "kaltak"], "KALTAK JAZOSI", True, x=.7, y=.46), L([92, "1992-yildan"], "1992"), T([92, "saqich"], "SAQICH TAQIQLANGAN", x=.3, y=.85),
      T([93, "o'lim"], "GIYOHVAND SAVDOSI: O'LIM JAZOSI", True, x=.7, y=.64)])
-beat([94, "Li"], "portrait", fig="portrait_lky", ev=[T([94, "tartib"], "1. TARTIB VA RIVOJLANISH"), T([94, "erkinlik"], "2. KEYIN ERKINLIK", True)])
+beat([94, "Li"], "portrait", fig="portrait_lky", vfocus=.3, ev=[T([94, "tartib"], "1. TARTIB VA RIVOJLANISH"), T([94, "erkinlik"], "2. KEYIN ERKINLIK", True)])
 beat([95, "Shu"], "object", ev=[L([95, "bahs"], "BAHS DAVOM ETADI"), T([96, "natija"], "\"NATIJA HAMMASINI OQLAYDI\"", x=.5, y=.4),
      {"at": [97, "Boshqa"], "k": "bigtext", "text": "VS", "x": .5, "y": .55}, T([97, "shart"], "\"ERKINLIKDAN VOZ KECHISH SHART EMAS\"", True, x=.5, y=.7)])
 beat([98, "Misol"], "scene", bg="bg_korea_taiwan", ev=[F([98, "Koreya"], "kr"), F([98, "Tayvan"], ["kr", "tw"]), T([98, "boyidi"], "TEZ BOYIDI"),
@@ -153,7 +153,7 @@ beat([107, "Xo'sh"], "title", title="JAVOB", title2="RESURSSIZ OROL QANDAY BOYID
 beat([108, "Yer"], "object", ev=[{"at": [108, "qarorlar"], "k": "bigtext", "text": "QARORLAR", "x": .5, "y": .3},
      T([109, "eshikni"], "1. ESHIKNI OCHDI", x=.25, y=.55), T([109, "korrupsiyaga"], "2. KORRUPSIYAGA QARSHI", x=.75, y=.55),
      T([109, "uy"], "3. UY EGASI QILDI", x=.25, y=.7), T([109, "ta'limga"], "4. TA'LIM", x=.75, y=.7)])
-beat([110, "Lekin"], "portrait", fig="portrait_lky", ev=[T([110, "erkinlikning"], "NARXI: CHEKLANGAN ERKINLIK", True),
+beat([110, "Lekin"], "portrait", fig="portrait_lky", vfocus=.3, ev=[T([110, "erkinlikning"], "NARXI: CHEKLANGAN ERKINLIK", True),
      L([111, "1990-yilgacha"], "1959–1990 · BOSH VAZIR"), T([111, "vafot"], "2015 · 91 YOSHDA VAFOT ETDI")])
 beat([112, "Singapur"], "title", title="SINGAPUR HAQIDA MEN HAM BILMAS EDIM", title2="ENDI ESA HAMMAMIZ BILAMIZ")
 beat([114, "Ana"], "object", ev=[M([114, "Ana"], 0), T([114, "rivojlanish"], "TEZ RIVOJLANISH UCHUN...", x=.36, y=.38),

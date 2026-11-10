@@ -351,6 +351,7 @@
    ],
    "type": "portrait",
    "fig": "portrait_lky",
+   "vfocus": 0.3,
    "ev": [
     {
      "at": [
@@ -805,6 +806,7 @@
    ],
    "type": "portrait",
    "fig": "portrait_lky",
+   "vfocus": 0.3,
    "ev": [
     {
      "at": [
@@ -1631,18 +1633,10 @@
     {
      "at": [
       63,
-      "1960-yilda"
-     ],
-     "k": "label",
-     "text": "1960"
-    },
-    {
-     "at": [
-      63,
       "kengashi"
      ],
      "k": "tag",
-     "text": "UY-JOY KENGASHI"
+     "text": "1960 · UY-JOY KENGASHI"
     },
     {
      "at": [
@@ -2342,6 +2336,7 @@
    ],
    "type": "portrait",
    "fig": "portrait_lky",
+   "vfocus": 0.3,
    "ev": [
     {
      "at": [
@@ -2753,6 +2748,7 @@
    ],
    "type": "portrait",
    "fig": "portrait_lky",
+   "vfocus": 0.3,
    "ev": [
     {
      "at": [
