@@ -697,7 +697,10 @@ def main():
                     first = k == 0 or sw[k - 1][1] != si
                     if any(ch.isdigit() for ch in clean) or (clean[:1].isupper() and not first and len(clean) > 3):
                         cands.append((s0, clean))
-            cands = [c_ for c_ in cands if new_alphabet(c_[1]).upper() not in shown]
+            def _core(w_):                       # "1960-yilda" -> "1960", "Kuan" -> "KUAN"
+                w_ = new_alphabet(w_).upper()
+                return w_.split("-")[0] if any(ch.isdigit() for ch in w_) else w_
+            cands = [c_ for c_ in cands if not any(_core(c_[1]) in t_ for t_ in shown)]   # already on screen in some form
             if not cands:
                 continue
             s0, word = cands[len(cands) // 2]

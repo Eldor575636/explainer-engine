@@ -351,7 +351,7 @@
    ],
    "type": "portrait",
    "fig": "portrait_lky",
-   "vfocus": 0.3,
+   "vfocus": 0.2,
    "ev": [
     {
      "at": [
@@ -806,7 +806,7 @@
    ],
    "type": "portrait",
    "fig": "portrait_lky",
-   "vfocus": 0.3,
+   "vfocus": 0.2,
    "ev": [
     {
      "at": [
@@ -2336,7 +2336,7 @@
    ],
    "type": "portrait",
    "fig": "portrait_lky",
-   "vfocus": 0.3,
+   "vfocus": 0.2,
    "ev": [
     {
      "at": [
@@ -2748,7 +2748,7 @@
    ],
    "type": "portrait",
    "fig": "portrait_lky",
-   "vfocus": 0.3,
+   "vfocus": 0.2,
    "ev": [
     {
      "at": [
