@@ -275,7 +275,7 @@ def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None, pa
         out.append((text_sprite(handle, motion.MONT, 60, (212, 162, 58), 0), 1290, 0.6))
     if partners and logos:                        # "Hamkorlarimiz:" + logo card with websites
         out.append((text_sprite(new_alphabet(partners.partition(":")[0] + ":"), motion.MONT, 46, (212, 162, 58), 4, (14, 22, 38)), 1520, 0.72))
-        out.append((partner_card(logos, logo_h=120, font=28, frames=int(2.4 * FPS)), 1680, 0.8))
+        out.append((partner_card(logos, logo_h=120, font=28, frames=int(2.4 * FPS), skip=int(2.2 * FPS)), 1680, 0.8))
     elif partners:                                # "Hamkorlarimiz:" on one line, the projects below, shrunk to fit
         head, _, rest = partners.partition(":")
         lines = [(head + ":", (212, 162, 58)), (rest.strip(), (255, 255, 255))] if rest else [(partners, (255, 255, 255))]
@@ -288,7 +288,7 @@ def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None, pa
     return out
 
 
-def _anim_frames(path, h, n, loop):
+def _anim_frames(path, h, n, loop, skip=0):
     """RGBA frames of a logo animation at FPS, h px tall; plays once and holds the last frame unless loop."""
     dec = ["-c:v", "libvpx-vp9"] if str(path).endswith(".webm") else []
     raw = subprocess.run(["ffmpeg", "-v", "error", *dec, "-i", str(path), "-vf", f"fps={FPS},scale=-2:{h * 2}", "-f", "rawvideo",
@@ -298,6 +298,8 @@ def _anim_frames(path, h, n, loop):
                             str(path)], capture_output=True, text=True).stdout.split(",")
     w = int(round(int(probe[0]) * h2 / int(probe[1]) / 2) * 2)
     a = np.frombuffer(raw, np.uint8).reshape(-1, h2, w, 4)
+    if skip and not loop:
+        a = a[min(len(a) - 1, skip):]                          # start part-way into a one-off intro animation
     vis = (a[..., 3] > 20).any(0); ys, xs = np.where(vis)
     if len(ys) and (ys.max() - ys.min() < h2 * 0.92):             # transparent padding around the logo: crop and scale up
         a = a[:, ys.min():ys.max() + 1, xs.min():xs.max() + 1]
@@ -307,7 +309,7 @@ def _anim_frames(path, h, n, loop):
     return [Image.fromarray(a[(i % len(a)) if loop else min(i, len(a) - 1)].copy(), "RGBA").resize((w // 2, h), Image.LANCZOS) for i in range(n)]
 
 
-def partner_card(logos, logo_h=110, font=26, gap=50, pad=22, frames=1):
+def partner_card(logos, logo_h=110, font=26, gap=50, pad=22, frames=1, skip=0):
     """White card with each partner logo and its website underneath (cfg partner_logos: [{img, site, anim?, loop?}]).
     With frames > 1 and an `anim` file, returns a list of sprites (one per frame) so the logos move."""
     from PIL import ImageDraw, ImageFont
@@ -315,7 +317,7 @@ def partner_card(logos, logo_h=110, font=26, gap=50, pad=22, frames=1):
     seqs = []
     for lg in logos:
         if frames > 1 and lg.get("anim"):
-            seqs.append(_anim_frames(HERE / lg["anim"], logo_h, frames, lg.get("loop", False)))
+            seqs.append(_anim_frames(HERE / lg["anim"], logo_h, frames, lg.get("loop", False), skip))
         else:
             im = Image.open(HERE / lg["img"]).convert("RGBA"); im = im.crop(im.getbbox() or (0, 0, im.width, im.height))
             seqs.append([im.resize((int(im.width * logo_h / im.height), logo_h), Image.LANCZOS)] * max(1, frames))
