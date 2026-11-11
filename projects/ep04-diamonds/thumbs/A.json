@@ -1,0 +1,1 @@
+{"bg": "../layers/bg_diamond.jpg", "badge": "4-QISM", "headline": ["OLMOS", "ABADIYMI?"], "accent": 1, "red": ["ABADIYMI?"], "hero": {"img": "../layers/mascot_v2.jpg", "part": 2, "nparts": 4, "h": 0.98, "x": 0.83}, "props": [{"img": "../layers/prop_ring.jpg", "h": 0.3, "x": 0.6, "y": 0.84, "rot": -8, "circle": true}], "theme": "light"}

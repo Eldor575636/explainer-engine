@@ -1,0 +1,1 @@
+{"bg": "../layers/bg_ring_sell.jpg", "badge": "4-QISM", "headline": ["SOTSANGIZ", "YARMI HAM YO'Q"], "accent": 1, "red": ["YARMI"], "hero": {"img": "../layers/mascot_v3a_1.jpg", "h": 0.98, "x": 0.83}, "props": [{"img": "../layers/prop_ring.jpg", "h": 0.28, "x": 0.6, "y": 0.85, "rot": 10, "circle": true}], "theme": "light"}
