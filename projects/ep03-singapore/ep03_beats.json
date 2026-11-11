@@ -3182,10 +3182,13 @@
  "partner_logos": [
   {
    "img": "assets/partners/californiauzbek.png",
+   "anim": "assets/partners/californiauzbek_anim.webm",
    "site": "californiauzbek.com"
   },
   {
    "img": "assets/partners/bysmillah.png",
+   "anim": "assets/partners/bysmillah_anim.mp4",
+   "loop": true,
    "site": "bysmillah.com",
    "round": true
   }

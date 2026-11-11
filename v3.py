@@ -275,7 +275,7 @@ def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None, pa
         out.append((text_sprite(handle, motion.MONT, 60, (212, 162, 58), 0), 1290, 0.6))
     if partners and logos:                        # "Hamkorlarimiz:" + logo card with websites
         out.append((text_sprite(new_alphabet(partners.partition(":")[0] + ":"), motion.MONT, 46, (212, 162, 58), 4, (14, 22, 38)), 1520, 0.72))
-        out.append((partner_card(logos, logo_h=120, font=28), 1680, 0.8))
+        out.append((partner_card(logos, logo_h=120, font=28, frames=int(2.4 * FPS)), 1680, 0.8))
     elif partners:                                # "Hamkorlarimiz:" on one line, the projects below, shrunk to fit
         head, _, rest = partners.partition(":")
         lines = [(head + ":", (212, 162, 58)), (rest.strip(), (255, 255, 255))] if rest else [(partners, (255, 255, 255))]
@@ -288,13 +288,48 @@ def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None, pa
     return out
 
 
-def partner_card(logos, logo_h=110, font=26, gap=50, pad=22):
-    """White card with each partner logo and its website underneath (cfg partner_logos: [{img, site}])."""
+def _anim_frames(path, h, n, loop):
+    """RGBA frames of a logo animation at FPS, h px tall; plays once and holds the last frame unless loop."""
+    dec = ["-c:v", "libvpx-vp9"] if str(path).endswith(".webm") else []
+    raw = subprocess.run(["ffmpeg", "-v", "error", *dec, "-i", str(path), "-vf", f"fps={FPS},scale=-2:{h * 2}", "-f", "rawvideo",
+                          "-pix_fmt", "rgba", "-"], capture_output=True, check=True).stdout
+    h2 = h * 2
+    probe = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=width,height", "-of", "csv=p=0",
+                            str(path)], capture_output=True, text=True).stdout.split(",")
+    w = int(round(int(probe[0]) * h2 / int(probe[1]) / 2) * 2)
+    a = np.frombuffer(raw, np.uint8).reshape(-1, h2, w, 4)
+    vis = (a[..., 3] > 20).any(0); ys, xs = np.where(vis)
+    if len(ys) and (ys.max() - ys.min() < h2 * 0.92):             # transparent padding around the logo: crop and scale up
+        a = a[:, ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+        k = h / a.shape[1]
+        return [Image.fromarray(a[(i % len(a)) if loop else min(i, len(a) - 1)].copy(), "RGBA").resize(
+                (int(a.shape[2] * k), h), Image.LANCZOS) for i in range(n)]
+    return [Image.fromarray(a[(i % len(a)) if loop else min(i, len(a) - 1)].copy(), "RGBA").resize((w // 2, h), Image.LANCZOS) for i in range(n)]
+
+
+def partner_card(logos, logo_h=110, font=26, gap=50, pad=22, frames=1):
+    """White card with each partner logo and its website underneath (cfg partner_logos: [{img, site, anim?, loop?}]).
+    With frames > 1 and an `anim` file, returns a list of sprites (one per frame) so the logos move."""
     from PIL import ImageDraw, ImageFont
-    f = ImageFont.truetype(motion.MONT, font); cells = []
+    f = ImageFont.truetype(motion.MONT, font)
+    seqs = []
     for lg in logos:
-        im = Image.open(HERE / lg["img"]).convert("RGBA"); im = im.crop(im.getbbox() or (0, 0, im.width, im.height))
-        im = im.resize((int(im.width * logo_h / im.height), logo_h), Image.LANCZOS)
+        if frames > 1 and lg.get("anim"):
+            seqs.append(_anim_frames(HERE / lg["anim"], logo_h, frames, lg.get("loop", False)))
+        else:
+            im = Image.open(HERE / lg["img"]).convert("RGBA"); im = im.crop(im.getbbox() or (0, 0, im.width, im.height))
+            seqs.append([im.resize((int(im.width * logo_h / im.height), logo_h), Image.LANCZOS)] * max(1, frames))
+    out = []
+    for fi in range(max(1, frames)):
+        out.append(_partner_card_frame(logos, [sq[fi] for sq in seqs], logo_h, f, font, gap, pad))
+    return out if frames > 1 else out[0]
+
+
+def _partner_card_frame(logos, ims, logo_h, f, font, gap, pad):
+    from PIL import ImageDraw
+    cells = []
+    for lg, im in zip(logos, ims):
+        im = im.copy()
         if lg.get("round"):
             mk = Image.new("L", im.size, 0); ImageDraw.Draw(mk).rounded_rectangle((0, 0, im.width - 1, im.height - 1), int(logo_h * 0.18), fill=255)
             im.putalpha(Image.fromarray(np.minimum(np.asarray(im)[..., 3], np.asarray(mk))))
@@ -1013,7 +1048,7 @@ def main():
         bug = LogoBug(54) if cfg.get("logo_bug", True) else None
         soc_row = socials_sprite(cfg["socials"], icon=40, font=32, gapx=40) if cfg.get("socials") else None
         partners = seeded(motion.tag_sprite, new_alphabet(cfg["partners"]), 34, NAVY) if cfg.get("partners") else None
-        pcard = partner_card(cfg["partner_logos"]) if cfg.get("partner_logos") else None
+        pcard = partner_card(cfg["partner_logos"], frames=12 * FPS) if cfg.get("partner_logos") else None
         for fi in range(nframes):
             t = fi / FPS
             while bi + 1 < len(beats) and beats[bi + 1]["t0"] <= t:
@@ -1053,7 +1088,8 @@ def main():
                     partners.draw(frame, W / 2, 104, back_out(min(1, lt / 0.4)), 0, min(1, lt / 0.15))
                 lt2 = lt - 4.6                         # logo card after the subscribe button has played
                 if pcard is not None and lt2 > 0:
-                    pcard.draw(frame, W / 2, H * 0.25, back_out(min(1, lt2 / 0.4)) * min(1, 600 / pcard.w), 0, min(1, lt2 / 0.15))
+                    pc = pcard[min(len(pcard) - 1, int(lt2 * FPS))]
+                    pc.draw(frame, W / 2, H * 0.25, back_out(min(1, lt2 / 0.4)) * min(1, 600 / pc.w), 0, min(1, lt2 / 0.15))
             ff.stdin.write((np.clip(frame, 0, 1) * 255).astype(np.uint8).tobytes())
             if fi % 500 == 0:
                 print(f"  {fi}/{nframes}", flush=True)
@@ -1157,6 +1193,8 @@ def main():
                 frame = last * (1 - p) + base * 0.32 * p
                 for sp, y, dl in card:
                     if lt >= dl:
+                        if isinstance(sp, list):            # animated (partner logos)
+                            sp = sp[min(len(sp) - 1, int((lt - dl) * FPS))]
                         sp.draw(frame, VW / 2, y, back_out((lt - dl) / 0.35), 0, min(1, (lt - dl) / 0.1))
                 ff.stdin.write((np.clip(frame, 0, 1) * 255).astype(np.uint8).tobytes())
         ff.stdin.close(); ff.wait()
