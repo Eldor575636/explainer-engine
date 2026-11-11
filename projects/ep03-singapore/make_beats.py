@@ -167,7 +167,7 @@ beat([114, "Ana"], "object", ev=[M([114, "Ana"], 4), T([114, "rivojlanish"], "TE
      {"at": [114, "sizningcha"], "k": "like", "x": .82, "y": .2}])
 beat([116, "Keyingi"], "scene", bg="bg_diamond", mood="curious", ev=[L([116, "Keyingi"], "KEYINGI QISM"), T([117, "olmoslar"], "OLMOSLAR", True),
      T([117, "reklama"], "ENG MUVAFFAQIYATLI REKLAMA")])
-beat([118, "O'tkazib"], "end", pose=1, ev=[{"at": [118, "obuna"], "k": "subscribe", "x": .42, "y": .36, "dur": 3.4}])
+beat([118, "O'tkazib"], "end", pose=1, ev=[{"at": [118, "obuna"], "k": "subscribe", "x": .47, "y": .35, "dur": 3.4}])
 
 cfg = {"layers": "layers", "music": {"curious": "../../assets/music/curious.mp3", "dramatic": "../../assets/music/dramatic.mp3", "calm": "../../assets/music/calm.mp3"},
        "mascot": {"img": "mascot_v2", "parts": 4, "full_body": True,      # poses 0-3: thinking, pointing, surprised, presenting
@@ -182,7 +182,7 @@ cfg = {"layers": "layers", "music": {"curious": "../../assets/music/curious.mp3"
                   {"name": "housing", "from": [62, "Uchinchi"], "to": [70, "Li"], "hook": "10 KISHIDAN 8 TASI DAVLAT UYIDA"},
                   {"name": "price", "from": [85, "Lekin"], "to": [94, "Li"], "hook": "SINGAPUR MUVAFFAQIYATINING NARXI"},
                   {"name": "lesson", "from": [101, "Xo'sh"], "to": [106, "Demak"], "hook": "SINGAPUR VA O'ZBEKISTON"}],
-       "end_hold": 9, "end_slots": 2, "series_label": "3-QISM: SINGAPUR", "partners": "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari.",
+       "end_hold": 9, "end_slots": 2, "end_next": "OLMOSLAR", "series_label": "3-QISM: SINGAPUR", "partners": "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari.",
        "partner_logos": [{"img": "assets/partners/californiauzbek.png", "anim": "assets/partners/californiauzbek_anim.webm", "site": "californiauzbek.com"},
                          {"img": "assets/partners/bysmillah.png", "anim": "assets/partners/bysmillah_anim.mp4", "loop": True, "site": "bysmillah.com", "round": True}], "handle": "@bilmasboy",
        "socials": [["youtube", "@bilmasboy"], ["instagram", "@bilmas.boy"], ["tiktok", "@bilmas.boy"], ["facebook", "@bilmas.boy"], ["telegram", "@bilmas_boy"]]}
