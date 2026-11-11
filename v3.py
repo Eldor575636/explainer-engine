@@ -1067,7 +1067,7 @@ def main():
             nx_head = seeded(motion.tag_sprite, new_alphabet("KEYINGI QISMDA:"), 40, NAVY)
             nx_main = seeded(motion.label_sprite, new_alphabet(NEXT_EP), 96)
 
-    def end_overlay(frame, lt, dur):
+    def end_overlay(frame, lt, dur, t0=0.0):
         """Screen layer of the end beat. 2-slot grid: socials header, subscribe ring + next-episode teaser in the
         middle column, partner footer once the voice has ended (dur - HOLD)."""
         if soc_row is not None:
@@ -1084,7 +1084,8 @@ def main():
         if NEXT_EP and lt > 0.6:                                 # middle bottom: next-episode teaser
             q = back_out(min(1, (lt - 0.6) / 0.4)); x, y = END2["next"][0] * W, END2["next"][1] * H
             nx_head.draw(frame, x, y - 70, q); nx_main.draw(frame, x, y + 30, q, -2)
-        lv = lt - (dur - HOLD)                                   # after the last word
+        cap_end = max((cp[1] for cp in caps), default=0) - t0     # last caption off screen (it lingers past the voice)
+        lv = lt - max(dur - HOLD, cap_end + 0.15)                # footer only after the last word and caption
         if lv > 0:                                               # middle top: place for YouTube's subscribe circle
             q = back_out(min(1, lv / 0.4)); x, y = END2["sub"][0] * W, END2["sub"][1] * H
             cv2.circle(frame, (int(x), int(y - 30)), int(92 * q), fx.c01(RED), 8, cv2.LINE_AA)
@@ -1110,7 +1111,7 @@ def main():
                     if st <= tt < en:
                         cap_sprites(sprs)[max(j for j in range(len(wst)) if wst[j] <= tt or j == 0)].draw(fr, W / 2, H - 78)
                 if not V and beats[bi_]["type"] == "end":
-                    end_overlay(fr, tt - beats[bi_]["t0"], beats[bi_]["t1"] - beats[bi_]["t0"])
+                    end_overlay(fr, tt - beats[bi_]["t0"], beats[bi_]["t1"] - beats[bi_]["t0"], beats[bi_]["t0"])
                 Image.fromarray((np.clip(fr, 0, 1) * 255).astype(np.uint8)).save(work / f"prev_{'v' if V else 'h'}_{tt:06.1f}.jpg", quality=85)
         print("preview saved"); return
 
@@ -1157,7 +1158,7 @@ def main():
             if bug is not None and beats[bi]["type"] not in ("intro", "end"):
                 bug.draw(frame, t, 34, 26, top_left_busy(beats[bi], t - beats[bi]["t0"], False))
             if beats[bi]["type"] == "end":
-                end_overlay(frame, t - beats[bi]["t0"], beats[bi]["t1"] - beats[bi]["t0"])
+                end_overlay(frame, t - beats[bi]["t0"], beats[bi]["t1"] - beats[bi]["t0"], beats[bi]["t0"])
             ff.stdin.write((np.clip(frame, 0, 1) * 255).astype(np.uint8).tobytes())
             if fi % 500 == 0:
                 print(f"  {fi}/{nframes}", flush=True)
