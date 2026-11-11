@@ -191,6 +191,20 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   footer strip that appears only after the last caption is off screen. Tweak via cfg `end_layout`. End screen lasts
   ~15 s: cfg `end_hold`. Subscribe event on the end beat: x .47 y .35. Partner logos (assets/partners/, from the owner's Media Projects brand folders): cfg `partner_logos` → logo card with websites on the end screen (after the subscribe animation) and on every Short end card.
 
+## E04 lessons (2026-11-11)
+
+- The AI voice reads ~6-8 s per sentence and the pause trim barely shortens it (673.5 s -> 673.2 s), so plan ~1 beat
+  per sentence; after the first PREVIEW run check `beat_times.json` (now written in preview mode too) for beats >10 s
+  and split them (a crop variant of the same picture, a prop object beat or a map counts as a new picture).
+- Long chapter/title cards: start the next beat on a later word of the same sentence (e.g. `[68, "olmos"]`).
+- Pause + sound around the subscribe ask (owner's request): insert ~0.9 s of silence in raw.wav at that boundary
+  (shift words.json), set cfg `pauses` {sentence_idx: seconds}, and beat `sfx` [[offset, "ding"]].
+- `bigtext` shrinks itself to fit the frame (16:9 and 9:16); auto-director skips beats with bars/pie.
+- Picture prompts for an episode live in `projects/<ep>/picture_prompts.json` (Higgsfield nano_banana_pro, 16:9,
+  2 credits each). Check contact sheets for stray words (E04: "SCHOOL" on a building -> regenerated).
+- Owner chose: no spoken sign-off (keep it off), English pronunciation for foreign place names when the Uzbek
+  spelling sounds off (Sierra Leone), "De Birs" for the voice.
+
 ## Thumbnails and titles (2026-11-08)
 
 - Owner's rule: every episode gets **3 titles + 3 thumbnails** (A/B/C, different angles), all run together in YouTube Test & Compare.
