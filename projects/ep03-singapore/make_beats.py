@@ -97,14 +97,14 @@ beat([53, "Ish"], "scene", bg="bg_factories", crop="left",
 beat([54, "Ikkinchi"], "scene", bg="bg_anticorruption", mood="dramatic", ev=[L([54, "Ikkinchi"], "2. KORRUPSIYAGA QARSHI"), T([55, "yemiradi"], "KORRUPSIYA ICHIDAN YEMIRADI", True)])
 beat([56, "Korrupsiyani"], "scene", bg="bg_anticorruption", crop="right", ev=[T([56, "byuro"], "KORRUPSIYA BYUROSI"), T([57, "daromadidan"], "DAROMADDAN ORTIQ BOYLIK = DALIL", True)])
 beat([58, "Hatto"], "scene", bg="bg_minister", mood="dramatic", ev=[ST([58, "vazirlar"], "VAZIRLAR HAM")])
-beat([59, "Shu"], "object", props=[P([59, "maosh"], "prop_gold", .3, .5, .42)], ev=[T([59, "maosh"], "YUQORI MAOSH", x=.3, y=.82),
+beat([59, "Shu"], "object", props=[P([59, "Shu"], "prop_gold", .3, .5, .42)], ev=[T([59, "maosh"], "YUQORI MAOSH", x=.3, y=.82),
      T([60, "halol"], "HALOLGA: YAXSHI HAQ", x=.7, y=.4), T([60, "jazola"], "PORAXO'RGA: QATTIQ JAZO", True, x=.7, y=.58)])
 beat([61, "Bugungacha"], "scene", bg="bg_singapore", crop="right", ev=[F([61, "Singapur"], "sg"), T([61, "kam"], "ENG KAM KORRUPSIYALI DAVLATLAR QATORIDA")])
 beat([62, "Uchinchi"], "scene", bg="bg_hdb", mood="calm", ev=[L([62, "Uchinchi"], "3. UY-JOY"), T([63, "kengashi"], "1960 · UY-JOY KENGASHI"),
      T([64, "ko'p"], "MINGLAB KO'P QAVATLI UYLAR")])
-beat([65, "Eng"], "object", props=[P([65, "sotib"], "prop_key", .3, .5, .5, slam=True)], ev=[T([65, "ijaraga"], "IJARA EMAS", x=.7, y=.4),
+beat([65, "Eng"], "object", props=[P([65, "Eng"], "prop_key", .3, .5, .5, slam=True)], ev=[T([65, "ijaraga"], "IJARA EMAS", x=.7, y=.4),
      T([65, "sotib"], "SOTIB OLISH", True, x=.7, y=.58)])
-beat([66, "Buning"], "object", props=[P([66, "maoshidan"], "prop_gold", .25, .5, .38)], ev=[T([66, "majburiy"], "MAJBURIY JAMG'ARMA", x=.25, y=.82),
+beat([66, "Buning"], "object", props=[P([66, "Buning"], "prop_gold", .25, .5, .38)], ev=[T([66, "majburiy"], "MAJBURIY JAMG'ARMA", x=.25, y=.82),
      AR([67, "hisobidan"], (.4, .5), (.62, .5), True), PR([67, "uyini"], "prop_key", .78, .5, .38)])
 beat([68, "Bugun"], "scene", bg="bg_hdb", crop="right",
      ev=[{"at": [68, "sakkiztasi"], "k": "pie", "x": .3, "y": .55, "r": .22, "slices": [{"label": "DAVLAT UYLARIDA", "value": 80}, {"label": "BOSHQA", "value": 20}]},
