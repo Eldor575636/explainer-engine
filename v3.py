@@ -345,7 +345,7 @@ class LogoBug:
             self.cache[key] = motion.Sprite(img)
         return self.cache[key]
 
-    def draw(self, frame, t, x0, y0):
+    def draw(self, frame, t, x0, y0, hold=False):
         ph = t % self.period
         if 13.4 <= ph <= 16.6:
             o = 1.0
@@ -354,6 +354,8 @@ class LogoBug:
         elif 16.6 < ph < 17.2:
             o = 1 - ease_out((ph - 16.6) / 0.6)
         else:
+            o = 0.0
+        if hold:
             o = 0.0
         sp = self.sprite(self.D + (self.full - self.D) * o)
         wig = 8 * math.sin(ph * 10) * max(0, 1 - abs(ph - 6) / 0.45) if o == 0 else 0   # a little shake mid-cycle
@@ -527,8 +529,14 @@ def main():
         key = (i, side)
         if key not in pose_sprites:
             m = cfg.get("mascot", {"img": "mascot_sheet", "parts": 3, "full_body": False})
+            sheets = [dict(img=m["img"], parts=m["parts"])] + m.get("more", [])   # extra sheets: pose 4, 5... continue
+            j = i
+            for shp in sheets:
+                if j < shp["parts"]:
+                    break
+                j -= shp["parts"]
             h = (1.32 if side == "center" else 1.15) if m.get("full_body") else (0.78 if side == "center" else 0.68)
-            pose_sprites[key] = sticker(layers / f"{m['img']}.jpg", cache, H * h, part=i, nparts=m["parts"])
+            pose_sprites[key] = sticker(layers / f"{shp['img']}.jpg", cache, H * h, part=j, nparts=shp["parts"])
             pose_sprites[key].full = m.get("full_body", False)
         return pose_sprites[key]
 
@@ -611,9 +619,11 @@ def main():
                     e["x"], e["y"] = e["x"] * W, e["y"] * H
                 else:
                     e["x"], e["y"] = W * 0.74, 230 + 92 * tag_slot; tag_slot += 1
+                hw = e["_s"].w * 0.55                                  # keep long tags inside the frame
+                e["x"] = min(max(e["x"], hw + 30), W - hw - 30)
                 e["rot"] = random.uniform(-2, 2); sfx.append((b["t0"] + e["t"], "pop"))
             elif k == "stamp":
-                e["_s"] = seeded(motion.stamp_sprite, new_alphabet(e["text"]), 130); e["x"], e["y"] = W * 0.5, H * 0.46
+                e["_s"] = seeded(motion.stamp_sprite, new_alphabet(e["text"]), 130); e["x"], e["y"] = W * e.get("x", 0.5), H * e.get("y", 0.46)
                 sfx.append((b["t0"] + e["t"] + 0.14, "thud")); shakes.append(b["t0"] + e["t"] + 0.14)
             elif k == "circle":
                 e["_pts"] = ellipse_pts(e["x"] * W, e["y"] * H, e["rx"] * W, e["ry"] * H); sfx.append((b["t0"] + e["t"], "draw"))
@@ -844,6 +854,29 @@ def main():
         x0 = int(min(W - cw, max(0, fxp * W - cw / 2)))
         return cv2.resize(c[:, x0:x0 + cw], (VW, VH), interpolation=cv2.INTER_LINEAR)
 
+    def card(c, box, a):
+        """Soft cream card so charts and numbers stay readable on busy pictures."""
+        x0, y0, x1, y1 = [int(v) for v in box]
+        x0, y0 = max(0, x0), max(0, y0); x1, y1 = min(c.shape[1] - 1, x1), min(c.shape[0] - 1, y1)
+        ov = c.copy(); cv2.rectangle(ov, (x0, y0), (x1, y1), tuple(v / 255 for v in CREAM), -1)
+        cv2.rectangle(ov, (x0, y0), (x1, y1), tuple(v / 255 for v in NAVY), 4, cv2.LINE_AA)
+        return c * (1 - 0.93 * a) + ov * 0.93 * a
+
+    def top_left_busy(b, t, V):
+        """True when a label/tag/flag/counter sits where the corner logo would open up."""
+        for e in b["_ev"]:
+            if e["k"] not in ("label", "tag", "flag", "counter", "bigtext") or t < e["t"] or "_s" not in e and "_frames" not in e:
+                continue
+            sp_ = e["_s"] if "_s" in e else e["_frames"][-1]
+            ex, ey = (e.get("vx"), e.get("vy")) if V else (e.get("x"), e.get("y"))
+            if ex is None or ey is None:
+                continue
+            Wd, Hd = (VW, VH) if V else (W, H)
+            if ex <= 1.5: ex, ey = ex * Wd, ey * Hd
+            if ex - sp_.w / 2 < 460 and ey - sp_.h / 2 < 190:
+                return True
+        return False
+
     WORLD = {"circle", "arrow", "pin", "rings", "prop"}
     SCREEN = {"label", "tag", "stamp", "mascot", "counter", "bigtext", "bars", "pie", "subscribe", "like", "news", "flag"}
 
@@ -861,6 +894,13 @@ def main():
             elif k == "stamp":
                 e["_s"].draw(c, ex, ey, 2.3 - 1.3 * ease_out(lt / 0.16), -7, min(1, lt / 0.06))
             elif k in ("bars", "pie", "subscribe", "like", "news"):
+                if k in ("bars", "pie") and not V and b["type"] in ("scene", "map", "portrait"):
+                    o = e["_o"]
+                    if k == "bars":
+                        box = (o.x - o.w / 2 - 50, o.y - o.h / 2 - 40, o.x + o.w / 2 + 50, o.y + o.h / 2 + 90)
+                    else:
+                        box = (o.x - o.r - 50, o.y - o.r - 50, o.x + o.r + 620, o.y + o.r + 50)
+                    c = card(c, box, min(1, lt / 0.2))
                 (e["_ov"] if V else e["_o"]).draw(c, lt)
             elif k == "circle":
                 draw_partial(c, e["_pts"], ease_out(lt / 0.7), RED, 9)
@@ -891,6 +931,9 @@ def main():
                 e["_s"].draw(c, e["x"] * W, e["y"] * H + 6 * math.sin(lt * 2), sc, 0, min(1, lt / 0.1))
             elif k == "counter":
                 fr = e["_frames"]; v = int(round((len(fr) - 1) * ease_out(lt / 0.9)))
+                if not V and b["type"] in ("scene", "map", "portrait"):
+                    sp_ = fr[-1]; cx_, cy_ = e["x"] * Wd, e["y"] * Hd
+                    c = card(c, (cx_ - sp_.w / 2 - 30, cy_ - sp_.h / 2 - 22, cx_ + sp_.w / 2 + 30, cy_ + sp_.h / 2 + 22), min(1, lt / 0.2))
                 fr[v].draw(c, (0.5 if V else e["x"]) * Wd, (0.38 if V else e["y"]) * Hd, back_out(lt / 0.3), 0, min(1, lt / 0.08))
             elif k == "flag":
                 if any(o is not e and o["k"] == "flag" and e["t"] < o["t"] <= t for o in b["_ev"]):
@@ -972,7 +1015,7 @@ def main():
                     M = np.float32([[1, 0, rng.uniform(-amp, amp)], [0, 1, rng.uniform(-amp, amp)]])
                     frame = cv2.warpAffine(frame, M, (W, H), borderMode=cv2.BORDER_REFLECT)
             if bug is not None and beats[bi]["type"] not in ("intro", "end"):
-                bug.draw(frame, t, 34, 26)
+                bug.draw(frame, t, 34, 26, top_left_busy(beats[bi], t - beats[bi]["t0"], False))
             if soc_row is not None and beats[bi]["type"] == "end":
                 lt = t - beats[bi]["t0"]
                 soc_row.draw(frame, W / 2, 40, back_out(lt / 0.4), 0, min(1, lt / 0.15))
@@ -1060,9 +1103,9 @@ def main():
                 w = 1 - (beats[bi]["t1"] - t) / DISSOLVE
                 frame = frame * (1 - w) + render(bi + 1, 0.0, True) * w
             if hook is not None and t - ta < 3.0:
-                hook.draw(frame, VW / 2, 150, back_out((t - ta) / 0.35) * (1 - ease_out((t - ta - 2.7) / 0.3)), -1.5)
+                hook.draw(frame, VW / 2, 235, back_out((t - ta) / 0.35) * (1 - ease_out((t - ta - 2.7) / 0.3)), -1.5)
             if sbug is not None:
-                sbug.draw(frame, t, 30, 30)
+                sbug.draw(frame, t, 52, 74, top_left_busy(beats[bi], t - beats[bi]["t0"], True))
             if badge is not None and t - ta >= (3.0 if hook is not None else 0.3):
                 badge.draw(frame, VW / 2, 58, back_out((t - ta - (3.0 if hook is not None else 0.3)) / 0.3), 0, 0.95)
             while cj + 1 < len(vcaps) and vcaps[cj + 1][0] <= t:

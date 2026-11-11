@@ -8,7 +8,41 @@
  "mascot": {
   "img": "mascot_v2",
   "parts": 4,
-  "full_body": true
+  "full_body": true,
+  "more": [
+   {
+    "img": "mascot_v3a_0",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3a_1",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3a_2",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3a_3",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_0",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_1",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_2",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_3",
+    "parts": 1
+   }
+  ]
  },
  "ui": {
   "subscribe": "OBUNA BO'LING",
@@ -135,8 +169,7 @@
   "Fikringizni izohlarda yozib qoldiring.",
   "Keyingi qismda esa: nega bir parcha toshning narxi uyning narxidan ham qimmat bo'lishi mumkin degan savolga javob qidiramiz.",
   "Gap olmoslar va dunyodagi eng muvaffaqiyatli reklama haqida bo'ladi.",
-  "O'tkazib yubormaslik uchun obuna bo'ling, qo'ng'iroqchani bosing va ko'rsatuvni do'stlaringizga ulashing.",
-  "Sizlar bilan boylikni bilimdan topgan, savol berishdan tortinmaydigan Bilmasboy bo'ldi."
+  "O'tkazib yubormaslik uchun obuna bo'ling, qo'ng'iroqchani bosing va ko'rsatuvni do'stlaringizga ulashing."
  ],
  "beats": [
   {
@@ -191,17 +224,16 @@
     2,
     "Bu"
    ],
-   "type": "object",
+   "type": "scene",
+   "bg": "bg_independence_1965",
    "ev": [
     {
      "at": [
       2,
       "mustaqil"
      ],
-     "k": "bigtext",
-     "text": "MUSTAQILLIK",
-     "x": 0.5,
-     "y": 0.4
+     "k": "label",
+     "text": "MUSTAQILLIK KUNI"
     },
     {
      "at": [
@@ -211,7 +243,7 @@
      "k": "tag",
      "text": "ODATDA: BAYRAM",
      "x": 0.5,
-     "y": 0.6
+     "y": 0.72
     },
     {
      "at": [
@@ -350,7 +382,7 @@
     "Bu"
    ],
    "type": "portrait",
-   "fig": "portrait_lky",
+   "fig": "lky_cut",
    "vfocus": 0.2,
    "ev": [
     {
@@ -393,7 +425,7 @@
       "Xo'sh"
      ],
      "k": "mascot",
-     "pose": 0,
+     "pose": 4,
      "side": "right"
     },
     {
@@ -733,7 +765,7 @@
     "Urushdan"
    ],
    "type": "scene",
-   "bg": "bg_kampong",
+   "bg": "bg_ships",
    "mood": "calm",
    "ev": [
     {
@@ -752,6 +784,24 @@
      "k": "tag",
      "text": "LEKIN QASHSHOQLIK",
      "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    23,
+    "Odamlar"
+   ],
+   "type": "scene",
+   "bg": "bg_kampong",
+   "ev": [
+    {
+     "at": [
+      23,
+      "gavjum"
+     ],
+     "k": "tag",
+     "text": "GAVJUM KULBALAR"
     },
     {
      "at": [
@@ -767,7 +817,8 @@
       "kanalizatsiyasiz"
      ],
      "k": "tag",
-     "text": "KANALIZATSIYASIZ"
+     "text": "KANALIZATSIYASIZ",
+     "fg": "red"
     }
    ]
   },
@@ -804,9 +855,8 @@
     25,
     "1959-yilda"
    ],
-   "type": "portrait",
-   "fig": "portrait_lky",
-   "vfocus": 0.2,
+   "type": "scene",
+   "bg": "lky_rally_1959",
    "ev": [
     {
      "at": [
@@ -848,7 +898,7 @@
      ],
      "k": "counter",
      "to": 35,
-     "x": 0.72,
+     "x": 0.15,
      "y": 0.8,
      "suffix": " YOSH"
     }
@@ -859,17 +909,9 @@
     27,
     "Uning"
    ],
-   "type": "object",
+   "type": "scene",
+   "bg": "lky_desk",
    "ev": [
-    {
-     "at": [
-      27,
-      "Uning"
-     ],
-     "k": "mascot",
-     "pose": 1,
-     "side": "right"
-    },
     {
      "at": [
       27,
@@ -877,8 +919,7 @@
      ],
      "k": "tag",
      "text": "KICHIK OROL YOLG'IZ YASHAY OLMAYDI",
-     "x": 0.36,
-     "y": 0.45
+     "fg": "red"
     }
    ]
   },
@@ -947,7 +988,7 @@
     "Lekin"
    ],
    "type": "scene",
-   "bg": "bg_parliament_1965",
+   "bg": "bg_riots_1964",
    "mood": "dramatic",
    "ev": [
     {
@@ -966,7 +1007,17 @@
      "k": "tag",
      "text": "TO'QNASHUVLAR",
      "fg": "red"
-    },
+    }
+   ]
+  },
+  {
+   "at": [
+    31,
+    "Ikki"
+   ],
+   "type": "scene",
+   "bg": "bg_parliament_1965",
+   "ev": [
     {
      "at": [
       31,
@@ -998,7 +1049,7 @@
       "Ya'ni"
      ],
      "k": "mascot",
-     "pose": 2,
+     "pose": 5,
      "side": "right"
     },
     {
@@ -1094,8 +1145,8 @@
     "Bir"
    ],
    "type": "scene",
-   "bg": "bg_war",
-   "tint": 0.5,
+   "bg": "bg_riots_1964",
+   "crop": "right",
    "mood": "dramatic",
    "ev": [
     {
@@ -1179,7 +1230,7 @@
       "Ko'pchilik"
      ],
      "k": "mascot",
-     "pose": 2,
+     "pose": 8,
      "side": "right"
     },
     {
@@ -1208,7 +1259,7 @@
       "Bir"
      ],
      "k": "mascot",
-     "pose": 1,
+     "pose": 11,
      "side": "right"
     },
     {
@@ -1247,7 +1298,17 @@
      ],
      "k": "label",
      "text": "1. ESHIKNI OCHISH"
-    },
+    }
+   ]
+  },
+  {
+   "at": [
+    45,
+    "O'sha"
+   ],
+   "type": "scene",
+   "bg": "bg_nationalize",
+   "ev": [
     {
      "at": [
       45,
@@ -1279,7 +1340,7 @@
       "Singapur"
      ],
      "k": "mascot",
-     "pose": 3,
+     "pose": 7,
      "side": "right"
     },
     {
@@ -1290,8 +1351,18 @@
      "k": "bigtext",
      "text": "TESKARISI",
      "x": 0.36,
-     "y": 0.4
-    },
+     "y": 0.45
+    }
+   ]
+  },
+  {
+   "at": [
+    48,
+    "Ular"
+   ],
+   "type": "scene",
+   "bg": "bg_welcome_investors",
+   "ev": [
     {
      "at": [
       48,
@@ -1299,8 +1370,6 @@
      ],
      "k": "tag",
      "text": "\"KELINGLAR, ZAVODINGIZNI SHU YERDA QURING\"",
-     "x": 0.36,
-     "y": 0.62,
      "fg": "red"
     }
    ]
@@ -1523,7 +1592,18 @@
      "k": "tag",
      "text": "DAROMADDAN ORTIQ BOYLIK = DALIL",
      "fg": "red"
-    },
+    }
+   ]
+  },
+  {
+   "at": [
+    58,
+    "Hatto"
+   ],
+   "type": "scene",
+   "bg": "bg_minister",
+   "mood": "dramatic",
+   "ev": [
     {
      "at": [
       58,
@@ -1796,26 +1876,16 @@
     70,
     "Li"
    ],
-   "type": "object",
+   "type": "scene",
+   "bg": "lky_hdb",
    "ev": [
-    {
-     "at": [
-      70,
-      "Li"
-     ],
-     "k": "mascot",
-     "pose": 1,
-     "side": "right"
-    },
     {
      "at": [
       70,
       "uyi"
      ],
      "k": "tag",
-     "text": "UYI BOR ODAM...",
-     "x": 0.36,
-     "y": 0.42
+     "text": "UYI BOR ODAM..."
     },
     {
      "at": [
@@ -1824,8 +1894,6 @@
      ],
      "k": "tag",
      "text": "...DAVLATINI HIMOYA QILADI",
-     "x": 0.36,
-     "y": 0.58,
      "fg": "red"
     }
    ]
@@ -1898,8 +1966,7 @@
     "Li"
    ],
    "type": "scene",
-   "bg": "bg_classroom",
-   "crop": "left",
+   "bg": "bg_office_world",
    "ev": [
     {
      "at": [
@@ -1928,11 +1995,30 @@
     },
     {
      "at": [
+      74,
+      "savdo"
+     ],
+     "k": "tag",
+     "text": "DUNYO BILAN SAVDO"
+    }
+   ]
+  },
+  {
+   "at": [
+    75,
+    "Shu"
+   ],
+   "type": "scene",
+   "bg": "bg_mother_tongue",
+   "ev": [
+    {
+     "at": [
       75,
       "ona"
      ],
      "k": "tag",
-     "text": "+ ONA TILI"
+     "text": "+ ONA TILI",
+     "fg": "red"
     }
    ]
   },
@@ -2163,9 +2249,36 @@
     84,
     "Li"
    ],
-   "type": "title",
-   "title": "\"UCHINCHI DUNYODAN\"",
-   "title2": "\"BIRINCHI DUNYOGA\""
+   "type": "portrait",
+   "fig": "lky_cut",
+   "vfocus": 0.2,
+   "ev": [
+    {
+     "at": [
+      84,
+      "kitobida"
+     ],
+     "k": "label",
+     "text": "LI KUAN YU KITOBI"
+    },
+    {
+     "at": [
+      84,
+      "Uchinchi"
+     ],
+     "k": "tag",
+     "text": "\"UCHINCHI DUNYODAN\""
+    },
+    {
+     "at": [
+      84,
+      "birinchi"
+     ],
+     "k": "tag",
+     "text": "\"BIRINCHI DUNYOGA\"",
+     "fg": "red"
+    }
+   ]
   },
   {
    "at": [
@@ -2237,7 +2350,17 @@
      "k": "tag",
      "text": "KATTA JARIMALAR",
      "fg": "red"
-    },
+    }
+   ]
+  },
+  {
+   "at": [
+    89,
+    "Ba'zi"
+   ],
+   "type": "scene",
+   "bg": "bg_cell",
+   "ev": [
     {
      "at": [
       89,
@@ -2249,11 +2372,37 @@
     },
     {
      "at": [
+      89,
+      "yillar"
+     ],
+     "k": "tag",
+     "text": "YILLAR DAVOMIDA"
+    }
+   ]
+  },
+  {
+   "at": [
+    90,
+    "Gazeta"
+   ],
+   "type": "scene",
+   "bg": "bg_censor",
+   "ev": [
+    {
+     "at": [
       90,
       "Gazeta"
      ],
      "k": "tag",
-     "text": "OAV NAZORATDA"
+     "text": "GAZETA VA TV"
+    },
+    {
+     "at": [
+      90,
+      "nazoratida"
+     ],
+     "k": "stamp",
+     "text": "NAZORATDA"
     }
    ]
   },
@@ -2261,6 +2410,41 @@
    "at": [
     91,
     "Qonunlar"
+   ],
+   "type": "scene",
+   "bg": "bg_clean_street",
+   "ev": [
+    {
+     "at": [
+      91,
+      "qattiq"
+     ],
+     "k": "label",
+     "text": "QATTIQ QONUNLAR"
+    },
+    {
+     "at": [
+      91,
+      "axlat"
+     ],
+     "k": "tag",
+     "text": "AXLAT = KATTA JARIMA"
+    },
+    {
+     "at": [
+      91,
+      "kaltak"
+     ],
+     "k": "tag",
+     "text": "KALTAK JAZOSI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    92,
+    "1992-yildan"
    ],
    "type": "object",
    "props": [
@@ -2277,27 +2461,6 @@
     }
    ],
    "ev": [
-    {
-     "at": [
-      91,
-      "axlat"
-     ],
-     "k": "tag",
-     "text": "AXLAT = KATTA JARIMA",
-     "x": 0.7,
-     "y": 0.3
-    },
-    {
-     "at": [
-      91,
-      "kaltak"
-     ],
-     "k": "tag",
-     "text": "KALTAK JAZOSI",
-     "x": 0.7,
-     "y": 0.46,
-     "fg": "red"
-    },
     {
      "at": [
       92,
@@ -2324,7 +2487,7 @@
      "k": "tag",
      "text": "GIYOHVAND SAVDOSI: O'LIM JAZOSI",
      "x": 0.7,
-     "y": 0.64,
+     "y": 0.5,
      "fg": "red"
     }
    ]
@@ -2335,7 +2498,7 @@
     "Li"
    ],
    "type": "portrait",
-   "fig": "portrait_lky",
+   "fig": "lky_cut",
    "vfocus": 0.2,
    "ev": [
     {
@@ -2362,7 +2525,8 @@
     95,
     "Shu"
    ],
-   "type": "object",
+   "type": "scene",
+   "bg": "bg_debate_scale",
    "ev": [
     {
      "at": [
@@ -2379,18 +2543,8 @@
      ],
      "k": "tag",
      "text": "\"NATIJA HAMMASINI OQLAYDI\"",
-     "x": 0.5,
-     "y": 0.4
-    },
-    {
-     "at": [
-      97,
-      "Boshqa"
-     ],
-     "k": "bigtext",
-     "text": "VS",
-     "x": 0.5,
-     "y": 0.55
+     "x": 0.27,
+     "y": 0.75
     },
     {
      "at": [
@@ -2399,8 +2553,8 @@
      ],
      "k": "tag",
      "text": "\"ERKINLIKDAN VOZ KECHISH SHART EMAS\"",
-     "x": 0.5,
-     "y": 0.7,
+     "x": 0.73,
+     "y": 0.75,
      "fg": "red"
     }
    ]
@@ -2483,8 +2637,32 @@
     },
     {
      "at": [
+      99,
+      "kichik"
+     ],
+     "k": "tag",
+     "text": "JUDA KICHIK",
+     "x": 0.5,
+     "y": 0.85
+    }
+   ]
+  },
+  {
+   "at": [
+    100,
+    "Katta"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.7,
+    0.42
+   ],
+   "ev": [
+    {
+     "at": [
       100,
-      "kafolat"
+      "Katta"
      ],
      "k": "tag",
      "text": "KATTA DAVLATDA HAM ISHLAYDIMI?",
@@ -2540,7 +2718,7 @@
       "Lekin"
      ],
      "k": "mascot",
-     "pose": 3,
+     "pose": 10,
      "side": "right"
     },
     {
@@ -2549,8 +2727,19 @@
       "emas"
      ],
      "k": "stamp",
-     "text": "YER OSTIDA EMAS"
-    },
+     "text": "YER OSTIDA EMAS",
+     "x": 0.36
+    }
+   ]
+  },
+  {
+   "at": [
+    104,
+    "Ular"
+   ],
+   "type": "scene",
+   "bg": "bg_four_pillars",
+   "ev": [
     {
      "at": [
       104,
@@ -2558,8 +2747,8 @@
      ],
      "k": "tag",
      "text": "QONUN HAMMAGA BIR XIL",
-     "x": 0.36,
-     "y": 0.3
+     "x": 0.2,
+     "y": 0.85
     },
     {
      "at": [
@@ -2568,8 +2757,8 @@
      ],
      "k": "tag",
      "text": "KORRUPSIYAGA QARSHI",
-     "x": 0.36,
-     "y": 0.43
+     "x": 0.4,
+     "y": 0.78
     },
     {
      "at": [
@@ -2578,8 +2767,8 @@
      ],
      "k": "tag",
      "text": "TA'LIMGA SARMOYA",
-     "x": 0.36,
-     "y": 0.56
+     "x": 0.6,
+     "y": 0.85
     },
     {
      "at": [
@@ -2588,8 +2777,8 @@
      ],
      "k": "tag",
      "text": "INVESTORGA ISHONCH",
-     "x": 0.36,
-     "y": 0.69,
+     "x": 0.8,
+     "y": 0.78,
      "fg": "red"
     }
    ]
@@ -2641,17 +2830,9 @@
     106,
     "Demak"
    ],
-   "type": "object",
+   "type": "scene",
+   "bg": "bg_tashkent_far",
    "ev": [
-    {
-     "at": [
-      106,
-      "Demak"
-     ],
-     "k": "mascot",
-     "pose": 1,
-     "side": "right"
-    },
     {
      "at": [
       106,
@@ -2667,8 +2848,8 @@
      ],
      "k": "tag",
      "text": "O'Z SHAROITIGA MOSLASH",
-     "x": 0.36,
-     "y": 0.7,
+     "x": 0.5,
+     "y": 0.75,
      "fg": "red"
     }
    ]
@@ -2692,11 +2873,20 @@
     {
      "at": [
       108,
+      "Yer"
+     ],
+     "k": "mascot",
+     "pose": 7,
+     "side": "right"
+    },
+    {
+     "at": [
+      108,
       "qarorlar"
      ],
      "k": "bigtext",
      "text": "QARORLAR",
-     "x": 0.5,
+     "x": 0.36,
      "y": 0.3
     },
     {
@@ -2706,8 +2896,8 @@
      ],
      "k": "tag",
      "text": "1. ESHIKNI OCHDI",
-     "x": 0.25,
-     "y": 0.55
+     "x": 0.36,
+     "y": 0.48
     },
     {
      "at": [
@@ -2716,8 +2906,8 @@
      ],
      "k": "tag",
      "text": "2. KORRUPSIYAGA QARSHI",
-     "x": 0.75,
-     "y": 0.55
+     "x": 0.36,
+     "y": 0.6
     },
     {
      "at": [
@@ -2726,8 +2916,8 @@
      ],
      "k": "tag",
      "text": "3. UY EGASI QILDI",
-     "x": 0.25,
-     "y": 0.7
+     "x": 0.36,
+     "y": 0.72
     },
     {
      "at": [
@@ -2736,8 +2926,8 @@
      ],
      "k": "tag",
      "text": "4. TA'LIM",
-     "x": 0.75,
-     "y": 0.7
+     "x": 0.36,
+     "y": 0.84
     }
    ]
   },
@@ -2747,7 +2937,7 @@
     "Lekin"
    ],
    "type": "portrait",
-   "fig": "portrait_lky",
+   "fig": "lky_cut",
    "vfocus": 0.2,
    "ev": [
     {
@@ -2799,7 +2989,7 @@
       "Ana"
      ],
      "k": "mascot",
-     "pose": 0,
+     "pose": 4,
      "side": "right"
     },
     {
@@ -2849,19 +3039,9 @@
     116,
     "Keyingi"
    ],
-   "type": "object",
-   "props": [
-    {
-     "img": "prop_gold",
-     "x": 0.3,
-     "y": 0.5,
-     "h": 0.42,
-     "at": [
-      116,
-      "toshning"
-     ]
-    }
-   ],
+   "type": "scene",
+   "bg": "bg_diamond",
+   "mood": "curious",
    "ev": [
     {
      "at": [
@@ -2878,8 +3058,6 @@
      ],
      "k": "tag",
      "text": "OLMOSLAR",
-     "x": 0.7,
-     "y": 0.42,
      "fg": "red"
     },
     {
@@ -2888,9 +3066,7 @@
       "reklama"
      ],
      "k": "tag",
-     "text": "ENG MUVAFFAQIYATLI REKLAMA",
-     "x": 0.7,
-     "y": 0.6
+     "text": "ENG MUVAFFAQIYATLI REKLAMA"
     }
    ]
   },
@@ -2909,19 +3085,8 @@
      ],
      "k": "subscribe",
      "x": 0.5,
-     "y": 0.11,
+     "y": 0.23,
      "dur": 3.4
-    },
-    {
-     "at": [
-      119,
-      "Bilmasboy"
-     ],
-     "k": "tag",
-     "text": "BILMASBOY",
-     "x": 0.5,
-     "y": 0.9,
-     "fg": "red"
     }
    ]
   }
