@@ -3179,6 +3179,17 @@
  ],
  "series_label": "3-QISM: SINGAPUR",
  "partners": "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari.",
+ "partner_logos": [
+  {
+   "img": "assets/partners/californiauzbek.png",
+   "site": "californiauzbek.com"
+  },
+  {
+   "img": "assets/partners/bysmillah.png",
+   "site": "bysmillah.com",
+   "round": true
+  }
+ ],
  "handle": "@bilmasboy",
  "socials": [
   [

@@ -253,7 +253,7 @@ def flag_sprite(codes, h=120):
     return motion.Sprite(img)
 
 
-def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None, partners=None):
+def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None, partners=None, logos=None):
     """End card for a Short: avatar, logo, 'full video on the channel', episode, where this clip sits, handle.
     Returns a list of (RGBA sprite, y, delay) so the pieces can pop in one after another."""
     from PIL import ImageDraw
@@ -273,7 +273,10 @@ def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None, pa
         out.append((socials_sprite(socials, icon=54, font=42, cols=2, gapx=40, gapy=22), 1330, 0.6))
     else:
         out.append((text_sprite(handle, motion.MONT, 60, (212, 162, 58), 0), 1290, 0.6))
-    if partners:                                  # "Hamkorlarimiz:" on one line, the projects below, shrunk to fit
+    if partners and logos:                        # "Hamkorlarimiz:" + logo card with websites
+        out.append((text_sprite(new_alphabet(partners.partition(":")[0] + ":"), motion.MONT, 46, (212, 162, 58), 4, (14, 22, 38)), 1520, 0.72))
+        out.append((partner_card(logos, logo_h=120, font=28), 1680, 0.8))
+    elif partners:                                # "Hamkorlarimiz:" on one line, the projects below, shrunk to fit
         head, _, rest = partners.partition(":")
         lines = [(head + ":", (212, 162, 58)), (rest.strip(), (255, 255, 255))] if rest else [(partners, (255, 255, 255))]
         for i, (txt, col) in enumerate(lines):
@@ -283,6 +286,30 @@ def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None, pa
                     break
             out.append((ps, 1550 + 62 * i, 0.72 + 0.08 * i))
     return out
+
+
+def partner_card(logos, logo_h=110, font=26, gap=50, pad=22):
+    """White card with each partner logo and its website underneath (cfg partner_logos: [{img, site}])."""
+    from PIL import ImageDraw, ImageFont
+    f = ImageFont.truetype(motion.MONT, font); cells = []
+    for lg in logos:
+        im = Image.open(HERE / lg["img"]).convert("RGBA"); im = im.crop(im.getbbox() or (0, 0, im.width, im.height))
+        im = im.resize((int(im.width * logo_h / im.height), logo_h), Image.LANCZOS)
+        if lg.get("round"):
+            mk = Image.new("L", im.size, 0); ImageDraw.Draw(mk).rounded_rectangle((0, 0, im.width - 1, im.height - 1), int(logo_h * 0.18), fill=255)
+            im.putalpha(Image.fromarray(np.minimum(np.asarray(im)[..., 3], np.asarray(mk))))
+        tw = int(ImageDraw.Draw(Image.new("RGB", (1, 1))).textlength(lg["site"], font=f))
+        cw = max(im.width, tw); cell = Image.new("RGBA", (cw, logo_h + 12 + font + 8), (0, 0, 0, 0))
+        cell.alpha_composite(im, ((cw - im.width) // 2, 0))
+        ImageDraw.Draw(cell).text(((cw - tw) // 2, logo_h + 10), lg["site"], font=f, fill=NAVY + (255,))
+        cells.append(cell)
+    W_ = sum(c.width for c in cells) + gap * (len(cells) - 1) + 2 * pad; H_ = max(c.height for c in cells) + 2 * pad
+    card = Image.new("RGBA", (W_, H_), (0, 0, 0, 0))
+    ImageDraw.Draw(card).rounded_rectangle((0, 0, W_ - 1, H_ - 1), 22, fill=(255, 255, 255, 245), outline=NAVY + (255,), width=3)
+    x = pad
+    for c in cells:
+        card.alpha_composite(c, (x, pad)); x += c.width + gap
+    return motion.Sprite(card)
 
 
 PLATFORM_COL = {"youtube": (255, 0, 0), "instagram": (225, 48, 108), "tiktok": (12, 12, 12), "telegram": (38, 165, 228), "facebook": (8, 102, 255)}
@@ -986,6 +1013,7 @@ def main():
         bug = LogoBug(54) if cfg.get("logo_bug", True) else None
         soc_row = socials_sprite(cfg["socials"], icon=40, font=32, gapx=40) if cfg.get("socials") else None
         partners = seeded(motion.tag_sprite, new_alphabet(cfg["partners"]), 34, NAVY) if cfg.get("partners") else None
+        pcard = partner_card(cfg["partner_logos"]) if cfg.get("partner_logos") else None
         for fi in range(nframes):
             t = fi / FPS
             while bi + 1 < len(beats) and beats[bi + 1]["t0"] <= t:
@@ -1023,6 +1051,9 @@ def main():
                 lt = t - beats[bi]["t0"] - 0.3
                 if lt > 0:
                     partners.draw(frame, W / 2, 104, back_out(min(1, lt / 0.4)), 0, min(1, lt / 0.15))
+                lt2 = lt - 4.6                         # logo card after the subscribe button has played
+                if pcard is not None and lt2 > 0:
+                    pcard.draw(frame, W / 2, H * 0.25, back_out(min(1, lt2 / 0.4)) * min(1, 600 / pcard.w), 0, min(1, lt2 / 0.15))
             ff.stdin.write((np.clip(frame, 0, 1) * 255).astype(np.uint8).tobytes())
             if fi % 500 == 0:
                 print(f"  {fi}/{nframes}", flush=True)
@@ -1119,7 +1150,7 @@ def main():
             last = frame
         END = 2.4 if cfg.get("series_label") else 0.0           # end card: darkened, blurred last frame + channel reference
         if END:
-            card = short_endcard(cfg["series_label"], ta, cfg.get("handle", "@bilmasboy"), VW, VH, cfg.get("socials"), cfg.get("partners"))
+            card = short_endcard(cfg["series_label"], ta, cfg.get("handle", "@bilmasboy"), VW, VH, cfg.get("socials"), cfg.get("partners"), cfg.get("partner_logos"))
             base = cv2.GaussianBlur(last, (0, 0), 9)
             for fi in range(int(END * FPS)):
                 lt = fi / FPS; p = ease_out(lt / 0.35)
