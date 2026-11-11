@@ -172,6 +172,19 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - "Which topic next?" goes in the pinned comment and as end-screen text, not in the voice:
   "Keyingi qismda kim yoki nima haqida bilishni xohlaysiz? Yozing, eng ko'p layk to'plagan mavzuni albatta yoritamiz 👇"
 
+## Owner review rules (2026-11-10, E03)
+
+- No spoken sign-off at the end and no "BILMASBOY" end tag; the episode ends on the subscribe line + end screen.
+- When the narration is about a person (e.g. "Li Kuan Yuning fikricha"), show that person, not the mascot.
+  The mascot is only for narrator commentary with no main character. Real people get several scene pictures
+  (young/old, at work), drawn stylized, with arms visible; portrait cut-outs are generated on flat mustard.
+- Mascot has 12 poses: 0-3 mascot_v2, 4-11 single files mascot_v3a_0..3 / mascot_v3b_0..3 (in E03 layers, cfg `mascot.more`).
+  Rotate poses; don't repeat the same pose twice in a row.
+- No picture on screen longer than ~10 s: split long beats and generate extra scene pictures.
+- Engine: charts/counters on pictures get a cream card; long tags are clamped inside the frame; stamps accept x/y;
+  the corner logo only opens when the top-left is clear; Shorts logo sits at (52, 74) and the hook banner at y=235.
+- End screen: subscribe button at y .23 (not under the partners line). Partner logos card: pending logo files from the owner.
+
 ## Thumbnails and titles (2026-11-08)
 
 - Owner's rule: every episode gets **3 titles + 3 thumbnails** (A/B/C, different angles), all run together in YouTube Test & Compare.
