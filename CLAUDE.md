@@ -183,7 +183,7 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - No picture on screen longer than ~10 s: split long beats and generate extra scene pictures.
 - Engine: charts/counters on pictures get a cream card; long tags are clamped inside the frame; stamps accept x/y;
   the corner logo only opens when the top-left is clear; Shorts logo sits at (52, 74) and the hook banner at y=235.
-- End screen: subscribe button at y .23 (not under the partners line). Partner logos card: pending logo files from the owner.
+- End screen: subscribe button at y .23 (not under the partners line). Partner logos (assets/partners/, from the owner's Media Projects brand folders): cfg `partner_logos` → logo card with websites on the end screen (after the subscribe animation) and on every Short end card.
 
 ## Thumbnails and titles (2026-11-08)
 
