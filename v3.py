@@ -554,7 +554,9 @@ def main():
     pieces, T, tmap = smart_pieces(work / "raw.wav", total,
                                    [(w, si, s, e) for (w, si), (s, e) in zip(sw, times)], beat_starts)
     nt = [(tmap(s), tmap(e)) for s, e in times]
-    print(f"Voice {total:.1f}s -> {T:.1f}s ({len(pieces)} pieces)")
+    HOLD = float(cfg.get("end_hold", 0))                   # silent seconds after the last word so the end screen stays up
+    T += HOLD
+    print(f"Voice {total:.1f}s -> {T:.1f}s ({len(pieces)} pieces{f', +{HOLD:g}s end screen' if HOLD else ''})")
 
     import difflib
     def wt(at):
@@ -577,6 +579,8 @@ def main():
             if g > 0.001:
                 gaps.append(f"anullsrc=r=48000:cl=mono,atrim=0:{g:.3f}[g{i}];"); chain += f"[g{i}]"
         chain += f"[p{i}]"
+    if HOLD:
+        gaps.append(f"anullsrc=r=48000:cl=mono,atrim=0:{HOLD:.3f}[gend];"); chain += "[gend]"
     fc = parts + "".join(gaps) + chain + f"concat=n={chain.count('[')}:v=0:a=1,highpass=f=80,acompressor=threshold=0.1:ratio=3:attack=10:release=200,loudnorm=I=-16:TP=-2:LRA=9[a]"
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(work / "raw.wav"), "-filter_complex", fc,
                     "-map", "[a]", "-ar", "48000", str(work / "voice_clean.wav")], check=True)

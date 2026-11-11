@@ -182,7 +182,7 @@ cfg = {"layers": "layers", "music": {"curious": "../../assets/music/curious.mp3"
                   {"name": "housing", "from": [62, "Uchinchi"], "to": [70, "Li"], "hook": "10 KISHIDAN 8 TASI DAVLAT UYIDA"},
                   {"name": "price", "from": [85, "Lekin"], "to": [94, "Li"], "hook": "SINGAPUR MUVAFFAQIYATINING NARXI"},
                   {"name": "lesson", "from": [101, "Xo'sh"], "to": [106, "Demak"], "hook": "SINGAPUR VA O'ZBEKISTON"}],
-       "series_label": "3-QISM: SINGAPUR", "partners": "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari.",
+       "end_hold": 9, "series_label": "3-QISM: SINGAPUR", "partners": "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari.",
        "partner_logos": [{"img": "assets/partners/californiauzbek.png", "anim": "assets/partners/californiauzbek_anim.webm", "site": "californiauzbek.com"},
                          {"img": "assets/partners/bysmillah.png", "anim": "assets/partners/bysmillah_anim.mp4", "loop": True, "site": "bysmillah.com", "round": True}], "handle": "@bilmasboy",
        "socials": [["youtube", "@bilmasboy"], ["instagram", "@bilmas.boy"], ["tiktok", "@bilmas.boy"], ["facebook", "@bilmas.boy"], ["telegram", "@bilmas_boy"]]}
