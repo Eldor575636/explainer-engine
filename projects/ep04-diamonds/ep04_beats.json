@@ -1,0 +1,3641 @@
+{
+ "layers": "layers",
+ "music": {
+  "curious": "../../assets/music/curious.mp3",
+  "dramatic": "../../assets/music/dramatic.mp3",
+  "calm": "../../assets/music/calm.mp3"
+ },
+ "mascot": {
+  "img": "mascot_v2",
+  "parts": 4,
+  "full_body": true,
+  "more": [
+   {
+    "img": "mascot_v3a_0",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3a_1",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3a_2",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3a_3",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_0",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_1",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_2",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_3",
+    "parts": 1
+   }
+  ]
+ },
+ "ui": {
+  "subscribe": "OBUNA BO'LING",
+  "subscribed": "OBUNA BO'LDINGIZ",
+  "like": "LAYK",
+  "next": "KEYINGI VIDEO"
+ },
+ "sentences": [
+  "Bir yigit sevgan qiziga uylanmoqchi.",
+  "U unashtiruv uzugi uchun ikki oylik maoshini sarflaydi.",
+  "Uzukda esa kichkina bir tosh bor: bir parcha uglerod, ya'ni ko'mirning yaqin qarindoshi.",
+  "Oradan bir necha yil o'tib, u shu uzukni sotmoqchi bo'ladi.",
+  "Do'kon esa unga to'lagan narxining yarmini ham zo'rg'a taklif qiladi.",
+  "Ba'zi olmoslar esa butun bir uydan ham qimmat turadi.",
+  "Xo'sh, nega bir parcha tosh shunchalik qimmat?",
+  "Nega uni sotib olish oson, qaytib sotish esa qiyin?",
+  "Va qanday qilib bor-yo'g'i to'rtta so'zdan iborat reklama butun dunyoni olmos uzuk taqishga ishontirdi?",
+  "Mening ismim Bilmas, negadir odamlar meni Bilmasboy deb tanishadi.",
+  "Bilganlarim meni boy qilgan bo'lsa, bilmaganlarim ustida hanuzgacha savollar so'rayman, izlanaman.",
+  "Hamda shu yo'lda topganlarimni siz bilan ulashib boraman.",
+  "O'tgan safar resurssiz kichik orol Singapur qanday boyib ketganini bilib olgandik.",
+  "Bugun esa boshqa savolga javob qidiramiz: narxni nima belgilaydi, buyumning o'zimi yoki uning atrofidagi hikoya?",
+  "Demak, bugungi mavzu: olmoslar va dunyodagi eng muvaffaqiyatli reklama haqida bo'ladi.",
+  "Avval tarixga qisqacha nazar tashlaylik.",
+  "Asrlar davomida olmos juda kam uchraydigan tosh edi.",
+  "Uni asosan Hindistonda topishardi va faqat podshohlar hamda boy zodagonlar taqishardi.",
+  "1870-yillarda hammasi o'zgardi.",
+  "Janubiy Afrikaning, Kimberli degan joyida ulkan olmos konlari topildi.",
+  "Minglab odamlar boylik izlab u yerga yo'l oldi.",
+  "Birdaniga bozorda olmos ko'payib ketdi.",
+  "Muammo shu edi: olmos ko'paysa, uning narxi tushadi.",
+  "Hamma joyda bor narsa endi noyob hisoblanmaydi.",
+  "Shu paytda Afrikaga Sesil Rods ismli yosh ingliz keladi.",
+  "U avval konchilarga suv nasoslarini ijaraga berardi.",
+  "Keyin esa kichik konlarni birin-ketin sotib ola boshladi.",
+  "Yigirma yilga yaqin vaqt ichida u va sheriklari minglab kichik konlarni bitta De Birs deb nomlangan kompaniyaga birlashtirdi.",
+  "1888-yilga kelib ularning kompaniyasi Janubiy Afrikadagi deyarli barcha konlarni nazorat qilardi.",
+  "Keyinroq De Birs dunyodagi olmos taklifining qariyb 90 foizini o'z qo'liga oldi.",
+  "Ularning qoidasi oddiy edi: olmosni ko'p qazib olish mumkin, lekin bozorga oz-ozdan chiqarish kerak.",
+  "Shunda olmos noyob bo'lib ko'rinadi va narxi yuqori turadi.",
+  "Lekin 1930-yillarda yangi muammo paydo bo'ldi.",
+  "Dunyoda Buyuk depressiya, ya'ni katta iqtisodiy inqiroz boshlandi.",
+  "Odamlarda pul yo'q edi, olmos sotuvi keskin tushib ketdi.",
+  "Taklifni nazorat qilish mumkin, lekin talabni qanday yaratish kerak?",
+  "Odamlarni olmosga muhtoj qilib qo'yish mumkinmi?",
+  "Bir soniya to'xtab: agar bunday hikoyalar sizga qiziq bo'lsa, mehnatimizni qo'llab-quvvatlab, kanalga obuna bo'lishni unutmang.",
+  "Davom etamiz.",
+  "1938-yilda De Birs Amerikadagi N. V. Ayer degan reklama agentligi bilan ishlay boshladi.",
+  "Bu reklama agentligi boshqalarga o'xshamasdi.",
+  "U biror do'konni ham, biror brendni ham reklama qilmadi.",
+  "U faqat bitta g'oyani sotdi: haqiqiy sevgi olmos uzuk bilan isbotlanadi.",
+  "Gazetalarga kino yulduzlarining olmos uzuklari haqida maqolalar yuborildi.",
+  "Maktablarga ma'ruzachilar borib, yoshlarga olmos uzuk haqida gapirib berdi.",
+  "1941-yilga kelib Amerikada olmos sotuvi 55 foizga oshdi.",
+  "1947-yilda esa reklama agentligining yosh kopirayteri Frensis Geriti, olmos uchun yangi shior taklif qildi.",
+  "Bu bor-yo'g'i to'rtta so'zdan iborat: \"A diamond is forever\".",
+  "Ya'ni \"Olmos abadiydir\" degan jumla edi.",
+  "Bu jumla tarixdagi eng mashhur reklama shiorlaridan biriga aylandi.",
+  "Uning ma'nosi ikki qismdan iborat edi.",
+  "Birinchisi: sizning sevgingiz olmos kabi abadiy.",
+  "Ikkinchisi esa unchalik ko'zga tashlanmasdi.",
+  "Ammo, tadqiqotchilar fikricha, u xaridorga yana bir narsani eslatib turardi: olmos abadiy, demak, uni hech qachon sotmang.",
+  "Nega olmos kompaniyalari uchun odamlarning olmoslarini sotmasligi muhim edi?",
+  "Chunki odamlar eski olmoslarini sotishni boshlasa, bozorda olmos ko'payib ketardi va narx tushardi.",
+  "Odamlar o'z olmoslarini ikkinchi bozorga chiqarmasa va sotmasa, De Birs narxni doimiy yuqorida ushlab tura olardi.",
+  "Natija hayratlanarli bo'ldi.",
+  "1940-yilda Amerikadagi kelinlarning atigi 10 foizi olmos uzuk olgan bo'lsa, 1980-yilga kelib bu ko'rsatkich qariyb 80 foizga yetdi.",
+  "Reklama nafaqat uzuk sotib olishni, hattoki uzukka qancha pul sarflash kerakligini ham aytib bera boshladi.",
+  "Avval bir oylik maosh, keyinroq esa ikki oylik maosh haqiqiy sevgining narxi sifatida belgilandi.",
+  "Keyin De Birs olmos kompaniyasi, o'z e'tiborini Yaponiyaga qaratdi.",
+  "Aslida, Yaponiyada olmos uzuk an'anasi umuman yo'q edi.",
+  "1960-yilda yapon kelinlarining 5 foizdan kamrog'i olmos uzuk olardi.",
+  "Keyin esa reklamalar odamlar fikrini o'zgartirishga kirishdi.",
+  "Reklamalarda olmos zamonaviy, G'arbcha hayotning ramzi sifatida ko'rsatilardi.",
+  "1981-yilga kelib bu ko'rsatkich 60 foizga chiqdi.",
+  "Ya'ni qadimiy an'analarga ega xalqda yangi an'ana, atigi yigirma yilda paydo bo'ldi.",
+  "Endi asosiy savolga qaytaylik: olmos haqiqatan ham qimmatmi?",
+  "Sotib olayotganda, ha, juda qimmat.",
+  "Lekin uni sotmoqchi bo'lsangiz, odatda do'kondagi narxning yarmiga yaqin pul taklif qilishadi.",
+  "Yangi avtomobil kabi, olmos ham do'kondan chiqqan zahoti qadrining katta qismini yo'qotadi.",
+  "Sababi shundaki, olmosning narxini faqat uning tabiati emas, uning atrofida qurilgan hikoya belgilaydi.",
+  "Lekin har bir hikoyaning boshqa tomoni bo'lgani kabi, bu hikoyada ham ikkinchi tomon bor.",
+  "1990-yillarda Afrikaning ba'zi davlatlarida, masalan, Syerra-Leoneda fuqarolar urushi bo'ldi.",
+  "Qurolli guruhlar olmos konlarini egallab, urushni olmos pulidan moliyalashtirdi.",
+  "Bunday toshlar \"qonli olmoslar\" deb ataldi.",
+  "2000-yilda davlatlar, kompaniyalar va jamoat tashkilotlari Kimberli jarayoni degan tizimni boshladi.",
+  "Bu tizimning maqsadi urushni moliyalashtiradigan olmoslarni bozordan chiqarish edi.",
+  "Lekin bu tizim har bir toshning qayerdan kelganini to'liq kuzatib borolmas edi, shuning uchun u hozirgacha tanqid qilib kelinadi.",
+  "Olmos hatto, katta siyosatga ham aralashgan.",
+  "Dunyodagi xom olmosning qariyb uchdan bir qismi Rossiyada qazib olinadi.",
+  "2024-yil boshidan boshlab, G7 davlatlari Rossiya olmoslariga taqiq kiritdi.",
+  "O'tgan qismlarimizdan birida gaplashgan sanksiyalar olmos bozoriga ham yetib kelgandi.",
+  "Endi eng qiziq qismiga o'tamiz.",
+  "U ham bo'lsa, bugun olmosni laboratoriyada o'stirish mumkin.",
+  "Bu soxta tosh emas: kimyoviy jihatdan u tabiiy olmos bilan bir xil, hech qanday farqi yo'q.",
+  "Ko'p holatlarda, laboratoriya olmoslarini faqat maxsus asboblari bor mutaxassislar farqlay oladi.",
+  "Va tabiiy ravishda, laboratoriya olmosining narxi ancha arzon bo'ladi.",
+  "2025-yilda Amerikada tabiiy olmosli unashtiruv uzugining o'rtacha narxi 13 ming dollarga yaqin baholangan bo'lsa, laboratoriya olmosli uzuklari o'rtacha 4 ming 500 dollar atrofida edi.",
+  "2019-yilda yangi unashtiruv uzuklarining atigi 6 foizida laboratoriya olmosi bo'lgan bo'lsa, 2026-yilning birinchi yarmida bu ko'rsatkich 51 foizga chiqdi.",
+  "Ya'ni tarixda birinchi marta Amerikadagi yangi uzuklarning yarmidan ko'pida laboratoriya olmosi bor edi.",
+  "Bu De Birs olmos kompaniyasi uchun katta zarba bo'ldi.",
+  "De Birsning 85 foizi Anglo American kompaniyasiga tegishli bo'lib, bu kompaniya bozordagi tendensiyaga asoslanib, uch yil ketma-ket De Birsning qiymatini pasaytirib yozdi.",
+  "2025-yil oxirida bu ulush atigi 2,3 milliard dollarga baholandi.",
+  "Oxir-oqibatda, bir asrdan ortiq dunyo olmos bozorini boshqargan kompaniya bugun sotuvga qo'yilgan.",
+  "2026-yil noyabrida Botsvana davlati, De Birsdagi ulushini 30 foizga ko'tarishini e'lon qildi.",
+  "Ya'ni olmos qazib olinadigan Afrika davlati endi kompaniyaning eng katta aksiyadoriga aylanmoqchi.",
+  "Shu sababli olmos haqidagi bahs hozirgacha davom etadi.",
+  "Bir tomon fikriga ko'ra: tabiiy olmos millionlab yillar davomida yer ostida paydo bo'lgan, u noyob va u o'z qadrini baribir saqlab qoladi.",
+  "Boshqa tomonga ko'ra esa: olmosning narxini asosan reklama va bozor nazorati yaratgan, laboratoriya olmosi esa buni yaqqol ochib berdi.",
+  "Yana bir muhim fikr bor: Botsvana kabi davlatlar uchun olmos byudjetning asosiy daromad manbalaridan biridir.",
+  "Olmos narxi tushganda, eng avvalo o'sha davlatlarning oddiy aholisi zarar ko'radi.",
+  "Xo'sh, bu bizga nima uchun muhim?",
+  "O'zbekistonda ham to'y va sovg'alar uchun qimmatbaho taqinchoqlar olinadi.",
+  "Ko'pchilik oltin yoki olmos sotib olishni pulni saqlash usuli deb biladi.",
+  "Lekin oltin va olmos bir xil turdagi mahsulot emas.",
+  "Oltinning narxi har kuni jahon bozorida ochiq belgilanadi va uni sotish ancha oson.",
+  "Olmosni esa sotib olingan narxidan ancha arzonga sotishga to'g'ri kelishi mumkin.",
+  "Demak, olmosni sevgi ramzi sifatida olish mumkin, lekin uni investitsiya deb o'ylash xato bo'lishi mumkin.",
+  "Va eng katta saboq: biz to'layotgan narxning bir qismi buyumning o'zi uchun emas, unga ishonishimiz uchun yaratilgan hikoya uchun to'lanadi.",
+  "Xo'sh, nega bir parcha tosh uydan ham qimmat bo'lishi mumkin?",
+  "Chunki uning narxini faqat tabiat emas, odamlar belgilagan.",
+  "Bir kompaniya taklifni nazorat qildi, reklama esa talabni yaratdi.",
+  "\"Olmos abadiydir\" degan to'rtta so'z butun dunyoning to'y an'analarini o'zgartira oldi.",
+  "Bugun esa laboratoriya olmoslari bu hikoyani sinovdan o'tkazmoqda.",
+  "Olmoslar haqida men ham bilmas edim.",
+  "Endi esa hammamiz bilamiz.",
+  "Ana endi sizga savol: sizningcha, unashtiruv uchun olmos uzuk shartmi yoki bu shunchaki reklama yaratgan odatmi?",
+  "Fikringizni izohlarda yozib qoldiring.",
+  "Keyingi qismda esa: nega narxlar har yili oshib boradi va so'mimizning yo'qolib borayotgan qadri qayerga ketadi degan savolga javob qidiramiz.",
+  "Gap inflyatsiya haqida bo'ladi.",
+  "O'tkazib yubormaslik uchun obuna bo'ling, qo'ng'iroqchani bosing va ko'rsatuvni do'stlaringizga ulashing."
+ ],
+ "beats": [
+  {
+   "at": [
+    0,
+    "Bir"
+   ],
+   "type": "scene",
+   "bg": "bg_ring_buy",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      0,
+      "uylanmoqchi"
+     ],
+     "k": "tag",
+     "text": "UYLANMOQCHI"
+    },
+    {
+     "at": [
+      1,
+      "ikki"
+     ],
+     "k": "tag",
+     "text": "2 OYLIK MAOSH",
+     "fg": "red"
+    },
+    {
+     "at": [
+      1,
+      "uzugi"
+     ],
+     "k": "circle",
+     "x": 0.5,
+     "y": 0.55,
+     "rx": 0.1,
+     "ry": 0.12
+    }
+   ]
+  },
+  {
+   "at": [
+    2,
+    "Uzukda"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_carbon",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.55,
+     "at": [
+      2,
+      "Uzukda"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      2,
+      "uglerod"
+     ],
+     "k": "tag",
+     "text": "UGLEROD",
+     "x": 0.3,
+     "y": 0.82
+    },
+    {
+     "at": [
+      2,
+      "ko'mirning"
+     ],
+     "k": "tag",
+     "text": "KO'MIRNING QARINDOSHI",
+     "x": 0.7,
+     "y": 0.82,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    3,
+    "Oradan"
+   ],
+   "type": "scene",
+   "bg": "bg_ring_sell",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      3,
+      "yil"
+     ],
+     "k": "tag",
+     "text": "BIR NECHA YIL O'TIB..."
+    },
+    {
+     "at": [
+      3,
+      "sotmoqchi"
+     ],
+     "k": "tag",
+     "text": "SOTMOQCHI"
+    },
+    {
+     "at": [
+      4,
+      "yarmini"
+     ],
+     "k": "stamp",
+     "text": "YARMI HAM YO'Q"
+    }
+   ]
+  },
+  {
+   "at": [
+    5,
+    "Ba'zi"
+   ],
+   "type": "scene",
+   "bg": "bg_diamond",
+   "ev": [
+    {
+     "at": [
+      5,
+      "uydan"
+     ],
+     "k": "tag",
+     "text": "UYDAN HAM QIMMAT",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    6,
+    "Xo'sh"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      6,
+      "Xo'sh"
+     ],
+     "k": "mascot",
+     "pose": 4,
+     "side": "right"
+    },
+    {
+     "at": [
+      6,
+      "qimmat"
+     ],
+     "k": "tag",
+     "text": "NEGA QIMMAT?",
+     "x": 0.36,
+     "y": 0.35
+    },
+    {
+     "at": [
+      7,
+      "qaytib"
+     ],
+     "k": "tag",
+     "text": "NEGA SOTIB BO'LMAYDI?",
+     "x": 0.36,
+     "y": 0.5,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    8,
+    "Va"
+   ],
+   "type": "scene",
+   "bg": "bg_ad_poster",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      8,
+      "to'rtta"
+     ],
+     "k": "tag",
+     "text": "4 SO'Z"
+    },
+    {
+     "at": [
+      8,
+      "reklama"
+     ],
+     "k": "tag",
+     "text": "BITTA REKLAMA",
+     "fg": "red"
+    },
+    {
+     "at": [
+      8,
+      "dunyoni"
+     ],
+     "k": "tag",
+     "text": "BUTUN DUNYO"
+    }
+   ]
+  },
+  {
+   "at": [
+    9,
+    "Mening"
+   ],
+   "type": "intro",
+   "pose": 3
+  },
+  {
+   "at": [
+    10,
+    "Bilganlarim"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      10,
+      "Bilganlarim"
+     ],
+     "k": "mascot",
+     "pose": 3,
+     "side": "right"
+    },
+    {
+     "at": [
+      10,
+      "Bilganlarim"
+     ],
+     "k": "tag",
+     "text": "BILIM = BOYLIK",
+     "x": 0.32,
+     "y": 0.3
+    },
+    {
+     "at": [
+      10,
+      "savollar"
+     ],
+     "k": "tag",
+     "text": "SO'RAYMAN",
+     "x": 0.32,
+     "y": 0.45
+    },
+    {
+     "at": [
+      10,
+      "izlanaman"
+     ],
+     "k": "tag",
+     "text": "IZLANAMAN",
+     "x": 0.32,
+     "y": 0.58
+    },
+    {
+     "at": [
+      11,
+      "ulashib"
+     ],
+     "k": "tag",
+     "text": "ULASHAMAN",
+     "x": 0.32,
+     "y": 0.71,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    12,
+    "O'tgan"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_gold",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      12,
+      "Singapur"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      12,
+      "O'tgan"
+     ],
+     "k": "label",
+     "text": "3-QISM: SINGAPUR"
+    },
+    {
+     "at": [
+      12,
+      "boyib"
+     ],
+     "k": "tag",
+     "text": "RESURSSIZ OROL QANDAY BOYIDI?",
+     "x": 0.7,
+     "y": 0.5
+    }
+   ]
+  },
+  {
+   "at": [
+    13,
+    "Bugun"
+   ],
+   "type": "scene",
+   "bg": "bg_diamond_stage",
+   "ev": [
+    {
+     "at": [
+      13,
+      "narxni"
+     ],
+     "k": "tag",
+     "text": "NARXNI NIMA BELGILAYDI?"
+    },
+    {
+     "at": [
+      13,
+      "buyumning"
+     ],
+     "k": "tag",
+     "text": "BUYUMNING O'ZIMI?"
+    },
+    {
+     "at": [
+      13,
+      "hikoya"
+     ],
+     "k": "tag",
+     "text": "YOKI HIKOYA?",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    14,
+    "Demak"
+   ],
+   "type": "title",
+   "title": "BUGUNGI MAVZU",
+   "title2": "OLMOSLAR VA ENG MUVAFFAQIYATLI REKLAMA"
+  },
+  {
+   "at": [
+    14,
+    "eng"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_ring",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      14,
+      "eng"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      14,
+      "eng"
+     ],
+     "k": "tag",
+     "text": "OLMOSLAR",
+     "x": 0.7,
+     "y": 0.42
+    },
+    {
+     "at": [
+      14,
+      "reklama"
+     ],
+     "k": "tag",
+     "text": "ENG MUVAFFAQIYATLI REKLAMA",
+     "x": 0.7,
+     "y": 0.58,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    15,
+    "Avval"
+   ],
+   "type": "chapter",
+   "num": "1-QISM",
+   "title": "NOYOB TOSH"
+  },
+  {
+   "at": [
+    16,
+    "Asrlar"
+   ],
+   "type": "scene",
+   "bg": "bg_india_diamonds",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      16,
+      "kam"
+     ],
+     "k": "tag",
+     "text": "JUDA KAM UCHRAYDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    17,
+    "Uni"
+   ],
+   "type": "scene",
+   "bg": "bg_india_diamonds",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      17,
+      "Hindistonda"
+     ],
+     "k": "flag",
+     "code": "in"
+    },
+    {
+     "at": [
+      17,
+      "Hindistonda"
+     ],
+     "k": "tag",
+     "text": "HINDISTON"
+    },
+    {
+     "at": [
+      17,
+      "podshohlar"
+     ],
+     "k": "tag",
+     "text": "FAQAT PODSHOHLAR",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    18,
+    "1870-yillarda"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.55,
+    0.7
+   ],
+   "ev": [
+    {
+     "at": [
+      18,
+      "1870-yillarda"
+     ],
+     "k": "label",
+     "text": "1870-YILLAR"
+    },
+    {
+     "at": [
+      19,
+      "Afrikaning"
+     ],
+     "k": "flag",
+     "code": "za"
+    },
+    {
+     "at": [
+      19,
+      "Kimberli"
+     ],
+     "k": "pin",
+     "x": 0.545,
+     "y": 0.76
+    },
+    {
+     "at": [
+      19,
+      "ulkan"
+     ],
+     "k": "rings",
+     "x": 0.545,
+     "y": 0.76
+    },
+    {
+     "at": [
+      19,
+      "Kimberli"
+     ],
+     "k": "tag",
+     "text": "KIMBERLI",
+     "x": 0.5,
+     "y": 0.85
+    }
+   ]
+  },
+  {
+   "at": [
+    20,
+    "Minglab"
+   ],
+   "type": "scene",
+   "bg": "bg_kimberley_rush",
+   "ev": [
+    {
+     "at": [
+      20,
+      "Minglab"
+     ],
+     "k": "tag",
+     "text": "MINGLAB KONCHILAR"
+    },
+    {
+     "at": [
+      21,
+      "ko'payib"
+     ],
+     "k": "tag",
+     "text": "OLMOS KO'PAYDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    22,
+    "Muammo"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      22,
+      "Muammo"
+     ],
+     "k": "mascot",
+     "pose": 7,
+     "side": "right"
+    },
+    {
+     "at": [
+      22,
+      "ko'paysa"
+     ],
+     "k": "tag",
+     "text": "TAKLIF ↑",
+     "x": 0.36,
+     "y": 0.4
+    },
+    {
+     "at": [
+      22,
+      "tushadi"
+     ],
+     "k": "tag",
+     "text": "NARX ↓",
+     "x": 0.36,
+     "y": 0.56,
+     "fg": "red"
+    },
+    {
+     "at": [
+      23,
+      "noyob"
+     ],
+     "k": "stamp",
+     "text": "NOYOB EMAS",
+     "x": 0.36,
+     "y": 0.75
+    }
+   ]
+  },
+  {
+   "at": [
+    24,
+    "Shu"
+   ],
+   "type": "portrait",
+   "fig": "rhodes_cut",
+   "vfocus": 0.2,
+   "ev": [
+    {
+     "at": [
+      24,
+      "ingliz"
+     ],
+     "k": "flag",
+     "code": "gb"
+    },
+    {
+     "at": [
+      24,
+      "Sesil"
+     ],
+     "k": "label",
+     "text": "SESIL RODS"
+    },
+    {
+     "at": [
+      24,
+      "yosh"
+     ],
+     "k": "tag",
+     "text": "YOSH INGLIZ"
+    }
+   ]
+  },
+  {
+   "at": [
+    25,
+    "U"
+   ],
+   "type": "scene",
+   "bg": "bg_rhodes_pumps",
+   "ev": [
+    {
+     "at": [
+      25,
+      "nasoslarini"
+     ],
+     "k": "tag",
+     "text": "SUV NASOSLARI IJARASI"
+    },
+    {
+     "at": [
+      26,
+      "sotib"
+     ],
+     "k": "tag",
+     "text": "KONLARNI SOTIB OLDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    27,
+    "Yigirma"
+   ],
+   "type": "scene",
+   "bg": "bg_debeers_1888",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      27,
+      "Yigirma"
+     ],
+     "k": "counter",
+     "to": 20,
+     "x": 0.15,
+     "y": 0.25,
+     "suffix": " YIL"
+    },
+    {
+     "at": [
+      27,
+      "birlashtirdi"
+     ],
+     "k": "tag",
+     "text": "MINGLAB KONLAR → BITTA KOMPANIYA"
+    },
+    {
+     "at": [
+      27,
+      "De"
+     ],
+     "k": "label",
+     "text": "DE BEERS"
+    }
+   ]
+  },
+  {
+   "at": [
+    28,
+    "1888-yilga"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.55,
+    0.72
+   ],
+   "ev": [
+    {
+     "at": [
+      28,
+      "1888-yilga"
+     ],
+     "k": "label",
+     "text": "1888"
+    },
+    {
+     "at": [
+      28,
+      "Janubiy"
+     ],
+     "k": "pin",
+     "x": 0.545,
+     "y": 0.76
+    },
+    {
+     "at": [
+      28,
+      "barcha"
+     ],
+     "k": "rings",
+     "x": 0.545,
+     "y": 0.76
+    },
+    {
+     "at": [
+      28,
+      "barcha"
+     ],
+     "k": "tag",
+     "text": "DEYARLI BARCHA KONLAR · DE BEERS",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    29,
+    "Keyinroq"
+   ],
+   "type": "scene",
+   "bg": "bg_vault_release",
+   "tint": 0.45,
+   "ev": [
+    {
+     "at": [
+      29,
+      "90"
+     ],
+     "k": "pie",
+     "x": 0.28,
+     "y": 0.55,
+     "r": 0.22,
+     "slices": [
+      {
+       "label": "DE BEERS",
+       "value": 90
+      },
+      {
+       "label": "BOSHQALAR",
+       "value": 10
+      }
+     ]
+    },
+    {
+     "at": [
+      29,
+      "taklifining"
+     ],
+     "k": "tag",
+     "text": "DUNYO TAKLIFINING ~90%",
+     "x": 0.5,
+     "y": 0.13,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    30,
+    "Ularning"
+   ],
+   "type": "scene",
+   "bg": "bg_vault_release",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      30,
+      "ko'p"
+     ],
+     "k": "tag",
+     "text": "KO'P QAZIB OL"
+    },
+    {
+     "at": [
+      30,
+      "oz-ozdan"
+     ],
+     "k": "tag",
+     "text": "OZ-OZDAN SOT",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    31,
+    "Shunda"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_ring",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      31,
+      "Shunda"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      31,
+      "noyob"
+     ],
+     "k": "stamp",
+     "text": "NOYOB KO'RINADI",
+     "x": 0.7,
+     "y": 0.4
+    },
+    {
+     "at": [
+      31,
+      "yuqori"
+     ],
+     "k": "tag",
+     "text": "NARX YUQORI",
+     "x": 0.7,
+     "y": 0.62,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    32,
+    "Lekin"
+   ],
+   "type": "scene",
+   "bg": "bg_depression",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      32,
+      "1930-yillarda"
+     ],
+     "k": "label",
+     "text": "1930-YILLAR"
+    },
+    {
+     "at": [
+      33,
+      "Buyuk"
+     ],
+     "k": "tag",
+     "text": "BUYUK DEPRESSIYA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    34,
+    "Odamlarda"
+   ],
+   "type": "scene",
+   "bg": "bg_depression",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      34,
+      "pul"
+     ],
+     "k": "tag",
+     "text": "PUL YO'Q"
+    },
+    {
+     "at": [
+      34,
+      "keskin"
+     ],
+     "k": "tag",
+     "text": "OLMOS SOTUVI ↓",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    35,
+    "Taklifni"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      35,
+      "Taklifni"
+     ],
+     "k": "mascot",
+     "pose": 0,
+     "side": "right"
+    },
+    {
+     "at": [
+      35,
+      "Taklifni"
+     ],
+     "k": "tag",
+     "text": "TAKLIF: NAZORATDA ✓",
+     "x": 0.36,
+     "y": 0.4
+    },
+    {
+     "at": [
+      35,
+      "talabni"
+     ],
+     "k": "tag",
+     "text": "TALAB: QANDAY?",
+     "x": 0.36,
+     "y": 0.56,
+     "fg": "red"
+    },
+    {
+     "at": [
+      36,
+      "muhtoj"
+     ],
+     "k": "tag",
+     "text": "OLMOSGA MUHTOJ QILISH?",
+     "x": 0.36,
+     "y": 0.72
+    }
+   ]
+  },
+  {
+   "at": [
+    37,
+    "Bir"
+   ],
+   "type": "object",
+   "sfx": [
+    [
+     0.0,
+     "ding"
+    ]
+   ],
+   "ev": [
+    {
+     "at": [
+      37,
+      "Bir"
+     ],
+     "k": "mascot",
+     "pose": 11,
+     "side": "right"
+    },
+    {
+     "at": [
+      37,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.36,
+     "y": 0.5,
+     "dur": 3.4
+    }
+   ]
+  },
+  {
+   "at": [
+    39,
+    "1938-yilda"
+   ],
+   "type": "chapter",
+   "num": "2-QISM",
+   "title": "REKLAMA"
+  },
+  {
+   "at": [
+    39,
+    "Amerikadagi"
+   ],
+   "type": "scene",
+   "bg": "bg_adagency_1938",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      39,
+      "Amerikadagi"
+     ],
+     "k": "label",
+     "text": "1938 · N. W. AYER"
+    },
+    {
+     "at": [
+      39,
+      "Amerikadagi"
+     ],
+     "k": "flag",
+     "code": "us"
+    },
+    {
+     "at": [
+      40,
+      "boshqalarga"
+     ],
+     "k": "tag",
+     "text": "BOSHQACHA AGENTLIK"
+    }
+   ]
+  },
+  {
+   "at": [
+    41,
+    "U"
+   ],
+   "type": "scene",
+   "bg": "bg_adagency_1938",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      41,
+      "do'konni"
+     ],
+     "k": "tag",
+     "text": "DO'KON EMAS"
+    },
+    {
+     "at": [
+      41,
+      "brendni"
+     ],
+     "k": "stamp",
+     "text": "BREND EMAS"
+    }
+   ]
+  },
+  {
+   "at": [
+    42,
+    "U"
+   ],
+   "type": "scene",
+   "bg": "bg_ad_poster",
+   "ev": [
+    {
+     "at": [
+      42,
+      "g'oyani"
+     ],
+     "k": "tag",
+     "text": "BITTA G'OYA:"
+    },
+    {
+     "at": [
+      42,
+      "sevgi"
+     ],
+     "k": "tag",
+     "text": "HAQIQIY SEVGI = OLMOS UZUK",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    43,
+    "Gazetalarga"
+   ],
+   "type": "scene",
+   "bg": "bg_movie_star",
+   "ev": [
+    {
+     "at": [
+      43,
+      "Gazetalarga"
+     ],
+     "k": "tag",
+     "text": "GAZETALAR"
+    },
+    {
+     "at": [
+      43,
+      "kino"
+     ],
+     "k": "tag",
+     "text": "KINO YULDUZLARI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    44,
+    "Maktablarga"
+   ],
+   "type": "scene",
+   "bg": "bg_school_lecture",
+   "ev": [
+    {
+     "at": [
+      44,
+      "Maktablarga"
+     ],
+     "k": "tag",
+     "text": "MAKTABLARDA MA'RUZA"
+    },
+    {
+     "at": [
+      44,
+      "yoshlarga"
+     ],
+     "k": "tag",
+     "text": "YOSHLARGA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    45,
+    "1941-yilga"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_ring",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.45,
+     "at": [
+      45,
+      "1941-yilga"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      45,
+      "1941-yilga"
+     ],
+     "k": "label",
+     "text": "1941 · AMERIKA"
+    },
+    {
+     "at": [
+      45,
+      "55"
+     ],
+     "k": "counter",
+     "to": 55,
+     "x": 0.7,
+     "y": 0.45,
+     "prefix": "+",
+     "suffix": "%"
+    },
+    {
+     "at": [
+      45,
+      "sotuvi"
+     ],
+     "k": "tag",
+     "text": "OLMOS SOTUVI",
+     "x": 0.7,
+     "y": 0.65,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    46,
+    "1947-yilda"
+   ],
+   "type": "portrait",
+   "fig": "gerety_cut",
+   "vfocus": 0.2,
+   "ev": [
+    {
+     "at": [
+      46,
+      "1947-yilda"
+     ],
+     "k": "label",
+     "text": "1947"
+    },
+    {
+     "at": [
+      46,
+      "Frensis"
+     ],
+     "k": "tag",
+     "text": "FRANCES GERETY"
+    },
+    {
+     "at": [
+      46,
+      "kopirayteri"
+     ],
+     "k": "tag",
+     "text": "YOSH KOPIRAYTER",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    47,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_ad_meeting",
+   "ev": [
+    {
+     "at": [
+      47,
+      "to'rtta"
+     ],
+     "k": "tag",
+     "text": "4 SO'Z",
+     "x": 0.5,
+     "y": 0.25
+    },
+    {
+     "at": [
+      47,
+      "diamond"
+     ],
+     "k": "bigtext",
+     "text": "\"A DIAMOND IS FOREVER\"",
+     "x": 0.5,
+     "y": 0.5
+    },
+    {
+     "at": [
+      48,
+      "abadiydir"
+     ],
+     "k": "tag",
+     "text": "OLMOS ABADIYDIR",
+     "x": 0.5,
+     "y": 0.72,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    49,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_ad_poster",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      49,
+      "mashhur"
+     ],
+     "k": "stamp",
+     "text": "ENG MASHHUR SHIORLARDAN"
+    }
+   ]
+  },
+  {
+   "at": [
+    50,
+    "Uning"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_ring",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      50,
+      "Uning"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      50,
+      "ikki"
+     ],
+     "k": "tag",
+     "text": "IKKI MA'NO",
+     "x": 0.7,
+     "y": 0.3
+    },
+    {
+     "at": [
+      51,
+      "sevgingiz"
+     ],
+     "k": "tag",
+     "text": "1. SEVGINGIZ ABADIY",
+     "x": 0.7,
+     "y": 0.45
+    }
+   ]
+  },
+  {
+   "at": [
+    52,
+    "Ikkinchisi"
+   ],
+   "type": "scene",
+   "bg": "bg_ad_poster",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      52,
+      "ko'zga"
+     ],
+     "k": "tag",
+     "text": "IKKINCHI MA'NO...",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    53,
+    "Ammo"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      53,
+      "Ammo"
+     ],
+     "k": "mascot",
+     "pose": 9,
+     "side": "right"
+    },
+    {
+     "at": [
+      53,
+      "tadqiqotchilar"
+     ],
+     "k": "tag",
+     "text": "TADQIQOTCHILAR FIKRICHA",
+     "x": 0.36,
+     "y": 0.4
+    },
+    {
+     "at": [
+      53,
+      "sotmang"
+     ],
+     "k": "tag",
+     "text": "2. HECH QACHON SOTMANG",
+     "x": 0.36,
+     "y": 0.58,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    54,
+    "Nega"
+   ],
+   "type": "scene",
+   "bg": "bg_vault_release",
+   "crop": "left",
+   "tint": 0.5,
+   "ev": [
+    {
+     "at": [
+      54,
+      "sotmasligi"
+     ],
+     "k": "tag",
+     "text": "NEGA SOTMASLIK MUHIM?",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    55,
+    "Chunki"
+   ],
+   "type": "scene",
+   "bg": "bg_ring_sell",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      55,
+      "sotishni"
+     ],
+     "k": "tag",
+     "text": "HAMMA SOTSA → OLMOS KO'PAYADI"
+    },
+    {
+     "at": [
+      55,
+      "narx"
+     ],
+     "k": "tag",
+     "text": "NARX TUSHADI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    56,
+    "Odamlar"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_ring",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.5,
+     "at": [
+      56,
+      "Odamlar"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      56,
+      "ikkinchi"
+     ],
+     "k": "tag",
+     "text": "IKKINCHI BOZOR YO'Q",
+     "x": 0.7,
+     "y": 0.4
+    },
+    {
+     "at": [
+      56,
+      "ushlab"
+     ],
+     "k": "stamp",
+     "text": "NARX YUQORIDA",
+     "x": 0.7,
+     "y": 0.62
+    }
+   ]
+  },
+  {
+   "at": [
+    57,
+    "Natija"
+   ],
+   "type": "scene",
+   "bg": "bg_wedding_usa",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      57,
+      "hayratlanarli"
+     ],
+     "k": "stamp",
+     "text": "HAYRATLANARLI"
+    }
+   ]
+  },
+  {
+   "at": [
+    58,
+    "1940-yilda"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      58,
+      "Amerikadagi"
+     ],
+     "k": "flag",
+     "code": "us"
+    },
+    {
+     "at": [
+      58,
+      "1940-yilda"
+     ],
+     "k": "label",
+     "text": "OLMOS UZUKLI KELINLAR"
+    },
+    {
+     "at": [
+      58,
+      "atigi"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "1940",
+       "value": 10,
+       "color": "red"
+      },
+      {
+       "label": "1980",
+       "value": 80,
+       "hl": true
+      }
+     ],
+     "suffix": "%"
+    }
+   ]
+  },
+  {
+   "at": [
+    59,
+    "Reklama"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_salary_scale",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.55,
+     "at": [
+      59,
+      "Reklama"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      59,
+      "qancha"
+     ],
+     "k": "tag",
+     "text": "QANCHA SARFLASH KERAK?",
+     "x": 0.7,
+     "y": 0.5,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    60,
+    "Avval"
+   ],
+   "type": "scene",
+   "bg": "bg_wedding_usa",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      60,
+      "bir"
+     ],
+     "k": "tag",
+     "text": "AVVAL: 1 OYLIK MAOSH"
+    },
+    {
+     "at": [
+      60,
+      "ikki"
+     ],
+     "k": "tag",
+     "text": "KEYIN: 2 OYLIK MAOSH",
+     "fg": "red"
+    },
+    {
+     "at": [
+      60,
+      "sevgining"
+     ],
+     "k": "tag",
+     "text": "SEVGINING NARXI"
+    }
+   ]
+  },
+  {
+   "at": [
+    61,
+    "Keyin"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.8,
+    0.4
+   ],
+   "ev": [
+    {
+     "at": [
+      61,
+      "Yaponiyaga"
+     ],
+     "k": "flag",
+     "code": "jp"
+    },
+    {
+     "at": [
+      61,
+      "Yaponiyaga"
+     ],
+     "k": "pin",
+     "x": 0.85,
+     "y": 0.37
+    },
+    {
+     "at": [
+      61,
+      "e'tiborini"
+     ],
+     "k": "arrow",
+     "from": [
+      0.22,
+      0.37
+     ],
+     "to": [
+      0.85,
+      0.37
+     ],
+     "straight": false
+    }
+   ]
+  },
+  {
+   "at": [
+    62,
+    "Aslida"
+   ],
+   "type": "scene",
+   "bg": "bg_japan_traditional",
+   "ev": [
+    {
+     "at": [
+      62,
+      "yo'q"
+     ],
+     "k": "stamp",
+     "text": "UZUK AN'ANASI YO'Q"
+    },
+    {
+     "at": [
+      63,
+      "1960-yilda"
+     ],
+     "k": "label",
+     "text": "1960"
+    },
+    {
+     "at": [
+      63,
+      "5"
+     ],
+     "k": "tag",
+     "text": "5% DAN KAM",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    64,
+    "Keyin"
+   ],
+   "type": "scene",
+   "bg": "bg_japan_modern",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      65,
+      "zamonaviy"
+     ],
+     "k": "tag",
+     "text": "ZAMONAVIY"
+    },
+    {
+     "at": [
+      65,
+      "G'arbcha"
+     ],
+     "k": "tag",
+     "text": "G'ARBCHA HAYOT",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    66,
+    "1981-yilga"
+   ],
+   "type": "scene",
+   "bg": "bg_japan_modern",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      66,
+      "1981-yilga"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "1960",
+       "value": 5,
+       "color": "red"
+      },
+      {
+       "label": "1981",
+       "value": 60,
+       "hl": true
+      }
+     ],
+     "suffix": "%"
+    }
+   ]
+  },
+  {
+   "at": [
+    67,
+    "Ya'ni"
+   ],
+   "type": "scene",
+   "bg": "bg_japan_traditional",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      67,
+      "qadimiy"
+     ],
+     "k": "tag",
+     "text": "QADIMIY AN'ANALAR"
+    },
+    {
+     "at": [
+      67,
+      "yigirma"
+     ],
+     "k": "tag",
+     "text": "YANGI AN'ANA 20 YILDA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    68,
+    "Endi"
+   ],
+   "type": "chapter",
+   "num": "3-QISM",
+   "title": "HAQIQATAN QIMMATMI?"
+  },
+  {
+   "at": [
+    68,
+    "olmos"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      68,
+      "olmos"
+     ],
+     "k": "mascot",
+     "pose": 4,
+     "side": "right"
+    },
+    {
+     "at": [
+      68,
+      "qimmatmi"
+     ],
+     "k": "bigtext",
+     "text": "QIMMATMI?",
+     "x": 0.36,
+     "y": 0.45
+    }
+   ]
+  },
+  {
+   "at": [
+    69,
+    "Sotib"
+   ],
+   "type": "scene",
+   "bg": "bg_ring_buy",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      69,
+      "qimmat"
+     ],
+     "k": "tag",
+     "text": "SOTIB OLISH: JUDA QIMMAT"
+    }
+   ]
+  },
+  {
+   "at": [
+    70,
+    "Lekin"
+   ],
+   "type": "scene",
+   "bg": "bg_ring_sell",
+   "crop": "right",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      70,
+      "yarmiga"
+     ],
+     "k": "stamp",
+     "text": "~50%"
+    },
+    {
+     "at": [
+      70,
+      "sotmoqchi"
+     ],
+     "k": "tag",
+     "text": "SOTISH: YARMIGA YAQIN",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    71,
+    "Yangi"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_car",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.45,
+     "at": [
+      71,
+      "Yangi"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      71,
+      "kabi"
+     ],
+     "k": "arrow",
+     "from": [
+      0.45,
+      0.5
+     ],
+     "to": [
+      0.6,
+      0.5
+     ],
+     "straight": true
+    },
+    {
+     "at": [
+      71,
+      "olmos"
+     ],
+     "k": "prop",
+     "img": "prop_ring",
+     "x": 0.75,
+     "y": 0.5,
+     "h": 0.38
+    },
+    {
+     "at": [
+      71,
+      "yo'qotadi"
+     ],
+     "k": "tag",
+     "text": "DO'KONDAN CHIQDI = QADRI ↓",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    72,
+    "Sababi"
+   ],
+   "type": "scene",
+   "bg": "bg_diamond_stage",
+   "ev": [
+    {
+     "at": [
+      72,
+      "tabiati"
+     ],
+     "k": "tag",
+     "text": "TABIATI EMAS"
+    },
+    {
+     "at": [
+      72,
+      "hikoya"
+     ],
+     "k": "tag",
+     "text": "HIKOYA BELGILAYDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    73,
+    "Lekin"
+   ],
+   "type": "chapter",
+   "num": "4-QISM",
+   "title": "IKKINCHI TOMON"
+  },
+  {
+   "at": [
+    73,
+    "bu"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      73,
+      "bu"
+     ],
+     "k": "mascot",
+     "pose": 10,
+     "side": "right"
+    },
+    {
+     "at": [
+      73,
+      "ikkinchi"
+     ],
+     "k": "bigtext",
+     "text": "IKKINCHI TOMON",
+     "x": 0.36,
+     "y": 0.45
+    }
+   ]
+  },
+  {
+   "at": [
+    74,
+    "1990-yillarda"
+   ],
+   "type": "scene",
+   "bg": "bg_sierra_leone",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      74,
+      "1990-yillarda"
+     ],
+     "k": "label",
+     "text": "1990-YILLAR"
+    },
+    {
+     "at": [
+      74,
+      "Syerra-Leoneda"
+     ],
+     "k": "flag",
+     "code": "sl"
+    },
+    {
+     "at": [
+      74,
+      "urushi"
+     ],
+     "k": "tag",
+     "text": "FUQAROLAR URUSHI"
+    }
+   ]
+  },
+  {
+   "at": [
+    75,
+    "Qurolli"
+   ],
+   "type": "scene",
+   "bg": "bg_sierra_leone",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      75,
+      "moliyalashtirdi"
+     ],
+     "k": "tag",
+     "text": "URUSH OLMOS PULIDAN"
+    },
+    {
+     "at": [
+      76,
+      "qonli"
+     ],
+     "k": "stamp",
+     "text": "QONLI OLMOSLAR"
+    }
+   ]
+  },
+  {
+   "at": [
+    77,
+    "2000-yilda"
+   ],
+   "type": "scene",
+   "bg": "bg_kimberley_process",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      77,
+      "2000-yilda"
+     ],
+     "k": "label",
+     "text": "2000"
+    },
+    {
+     "at": [
+      77,
+      "Kimberli"
+     ],
+     "k": "tag",
+     "text": "KIMBERLI JARAYONI"
+    }
+   ]
+  },
+  {
+   "at": [
+    78,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_kimberley_process",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      78,
+      "maqsadi"
+     ],
+     "k": "tag",
+     "text": "MAQSAD:"
+    },
+    {
+     "at": [
+      78,
+      "bozordan"
+     ],
+     "k": "tag",
+     "text": "URUSH OLMOSLARINI CHIQARISH",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    79,
+    "Lekin"
+   ],
+   "type": "scene",
+   "bg": "bg_kimberley_process",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      79,
+      "to'liq"
+     ],
+     "k": "tag",
+     "text": "TO'LIQ KUZATMAYDI"
+    },
+    {
+     "at": [
+      79,
+      "tanqid"
+     ],
+     "k": "stamp",
+     "text": "TANQID"
+    }
+   ]
+  },
+  {
+   "at": [
+    80,
+    "Olmos"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.72,
+    0.3
+   ],
+   "ev": [
+    {
+     "at": [
+      81,
+      "Rossiyada"
+     ],
+     "k": "flag",
+     "code": "ru"
+    },
+    {
+     "at": [
+      81,
+      "Rossiyada"
+     ],
+     "k": "pin",
+     "x": 0.78,
+     "y": 0.2
+    },
+    {
+     "at": [
+      81,
+      "uchdan"
+     ],
+     "k": "tag",
+     "text": "DUNYO XOM OLMOSINING ~1/3",
+     "x": 0.5,
+     "y": 0.85
+    }
+   ]
+  },
+  {
+   "at": [
+    82,
+    "2024-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_diamond_ban",
+   "ev": [
+    {
+     "at": [
+      82,
+      "2024-yil"
+     ],
+     "k": "label",
+     "text": "2024"
+    },
+    {
+     "at": [
+      82,
+      "G7"
+     ],
+     "k": "tag",
+     "text": "G7 TAQIQI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    83,
+    "O'tgan"
+   ],
+   "type": "scene",
+   "bg": "bg_russia_mine",
+   "ev": [
+    {
+     "at": [
+      83,
+      "sanksiyalar"
+     ],
+     "k": "tag",
+     "text": "2-QISM: SANKSIYALAR"
+    },
+    {
+     "at": [
+      83,
+      "bozoriga"
+     ],
+     "k": "tag",
+     "text": "OLMOS BOZORIDA HAM",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    84,
+    "Endi"
+   ],
+   "type": "chapter",
+   "num": "5-QISM",
+   "title": "LABORATORIYA OLMOSI"
+  },
+  {
+   "at": [
+    85,
+    "U"
+   ],
+   "type": "scene",
+   "bg": "bg_lab_diamond",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      85,
+      "laboratoriyada"
+     ],
+     "k": "tag",
+     "text": "LABORATORIYADA O'STIRILADI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    86,
+    "Bu"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_carbon",
+     "x": 0.5,
+     "y": 0.45,
+     "h": 0.45,
+     "at": [
+      86,
+      "Bu"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      86,
+      "soxta"
+     ],
+     "k": "stamp",
+     "text": "SOXTA EMAS",
+     "y": 0.2
+    },
+    {
+     "at": [
+      86,
+      "kimyoviy"
+     ],
+     "k": "tag",
+     "text": "KIMYOVIY JIHATDAN BIR XIL",
+     "x": 0.5,
+     "y": 0.82,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    87,
+    "Ko'p"
+   ],
+   "type": "scene",
+   "bg": "bg_gemologist",
+   "ev": [
+    {
+     "at": [
+      87,
+      "maxsus"
+     ],
+     "k": "tag",
+     "text": "FAQAT MAXSUS ASBOB BILAN FARQLANADI"
+    },
+    {
+     "at": [
+      87,
+      "farqlay"
+     ],
+     "k": "circle",
+     "x": 0.5,
+     "y": 0.5,
+     "rx": 0.2,
+     "ry": 0.2
+    }
+   ]
+  },
+  {
+   "at": [
+    88,
+    "Va"
+   ],
+   "type": "scene",
+   "bg": "bg_ring_compare",
+   "ev": [
+    {
+     "at": [
+      88,
+      "arzon"
+     ],
+     "k": "tag",
+     "text": "ANCHA ARZON",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    89,
+    "2025-yilda"
+   ],
+   "type": "scene",
+   "bg": "bg_ring_buy",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      89,
+      "2025-yilda"
+     ],
+     "k": "label",
+     "text": "2025 · AMERIKA"
+    },
+    {
+     "at": [
+      89,
+      "tabiiy"
+     ],
+     "k": "tag",
+     "text": "O'RTACHA UNASHTIRUV UZUGI"
+    }
+   ]
+  },
+  {
+   "at": [
+    89,
+    "bo'lsa"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      89,
+      "bo'lsa"
+     ],
+     "k": "label",
+     "text": "O'RTACHA UZUK NARXI"
+    },
+    {
+     "at": [
+      89,
+      "laboratoriya"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.55,
+     "items": [
+      {
+       "label": "TABIIY",
+       "value": 12961,
+       "color": "red"
+      },
+      {
+       "label": "LABORATORIYA",
+       "value": 4557,
+       "hl": true
+      }
+     ],
+     "suffix": "$"
+    }
+   ]
+  },
+  {
+   "at": [
+    90,
+    "2019-yilda"
+   ],
+   "type": "scene",
+   "bg": "bg_ring_compare",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      90,
+      "2019-yilda"
+     ],
+     "k": "label",
+     "text": "2019"
+    },
+    {
+     "at": [
+      90,
+      "6"
+     ],
+     "k": "tag",
+     "text": "LABORATORIYA OLMOSI: ATIGI 6%",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    90,
+    "2026-yilning"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      90,
+      "2026-yilning"
+     ],
+     "k": "label",
+     "text": "LABORATORIYA OLMOSLI YANGI UZUKLAR"
+    },
+    {
+     "at": [
+      90,
+      "2026-yilning"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.5,
+     "items": [
+      {
+       "label": "2019",
+       "value": 6,
+       "color": "red"
+      },
+      {
+       "label": "2026",
+       "value": 51,
+       "hl": true
+      }
+     ],
+     "suffix": "%"
+    }
+   ]
+  },
+  {
+   "at": [
+    91,
+    "Ya'ni"
+   ],
+   "type": "scene",
+   "bg": "bg_lab_diamond",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      91,
+      "tarixda"
+     ],
+     "k": "tag",
+     "text": "TARIXDA BIRINCHI MARTA"
+    },
+    {
+     "at": [
+      91,
+      "yarmidan"
+     ],
+     "k": "stamp",
+     "text": "YARMIDAN KO'PI"
+    }
+   ]
+  },
+  {
+   "at": [
+    92,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_boardroom_sale",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      92,
+      "zarba"
+     ],
+     "k": "stamp",
+     "text": "KATTA ZARBA"
+    }
+   ]
+  },
+  {
+   "at": [
+    93,
+    "De"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_dollar",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.45,
+     "at": [
+      93,
+      "De"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      93,
+      "85"
+     ],
+     "k": "tag",
+     "text": "85% · ANGLO AMERICAN",
+     "x": 0.7,
+     "y": 0.5,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    93,
+    "uch"
+   ],
+   "type": "scene",
+   "bg": "bg_boardroom_sale",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      93,
+      "uch"
+     ],
+     "k": "tag",
+     "text": "3 YIL KETMA-KET"
+    },
+    {
+     "at": [
+      93,
+      "pasaytirib"
+     ],
+     "k": "tag",
+     "text": "QIYMATI ↓",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    94,
+    "2025-yil"
+   ],
+   "type": "number",
+   "prop": "prop_dollar",
+   "value": "$2,3 MLRD",
+   "sub": "2025-YIL OXIRI · 85% ULUSH BAHOSI",
+   "show": [
+    94,
+    "atigi"
+   ]
+  },
+  {
+   "at": [
+    95,
+    "Oxir-oqibatda"
+   ],
+   "type": "scene",
+   "bg": "bg_boardroom_sale",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      95,
+      "asrdan"
+     ],
+     "k": "tag",
+     "text": "100+ YIL BOZORNI BOSHQARDI"
+    },
+    {
+     "at": [
+      95,
+      "sotuvga"
+     ],
+     "k": "stamp",
+     "text": "SOTUVDA"
+    }
+   ]
+  },
+  {
+   "at": [
+    96,
+    "2026-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_botswana_mine",
+   "ev": [
+    {
+     "at": [
+      96,
+      "2026-yil"
+     ],
+     "k": "label",
+     "text": "2026 · NOYABR"
+    },
+    {
+     "at": [
+      96,
+      "Botsvana"
+     ],
+     "k": "flag",
+     "code": "bw"
+    },
+    {
+     "at": [
+      96,
+      "30"
+     ],
+     "k": "counter",
+     "to": 30,
+     "x": 0.8,
+     "y": 0.3,
+     "suffix": "% ULUSH"
+    }
+   ]
+  },
+  {
+   "at": [
+    97,
+    "Ya'ni"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.55,
+    0.68
+   ],
+   "ev": [
+    {
+     "at": [
+      97,
+      "Afrika"
+     ],
+     "k": "flag",
+     "code": "bw"
+    },
+    {
+     "at": [
+      97,
+      "Afrika"
+     ],
+     "k": "pin",
+     "x": 0.545,
+     "y": 0.71
+    },
+    {
+     "at": [
+      97,
+      "aksiyadoriga"
+     ],
+     "k": "rings",
+     "x": 0.545,
+     "y": 0.71
+    },
+    {
+     "at": [
+      97,
+      "aksiyadoriga"
+     ],
+     "k": "tag",
+     "text": "ENG KATTA AKSIYADOR",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    98,
+    "Shu"
+   ],
+   "type": "scene",
+   "bg": "bg_debate_scale",
+   "ev": [
+    {
+     "at": [
+      98,
+      "bahs"
+     ],
+     "k": "label",
+     "text": "BAHS DAVOM ETADI"
+    }
+   ]
+  },
+  {
+   "at": [
+    99,
+    "Bir"
+   ],
+   "type": "scene",
+   "bg": "bg_russia_mine",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      99,
+      "millionlab"
+     ],
+     "k": "tag",
+     "text": "MILLIONLAB YIL YER OSTIDA"
+    },
+    {
+     "at": [
+      99,
+      "noyob"
+     ],
+     "k": "tag",
+     "text": "\"TABIIY OLMOS NOYOB\""
+    },
+    {
+     "at": [
+      99,
+      "qadrini"
+     ],
+     "k": "tag",
+     "text": "\"QADRI SAQLANADI\"",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    100,
+    "Boshqa"
+   ],
+   "type": "scene",
+   "bg": "bg_ring_compare",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      100,
+      "reklama"
+     ],
+     "k": "tag",
+     "text": "\"NARXNI REKLAMA YARATGAN\"",
+     "fg": "red"
+    },
+    {
+     "at": [
+      100,
+      "laboratoriya"
+     ],
+     "k": "tag",
+     "text": "LABORATORIYA OCHIB BERDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    101,
+    "Yana"
+   ],
+   "type": "scene",
+   "bg": "bg_botswana_town",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      101,
+      "Botsvana"
+     ],
+     "k": "flag",
+     "code": "bw"
+    },
+    {
+     "at": [
+      101,
+      "byudjetning"
+     ],
+     "k": "tag",
+     "text": "BYUDJETNING ASOSIY MANBAI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    102,
+    "Olmos"
+   ],
+   "type": "scene",
+   "bg": "bg_botswana_mine",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      102,
+      "tushganda"
+     ],
+     "k": "tag",
+     "text": "OLMOS NARXI ↓"
+    },
+    {
+     "at": [
+      102,
+      "oddiy"
+     ],
+     "k": "tag",
+     "text": "ODDIY AHOLI ZARAR KO'RADI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    103,
+    "Xo'sh"
+   ],
+   "type": "chapter",
+   "num": "6-QISM",
+   "title": "BIZ UCHUN SABOQ"
+  },
+  {
+   "at": [
+    104,
+    "O'zbekistonda"
+   ],
+   "type": "scene",
+   "bg": "bg_uzbek_wedding",
+   "ev": [
+    {
+     "at": [
+      104,
+      "O'zbekistonda"
+     ],
+     "k": "flag",
+     "code": "uz"
+    },
+    {
+     "at": [
+      104,
+      "to'y"
+     ],
+     "k": "tag",
+     "text": "TO'Y VA SOVG'ALAR"
+    },
+    {
+     "at": [
+      105,
+      "saqlash"
+     ],
+     "k": "tag",
+     "text": "PULNI SAQLASH USULIMI?",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    106,
+    "Lekin"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_scale_gold_diamond",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.55,
+     "at": [
+      106,
+      "Lekin"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      106,
+      "emas"
+     ],
+     "k": "stamp",
+     "text": "BIR XIL EMAS",
+     "y": 0.2
+    }
+   ]
+  },
+  {
+   "at": [
+    107,
+    "Oltinning"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_bazaar",
+   "ev": [
+    {
+     "at": [
+      107,
+      "har"
+     ],
+     "k": "tag",
+     "text": "OLTIN: NARX HAR KUNI OCHIQ"
+    },
+    {
+     "at": [
+      107,
+      "oson"
+     ],
+     "k": "tag",
+     "text": "SOTISH OSON ✓"
+    }
+   ]
+  },
+  {
+   "at": [
+    108,
+    "Olmosni"
+   ],
+   "type": "scene",
+   "bg": "bg_ring_sell",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      108,
+      "arzonga"
+     ],
+     "k": "tag",
+     "text": "OLMOS: ANCHA ARZONGA ✗",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    109,
+    "Demak"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      109,
+      "Demak"
+     ],
+     "k": "mascot",
+     "pose": 7,
+     "side": "right"
+    },
+    {
+     "at": [
+      109,
+      "sevgi"
+     ],
+     "k": "tag",
+     "text": "SEVGI RAMZI ✓",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      109,
+      "investitsiya"
+     ],
+     "k": "tag",
+     "text": "INVESTITSIYA? ✗",
+     "x": 0.36,
+     "y": 0.58,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    110,
+    "Va"
+   ],
+   "type": "scene",
+   "bg": "bg_diamond_stage",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      110,
+      "saboq"
+     ],
+     "k": "label",
+     "text": "ENG KATTA SABOQ"
+    },
+    {
+     "at": [
+      110,
+      "hikoya"
+     ],
+     "k": "tag",
+     "text": "HIKOYA UCHUN TO'LAYMIZ",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    111,
+    "Xo'sh"
+   ],
+   "type": "title",
+   "title": "JAVOB",
+   "title2": "NEGA TOSH UYDAN QIMMAT?"
+  },
+  {
+   "at": [
+    112,
+    "Chunki"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      112,
+      "Chunki"
+     ],
+     "k": "mascot",
+     "pose": 1,
+     "side": "right"
+    },
+    {
+     "at": [
+      112,
+      "odamlar"
+     ],
+     "k": "bigtext",
+     "text": "ODAMLAR BELGILAGAN",
+     "x": 0.36,
+     "y": 0.3
+    },
+    {
+     "at": [
+      112,
+      "tabiat"
+     ],
+     "k": "tag",
+     "text": "TABIAT EMAS",
+     "x": 0.36,
+     "y": 0.55
+    }
+   ]
+  },
+  {
+   "at": [
+    113,
+    "Bir"
+   ],
+   "type": "scene",
+   "bg": "bg_vault_release",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      113,
+      "taklifni"
+     ],
+     "k": "tag",
+     "text": "1. TAKLIF NAZORATI"
+    },
+    {
+     "at": [
+      113,
+      "talabni"
+     ],
+     "k": "tag",
+     "text": "2. REKLAMA = TALAB",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    114,
+    "degan"
+   ],
+   "type": "scene",
+   "bg": "bg_ad_poster",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      114,
+      "to'rtta"
+     ],
+     "k": "tag",
+     "text": "3. \"OLMOS ABADIYDIR\"",
+     "fg": "red"
+    },
+    {
+     "at": [
+      114,
+      "an'analarini"
+     ],
+     "k": "tag",
+     "text": "DUNYO AN'ANALARI O'ZGARDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    115,
+    "Bugun"
+   ],
+   "type": "scene",
+   "bg": "bg_lab_diamond",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      115,
+      "laboratoriya"
+     ],
+     "k": "tag",
+     "text": "4. LABORATORIYA SINOVI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    116,
+    "Olmoslar"
+   ],
+   "type": "title",
+   "title": "OLMOSLAR HAQIDA MEN HAM BILMAS EDIM",
+   "title2": "ENDI ESA HAMMAMIZ BILAMIZ"
+  },
+  {
+   "at": [
+    118,
+    "Ana"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      118,
+      "Ana"
+     ],
+     "k": "mascot",
+     "pose": 4,
+     "side": "right"
+    },
+    {
+     "at": [
+      118,
+      "shartmi"
+     ],
+     "k": "tag",
+     "text": "OLMOS UZUK SHARTMI...",
+     "x": 0.36,
+     "y": 0.38
+    },
+    {
+     "at": [
+      118,
+      "reklama"
+     ],
+     "k": "tag",
+     "text": "...YOKI REKLAMA ODATIMI?",
+     "x": 0.36,
+     "y": 0.55,
+     "fg": "red"
+    },
+    {
+     "at": [
+      119,
+      "izohlarda"
+     ],
+     "k": "tag",
+     "text": "IZOHDA YOZING",
+     "x": 0.36,
+     "y": 0.72
+    },
+    {
+     "at": [
+      118,
+      "sizningcha"
+     ],
+     "k": "like",
+     "x": 0.82,
+     "y": 0.2
+    }
+   ]
+  },
+  {
+   "at": [
+    120,
+    "Keyingi"
+   ],
+   "type": "scene",
+   "bg": "bg_inflation",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      120,
+      "Keyingi"
+     ],
+     "k": "label",
+     "text": "KEYINGI QISM"
+    },
+    {
+     "at": [
+      120,
+      "narxlar"
+     ],
+     "k": "tag",
+     "text": "NEGA NARXLAR OSHADI?"
+    },
+    {
+     "at": [
+      120,
+      "so'mimizning"
+     ],
+     "k": "tag",
+     "text": "SO'MNING QADRI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    121,
+    "Gap"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      121,
+      "Gap"
+     ],
+     "k": "mascot",
+     "pose": 2,
+     "side": "right"
+    },
+    {
+     "at": [
+      121,
+      "inflyatsiya"
+     ],
+     "k": "bigtext",
+     "text": "INFLYATSIYA",
+     "x": 0.36,
+     "y": 0.45
+    }
+   ]
+  },
+  {
+   "at": [
+    122,
+    "O'tkazib"
+   ],
+   "type": "end",
+   "pose": 1,
+   "ev": [
+    {
+     "at": [
+      122,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.47,
+     "y": 0.35,
+     "dur": 3.4
+    }
+   ]
+  }
+ ],
+ "shorts": [
+  {
+   "name": "hook",
+   "from": [
+    0,
+    "Bir"
+   ],
+   "to": [
+    8,
+    "Va"
+   ],
+   "hook": ""
+  },
+  {
+   "name": "cartel",
+   "from": [
+    24,
+    "Shu"
+   ],
+   "to": [
+    32,
+    "Lekin"
+   ],
+   "hook": "BITTA KOMPANIYA, 90% OLMOS"
+  },
+  {
+   "name": "ad",
+   "from": [
+    39,
+    "1938-yilda"
+   ],
+   "to": [
+    46,
+    "1947-yilda"
+   ],
+   "hook": "MAHSULOTSIZ REKLAMA"
+  },
+  {
+   "name": "forever",
+   "from": [
+    46,
+    "1947-yilda"
+   ],
+   "to": [
+    57,
+    "Natija"
+   ],
+   "hook": "DUNYONI O'ZGARTIRGAN 4 SO'Z"
+  },
+  {
+   "name": "japan",
+   "from": [
+    61,
+    "Keyin"
+   ],
+   "to": [
+    68,
+    "Endi"
+   ],
+   "hook": "YANGI AN'ANA 20 YILDA"
+  },
+  {
+   "name": "blood",
+   "from": [
+    74,
+    "1990-yillarda"
+   ],
+   "to": [
+    84,
+    "Endi"
+   ],
+   "hook": "QONLI OLMOSLAR"
+  },
+  {
+   "name": "lab",
+   "from": [
+    85,
+    "U"
+   ],
+   "to": [
+    98,
+    "Shu"
+   ],
+   "hook": "OLMOS BOZORI QULAYAPTIMI?"
+  }
+ ],
+ "end_hold": 9,
+ "pauses": {
+  "37": 1.2,
+  "39": 1.1
+ },
+ "end_slots": 2,
+ "end_next": "INFLYATSIYA",
+ "series_label": "4-QISM: OLMOSLAR",
+ "partners": "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari.",
+ "partner_logos": [
+  {
+   "img": "assets/partners/californiauzbek.png",
+   "anim": "assets/partners/californiauzbek_anim.webm",
+   "site": "californiauzbek.com"
+  },
+  {
+   "img": "assets/partners/bysmillah.png",
+   "anim": "assets/partners/bysmillah_anim.mp4",
+   "loop": true,
+   "site": "bysmillah.com",
+   "round": true
+  }
+ ],
+ "handle": "@bilmasboy",
+ "socials": [
+  [
+   "youtube",
+   "@bilmasboy"
+  ],
+  [
+   "instagram",
+   "@bilmas.boy"
+  ],
+  [
+   "tiktok",
+   "@bilmas.boy"
+  ],
+  [
+   "facebook",
+   "@bilmas.boy"
+  ],
+  [
+   "telegram",
+   "@bilmas_boy"
+  ]
+ ]
+}

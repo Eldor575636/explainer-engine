@@ -28,7 +28,7 @@ back_out, ease_out = motion.back_out, motion.ease_out
 PAUSE_WORD, PAUSE_COMMA, PAUSE_SENT, PAUSE_BEAT = 0.20, 0.28, 0.38, 0.55
 
 
-def smart_pieces(wav, total, words, beat_starts):
+def smart_pieces(wav, total, words, beat_starts, pauses=None):
     """Cut every silence down to a target that depends on its position:
     inside a sentence (hesitations while reading) -> short, after a comma -> a bit more,
     between sentences -> a breath, at a new picture (beat) -> a slightly longer breath.
@@ -44,7 +44,7 @@ def smart_pieces(wav, total, words, beat_starts):
         w, si, s, e = words[i]; nxt = words[i + 1]
         t = (e + nxt[2]) / 2
         if nxt[1] != si:
-            target = PAUSE_BEAT if nxt[1] in beat_starts else PAUSE_SENT
+            target = (pauses or {}).get(nxt[1]) or (PAUSE_BEAT if nxt[1] in beat_starts else PAUSE_SENT)
         elif w.endswith((",", ":", ";")):
             target = PAUSE_COMMA
         else:
@@ -577,7 +577,8 @@ def main():
     print(f"Aligned {matched}/{len(sw)} words")
     beat_starts = {b["at"][0] for b in beats[1:]}
     pieces, T, tmap = smart_pieces(work / "raw.wav", total,
-                                   [(w, si, s, e) for (w, si), (s, e) in zip(sw, times)], beat_starts)
+                                   [(w, si, s, e) for (w, si), (s, e) in zip(sw, times)], beat_starts,
+                                   {int(k): v for k, v in cfg.get("pauses", {}).items()})
     nt = [(tmap(s), tmap(e)) for s, e in times]
     ENDN = int(cfg.get("end_slots", 4))                    # 4 = classic layout; 2 = YouTube's 2 videos + subscribe
     END2 = {"slots": [(0.79, 0.35), (0.79, 0.66)], "size": 0.27, "mascot": (0.165, 0.86, 0.56), "flip": False,
@@ -690,6 +691,8 @@ def main():
             xsfx += [(b["t0"] + 0.15 * k, "pop", None) for k in range(4)]
         if typ == "chapter":
             xsfx.append((b["t0"] + 0.2, "hit", None))
+        for off, name in b.get("sfx", []):              # extra sound effects on a beat: [[seconds after start, name], ...]
+            xsfx.append((b["t0"] + off, name, None))
         if bi:
             prev = beats[bi - 1]
             tr = prev.get("trans") or ("zoom" if typ in ("chapter", "title", "intro") else
@@ -749,12 +752,16 @@ def main():
                         return fx.Like(ee, F, Wd, Hd, LBL.get("like", "LAYK"))
                     return fx.News(ee, F, Wd, Hd, new_alphabet(ee["text"]))
                 e["_o"] = mk(e, W, H)
-                vert = {"bars": dict(x=0.5, y=0.42, w=0.9, h=0.32), "pie": dict(x=0.32, y=0.4, r=0.13),
+                vert = {"bars": dict(x=0.5, y=0.42, w=0.9, h=0.32), "pie": dict(x=0.25, y=0.4, r=0.12),
                         "subscribe": dict(x=0.42, y=0.84), "like": dict(x=0.5, y=0.9), "news": {}}[k]
                 e["_ov"] = mk(dict(e, **vert), VW, VH)
                 xsfx += e["_o"].sounds(b["t0"] + e["t"])
             elif k == "bigtext":
-                e["_s"] = text_sprite(new_alphabet(e["text"]), motion.ANTON, 300, RED, 0); sfx.append((b["t0"] + e["t"], "pop"))
+                sz = e.get("size", 300)
+                e["_s"] = text_sprite(new_alphabet(e["text"]), motion.ANTON, sz, RED, 0)
+                if e["_s"].w > W * 0.9:                      # long phrase: shrink to fit the frame
+                    e["_s"] = text_sprite(new_alphabet(e["text"]), motion.ANTON, int(sz * W * 0.9 / e["_s"].w), RED, 0)
+                sfx.append((b["t0"] + e["t"], "pop"))
             elif k == "flag":
                 codes = e["code"] if isinstance(e["code"], list) else [e["code"]]
                 e["_s"] = flag_sprite(codes, e.get("h", 120)); sfx.append((b["t0"] + e["t"], "pop"))
@@ -795,8 +802,8 @@ def main():
                 continue
             bi_ = max(i for i, bb in enumerate(beats) if bb["t0"] <= a_ + 1e-6)
             bb = beats[bi_]
-            if bb["type"] in ("title", "chapter", "intro", "end"):
-                continue
+            if bb["type"] in ("title", "chapter", "intro", "end") or bb.get("noauto") or any(e["k"] in ("bars", "pie") for e in bb["_ev"]):
+                continue                                   # charts carry their own numbers
             cands = []
             for k, ((w, si), (s0, e0)) in enumerate(zip(sw, nt)):
                 if a_ + 1.2 < s0 < b_ - 1.0:
@@ -1043,7 +1050,8 @@ def main():
                 e["_s"].draw(c, (0.5 if V else e["x"]) * Wd, (0.6 if V else e["y"]) * Hd + 3 * math.sin(lt * 2.2),
                              back_out(lt / 0.35), e["rot"], min(1, lt / 0.08))
             elif k == "bigtext":
-                e["_s"].draw(c, (0.5 if V else e["x"]) * Wd, (0.42 if V else e["y"]) * Hd, back_out(lt / 0.35) * (0.8 if V else 1), 0, min(1, lt / 0.08))
+                e["_s"].draw(c, (0.5 if V else e["x"]) * Wd, (0.42 if V else e["y"]) * Hd,
+                             back_out(lt / 0.35) * (min(0.8, Wd * 0.9 / e["_s"].w) if V else 1), 0, min(1, lt / 0.08))
             elif k == "rings":
                 for j in range(3):
                     ph = (lt - j * 0.45) % 1.35
@@ -1096,6 +1104,7 @@ def main():
 
     # --- preview mode: PREVIEW="12.5,40,..." saves stills (16:9 and 9:16) and exits ---
     import os
+    (work / "beat_times.json").write_text(json.dumps([[b["type"], round(b["t0"], 2), round(b["t1"], 2)] for b in beats]))
     if os.environ.get("PREVIEW"):
         def ptime(x):
             if x.startswith("@"):                     # @sentence:word[+offset]
