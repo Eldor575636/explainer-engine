@@ -137,6 +137,8 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 
 ## Open items
 
+- Next end-screen round: put the channel avatar inside the red subscribe ring (empty ring looks unfinished); fix E03 slow spots (chapter card 6:48 holds 6.2 s); owner to pick from the 2026-11-10 suggestions (signature music theme, decisions tracker, Uzbekistan bar, source tags).
+
 - Pilot picture 13 (two ballot boxes) reads as ballot stuffing → owner is regenerating it.
 - Owner will send 3–5 more reference reels with timestamped notes → add to `docs/reference-analysis.md`.
 - ElevenLabs Uzbek test is pending.
