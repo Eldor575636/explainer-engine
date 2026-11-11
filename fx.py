@@ -323,11 +323,15 @@ class News:
                 cv2.rectangle(c, (int(x - ww / 2), int(y - 180 + 62 + 4 - 10)), (int(x - ww / 2 + ww * q), int(y - 180 + 62 + hh)), c01(RED), 6, cv2.LINE_AA)
 
 
-def end_frames(c, lt, W, H, fonts, label):
-    """Four empty 'watch next' frames (YouTube end-screen slots) around the centre."""
+def end_frames(c, lt, W, H, fonts, label, slots=None, size=0.27):
+    """Empty 'watch next' frames (YouTube end-screen slots). Default: four around the centre.
+    slots: list of (x, y) as fractions of W/H; size: frame width as a fraction of W.
+    With custom slots the label sits inside the frame, under the play icon."""
+    inside = slots is not None
     lab = text_rgba(label, fonts["mont"], 34, NAVY)
-    fw, fh = W * 0.27, W * 0.27 * 9 / 16
-    slots = [(W * 0.2, H * 0.3), (W * 0.2, H * 0.68), (W * 0.8, H * 0.3), (W * 0.8, H * 0.68)]
+    fw, fh = W * size, W * size * 9 / 16
+    slots = [(W * x, H * y) for x, y in slots] if inside else \
+        [(W * 0.2, H * 0.3), (W * 0.2, H * 0.68), (W * 0.8, H * 0.3), (W * 0.8, H * 0.68)]
     for k, (x, y) in enumerate(slots):
         p = back_out((lt - 0.15 * k) / 0.4)
         if p <= 0.01:
@@ -339,9 +343,10 @@ def end_frames(c, lt, W, H, fonts, label):
             cv2.line(c, (xx, y0), (min(xx + 14, x1), y0), c01(NAVY), 3); cv2.line(c, (xx, y1), (min(xx + 14, x1), y1), c01(NAVY), 3)
         for yy in range(y0, y1, 28):
             cv2.line(c, (x0, yy), (x0, min(yy + 14, y1)), c01(NAVY), 3); cv2.line(c, (x1, yy), (x1, min(yy + 14, y1)), c01(NAVY), 3)
-        cv2.circle(c, (int(x), int(y)), int(34 * p), c01(RED), -1, cv2.LINE_AA)
-        cv2.fillPoly(c, [np.int32([[x - 10 * p, y - 16 * p], [x - 10 * p, y + 16 * p], [x + 16 * p, y]])], (1, 1, 1), cv2.LINE_AA)
-        paste(c, lab, x, y + h / 2 + 34, p)
+        cy = y - 24 * p if inside else y
+        cv2.circle(c, (int(x), int(cy)), int(34 * p), c01(RED), -1, cv2.LINE_AA)
+        cv2.fillPoly(c, [np.int32([[x - 10 * p, cy - 16 * p], [x - 10 * p, cy + 16 * p], [x + 16 * p, cy]])], (1, 1, 1), cv2.LINE_AA)
+        paste(c, lab, x, (y + 46 * p) if inside else (y + h / 2 + 34), p)
 
 
 def wordmark(fonts, size=230):

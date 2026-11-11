@@ -309,7 +309,7 @@ def _anim_frames(path, h, n, loop, skip=0):
     return [Image.fromarray(a[(i % len(a)) if loop else min(i, len(a) - 1)].copy(), "RGBA").resize((w // 2, h), Image.LANCZOS) for i in range(n)]
 
 
-def partner_card(logos, logo_h=110, font=26, gap=50, pad=22, frames=1, skip=0):
+def partner_card(logos, logo_h=110, font=26, gap=50, pad=22, frames=1, skip=0, style="card"):
     """White card with each partner logo and its website underneath (cfg partner_logos: [{img, site, anim?, loop?}]).
     With frames > 1 and an `anim` file, returns a list of sprites (one per frame) so the logos move."""
     from PIL import ImageDraw, ImageFont
@@ -323,12 +323,31 @@ def partner_card(logos, logo_h=110, font=26, gap=50, pad=22, frames=1, skip=0):
             seqs.append([im.resize((int(im.width * logo_h / im.height), logo_h), Image.LANCZOS)] * max(1, frames))
     out = []
     for fi in range(max(1, frames)):
-        out.append(_partner_card_frame(logos, [sq[fi] for sq in seqs], logo_h, f, font, gap, pad))
+        out.append(_partner_card_frame(logos, [sq[fi] for sq in seqs], logo_h, f, font, gap, pad, style))
     return out if frames > 1 else out[0]
 
 
-def _partner_card_frame(logos, ims, logo_h, f, font, gap, pad):
+def _partner_card_frame(logos, ims, logo_h, f, font, gap, pad, style="card"):
+    """style "card": white card, logos side by side, website under each.
+    style "list": no background, one row per partner (small logo, website to its right), stacked."""
     from PIL import ImageDraw
+    if style == "list":
+        rows = []
+        for lg, im in zip(logos, ims):
+            im = im.copy()
+            if lg.get("round"):
+                mk = Image.new("L", im.size, 0); ImageDraw.Draw(mk).rounded_rectangle((0, 0, im.width - 1, im.height - 1), int(logo_h * 0.18), fill=255)
+                im.putalpha(Image.fromarray(np.minimum(np.asarray(im)[..., 3], np.asarray(mk))))
+            bb = f.getbbox(lg["site"]); tw, th = bb[2] - bb[0], bb[3] - bb[1]
+            row = Image.new("RGBA", (logo_h + 24 + tw + 4, logo_h), (0, 0, 0, 0))
+            row.alpha_composite(im, ((logo_h - im.width) // 2 if im.width < logo_h else 0, 0))
+            ImageDraw.Draw(row).text((logo_h + 24 - bb[0], (logo_h - th) // 2 - bb[1]), lg["site"], font=f, fill=NAVY + (255,))
+            rows.append(row)
+        W_ = max(r.width for r in rows); H_ = sum(r.height for r in rows) + 22 * (len(rows) - 1)
+        img = Image.new("RGBA", (W_, H_), (0, 0, 0, 0)); y = 0
+        for r in rows:
+            img.alpha_composite(r, (0, y)); y += r.height + 22
+        return motion.Sprite(img)
     cells = []
     for lg, im in zip(logos, ims):
         im = im.copy()
@@ -554,6 +573,9 @@ def main():
     pieces, T, tmap = smart_pieces(work / "raw.wav", total,
                                    [(w, si, s, e) for (w, si), (s, e) in zip(sw, times)], beat_starts)
     nt = [(tmap(s), tmap(e)) for s, e in times]
+    ENDN = int(cfg.get("end_slots", 4))                    # 4 = classic layout; 2 = YouTube's 2 videos + subscribe
+    END2 = {"slots": [(0.75, 0.40), (0.75, 0.73)], "size": 0.30, "mascot": (0.14, 1.0, 0.6), "flip": False,
+            "card": (0.422, 0.69, 580), "sub": (0.42, 0.36), **cfg.get("end_layout", {})}
     HOLD = float(cfg.get("end_hold", 0))                   # silent seconds after the last word so the end screen stays up
     T += HOLD
     print(f"Voice {total:.1f}s -> {T:.1f}s ({len(pieces)} pieces{f', +{HOLD:g}s end screen' if HOLD else ''})")
@@ -891,10 +913,15 @@ def main():
                 x0 = int(Wd * (0.5 if V else 0.34) - wm.width * sc / 2)
                 cv2.line(c, (x0, y), (int(x0 + wm.width * sc * q), y), fx.c01(RED), 10, cv2.LINE_AA)
         if b["type"] == "end":
-            if not V:
-                fx.end_frames(c, t, W, H, F, LBL.get("next", "KEYINGI VIDEO"))
             sp = b["_pose"]
-            sp.draw(c, Wd * 0.5, Hd * (0.55 if V else 0.2) + sp.h / 2 + (1 - ease_out(t / 0.6)) * Hd * 0.7, 0.85 if V else 0.9)
+            if not V and ENDN == 2:
+                fx.end_frames(c, t, W, H, F, LBL.get("next", "KEYINGI VIDEO"), slots=END2["slots"], size=END2["size"])
+                mx, my, ms = END2["mascot"]
+                (sp.flip() if END2.get("flip") else sp).draw(c, W * mx, H * my - sp.h * ms / 2 + (1 - ease_out(t / 0.6)) * H * 0.7, ms)
+            else:
+                if not V:
+                    fx.end_frames(c, t, W, H, F, LBL.get("next", "KEYINGI VIDEO"))
+                sp.draw(c, Wd * 0.5, Hd * (0.55 if V else 0.2) + sp.h / 2 + (1 - ease_out(t / 0.6)) * Hd * 0.7, 0.85 if V else 0.9)
         return draw_events(c, b, t, dur, SCREEN, V)
 
     def vcrop(c, b, t):
@@ -1021,6 +1048,25 @@ def main():
                     c = c * (1 - a) + ov * a
         return c
 
+    # --- end-screen overlays (screen layer, long video only) ---
+    soc_row = socials_sprite(cfg["socials"], icon=40, font=32, gapx=40) if cfg.get("socials") else None
+    partners = seeded(motion.tag_sprite, new_alphabet(cfg["partners"]), 34, NAVY) if cfg.get("partners") else None
+    pcard = (partner_card(cfg["partner_logos"], logo_h=80, font=46, frames=12 * FPS, style="list") if ENDN == 2 else
+             partner_card(cfg["partner_logos"], frames=12 * FPS)) if cfg.get("partner_logos") else None
+
+    def end_overlay(frame, lt):
+        """Socials row, partners line and the animated partner-logo card on the end beat."""
+        if soc_row is not None:
+            soc_row.draw(frame, W / 2, 40, back_out(lt / 0.4), 0, min(1, lt / 0.15))
+        lt -= 0.3
+        if partners is not None and lt > 0 and ENDN != 2:     # 2-slot layout: the logos + websites replace the text line
+            partners.draw(frame, W / 2, 104, back_out(min(1, lt / 0.4)), 0, min(1, lt / 0.15))
+        lt2 = lt - (0.8 if ENDN == 2 else 4.6)        # 4-slot layout: card replaces the subscribe button
+        if pcard is not None and lt2 > 0:
+            pc = pcard[min(len(pcard) - 1, int(lt2 * FPS))]
+            x, y, wmax = (END2["card"][0] * W, END2["card"][1] * H, END2["card"][2]) if ENDN == 2 else (W / 2, H * 0.25, 600)
+            pc.draw(frame, x, y, back_out(min(1, lt2 / 0.4)) * min(1, wmax / pc.w), 0, min(1, lt2 / 0.15))
+
     # --- preview mode: PREVIEW="12.5,40,..." saves stills (16:9 and 9:16) and exits ---
     import os
     if os.environ.get("PREVIEW"):
@@ -1037,6 +1083,8 @@ def main():
                     ci_ = max([i for i, cp in enumerate(caps) if cp[0] <= tt] or [0]); st, en, wst, sprs = caps[ci_]
                     if st <= tt < en:
                         cap_sprites(sprs)[max(j for j in range(len(wst)) if wst[j] <= tt or j == 0)].draw(fr, W / 2, H - 78)
+                if not V and beats[bi_]["type"] == "end":
+                    end_overlay(fr, tt - beats[bi_]["t0"])
                 Image.fromarray((np.clip(fr, 0, 1) * 255).astype(np.uint8)).save(work / f"prev_{'v' if V else 'h'}_{tt:06.1f}.jpg", quality=85)
         print("preview saved"); return
 
@@ -1052,9 +1100,6 @@ def main():
         ci, bi = 0, 0
         rng = random.Random(3)
         bug = LogoBug(54) if cfg.get("logo_bug", True) else None
-        soc_row = socials_sprite(cfg["socials"], icon=40, font=32, gapx=40) if cfg.get("socials") else None
-        partners = seeded(motion.tag_sprite, new_alphabet(cfg["partners"]), 34, NAVY) if cfg.get("partners") else None
-        pcard = partner_card(cfg["partner_logos"], frames=12 * FPS) if cfg.get("partner_logos") else None
         for fi in range(nframes):
             t = fi / FPS
             while bi + 1 < len(beats) and beats[bi + 1]["t0"] <= t:
@@ -1085,17 +1130,8 @@ def main():
                     frame = cv2.warpAffine(frame, M, (W, H), borderMode=cv2.BORDER_REFLECT)
             if bug is not None and beats[bi]["type"] not in ("intro", "end"):
                 bug.draw(frame, t, 34, 26, top_left_busy(beats[bi], t - beats[bi]["t0"], False))
-            if soc_row is not None and beats[bi]["type"] == "end":
-                lt = t - beats[bi]["t0"]
-                soc_row.draw(frame, W / 2, 40, back_out(lt / 0.4), 0, min(1, lt / 0.15))
-            if partners is not None and beats[bi]["type"] == "end":
-                lt = t - beats[bi]["t0"] - 0.3
-                if lt > 0:
-                    partners.draw(frame, W / 2, 104, back_out(min(1, lt / 0.4)), 0, min(1, lt / 0.15))
-                lt2 = lt - 4.6                         # logo card after the subscribe button has played
-                if pcard is not None and lt2 > 0:
-                    pc = pcard[min(len(pcard) - 1, int(lt2 * FPS))]
-                    pc.draw(frame, W / 2, H * 0.25, back_out(min(1, lt2 / 0.4)) * min(1, 600 / pc.w), 0, min(1, lt2 / 0.15))
+            if beats[bi]["type"] == "end":
+                end_overlay(frame, t - beats[bi]["t0"])
             ff.stdin.write((np.clip(frame, 0, 1) * 255).astype(np.uint8).tobytes())
             if fi % 500 == 0:
                 print(f"  {fi}/{nframes}", flush=True)

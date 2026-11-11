@@ -3084,8 +3084,8 @@
       "obuna"
      ],
      "k": "subscribe",
-     "x": 0.5,
-     "y": 0.23,
+     "x": 0.42,
+     "y": 0.36,
      "dur": 3.4
     }
    ]
@@ -3178,6 +3178,7 @@
   }
  ],
  "end_hold": 9,
+ "end_slots": 2,
  "series_label": "3-QISM: SINGAPUR",
  "partners": "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari.",
  "partner_logos": [

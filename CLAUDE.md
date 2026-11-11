@@ -183,7 +183,7 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - No picture on screen longer than ~10 s: split long beats and generate extra scene pictures.
 - Engine: charts/counters on pictures get a cream card; long tags are clamped inside the frame; stamps accept x/y;
   the corner logo only opens when the top-left is clear; Shorts logo sits at (52, 74) and the hook banner at y=235.
-- End screen lasts ~15 s: cfg `end_hold` (s of silence after the last word, music keeps playing). Subscribe button at y .23 (not under the partners line). Partner logos (assets/partners/, from the owner's Media Projects brand folders): cfg `partner_logos` → logo card with websites on the end screen (after the subscribe animation) and on every Short end card.
+- End screen layout (from E03 on): cfg `end_slots: 2` → mascot bottom-left pointing right, subscribe animation in the middle, then partner logos (small, no card, website to the right of each, stacked) below it; no "Hamkorlarimiz" text line on this layout; 2 dashed "KEYINGI VIDEO" frames on the right (YouTube allows 2 videos + subscribe); tweak via cfg `end_layout`. End screen lasts ~15 s: cfg `end_hold` (s of silence after the last word, music keeps playing). Subscribe event on the end beat: x .42 y .36 for 2 slots (x .5 y .23 for the old 4-slot layout). Partner logos (assets/partners/, from the owner's Media Projects brand folders): cfg `partner_logos` → logo card with websites on the end screen (after the subscribe animation) and on every Short end card.
 
 ## Thumbnails and titles (2026-11-08)
 

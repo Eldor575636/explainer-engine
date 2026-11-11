@@ -8,7 +8,10 @@ FULL = {"E01": ["Dollar tugayaptimi? AQSh dollari qanday qilib dunyo puliga ayla
                 "Nega butun dunyo aynan dollarga ishonadi?", "So'mingiz nega dollarga bog'liq? Dollar tarixi"],
         "E02": ["Sanksiyalar qanday ishlaydi? Mir kartasidan 300 milliard dollargacha",
                 "Sanksiyalar ishlaydimi? Amerikaning eng kuchli quroli",
-                "Sanksiya nima va u O'zbekistonga qanday ta'sir qiladi?"]}
+                "Sanksiya nima va u O'zbekistonga qanday ta'sir qiladi?"],
+        "E03": ["Resurssiz kichik orol qanday boyib ketdi? Singapur va Li Kuan Yu",
+                "500 dollardan 80 ming dollargacha: Singapur mo'jizasi va uning narxi",
+                "Mustaqillik kuni yig'lagan bosh vazir: Li Kuan Yu Singapurni qanday qurdi?"]}
 PARTNERS = "Hamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com)."
 SF_OFFSET = 8          # PST (Nov-Mar); use 7 in PDT (Mar-Nov)
 DELAY_MIN = 5          # post 5 minutes after the YouTube video goes live

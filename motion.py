@@ -37,6 +37,14 @@ class Sprite:
         self.a = a[..., 3:4]
         self.h, self.w = a.shape[:2]
 
+    def flip(self):
+        """Mirrored copy (cached), e.g. to turn a pointing mascot towards the other side."""
+        if not hasattr(self, "_flip"):
+            f = Sprite.__new__(Sprite)
+            f.rgb, f.a, f.h, f.w = self.rgb[:, ::-1].copy(), self.a[:, ::-1].copy(), self.h, self.w
+            self._flip = f
+        return self._flip
+
     def draw(self, canvas, cx, cy, scale=1.0, rot=0.0, alpha=1.0):
         if alpha <= 0.01 or scale <= 0.01:
             return

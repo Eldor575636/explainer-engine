@@ -2,30 +2,6 @@
  "note": "Times are UTC. Built from Bilmasboy_content_schedule.xlsx by make_posts.py.",
  "posts": [
   {
-   "id": "E01_6_nixon",
-   "at_utc": "2026-11-11T14:05:00",
-   "video_title": "1971: dollarning oltin va'dasi qanday tugadi?",
-   "full_title": [
-    "Dollar tugayaptimi? AQSh dollari qanday qilib dunyo puliga aylandi",
-    "Nega butun dunyo aynan dollarga ishonadi?",
-    "So'mingiz nega dollarga bog'liq? Dollar tarixi"
-   ],
-   "text": "Vetnam urushi, de Goll va Niksonning bir kechalik qarori.\n{link}\nTo'liq video: {full}\n#dollar #tarix #bilmasboy\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy",
-   "skip": true
-  },
-  {
-   "id": "E01_7_future",
-   "at_utc": "2026-11-12T14:05:00",
-   "video_title": "Dollar hukmronligi tugayaptimi?",
-   "full_title": [
-    "Dollar tugayaptimi? AQSh dollari qanday qilib dunyo puliga aylandi",
-    "Nega butun dunyo aynan dollarga ishonadi?",
-    "So'mingiz nega dollarga bog'liq? Dollar tarixi"
-   ],
-   "text": "Yuan, BRIKS va markaziy banklarning oltin xaridi.\n{link}\nTo'liq video: {full}\n#dollar #briks #bilmasboy\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy",
-   "skip": true
-  },
-  {
    "id": "E02_episode",
    "at_utc": "2026-11-13T12:15:00",
    "video_title": [
@@ -35,18 +11,6 @@
    ],
    "text": "2-qism chiqdi! 🎬\nSanksiyalar qanday ishlaydi va ular haqiqatan ishlaydimi?\nMir kartasi, Eron, Rossiyaning 300 milliard dollari va O'zbekiston.\n👉 {link}\nBilmaganimizni birga bilib olamiz.\n\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy",
    "photo": "photos/E02_thumb_A.jpg"
-  },
-  {
-   "id": "E02_1_hook",
-   "at_utc": "2026-11-13T14:05:00",
-   "video_title": "Hech kim o'q uzmadi, lekin kartasi ishlamay qoldi",
-   "full_title": [
-    "Sanksiyalar qanday ishlaydi? Mir kartasidan 300 milliard dollargacha",
-    "Sanksiyalar ishlaydimi? Amerikaning eng kuchli quroli",
-    "Sanksiya nima va u O'zbekistonga qanday ta'sir qiladi?"
-   ],
-   "text": "2022-yil sentabr: O'zbekistonda \"Mir\" kartalari to'xtadi. Sababi, sanksiya.\n{link}\nTo'liq video: {full}\n#sanksiya #bilmasboy #ozbekcha\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy",
-   "skip": true
   },
   {
    "id": "E02_2_types",
@@ -113,6 +77,94 @@
     "Sanksiya nima va u O'zbekistonga qanday ta'sir qiladi?"
    ],
    "text": "Mir kartalari, qora ro'yxatdagi kompaniyalar va migrantlar pul o'tkazmalari.\n{link}\nTo'liq video: {full}\n#ozbekiston #sanksiya #bilmasboy\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy"
+  },
+  {
+   "id": "E03_episode",
+   "at_utc": "2026-11-20T12:15:00",
+   "video_title": [
+    "Resurssiz kichik orol qanday boyib ketdi? Singapur va Li Kuan Yu",
+    "500 dollardan 80 ming dollargacha: Singapur mo'jizasi va uning narxi",
+    "Mustaqillik kuni yig'lagan bosh vazir: Li Kuan Yu Singapurni qanday qurdi?"
+   ],
+   "text": "3-qism chiqdi! 🎬\nResurssiz kichik orol qanday qilib dunyoning eng boy davlatlaridan biriga aylandi?\nLi Kuan Yu, to'rt qaror va bu yo'lning narxi.\n👉 {link}\nBilmaganimizni birga bilib olamiz.\n\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy",
+   "photo": "photos/E03_thumb_A.jpg"
+  },
+  {
+   "id": "E03_1_hook",
+   "at_utc": "2026-11-20T14:05:00",
+   "video_title": "Mustaqillik kuni yig'lagan rahbar",
+   "full_title": [
+    "Resurssiz kichik orol qanday boyib ketdi? Singapur va Li Kuan Yu",
+    "500 dollardan 80 ming dollargacha: Singapur mo'jizasi va uning narxi",
+    "Mustaqillik kuni yig'lagan bosh vazir: Li Kuan Yu Singapurni qanday qurdi?"
+   ],
+   "text": "1965-yil: Singapur mustaqil bo'ldi, lekin unda deyarli hech narsa yo'q edi.\n{link}\nTo'liq video: {full}\n#singapur #bilmasboy #ozbekcha\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy"
+  },
+  {
+   "id": "E03_2_independence",
+   "at_utc": "2026-11-21T14:05:00",
+   "video_title": "Mustaqillikka majbur qilingan davlat",
+   "full_title": [
+    "Resurssiz kichik orol qanday boyib ketdi? Singapur va Li Kuan Yu",
+    "500 dollardan 80 ming dollargacha: Singapur mo'jizasi va uning narxi",
+    "Mustaqillik kuni yig'lagan bosh vazir: Li Kuan Yu Singapurni qanday qurdi?"
+   ],
+   "text": "Singapur mustaqillikni so'ramagan: uni Malayziya federatsiyadan chiqargan.\n{link}\nTo'liq video: {full}\n#singapur #tarix #bilmasboy\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy"
+  },
+  {
+   "id": "E03_3_doors",
+   "at_utc": "2026-11-22T14:05:00",
+   "video_title": "Singapur xorijiy sarmoyani qanday jalb qildi?",
+   "full_title": [
+    "Resurssiz kichik orol qanday boyib ketdi? Singapur va Li Kuan Yu",
+    "500 dollardan 80 ming dollargacha: Singapur mo'jizasi va uning narxi",
+    "Mustaqillik kuni yig'lagan bosh vazir: Li Kuan Yu Singapurni qanday qurdi?"
+   ],
+   "text": "Boshqalar xorijiy zavodlarni milliylashtirganda, Singapur \"Kelinglar!\" dedi.\n{link}\nTo'liq video: {full}\n#singapur #investitsiya #bilmasboy\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy"
+  },
+  {
+   "id": "E03_4_corruption",
+   "at_utc": "2026-11-23T14:05:00",
+   "video_title": "Korrupsiyaga qarshi Singapur usuli",
+   "full_title": [
+    "Resurssiz kichik orol qanday boyib ketdi? Singapur va Li Kuan Yu",
+    "500 dollardan 80 ming dollargacha: Singapur mo'jizasi va uning narxi",
+    "Mustaqillik kuni yig'lagan bosh vazir: Li Kuan Yu Singapurni qanday qurdi?"
+   ],
+   "text": "Halol ishlaganga yaxshi maosh, pora olganga qattiq jazo. Hatto vazirlarga ham.\n{link}\nTo'liq video: {full}\n#korrupsiya #singapur #bilmasboy\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy"
+  },
+  {
+   "id": "E03_5_housing",
+   "at_utc": "2026-11-24T14:05:00",
+   "video_title": "10 kishidan 8 tasi davlat qurgan uyda",
+   "full_title": [
+    "Resurssiz kichik orol qanday boyib ketdi? Singapur va Li Kuan Yu",
+    "500 dollardan 80 ming dollargacha: Singapur mo'jizasi va uning narxi",
+    "Mustaqillik kuni yig'lagan bosh vazir: Li Kuan Yu Singapurni qanday qurdi?"
+   ],
+   "text": "Ijara emas, sotib olish: Singapur qanday qilib uy egalari davlatiga aylandi.\n{link}\nTo'liq video: {full}\n#uyjoy #singapur #bilmasboy\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy"
+  },
+  {
+   "id": "E03_6_price",
+   "at_utc": "2026-11-25T14:05:00",
+   "video_title": "Singapur muvaffaqiyatining narxi",
+   "full_title": [
+    "Resurssiz kichik orol qanday boyib ketdi? Singapur va Li Kuan Yu",
+    "500 dollardan 80 ming dollargacha: Singapur mo'jizasi va uning narxi",
+    "Mustaqillik kuni yig'lagan bosh vazir: Li Kuan Yu Singapurni qanday qurdi?"
+   ],
+   "text": "Bir partiya, nazoratdagi OAV, qattiq qonunlar va hatto saqich taqiqi.\n{link}\nTo'liq video: {full}\n#singapur #bilmasboy #ozbekcha\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy"
+  },
+  {
+   "id": "E03_7_lesson",
+   "at_utc": "2026-11-26T14:05:00",
+   "video_title": "Singapur va O'zbekiston: qanday saboq?",
+   "full_title": [
+    "Resurssiz kichik orol qanday boyib ketdi? Singapur va Li Kuan Yu",
+    "500 dollardan 80 ming dollargacha: Singapur mo'jizasi va uning narxi",
+    "Mustaqillik kuni yig'lagan bosh vazir: Li Kuan Yu Singapurni qanday qurdi?"
+   ],
+   "text": "Saboq yer ostida emas: qonun, korrupsiyaga qarshi kurash, ta'lim va investorga ishonch.\n{link}\nTo'liq video: {full}\n#ozbekiston #singapur #bilmasboy\nHamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com).\n@bilmas_boy"
   }
  ]
 }
