@@ -978,6 +978,7 @@ def main():
         ov = c.copy(); cv2.rectangle(ov, (x0, y0), (x1, y1), tuple(v / 255 for v in CREAM), -1)
         cv2.rectangle(ov, (x0, y0), (x1, y1), tuple(v / 255 for v in NAVY), 4, cv2.LINE_AA)
         return c * (1 - 0.93 * a) + ov * 0.93 * a
+    card_fn = card                                   # stable name: the Shorts code later reuses `card` for its end card
 
     def top_left_busy(b, t, V):
         """True when a label/tag/flag/counter sits where the corner logo would open up."""
@@ -1009,7 +1010,8 @@ def main():
                 sc = back_out(lt / 0.38) * (1.15 if V else 1)
                 e["_s"].draw(c, ex, ey, sc, e["rot"] * sc, min(1, lt / 0.08))
             elif k == "stamp":
-                e["_s"].draw(c, ex, ey, 2.3 - 1.3 * ease_out(lt / 0.16), -7, min(1, lt / 0.06))
+                fit = min(1, Wd * 0.84 / e["_s"].w) if V else 1             # long stamps fit the 9:16 frame
+                e["_s"].draw(c, ex, ey, (2.3 - 1.3 * ease_out(lt / 0.16)) * fit, -7, min(1, lt / 0.06))
             elif k in ("bars", "pie", "subscribe", "like", "news"):
                 if k in ("bars", "pie") and not V and b["type"] in ("scene", "map", "portrait"):
                     o = e["_o"]
@@ -1062,7 +1064,7 @@ def main():
                     sc_ = min(0.8, Wd * 0.9 / e["_s"].w) if V else 1
                     bx, by = (0.5 if V else e["x"]) * Wd, (0.42 if V else e["y"]) * Hd
                     hw, hh = e["_s"].w * sc_ / 2 + 36, e["_s"].h * sc_ / 2 + 20
-                    c = card(c, (bx - hw, by - hh, bx + hw, by + hh), min(1, lt / 0.2))
+                    c = card_fn(c, (bx - hw, by - hh, bx + hw, by + hh), min(1, lt / 0.2))
                 e["_s"].draw(c, (0.5 if V else e["x"]) * Wd, (0.42 if V else e["y"]) * Hd,
                              back_out(lt / 0.35) * (min(0.8, Wd * 0.9 / e["_s"].w) if V else 1), 0, min(1, lt / 0.08))
             elif k == "rings":
