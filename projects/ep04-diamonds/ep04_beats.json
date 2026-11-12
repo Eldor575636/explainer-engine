@@ -1,5 +1,9 @@
 {
  "layers": "layers",
+ "auto_skip": [
+  "Birs",
+  "Beers"
+ ],
  "music": {
   "curious": "../../assets/music/curious.mp3",
   "dramatic": "../../assets/music/dramatic.mp3",
@@ -265,6 +269,10 @@
    "type": "scene",
    "bg": "bg_ring_sell",
    "mood": "dramatic",
+   "tagpos": [
+    0.5,
+    0.09
+   ],
    "ev": [
     {
      "at": [
@@ -288,7 +296,8 @@
       "yarmini"
      ],
      "k": "stamp",
-     "text": "YARMI HAM YO'Q"
+     "text": "YARMI HAM YO'Q",
+     "y": 0.76
     }
    ]
   },
@@ -358,6 +367,10 @@
    "type": "scene",
    "bg": "bg_ad_poster",
    "crop": "left",
+   "tagpos": [
+    0.24,
+    0.15
+   ],
    "ev": [
     {
      "at": [
@@ -1433,8 +1446,8 @@
      ],
      "k": "tag",
      "text": "4 SO'Z",
-     "x": 0.5,
-     "y": 0.25
+     "x": 0.82,
+     "y": 0.1
     },
     {
      "at": [
@@ -1444,7 +1457,8 @@
      "k": "bigtext",
      "text": "\"A DIAMOND IS FOREVER\"",
      "x": 0.5,
-     "y": 0.5
+     "y": 0.8,
+     "size": 130
     },
     {
      "at": [
@@ -1453,8 +1467,8 @@
      ],
      "k": "tag",
      "text": "OLMOS ABADIYDIR",
-     "x": 0.5,
-     "y": 0.72,
+     "x": 0.82,
+     "y": 0.19,
      "fg": "red"
     }
    ]
@@ -1474,7 +1488,8 @@
       "mashhur"
      ],
      "k": "stamp",
-     "text": "ENG MASHHUR SHIORLARDAN"
+     "text": "ENG MASHHUR SHIORLARDAN",
+     "y": 0.8
     }
    ]
   },
@@ -1607,6 +1622,10 @@
    "type": "scene",
    "bg": "bg_ring_sell",
    "crop": "left",
+   "tagpos": [
+    0.55,
+    0.45
+   ],
    "ev": [
     {
      "at": [
@@ -1683,7 +1702,8 @@
       "hayratlanarli"
      ],
      "k": "stamp",
-     "text": "HAYRATLANARLI"
+     "text": "HAYRATLANARLI",
+     "y": 0.8
     }
    ]
   },
@@ -2017,7 +2037,7 @@
      ],
      "k": "bigtext",
      "text": "QIMMATMI?",
-     "x": 0.36,
+     "x": 0.33,
      "y": 0.45
     }
    ]
@@ -2030,6 +2050,10 @@
    "type": "scene",
    "bg": "bg_ring_buy",
    "crop": "left",
+   "tagpos": [
+    0.25,
+    0.1
+   ],
    "ev": [
     {
      "at": [
@@ -2050,6 +2074,10 @@
    "bg": "bg_ring_sell",
    "crop": "right",
    "mood": "dramatic",
+   "tagpos": [
+    0.42,
+    0.08
+   ],
    "ev": [
     {
      "at": [
@@ -2057,7 +2085,9 @@
       "yarmiga"
      ],
      "k": "stamp",
-     "text": "~50%"
+     "text": "~50%",
+     "x": 0.3,
+     "y": 0.78
     },
     {
      "at": [
@@ -2188,7 +2218,7 @@
      ],
      "k": "bigtext",
      "text": "IKKINCHI TOMON",
-     "x": 0.36,
+     "x": 0.33,
      "y": 0.45
     }
    ]
@@ -2216,7 +2246,9 @@
       "Syerra-Leoneda"
      ],
      "k": "flag",
-     "code": "sl"
+     "code": "sl",
+     "x": 0.08,
+     "y": 0.12
     },
     {
      "at": [
@@ -2251,7 +2283,8 @@
       "qonli"
      ],
      "k": "stamp",
-     "text": "QONLI OLMOSLAR"
+     "text": "QONLI OLMOSLAR",
+     "y": 0.78
     }
    ]
   },
@@ -2558,6 +2591,10 @@
    "type": "scene",
    "bg": "bg_ring_buy",
    "crop": "right",
+   "tagpos": [
+    0.5,
+    0.82
+   ],
    "ev": [
     {
      "at": [
@@ -2714,7 +2751,9 @@
       "yarmidan"
      ],
      "k": "stamp",
-     "text": "YARMIDAN KO'PI"
+     "text": "YARMIDAN KO'PI",
+     "x": 0.3,
+     "y": 0.8
     }
    ]
   },
@@ -3172,6 +3211,10 @@
    "type": "scene",
    "bg": "bg_ring_sell",
    "crop": "left",
+   "tagpos": [
+    0.55,
+    0.42
+   ],
    "ev": [
     {
      "at": [
@@ -3283,7 +3326,7 @@
      ],
      "k": "bigtext",
      "text": "ODAMLAR BELGILAGAN",
-     "x": 0.36,
+     "x": 0.33,
      "y": 0.3
     },
     {
@@ -3334,6 +3377,10 @@
    "type": "scene",
    "bg": "bg_ad_poster",
    "crop": "left",
+   "tagpos": [
+    0.28,
+    0.1
+   ],
    "ev": [
     {
      "at": [
@@ -3500,7 +3547,7 @@
      ],
      "k": "bigtext",
      "text": "INFLYATSIYA",
-     "x": 0.36,
+     "x": 0.33,
      "y": 0.45
     }
    ]

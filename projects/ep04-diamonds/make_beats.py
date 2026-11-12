@@ -36,13 +36,13 @@ beat([0, "Bir"], "scene", bg="bg_ring_buy", mood="curious", ev=[T([0, "uylanmoqc
      T([1, "ikki"], "2 OYLIK MAOSH", True), C([1, "uzugi"], .5, .55, .1, .12)])
 beat([2, "Uzukda"], "object", props=[P([2, "Uzukda"], "prop_carbon", .5, .5, .55)],
      ev=[T([2, "uglerod"], "UGLEROD", x=.3, y=.82), T([2, "ko'mirning"], "KO'MIRNING QARINDOSHI", True, x=.7, y=.82)])
-beat([3, "Oradan"], "scene", bg="bg_ring_sell", mood="dramatic", ev=[T([3, "yil"], "BIR NECHA YIL O'TIB..."), T([3, "sotmoqchi"], "SOTMOQCHI"),
-     ST([4, "yarmini"], "YARMI HAM YO'Q")])
+beat([3, "Oradan"], "scene", bg="bg_ring_sell", mood="dramatic", tagpos=[.5, .09], ev=[T([3, "yil"], "BIR NECHA YIL O'TIB..."), T([3, "sotmoqchi"], "SOTMOQCHI"),
+     ST([4, "yarmini"], "YARMI HAM YO'Q", y=.76)])
 beat([5, "Ba'zi"], "scene", bg="bg_diamond", ev=[T([5, "uydan"], "UYDAN HAM QIMMAT", True)])
 beat([6, "Xo'sh"], "object", ev=[M([6, "Xo'sh"], 4), T([6, "qimmat"], "NEGA QIMMAT?", x=.36, y=.35), T([7, "qaytib"], "NEGA SOTIB BO'LMAYDI?", True, x=.36, y=.5),
      ])
 # ---------------- Intro ----------------
-beat([8, "Va"], "scene", bg="bg_ad_poster", crop="left", ev=[T([8, "to'rtta"], "4 SO'Z"), T([8, "reklama"], "BITTA REKLAMA", True), T([8, "dunyoni"], "BUTUN DUNYO")])
+beat([8, "Va"], "scene", bg="bg_ad_poster", crop="left", tagpos=[.24, .15], ev=[T([8, "to'rtta"], "4 SO'Z"), T([8, "reklama"], "BITTA REKLAMA", True), T([8, "dunyoni"], "BUTUN DUNYO")])
 beat([9, "Mening"], "intro", pose=3)
 beat([10, "Bilganlarim"], "object", ev=[M([10, "Bilganlarim"], 3), T([10, "Bilganlarim"], "BILIM = BOYLIK", x=.32, y=.3),
      T([10, "savollar"], "SO'RAYMAN", x=.32, y=.45), T([10, "izlanaman"], "IZLANAMAN", x=.32, y=.58), T([11, "ulashib"], "ULASHAMAN", True, x=.32, y=.71)])
@@ -88,17 +88,17 @@ beat([45, "1941-yilga"], "object", props=[P([45, "1941-yilga"], "prop_ring", .3,
      CT([45, "55"], 55, prefix="+", suffix="%", x=.7, y=.45), T([45, "sotuvi"], "OLMOS SOTUVI", True, x=.7, y=.65)])
 beat([46, "1947-yilda"], "portrait", fig="gerety_cut", vfocus=.2, ev=[L([46, "1947-yilda"], "1947"), T([46, "Frensis"], "FRANCES GERETY"),
      T([46, "kopirayteri"], "YOSH KOPIRAYTER", True)])
-beat([47, "Bu"], "scene", bg="bg_ad_meeting", ev=[T([47, "to'rtta"], "4 SO'Z", x=.5, y=.25), {"at": [47, "diamond"], "k": "bigtext", "text": "\"A DIAMOND IS FOREVER\"", "x": .5, "y": .5},
-     T([48, "abadiydir"], "OLMOS ABADIYDIR", True, x=.5, y=.72)])
-beat([49, "Bu"], "scene", bg="bg_ad_poster", crop="right", ev=[ST([49, "mashhur"], "ENG MASHHUR SHIORLARDAN")])
+beat([47, "Bu"], "scene", bg="bg_ad_meeting", ev=[T([47, "to'rtta"], "4 SO'Z", x=.82, y=.1), {"at": [47, "diamond"], "k": "bigtext", "text": "\"A DIAMOND IS FOREVER\"", "x": .5, "y": .8, "size": 130},
+     T([48, "abadiydir"], "OLMOS ABADIYDIR", True, x=.82, y=.19)])
+beat([49, "Bu"], "scene", bg="bg_ad_poster", crop="right", ev=[ST([49, "mashhur"], "ENG MASHHUR SHIORLARDAN", y=.8)])
 beat([50, "Uning"], "object", props=[P([50, "Uning"], "prop_ring", .3, .5, .5)], ev=[T([50, "ikki"], "IKKI MA'NO", x=.7, y=.3),
      T([51, "sevgingiz"], "1. SEVGINGIZ ABADIY", x=.7, y=.45)])
 beat([52, "Ikkinchisi"], "scene", bg="bg_ad_poster", crop="right", ev=[T([52, "ko'zga"], "IKKINCHI MA'NO...", True)])
 beat([53, "Ammo"], "object", ev=[M([53, "Ammo"], 9), T([53, "tadqiqotchilar"], "TADQIQOTCHILAR FIKRICHA", x=.36, y=.4), T([53, "sotmang"], "2. HECH QACHON SOTMANG", True, x=.36, y=.58)])
 beat([54, "Nega"], "scene", bg="bg_vault_release", crop="left", tint=.5, ev=[T([54, "sotmasligi"], "NEGA SOTMASLIK MUHIM?", True)])
-beat([55, "Chunki"], "scene", bg="bg_ring_sell", crop="left", ev=[T([55, "sotishni"], "HAMMA SOTSA → OLMOS KO'PAYADI"), T([55, "narx"], "NARX TUSHADI", True)])
+beat([55, "Chunki"], "scene", bg="bg_ring_sell", crop="left", tagpos=[.55, .45], ev=[T([55, "sotishni"], "HAMMA SOTSA → OLMOS KO'PAYADI"), T([55, "narx"], "NARX TUSHADI", True)])
 beat([56, "Odamlar"], "object", props=[P([56, "Odamlar"], "prop_ring", .3, .5, .5)], ev=[T([56, "ikkinchi"], "IKKINCHI BOZOR YO'Q", x=.7, y=.4), ST([56, "ushlab"], "NARX YUQORIDA", x=.7, y=.62)])
-beat([57, "Natija"], "scene", bg="bg_wedding_usa", mood="calm", ev=[ST([57, "hayratlanarli"], "HAYRATLANARLI")])
+beat([57, "Natija"], "scene", bg="bg_wedding_usa", mood="calm", ev=[ST([57, "hayratlanarli"], "HAYRATLANARLI", y=.8)])
 beat([58, "1940-yilda"], "object", ev=[F([58, "Amerikadagi"], "us"), L([58, "1940-yilda"], "OLMOS UZUKLI KELINLAR"),
      BARS([58, "1940-yilda"], [{"label": "1940", "value": 10, "color": "red", "at": [58, "10"]}, {"label": "1980", "value": 80, "hl": True, "at": [58, "80"]}], suffix="%")])
 beat([59, "Reklama"], "object", props=[P([59, "Reklama"], "prop_salary_scale", .3, .5, .55)], ev=[T([59, "qancha"], "QANCHA SARFLASH KERAK?", True, x=.7, y=.5)])
@@ -112,17 +112,17 @@ beat([66, "1981-yilga"], "scene", bg="bg_japan_modern", crop="left",
 # ---------------- 3-qism: haqiqat ----------------
 beat([67, "Ya'ni"], "scene", bg="bg_japan_traditional", crop="right", ev=[T([67, "qadimiy"], "QADIMIY AN'ANALAR"), T([67, "yigirma"], "YANGI AN'ANA 20 YILDA", True)])
 beat([68, "Endi"], "chapter", num="3-QISM", title="HAQIQATAN QIMMATMI?")
-beat([68, "olmos"], "object", ev=[M([68, "olmos"], 4), {"at": [68, "qimmatmi"], "k": "bigtext", "text": "QIMMATMI?", "x": .36, "y": .45}])
-beat([69, "Sotib"], "scene", bg="bg_ring_buy", crop="left", ev=[T([69, "qimmat"], "SOTIB OLISH: JUDA QIMMAT")])
-beat([70, "Lekin"], "scene", bg="bg_ring_sell", crop="right", mood="dramatic", ev=[ST([70, "yarmiga"], "~50%"), T([70, "sotmoqchi"], "SOTISH: YARMIGA YAQIN", True)])
+beat([68, "olmos"], "object", ev=[M([68, "olmos"], 4), {"at": [68, "qimmatmi"], "k": "bigtext", "text": "QIMMATMI?", "x": .33, "y": .45}])
+beat([69, "Sotib"], "scene", bg="bg_ring_buy", crop="left", tagpos=[.25, .1], ev=[T([69, "qimmat"], "SOTIB OLISH: JUDA QIMMAT")])
+beat([70, "Lekin"], "scene", bg="bg_ring_sell", crop="right", mood="dramatic", tagpos=[.42, .08], ev=[ST([70, "yarmiga"], "~50%", x=.3, y=.78), T([70, "sotmoqchi"], "SOTISH: YARMIGA YAQIN", True)])
 beat([71, "Yangi"], "object", props=[P([71, "Yangi"], "prop_car", .3, .5, .45)], ev=[AR([71, "kabi"], (.45, .5), (.6, .5), True),
      PR([71, "olmos"], "prop_ring", .75, .5, .38), T([71, "yo'qotadi"], "DO'KONDAN CHIQDI = QADRI ↓", True, x=.5, y=.85)])
 beat([72, "Sababi"], "scene", bg="bg_diamond_stage", ev=[T([72, "tabiati"], "TABIATI EMAS"), T([72, "hikoya"], "HIKOYA BELGILAYDI", True)])
 beat([73, "Lekin"], "chapter", num="4-QISM", title="IKKINCHI TOMON")
-beat([73, "bu"], "object", ev=[M([73, "bu"], 10), {"at": [73, "ikkinchi"], "k": "bigtext", "text": "IKKINCHI TOMON", "x": .36, "y": .45}])
-beat([74, "1990-yillarda"], "scene", bg="bg_sierra_leone", mood="dramatic", ev=[L([74, "1990-yillarda"], "1990-YILLAR"), F([74, "Syerra-Leoneda"], "sl"),
+beat([73, "bu"], "object", ev=[M([73, "bu"], 10), {"at": [73, "ikkinchi"], "k": "bigtext", "text": "IKKINCHI TOMON", "x": .33, "y": .45}])
+beat([74, "1990-yillarda"], "scene", bg="bg_sierra_leone", mood="dramatic", ev=[L([74, "1990-yillarda"], "1990-YILLAR"), F([74, "Syerra-Leoneda"], "sl", x=.08, y=.12),
      T([74, "urushi"], "FUQAROLAR URUSHI")])
-beat([75, "Qurolli"], "scene", bg="bg_sierra_leone", crop="right", ev=[T([75, "moliyalashtirdi"], "URUSH OLMOS PULIDAN"), ST([76, "qonli"], "QONLI OLMOSLAR")])
+beat([75, "Qurolli"], "scene", bg="bg_sierra_leone", crop="right", ev=[T([75, "moliyalashtirdi"], "URUSH OLMOS PULIDAN"), ST([76, "qonli"], "QONLI OLMOSLAR", y=.78)])
 beat([77, "2000-yilda"], "scene", bg="bg_kimberley_process", mood="calm", ev=[L([77, "2000-yilda"], "2000"), T([77, "Kimberli"], "KIMBERLI JARAYONI")])
 beat([78, "Bu"], "scene", bg="bg_kimberley_process", crop="right", ev=[T([78, "maqsadi"], "MAQSAD:"), T([78, "bozordan"], "URUSH OLMOSLARINI CHIQARISH", True)])
 beat([79, "Lekin"], "scene", bg="bg_kimberley_process", crop="left", ev=[T([79, "to'liq"], "TO'LIQ KUZATMAYDI"), ST([79, "tanqid"], "TANQID")])
@@ -135,13 +135,13 @@ beat([85, "U"], "scene", bg="bg_lab_diamond", mood="curious", ev=[T([85, "labora
 beat([86, "Bu"], "object", props=[P([86, "Bu"], "prop_carbon", .5, .45, .45)], ev=[ST([86, "soxta"], "SOXTA EMAS", y=.2), T([86, "kimyoviy"], "KIMYOVIY JIHATDAN BIR XIL", True, x=.5, y=.82)])
 beat([87, "Ko'p"], "scene", bg="bg_gemologist", ev=[T([87, "maxsus"], "FAQAT MAXSUS ASBOB BILAN FARQLANADI"), C([87, "farqlay"], .5, .5, .2, .2)])
 beat([88, "Va"], "scene", bg="bg_ring_compare", ev=[T([88, "arzon"], "ANCHA ARZON", True)])
-beat([89, "2025-yilda"], "scene", bg="bg_ring_buy", crop="right", ev=[L([89, "2025-yilda"], "2025 · AMERIKA"), T([89, "tabiiy"], "O'RTACHA UNASHTIRUV UZUGI")])
+beat([89, "2025-yilda"], "scene", bg="bg_ring_buy", crop="right", tagpos=[.5, .82], ev=[L([89, "2025-yilda"], "2025 · AMERIKA"), T([89, "tabiiy"], "O'RTACHA UNASHTIRUV UZUGI")])
 beat([89, "bo'lsa"], "object", ev=[L([89, "bo'lsa"], "O'RTACHA UZUK NARXI"),
      BARS([89, "laboratoriya"], [{"label": "TABIIY", "value": 12961, "color": "red"}, {"label": "LABORATORIYA", "value": 4557, "hl": True, "at": [89, "4"]}], suffix="$", w=.55)])
 beat([90, "2019-yilda"], "scene", bg="bg_ring_compare", crop="right", ev=[L([90, "2019-yilda"], "2019"), T([90, "6"], "LABORATORIYA OLMOSI: ATIGI 6%", True)])
 beat([90, "2026-yilning"], "object", ev=[L([90, "2026-yilning"], "LABORATORIYA OLMOSLI YANGI UZUKLAR"),
      BARS([90, "2026-yilning"], [{"label": "2019", "value": 6, "color": "red"}, {"label": "2026", "value": 51, "hl": True, "at": [90, "51"]}], suffix="%", w=.5)])
-beat([91, "Ya'ni"], "scene", bg="bg_lab_diamond", crop="right", ev=[T([91, "tarixda"], "TARIXDA BIRINCHI MARTA"), ST([91, "yarmidan"], "YARMIDAN KO'PI")])
+beat([91, "Ya'ni"], "scene", bg="bg_lab_diamond", crop="right", ev=[T([91, "tarixda"], "TARIXDA BIRINCHI MARTA"), ST([91, "yarmidan"], "YARMIDAN KO'PI", x=.3, y=.8)])
 beat([92, "Bu"], "scene", bg="bg_boardroom_sale", mood="dramatic", ev=[ST([92, "zarba"], "KATTA ZARBA")])
 beat([93, "De"], "object", props=[P([93, "De"], "prop_dollar", .3, .5, .45)], ev=[T([93, "85"], "85% · ANGLO AMERICAN", True, x=.7, y=.5)])
 beat([93, "uch"], "scene", bg="bg_boardroom_sale", crop="left", ev=[T([93, "uch"], "3 YIL KETMA-KET"), T([93, "pasaytirib"], "QIYMATI ↓", True)])
@@ -163,24 +163,24 @@ beat([104, "O'zbekistonda"], "scene", bg="bg_uzbek_wedding", ev=[F([104, "O'zbek
      T([105, "saqlash"], "PULNI SAQLASH USULIMI?", True)])
 beat([106, "Lekin"], "object", props=[P([106, "Lekin"], "prop_scale_gold_diamond", .5, .5, .55)], ev=[ST([106, "emas"], "BIR XIL EMAS", y=.2)])
 beat([107, "Oltinning"], "scene", bg="bg_gold_bazaar", ev=[T([107, "har"], "OLTIN: NARX HAR KUNI OCHIQ"), T([107, "oson"], "SOTISH OSON ✓")])
-beat([108, "Olmosni"], "scene", bg="bg_ring_sell", crop="left", ev=[T([108, "arzonga"], "OLMOS: ANCHA ARZONGA ✗", True)])
+beat([108, "Olmosni"], "scene", bg="bg_ring_sell", crop="left", tagpos=[.55, .42], ev=[T([108, "arzonga"], "OLMOS: ANCHA ARZONGA ✗", True)])
 beat([109, "Demak"], "object", ev=[M([109, "Demak"], 7), T([109, "sevgi"], "SEVGI RAMZI ✓", x=.36, y=.42), T([109, "investitsiya"], "INVESTITSIYA? ✗", True, x=.36, y=.58)])
 beat([110, "Va"], "scene", bg="bg_diamond_stage", crop="left", ev=[L([110, "saboq"], "ENG KATTA SABOQ"), T([110, "hikoya"], "HIKOYA UCHUN TO'LAYMIZ", True)])
 # ---------------- Javob ----------------
 beat([111, "Xo'sh"], "title", title="JAVOB", title2="NEGA TOSH UYDAN QIMMAT?")
-beat([112, "Chunki"], "object", ev=[M([112, "Chunki"], 1), {"at": [112, "odamlar"], "k": "bigtext", "text": "ODAMLAR BELGILAGAN", "x": .36, "y": .3}, T([112, "tabiat"], "TABIAT EMAS", x=.36, y=.55)])
+beat([112, "Chunki"], "object", ev=[M([112, "Chunki"], 1), {"at": [112, "odamlar"], "k": "bigtext", "text": "ODAMLAR BELGILAGAN", "x": .33, "y": .3}, T([112, "tabiat"], "TABIAT EMAS", x=.36, y=.55)])
 beat([113, "Bir"], "scene", bg="bg_vault_release", crop="left", ev=[T([113, "taklifni"], "1. TAKLIF NAZORATI"), T([113, "talabni"], "2. REKLAMA = TALAB", True)])
-beat([114, "degan"], "scene", bg="bg_ad_poster", crop="left", ev=[T([114, "to'rtta"], "3. \"OLMOS ABADIYDIR\"", True), T([114, "an'analarini"], "DUNYO AN'ANALARI O'ZGARDI")])
+beat([114, "degan"], "scene", bg="bg_ad_poster", crop="left", tagpos=[.28, .1], ev=[T([114, "to'rtta"], "3. \"OLMOS ABADIYDIR\"", True), T([114, "an'analarini"], "DUNYO AN'ANALARI O'ZGARDI")])
 beat([115, "Bugun"], "scene", bg="bg_lab_diamond", crop="left", ev=[T([115, "laboratoriya"], "4. LABORATORIYA SINOVI", True)])
 beat([116, "Olmoslar"], "title", title="OLMOSLAR HAQIDA MEN HAM BILMAS EDIM", title2="ENDI ESA HAMMAMIZ BILAMIZ")
 beat([118, "Ana"], "object", ev=[M([118, "Ana"], 4), T([118, "shartmi"], "OLMOS UZUK SHARTMI...", x=.36, y=.38),
      T([118, "reklama"], "...YOKI REKLAMA ODATIMI?", True, x=.36, y=.55), T([119, "izohlarda"], "IZOHDA YOZING", x=.36, y=.72),
      {"at": [118, "sizningcha"], "k": "like", "x": .82, "y": .2}])
 beat([120, "Keyingi"], "scene", bg="bg_inflation", mood="curious", ev=[L([120, "Keyingi"], "KEYINGI QISM"), T([120, "narxlar"], "NEGA NARXLAR OSHADI?"), T([120, "so'mimizning"], "SO'MNING QADRI", True)])
-beat([121, "Gap"], "object", ev=[M([121, "Gap"], 2), {"at": [121, "inflyatsiya"], "k": "bigtext", "text": "INFLYATSIYA", "x": .36, "y": .45}])
+beat([121, "Gap"], "object", ev=[M([121, "Gap"], 2), {"at": [121, "inflyatsiya"], "k": "bigtext", "text": "INFLYATSIYA", "x": .33, "y": .45}])
 beat([122, "O'tkazib"], "end", pose=1, ev=[{"at": [122, "obuna"], "k": "subscribe", "x": .47, "y": .35, "dur": 3.4}])
 
-cfg = {"layers": "layers", "music": {"curious": "../../assets/music/curious.mp3", "dramatic": "../../assets/music/dramatic.mp3", "calm": "../../assets/music/calm.mp3"},
+cfg = {"layers": "layers", "auto_skip": ["Birs", "Beers"], "music": {"curious": "../../assets/music/curious.mp3", "dramatic": "../../assets/music/dramatic.mp3", "calm": "../../assets/music/calm.mp3"},
        "mascot": {"img": "mascot_v2", "parts": 4, "full_body": True,
                   "more": [{"img": f"mascot_v3{s_}_{i_}", "parts": 1} for s_ in "ab" for i_ in range(4)]},
        "ui": {"subscribe": "OBUNA BO'LING", "subscribed": "OBUNA BO'LDINGIZ", "like": "LAYK", "next": "KEYINGI VIDEO"},

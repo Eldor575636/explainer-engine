@@ -718,13 +718,14 @@ def main():
                 e["_s"] = seeded(motion.tag_sprite, new_alphabet(e["text"]), 50, fg)
                 if "x" in e:
                     e["x"], e["y"] = e["x"] * W, e["y"] * H
-                else:
-                    e["x"], e["y"] = W * 0.74, 230 + 92 * tag_slot; tag_slot += 1
+                else:                                              # default tag column (beat 'tagpos' moves it off faces)
+                    tx, ty = b.get("tagpos", (0.74, 230 / 1080))
+                    e["x"], e["y"] = W * tx, H * ty + 92 * tag_slot; tag_slot += 1
                 hw = e["_s"].w * 0.55                                  # keep long tags inside the frame
                 e["x"] = min(max(e["x"], hw + 30), W - hw - 30)
                 e["rot"] = random.uniform(-2, 2); sfx.append((b["t0"] + e["t"], "pop"))
             elif k == "stamp":
-                e["_s"] = seeded(motion.stamp_sprite, new_alphabet(e["text"]), 130); e["x"], e["y"] = W * e.get("x", 0.5), H * e.get("y", 0.46)
+                e["_s"] = seeded(motion.stamp_sprite, new_alphabet(e["text"]), 112); e["x"], e["y"] = W * e.get("x", 0.5), H * e.get("y", 0.46)
                 sfx.append((b["t0"] + e["t"] + 0.14, "thud")); shakes.append(b["t0"] + e["t"] + 0.14)
             elif k == "circle":
                 e["_pts"] = ellipse_pts(e["x"] * W, e["y"] * H, e["rx"] * W, e["ry"] * H); sfx.append((b["t0"] + e["t"], "draw"))
@@ -760,10 +761,11 @@ def main():
                 e["_ov"] = mk(dict(e, **vert), VW, VH)
                 xsfx += e["_o"].sounds(b["t0"] + e["t"])
             elif k == "bigtext":
-                sz = e.get("size", 300)
+                sz = e.get("size", 240)
                 e["_s"] = text_sprite(new_alphabet(e["text"]), motion.ANTON, sz, RED, 0)
-                if e["_s"].w > W * 0.9:                      # long phrase: shrink to fit the frame
-                    e["_s"] = text_sprite(new_alphabet(e["text"]), motion.ANTON, int(sz * W * 0.9 / e["_s"].w), RED, 0)
+                maxw = min(W * 0.9, 2 * W * min(e.get("x", 0.5), 1 - e.get("x", 0.5)) - 80)   # stay inside the frame around x
+                if e["_s"].w > maxw:                         # long phrase: shrink to fit
+                    e["_s"] = text_sprite(new_alphabet(e["text"]), motion.ANTON, int(sz * maxw / e["_s"].w), RED, 0)
                 sfx.append((b["t0"] + e["t"], "pop"))
             elif k == "flag":
                 codes = e["code"] if isinstance(e["code"], list) else [e["code"]]
@@ -812,6 +814,8 @@ def main():
                 if a_ + 1.2 < s0 < b_ - 1.0:
                     clean = w.strip(".,:;?!\"—()")
                     first = k == 0 or sw[k - 1][1] != si
+                    if clean in cfg.get("auto_skip", []) or (clean.isdigit() and len(clean) != 4):
+                        continue                                   # bare numbers ("13") mean nothing alone; skip listed words
                     if any(ch.isdigit() for ch in clean) or (clean[:1].isupper() and not first and len(clean) > 3):
                         cands.append((s0, clean))
             def _core(w_):                       # "1960-yilda" -> "1960", "Kuan" -> "KUAN"
@@ -824,7 +828,8 @@ def main():
             slot = sum(1 for e in bb["_ev"] if e["k"] == "tag")
             e = {"k": "tag", "text": word.upper(), "t": s0 - bb["t0"], "auto": True,
                  "_s": seeded(motion.tag_sprite, new_alphabet(word.upper()), 50, NAVY), "rot": random.uniform(-2, 2),
-                 "x": W * 0.74, "y": 230 + 92 * slot, "vx": VW / 2, "vy": 330 + 92 * slot}
+                 "x": W * bb.get("tagpos", (0.74, 230 / 1080))[0], "y": H * bb.get("tagpos", (0.74, 230 / 1080))[1] + 92 * slot,
+                 "vx": VW / 2, "vy": 330 + 92 * slot}
             bb["_ev"].append(e); shown.add(new_alphabet(word).upper()); sfx.append((bb["t0"] + e["t"], "pop")); added += 1
     print(f"Auto-director: added {added} keyword tags")
 
@@ -1050,9 +1055,14 @@ def main():
             elif k == "flag":
                 if any(o is not e and o["k"] == "flag" and e["t"] < o["t"] <= t for o in b["_ev"]):
                     continue                                   # a newer flag took this spot
-                e["_s"].draw(c, (0.5 if V else e["x"]) * Wd, (0.6 if V else e["y"]) * Hd + 3 * math.sin(lt * 2.2),
+                e["_s"].draw(c, (0.86 if V else e["x"]) * Wd, (0.64 if V else e["y"]) * Hd + 3 * math.sin(lt * 2.2),
                              back_out(lt / 0.35), e["rot"], min(1, lt / 0.08))
             elif k == "bigtext":
+                if b["type"] in ("scene", "map", "portrait"):                # cream card so big words read on a picture
+                    sc_ = min(0.8, Wd * 0.9 / e["_s"].w) if V else 1
+                    bx, by = (0.5 if V else e["x"]) * Wd, (0.42 if V else e["y"]) * Hd
+                    hw, hh = e["_s"].w * sc_ / 2 + 36, e["_s"].h * sc_ / 2 + 20
+                    c = card(c, (bx - hw, by - hh, bx + hw, by + hh), min(1, lt / 0.2))
                 e["_s"].draw(c, (0.5 if V else e["x"]) * Wd, (0.42 if V else e["y"]) * Hd,
                              back_out(lt / 0.35) * (min(0.8, Wd * 0.9 / e["_s"].w) if V else 1), 0, min(1, lt / 0.08))
             elif k == "rings":
