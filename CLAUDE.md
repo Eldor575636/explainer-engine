@@ -205,6 +205,17 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - Owner chose: no spoken sign-off (keep it off), English pronunciation for foreign place names when the Uzbek
   spelling sounds off (Sierra Leone), "De Birs" for the voice.
 
+## Visual audit rules (2026-11-11, E04 owner feedback)
+
+- Before every full render, audit one PREVIEW still per beat (end of beat, all events on) as numbered contact sheets,
+  both 16:9 and 9:16. Look for: text over faces/subjects, words cut by the frame, missing glyphs, unreadable stamps.
+- Beat `tagpos: [x, y]` moves the default tag column (and auto-director tags) off faces; stamps take x/y.
+- Fonts carry →←✓✗✔✘≈★ (copied from DejaVu by `fonts/patch_symbols.py`; originals in *.orig.ttf). ✓/✗ render as ✔/✘.
+- Bars: each item can have `at` (word trigger) so a bar rises when its number is spoken; set it for every chart.
+- Stamps (112 px) sit on a cream paper patch; bigtext (default 240) fits the frame around its x and gets a cream card on pictures.
+- Auto-director never tags bare numbers (except years) and skips cfg `auto_skip` words (e.g. "Birs").
+- Shorts flags sit at (0.86, 0.64).
+
 ## Thumbnails and titles (2026-11-08)
 
 - Owner's rule: every episode gets **3 titles + 3 thumbnails** (A/B/C, different angles), all run together in YouTube Test & Compare.
