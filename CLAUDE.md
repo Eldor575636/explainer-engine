@@ -222,6 +222,12 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   Saliency models (rembg u2net / human_seg) were tested and miss second characters in these drawings: don't rely on them.
 - Shorts: stamps sit at 0.62 height (off faces), long tags shrink to 92% width, charts on pictures get a cream card.
 
+## Delivery (2026-11-12, owner)
+
+- Deliver every file straight into the episode folder on the owner's Mac ("AI Bilmas Boy/Season 1/EXX <name>/1 Script ...
+  6 Shorts"), replacing the old copy (one copy per file). Don't attach files in chat; commit them with
+  `device_commit_files` using `stagedPath` (under /mnt/user-data/outputs/) and just say what changed and where.
+
 ## Thumbnails and titles (2026-11-08)
 
 - Owner's rule: every episode gets **3 titles + 3 thumbnails** (A/B/C, different angles), all run together in YouTube Test & Compare.
