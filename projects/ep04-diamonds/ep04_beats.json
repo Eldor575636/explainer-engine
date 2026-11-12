@@ -217,7 +217,9 @@
      "rx": 0.1,
      "ry": 0.12
     }
-   ]
+   ],
+   "vfocus": 0.52,
+   "vzoom": 1.7
   },
   {
    "at": [
@@ -299,6 +301,10 @@
      "text": "YARMI HAM YO'Q",
      "y": 0.76
     }
+   ],
+   "vfocus": [
+    0.3,
+    0.7
    ]
   },
   {
@@ -318,7 +324,9 @@
      "text": "UYDAN HAM QIMMAT",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.55,
+   "vzoom": 1.8
   },
   {
    "at": [
@@ -397,7 +405,9 @@
      "k": "tag",
      "text": "BUTUN DUNYO"
     }
-   ]
+   ],
+   "vfocus": 0.55,
+   "vzoom": 1.8
   },
   {
    "at": [
@@ -849,6 +859,10 @@
      "text": "KONLARNI SOTIB OLDI",
      "fg": "red"
     }
+   ],
+   "vfocus": [
+    0.27,
+    0.7
    ]
   },
   {
@@ -887,7 +901,9 @@
      "k": "label",
      "text": "DE BEERS"
     }
-   ]
+   ],
+   "vfocus": 0.5,
+   "vzoom": 2.0
   },
   {
    "at": [
@@ -980,7 +996,9 @@
      "y": 0.13,
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.6,
+   "vzoom": 1.8
   },
   {
    "at": [
@@ -1008,7 +1026,9 @@
      "text": "OZ-OZDAN SOT",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.6,
+   "vzoom": 1.6
   },
   {
    "at": [
@@ -1078,7 +1098,9 @@
      "text": "BUYUK DEPRESSIYA",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.45,
+   "vzoom": 2.0
   },
   {
    "at": [
@@ -1233,7 +1255,9 @@
      "k": "tag",
      "text": "BOSHQACHA AGENTLIK"
     }
-   ]
+   ],
+   "vfocus": 0.62,
+   "vzoom": 1.8
   },
   {
    "at": [
@@ -1260,7 +1284,9 @@
      "k": "stamp",
      "text": "BREND EMAS"
     }
-   ]
+   ],
+   "vfocus": 0.5,
+   "vzoom": 2.0
   },
   {
    "at": [
@@ -1287,7 +1313,9 @@
      "text": "HAQIQIY SEVGI = OLMOS UZUK",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.5,
+   "vzoom": 1.8
   },
   {
    "at": [
@@ -1314,7 +1342,8 @@
      "text": "KINO YULDUZLARI",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.32
   },
   {
    "at": [
@@ -1341,7 +1370,9 @@
      "text": "YOSHLARGA",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.45,
+   "vzoom": 1.8
   },
   {
    "at": [
@@ -1471,7 +1502,9 @@
      "y": 0.19,
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.53,
+   "vzoom": 1.6
   },
   {
    "at": [
@@ -1491,7 +1524,9 @@
      "text": "ENG MASHHUR SHIORLARDAN",
      "y": 0.8
     }
-   ]
+   ],
+   "vfocus": 0.33,
+   "vzoom": 1.2
   },
   {
    "at": [
@@ -1552,7 +1587,9 @@
      "text": "IKKINCHI MA'NO...",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.33,
+   "vzoom": 1.2
   },
   {
    "at": [
@@ -1612,7 +1649,9 @@
      "text": "NEGA SOTMASLIK MUHIM?",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.55,
+   "vzoom": 1.6
   },
   {
    "at": [
@@ -1644,6 +1683,10 @@
      "text": "NARX TUSHADI",
      "fg": "red"
     }
+   ],
+   "vfocus": [
+    0.3,
+    0.8
    ]
   },
   {
@@ -1705,7 +1748,9 @@
      "text": "HAYRATLANARLI",
      "y": 0.8
     }
-   ]
+   ],
+   "vfocus": 0.45,
+   "vzoom": 1.8
   },
   {
    "at": [
@@ -1910,7 +1955,8 @@
      "text": "5% DAN KAM",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.48
   },
   {
    "at": [
@@ -1938,7 +1984,9 @@
      "text": "G'ARBCHA HAYOT",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.65,
+   "vzoom": 1.4
   },
   {
    "at": [
@@ -1975,6 +2023,10 @@
      ],
      "suffix": "%"
     }
+   ],
+   "vfocus": [
+    0.35,
+    0.75
    ]
   },
   {
@@ -2003,7 +2055,8 @@
      "text": "YANGI AN'ANA 20 YILDA",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.32
   },
   {
    "at": [
@@ -2258,6 +2311,10 @@
      "k": "tag",
      "text": "FUQAROLAR URUSHI"
     }
+   ],
+   "vfocus": [
+    0.25,
+    0.75
    ]
   },
   {
@@ -2286,6 +2343,10 @@
      "text": "QONLI OLMOSLAR",
      "y": 0.78
     }
+   ],
+   "vfocus": [
+    0.3,
+    0.75
    ]
   },
   {
@@ -2313,7 +2374,9 @@
      "k": "tag",
      "text": "KIMBERLI JARAYONI"
     }
-   ]
+   ],
+   "vfocus": 0.5,
+   "vzoom": 2.0
   },
   {
    "at": [
@@ -2341,7 +2404,9 @@
      "text": "URUSH OLMOSLARINI CHIQARISH",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.5,
+   "vzoom": 1.8
   },
   {
    "at": [
@@ -2368,7 +2433,9 @@
      "k": "stamp",
      "text": "TANQID"
     }
-   ]
+   ],
+   "vfocus": 0.5,
+   "vzoom": 1.8
   },
   {
    "at": [
@@ -2436,7 +2503,9 @@
      "text": "G7 TAQIQI",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.6,
+   "vzoom": 1.8
   },
   {
    "at": [
@@ -2463,7 +2532,9 @@
      "text": "OLMOS BOZORIDA HAM",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.55,
+   "vzoom": 1.6
   },
   {
    "at": [
@@ -2492,7 +2563,9 @@
      "text": "LABORATORIYADA O'STIRILADI",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.65,
+   "vzoom": 1.3
   },
   {
    "at": [
@@ -2562,7 +2635,9 @@
      "rx": 0.2,
      "ry": 0.2
     }
-   ]
+   ],
+   "vfocus": 0.45,
+   "vzoom": 1.2
   },
   {
    "at": [
@@ -2581,7 +2656,8 @@
      "text": "ANCHA ARZON",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.62
   },
   {
    "at": [
@@ -2612,7 +2688,9 @@
      "k": "tag",
      "text": "O'RTACHA UNASHTIRUV UZUGI"
     }
-   ]
+   ],
+   "vfocus": 0.4,
+   "vzoom": 1.8
   },
   {
    "at": [
@@ -2683,7 +2761,9 @@
      "text": "LABORATORIYA OLMOSI: ATIGI 6%",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.45,
+   "vzoom": 1.3
   },
   {
    "at": [
@@ -2755,7 +2835,9 @@
      "x": 0.3,
      "y": 0.8
     }
-   ]
+   ],
+   "vfocus": 0.58,
+   "vzoom": 1.4
   },
   {
    "at": [
@@ -2774,7 +2856,9 @@
      "k": "stamp",
      "text": "KATTA ZARBA"
     }
-   ]
+   ],
+   "vfocus": 0.4,
+   "vzoom": 1.4
   },
   {
    "at": [
@@ -2834,7 +2918,9 @@
      "text": "QIYMATI ↓",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.6,
+   "vzoom": 1.4
   },
   {
    "at": [
@@ -2875,7 +2961,9 @@
      "k": "stamp",
      "text": "SOTUVDA"
     }
-   ]
+   ],
+   "vfocus": 0.45,
+   "vzoom": 1.4
   },
   {
    "at": [
@@ -2912,7 +3000,9 @@
      "y": 0.3,
      "suffix": "% ULUSH"
     }
-   ]
+   ],
+   "vfocus": 0.45,
+   "vzoom": 1.6
   },
   {
    "at": [
@@ -2981,7 +3071,9 @@
      "k": "label",
      "text": "BAHS DAVOM ETADI"
     }
-   ]
+   ],
+   "vfocus": 0.5,
+   "vzoom": 1.8
   },
   {
    "at": [

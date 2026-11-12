@@ -773,7 +773,7 @@ def main():
                 e.setdefault("x", 0.14 + 0.06 * (len(codes) - 1)); e.setdefault("y", 0.24)
                 e["rot"] = random.uniform(-3, 3)
             if k in ("label", "tag", "stamp"):
-                e["vx"], e["vy"] = VW / 2, {"label": 190, "stamp": VH * 0.45}.get(k, 330 + 92 * sum(1 for x in evs if x["k"] == "tag"))
+                e["vx"], e["vy"] = VW / 2, {"label": 190, "stamp": VH * 0.62}.get(k, 330 + 92 * sum(1 for x in evs if x["k"] == "tag"))
             evs.append(e)
         b["_ev"] = evs
 
@@ -869,7 +869,7 @@ def main():
         bg = l.copy(); bg[:, : W // 2] = l[:, W // 4: W // 4 + W // 2]; bg[:, W // 2:] = r[:, W // 4: W // 4 + W - W // 2]
         return bg
 
-    def render_world(bi, t):
+    def render_world(bi, t, cam=True):
         b = beats[bi]; dur = b["t1"] - b["t0"]; typ = b["type"]
         c = (bg_for(b["_bgkey"]) if "_bgkey" in b else b["_bg"]).copy()
         if typ == "scene" and "_fig" in b:
@@ -915,15 +915,18 @@ def main():
             cv2.line(c, (W // 2, int(H * (1 - p))), (W // 2, H), (1, 1, 1), 14)
             cv2.line(c, (W // 2, int(H * (1 - p))), (W // 2, H), fx.c01(RED), 6)
         c = draw_events(c, b, t, dur, WORLD)
-        if typ not in ("title", "chapter", "intro", "end"):
+        if cam and typ not in ("title", "chapter", "intro", "end"):
             c = camera(c, t, dur, bi, typ, b.get("_shots"))
         return c
 
     def render(bi, t, V=False):
         b = beats[bi]; dur = b["t1"] - b["t0"]
-        c = render_world(bi, t)
-        if V:
-            c = vcrop(c, b, t)
+        if V and b["type"] in ("scene", "portrait", "map") or V and "vfocus" in b:
+            c = vcrop(render_world(bi, t, cam=False), b, t)   # Shorts frame the picture themselves (see vcrop)
+        else:
+            c = render_world(bi, t)
+            if V:
+                c = vcrop(c, b, t)
         Wd, Hd = (VW, VH) if V else (W, H)
         if b["type"] == "intro":
             sp = b["_pose"]
@@ -967,9 +970,25 @@ def main():
                 e = cur[-1]; fxp = e["x"] if e["k"] == "pin" else e["to"][0]
             else:
                 fxp = 0.5
-        cw = int(H * VW / VH)
+        dur = max(0.1, b["t1"] - b["t0"]); u = min(1.0, max(0.0, t / dur))
+        if isinstance(fxp, (list, tuple)):                     # pan between subjects: hold, glide, hold
+            w = smooth(min(1.0, max(0.0, (u - 0.3) / 0.4)))
+            fxp = fxp[0] + (fxp[1] - fxp[0]) * w
+        z = float(b.get("vzoom", 1.0))                         # >1 = medium shot: wider window + blurred bands
+        push = 1 + 0.045 * u                                    # gentle push-in instead of the 16:9 camera
+        cw0 = H * VW / VH
+        cw = min(W, cw0 * z / push); ch = H / push            # scaled to 1080 wide this gives VH / z of height
         x0 = int(min(W - cw, max(0, fxp * W - cw / 2)))
-        return cv2.resize(c[:, x0:x0 + cw], (VW, VH), interpolation=cv2.INTER_LINEAR)
+        fy = float(b.get("vfy", 0.5)); y0 = int(min(H - ch, max(0, fy * H - ch / 2)))
+        win = c[y0:y0 + int(ch), x0:x0 + int(cw)]
+        if z <= 1:
+            return cv2.resize(win, (VW, VH), interpolation=cv2.INTER_LINEAR)
+        hh = int(VW * win.shape[0] / win.shape[1])              # picture scaled to the full Short width
+        back = cv2.resize(win, (VW // 8, VH // 8), interpolation=cv2.INTER_AREA)
+        back = cv2.GaussianBlur(cv2.resize(back, (VW, VH), interpolation=cv2.INTER_LINEAR), (0, 0), 18) * 0.55 + 0.45 * np.array(CREAM, np.float32) / 255
+        y = int(VH * 0.45 - hh / 2)
+        back[max(0, y):y + hh] = cv2.resize(win, (VW, hh), interpolation=cv2.INTER_LINEAR)[max(0, -y):VH - y]
+        return back.astype(np.float32)
 
     def card(c, box, a):
         """Soft cream card so charts and numbers stay readable on busy pictures."""
@@ -1007,19 +1026,19 @@ def main():
                 continue
             ex, ey = (e.get("vx"), e.get("vy")) if V else (e.get("x"), e.get("y"))
             if k in ("label", "tag"):
-                sc = back_out(lt / 0.38) * (1.15 if V else 1)
+                sc = back_out(lt / 0.38) * (min(1.15, VW * 0.92 / e["_s"].w) if V else 1)   # long tags fit the Short
                 e["_s"].draw(c, ex, ey, sc, e["rot"] * sc, min(1, lt / 0.08))
             elif k == "stamp":
                 fit = min(1, Wd * 0.84 / e["_s"].w) if V else 1             # long stamps fit the 9:16 frame
                 e["_s"].draw(c, ex, ey, (2.3 - 1.3 * ease_out(lt / 0.16)) * fit, -7, min(1, lt / 0.06))
             elif k in ("bars", "pie", "subscribe", "like", "news"):
-                if k in ("bars", "pie") and not V and b["type"] in ("scene", "map", "portrait"):
-                    o = e["_o"]
+                if k in ("bars", "pie") and b["type"] in ("scene", "map", "portrait"):
+                    o = e["_ov"] if V else e["_o"]
                     if k == "bars":
                         box = (o.x - o.w / 2 - 50, o.y - o.h / 2 - 40, o.x + o.w / 2 + 50, o.y + o.h / 2 + 90)
                     else:
                         box = (o.x - o.r - 50, o.y - o.r - 50, o.x + o.r + 620, o.y + o.r + 50)
-                    c = card(c, box, min(1, lt / 0.2))
+                    c = card_fn(c, box, min(1, lt / 0.2))
                 (e["_ov"] if V else e["_o"]).draw(c, lt)
             elif k == "circle":
                 draw_partial(c, e["_pts"], ease_out(lt / 0.7), RED, 9)
@@ -1120,6 +1139,15 @@ def main():
     # --- preview mode: PREVIEW="12.5,40,..." saves stills (16:9 and 9:16) and exits ---
     import os
     (work / "beat_times.json").write_text(json.dumps([[b["type"], round(b["t0"], 2), round(b["t1"], 2)] for b in beats]))
+    if os.environ.get("WORLD_SHEET"):                 # raw pictures with x ticks, for choosing Shorts framing
+        for bi_ in [int(x) for x in os.environ["WORLD_SHEET"].split(",")]:
+            bb = beats[bi_]; fr = render_world(bi_, (bb["t1"] - bb["t0"]) * 0.6, cam=False)
+            im = Image.fromarray((np.clip(fr, 0, 1) * 255).astype(np.uint8)); d = ImageDraw.Draw(im)
+            for k in range(1, 10):
+                x = int(W * k / 10); d.line((x, 0, x, H), fill=(0, 200, 0), width=3)
+                d.text((x + 6, 8), f".{k}", fill=(0, 160, 0), font=ImageFont.truetype(motion.MONT, 44))
+            im.save(work / f"world_{bi_:03d}.jpg", quality=80)
+        print("world sheet saved"); return
     if os.environ.get("PREVIEW"):
         def ptime(x):
             if x.startswith("@"):                     # @sentence:word[+offset]

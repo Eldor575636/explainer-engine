@@ -180,6 +180,56 @@ beat([120, "Keyingi"], "scene", bg="bg_inflation", mood="curious", ev=[L([120, "
 beat([121, "Gap"], "object", ev=[M([121, "Gap"], 2), {"at": [121, "inflyatsiya"], "k": "bigtext", "text": "INFLYATSIYA", "x": .33, "y": .45}])
 beat([122, "O'tkazib"], "end", pose=1, ev=[{"at": [122, "obuna"], "k": "subscribe", "x": .47, "y": .35, "dur": 3.4}])
 
+# Shorts framing per beat (chosen by eye from the raw pictures): vfocus = x centre, or [from, to] to pan between
+# two subjects; vzoom > 1 = medium shot (wider window, blurred bands above and below).
+VF = {
+    (0, "Bir"): {'vfocus': 0.52, 'vzoom': 1.7},
+    (3, "Oradan"): {'vfocus': [0.3, 0.7]},
+    (5, "Ba'zi"): {'vfocus': 0.55, 'vzoom': 1.8},
+    (8, "Va"): {'vfocus': 0.55, 'vzoom': 1.8},
+    (25, "U"): {'vfocus': [0.27, 0.7]},
+    (27, "Yigirma"): {'vfocus': 0.5, 'vzoom': 2.0},
+    (29, "Keyinroq"): {'vfocus': 0.6, 'vzoom': 1.8},
+    (30, "Ularning"): {'vfocus': 0.6, 'vzoom': 1.6},
+    (32, "Lekin"): {'vfocus': 0.45, 'vzoom': 2.0},
+    (39, "Amerikadagi"): {'vfocus': 0.62, 'vzoom': 1.8},
+    (41, "U"): {'vfocus': 0.5, 'vzoom': 2.0},
+    (42, "U"): {'vfocus': 0.5, 'vzoom': 1.8},
+    (43, "Gazetalarga"): {'vfocus': 0.32},
+    (44, "Maktablarga"): {'vfocus': 0.45, 'vzoom': 1.8},
+    (47, "Bu"): {'vfocus': 0.53, 'vzoom': 1.6},
+    (49, "Bu"): {'vfocus': 0.33, 'vzoom': 1.2},
+    (52, "Ikkinchisi"): {'vfocus': 0.33, 'vzoom': 1.2},
+    (54, "Nega"): {'vfocus': 0.55, 'vzoom': 1.6},
+    (55, "Chunki"): {'vfocus': [0.3, 0.8]},
+    (57, "Natija"): {'vfocus': 0.45, 'vzoom': 1.8},
+    (62, "Aslida"): {'vfocus': 0.48},
+    (64, "Keyin"): {'vfocus': 0.65, 'vzoom': 1.4},
+    (66, "1981-yilga"): {'vfocus': [0.35, 0.75]},
+    (67, "Ya'ni"): {'vfocus': 0.32},
+    (74, "1990-yillarda"): {'vfocus': [0.25, 0.75]},
+    (75, "Qurolli"): {'vfocus': [0.3, 0.75]},
+    (77, "2000-yilda"): {'vfocus': 0.5, 'vzoom': 2.0},
+    (78, "Bu"): {'vfocus': 0.5, 'vzoom': 1.8},
+    (79, "Lekin"): {'vfocus': 0.5, 'vzoom': 1.8},
+    (82, "2024-yil"): {'vfocus': 0.6, 'vzoom': 1.8},
+    (83, "O'tgan"): {'vfocus': 0.55, 'vzoom': 1.6},
+    (85, "U"): {'vfocus': 0.65, 'vzoom': 1.3},
+    (87, "Ko'p"): {'vfocus': 0.45, 'vzoom': 1.2},
+    (88, "Va"): {'vfocus': 0.62},
+    (89, "2025-yilda"): {'vfocus': 0.4, 'vzoom': 1.8},
+    (90, "2019-yilda"): {'vfocus': 0.45, 'vzoom': 1.3},
+    (91, "Ya'ni"): {'vfocus': 0.58, 'vzoom': 1.4},
+    (92, "Bu"): {'vfocus': 0.4, 'vzoom': 1.4},
+    (93, "uch"): {'vfocus': 0.6, 'vzoom': 1.4},
+    (95, "Oxir-oqibatda"): {'vfocus': 0.45, 'vzoom': 1.4},
+    (96, "2026-yil"): {'vfocus': 0.45, 'vzoom': 1.6},
+    (98, "Shu"): {'vfocus': 0.5, 'vzoom': 1.8},
+}
+for _d in B:
+    if _d['type'] in ('scene', 'portrait', 'map'):
+        _d.update(VF.get(tuple(_d['at']), {}))
+
 cfg = {"layers": "layers", "auto_skip": ["Birs", "Beers"], "music": {"curious": "../../assets/music/curious.mp3", "dramatic": "../../assets/music/dramatic.mp3", "calm": "../../assets/music/calm.mp3"},
        "mascot": {"img": "mascot_v2", "parts": 4, "full_body": True,
                   "more": [{"img": f"mascot_v3{s_}_{i_}", "parts": 1} for s_ in "ab" for i_ in range(4)]},
