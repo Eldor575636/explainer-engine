@@ -215,6 +215,12 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - Stamps (112 px) sit on a cream paper patch; bigtext (default 240) fits the frame around its x and gets a cream card on pictures.
 - Auto-director never tags bare numbers (except years) and skips cfg `auto_skip` words (e.g. "Birs").
 - Shorts flags sit at (0.86, 0.64).
+- Shorts framing is chosen by eye per beat (owner: Shorts lost the characters with a centre crop). Run
+  `WORLD_SHEET="ids"` (raw pictures with .1-.9 ticks, no camera), then set per beat in make_beats `VF`:
+  `vfocus` x (tight crop, ~0.32 of the width), `vfocus: [a, b]` (pan from subject a to b: hold, glide, hold),
+  `vzoom` 1.2-2.0 (medium shot: wider window, blurred bands). Shorts skip the 16:9 camera and use a gentle push-in.
+  Saliency models (rembg u2net / human_seg) were tested and miss second characters in these drawings: don't rely on them.
+- Shorts: stamps sit at 0.62 height (off faces), long tags shrink to 92% width, charts on pictures get a cream card.
 
 ## Thumbnails and titles (2026-11-08)
 
