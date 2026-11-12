@@ -123,14 +123,22 @@ def stamp_sprite(text, size=104):
     tw, th, b = text_size(f, text)
     pw, ph, bw = 30, 18, 9
     w, h = tw + pw * 2, th + ph * 2
-    img = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
+    ink = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(ink)
     d.rounded_rectangle((bw // 2, bw // 2, w - bw // 2, h - bw // 2), 10, outline=RED + (255,), width=bw)
     d.text((pw - b[0], ph - b[1]), text, font=f, fill=RED + (255,))
-    a = np.array(img)
+    a = np.array(ink)
     rng = np.random.default_rng(3)
     speck = rng.random(a.shape[:2]) < 0.10                     # rubber-stamp wear
     a[..., 3] = np.where(speck, (a[..., 3] * 0.35).astype(np.uint8), a[..., 3])
-    return Sprite(Image.fromarray(a))
+    # cream paper patch + soft shadow behind the ink, so the stamp reads on any picture
+    m = 16
+    img = Image.new("RGBA", (w + 2 * m, h + 2 * m), (0, 0, 0, 0))
+    sh = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    ImageDraw.Draw(sh).rounded_rectangle((m + 4, m + 8, m + w + 4, m + h + 8), 14, fill=(14, 22, 38, 110))
+    img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(8)))
+    ImageDraw.Draw(img).rounded_rectangle((m - 2, m - 2, m + w + 2, m + h + 2), 14, fill=(244, 238, 223, 238))
+    img.alpha_composite(Image.fromarray(a), (m, m))
+    return Sprite(img)
 
 
 def caption_sprites(words, size=78):

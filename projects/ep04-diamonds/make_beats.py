@@ -100,7 +100,7 @@ beat([55, "Chunki"], "scene", bg="bg_ring_sell", crop="left", ev=[T([55, "sotish
 beat([56, "Odamlar"], "object", props=[P([56, "Odamlar"], "prop_ring", .3, .5, .5)], ev=[T([56, "ikkinchi"], "IKKINCHI BOZOR YO'Q", x=.7, y=.4), ST([56, "ushlab"], "NARX YUQORIDA", x=.7, y=.62)])
 beat([57, "Natija"], "scene", bg="bg_wedding_usa", mood="calm", ev=[ST([57, "hayratlanarli"], "HAYRATLANARLI")])
 beat([58, "1940-yilda"], "object", ev=[F([58, "Amerikadagi"], "us"), L([58, "1940-yilda"], "OLMOS UZUKLI KELINLAR"),
-     BARS([58, "atigi"], [{"label": "1940", "value": 10, "color": "red"}, {"label": "1980", "value": 80, "hl": True}], suffix="%")])
+     BARS([58, "1940-yilda"], [{"label": "1940", "value": 10, "color": "red", "at": [58, "10"]}, {"label": "1980", "value": 80, "hl": True, "at": [58, "80"]}], suffix="%")])
 beat([59, "Reklama"], "object", props=[P([59, "Reklama"], "prop_salary_scale", .3, .5, .55)], ev=[T([59, "qancha"], "QANCHA SARFLASH KERAK?", True, x=.7, y=.5)])
 beat([60, "Avval"], "scene", bg="bg_wedding_usa", crop="right", ev=[T([60, "bir"], "AVVAL: 1 OYLIK MAOSH"), T([60, "ikki"], "KEYIN: 2 OYLIK MAOSH", True), T([60, "sevgining"], "SEVGINING NARXI")])
 beat([61, "Keyin"], "map", bg="map_world", zf=[.8, .4], ev=[F([61, "Yaponiyaga"], "jp"), PIN([61, "Yaponiyaga"], JP), AR([61, "e'tiborini"], US, JP)])
@@ -108,7 +108,7 @@ beat([62, "Aslida"], "scene", bg="bg_japan_traditional", ev=[ST([62, "yo'q"], "U
      T([63, "5"], "5% DAN KAM", True)])
 beat([64, "Keyin"], "scene", bg="bg_japan_modern", mood="curious", ev=[T([65, "zamonaviy"], "ZAMONAVIY"), T([65, "G'arbcha"], "G'ARBCHA HAYOT", True)])
 beat([66, "1981-yilga"], "scene", bg="bg_japan_modern", crop="left",
-     ev=[BARS([66, "1981-yilga"], [{"label": "1960", "value": 5, "color": "red"}, {"label": "1981", "value": 60, "hl": True}], suffix="%")])
+     ev=[BARS([66, "1981-yilga"], [{"label": "1960", "value": 5, "color": "red"}, {"label": "1981", "value": 60, "hl": True, "at": [66, "60"]}], suffix="%")])
 # ---------------- 3-qism: haqiqat ----------------
 beat([67, "Ya'ni"], "scene", bg="bg_japan_traditional", crop="right", ev=[T([67, "qadimiy"], "QADIMIY AN'ANALAR"), T([67, "yigirma"], "YANGI AN'ANA 20 YILDA", True)])
 beat([68, "Endi"], "chapter", num="3-QISM", title="HAQIQATAN QIMMATMI?")
@@ -137,10 +137,10 @@ beat([87, "Ko'p"], "scene", bg="bg_gemologist", ev=[T([87, "maxsus"], "FAQAT MAX
 beat([88, "Va"], "scene", bg="bg_ring_compare", ev=[T([88, "arzon"], "ANCHA ARZON", True)])
 beat([89, "2025-yilda"], "scene", bg="bg_ring_buy", crop="right", ev=[L([89, "2025-yilda"], "2025 · AMERIKA"), T([89, "tabiiy"], "O'RTACHA UNASHTIRUV UZUGI")])
 beat([89, "bo'lsa"], "object", ev=[L([89, "bo'lsa"], "O'RTACHA UZUK NARXI"),
-     BARS([89, "laboratoriya"], [{"label": "TABIIY", "value": 12961, "color": "red"}, {"label": "LABORATORIYA", "value": 4557, "hl": True}], suffix="$", w=.55)])
+     BARS([89, "laboratoriya"], [{"label": "TABIIY", "value": 12961, "color": "red"}, {"label": "LABORATORIYA", "value": 4557, "hl": True, "at": [89, "4"]}], suffix="$", w=.55)])
 beat([90, "2019-yilda"], "scene", bg="bg_ring_compare", crop="right", ev=[L([90, "2019-yilda"], "2019"), T([90, "6"], "LABORATORIYA OLMOSI: ATIGI 6%", True)])
 beat([90, "2026-yilning"], "object", ev=[L([90, "2026-yilning"], "LABORATORIYA OLMOSLI YANGI UZUKLAR"),
-     BARS([90, "2026-yilning"], [{"label": "2019", "value": 6, "color": "red"}, {"label": "2026", "value": 51, "hl": True}], suffix="%", w=.5)])
+     BARS([90, "2026-yilning"], [{"label": "2019", "value": 6, "color": "red"}, {"label": "2026", "value": 51, "hl": True, "at": [90, "51"]}], suffix="%", w=.5)])
 beat([91, "Ya'ni"], "scene", bg="bg_lab_diamond", crop="right", ev=[T([91, "tarixda"], "TARIXDA BIRINCHI MARTA"), ST([91, "yarmidan"], "YARMIDAN KO'PI")])
 beat([92, "Bu"], "scene", bg="bg_boardroom_sale", mood="dramatic", ev=[ST([92, "zarba"], "KATTA ZARBA")])
 beat([93, "De"], "object", props=[P([93, "De"], "prop_dollar", .3, .5, .45)], ev=[T([93, "85"], "85% · ANGLO AMERICAN", True, x=.7, y=.5)])

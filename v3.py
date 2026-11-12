@@ -217,6 +217,7 @@ def new_alphabet(text):
     t = _re.sub(f"([gG])[{_APOS}]", lambda m: "ğ" if m.group(1) == "g" else "Ğ", t)
     for a, b in (("SH", "Ş"), ("Sh", "Ş"), ("sh", "ş"), ("CH", "Ç"), ("Ch", "Ç"), ("ch", "ç")):
         t = t.replace(a, b)
+    t = t.replace("✓", "✔").replace("✗", "✘")                  # heavier marks read better on screen
     return _re.sub(f"[{_APOS}]", "ʼ", t)
 
 
@@ -741,6 +742,8 @@ def main():
                 sfx += [(b["t0"] + e["t"] + 0.9 * i / 12, "tick") for i in range(12)]
                 xsfx.append((b["t0"] + e["t"] + 0.95, "ding", None))
             elif k in ("bars", "pie", "subscribe", "like", "news"):
+                if k == "bars":                                    # per-bar word triggers: each bar rises when its number is spoken
+                    e["items"] = [dict(i, dt=wt(i["at"]) - b["t0"] - e["t"]) if "at" in i else i for i in e["items"]]
                 def mk(ee, Wd, Hd):
                     if k == "bars":
                         return fx.Bars(dict(ee, suffix=new_alphabet(ee.get("suffix", "")), items=[dict(i, label=new_alphabet(i["label"])) for i in ee["items"]]), F, Wd, Hd)

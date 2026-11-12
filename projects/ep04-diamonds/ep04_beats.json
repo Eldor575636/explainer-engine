@@ -1713,7 +1713,7 @@
     {
      "at": [
       58,
-      "atigi"
+      "1940-yilda"
      ],
      "k": "bars",
      "x": 0.5,
@@ -1722,12 +1722,20 @@
       {
        "label": "1940",
        "value": 10,
-       "color": "red"
+       "color": "red",
+       "at": [
+        58,
+        "10"
+       ]
       },
       {
        "label": "1980",
        "value": 80,
-       "hl": true
+       "hl": true,
+       "at": [
+        58,
+        "80"
+       ]
       }
      ],
      "suffix": "%"
@@ -1938,7 +1946,11 @@
       {
        "label": "1981",
        "value": 60,
-       "hl": true
+       "hl": true,
+       "at": [
+        66,
+        "60"
+       ]
       }
      ],
      "suffix": "%"
@@ -2597,7 +2609,11 @@
       {
        "label": "LABORATORIYA",
        "value": 4557,
-       "hl": true
+       "hl": true,
+       "at": [
+        89,
+        "4"
+       ]
       }
      ],
      "suffix": "$"
@@ -2664,7 +2680,11 @@
       {
        "label": "2026",
        "value": 51,
-       "hl": true
+       "hl": true,
+       "at": [
+        90,
+        "51"
+       ]
       }
      ],
      "suffix": "%"

@@ -159,10 +159,14 @@ class Bars:
     def sounds(self, t0):
         out = []
         for k, it in enumerate(self.items):
-            at = t0 + k * self.step
+            at = t0 + self.start(k)
             out += [(at, "pop", None), (at, "rise", (self.grow, it["value"] / self.vmax))]
-        out.append((t0 + (len(self.items) - 1) * self.step + self.grow, "ding", None))
+        out.append((t0 + self.start(len(self.items) - 1) + self.grow, "ding", None))
         return out
+
+    def start(self, k):
+        """Seconds after the chart appears when bar k starts growing: its spoken word (item 'dt') or k*step."""
+        return max(0.0, self.items[k].get("dt", k * self.step))
 
     def draw(self, c, lt):
         n = len(self.items); gap = self.w / n; bw = gap * 0.58
@@ -171,7 +175,7 @@ class Bars:
         cv2.line(c, (int(self.x - self.w / 2), int(base)), (int(self.x - self.w / 2 + self.w * ease_out(lt / 0.4)), int(base)),
                  c01(NAVY), 5, cv2.LINE_AA)
         for k, it in enumerate(self.items):
-            p = ease_out((lt - k * self.step) / self.grow)
+            p = ease_out((lt - self.start(k)) / self.grow)
             if p <= 0:
                 continue
             cx = self.x - self.w / 2 + gap * (k + 0.5)
