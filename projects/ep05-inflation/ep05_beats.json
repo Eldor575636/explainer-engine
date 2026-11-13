@@ -1,0 +1,3464 @@
+{
+ "layers": "layers",
+ "auto_skip": [
+  "Birs",
+  "Beers"
+ ],
+ "music": {
+  "curious": "../../assets/music/curious.mp3",
+  "dramatic": "../../assets/music/dramatic.mp3",
+  "calm": "../../assets/music/calm.mp3"
+ },
+ "mascot": {
+  "img": "mascot_v2",
+  "parts": 4,
+  "full_body": true,
+  "more": [
+   {
+    "img": "mascot_v3a_0",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3a_1",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3a_2",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3a_3",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_0",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_1",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_2",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_3",
+    "parts": 1
+   }
+  ]
+ },
+ "ui": {
+  "subscribe": "OBUNA BO'LING",
+  "subscribed": "OBUNA BO'LDINGIZ",
+  "like": "LAYK",
+  "next": "KEYINGI VIDEO"
+ },
+ "sentences": [
+  "1923-yil, Germaniya.",
+  "Bir odam kafega kirib, 5 ming markaga bir finjon qahva buyurtma qiladi.",
+  "Qahvasini ichib bo'lgach, hisobni so'raydi.",
+  "Hisob esa 8 ming marka bo'lib chiqadi.",
+  "Chunki u qahva ichib o'tirgan qisqa vaqt ichida pulning qadri yana tushib ketgan edi.",
+  "Bu hikoya bizdan uzoqdek tuyuladi, lekin unchalik ham uzoq emas.",
+  "Bugun O'zbekistonda bir yil oldin 100 ming so'm turgan narsalar o'rtacha 106 ming 500 so'm turadi.",
+  "Benzin va qo'y go'shti esa bir yilda deyarli 20 foizga qimmatladi.",
+  "Xo'sh, narxlar nega har yili oshib boradi?",
+  "So'mimizning yo'qolgan qadri qayerga ketadi?",
+  "Va nega hukumatlar narxlar umuman oshmasligini emas, balki ozgina oshishini xohlaydi?",
+  "Mening ismim Bilmas, negadir odamlar meni Bilmasboy deb tanishadi.",
+  "Bilganlarim meni boy qilgan bo'lsa, bilmaganlarim ustida hanuzgacha savollar so'rayman, izlanaman.",
+  "Hamda shu yo'lda topganlarimni siz bilan ulashib boraman.",
+  "O'tgan safar bir parcha tosh qanday qilib uydan ham qimmat bo'lib qolganini bilib olgandik.",
+  "Bugun esa hamyonimizdagi har bir so'mga taalluqli savolga javob qidiramiz.",
+  "Demak, bugungi mavzu: inflyatsiya, ya'ni pulimiz nega qadrsizlanib boradi.",
+  "Avval inflyatsiya o'zi nima ekanini tushunib olaylik.",
+  "Inflyatsiya bu bitta mahsulotning emas, deyarli hamma narsaning narxi birgalikda oshishidir.",
+  "Boshqacha aytganda, xuddi shu pulga oldingidan kamroq narsa sotib olasiz.",
+  "Buni o'lchash uchun statistika agentligi har oy yuzlab mahsulot va xizmatlar narxini yozib boradi.",
+  "Non, go'sht, tuxum, benzin, kommunal to'lovlar, avtobus chiptasi, sartaroshxona va boshqalar.",
+  "Bularning hammasi bitta savatga yig'iladi va uning narxi har oy solishtiriladi.",
+  "2026-yil oktyabrida O'zbekistonda bu savat bir yil oldingiga nisbatan 6,5 foizga qimmatlagan.",
+  "Lekin savatdagi har bir narsa bir xil qimmatlamaydi.",
+  "Tuxum bir yilda qariyb 13 foizga, mol go'shti 17 foizga oshdi, Toshkentda avtobus va metro yo'l haqi esa yangi tariflardan keyin 26 foizga ko'tarildi.",
+  "Shakar esa o'tgan oyning o'zida 2 foizga arzonladi.",
+  "Shuning uchun inflyatsiya o'rtacha raqam bo'lib, har bir oilaning o'z inflyatsiyasi bor.",
+  "Endi asosiy savolga o'tamiz: narxlar nega oshadi?",
+  "Iqtisodchilar odatda uchta asosiy sababni aytishadi.",
+  "Birinchi sabab: muomalada pul ko'payib, mahsulot o'shancha ko'paymasa.",
+  "Tasavvur qiling, bir orolda faqat 10 ta olma va 10 so'm pul bor.",
+  "Bitta olma 1 so'm turadi.",
+  "Bir kuni orolga yana 10 so'm pul olib kelinadi, olma esa o'sha 10 ta bo'lib qoladi.",
+  "Endi odamlarda pul ko'p, olma esa kam, shuning uchun bitta olma 2 so'm bo'ladi.",
+  "Olmaning o'zi o'zgarmadi, faqat pulning qadri tushdi.",
+  "Amerikalik iqtisodchi Milton Fridman aynan shu fikrni ilgari surgan: uning fikricha, inflyatsiya har doim va hamma joyda pul bilan bog'liq hodisa.",
+  "Bir soniya to'xtab: agar bunday mavzular sizga qiziq bo'lsa, kanalga obuna bo'lishni unutmang.",
+  "Davom etamiz.",
+  "Ikkinchi sabab: mahsulotni ishlab chiqarish qimmatlashsa.",
+  "Agar yoqilg'i, elektr yoki gaz qimmatlasa, non yopish ham, yuk tashish ham qimmatlashadi.",
+  "Bu xarajat oxir-oqibat do'kondagi narxga qo'shiladi.",
+  "Masalan, 2024-yilda O'zbekistonda gaz narxi o'rtacha 2,3 barobar, elektr narxi esa qariyb 1,7 barobar oshdi.",
+  "O'sha yili inflyatsiya 9,8 foizga yetdi.",
+  "Uchinchi sabab esa ko'pincha e'tibordan chetda qoladi: kutish.",
+  "Agar hamma narxlar oshadi deb kutsa, do'kondorlar narxni oldindan ko'taradi, ishchilar esa ko'proq maosh so'raydi.",
+  "Shu tariqa kutishning o'zi narxlarni oshirib yuboradi.",
+  "Markaziy bank so'roviga ko'ra, bugun O'zbekiston aholisi kelgusi bir yilda narxlar o'rtacha 8,7 foizga oshishini kutmoqda.",
+  "Odatda inflyatsiya sekin va deyarli sezilmasdan o'tadi.",
+  "Lekin hukumat byudjet teshigini yopish uchun pulni ko'plab bosib chiqara boshlasa, u nazoratdan chiqib ketadi.",
+  "Buni giperinflyatsiya deyishadi.",
+  "Ko'rsatuv boshidagi Germaniyaga qaytaylik.",
+  "Birinchi jahon urushidan keyin Germaniya katta qarzlar va tovon to'lovlari ostida qoldi.",
+  "1923-yilda Fransiya qo'shinlari Germaniyaning Rur sanoat viloyatini egalladi va hukumat ish tashlagan ishchilarga maosh to'lash uchun pulni tinimsiz bosib chiqardi.",
+  "1922-yilning dekabrida, Berlinda bir bo'lak non 163 marka turardi.",
+  "Bir yil o'tmay, 1923-yil noyabrida xuddi shu non 201 milliard marka bo'ldi.",
+  "Odamlar maoshini savat va aravachalarda olib ketishardi.",
+  "Olov yoqish uchun gazeta qog'ozidan ko'ra pulning o'zini yoqish arzonroq edi.",
+  "1923-yil noyabrida yangi pul, rentenmarka chiqarildi va bitta yangi marka eski pulning 1 trillion markasiga almashtirildi.",
+  "Narxlar to'xtadi, lekin millionlab oilalarning butun umri davomida yig'gan jamg'armasi yo'q bo'lib ketdi.",
+  "Ko'plab tarixchilar fikricha, o'sha yillardagi ishonchsizlik va g'azab keyinchalik ekstremistlarning kuchayishiga ham yo'l ochgan.",
+  "Lekin tarixdagi eng kuchli inflyatsiya Germaniyada emas, Vengriyada bo'lgan.",
+  "1946-yil iyulida u yerda narxlar har 15 soatda ikki barobar oshib borgan.",
+  "Ya'ni bugun ertalab olgan maoshingiz ertaga ertalab yarmidan ham kam narsaga yetardi.",
+  "Yaqin tarixdan esa Zimbabve misoli bor.",
+  "2008-yil noyabrida u yerda narxlar taxminan har kuni ikki barobar oshardi.",
+  "Hatto, 2009-yil yanvarida, Zimbabveda, 100 trillion qiymatdagi pul chiqarilgan.",
+  "Lekin u ham tezda qadrsizlandi va o'sha yili Zimbabve o'z pulidan voz kechib, AQSh dollari kabi xorijiy valyutalarga o'tishga majbur bo'ldi.",
+  "Endi o'zimizga qaytaylik.",
+  "Mustaqillikning birinchi yillarida O'zbekiston ham kuchli inflyatsiyani boshidan kechirgan.",
+  "1993-yil noyabrida vaqtinchalik pul, so'm-kupon muomalaga kiritildi.",
+  "Ular hatto gazeta qog'oziga bosilgan edi.",
+  "1994-yil 1-iyulda esa bugungi so'm chiqarildi va bir so'm ming so'm-kuponga almashtirildi.",
+  "Xalqaro valyuta jamg'armasi ma'lumotiga ko'ra, 1994-yilning o'zida narxlar qariyb 425 foizga oshgan.",
+  "Keyingi yillarda inflyatsiya sekinlashdi, lekin so'mning qadri tushishda davom etdi.",
+  "2017-yil sentabrida valyuta bozori erkinlashtirildi va dollar kursi bir kunda 4 ming 210 so'mdan 8 ming 100 so'mga ko'tarildi.",
+  "Bugun bir dollar qariyb 12 ming so'm turadi.",
+  "2022-yildan beri esa hamyonimizda 200 ming so'mlik pul ham bor.",
+  "Xo'sh, inflyatsiyaga kim qarshi kurashadi?",
+  "Bu vazifa asosan Markaziy bankning zimmasida.",
+  "Uning eng asosiy quroli - bu asosiy qayta moliyalash stavkasi, ya'ni pulning narxi, yana ham aniqrog'i markaziy bankning banklarga beradigan qarzlaridan oladigan foizlari deb tushunish mumkin.",
+  "Qayta moliyalash stavkasi oshsa, kredit olish qimmatlashadi, bu bilan bankka pul qo'yish, aholi uchun foydaliroq bo'ladi.",
+  "Odamlar va kompaniyalar kamroq qarz oladi, kamroq sarflaydi va narxlar sekinlashadi.",
+  "Chunki, pulning narxi, ya'ni oladigan qarzning narxi qimmatligi, odamlarni, qarz olish va sarflashdan qaytarib, tiyib turadi.",
+  "O'zbekiston Markaziy banki asosiy stavkani 2025-yil martidan beri 14 foiz darajasida ushlab turibdi.",
+  "Maqsad esa 2027-yilga kelib inflyatsiyani 5 foizga tushirish.",
+  "Bu nafaqat bizning muammomiz.",
+  "Dunyodagi barcha davlatlar muammosi bo'lib, xususan 2022-yil iyunida hatto Amerikada ham inflyatsiya 9,1 foizga chiqdi.",
+  "Bu so'nggi 40 yillik AQSh tarixidagi, eng yuqori daraja edi.",
+  "Lekin bir savol tug'iladi: agar inflyatsiya yomon bo'lsa, nega uni nolga tushirishmaydi?",
+  "Chunki narxlarning tushishi ham xavfli.",
+  "Buni Yaponiya misolida ko'rish mumkin.",
+  "1990-yillardan boshlab Yaponiyada narxlar uzoq yillar deyarli o'smadi, ba'zan esa tushdi.",
+  "Shu sababli, pul vaqt o'tgan sari qimmatlashib borgani uchun kompaniyalar pulni sarflash o'rniga ushlab turishni afzal ko'rdi.",
+  "Maoshlar o'smadi, investitsiya kamaydi va iqtisod uzoq yillar bir joyda qotib qoldi.",
+  "Shuning uchun ko'plab rivojlangan davlatlarning markaziy banklari nolni emas, yiliga taxminan 2 foizlik inflyatsiyani o'z oldiga maqsad qilib qo'yadi.",
+  "Ozgina inflyatsiya iqtisodni harakatda ushlab turadi, kuchli inflyatsiya esa uni yemiradi.",
+  "Albatta, inflyatsiyadan hamma bir xil zarar ko'rmaydi.",
+  "Uyda naqd pul saqlayotgan odam har yili uning bir qismini yo'qotadi.",
+  "Qat'iy foizli qarzi bor odam uchun esa inflyatsiya qarzni biroz yengillashtiradi.",
+  "Chunki qarz miqdori o'zgarmaydi, pulning qadri esa tushadi.",
+  "Iqtisodchilar orasida ham bahs bor.",
+  "Bir tomon fikricha, inflyatsiyaning asosiy sababi ortiqcha pul va hukumatlarning ko'p sarflashidir.",
+  "Boshqa tomon esa urushlar, energiya narxi va yetkazib berish muammolari kabi tashqi zarbalarni ko'proq aybdor deb hisoblaydi.",
+  "Aslida, ko'p hollarda ikkala sabab ham birga, birdek ishlaydi.",
+  "Xo'sh, bu bizga nima uchun muhim?",
+  "Agar maoshingiz bir yilda 5 foizga oshgan bo'lsa-yu, narxlar 6,5 foizga oshgan bo'lsa, siz aslida kambag'allashgansiz.",
+  "Agar jamg'armangiz inflyatsiyadan past foiz olib kelayotgan bo'lsa, u ham sekin-asta erib boradi.",
+  "Shuning uchun pul haqida qaror qilayotganda faqat raqamga emas, inflyatsiyadan keyin qolgan haqiqiy qiymatga qarash kerak.",
+  "Bu moliyaviy maslahat emas, lekin hisob-kitobning eng muhim qoidasi.",
+  "Demak, narxlar nega har yili oshadi?",
+  "Chunki pul ko'paysa, ishlab chiqarish qimmatlashsa yoki hamma narxlar oshishini kutsa, pulning qadri tushadi.",
+  "Yo'qolgan qadr esa izsiz yo'qolmaydi: u naqd pul saqlovchilardan qarzdorlarga, jumladan eng katta qarzdor bo'lgan davlatning o'ziga o'tadi.",
+  "Ozgina inflyatsiya iqtisod uchun normal holat, lekin u nazoratdan chiqsa, butun boshli jamg'armalarni yo'q qilishi mumkin.",
+  "Inflyatsiya haqida men ham bilmas edim.",
+  "Endi esa hammamiz bilamiz.",
+  "Ana endi sizga savol: sizningcha, bugun jamg'armani so'mda saqlash o'zini oqlaydimi yoki yo'qmi?",
+  "Fikringizni izohlarda yozib qoldiring.",
+  "Keyingi qismda esa nega dunyo markaziy banklari yana oltin sotib olayotganini bilib olamiz.",
+  "O'tkazib yubormaslik uchun obuna bo'ling, qo'ng'iroqchani bosing va ko'rsatuvni do'stlaringizga ulashing."
+ ],
+ "beats": [
+  {
+   "at": [
+    0,
+    "1923-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_cafe_1923",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      0,
+      "1923-yil"
+     ],
+     "k": "label",
+     "text": "1923 · GERMANIYA"
+    },
+    {
+     "at": [
+      0,
+      "Germaniya"
+     ],
+     "k": "flag",
+     "code": "de"
+    },
+    {
+     "at": [
+      1,
+      "5"
+     ],
+     "k": "tag",
+     "text": "QAHVA: 5 000 MARKA"
+    }
+   ]
+  },
+  {
+   "at": [
+    2,
+    "Qahvasini"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_coffee",
+     "x": 0.5,
+     "y": 0.48,
+     "h": 0.55,
+     "at": [
+      2,
+      "Qahvasini"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      2,
+      "hisobni"
+     ],
+     "k": "tag",
+     "text": "HISOB?",
+     "x": 0.5,
+     "y": 0.85
+    },
+    {
+     "at": [
+      3,
+      "8"
+     ],
+     "k": "stamp",
+     "text": "8 000 MARKA",
+     "y": 0.22
+    }
+   ]
+  },
+  {
+   "at": [
+    4,
+    "Chunki"
+   ],
+   "type": "scene",
+   "bg": "bg_cafe_1923",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      4,
+      "qisqa"
+     ],
+     "k": "tag",
+     "text": "BIR FINJON QAHVA VAQTIDA"
+    },
+    {
+     "at": [
+      4,
+      "qadri"
+     ],
+     "k": "tag",
+     "text": "PULNING QADRI TUSHDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    5,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_bazaar_prices",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      5,
+      "uzoq"
+     ],
+     "k": "tag",
+     "text": "UZOQ EMAS"
+    },
+    {
+     "at": [
+      6,
+      "O'zbekistonda"
+     ],
+     "k": "flag",
+     "code": "uz"
+    }
+   ]
+  },
+  {
+   "at": [
+    6,
+    "Bugun"
+   ],
+   "type": "scene",
+   "bg": "bg_bazaar_prices",
+   "crop": "right",
+   "tagpos": [
+    0.3,
+    0.12
+   ],
+   "ev": [
+    {
+     "at": [
+      6,
+      "100"
+     ],
+     "k": "tag",
+     "text": "1 YIL OLDIN: 100 000 SO'M"
+    },
+    {
+     "at": [
+      6,
+      "106"
+     ],
+     "k": "tag",
+     "text": "BUGUN: 106 500 SO'M",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    7,
+    "Benzin"
+   ],
+   "type": "scene",
+   "bg": "bg_petrol",
+   "ev": [
+    {
+     "at": [
+      7,
+      "Benzin"
+     ],
+     "k": "tag",
+     "text": "BENZIN ↑"
+    },
+    {
+     "at": [
+      7,
+      "go'shti"
+     ],
+     "k": "tag",
+     "text": "QO'Y GO'SHTI ↑"
+    },
+    {
+     "at": [
+      7,
+      "20"
+     ],
+     "k": "stamp",
+     "text": "~20% / 1 YIL",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    8,
+    "Xo'sh"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      8,
+      "Xo'sh"
+     ],
+     "k": "mascot",
+     "pose": 4,
+     "side": "right"
+    },
+    {
+     "at": [
+      8,
+      "nega"
+     ],
+     "k": "tag",
+     "text": "NEGA NARXLAR OSHADI?",
+     "x": 0.36,
+     "y": 0.32
+    },
+    {
+     "at": [
+      9,
+      "qadri"
+     ],
+     "k": "tag",
+     "text": "SO'MNING QADRI QAYERGA KETADI?",
+     "x": 0.36,
+     "y": 0.47,
+     "fg": "red"
+    },
+    {
+     "at": [
+      10,
+      "ozgina"
+     ],
+     "k": "tag",
+     "text": "NEGA \"OZGINA\" OSHISHI KERAK?",
+     "x": 0.36,
+     "y": 0.62
+    }
+   ]
+  },
+  {
+   "at": [
+    11,
+    "Mening"
+   ],
+   "type": "intro",
+   "pose": 3
+  },
+  {
+   "at": [
+    12,
+    "Bilganlarim"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      12,
+      "Bilganlarim"
+     ],
+     "k": "mascot",
+     "pose": 5,
+     "side": "right"
+    },
+    {
+     "at": [
+      12,
+      "Bilganlarim"
+     ],
+     "k": "tag",
+     "text": "BILIM = BOYLIK",
+     "x": 0.32,
+     "y": 0.3
+    },
+    {
+     "at": [
+      12,
+      "savollar"
+     ],
+     "k": "tag",
+     "text": "SO'RAYMAN",
+     "x": 0.32,
+     "y": 0.45
+    },
+    {
+     "at": [
+      12,
+      "izlanaman"
+     ],
+     "k": "tag",
+     "text": "IZLANAMAN",
+     "x": 0.32,
+     "y": 0.58
+    },
+    {
+     "at": [
+      13,
+      "ulashib"
+     ],
+     "k": "tag",
+     "text": "ULASHAMAN",
+     "x": 0.32,
+     "y": 0.71,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    14,
+    "O'tgan"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_gold",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.42,
+     "at": [
+      14,
+      "O'tgan"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      14,
+      "O'tgan"
+     ],
+     "k": "label",
+     "text": "4-QISM: OLMOSLAR"
+    },
+    {
+     "at": [
+      14,
+      "uydan"
+     ],
+     "k": "tag",
+     "text": "TOSH NEGA UYDAN QIMMAT?",
+     "x": 0.7,
+     "y": 0.5
+    }
+   ]
+  },
+  {
+   "at": [
+    15,
+    "Bugun"
+   ],
+   "type": "scene",
+   "bg": "bg_wallet",
+   "ev": [
+    {
+     "at": [
+      15,
+      "hamyonimizdagi"
+     ],
+     "k": "tag",
+     "text": "HAMYONIMIZDAGI HAR BIR SO'M",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    16,
+    "Demak"
+   ],
+   "type": "title",
+   "title": "BUGUNGI MAVZU",
+   "title2": "INFLYATSIYA"
+  },
+  {
+   "at": [
+    16,
+    "pulimiz"
+   ],
+   "type": "scene",
+   "bg": "bg_inflation",
+   "ev": [
+    {
+     "at": [
+      16,
+      "pulimiz"
+     ],
+     "k": "tag",
+     "text": "PULIMIZ NEGA QADRSIZLANADI?",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    17,
+    "Avval"
+   ],
+   "type": "chapter",
+   "num": "1-QISM",
+   "title": "INFLYATSIYA NIMA?"
+  },
+  {
+   "at": [
+    18,
+    "Inflyatsiya"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_basket",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.55,
+     "at": [
+      18,
+      "Inflyatsiya"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      18,
+      "bitta"
+     ],
+     "k": "tag",
+     "text": "BITTA MAHSULOT EMAS",
+     "x": 0.7,
+     "y": 0.38
+    },
+    {
+     "at": [
+      18,
+      "hamma"
+     ],
+     "k": "tag",
+     "text": "DEYARLI HAMMA NARSA ↑",
+     "x": 0.7,
+     "y": 0.52,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    19,
+    "Boshqacha"
+   ],
+   "type": "scene",
+   "bg": "bg_wallet",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      19,
+      "shu"
+     ],
+     "k": "tag",
+     "text": "XUDDI SHU PUL"
+    },
+    {
+     "at": [
+      19,
+      "kamroq"
+     ],
+     "k": "tag",
+     "text": "KAMROQ NARSA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    20,
+    "Buni"
+   ],
+   "type": "scene",
+   "bg": "bg_stat_office",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      20,
+      "statistika"
+     ],
+     "k": "label",
+     "text": "STATISTIKA AGENTLIGI"
+    },
+    {
+     "at": [
+      20,
+      "har"
+     ],
+     "k": "tag",
+     "text": "HAR OY"
+    },
+    {
+     "at": [
+      20,
+      "yuzlab"
+     ],
+     "k": "tag",
+     "text": "YUZLAB NARX",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    21,
+    "Non"
+   ],
+   "type": "scene",
+   "bg": "bg_bazaar_prices",
+   "crop": "left",
+   "tagpos": [
+    0.72,
+    0.14
+   ],
+   "ev": [
+    {
+     "at": [
+      21,
+      "Non"
+     ],
+     "k": "tag",
+     "text": "NON"
+    },
+    {
+     "at": [
+      21,
+      "go'sht"
+     ],
+     "k": "tag",
+     "text": "GO'SHT"
+    },
+    {
+     "at": [
+      21,
+      "tuxum"
+     ],
+     "k": "tag",
+     "text": "TUXUM"
+    },
+    {
+     "at": [
+      21,
+      "benzin"
+     ],
+     "k": "tag",
+     "text": "BENZIN"
+    },
+    {
+     "at": [
+      21,
+      "kommunal"
+     ],
+     "k": "tag",
+     "text": "KOMMUNAL"
+    },
+    {
+     "at": [
+      21,
+      "avtobus"
+     ],
+     "k": "tag",
+     "text": "AVTOBUS"
+    },
+    {
+     "at": [
+      21,
+      "sartaroshxona"
+     ],
+     "k": "tag",
+     "text": "SARTAROSHXONA"
+    }
+   ]
+  },
+  {
+   "at": [
+    22,
+    "Bularning"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_basket",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.6,
+     "at": [
+      22,
+      "Bularning"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      22,
+      "savatga"
+     ],
+     "k": "tag",
+     "text": "ISTE'MOL SAVATI",
+     "x": 0.5,
+     "y": 0.12
+    },
+    {
+     "at": [
+      22,
+      "har"
+     ],
+     "k": "tag",
+     "text": "HAR OY SOLISHTIRILADI",
+     "x": 0.5,
+     "y": 0.88,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    23,
+    "2026-yil"
+   ],
+   "type": "number",
+   "prop": "prop_basket",
+   "value": "6,5%",
+   "sub": "O'ZBEKISTON · 2026-YIL OKTYABR · 1 YILDA",
+   "show": [
+    23,
+    "6,5"
+   ]
+  },
+  {
+   "at": [
+    24,
+    "Lekin"
+   ],
+   "type": "scene",
+   "bg": "bg_butcher",
+   "ev": [
+    {
+     "at": [
+      24,
+      "bir"
+     ],
+     "k": "tag",
+     "text": "HAMMASI BIR XIL EMAS"
+    }
+   ]
+  },
+  {
+   "at": [
+    25,
+    "Tuxum"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      25,
+      "Tuxum"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "TUXUM",
+       "value": 13,
+       "at": [
+        25,
+        "13"
+       ]
+      },
+      {
+       "label": "MOL GO'SHTI",
+       "value": 17,
+       "at": [
+        25,
+        "17"
+       ]
+      },
+      {
+       "label": "METRO, AVTOBUS",
+       "value": 26,
+       "hl": true,
+       "at": [
+        25,
+        "26"
+       ]
+      }
+     ],
+     "suffix": "%"
+    },
+    {
+     "at": [
+      25,
+      "Tuxum"
+     ],
+     "k": "label",
+     "text": "NARXLAR O'ZGARISHI"
+    }
+   ]
+  },
+  {
+   "at": [
+    26,
+    "Shakar"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_sugar",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.55,
+     "at": [
+      26,
+      "Shakar"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      26,
+      "2"
+     ],
+     "k": "stamp",
+     "text": "-2% / 1 OY",
+     "y": 0.2
+    },
+    {
+     "at": [
+      26,
+      "arzonladi"
+     ],
+     "k": "tag",
+     "text": "ARZONLADI",
+     "x": 0.5,
+     "y": 0.85
+    }
+   ]
+  },
+  {
+   "at": [
+    27,
+    "Shuning"
+   ],
+   "type": "scene",
+   "bg": "bg_three_families",
+   "ev": [
+    {
+     "at": [
+      27,
+      "o'rtacha"
+     ],
+     "k": "tag",
+     "text": "6,5% = O'RTACHA"
+    },
+    {
+     "at": [
+      27,
+      "oilaning"
+     ],
+     "k": "tag",
+     "text": "HAR OILANING O'Z INFLYATSIYASI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    28,
+    "Endi"
+   ],
+   "type": "chapter",
+   "num": "2-QISM",
+   "title": "NEGA NARXLAR OSHADI?"
+  },
+  {
+   "at": [
+    29,
+    "Iqtisodchilar"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      29,
+      "Iqtisodchilar"
+     ],
+     "k": "mascot",
+     "pose": 6,
+     "side": "right"
+    },
+    {
+     "at": [
+      29,
+      "uchta"
+     ],
+     "k": "tag",
+     "text": "3 TA SABAB",
+     "x": 0.36,
+     "y": 0.4,
+     "fg": "red"
+    },
+    {
+     "at": [
+      30,
+      "pul"
+     ],
+     "k": "tag",
+     "text": "1. PUL KO'PAYSA",
+     "x": 0.36,
+     "y": 0.56
+    }
+   ]
+  },
+  {
+   "at": [
+    31,
+    "Tasavvur"
+   ],
+   "type": "scene",
+   "bg": "bg_island",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      31,
+      "10"
+     ],
+     "k": "tag",
+     "text": "10 TA OLMA"
+    },
+    {
+     "at": [
+      31,
+      "so'm"
+     ],
+     "k": "tag",
+     "text": "10 SO'M",
+     "fg": "red"
+    },
+    {
+     "at": [
+      32,
+      "1"
+     ],
+     "k": "tag",
+     "text": "1 OLMA = 1 SO'M"
+    }
+   ]
+  },
+  {
+   "at": [
+    33,
+    "Bir"
+   ],
+   "type": "scene",
+   "bg": "bg_island_ship",
+   "ev": [
+    {
+     "at": [
+      33,
+      "yana"
+     ],
+     "k": "tag",
+     "text": "+10 SO'M",
+     "fg": "red"
+    },
+    {
+     "at": [
+      33,
+      "olma"
+     ],
+     "k": "tag",
+     "text": "OLMA: HALI HAM 10 TA"
+    }
+   ]
+  },
+  {
+   "at": [
+    34,
+    "Endi"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      34,
+      "2"
+     ],
+     "k": "bigtext",
+     "text": "1 OLMA = 2 SO'M",
+     "x": 0.5,
+     "y": 0.45
+    },
+    {
+     "at": [
+      34,
+      "ko'p"
+     ],
+     "k": "tag",
+     "text": "PUL KO'P, OLMA KAM",
+     "x": 0.5,
+     "y": 0.75
+    }
+   ]
+  },
+  {
+   "at": [
+    35,
+    "Olmaning"
+   ],
+   "type": "scene",
+   "bg": "bg_island",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      35,
+      "o'zgarmadi"
+     ],
+     "k": "tag",
+     "text": "OLMA O'ZGARMADI"
+    },
+    {
+     "at": [
+      35,
+      "qadri"
+     ],
+     "k": "tag",
+     "text": "PULNING QADRI TUSHDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    36,
+    "Amerikalik"
+   ],
+   "type": "portrait",
+   "fig": "friedman_cut",
+   "vfocus": 0.2,
+   "ev": [
+    {
+     "at": [
+      36,
+      "Amerikalik"
+     ],
+     "k": "flag",
+     "code": "us"
+    },
+    {
+     "at": [
+      36,
+      "Milton"
+     ],
+     "k": "label",
+     "text": "MILTON FRIDMAN"
+    },
+    {
+     "at": [
+      36,
+      "har"
+     ],
+     "k": "tag",
+     "text": "\"HAR DOIM VA HAMMA JOYDA\""
+    },
+    {
+     "at": [
+      36,
+      "pul"
+     ],
+     "k": "tag",
+     "text": "PUL BILAN BOG'LIQ",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    37,
+    "Bir"
+   ],
+   "type": "object",
+   "sfx": [
+    [
+     0,
+     "ding"
+    ]
+   ],
+   "ev": [
+    {
+     "at": [
+      37,
+      "Bir"
+     ],
+     "k": "mascot",
+     "pose": 7,
+     "side": "right"
+    },
+    {
+     "at": [
+      37,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.4,
+     "y": 0.45,
+     "dur": 3.4
+    }
+   ]
+  },
+  {
+   "at": [
+    39,
+    "Ikkinchi"
+   ],
+   "type": "scene",
+   "bg": "bg_bakery_gas",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      39,
+      "Ikkinchi"
+     ],
+     "k": "tag",
+     "text": "2. ISHLAB CHIQARISH QIMMATLASHSA",
+     "fg": "red"
+    },
+    {
+     "at": [
+      40,
+      "gaz"
+     ],
+     "k": "tag",
+     "text": "YOQILG'I, ELEKTR, GAZ ↑"
+    }
+   ]
+  },
+  {
+   "at": [
+    41,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_bakery_gas",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      41,
+      "do'kondagi"
+     ],
+     "k": "tag",
+     "text": "XARAJAT → NARX"
+    }
+   ]
+  },
+  {
+   "at": [
+    42,
+    "Masalan"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      42,
+      "2024-yilda"
+     ],
+     "k": "label",
+     "text": "2024 · O'ZBEKISTON"
+    },
+    {
+     "at": [
+      42,
+      "gaz"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "GAZ ×2,3",
+       "value": 230,
+       "at": [
+        42,
+        "2,3"
+       ]
+      },
+      {
+       "label": "ELEKTR ×1,7",
+       "value": 170,
+       "hl": true,
+       "at": [
+        42,
+        "1,7"
+       ]
+      }
+     ],
+     "novalue": true
+    },
+    {
+     "at": [
+      42,
+      "gaz"
+     ],
+     "k": "prop",
+     "img": "prop_meter",
+     "x": 0.82,
+     "y": 0.5,
+     "h": 0.3
+    }
+   ]
+  },
+  {
+   "at": [
+    43,
+    "O'sha"
+   ],
+   "type": "number",
+   "prop": "prop_meter",
+   "value": "9,8%",
+   "sub": "O'ZBEKISTON · 2024-YIL INFLYATSIYASI",
+   "show": [
+    43,
+    "9,8"
+   ]
+  },
+  {
+   "at": [
+    44,
+    "Uchinchi"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      44,
+      "Uchinchi"
+     ],
+     "k": "mascot",
+     "pose": 8,
+     "side": "right"
+    },
+    {
+     "at": [
+      44,
+      "Uchinchi"
+     ],
+     "k": "tag",
+     "text": "3. KUTISH",
+     "x": 0.36,
+     "y": 0.42,
+     "fg": "red"
+    },
+    {
+     "at": [
+      44,
+      "e'tibordan"
+     ],
+     "k": "tag",
+     "text": "KO'PINCHA SEZILMAYDI",
+     "x": 0.36,
+     "y": 0.57
+    }
+   ]
+  },
+  {
+   "at": [
+    45,
+    "Agar"
+   ],
+   "type": "scene",
+   "bg": "bg_price_up",
+   "ev": [
+    {
+     "at": [
+      45,
+      "do'kondorlar"
+     ],
+     "k": "tag",
+     "text": "DO'KON: NARX ↑"
+    },
+    {
+     "at": [
+      45,
+      "ishchilar"
+     ],
+     "k": "tag",
+     "text": "ISHCHI: MAOSH ↑",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    46,
+    "Shu"
+   ],
+   "type": "scene",
+   "bg": "bg_price_up",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      46,
+      "kutishning"
+     ],
+     "k": "tag",
+     "text": "KUTISHNING O'ZI NARXNI OSHIRADI"
+    }
+   ]
+  },
+  {
+   "at": [
+    47,
+    "Markaziy"
+   ],
+   "type": "number",
+   "prop": "prop_basket",
+   "value": "8,7%",
+   "sub": "AHOLI KUTAYOTGAN INFLYATSIYA · KELGUSI 12 OY",
+   "show": [
+    47,
+    "8,7"
+   ]
+  },
+  {
+   "at": [
+    48,
+    "Odatda"
+   ],
+   "type": "chapter",
+   "num": "3-QISM",
+   "title": "GIPERINFLYATSIYA"
+  },
+  {
+   "at": [
+    49,
+    "Lekin"
+   ],
+   "type": "scene",
+   "bg": "bg_printing_press",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      49,
+      "byudjet"
+     ],
+     "k": "tag",
+     "text": "BYUDJET TESHIGI"
+    },
+    {
+     "at": [
+      49,
+      "bosib"
+     ],
+     "k": "tag",
+     "text": "PUL BOSISH",
+     "fg": "red"
+    },
+    {
+     "at": [
+      50,
+      "giperinflyatsiya"
+     ],
+     "k": "stamp",
+     "text": "GIPERINFLYATSIYA",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    51,
+    "Ko'rsatuv"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.51,
+    0.3
+   ],
+   "ev": [
+    {
+     "at": [
+      51,
+      "Germaniyaga"
+     ],
+     "k": "flag",
+     "code": "de"
+    },
+    {
+     "at": [
+      51,
+      "Germaniyaga"
+     ],
+     "k": "pin",
+     "x": 0.51,
+     "y": 0.28
+    },
+    {
+     "at": [
+      52,
+      "Birinchi"
+     ],
+     "k": "label",
+     "text": "1918 · URUSHDAN KEYIN"
+    },
+    {
+     "at": [
+      52,
+      "qarzlar"
+     ],
+     "k": "tag",
+     "text": "QARZ + TOVON TO'LOVLARI",
+     "x": 0.5,
+     "y": 0.85
+    }
+   ]
+  },
+  {
+   "at": [
+    53,
+    "1923-yilda"
+   ],
+   "type": "scene",
+   "bg": "bg_ruhr",
+   "ev": [
+    {
+     "at": [
+      53,
+      "1923-yilda"
+     ],
+     "k": "label",
+     "text": "1923 · RUR"
+    },
+    {
+     "at": [
+      53,
+      "Fransiya"
+     ],
+     "k": "flag",
+     "code": "fr"
+    },
+    {
+     "at": [
+      53,
+      "ish"
+     ],
+     "k": "tag",
+     "text": "ISH TASHLASH"
+    },
+    {
+     "at": [
+      53,
+      "bosib"
+     ],
+     "k": "tag",
+     "text": "MAOSH = YANGI PUL",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    54,
+    "1922-yilning"
+   ],
+   "type": "scene",
+   "bg": "bg_bakery_1923",
+   "ev": [
+    {
+     "at": [
+      54,
+      "1922-yilning"
+     ],
+     "k": "label",
+     "text": "1922 · DEKABR"
+    },
+    {
+     "at": [
+      54,
+      "163"
+     ],
+     "k": "tag",
+     "text": "1 NON = 163 MARKA"
+    }
+   ]
+  },
+  {
+   "at": [
+    55,
+    "Bir"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      55,
+      "1923-yil"
+     ],
+     "k": "label",
+     "text": "1923 · NOYABR"
+    },
+    {
+     "at": [
+      55,
+      "201"
+     ],
+     "k": "bigtext",
+     "text": "201 000 000 000",
+     "x": 0.5,
+     "y": 0.45
+    },
+    {
+     "at": [
+      55,
+      "marka"
+     ],
+     "k": "tag",
+     "text": "MARKA · 1 NON",
+     "x": 0.5,
+     "y": 0.72,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    56,
+    "Odamlar"
+   ],
+   "type": "scene",
+   "bg": "bg_money_carts",
+   "ev": [
+    {
+     "at": [
+      56,
+      "savat"
+     ],
+     "k": "tag",
+     "text": "MAOSH SAVATDA"
+    }
+   ]
+  },
+  {
+   "at": [
+    57,
+    "Olov"
+   ],
+   "type": "scene",
+   "bg": "bg_money_stove",
+   "ev": [
+    {
+     "at": [
+      57,
+      "gazeta"
+     ],
+     "k": "tag",
+     "text": "GAZETADAN ARZON",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    58,
+    "1923-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_printing_press",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      58,
+      "1923-yil"
+     ],
+     "k": "label",
+     "text": "1923 · NOYABR"
+    },
+    {
+     "at": [
+      58,
+      "rentenmarka"
+     ],
+     "k": "tag",
+     "text": "RENTENMARKA"
+    },
+    {
+     "at": [
+      58,
+      "1"
+     ],
+     "k": "tag",
+     "text": "1 YANGI = 1 000 000 000 000 ESKI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    59,
+    "Narxlar"
+   ],
+   "type": "scene",
+   "bg": "bg_savings_lost",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      59,
+      "to'xtadi"
+     ],
+     "k": "tag",
+     "text": "NARXLAR TO'XTADI"
+    },
+    {
+     "at": [
+      59,
+      "jamg'armasi"
+     ],
+     "k": "stamp",
+     "text": "JAMG'ARMALAR YO'Q",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    60,
+    "Ko'plab"
+   ],
+   "type": "scene",
+   "bg": "bg_unrest",
+   "ev": [
+    {
+     "at": [
+      60,
+      "ishonchsizlik"
+     ],
+     "k": "tag",
+     "text": "ISHONCHSIZLIK + G'AZAB"
+    },
+    {
+     "at": [
+      60,
+      "ekstremistlarning"
+     ],
+     "k": "tag",
+     "text": "EKSTREMISTLAR KUCHAYDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    61,
+    "Lekin"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.53,
+    0.32
+   ],
+   "ev": [
+    {
+     "at": [
+      61,
+      "Vengriyada"
+     ],
+     "k": "flag",
+     "code": "hu"
+    },
+    {
+     "at": [
+      61,
+      "Vengriyada"
+     ],
+     "k": "pin",
+     "x": 0.535,
+     "y": 0.31
+    },
+    {
+     "at": [
+      61,
+      "eng"
+     ],
+     "k": "tag",
+     "text": "TARIXDAGI ENG KUCHLI",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    62,
+    "1946-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_budapest",
+   "ev": [
+    {
+     "at": [
+      62,
+      "1946-yil"
+     ],
+     "k": "label",
+     "text": "1946 · VENGRIYA"
+    },
+    {
+     "at": [
+      62,
+      "15"
+     ],
+     "k": "stamp",
+     "text": "HAR 15 SOATDA ×2",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    63,
+    "Ya'ni"
+   ],
+   "type": "scene",
+   "bg": "bg_budapest",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      63,
+      "ertalab"
+     ],
+     "k": "tag",
+     "text": "BUGUN ERTALAB: MAOSH"
+    },
+    {
+     "at": [
+      63,
+      "yarmidan"
+     ],
+     "k": "tag",
+     "text": "ERTAGA: YARMIDAN KAM",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    64,
+    "Yaqin"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.56,
+    0.66
+   ],
+   "ev": [
+    {
+     "at": [
+      64,
+      "Zimbabve"
+     ],
+     "k": "flag",
+     "code": "zw"
+    },
+    {
+     "at": [
+      64,
+      "Zimbabve"
+     ],
+     "k": "pin",
+     "x": 0.56,
+     "y": 0.68
+    },
+    {
+     "at": [
+      65,
+      "2008-yil"
+     ],
+     "k": "label",
+     "text": "2008 · ZIMBABVE"
+    }
+   ]
+  },
+  {
+   "at": [
+    65,
+    "2008-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_harare",
+   "ev": [
+    {
+     "at": [
+      65,
+      "har"
+     ],
+     "k": "stamp",
+     "text": "HAR KUNI ×2",
+     "y": 0.2
+    }
+   ]
+  },
+  {
+   "at": [
+    66,
+    "Hatto"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_huge_note",
+     "x": 0.5,
+     "y": 0.45,
+     "h": 0.55,
+     "at": [
+      66,
+      "Hatto"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      66,
+      "2009-yil"
+     ],
+     "k": "label",
+     "text": "2009 · YANVAR"
+    },
+    {
+     "at": [
+      66,
+      "100"
+     ],
+     "k": "tag",
+     "text": "100 000 000 000 000 DOLLAR",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    67,
+    "Lekin"
+   ],
+   "type": "scene",
+   "bg": "bg_harare",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      67,
+      "qadrsizlandi"
+     ],
+     "k": "tag",
+     "text": "TEZDA QADRSIZLANDI"
+    },
+    {
+     "at": [
+      67,
+      "voz"
+     ],
+     "k": "tag",
+     "text": "O'Z PULIDAN VOZ KECHDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    68,
+    "Endi"
+   ],
+   "type": "chapter",
+   "num": "4-QISM",
+   "title": "O'ZBEKISTON VA SO'M"
+  },
+  {
+   "at": [
+    69,
+    "Mustaqillikning"
+   ],
+   "type": "scene",
+   "bg": "bg_tashkent_1990s",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      69,
+      "O'zbekiston"
+     ],
+     "k": "flag",
+     "code": "uz"
+    },
+    {
+     "at": [
+      69,
+      "Mustaqillikning"
+     ],
+     "k": "label",
+     "text": "1990-YILLAR BOSHI"
+    },
+    {
+     "at": [
+      69,
+      "kuchli"
+     ],
+     "k": "tag",
+     "text": "KUCHLI INFLYATSIYA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    70,
+    "1993-yil"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_coupons",
+     "x": 0.5,
+     "y": 0.48,
+     "h": 0.55,
+     "at": [
+      70,
+      "1993-yil"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      70,
+      "1993-yil"
+     ],
+     "k": "label",
+     "text": "1993 · NOYABR"
+    },
+    {
+     "at": [
+      70,
+      "so'm-kupon"
+     ],
+     "k": "tag",
+     "text": "SO'M-KUPON",
+     "x": 0.5,
+     "y": 0.85
+    },
+    {
+     "at": [
+      71,
+      "gazeta"
+     ],
+     "k": "tag",
+     "text": "GAZETA QOG'OZIDA",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    72,
+    "1994-yil"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      72,
+      "1994-yil"
+     ],
+     "k": "label",
+     "text": "1994 · 1-IYUL"
+    },
+    {
+     "at": [
+      72,
+      "ming"
+     ],
+     "k": "bigtext",
+     "text": "1 SO'M = 1000 KUPON",
+     "x": 0.5,
+     "y": 0.45
+    }
+   ]
+  },
+  {
+   "at": [
+    73,
+    "Xalqaro"
+   ],
+   "type": "number",
+   "prop": "prop_coupons",
+   "value": "~425%",
+   "sub": "1994-YIL INFLYATSIYASI · XVJ MA'LUMOTI",
+   "show": [
+    73,
+    "425"
+   ]
+  },
+  {
+   "at": [
+    74,
+    "Keyingi"
+   ],
+   "type": "scene",
+   "bg": "bg_tashkent_far",
+   "ev": [
+    {
+     "at": [
+      74,
+      "sekinlashdi"
+     ],
+     "k": "tag",
+     "text": "INFLYATSIYA SEKINLASHDI"
+    },
+    {
+     "at": [
+      74,
+      "qadri"
+     ],
+     "k": "tag",
+     "text": "SO'M QADRI ↓",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    75,
+    "2017-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_exchange_2017",
+   "ev": [
+    {
+     "at": [
+      75,
+      "2017-yil"
+     ],
+     "k": "label",
+     "text": "2017 · SENTABR"
+    },
+    {
+     "at": [
+      75,
+      "erkinlashtirildi"
+     ],
+     "k": "tag",
+     "text": "VALYUTA ERKINLASHTIRILDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    75,
+    "bir"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      75,
+      "bir"
+     ],
+     "k": "label",
+     "text": "1 DOLLAR = ? SO'M"
+    },
+    {
+     "at": [
+      75,
+      "bir"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "2017 (OLDIN)",
+       "value": 4210,
+       "at": [
+        75,
+        "4"
+       ]
+      },
+      {
+       "label": "2017 (KEYIN)",
+       "value": 8100,
+       "at": [
+        75,
+        "8"
+       ]
+      },
+      {
+       "label": "2026",
+       "value": 11974,
+       "hl": true,
+       "at": [
+        76,
+        "12"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    77,
+    "2022-yildan"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_banknote_stack",
+     "x": 0.5,
+     "y": 0.5,
+     "h": 0.55,
+     "at": [
+      77,
+      "2022-yildan"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      77,
+      "2022-yildan"
+     ],
+     "k": "label",
+     "text": "2022"
+    },
+    {
+     "at": [
+      77,
+      "200"
+     ],
+     "k": "tag",
+     "text": "200 000 SO'MLIK PUL",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    78,
+    "Xo'sh"
+   ],
+   "type": "chapter",
+   "num": "5-QISM",
+   "title": "KIM KURASHADI?"
+  },
+  {
+   "at": [
+    79,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_central_bank",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      79,
+      "Markaziy"
+     ],
+     "k": "label",
+     "text": "MARKAZIY BANK"
+    }
+   ]
+  },
+  {
+   "at": [
+    80,
+    "Uning"
+   ],
+   "type": "scene",
+   "bg": "bg_central_bank",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      80,
+      "quroli"
+     ],
+     "k": "tag",
+     "text": "ASOSIY QUROL"
+    },
+    {
+     "at": [
+      80,
+      "stavkasi"
+     ],
+     "k": "tag",
+     "text": "ASOSIY STAVKA",
+     "fg": "red"
+    },
+    {
+     "at": [
+      80,
+      "narxi"
+     ],
+     "k": "tag",
+     "text": "= PULNING NARXI"
+    }
+   ]
+  },
+  {
+   "at": [
+    81,
+    "Qayta"
+   ],
+   "type": "scene",
+   "bg": "bg_bank_desk",
+   "ev": [
+    {
+     "at": [
+      81,
+      "kredit"
+     ],
+     "k": "tag",
+     "text": "STAVKA ↑ → KREDIT QIMMAT",
+     "fg": "red"
+    },
+    {
+     "at": [
+      81,
+      "bankka"
+     ],
+     "k": "tag",
+     "text": "OMONAT FOYDALIROQ"
+    }
+   ]
+  },
+  {
+   "at": [
+    82,
+    "Odamlar"
+   ],
+   "type": "scene",
+   "bg": "bg_bank_desk",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      82,
+      "kamroq"
+     ],
+     "k": "tag",
+     "text": "KAMROQ QARZ, KAMROQ XARAJAT"
+    },
+    {
+     "at": [
+      82,
+      "sekinlashadi"
+     ],
+     "k": "tag",
+     "text": "NARXLAR SEKINLASHADI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    83,
+    "Chunki"
+   ],
+   "type": "scene",
+   "bg": "bg_payslip",
+   "ev": [
+    {
+     "at": [
+      83,
+      "qimmatligi"
+     ],
+     "k": "tag",
+     "text": "QARZ QIMMAT → SARFLASH KAM"
+    }
+   ]
+  },
+  {
+   "at": [
+    84,
+    "O'zbekiston"
+   ],
+   "type": "number",
+   "prop": "prop_banknote_stack",
+   "value": "14%",
+   "sub": "ASOSIY STAVKA · 2025-YIL MARTIDAN BERI",
+   "show": [
+    84,
+    "14"
+   ]
+  },
+  {
+   "at": [
+    85,
+    "Maqsad"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      85,
+      "Maqsad"
+     ],
+     "k": "label",
+     "text": "O'ZBEKISTON INFLYATSIYASI"
+    },
+    {
+     "at": [
+      85,
+      "Maqsad"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "2024",
+       "value": 9.8
+      },
+      {
+       "label": "2025",
+       "value": 7.3
+      },
+      {
+       "label": "2026 (OKT)",
+       "value": 6.5
+      },
+      {
+       "label": "MAQSAD 2027",
+       "value": 5,
+       "hl": true,
+       "at": [
+        85,
+        "5"
+       ]
+      }
+     ],
+     "suffix": "%"
+    }
+   ]
+  },
+  {
+   "at": [
+    86,
+    "Bu"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.3,
+    0.4
+   ],
+   "ev": [
+    {
+     "at": [
+      86,
+      "nafaqat"
+     ],
+     "k": "tag",
+     "text": "NAFAQAT BIZDA",
+     "x": 0.5,
+     "y": 0.85
+    },
+    {
+     "at": [
+      87,
+      "Amerikada"
+     ],
+     "k": "flag",
+     "code": "us"
+    },
+    {
+     "at": [
+      87,
+      "Amerikada"
+     ],
+     "k": "pin",
+     "x": 0.22,
+     "y": 0.37
+    }
+   ]
+  },
+  {
+   "at": [
+    87,
+    "xususan"
+   ],
+   "type": "scene",
+   "bg": "bg_us_store_2022",
+   "ev": [
+    {
+     "at": [
+      87,
+      "2022-yil"
+     ],
+     "k": "label",
+     "text": "2022 · IYUN · AQSH"
+    },
+    {
+     "at": [
+      87,
+      "9,1"
+     ],
+     "k": "bigtext",
+     "text": "9,1%",
+     "x": 0.5,
+     "y": 0.5
+    },
+    {
+     "at": [
+      88,
+      "40"
+     ],
+     "k": "tag",
+     "text": "40 YILDAGI ENG YUQORI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    89,
+    "Lekin"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      89,
+      "Lekin"
+     ],
+     "k": "mascot",
+     "pose": 9,
+     "side": "right"
+    },
+    {
+     "at": [
+      89,
+      "yomon"
+     ],
+     "k": "tag",
+     "text": "INFLYATSIYA YOMON BO'LSA...",
+     "x": 0.36,
+     "y": 0.4
+    },
+    {
+     "at": [
+      89,
+      "nolga"
+     ],
+     "k": "tag",
+     "text": "NEGA NOL EMAS?",
+     "x": 0.36,
+     "y": 0.56,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    90,
+    "Chunki"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      90,
+      "Chunki"
+     ],
+     "k": "mascot",
+     "pose": 10,
+     "side": "right"
+    },
+    {
+     "at": [
+      90,
+      "tushishi"
+     ],
+     "k": "bigtext",
+     "text": "NARX TUSHISHI HAM XAVFLI",
+     "x": 0.33,
+     "y": 0.45
+    }
+   ]
+  },
+  {
+   "at": [
+    91,
+    "Buni"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.85,
+    0.37
+   ],
+   "ev": [
+    {
+     "at": [
+      91,
+      "Yaponiya"
+     ],
+     "k": "flag",
+     "code": "jp"
+    },
+    {
+     "at": [
+      91,
+      "Yaponiya"
+     ],
+     "k": "pin",
+     "x": 0.85,
+     "y": 0.37
+    },
+    {
+     "at": [
+      92,
+      "1990-yillardan"
+     ],
+     "k": "label",
+     "text": "1990-YILLARDAN"
+    },
+    {
+     "at": [
+      92,
+      "o'smadi"
+     ],
+     "k": "tag",
+     "text": "NARXLAR O'SMADI",
+     "x": 0.5,
+     "y": 0.85
+    }
+   ]
+  },
+  {
+   "at": [
+    93,
+    "Shu"
+   ],
+   "type": "scene",
+   "bg": "bg_tokyo",
+   "ev": [
+    {
+     "at": [
+      93,
+      "qimmatlashib"
+     ],
+     "k": "tag",
+     "text": "PUL QIMMATLASHADI"
+    },
+    {
+     "at": [
+      93,
+      "ushlab"
+     ],
+     "k": "tag",
+     "text": "SARFLASH O'RNIGA SAQLASH",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    94,
+    "Maoshlar"
+   ],
+   "type": "scene",
+   "bg": "bg_tokyo",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      94,
+      "Maoshlar"
+     ],
+     "k": "tag",
+     "text": "MAOSH O'SMADI"
+    },
+    {
+     "at": [
+      94,
+      "investitsiya"
+     ],
+     "k": "tag",
+     "text": "INVESTITSIYA ↓"
+    },
+    {
+     "at": [
+      94,
+      "qotib"
+     ],
+     "k": "stamp",
+     "text": "IQTISOD QOTDI",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    95,
+    "Shuning"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      95,
+      "rivojlangan"
+     ],
+     "k": "label",
+     "text": "RIVOJLANGAN DAVLATLAR"
+    },
+    {
+     "at": [
+      95,
+      "2"
+     ],
+     "k": "bigtext",
+     "text": "~2% / YIL",
+     "x": 0.5,
+     "y": 0.45
+    },
+    {
+     "at": [
+      95,
+      "maqsad"
+     ],
+     "k": "tag",
+     "text": "MAQSAD: NOL EMAS",
+     "x": 0.5,
+     "y": 0.72,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    96,
+    "Ozgina"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      96,
+      "Ozgina"
+     ],
+     "k": "mascot",
+     "pose": 11,
+     "side": "right"
+    },
+    {
+     "at": [
+      96,
+      "Ozgina"
+     ],
+     "k": "tag",
+     "text": "OZGINA = HARAKAT ✓",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      96,
+      "kuchli"
+     ],
+     "k": "tag",
+     "text": "KUCHLI = YEMIRADI ✗",
+     "x": 0.36,
+     "y": 0.57,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    97,
+    "Albatta"
+   ],
+   "type": "chapter",
+   "num": "6-QISM",
+   "title": "KIM YUTADI, KIM YUTQAZADI?"
+  },
+  {
+   "at": [
+    98,
+    "Uyda"
+   ],
+   "type": "scene",
+   "bg": "bg_cash_mattress",
+   "ev": [
+    {
+     "at": [
+      98,
+      "naqd"
+     ],
+     "k": "tag",
+     "text": "NAQD PUL UYDA"
+    },
+    {
+     "at": [
+      98,
+      "yo'qotadi"
+     ],
+     "k": "stamp",
+     "text": "HAR YILI ERIYDI",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    99,
+    "Qat'iy"
+   ],
+   "type": "scene",
+   "bg": "bg_bank_desk",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      99,
+      "qarzi"
+     ],
+     "k": "tag",
+     "text": "QAT'IY FOIZLI QARZ"
+    },
+    {
+     "at": [
+      99,
+      "yengillashtiradi"
+     ],
+     "k": "tag",
+     "text": "QARZ YENGILLASHADI ✓",
+     "fg": "red"
+    },
+    {
+     "at": [
+      100,
+      "miqdori"
+     ],
+     "k": "tag",
+     "text": "QARZ = O'ZGARMAYDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    101,
+    "Iqtisodchilar"
+   ],
+   "type": "scene",
+   "bg": "bg_debate_scale",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      101,
+      "bahs"
+     ],
+     "k": "label",
+     "text": "IQTISODCHILAR BAHSI"
+    }
+   ]
+  },
+  {
+   "at": [
+    102,
+    "Bir"
+   ],
+   "type": "scene",
+   "bg": "bg_printing_press",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      102,
+      "ortiqcha"
+     ],
+     "k": "tag",
+     "text": "1-FIKR: ORTIQCHA PUL"
+    },
+    {
+     "at": [
+      102,
+      "hukumatlarning"
+     ],
+     "k": "tag",
+     "text": "HUKUMAT XARAJATI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    103,
+    "Boshqa"
+   ],
+   "type": "scene",
+   "bg": "bg_petrol",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      103,
+      "urushlar"
+     ],
+     "k": "tag",
+     "text": "2-FIKR: TASHQI ZARBALAR"
+    },
+    {
+     "at": [
+      103,
+      "energiya"
+     ],
+     "k": "tag",
+     "text": "URUSH, ENERGIYA, YETKAZIB BERISH",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    104,
+    "Aslida"
+   ],
+   "type": "scene",
+   "bg": "bg_debate_scale",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      104,
+      "ikkala"
+     ],
+     "k": "tag",
+     "text": "KO'PINCHA IKKALASI BIRGA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    105,
+    "Xo'sh"
+   ],
+   "type": "chapter",
+   "num": "BIZ UCHUN",
+   "title": "NIMA UCHUN MUHIM?"
+  },
+  {
+   "at": [
+    106,
+    "Agar"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      106,
+      "Agar"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "MAOSH",
+       "value": 5,
+       "at": [
+        106,
+        "5"
+       ]
+      },
+      {
+       "label": "NARXLAR",
+       "value": 6.5,
+       "color": "red",
+       "at": [
+        106,
+        "6,5"
+       ]
+      }
+     ],
+     "suffix": "%"
+    },
+    {
+     "at": [
+      106,
+      "kambag'allashgansiz"
+     ],
+     "k": "tag",
+     "text": "AMALDA KAMBAG'ALLASHDINGIZ",
+     "x": 0.5,
+     "y": 0.1,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    107,
+    "Agar"
+   ],
+   "type": "scene",
+   "bg": "bg_payslip",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      107,
+      "past"
+     ],
+     "k": "tag",
+     "text": "FOIZ < INFLYATSIYA"
+    },
+    {
+     "at": [
+      107,
+      "erib"
+     ],
+     "k": "tag",
+     "text": "JAMG'ARMA ERIYDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    108,
+    "Shuning"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      108,
+      "Shuning"
+     ],
+     "k": "mascot",
+     "pose": 0,
+     "side": "right"
+    },
+    {
+     "at": [
+      108,
+      "raqamga"
+     ],
+     "k": "tag",
+     "text": "FAQAT RAQAM EMAS",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      108,
+      "haqiqiy"
+     ],
+     "k": "tag",
+     "text": "HAQIQIY QIYMAT = FOIZ - INFLYATSIYA",
+     "x": 0.36,
+     "y": 0.57,
+     "fg": "red"
+    },
+    {
+     "at": [
+      109,
+      "maslahat"
+     ],
+     "k": "tag",
+     "text": "MOLIYAVIY MASLAHAT EMAS",
+     "x": 0.36,
+     "y": 0.72
+    }
+   ]
+  },
+  {
+   "at": [
+    110,
+    "Demak"
+   ],
+   "type": "title",
+   "title": "JAVOB",
+   "title2": "NEGA NARXLAR HAR YILI OSHADI?"
+  },
+  {
+   "at": [
+    111,
+    "Chunki"
+   ],
+   "type": "scene",
+   "bg": "bg_inflation",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      111,
+      "pul"
+     ],
+     "k": "tag",
+     "text": "1. PUL KO'PAYADI"
+    },
+    {
+     "at": [
+      111,
+      "ishlab"
+     ],
+     "k": "tag",
+     "text": "2. XARAJAT OSHADI"
+    },
+    {
+     "at": [
+      111,
+      "kutsa"
+     ],
+     "k": "tag",
+     "text": "3. HAMMA KUTADI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    112,
+    "Yo'qolgan"
+   ],
+   "type": "scene",
+   "bg": "bg_cash_mattress",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      112,
+      "saqlovchilardan"
+     ],
+     "k": "tag",
+     "text": "NAQD PUL EGASIDAN →"
+    },
+    {
+     "at": [
+      112,
+      "qarzdorlarga"
+     ],
+     "k": "tag",
+     "text": "→ QARZDORGA",
+     "fg": "red"
+    },
+    {
+     "at": [
+      112,
+      "davlatning"
+     ],
+     "k": "tag",
+     "text": "→ DAVLATGA"
+    }
+   ]
+  },
+  {
+   "at": [
+    113,
+    "Ozgina"
+   ],
+   "type": "scene",
+   "bg": "bg_money_carts",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      113,
+      "normal"
+     ],
+     "k": "tag",
+     "text": "OZGINA = NORMAL ✓"
+    },
+    {
+     "at": [
+      113,
+      "nazoratdan"
+     ],
+     "k": "tag",
+     "text": "NAZORATSIZ = XAVFLI ✗",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    114,
+    "Inflyatsiya"
+   ],
+   "type": "title",
+   "title": "INFLYATSIYA HAQIDA MEN HAM BILMAS EDIM",
+   "title2": "ENDI ESA HAMMAMIZ BILAMIZ"
+  },
+  {
+   "at": [
+    116,
+    "Ana"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      116,
+      "Ana"
+     ],
+     "k": "mascot",
+     "pose": 4,
+     "side": "right"
+    },
+    {
+     "at": [
+      116,
+      "so'mda"
+     ],
+     "k": "tag",
+     "text": "JAMG'ARMA SO'MDA...",
+     "x": 0.36,
+     "y": 0.38
+    },
+    {
+     "at": [
+      116,
+      "oqlaydimi"
+     ],
+     "k": "tag",
+     "text": "...O'ZINI OQLAYDIMI?",
+     "x": 0.36,
+     "y": 0.55,
+     "fg": "red"
+    },
+    {
+     "at": [
+      117,
+      "izohlarda"
+     ],
+     "k": "tag",
+     "text": "IZOHDA YOZING",
+     "x": 0.36,
+     "y": 0.72
+    },
+    {
+     "at": [
+      116,
+      "sizningcha"
+     ],
+     "k": "like",
+     "x": 0.82,
+     "y": 0.2
+    }
+   ]
+  },
+  {
+   "at": [
+    118,
+    "Keyingi"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_gold",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.45,
+     "at": [
+      118,
+      "Keyingi"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      118,
+      "Keyingi"
+     ],
+     "k": "label",
+     "text": "KEYINGI QISM"
+    },
+    {
+     "at": [
+      118,
+      "oltin"
+     ],
+     "k": "tag",
+     "text": "NEGA BANKLAR OLTIN OLMOQDA?",
+     "x": 0.68,
+     "y": 0.5,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    119,
+    "O'tkazib"
+   ],
+   "type": "end",
+   "pose": 1,
+   "ev": [
+    {
+     "at": [
+      119,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.47,
+     "y": 0.35,
+     "dur": 3.4
+    }
+   ]
+  }
+ ],
+ "shorts": [
+  {
+   "name": "hook",
+   "from": [
+    0,
+    "1923-yil"
+   ],
+   "to": [
+    11,
+    "Mening"
+   ],
+   "hook": ""
+  },
+  {
+   "name": "basket",
+   "from": [
+    18,
+    "Inflyatsiya"
+   ],
+   "to": [
+    28,
+    "Endi"
+   ],
+   "hook": "HAR OILANING O'Z INFLYATSIYASI"
+  },
+  {
+   "name": "island",
+   "from": [
+    31,
+    "Tasavvur"
+   ],
+   "to": [
+    37,
+    "Bir"
+   ],
+   "hook": "OROLDAGI 10 TA OLMA"
+  },
+  {
+   "name": "germany",
+   "from": [
+    51,
+    "Ko'rsatuv"
+   ],
+   "to": [
+    61,
+    "Lekin"
+   ],
+   "hook": "1 NON = 201 MILLIARD MARKA"
+  },
+  {
+   "name": "record",
+   "from": [
+    61,
+    "Lekin"
+   ],
+   "to": [
+    68,
+    "Endi"
+   ],
+   "hook": "NARX HAR 15 SOATDA ×2"
+  },
+  {
+   "name": "som",
+   "from": [
+    69,
+    "Mustaqillikning"
+   ],
+   "to": [
+    78,
+    "Xo'sh"
+   ],
+   "hook": "SO'MNING TARIXI"
+  },
+  {
+   "name": "japan",
+   "from": [
+    89,
+    "Lekin"
+   ],
+   "to": [
+    97,
+    "Albatta"
+   ],
+   "hook": "NEGA INFLYATSIYA NOL EMAS?"
+  }
+ ],
+ "end_hold": 9,
+ "pauses": {
+  "37": 1.2,
+  "39": 1.1
+ },
+ "end_slots": 2,
+ "end_next": "OLTIN",
+ "series_label": "5-QISM: INFLYATSIYA",
+ "partners": "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari.",
+ "partner_logos": [
+  {
+   "img": "assets/partners/californiauzbek.png",
+   "anim": "assets/partners/californiauzbek_anim.webm",
+   "site": "californiauzbek.com"
+  },
+  {
+   "img": "assets/partners/bysmillah.png",
+   "anim": "assets/partners/bysmillah_anim.mp4",
+   "loop": true,
+   "site": "bysmillah.com",
+   "round": true
+  }
+ ],
+ "handle": "@bilmasboy",
+ "socials": [
+  [
+   "youtube",
+   "@bilmasboy"
+  ],
+  [
+   "instagram",
+   "@bilmas.boy"
+  ],
+  [
+   "tiktok",
+   "@bilmas.boy"
+  ],
+  [
+   "facebook",
+   "@bilmas.boy"
+  ],
+  [
+   "telegram",
+   "@bilmas_boy"
+  ]
+ ]
+}

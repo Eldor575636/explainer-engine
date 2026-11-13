@@ -186,7 +186,7 @@ class Bars:
                 cv2.rectangle(c, (int(cx - bw / 2 - 10), int(base - hh - 10)), (int(cx + bw / 2 + 10), int(base + 4)), c01(RED), 6, cv2.LINE_AA)
             if not self.e.get("novalue"):
                 v = it["value"] * p
-                vs = (f"{v:,.0f}".replace(",", " ") if it["value"] >= 10 or p < 1 else f"{v:g}") + self.suffix
+                vs = (f"{v:,.0f}".replace(",", " ") if it["value"] >= 10 or p < 1 else f"{v:g}".replace(".", ",")) + self.suffix       # Uzbek decimal comma: 9,8%
                 paste(c, text_rgba(vs, self.fonts["anton"], 64, col if col != GREY else NAVY), cx, base - hh - 46, 1.0, appear)
             paste(c, self.labels[k], cx, base + 40, 1.0, min(1, p * 3))
 

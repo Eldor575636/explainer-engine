@@ -25,7 +25,7 @@ def words(n):
             out += ([] if (q == 1 and name == "ming") else [words(q)]) + [name]
     if n >= 100:
         q, n = divmod(n, 100)
-        out += ([ONES[q]] if q > 1 else []) + ["yuz"]
+        out += ([ONES[q]] if q > 1 or n else []) + ["yuz"]      # owner: 106 -> "bir yuz olti", but 100 -> "yuz"
     if n >= 10:
         out.append(TENS[n // 10]); n %= 10
     if n:
@@ -69,6 +69,10 @@ def to_voice(sentences):
         v = re.sub(r"(\d+)-(yil\w*|avgust|sentabr|iyul|yanvar|fevral|mart|aprel|may|iyun|oktabr|noyabr|dekabr)",
                    lambda m: ordinal(int(m.group(1))) + " " + m.group(2), v)
         v = re.sub(r"(\d+) (ta\w*)", lambda m: words(int(m.group(1))) + m.group(2), v)   # 9 tasining -> to'qqiztasining
+        def dec(m):                                    # 6,5 -> olti butun o'ndan besh; 2,35 -> ikki butun yuzdan o'ttiz besh
+            frac = m.group(2); den = {1: "o'ndan", 2: "yuzdan", 3: "mingdan"}.get(len(frac), "")
+            return f"{words(int(m.group(1)))} butun {den} {words(int(frac))}"
+        v = re.sub(r"(\d+),(\d{1,3})(?!\d)", dec, v)
         v = re.sub(r"\d[\d ]*\d|\d", lambda m: words(int(m.group(0).replace(" ", ""))), v)
         v = re.sub(r"\s*[—–]\s*", ", ", v)
         out.append(v[:1].upper() + v[1:])
