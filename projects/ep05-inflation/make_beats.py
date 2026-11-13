@@ -171,7 +171,7 @@ beat([108, "Shuning"], "object", ev=[M([108, "Shuning"], 0), T([108, "raqamga"],
      T([108, "haqiqiy"], "HAQIQIY QIYMAT = FOIZ - INFLYATSIYA", True, x=.36, y=.57), T([109, "maslahat"], "MOLIYAVIY MASLAHAT EMAS", x=.36, y=.72)])
 # ---------------- Javob ----------------
 beat([110, "Demak"], "title", title="JAVOB", title2="NEGA NARXLAR HAR YILI OSHADI?")
-beat([111, "Chunki"], "scene", bg="bg_inflation", crop="left", ev=[T([111, "pul"], "1. PUL KO'PAYADI"), T([111, "ishlab"], "2. XARAJAT OSHADI"),
+beat([111, "Buning"], "scene", bg="bg_inflation", crop="left", ev=[T([111, "pul"], "1. PUL KO'PAYADI"), T([111, "ishlab"], "2. XARAJAT OSHADI"),
      T([111, "kutsa"], "3. HAMMA KUTADI", True)])
 beat([112, "Yo'qolgan"], "scene", bg="bg_cash_mattress", crop="right", ev=[T([112, "saqlovchilardan"], "NAQD PUL EGASIDAN →"), T([112, "qarzdorlarga"], "→ QARZDORGA", True),
      T([112, "davlatning"], "→ DAVLATGA")])
