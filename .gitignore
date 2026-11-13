@@ -5,3 +5,5 @@ projects/*/music.wav
 __pycache__/
 *.pyc
 .thumb_cache/
+projects/*/voice/check.log
+projects/*/voice/voice_check.json
