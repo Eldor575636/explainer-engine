@@ -24,7 +24,7 @@ for ci, ch in enumerate(chunks):
         continue
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(f), "-f", "f32le", "-ac", "1", "-ar", "16000", "-"],
                          capture_output=True, check=True).stdout
-    segs, _ = m.transcribe(np.frombuffer(raw, np.float32), language="uz", word_timestamps=True, vad_filter=True)
+    segs, _ = m.transcribe(np.frombuffer(raw, np.float32), language="uz", word_timestamps=True, vad_filter=True, condition_on_previous_text=False)  # no snowballing errors
     asr = [[to_latin(w.word.strip()), w.start, w.end] for s in segs for w in s.words]
     sents = [s for p in ch["text"].split("\n\n") for s in re.split(r"(?<=[.?!])\s+", p) if s.strip()]
     sw = [(w, si) for si, s in enumerate(sents) for w in s.split()]
