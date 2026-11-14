@@ -1,0 +1,1 @@
+{"bg": "../layers/bg_money_carts.jpg", "badge": "5-QISM", "headline": ["1 NON =", "201 MILLIARD"], "accent": 1, "red": [], "hero": {"img": "../layers/mascot_v2.jpg", "part": 2, "nparts": 4, "h": 0.98, "x": 0.83}, "props": [{"img": "../layers/prop_huge_note.jpg", "h": 0.32, "x": 0.58, "y": 0.82, "rot": -8, "circle": true}], "theme": "light"}

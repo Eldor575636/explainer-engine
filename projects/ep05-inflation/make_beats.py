@@ -42,11 +42,13 @@ beat([6, "Bugun"], "scene", bg="bg_bazaar_prices", crop="right", tagpos=[.3, .12
      ev=[T([6, "100"], "1 YIL OLDIN: 100 000 SO'M"), T([6, "106"], "BUGUN: 106 500 SO'M", True)])
 beat([7, "Benzin"], "scene", bg="bg_petrol", ev=[T([7, "Benzin"], "BENZIN ↑"), T([7, "go'shti"], "QO'Y GO'SHTI ↑"), ST([7, "20"], "~20% / 1 YIL", y=.78)])
 beat([8, "Xo'sh"], "object", ev=[M([8, "Xo'sh"], 4), T([8, "nega"], "NEGA NARXLAR OSHADI?", x=.36, y=.32),
-     T([9, "qadri"], "SO'MNING QADRI QAYERGA KETADI?", True, x=.36, y=.47), T([10, "ozgina"], "NEGA \"OZGINA\" OSHISHI KERAK?", x=.36, y=.62)])
+     T([9, "qadri"], "SO'MNING QADRI QAYERGA KETADI?", True, x=.36, y=.47)])
+beat([10, "Va"], "scene", bg="bg_inflation", ev=[T([10, "oshmasligini"], "NOL EMAS..."), T([10, "ozgina"], "NEGA \"OZGINA\" OSHISHI KERAK?", True)])
 # ---------------- Intro ----------------
 beat([11, "Mening"], "intro", pose=3)
 beat([12, "Bilganlarim"], "object", ev=[M([12, "Bilganlarim"], 5), T([12, "Bilganlarim"], "BILIM = BOYLIK", x=.32, y=.3),
-     T([12, "savollar"], "SO'RAYMAN", x=.32, y=.45), T([12, "izlanaman"], "IZLANAMAN", x=.32, y=.58), T([13, "ulashib"], "ULASHAMAN", True, x=.32, y=.71)])
+     T([12, "savollar"], "SO'RAYMAN", x=.32, y=.45), T([12, "izlanaman"], "IZLANAMAN", x=.32, y=.58)])
+beat([13, "Hamda"], "object", ev=[M([13, "Hamda"], 6), T([13, "ulashib"], "ULASHAMAN", True, x=.32, y=.5)])
 beat([14, "O'tgan"], "object", props=[P([14, "O'tgan"], "prop_gold", .3, .5, .42)],
      ev=[L([14, "O'tgan"], "4-QISM: OLMOSLAR"), T([14, "uydan"], "TOSH NEGA UYDAN QIMMAT?", x=.7, y=.5)])
 beat([15, "Bugun"], "scene", bg="bg_wallet", ev=[T([15, "hamyonimizdagi"], "HAMYONIMIZDAGI HAR BIR SO'M", True)])
@@ -66,8 +68,9 @@ beat([22, "Bularning"], "object", props=[P([22, "Bularning"], "prop_basket", .5,
 beat([23, "2026-yil"], "number", prop="prop_basket", value="6,5%", sub="O'ZBEKISTON · 2026-YIL OKTYABR · 1 YILDA", show=[23, "6,5"])
 beat([24, "Lekin"], "scene", bg="bg_butcher", ev=[T([24, "bir"], "HAMMASI BIR XIL EMAS")])
 beat([25, "Tuxum"], "object", ev=[BARS([25, "Tuxum"], [{"label": "TUXUM", "value": 13, "at": [25, "13"]},
-     {"label": "MOL GO'SHTI", "value": 17, "at": [25, "17"]}, {"label": "METRO, AVTOBUS", "value": 26, "hl": True, "at": [25, "26"]}], suffix="%"),
+     {"label": "MOL GO'SHTI", "value": 17, "hl": True, "at": [25, "17"]}], suffix="%"),
      L([25, "Tuxum"], "NARXLAR O'ZGARISHI")])
+beat([25, "Toshkentda"], "scene", bg="bg_tashkent_metro", ev=[T([25, "avtobus"], "TOSHKENT: METRO, AVTOBUS"), BIG([25, "26"], "+26%", y=.5)])
 beat([26, "Shakar"], "object", props=[P([26, "Shakar"], "prop_sugar", .5, .5, .55)], ev=[ST([26, "2"], "-2% / 1 OY", y=.2), T([26, "arzonladi"], "ARZONLADI", x=.5, y=.85)])
 beat([27, "Shuning"], "scene", bg="bg_three_families", ev=[T([27, "o'rtacha"], "6,5% = O'RTACHA"), T([27, "oilaning"], "HAR OILANING O'Z INFLYATSIYASI", True)])
 # ---------------- 2-qism: sabablar ----------------
@@ -78,13 +81,15 @@ beat([31, "Tasavvur"], "scene", bg="bg_island", mood="curious", ev=[T([31, "10"]
 beat([33, "Bir"], "scene", bg="bg_island_ship", ev=[T([33, "yana"], "+10 SO'M", True), T([33, "olma"], "OLMA: HALI HAM 10 TA")])
 beat([34, "Endi"], "object", ev=[BIG([34, "2"], "1 OLMA = 2 SO'M"), T([34, "ko'p"], "PUL KO'P, OLMA KAM", x=.5, y=.75)])
 beat([35, "Olmaning"], "scene", bg="bg_island", crop="left", ev=[T([35, "o'zgarmadi"], "OLMA O'ZGARMADI"), T([35, "qadri"], "PULNING QADRI TUSHDI", True)])
-beat([36, "Amerikalik"], "portrait", fig="friedman_cut", vfocus=.2, ev=[F([36, "Amerikalik"], "us"), L([36, "Milton"], "MILTON FRIDMAN"),
-     T([36, "har"], "\"HAR DOIM VA HAMMA JOYDA\""), T([36, "pul"], "PUL BILAN BOG'LIQ", True)])
+beat([36, "Amerikalik"], "portrait", fig="friedman_cut", vfocus=.2, ev=[F([36, "Amerikalik"], "us"), L([36, "Milton"], "MILTON FRIDMAN")])
+beat([36, "uning"], "object", props=[P([36, "uning"], "prop_banknote_stack", .3, .5, .45)], ev=[T([36, "har"], "\"HAR DOIM VA HAMMA JOYDA\"", x=.68, y=.42),
+     T([36, "pul"], "PUL BILAN BOG'LIQ", True, x=.68, y=.58)])
 beat([37, "Bir"], "object", sfx=[[0, "ding"]], ev=[M([37, "Bir"], 7), {"at": [37, "obuna"], "k": "subscribe", "x": .4, "y": .45, "dur": 3.4}])
-beat([39, "Ikkinchi"], "scene", bg="bg_bakery_gas", mood="calm", ev=[T([39, "Ikkinchi"], "2. ISHLAB CHIQARISH QIMMATLASHSA", True),
-     T([40, "gaz"], "YOQILG'I, ELEKTR, GAZ ↑")])
+beat([39, "Ikkinchi"], "scene", bg="bg_bakery_gas", mood="calm", ev=[T([39, "Ikkinchi"], "2. ISHLAB CHIQARISH QIMMATLASHSA", True)])
+beat([40, "Agar"], "scene", bg="bg_petrol", crop="right", ev=[T([40, "gaz"], "YOQILG'I, ELEKTR, GAZ ↑", True), T([40, "tashish"], "NON VA YUK TASHISH ↑")])
 beat([41, "Bu"], "scene", bg="bg_bakery_gas", crop="right", ev=[T([41, "do'kondagi"], "XARAJAT → NARX")])
-beat([42, "Masalan"], "object", ev=[L([42, "2024-yilda"], "2024 · O'ZBEKISTON"),
+beat([42, "Masalan"], "scene", bg="bg_tashkent_far", crop="left", ev=[L([42, "2024-yilda"], "2024 · O'ZBEKISTON"), F([42, "O'zbekistonda"], "uz")])
+beat([42, "gaz"], "object", ev=[L([42, "gaz"], "2024 · NARX OSHISHI"),
      BARS([42, "gaz"], [{"label": "GAZ ×2,3", "value": 230, "at": [42, "2,3"]}, {"label": "ELEKTR ×1,7", "value": 170, "hl": True, "at": [42, "1,7"]}], novalue=True),
      PR([42, "gaz"], "prop_meter", .82, .5, .3)])
 beat([43, "O'sha"], "number", prop="prop_meter", value="9,8%", sub="O'ZBEKISTON · 2024-YIL INFLYATSIYASI", show=[43, "9,8"])
@@ -98,8 +103,8 @@ beat([49, "Lekin"], "scene", bg="bg_printing_press", mood="dramatic", ev=[T([49,
      ST([50, "giperinflyatsiya"], "GIPERINFLYATSIYA", y=.78)])
 beat([51, "Ko'rsatuv"], "map", bg="map_world", zf=[.51, .3], ev=[F([51, "Germaniyaga"], "de"), PIN([51, "Germaniyaga"], DE), L([52, "Birinchi"], "1918 · URUSHDAN KEYIN"),
      T([52, "qarzlar"], "QARZ + TOVON TO'LOVLARI", x=.5, y=.85)])
-beat([53, "1923-yilda"], "scene", bg="bg_ruhr", ev=[L([53, "1923-yilda"], "1923 · RUR"), F([53, "Fransiya"], "fr"), T([53, "ish"], "ISH TASHLASH"),
-     T([53, "bosib"], "MAOSH = YANGI PUL", True)])
+beat([53, "1923-yilda"], "scene", bg="bg_ruhr", ev=[L([53, "1923-yilda"], "1923 · RUR"), F([53, "Fransiya"], "fr"), T([53, "Rur"], "FRANSIYA RURNI EGALLADI")])
+beat([53, "hukumat"], "scene", bg="bg_printing_press", ev=[T([53, "ish"], "ISH TASHLASH"), T([53, "bosib"], "MAOSH = YANGI PUL", True)])
 beat([54, "1922-yilning"], "scene", bg="bg_bakery_1923", ev=[L([54, "1922-yilning"], "1922 · DEKABR"), T([54, "163"], "1 NON = 163 MARKA")])
 beat([55, "Bir"], "object", ev=[L([55, "1923-yil"], "1923 · NOYABR"), BIG([55, "201"], "201 000 000 000"), T([55, "marka"], "MARKA · 1 NON", True, x=.5, y=.72)])
 beat([56, "Odamlar"], "scene", bg="bg_money_carts", ev=[T([56, "savat"], "MAOSH SAVATDA")])
@@ -122,7 +127,8 @@ beat([69, "Mustaqillikning"], "scene", bg="bg_tashkent_1990s", mood="calm", ev=[
      T([69, "kuchli"], "KUCHLI INFLYATSIYA", True)])
 beat([70, "1993-yil"], "object", props=[P([70, "1993-yil"], "prop_coupons", .5, .48, .55)], ev=[L([70, "1993-yil"], "1993 · NOYABR"), T([70, "so'm-kupon"], "SO'M-KUPON", x=.5, y=.85),
      T([71, "gazeta"], "GAZETA QOG'OZIDA", True, x=.5, y=.85)])
-beat([72, "1994-yil"], "object", ev=[L([72, "1994-yil"], "1994 · 1-IYUL"), BIG([72, "ming"], "1 SO'M = 1000 KUPON")])
+beat([72, "1994-yil"], "scene", bg="bg_tashkent_1990s", ev=[L([72, "1994-yil"], "1994 · 1-IYUL"), T([72, "so'm"], "BUGUNGI SO'M", True)])
+beat([72, "yangi"], "object", ev=[L([72, "yangi"], "1994 · 1-IYUL"), BIG([72, "ming"], "1 SO'M = 1000 KUPON")])
 beat([73, "Xalqaro"], "number", prop="prop_coupons", value="~425%", sub="1994-YIL INFLYATSIYASI · XVJ MA'LUMOTI", show=[73, "425"])
 beat([74, "Keyingi"], "scene", bg="bg_tashkent_far", ev=[T([74, "sekinlashdi"], "INFLYATSIYA SEKINLASHDI"), T([74, "qadri"], "SO'M QADRI ↓", True)])
 beat([75, "2017-yil"], "scene", bg="bg_exchange_2017", ev=[L([75, "2017-yil"], "2017 · SENTABR"), T([75, "erkinlashtirildi"], "VALYUTA ERKINLASHTIRILDI")])
@@ -135,6 +141,7 @@ beat([77, "2022-yildan"], "object", props=[P([77, "2022-yildan"], "prop_banknote
 beat([78, "Xo'sh"], "chapter", num="5-QISM", title="KIM KURASHADI?")
 beat([79, "Bu"], "scene", bg="bg_central_bank", mood="calm", ev=[L([79, "Markaziy"], "MARKAZIY BANK")])
 beat([80, "Uning"], "scene", bg="bg_central_bank", crop="right", ev=[T([80, "quroli"], "ASOSIY QUROL"), T([80, "stavkasi"], "ASOSIY STAVKA", True), T([80, "narxi"], "= PULNING NARXI")])
+beat([80, "yana"], "scene", bg="bg_bank_desk", crop="left", ev=[T([80, "banklarga"], "BANKLARGA BERILADIGAN QARZ"), T([80, "foizlari"], "= FOIZ", True)])
 beat([81, "Qayta"], "scene", bg="bg_bank_desk", ev=[T([81, "kredit"], "STAVKA ↑ → KREDIT QIMMAT", True), T([81, "bankka"], "OMONAT FOYDALIROQ")])
 beat([82, "Odamlar"], "scene", bg="bg_bank_desk", crop="left", ev=[T([82, "kamroq"], "KAMROQ QARZ, KAMROQ XARAJAT"), T([82, "sekinlashadi"], "NARXLAR SEKINLASHADI", True)])
 beat([83, "Chunki"], "scene", bg="bg_payslip", ev=[T([83, "qimmatligi"], "QARZ QIMMAT → SARFLASH KAM")])
@@ -143,8 +150,8 @@ beat([85, "Maqsad"], "object", ev=[L([85, "Maqsad"], "O'ZBEKISTON INFLYATSIYASI"
      BARS([85, "Maqsad"], [{"label": "2024", "value": 9.8}, {"label": "2025", "value": 7.3}, {"label": "2026 (OKT)", "value": 6.5},
                            {"label": "MAQSAD 2027", "value": 5, "hl": True, "at": [85, "5"]}], suffix="%")])
 beat([86, "Bu"], "map", bg="map_world", zf=[.3, .4], ev=[T([86, "nafaqat"], "NAFAQAT BIZDA", x=.5, y=.85), F([87, "Amerikada"], "us"), PIN([87, "Amerikada"], US)])
-beat([87, "xususan"], "scene", bg="bg_us_store_2022", ev=[L([87, "2022-yil"], "2022 · IYUN · AQSH"), BIG([87, "9,1"], "9,1%", y=.5),
-     T([88, "40"], "40 YILDAGI ENG YUQORI", True)])
+beat([87, "xususan"], "scene", bg="bg_us_store_2022", ev=[L([87, "2022-yil"], "2022 · IYUN · AQSH"), BIG([87, "9,1"], "9,1%", y=.5)])
+beat([88, "Bu"], "scene", bg="bg_us_store_2022", crop="left", ev=[F([88, "AQSh"], "us"), T([88, "40"], "40 YILDAGI ENG YUQORI", True)])
 beat([89, "Lekin"], "object", ev=[M([89, "Lekin"], 9), T([89, "yomon"], "INFLYATSIYA YOMON BO'LSA...", x=.36, y=.4), T([89, "nolga"], "NEGA NOL EMAS?", True, x=.36, y=.56)])
 beat([90, "Chunki"], "object", ev=[M([90, "Chunki"], 10), BIG([90, "tushishi"], "NARX TUSHISHI HAM XAVFLI", x=.33, y=.45)])
 beat([91, "Buni"], "map", bg="map_world", zf=[.85, .37], ev=[F([91, "Yaponiya"], "jp"), PIN([91, "Yaponiya"], JP), L([92, "1990-yillardan"], "1990-YILLARDAN"),
@@ -167,8 +174,8 @@ beat([105, "Xo'sh"], "chapter", num="BIZ UCHUN", title="NIMA UCHUN MUHIM?")
 beat([106, "Agar"], "object", ev=[BARS([106, "Agar"], [{"label": "MAOSH", "value": 5, "at": [106, "5"]}, {"label": "NARXLAR", "value": 6.5, "color": "red", "at": [106, "6,5"]}],
      suffix="%"), T([106, "kambag'allashgansiz"], "AMALDA KAMBAG'ALLASHDINGIZ", True, x=.5, y=.1)])
 beat([107, "Agar"], "scene", bg="bg_payslip", crop="right", ev=[T([107, "past"], "FOIZ < INFLYATSIYA"), T([107, "erib"], "JAMG'ARMA ERIYDI", True)])
-beat([108, "Shuning"], "object", ev=[M([108, "Shuning"], 0), T([108, "raqamga"], "FAQAT RAQAM EMAS", x=.36, y=.42),
-     T([108, "haqiqiy"], "HAQIQIY QIYMAT = FOIZ - INFLYATSIYA", True, x=.36, y=.57), T([109, "maslahat"], "MOLIYAVIY MASLAHAT EMAS", x=.36, y=.72)])
+beat([108, "Shuning"], "object", ev=[M([108, "Shuning"], 0), T([108, "raqamga"], "FAQAT RAQAM EMAS", True, x=.36, y=.5)])
+beat([108, "inflyatsiyadan"], "scene", bg="bg_wallet", ev=[T([108, "haqiqiy"], "HAQIQIY QIYMAT = FOIZ - INFLYATSIYA", True), T([109, "maslahat"], "MOLIYAVIY MASLAHAT EMAS")])
 # ---------------- Javob ----------------
 beat([110, "Demak"], "title", title="JAVOB", title2="NEGA NARXLAR HAR YILI OSHADI?")
 beat([111, "Buning"], "scene", bg="bg_inflation", crop="left", ev=[T([111, "pul"], "1. PUL KO'PAYADI"), T([111, "ishlab"], "2. XARAJAT OSHADI"),

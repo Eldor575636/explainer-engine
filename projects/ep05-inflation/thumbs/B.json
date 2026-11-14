@@ -1,0 +1,1 @@
+{"bg": "../layers/bg_savings_lost.jpg", "badge": "5-QISM", "headline": ["PULINGIZ", "QAYERGA", "YO'QOLADI?"], "accent": 2, "red": ["QAYERGA"], "hero": {"img": "../layers/mascot_v2.jpg", "part": 0, "nparts": 4, "h": 0.98, "x": 0.83}, "props": [{"img": "../layers/prop_banknote_stack.jpg", "h": 0.3, "x": 0.6, "y": 0.84, "rot": 6, "circle": true}], "theme": "light"}

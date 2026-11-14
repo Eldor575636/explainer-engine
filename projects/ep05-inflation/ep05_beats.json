@@ -410,6 +410,24 @@
      "x": 0.36,
      "y": 0.47,
      "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    10,
+    "Va"
+   ],
+   "type": "scene",
+   "bg": "bg_inflation",
+   "ev": [
+    {
+     "at": [
+      10,
+      "oshmasligini"
+     ],
+     "k": "tag",
+     "text": "NOL EMAS..."
     },
     {
      "at": [
@@ -418,8 +436,7 @@
      ],
      "k": "tag",
      "text": "NEGA \"OZGINA\" OSHISHI KERAK?",
-     "x": 0.36,
-     "y": 0.62
+     "fg": "red"
     }
    ]
   },
@@ -476,6 +493,24 @@
      "text": "IZLANAMAN",
      "x": 0.32,
      "y": 0.58
+    }
+   ]
+  },
+  {
+   "at": [
+    13,
+    "Hamda"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      13,
+      "Hamda"
+     ],
+     "k": "mascot",
+     "pose": 6,
+     "side": "right"
     },
     {
      "at": [
@@ -485,7 +520,7 @@
      "k": "tag",
      "text": "ULASHAMAN",
      "x": 0.32,
-     "y": 0.71,
+     "y": 0.5,
      "fg": "red"
     }
    ]
@@ -863,18 +898,10 @@
       {
        "label": "MOL GO'SHTI",
        "value": 17,
-       "at": [
-        25,
-        "17"
-       ]
-      },
-      {
-       "label": "METRO, AVTOBUS",
-       "value": 26,
        "hl": true,
        "at": [
         25,
-        "26"
+        "17"
        ]
       }
      ],
@@ -887,6 +914,34 @@
      ],
      "k": "label",
      "text": "NARXLAR O'ZGARISHI"
+    }
+   ]
+  },
+  {
+   "at": [
+    25,
+    "Toshkentda"
+   ],
+   "type": "scene",
+   "bg": "bg_tashkent_metro",
+   "ev": [
+    {
+     "at": [
+      25,
+      "avtobus"
+     ],
+     "k": "tag",
+     "text": "TOSHKENT: METRO, AVTOBUS"
+    },
+    {
+     "at": [
+      25,
+      "26"
+     ],
+     "k": "bigtext",
+     "text": "+26%",
+     "x": 0.5,
+     "y": 0.5
     }
    ]
   },
@@ -1149,14 +1204,37 @@
      ],
      "k": "label",
      "text": "MILTON FRIDMAN"
-    },
+    }
+   ]
+  },
+  {
+   "at": [
+    36,
+    "uning"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_banknote_stack",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.45,
+     "at": [
+      36,
+      "uning"
+     ]
+    }
+   ],
+   "ev": [
     {
      "at": [
       36,
       "har"
      ],
      "k": "tag",
-     "text": "\"HAR DOIM VA HAMMA JOYDA\""
+     "text": "\"HAR DOIM VA HAMMA JOYDA\"",
+     "x": 0.68,
+     "y": 0.42
     },
     {
      "at": [
@@ -1165,6 +1243,8 @@
      ],
      "k": "tag",
      "text": "PUL BILAN BOG'LIQ",
+     "x": 0.68,
+     "y": 0.58,
      "fg": "red"
     }
    ]
@@ -1220,14 +1300,34 @@
      "k": "tag",
      "text": "2. ISHLAB CHIQARISH QIMMATLASHSA",
      "fg": "red"
-    },
+    }
+   ]
+  },
+  {
+   "at": [
+    40,
+    "Agar"
+   ],
+   "type": "scene",
+   "bg": "bg_petrol",
+   "crop": "right",
+   "ev": [
     {
      "at": [
       40,
       "gaz"
      ],
      "k": "tag",
-     "text": "YOQILG'I, ELEKTR, GAZ ↑"
+     "text": "YOQILG'I, ELEKTR, GAZ ↑",
+     "fg": "red"
+    },
+    {
+     "at": [
+      40,
+      "tashish"
+     ],
+     "k": "tag",
+     "text": "NON VA YUK TASHISH ↑"
     }
    ]
   },
@@ -1255,7 +1355,9 @@
     42,
     "Masalan"
    ],
-   "type": "object",
+   "type": "scene",
+   "bg": "bg_tashkent_far",
+   "crop": "left",
    "ev": [
     {
      "at": [
@@ -1264,6 +1366,31 @@
      ],
      "k": "label",
      "text": "2024 · O'ZBEKISTON"
+    },
+    {
+     "at": [
+      42,
+      "O'zbekistonda"
+     ],
+     "k": "flag",
+     "code": "uz"
+    }
+   ]
+  },
+  {
+   "at": [
+    42,
+    "gaz"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      42,
+      "gaz"
+     ],
+     "k": "label",
+     "text": "2024 · NARX OSHISHI"
     },
     {
      "at": [
@@ -1539,6 +1666,24 @@
      "k": "flag",
      "code": "fr"
     },
+    {
+     "at": [
+      53,
+      "Rur"
+     ],
+     "k": "tag",
+     "text": "FRANSIYA RURNI EGALLADI"
+    }
+   ]
+  },
+  {
+   "at": [
+    53,
+    "hukumat"
+   ],
+   "type": "scene",
+   "bg": "bg_printing_press",
+   "ev": [
     {
      "at": [
       53,
@@ -2073,12 +2218,39 @@
     72,
     "1994-yil"
    ],
-   "type": "object",
+   "type": "scene",
+   "bg": "bg_tashkent_1990s",
    "ev": [
     {
      "at": [
       72,
       "1994-yil"
+     ],
+     "k": "label",
+     "text": "1994 · 1-IYUL"
+    },
+    {
+     "at": [
+      72,
+      "so'm"
+     ],
+     "k": "tag",
+     "text": "BUGUNGI SO'M",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    72,
+    "yangi"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      72,
+      "yangi"
      ],
      "k": "label",
      "text": "1994 · 1-IYUL"
@@ -2321,6 +2493,34 @@
   },
   {
    "at": [
+    80,
+    "yana"
+   ],
+   "type": "scene",
+   "bg": "bg_bank_desk",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      80,
+      "banklarga"
+     ],
+     "k": "tag",
+     "text": "BANKLARGA BERILADIGAN QARZ"
+    },
+    {
+     "at": [
+      80,
+      "foizlari"
+     ],
+     "k": "tag",
+     "text": "= FOIZ",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
     81,
     "Qayta"
    ],
@@ -2522,6 +2722,25 @@
      "text": "9,1%",
      "x": 0.5,
      "y": 0.5
+    }
+   ]
+  },
+  {
+   "at": [
+    88,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_us_store_2022",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      88,
+      "AQSh"
+     ],
+     "k": "flag",
+     "code": "us"
     },
     {
      "at": [
@@ -3067,8 +3286,19 @@
      "k": "tag",
      "text": "FAQAT RAQAM EMAS",
      "x": 0.36,
-     "y": 0.42
-    },
+     "y": 0.5,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    108,
+    "inflyatsiyadan"
+   ],
+   "type": "scene",
+   "bg": "bg_wallet",
+   "ev": [
     {
      "at": [
       108,
@@ -3076,8 +3306,6 @@
      ],
      "k": "tag",
      "text": "HAQIQIY QIYMAT = FOIZ - INFLYATSIYA",
-     "x": 0.36,
-     "y": 0.57,
      "fg": "red"
     },
     {
@@ -3086,9 +3314,7 @@
       "maslahat"
      ],
      "k": "tag",
-     "text": "MOLIYAVIY MASLAHAT EMAS",
-     "x": 0.36,
-     "y": 0.72
+     "text": "MOLIYAVIY MASLAHAT EMAS"
     }
    ]
   },
