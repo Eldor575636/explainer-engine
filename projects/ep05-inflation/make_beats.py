@@ -65,7 +65,7 @@ beat([21, "Non"], "scene", bg="bg_bazaar_prices", crop="left", tagpos=[.72, .14]
      T([21, "benzin"], "BENZIN"), T([21, "kommunal"], "KOMMUNAL"), T([21, "avtobus"], "AVTOBUS"), T([21, "sartaroshxona"], "SARTAROSHXONA")])
 beat([22, "Bularning"], "object", props=[P([22, "Bularning"], "prop_basket", .5, .5, .6)], ev=[T([22, "savatga"], "ISTE'MOL SAVATI", x=.5, y=.12),
      T([22, "har"], "HAR OY SOLISHTIRILADI", True, x=.5, y=.88)])
-beat([23, "2026-yil"], "number", prop="prop_basket", value="6,5%", sub="O'ZBEKISTON · 2026-YIL OKTYABR · 1 YILDA", show=[23, "6,5"])
+beat([23, "2026-yil"], "number", prop="prop_basket", value="6,5%", sub="O'ZBEKISTON · 2026-YIL OKTYABR", show=[23, "6,5"])
 beat([24, "Lekin"], "scene", bg="bg_butcher", ev=[T([24, "bir"], "HAMMASI BIR XIL EMAS")])
 beat([25, "Tuxum"], "object", ev=[BARS([25, "Tuxum"], [{"label": "TUXUM", "value": 13, "at": [25, "13"]},
      {"label": "MOL GO'SHTI", "value": 17, "hl": True, "at": [25, "17"]}], suffix="%"),
@@ -91,12 +91,12 @@ beat([41, "Bu"], "scene", bg="bg_bakery_gas", crop="right", ev=[T([41, "do'konda
 beat([42, "Masalan"], "scene", bg="bg_tashkent_far", crop="left", ev=[L([42, "2024-yilda"], "2024 · O'ZBEKISTON"), F([42, "O'zbekistonda"], "uz")])
 beat([42, "gaz"], "object", ev=[L([42, "gaz"], "2024 · NARX OSHISHI"),
      BARS([42, "gaz"], [{"label": "GAZ ×2,3", "value": 230, "at": [42, "2,3"]}, {"label": "ELEKTR ×1,7", "value": 170, "hl": True, "at": [42, "1,7"]}], novalue=True),
-     PR([42, "gaz"], "prop_meter", .82, .5, .3)])
+     PR([42, "gaz"], "prop_meter", .8, .52, .26)])
 beat([43, "O'sha"], "number", prop="prop_meter", value="9,8%", sub="O'ZBEKISTON · 2024-YIL INFLYATSIYASI", show=[43, "9,8"])
 beat([44, "Uchinchi"], "object", ev=[M([44, "Uchinchi"], 8), T([44, "Uchinchi"], "3. KUTISH", True, x=.36, y=.42), T([44, "e'tibordan"], "KO'PINCHA SEZILMAYDI", x=.36, y=.57)])
 beat([45, "Agar"], "scene", bg="bg_price_up", ev=[T([45, "do'kondorlar"], "DO'KON: NARX ↑"), T([45, "ishchilar"], "ISHCHI: MAOSH ↑", True)])
 beat([46, "Shu"], "scene", bg="bg_price_up", crop="left", ev=[T([46, "kutishning"], "KUTISHNING O'ZI NARXNI OSHIRADI")])
-beat([47, "Markaziy"], "number", prop="prop_basket", value="8,7%", sub="AHOLI KUTAYOTGAN INFLYATSIYA · KELGUSI 12 OY", show=[47, "8,7"])
+beat([47, "Markaziy"], "number", prop="prop_basket", value="8,7%", sub="AHOLI KUTAYOTGAN INFLYATSIYA", show=[47, "8,7"])
 # ---------------- 3-qism: giperinflyatsiya ----------------
 beat([48, "Odatda"], "chapter", num="3-QISM", title="GIPERINFLYATSIYA")
 beat([49, "Lekin"], "scene", bg="bg_printing_press", mood="dramatic", ev=[T([49, "byudjet"], "BYUDJET TESHIGI"), T([49, "bosib"], "PUL BOSISH", True),
@@ -147,8 +147,8 @@ beat([82, "Odamlar"], "scene", bg="bg_bank_desk", crop="left", ev=[T([82, "kamro
 beat([83, "Chunki"], "scene", bg="bg_payslip", ev=[T([83, "qimmatligi"], "QARZ QIMMAT → SARFLASH KAM")])
 beat([84, "O'zbekiston"], "number", prop="prop_banknote_stack", value="14%", sub="ASOSIY STAVKA · 2025-YIL MARTIDAN BERI", show=[84, "14"])
 beat([85, "Maqsad"], "object", ev=[L([85, "Maqsad"], "O'ZBEKISTON INFLYATSIYASI"),
-     BARS([85, "Maqsad"], [{"label": "2024", "value": 9.8}, {"label": "2025", "value": 7.3}, {"label": "2026 (OKT)", "value": 6.5},
-                           {"label": "MAQSAD 2027", "value": 5, "hl": True, "at": [85, "5"]}], suffix="%")])
+     BARS([85, "Maqsad"], [{"label": "2024", "value": 9.8}, {"label": "2025", "value": 7.3}, {"label": "2026", "value": 6.5},
+                           {"label": "2027 ★", "value": 5, "hl": True, "at": [85, "5"]}], suffix="%")])
 beat([86, "Bu"], "map", bg="map_world", zf=[.3, .4], ev=[T([86, "nafaqat"], "NAFAQAT BIZDA", x=.5, y=.85), F([87, "Amerikada"], "us"), PIN([87, "Amerikada"], US)])
 beat([87, "xususan"], "scene", bg="bg_us_store_2022", ev=[L([87, "2022-yil"], "2022 · IYUN · AQSH"), BIG([87, "9,1"], "9,1%", y=.5)])
 beat([88, "Bu"], "scene", bg="bg_us_store_2022", crop="left", ev=[F([88, "AQSh"], "us"), T([88, "40"], "40 YILDAGI ENG YUQORI", True)])
@@ -187,12 +187,50 @@ beat([114, "Inflyatsiya"], "title", title="INFLYATSIYA HAQIDA MEN HAM BILMAS EDI
 beat([116, "Ana"], "object", ev=[M([116, "Ana"], 4), T([116, "so'mda"], "JAMG'ARMA SO'MDA...", x=.36, y=.38),
      T([116, "oqlaydimi"], "...O'ZINI OQLAYDIMI?", True, x=.36, y=.55), T([117, "izohlarda"], "IZOHDA YOZING", x=.36, y=.72),
      {"at": [116, "sizningcha"], "k": "like", "x": .82, "y": .2}])
-beat([118, "Keyingi"], "object", props=[P([118, "Keyingi"], "prop_gold", .3, .5, .45)], ev=[L([118, "Keyingi"], "KEYINGI QISM"),
+beat([118, "Keyingi"], "object", props=[P([118, "Keyingi"], "prop_gold", .32, .52, .38)], ev=[L([118, "Keyingi"], "KEYINGI QISM"),
      T([118, "oltin"], "NEGA BANKLAR OLTIN OLMOQDA?", True, x=.68, y=.5)])
 beat([119, "O'tkazib"], "end", pose=1, ev=[{"at": [119, "obuna"], "k": "subscribe", "x": .47, "y": .35, "dur": 3.4}])
 
 # Shorts framing per beat (chosen by eye from the raw pictures, see CLAUDE.md "Visual audit rules")
-VF = {}
+VF = {  # Shorts framing chosen by eye from WORLD_SHEET (2026-11-13)
+    (0, '1923-yil'): {"vfocus": [0.36, 0.62]},
+    (4, 'Chunki'): {"vfocus": [0.32, 0.6]},
+    (5, 'Bu'): {"vfocus": [0.45, 0.72]},
+    (6, 'Bugun'): {"vfocus": [0.22, 0.6]},
+    (7, 'Benzin'): {"vfocus": 0.45},
+    (10, 'Va'): {"vfocus": 0.45},
+    (19, 'Boshqacha'): {"vfocus": 0.45},
+    (20, 'Buni'): {"vfocus": [0.3, 0.75]},
+    (21, 'Non'): {"vfocus": [0.5, 0.8]},
+    (24, 'Lekin'): {"vfocus": [0.38, 0.72]},
+    (25, 'Toshkentda'): {"vfocus": 0.45},
+    (27, 'Shuning'): {"vfocus": [0.25, 0.8]},
+    (31, 'Tasavvur'): {"vfocus": 0.48},
+    (33, 'Bir'): {"vfocus": [0.35, 0.65]},
+    (35, 'Olmaning'): {"vfocus": 0.62},
+    (51, "Ko'rsatuv"): {"vfocus": 0.51},
+    (53, '1923-yilda'): {"vfocus": [0.2, 0.68]},
+    (53, 'hukumat'): {"vfocus": [0.35, 0.75]},
+    (54, '1922-yilning'): {"vfocus": [0.5, 0.82]},
+    (56, 'Odamlar'): {"vfocus": [0.3, 0.7]},
+    (57, 'Olov'): {"vfocus": 0.48},
+    (58, '1923-yil'): {"vfocus": 0.55},
+    (59, 'Narxlar'): {"vfocus": 0.53, "vzoom": 1.3},
+    (60, "Ko'plab"): {"vfocus": 0.5},
+    (61, 'Lekin'): {"vfocus": 0.53},
+    (62, '1946-yil'): {"vfocus": 0.33},
+    (63, "Ya'ni"): {"vfocus": 0.35},
+    (64, 'Yaqin'): {"vfocus": 0.55},
+    (65, '2008-yil'): {"vfocus": [0.3, 0.68]},
+    (67, 'Lekin'): {"vfocus": 0.6},
+    (69, 'Mustaqillikning'): {"vfocus": [0.38, 0.66]},
+    (72, '1994-yil'): {"vfocus": [0.38, 0.66]},
+    (74, 'Keyingi'): {"vfocus": 0.25},
+    (75, '2017-yil'): {"vfocus": [0.3, 0.85]},
+    (91, 'Buni'): {"vfocus": 0.83},
+    (93, 'Shu'): {"vfocus": 0.3},
+    (94, 'Maoshlar'): {"vfocus": 0.45},
+}
 for _d in B:
     if _d['type'] in ('scene', 'portrait', 'map'):
         _d.update(VF.get(tuple(_d['at']), {}))

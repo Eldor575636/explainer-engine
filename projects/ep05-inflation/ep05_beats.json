@@ -210,6 +210,10 @@
      "k": "tag",
      "text": "QAHVA: 5 000 MARKA"
     }
+   ],
+   "vfocus": [
+    0.36,
+    0.62
    ]
   },
   {
@@ -278,6 +282,10 @@
      "text": "PULNING QADRI TUSHDI",
      "fg": "red"
     }
+   ],
+   "vfocus": [
+    0.32,
+    0.6
    ]
   },
   {
@@ -305,6 +313,10 @@
      "k": "flag",
      "code": "uz"
     }
+   ],
+   "vfocus": [
+    0.45,
+    0.72
    ]
   },
   {
@@ -337,6 +349,10 @@
      "text": "BUGUN: 106 500 SO'M",
      "fg": "red"
     }
+   ],
+   "vfocus": [
+    0.22,
+    0.6
    ]
   },
   {
@@ -372,7 +388,8 @@
      "text": "~20% / 1 YIL",
      "y": 0.78
     }
-   ]
+   ],
+   "vfocus": 0.45
   },
   {
    "at": [
@@ -438,7 +455,8 @@
      "text": "NEGA \"OZGINA\" OSHISHI KERAK?",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.45
   },
   {
    "at": [
@@ -688,7 +706,8 @@
      "text": "KAMROQ NARSA",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.45
   },
   {
    "at": [
@@ -724,6 +743,10 @@
      "text": "YUZLAB NARX",
      "fg": "red"
     }
+   ],
+   "vfocus": [
+    0.3,
+    0.75
    ]
   },
   {
@@ -795,6 +818,10 @@
      "k": "tag",
      "text": "SARTAROSHXONA"
     }
+   ],
+   "vfocus": [
+    0.5,
+    0.8
    ]
   },
   {
@@ -847,7 +874,7 @@
    "type": "number",
    "prop": "prop_basket",
    "value": "6,5%",
-   "sub": "O'ZBEKISTON · 2026-YIL OKTYABR · 1 YILDA",
+   "sub": "O'ZBEKISTON · 2026-YIL OKTYABR",
    "show": [
     23,
     "6,5"
@@ -869,6 +896,10 @@
      "k": "tag",
      "text": "HAMMASI BIR XIL EMAS"
     }
+   ],
+   "vfocus": [
+    0.38,
+    0.72
    ]
   },
   {
@@ -943,7 +974,8 @@
      "x": 0.5,
      "y": 0.5
     }
-   ]
+   ],
+   "vfocus": 0.45
   },
   {
    "at": [
@@ -1010,6 +1042,10 @@
      "text": "HAR OILANING O'Z INFLYATSIYASI",
      "fg": "red"
     }
+   ],
+   "vfocus": [
+    0.25,
+    0.8
    ]
   },
   {
@@ -1094,7 +1130,8 @@
      "k": "tag",
      "text": "1 OLMA = 1 SO'M"
     }
-   ]
+   ],
+   "vfocus": 0.48
   },
   {
    "at": [
@@ -1121,6 +1158,10 @@
      "k": "tag",
      "text": "OLMA: HALI HAM 10 TA"
     }
+   ],
+   "vfocus": [
+    0.35,
+    0.65
    ]
   },
   {
@@ -1178,7 +1219,8 @@
      "text": "PULNING QADRI TUSHDI",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.62
   },
   {
    "at": [
@@ -1428,9 +1470,9 @@
      ],
      "k": "prop",
      "img": "prop_meter",
-     "x": 0.82,
-     "y": 0.5,
-     "h": 0.3
+     "x": 0.8,
+     "y": 0.52,
+     "h": 0.26
     }
    ]
   },
@@ -1541,7 +1583,7 @@
    "type": "number",
    "prop": "prop_basket",
    "value": "8,7%",
-   "sub": "AHOLI KUTAYOTGAN INFLYATSIYA · KELGUSI 12 OY",
+   "sub": "AHOLI KUTAYOTGAN INFLYATSIYA",
    "show": [
     47,
     "8,7"
@@ -1640,7 +1682,8 @@
      "x": 0.5,
      "y": 0.85
     }
-   ]
+   ],
+   "vfocus": 0.51
   },
   {
    "at": [
@@ -1674,6 +1717,10 @@
      "k": "tag",
      "text": "FRANSIYA RURNI EGALLADI"
     }
+   ],
+   "vfocus": [
+    0.2,
+    0.68
    ]
   },
   {
@@ -1701,6 +1748,10 @@
      "text": "MAOSH = YANGI PUL",
      "fg": "red"
     }
+   ],
+   "vfocus": [
+    0.35,
+    0.75
    ]
   },
   {
@@ -1727,6 +1778,10 @@
      "k": "tag",
      "text": "1 NON = 163 MARKA"
     }
+   ],
+   "vfocus": [
+    0.5,
+    0.82
    ]
   },
   {
@@ -1783,6 +1838,10 @@
      "k": "tag",
      "text": "MAOSH SAVATDA"
     }
+   ],
+   "vfocus": [
+    0.3,
+    0.7
    ]
   },
   {
@@ -1802,7 +1861,8 @@
      "text": "GAZETADAN ARZON",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.48
   },
   {
    "at": [
@@ -1838,7 +1898,8 @@
      "text": "1 YANGI = 1 000 000 000 000 ESKI",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.55
   },
   {
    "at": [
@@ -1866,7 +1927,9 @@
      "text": "JAMG'ARMALAR YO'Q",
      "y": 0.78
     }
-   ]
+   ],
+   "vfocus": 0.53,
+   "vzoom": 1.3
   },
   {
    "at": [
@@ -1893,7 +1956,8 @@
      "text": "EKSTREMISTLAR KUCHAYDI",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.5
   },
   {
    "at": [
@@ -1935,7 +1999,8 @@
      "y": 0.85,
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.53
   },
   {
    "at": [
@@ -1962,7 +2027,8 @@
      "text": "HAR 15 SOATDA ×2",
      "y": 0.78
     }
-   ]
+   ],
+   "vfocus": 0.33
   },
   {
    "at": [
@@ -1990,7 +2056,8 @@
      "text": "ERTAGA: YARMIDAN KAM",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.35
   },
   {
    "at": [
@@ -2029,7 +2096,8 @@
      "k": "label",
      "text": "2008 · ZIMBABVE"
     }
-   ]
+   ],
+   "vfocus": 0.55
   },
   {
    "at": [
@@ -2048,6 +2116,10 @@
      "text": "HAR KUNI ×2",
      "y": 0.2
     }
+   ],
+   "vfocus": [
+    0.3,
+    0.68
    ]
   },
   {
@@ -2116,7 +2188,8 @@
      "text": "O'Z PULIDAN VOZ KECHDI",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.6
   },
   {
    "at": [
@@ -2161,6 +2234,10 @@
      "text": "KUCHLI INFLYATSIYA",
      "fg": "red"
     }
+   ],
+   "vfocus": [
+    0.38,
+    0.66
    ]
   },
   {
@@ -2238,6 +2315,10 @@
      "text": "BUGUNGI SO'M",
      "fg": "red"
     }
+   ],
+   "vfocus": [
+    0.38,
+    0.66
    ]
   },
   {
@@ -2306,7 +2387,8 @@
      "text": "SO'M QADRI ↓",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.25
   },
   {
    "at": [
@@ -2332,6 +2414,10 @@
      "k": "tag",
      "text": "VALYUTA ERKINLASHTIRILDI"
     }
+   ],
+   "vfocus": [
+    0.3,
+    0.85
    ]
   },
   {
@@ -2639,11 +2725,11 @@
        "value": 7.3
       },
       {
-       "label": "2026 (OKT)",
+       "label": "2026",
        "value": 6.5
       },
       {
-       "label": "MAQSAD 2027",
+       "label": "2027 ★",
        "value": 5,
        "hl": true,
        "at": [
@@ -2867,7 +2953,8 @@
      "x": 0.5,
      "y": 0.85
     }
-   ]
+   ],
+   "vfocus": 0.83
   },
   {
    "at": [
@@ -2894,7 +2981,8 @@
      "text": "SARFLASH O'RNIGA SAQLASH",
      "fg": "red"
     }
-   ]
+   ],
+   "vfocus": 0.3
   },
   {
    "at": [
@@ -2930,7 +3018,8 @@
      "text": "IQTISOD QOTDI",
      "y": 0.78
     }
-   ]
+   ],
+   "vfocus": 0.45
   },
   {
    "at": [
@@ -3503,9 +3592,9 @@
    "props": [
     {
      "img": "prop_gold",
-     "x": 0.3,
-     "y": 0.5,
-     "h": 0.45,
+     "x": 0.32,
+     "y": 0.52,
+     "h": 0.38,
      "at": [
       118,
       "Keyingi"

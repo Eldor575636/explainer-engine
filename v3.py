@@ -814,7 +814,7 @@ def main():
                 if a_ + 1.2 < s0 < b_ - 1.0:
                     clean = w.strip(".,:;?!\"—()")
                     first = k == 0 or sw[k - 1][1] != si
-                    if clean in cfg.get("auto_skip", []) or (clean.isdigit() and len(clean) != 4):
+                    if clean in cfg.get("auto_skip", []) or (clean.replace(",", "").replace(".", "").isdigit() and not (clean.isdigit() and len(clean) == 4)):
                         continue                                   # bare numbers ("13") mean nothing alone; skip listed words
                     if any(ch.isdigit() for ch in clean) or (clean[:1].isupper() and not first and len(clean) > 3):
                         cands.append((s0, clean))
