@@ -629,14 +629,19 @@ def main():
         if key not in pose_sprites:
             m = cfg.get("mascot", {"img": "mascot_sheet", "parts": 3, "full_body": False})
             sheets = [dict(img=m["img"], parts=m["parts"])] + m.get("more", [])   # extra sheets: pose 4, 5... continue
-            j = i
-            for shp in sheets:
-                if j < shp["parts"]:
-                    break
-                j -= shp["parts"]
+            if isinstance(i, str):                          # named pose from the mascot library (assets/mascot, copied to layers)
+                shp, j = dict(img=i, parts=1), 0
+            else:
+                j = i
+                for shp in sheets:
+                    if j < shp["parts"]:
+                        break
+                    j -= shp["parts"]
             h = (1.32 if side == "center" else 1.15) if m.get("full_body") else (0.78 if side == "center" else 0.68)
+            if isinstance(i, str):                          # library poses hold props at hip height: show the whole figure
+                h = 0.9
             pose_sprites[key] = sticker(layers / f"{shp['img']}.jpg", cache, H * h, part=j, nparts=shp["parts"])
-            pose_sprites[key].full = m.get("full_body", False)
+            pose_sprites[key].full = m.get("full_body", False) and not isinstance(i, str)
         return pose_sprites[key]
 
     print("Preparing beats...")
@@ -891,11 +896,14 @@ def main():
             sp.draw(c, p["x"] * W, p["y"] * H + 6 * math.sin(lt * 2.2), sc * (1 + 0.02 * lt / max(dur, 1)),
                     math.sin(lt * 1.3) * 1.2, min(1, lt / 0.1))
         if typ == "number":
-            b["_prop"].draw(c, W * 0.27, H * 0.5 + 6 * math.sin(t * 2), back_out(t / 0.4))
+            # prop in the left column (.11-.41 W), value and sub in the right column (.45-.89 W): never overlap,
+            # and stay inside the area the camera keeps when it pushes in
+            psc = min(1, W * 0.30 / b["_prop"].w, H * 0.55 / b["_prop"].h)
+            b["_prop"].draw(c, W * 0.26, H * 0.5 + 6 * math.sin(t * 2), back_out(t / 0.4) * psc)
             lt = t - b["_show"]
             if lt >= 0:
-                b["_val"].draw(c, W * 0.66, H * 0.43, (1.8 - 0.8 * ease_out(lt / 0.2)) * min(1, W * 0.6 / b["_val"].w), 0, min(1, lt / 0.08))
-                b["_sub"].draw(c, W * 0.66, H * 0.68, back_out((lt - 0.3) / 0.4), -1.5, min(1, max(0, lt - 0.3) / 0.1))
+                b["_val"].draw(c, W * 0.67, H * 0.43, (1.8 - 0.8 * ease_out(lt / 0.2)) * min(1, W * 0.42 / b["_val"].w), 0, min(1, lt / 0.08))
+                b["_sub"].draw(c, W * 0.67, H * 0.68, back_out((lt - 0.3) / 0.4) * min(1, W * 0.42 / b["_sub"].w), -1.5, min(1, max(0, lt - 0.3) / 0.1))
         if typ == "title":
             b["_t1"].draw(c, W / 2, H * 0.40, (1.5 - 0.5 * ease_out(t / 0.25)) * min(1, W * 0.9 / b["_t1"].w), 0, min(1, t / 0.1))
             lt = t - 0.35

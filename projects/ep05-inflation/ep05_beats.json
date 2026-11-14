@@ -2,7 +2,8 @@
  "layers": "layers",
  "auto_skip": [
   "Birs",
-  "Beers"
+  "Beers",
+  "2025-yil"
  ],
  "music": {
   "curious": "../../assets/music/curious.mp3",
@@ -396,26 +397,17 @@
     8,
     "Xo'sh"
    ],
-   "type": "object",
+   "type": "scene",
+   "bg": "s_kitchen",
+   "vfocus": 0.3,
    "ev": [
-    {
-     "at": [
-      8,
-      "Xo'sh"
-     ],
-     "k": "mascot",
-     "pose": 4,
-     "side": "right"
-    },
     {
      "at": [
       8,
       "nega"
      ],
      "k": "tag",
-     "text": "NEGA NARXLAR OSHADI?",
-     "x": 0.36,
-     "y": 0.32
+     "text": "NEGA NARXLAR OSHADI?"
     },
     {
      "at": [
@@ -424,8 +416,6 @@
      ],
      "k": "tag",
      "text": "SO'MNING QADRI QAYERGA KETADI?",
-     "x": 0.36,
-     "y": 0.47,
      "fg": "red"
     }
    ]
@@ -483,7 +473,7 @@
       "Bilganlarim"
      ],
      "k": "mascot",
-     "pose": 5,
+     "pose": "p_book",
      "side": "right"
     },
     {
@@ -523,16 +513,17 @@
     13,
     "Hamda"
    ],
-   "type": "object",
+   "type": "scene",
+   "bg": "s_library",
+   "vfocus": 0.33,
    "ev": [
     {
      "at": [
       13,
-      "Hamda"
+      "topganlarimni"
      ],
-     "k": "mascot",
-     "pose": 6,
-     "side": "right"
+     "k": "tag",
+     "text": "TOPGANLARIMNI"
     },
     {
      "at": [
@@ -540,9 +531,7 @@
       "ulashib"
      ],
      "k": "tag",
-     "text": "ULASHAMAN",
-     "x": 0.32,
-     "y": 0.5,
+     "text": "SIZ BILAN ULASHAMAN",
      "fg": "red"
     }
    ]
@@ -552,19 +541,8 @@
     14,
     "O'tgan"
    ],
-   "type": "object",
-   "props": [
-    {
-     "img": "prop_gold",
-     "x": 0.3,
-     "y": 0.5,
-     "h": 0.42,
-     "at": [
-      14,
-      "O'tgan"
-     ]
-    }
-   ],
+   "type": "scene",
+   "bg": "bg_diamond",
    "ev": [
     {
      "at": [
@@ -581,8 +559,7 @@
      ],
      "k": "tag",
      "text": "TOSH NEGA UYDAN QIMMAT?",
-     "x": 0.7,
-     "y": 0.5
+     "fg": "red"
     }
    ]
   },
@@ -648,19 +625,16 @@
     "Inflyatsiya"
    ],
    "type": "object",
-   "props": [
+   "ev": [
     {
-     "img": "prop_basket",
-     "x": 0.3,
-     "y": 0.5,
-     "h": 0.55,
      "at": [
       18,
       "Inflyatsiya"
-     ]
-    }
-   ],
-   "ev": [
+     ],
+     "k": "mascot",
+     "pose": "p_basket",
+     "side": "right"
+    },
     {
      "at": [
       18,
@@ -668,8 +642,8 @@
      ],
      "k": "tag",
      "text": "BITTA MAHSULOT EMAS",
-     "x": 0.7,
-     "y": 0.38
+     "x": 0.36,
+     "y": 0.42
     },
     {
      "at": [
@@ -678,8 +652,8 @@
      ],
      "k": "tag",
      "text": "DEYARLI HAMMA NARSA ↑",
-     "x": 0.7,
-     "y": 0.52,
+     "x": 0.36,
+     "y": 0.57,
      "fg": "red"
     }
    ]
@@ -758,14 +732,21 @@
     21,
     "Non"
    ],
-   "type": "scene",
-   "bg": "bg_bazaar_prices",
-   "crop": "left",
+   "type": "object",
    "tagpos": [
-    0.72,
-    0.14
+    0.36,
+    0.1
    ],
    "ev": [
+    {
+     "at": [
+      21,
+      "Non"
+     ],
+     "k": "mascot",
+     "pose": "p_receipt",
+     "side": "right"
+    },
     {
      "at": [
       21,
@@ -822,10 +803,6 @@
      "k": "tag",
      "text": "SARTAROSHXONA"
     }
-   ],
-   "vfocus": [
-    0.5,
-    0.8
    ]
   },
   {
@@ -1074,7 +1051,7 @@
       "Iqtisodchilar"
      ],
      "k": "mascot",
-     "pose": 6,
+     "pose": "p_pointer",
      "side": "right"
     },
     {
@@ -1178,12 +1155,11 @@
     {
      "at": [
       34,
-      "2"
+      "Endi"
      ],
-     "k": "bigtext",
-     "text": "1 OLMA = 2 SO'M",
-     "x": 0.5,
-     "y": 0.45
+     "k": "mascot",
+     "pose": "p_banknotes",
+     "side": "right"
     },
     {
      "at": [
@@ -1192,8 +1168,18 @@
      ],
      "k": "tag",
      "text": "PUL KO'P, OLMA KAM",
-     "x": 0.5,
-     "y": 0.75
+     "x": 0.36,
+     "y": 0.25
+    },
+    {
+     "at": [
+      34,
+      "2"
+     ],
+     "k": "bigtext",
+     "text": "1 OLMA = 2 SO'M",
+     "x": 0.36,
+     "y": 0.5
     }
    ]
   },
@@ -1507,7 +1493,7 @@
       "Uchinchi"
      ],
      "k": "mascot",
-     "pose": 8,
+     "pose": "p_newspaper",
      "side": "right"
     },
     {
@@ -1540,6 +1526,10 @@
    ],
    "type": "scene",
    "bg": "bg_price_up",
+   "tagpos": [
+    0.32,
+    0.12
+   ],
    "ev": [
     {
      "at": [
@@ -2212,6 +2202,10 @@
    "type": "scene",
    "bg": "bg_tashkent_1990s",
    "mood": "calm",
+   "tagpos": [
+    0.48,
+    0.5
+   ],
    "ev": [
     {
      "at": [
@@ -2301,6 +2295,10 @@
    ],
    "type": "scene",
    "bg": "bg_tashkent_1990s",
+   "tagpos": [
+    0.48,
+    0.5
+   ],
    "ev": [
     {
      "at": [
@@ -2331,6 +2329,18 @@
     "yangi"
    ],
    "type": "object",
+   "props": [
+    {
+     "img": "prop_coupons",
+     "x": 0.5,
+     "y": 0.76,
+     "h": 0.3,
+     "at": [
+      72,
+      "yangi"
+     ]
+    }
+   ],
    "ev": [
     {
      "at": [
@@ -2348,7 +2358,7 @@
      "k": "bigtext",
      "text": "1 SO'M = 1000 KUPON",
      "x": 0.5,
-     "y": 0.45
+     "y": 0.42
     }
    ]
   },
@@ -2751,13 +2761,17 @@
     86,
     "Bu"
    ],
-   "type": "map",
-   "bg": "map_world",
-   "zf": [
-    0.3,
-    0.4
-   ],
+   "type": "object",
    "ev": [
+    {
+     "at": [
+      86,
+      "Bu"
+     ],
+     "k": "mascot",
+     "pose": "p_globe",
+     "side": "right"
+    },
     {
      "at": [
       86,
@@ -2765,25 +2779,19 @@
      ],
      "k": "tag",
      "text": "NAFAQAT BIZDA",
-     "x": 0.5,
-     "y": 0.85
+     "x": 0.36,
+     "y": 0.42
     },
     {
      "at": [
       87,
-      "Amerikada"
+      "barcha"
      ],
-     "k": "flag",
-     "code": "us"
-    },
-    {
-     "at": [
-      87,
-      "Amerikada"
-     ],
-     "k": "pin",
-     "x": 0.22,
-     "y": 0.37
+     "k": "tag",
+     "text": "BUTUN DUNYO MUAMMOSI",
+     "x": 0.36,
+     "y": 0.57,
+     "fg": "red"
     }
    ]
   },
@@ -2895,7 +2903,7 @@
       "Chunki"
      ],
      "k": "mascot",
-     "pose": 10,
+     "pose": "p_scale",
      "side": "right"
     },
     {
@@ -3068,26 +3076,17 @@
     96,
     "O'zgina"
    ],
-   "type": "object",
+   "type": "scene",
+   "bg": "s_office",
+   "vfocus": 0.3,
    "ev": [
     {
      "at": [
       96,
       "O'zgina"
      ],
-     "k": "mascot",
-     "pose": 11,
-     "side": "right"
-    },
-    {
-     "at": [
-      96,
-      "O'zgina"
-     ],
      "k": "tag",
-     "text": "O'ZGINA = HARAKAT ✓",
-     "x": 0.36,
-     "y": 0.42
+     "text": "O'ZGINA = HARAKAT ✓"
     },
     {
      "at": [
@@ -3096,8 +3095,6 @@
      ],
      "k": "tag",
      "text": "KUCHLI = YEMIRADI ✗",
-     "x": 0.36,
-     "y": 0.57,
      "fg": "red"
     }
    ]
@@ -3368,7 +3365,7 @@
       "Shuning"
      ],
      "k": "mascot",
-     "pose": 0,
+     "pose": "p_calculator",
      "side": "right"
     },
     {
@@ -3542,7 +3539,7 @@
       "Ana"
      ],
      "k": "mascot",
-     "pose": 4,
+     "pose": "p_piggy",
      "side": "right"
     },
     {
@@ -3592,27 +3589,16 @@
     118,
     "Keyingi"
    ],
-   "type": "object",
-   "props": [
-    {
-     "img": "prop_gold",
-     "x": 0.32,
-     "y": 0.52,
-     "h": 0.38,
-     "at": [
-      118,
-      "Keyingi"
-     ]
-    }
-   ],
+   "type": "scene",
+   "bg": "s_vault",
    "ev": [
     {
      "at": [
       118,
       "Keyingi"
      ],
-     "k": "label",
-     "text": "KEYINGI QISM"
+     "k": "tag",
+     "text": "KEYINGI QISMDA"
     },
     {
      "at": [
@@ -3621,8 +3607,6 @@
      ],
      "k": "tag",
      "text": "NEGA BANKLAR OLTIN OLMOQDA?",
-     "x": 0.68,
-     "y": 0.5,
      "fg": "red"
     }
    ]
