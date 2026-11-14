@@ -216,6 +216,21 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   instead of shifting words.json by hand.
 - device_commit_files with stagedPath fails for files over ~200 MB (HTTP 400): send the file with SendUserFile and commit its fileUuid.
 
+## Mascot library and empty scenes (2026-11-14, owner feedback on E05)
+
+- Owner: some scenes felt empty, some text sat on other text or on faces, and some mascot poses didn't fit the moment.
+  Standing go-ahead: create new mascot poses/situations whenever a beat needs one, and keep them reusable.
+- Library in `assets/mascot/` (README lists every item and what it fits): poses `p_*` (full body holding a prop, on cream;
+  beat event `M(at, "p_name")`, drawn as the whole figure at 0.9 H) and scenes `s_*` (16:9, mascot in the left third,
+  right half calm for tags; use as a scene `bg`). Copy the ones an episode uses into its layers/.
+- New items: same prompt prefix as `assets/mascot/prompts.json`, references = mascot_v2 + mascot_v3a_0 (Higgsfield
+  nano_banana_pro, 2 credits each), then add a row to the README.
+- Picking: a narrator beat with only tags on cream counts as empty -> give the mascot a pose that matches the sentence
+  (prices -> basket/receipt, savings -> piggy, lists/reasons -> pointer, news/expectations -> newspaper, debate -> scale,
+  maths -> calculator) or a library scene. Never show an unrelated prop (E05 showed gold while talking about diamonds).
+- Number beats: prop is capped to the left column (.11-.41 W), value and sub to the right (.45-.89 W).
+- During the audit, look for tags on faces and move them with `tagpos`; on busy scenes put tags in empty sky/wall areas.
+
 ## Visual audit rules (2026-11-11, E04 owner feedback)
 
 - Before every full render, audit one PREVIEW still per beat (end of beat, all events on) as numbered contact sheets,
