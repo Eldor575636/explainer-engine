@@ -230,6 +230,8 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   maths -> calculator) or a library scene. Never show an unrelated prop (E05 showed gold while talking about diamonds).
 - Number beats: prop is capped to the left column (.11-.41 W), value and sub to the right (.45-.89 W).
 - During the audit, look for tags on faces and move them with `tagpos`; on busy scenes put tags in empty sky/wall areas.
+- Shorts: object/number beats have their own vertical layout (props stacked mid-frame at full size, number = prop / value / sub);
+  when a Short still puts a tag on a face, give that beat `vzoom` 1.3-1.5 + `vfy` 0.6 in VF (medium shot, figures sit lower).
 
 ## Visual audit rules (2026-11-11, E04 owner feedback)
 

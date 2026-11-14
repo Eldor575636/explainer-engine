@@ -927,9 +927,37 @@ def main():
             c = camera(c, t, dur, bi, typ, b.get("_shots"))
         return c
 
+    vcream = None
+    def render_vobject(bi, t):
+        """Shorts layout for object/number beats: props and numbers stacked in the middle at full size
+        (the 16:9 layout shrunk to phone width left them tiny)."""
+        nonlocal vcream
+        b = beats[bi]; dur = b["t1"] - b["t0"]
+        if vcream is None:
+            cw = int(H * VW / VH); x0 = (W - cw) // 2
+            vcream = cv2.resize(np.ascontiguousarray(cream[:, x0:x0 + cw]), (VW, VH), interpolation=cv2.INTER_LINEAR)
+        c = vcream.copy()
+        for sp, p, at in b["_props"]:
+            lt = t - at
+            if lt < 0:
+                continue
+            sc = (2.2 - 1.2 * ease_out(lt / 0.16)) if p.get("slam") else back_out(lt / 0.4)
+            fit = min(1.4, VW * 0.72 / sp.w, VH * 0.28 / sp.h)
+            sp.draw(c, VW / 2, VH * (0.25 + 0.4 * p["y"]) + 6 * math.sin(lt * 2.2), sc * fit, math.sin(lt * 1.3) * 1.2, min(1, lt / 0.1))
+        if b["type"] == "number":
+            fit = min(1.3, VW * 0.62 / b["_prop"].w, VH * 0.22 / b["_prop"].h)
+            b["_prop"].draw(c, VW / 2, VH * 0.335 + 6 * math.sin(t * 2), back_out(t / 0.4) * fit)
+            lt = t - b["_show"]
+            if lt >= 0:
+                b["_val"].draw(c, VW / 2, VH * 0.53, (1.8 - 0.8 * ease_out(lt / 0.2)) * min(1, VW * 0.86 / b["_val"].w), 0, min(1, lt / 0.08))
+                b["_sub"].draw(c, VW / 2, VH * 0.64, back_out((lt - 0.3) / 0.4) * min(1, VW * 0.9 / b["_sub"].w), -1.5, min(1, max(0, lt - 0.3) / 0.1))
+        return c
+
     def render(bi, t, V=False):
         b = beats[bi]; dur = b["t1"] - b["t0"]
-        if V and b["type"] in ("scene", "portrait", "map") or V and "vfocus" in b:
+        if V and b["type"] in ("object", "number") and "vfocus" not in b:
+            c = render_vobject(bi, t)
+        elif V and b["type"] in ("scene", "portrait", "map") or V and "vfocus" in b:
             c = vcrop(render_world(bi, t, cam=False), b, t)   # Shorts frame the picture themselves (see vcrop)
         else:
             c = render_world(bi, t)
