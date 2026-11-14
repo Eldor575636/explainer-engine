@@ -1,7 +1,7 @@
 BILMASBOY — EPISODE 5: UPLOAD TEXTS (copy and paste)
 
 ==================================================
-LONG VIDEO (E05_Inflyatsiya_FINAL.mp4, {DUR})
+LONG VIDEO (E05_Inflyatsiya_FINAL.mp4, 11:39)
 Thumbnails: A, B, C (Test & Compare: all three).
 Schedule: Fri Dec 4, 4:00 AM San Francisco = 17:00 Tashkent.
 Playlists: Bilmasboy - Barcha Qismlar
@@ -16,7 +16,17 @@ DESCRIPTION:
 1923-yil, Germaniya. Bir odam 5 ming markaga qahva buyurtma qiladi, hisob esa 8 ming marka bo'lib chiqadi. Bugun O'zbekistonda bir yil oldin 100 ming so'm turgan narsalar 106 ming 500 so'm turadi. Xo'sh, narxlar nega har yili oshadi, so'mning yo'qolgan qadri qayerga ketadi va nega hukumatlar narxlar umuman oshmasligini emas, ozgina oshishini xohlaydi? Bu videoda inflyatsiyaning uchta sababi, Germaniya, Vengriya va Zimbabvedagi giperinflyatsiya, so'mning tarixi va Markaziy bank stavkasi haqida gaplashamiz.
 
 Bu videoda:
-{CHAPTERS}
+00:00 Qahva 5 ming, hisob 8 ming marka
+00:49 Men kimman?
+01:21 Inflyatsiya nima?
+02:31 Nega narxlar oshadi? 3 ta sabab
+04:18 Giperinflyatsiya: Germaniya, Vengriya, Zimbabve
+06:19 O'zbekiston va so'm
+07:20 Inflyatsiyaga kim qarshi kurashadi?
+08:34 Nega inflyatsiya nol emas?
+09:22 Kim yutadi, kim yutqazadi?
+10:01 Bu biz uchun nima uchun muhim?
+10:32 Javob
 
 Sizningcha, bugun jamg'armani so'mda saqlash o'zini oqlaydimi yoki yo'qmi? Izohda yozing.
 Keyingi qismda: oltin, ya'ni nega dunyo markaziy banklari yana oltin sotib olmoqda.
@@ -45,7 +55,12 @@ SETTINGS:
 - Pinned comment: Keyingi qismda kim yoki nima haqida bilishni xohlaysiz? Yozing, eng ko'p layk to'plagan mavzuni albatta yoritamiz 👇
 
 QUIZ (Show at):
-{QUIZ}
+1. (Main, 5:07) 1923-yil noyabrida Berlinda bir bo'lak non qancha turgan?
+   A) 163 marka  B) 8 ming marka  C) 201 milliard marka ✓  D) 1 trillion marka
+2. (6:48) 1994-yil 1-iyulda bitta yangi so'm nechta so'm-kuponga almashtirildi?
+   A) 10  B) 100  C) 1000 ✓
+3. (9:17) Rivojlangan davlatlarning markaziy banklari odatda yiliga qancha inflyatsiyani maqsad qiladi?
+   A) 0%  B) Taxminan 2% ✓  C) 10%
 
 ==================================================
 SHORTS / REELS / TIKTOK (7 clips, one a day, 6:00 AM San Francisco, Fri Dec 4 - Thu Dec 10)

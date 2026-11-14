@@ -43,7 +43,7 @@ beat([6, "Bugun"], "scene", bg="bg_bazaar_prices", crop="right", tagpos=[.3, .12
 beat([7, "Benzin"], "scene", bg="bg_petrol", ev=[T([7, "Benzin"], "BENZIN ↑"), T([7, "go'shti"], "QO'Y GO'SHTI ↑"), ST([7, "20"], "~20% / 1 YIL", y=.78)])
 beat([8, "Xo'sh"], "object", ev=[M([8, "Xo'sh"], 4), T([8, "nega"], "NEGA NARXLAR OSHADI?", x=.36, y=.32),
      T([9, "qadri"], "SO'MNING QADRI QAYERGA KETADI?", True, x=.36, y=.47)])
-beat([10, "Va"], "scene", bg="bg_inflation", ev=[T([10, "oshmasligini"], "NOL EMAS..."), T([10, "ozgina"], "NEGA \"OZGINA\" OSHISHI KERAK?", True)])
+beat([10, "Va"], "scene", bg="bg_inflation", tagpos=[.6, .16], ev=[T([10, "oshmasligini"], "NOL EMAS..."), T([10, "o'zgina"], "NEGA \"O'ZGINA\" OSHISHI KERAK?", True)])
 # ---------------- Intro ----------------
 beat([11, "Mening"], "intro", pose=3)
 beat([12, "Bilganlarim"], "object", ev=[M([12, "Bilganlarim"], 5), T([12, "Bilganlarim"], "BILIM = BOYLIK", x=.32, y=.3),
@@ -159,7 +159,7 @@ beat([91, "Buni"], "map", bg="map_world", zf=[.85, .37], ev=[F([91, "Yaponiya"],
 beat([93, "Shu"], "scene", bg="bg_tokyo", ev=[T([93, "qimmatlashib"], "PUL QIMMATLASHADI"), T([93, "ushlab"], "SARFLASH O'RNIGA SAQLASH", True)])
 beat([94, "Maoshlar"], "scene", bg="bg_tokyo", crop="left", ev=[T([94, "Maoshlar"], "MAOSH O'SMADI"), T([94, "investitsiya"], "INVESTITSIYA ↓"), ST([94, "qotib"], "IQTISOD QOTDI", y=.78)])
 beat([95, "Shuning"], "object", ev=[L([95, "rivojlangan"], "RIVOJLANGAN DAVLATLAR"), BIG([95, "2"], "~2% / YIL"), T([95, "maqsad"], "MAQSAD: NOL EMAS", True, x=.5, y=.72)])
-beat([96, "Ozgina"], "object", ev=[M([96, "Ozgina"], 11), T([96, "Ozgina"], "OZGINA = HARAKAT ✓", x=.36, y=.42), T([96, "kuchli"], "KUCHLI = YEMIRADI ✗", True, x=.36, y=.57)])
+beat([96, "O'zgina"], "object", ev=[M([96, "O'zgina"], 11), T([96, "O'zgina"], "O'ZGINA = HARAKAT ✓", x=.36, y=.42), T([96, "kuchli"], "KUCHLI = YEMIRADI ✗", True, x=.36, y=.57)])
 # ---------------- 6-qism: kim yutadi ----------------
 beat([97, "Albatta"], "chapter", num="6-QISM", title="KIM YUTADI, KIM YUTQAZADI?")
 beat([98, "Uyda"], "scene", bg="bg_cash_mattress", ev=[T([98, "naqd"], "NAQD PUL UYDA"), ST([98, "yo'qotadi"], "HAR YILI ERIYDI", y=.78)])
@@ -182,7 +182,7 @@ beat([111, "Buning"], "scene", bg="bg_inflation", crop="left", ev=[T([111, "pul"
      T([111, "kutsa"], "3. HAMMA KUTADI", True)])
 beat([112, "Yo'qolgan"], "scene", bg="bg_cash_mattress", crop="right", ev=[T([112, "saqlovchilardan"], "NAQD PUL EGASIDAN →"), T([112, "qarzdorlarga"], "→ QARZDORGA", True),
      T([112, "davlatning"], "→ DAVLATGA")])
-beat([113, "Ozgina"], "scene", bg="bg_money_carts", crop="left", ev=[T([113, "normal"], "OZGINA = NORMAL ✓"), T([113, "nazoratdan"], "NAZORATSIZ = XAVFLI ✗", True)])
+beat([113, "O'zgina"], "scene", bg="bg_money_carts", crop="left", ev=[T([113, "normal"], "O'ZGINA = NORMAL ✓"), T([113, "nazoratdan"], "NAZORATSIZ = XAVFLI ✗", True)])
 beat([114, "Inflyatsiya"], "title", title="INFLYATSIYA HAQIDA MEN HAM BILMAS EDIM", title2="ENDI ESA HAMMAMIZ BILAMIZ")
 beat([116, "Ana"], "object", ev=[M([116, "Ana"], 4), T([116, "so'mda"], "JAMG'ARMA SO'MDA...", x=.36, y=.38),
      T([116, "oqlaydimi"], "...O'ZINI OQLAYDIMI?", True, x=.36, y=.55), T([117, "izohlarda"], "IZOHDA YOZING", x=.36, y=.72),
