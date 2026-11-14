@@ -123,7 +123,7 @@ beat([66, "Hatto"], "object", props=[P([66, "Hatto"], "prop_huge_note", .5, .45,
 beat([67, "Lekin"], "scene", bg="bg_harare", crop="right", ev=[T([67, "qadrsizlandi"], "TEZDA QADRSIZLANDI"), T([67, "voz"], "O'Z PULIDAN VOZ KECHDI", True)])
 # ---------------- 4-qism: O'zbekiston ----------------
 beat([68, "Endi"], "chapter", num="4-QISM", title="O'ZBEKISTON VA SO'M")
-beat([69, "Mustaqillikning"], "scene", bg="bg_tashkent_1990s", mood="calm", ev=[F([69, "O'zbekiston"], "uz"), L([69, "Mustaqillikning"], "1990-YILLAR BOSHI"),
+beat([69, "Mustaqillikning"], "scene", bg="bg_tashkent_1990s", mood="calm", ev=[F([69, "O'zbekiston"], "uz"), L([69, "boshidan"], "1990-YILLAR BOSHI"),
      T([69, "kuchli"], "KUCHLI INFLYATSIYA", True)])
 beat([70, "1993-yil"], "object", props=[P([70, "1993-yil"], "prop_coupons", .5, .48, .55)], ev=[L([70, "1993-yil"], "1993 · NOYABR"), T([70, "so'm-kupon"], "SO'M-KUPON", x=.5, y=.85),
      T([71, "gazeta"], "GAZETA QOG'OZIDA", True, x=.5, y=.85)])
@@ -240,13 +240,13 @@ cfg = {"layers": "layers", "auto_skip": ["Birs", "Beers"], "music": {"curious": 
                   "more": [{"img": f"mascot_v3{s_}_{i_}", "parts": 1} for s_ in "ab" for i_ in range(4)]},
        "ui": {"subscribe": "OBUNA BO'LING", "subscribed": "OBUNA BO'LDINGIZ", "like": "LAYK", "next": "KEYINGI VIDEO"},
        "sentences": S, "beats": B,
-       "shorts": [{"name": "hook", "from": [0, "1923-yil"], "to": [11, "Mening"], "hook": ""},
-                  {"name": "basket", "from": [18, "Inflyatsiya"], "to": [28, "Endi"], "hook": "HAR OILANING O'Z INFLYATSIYASI"},
-                  {"name": "island", "from": [31, "Tasavvur"], "to": [37, "Bir"], "hook": "OROLDAGI 10 TA OLMA"},
-                  {"name": "germany", "from": [51, "Ko'rsatuv"], "to": [61, "Lekin"], "hook": "1 NON = 201 MILLIARD MARKA"},
-                  {"name": "record", "from": [61, "Lekin"], "to": [68, "Endi"], "hook": "NARX HAR 15 SOATDA ×2"},
-                  {"name": "som", "from": [69, "Mustaqillikning"], "to": [78, "Xo'sh"], "hook": "SO'MNING TARIXI"},
-                  {"name": "japan", "from": [89, "Lekin"], "to": [97, "Albatta"], "hook": "NEGA INFLYATSIYA NOL EMAS?"}],
+       "shorts": [{"name": "hook", "from": [0, "1923-yil"], "to": [10, "Va"], "hook": ""},
+                  {"name": "basket", "from": [18, "Inflyatsiya"], "to": [27, "Shuning"], "hook": "HAR OILANING O'Z INFLYATSIYASI"},
+                  {"name": "island", "from": [31, "Tasavvur"], "to": [36, "Amerikalik"], "hook": "OROLDAGI 10 TA OLMA"},
+                  {"name": "germany", "from": [51, "Ko'rsatuv"], "to": [60, "Ko'plab"], "hook": "1 NON = 201 MILLIARD MARKA"},
+                  {"name": "record", "from": [61, "Lekin"], "to": [67, "Lekin"], "hook": "NARX HAR 15 SOATDA ×2"},
+                  {"name": "som", "from": [69, "Mustaqillikning"], "to": [77, "2022-yildan"], "hook": "SO'MNING TARIXI"},
+                  {"name": "japan", "from": [89, "Lekin"], "to": [96, "O'zgina"], "hook": "NEGA INFLYATSIYA NOL EMAS?"}],
        "end_hold": 9, "pauses": {"37": 1.2, "39": 1.1}, "end_slots": 2, "end_next": "OLTIN", "series_label": "5-QISM: INFLYATSIYA",
        "partners": "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari.",
        "partner_logos": [{"img": "assets/partners/californiauzbek.png", "anim": "assets/partners/californiauzbek_anim.webm", "site": "californiauzbek.com"},

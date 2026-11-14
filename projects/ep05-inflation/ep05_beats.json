@@ -2224,7 +2224,7 @@
     {
      "at": [
       69,
-      "Mustaqillikning"
+      "boshidan"
      ],
      "k": "label",
      "text": "1990-YILLAR BOSHI"
@@ -3656,8 +3656,8 @@
     "1923-yil"
    ],
    "to": [
-    11,
-    "Mening"
+    10,
+    "Va"
    ],
    "hook": ""
   },
@@ -3668,8 +3668,8 @@
     "Inflyatsiya"
    ],
    "to": [
-    28,
-    "Endi"
+    27,
+    "Shuning"
    ],
    "hook": "HAR OILANING O'Z INFLYATSIYASI"
   },
@@ -3680,8 +3680,8 @@
     "Tasavvur"
    ],
    "to": [
-    37,
-    "Bir"
+    36,
+    "Amerikalik"
    ],
    "hook": "OROLDAGI 10 TA OLMA"
   },
@@ -3692,8 +3692,8 @@
     "Ko'rsatuv"
    ],
    "to": [
-    61,
-    "Lekin"
+    60,
+    "Ko'plab"
    ],
    "hook": "1 NON = 201 MILLIARD MARKA"
   },
@@ -3704,8 +3704,8 @@
     "Lekin"
    ],
    "to": [
-    68,
-    "Endi"
+    67,
+    "Lekin"
    ],
    "hook": "NARX HAR 15 SOATDA ×2"
   },
@@ -3716,8 +3716,8 @@
     "Mustaqillikning"
    ],
    "to": [
-    78,
-    "Xo'sh"
+    77,
+    "2022-yildan"
    ],
    "hook": "SO'MNING TARIXI"
   },
@@ -3728,8 +3728,8 @@
     "Lekin"
    ],
    "to": [
-    97,
-    "Albatta"
+    96,
+    "O'zgina"
    ],
    "hook": "NEGA INFLYATSIYA NOL EMAS?"
   }

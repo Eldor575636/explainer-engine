@@ -205,6 +205,17 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - Owner chose: no spoken sign-off (keep it off), English pronunciation for foreign place names when the Uzbek
   spelling sounds off (Sierra Leone), "De Birs" for the voice.
 
+## E05 lessons (2026-11-13)
+
+- Shorts `to` is inclusive: it names the LAST sentence of the clip, not the first one after it ([10, ...] ends before the intro).
+  Check that consecutive Shorts don't overlap and that none ends on the subscribe ask or a chapter card.
+- Before the full render, list every on-screen word from the beat sheet and check spelling (E05: "OZGINA" for o'zgina, also
+  in the script captions). The new-alphabet converter can't fix a missing apostrophe.
+- A label that appears with the first word of a Short's opening beat collides with the hook banner: trigger it ~3 s later.
+- When a re-recorded line is longer than the original, the splice shifts everything after it: transcribe raw.wav again
+  instead of shifting words.json by hand.
+- device_commit_files with stagedPath fails for files over ~200 MB (HTTP 400): send the file with SendUserFile and commit its fileUuid.
+
 ## Visual audit rules (2026-11-11, E04 owner feedback)
 
 - Before every full render, audit one PREVIEW still per beat (end of beat, all events on) as numbered contact sheets,
