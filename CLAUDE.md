@@ -269,3 +269,15 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   "Hamkorlarimiz: @california_uzbek va @bysmillahcom loyihalari (californiauzbek.com, bysmillah.com)." Handles per platform:
   California Uzbek = @california_uzbek (YouTube, Instagram, Telegram), @california_uz (TikTok), @california.uzbek (Facebook);
   Bysmillah = @bysmillahcom everywhere.
+
+## Publishing via vidIQ (2026-11-15)
+
+- YouTube uploads go through vidIQ: relay each file with Higgsfield media_upload + curl PUT + media_confirm (public CloudFront URL),
+  then vidiq_video_upload(url) -> uploadId; thumbnails via vidiq_upload_image (PUT to its uploadUrl). One draft per video,
+  publish only after the owner approves the list. Scheduled videos show as private (oEmbed 403) until their time.
+- vidIQ free tier: credits ran out on 2026-11-15 (renew Nov 22); drafting, publishing and post status are free.
+- TikTok: connect @bilmas.boy in a private browser window (it lives under the California Uzbek login, and OAuth otherwise
+  reuses California Uzbek). Settings the owner chose: public, comments on, AI-generated label, music confirmation accepted.
+- TikTok covers: vidIQ cannot set one, so `shorts_cover.py` makes a 1080x1920 cover per Short (episode picture cropped 9:16,
+  headline in the new alphabet, '|' forces line breaks) and a TikTok-only copy that opens on the cover for 0.2 s.
+  YouTube Shorts covers can only be picked in the YouTube app.
