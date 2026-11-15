@@ -114,13 +114,49 @@ def tiktok_copy(video, cover_jpg, out_mp4):
                     out_mp4], check=True)
 
 
+def torn_label(img, text, cy=0.215):
+    """Mustard torn-paper label with navy Anton text (the owner's cover style), centred at cy * height."""
+    import random
+    rnd = random.Random(text)
+    d = ImageDraw.Draw(img)
+    text = new_alphabet(text)
+    f = ImageFont.truetype(ANTON, 118)
+    while f.getlength(text) > W * 0.70:
+        f = ImageFont.truetype(ANTON, f.size - 4)
+    bb = d.textbbox((0, 0), text, font=f)
+    tw, th = bb[2] - bb[0], bb[3] - bb[1]
+    x0, x1 = W / 2 - tw / 2 - 60, W / 2 + tw / 2 + 60
+    y0, y1 = H * cy - th / 2 - 46, H * cy + th / 2 + 46
+    pts = []
+    for i in range(13):                                       # torn top edge
+        pts.append((x0 + (x1 - x0) * i / 12, y0 + rnd.uniform(-7, 7)))
+    for i in range(1, 6):                                     # right edge
+        pts.append((x1 + rnd.uniform(-6, 6), y0 + (y1 - y0) * i / 6))
+    for i in range(12, -1, -1):                               # torn bottom edge
+        pts.append((x0 + (x1 - x0) * i / 12, y1 + rnd.uniform(-7, 7)))
+    for i in range(5, 0, -1):
+        pts.append((x0 + rnd.uniform(-6, 6), y0 + (y1 - y0) * i / 6))
+    shadow = Image.new("L", img.size, 0)
+    ImageDraw.Draw(shadow).polygon([(x + 8, y + 10) for x, y in pts], fill=90)
+    img.paste((60, 50, 30), (0, 0), shadow.filter(ImageFilter.GaussianBlur(10)))
+    d = ImageDraw.Draw(img)
+    d.polygon(pts, fill=MUSTARD)
+    d.text((W / 2, H * cy), text, font=f, fill=NAVY, anchor="mm")
+    return img
+
+
 def main():
     spec = json.load(open(sys.argv[1]))
     do_video = "--video" in sys.argv
     thumbs = []
     for e in spec:
         os.makedirs(os.path.dirname(e["out"]) or ".", exist_ok=True)
-        img = render_cover(e)
+        if "cover" in e:                                      # ready-made (Gemini/Higgsfield) cover
+            img = Image.open(e["cover"]).convert("RGB").resize((W, H), Image.LANCZOS)
+            if e.get("tag"):
+                img = torn_label(img, e["tag"])
+        else:
+            img = render_cover(e)
         img.save(e["out"] + ".jpg", quality=92)
         thumbs.append(img.resize((270, 480)))
         if do_video:

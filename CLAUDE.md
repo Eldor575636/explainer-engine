@@ -278,6 +278,10 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - vidIQ free tier: credits ran out on 2026-11-15 (renew Nov 22); drafting, publishing and post status are free.
 - TikTok: connect @bilmas.boy in a private browser window (it lives under the California Uzbek login, and OAuth otherwise
   reuses California Uzbek). Settings the owner chose: public, comments on, AI-generated label, music confirmation accepted.
-- TikTok covers: vidIQ cannot set one, so `shorts_cover.py` makes a 1080x1920 cover per Short (episode picture cropped 9:16,
-  headline in the new alphabet, '|' forces line breaks) and a TikTok-only copy that opens on the cover for 0.2 s.
-  YouTube Shorts covers can only be picked in the YouTube app.
+- **Every Short/Reel gets a cover picture (owner, standing rule).** Style = the owner's Gemini covers in
+  `EXX/5 Thumbnail/Shorts/` (E01-E03): cream paper with a faint beige sketch of the scene, one bold sticker figure/prop with a
+  white outline in the middle, a mustard torn-paper label near the top with 1-2 words. Make them with nano_banana_pro 9:16
+  using two of those covers as style references and NO text in the prompt; `shorts_cover.py --label` adds the label in the
+  new alphabet. Save as `5 Thumbnail/Shorts/EXX_<n>_<name>.jpg`. Keep the label below the top ~13% (TikTok's grid crops to 3:4).
+- vidIQ cannot set a cover, so TikTok/Instagram get a copy of each Short that opens on its cover for 0.2 s
+  (`shorts_cover.py --video`); YouTube keeps the original file and its Shorts cover is picked in the YouTube app.
