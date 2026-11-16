@@ -292,3 +292,15 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   instead). Telegram post, California Uzbek stories. vidIQ cannot do any of these.
 - Connected in vidIQ (2026-11-15): YouTube Bilmas Boy; TikTok bilmas.boy (+ California Uzbek, unused); Instagram bilmas.boy
   (29287119210882726); Facebook Pages CFA Uzbekistan, Green Card Go, MyHelp, One_nation.uz, but NOT the Bilmas Boy Page.
+
+## Telegram + Studio via Claude in Chrome (2026-11-15)
+
+- Telegram @bilmas_boy is owned by the owner's personal "Eldor Ruziev" account (web.telegram.org account 3). The Auto Sales
+  Manager and Bysmillah accounts are not admins. Posts are scheduled from Chrome: 720p copies of the cover Shorts (<9 MB,
+  the upload tool caps at 10 MB; files must sit under /home/claude), captions pasted from the schedule's Telegram column with the
+  real episode link, announcement at 4:15 AM with thumbnail A, Shorts at 6:00 AM. Telegram picks its own preview frame (no cover option on web).
+  Wait ~8 s after each schedule click before the next upload, or captions merge into the draft. E03-E05 done (24 posts).
+- YouTube Studio must be on the Bilmas Boy account (California Uzbek has no edit rights). Thumbnail Test & Compare, quizzes and
+  the Shorts' Related video only work once the episode is public; do them on release day. Set Video language + title language = Uzbek.
+- End screen: 2 video elements on the dashed frames + Subscribe on the red ring, all from the end-screen start (E03: 9:52).
+  YouTube's minimum video element is ~20% larger than our 0.27 W frames: make END2 size ~0.32 from E06 on.
