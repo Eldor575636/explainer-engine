@@ -285,3 +285,10 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   new alphabet. Save as `5 Thumbnail/Shorts/EXX_<n>_<name>.jpg`. Keep the label below the top ~13% (TikTok's grid crops to 3:4).
 - vidIQ cannot set a cover, so TikTok/Instagram get a copy of each Short that opens on its cover for 0.2 s
   (`shorts_cover.py --video`); YouTube keeps the original file and its Shorts cover is picked in the YouTube app.
+- **Owner's manual checklist per release (remind him the evening before every Friday episode, owner's request 2026-11-15):**
+  YouTube Studio long video: Test & Compare B/C, quiz, end screen (2 previous episodes), California Uzbek collab invite,
+  playlist, altered-content flag, pinned comment. Each Short: cover (from 5 Thumbnail/Shorts), Related video = the episode,
+  collab if offered. Instagram: invite @california_uzbek as collaborator on each live Reel (from E06 on, add it in the draft
+  instead). Telegram post, California Uzbek stories. vidIQ cannot do any of these.
+- Connected in vidIQ (2026-11-15): YouTube Bilmas Boy; TikTok bilmas.boy (+ California Uzbek, unused); Instagram bilmas.boy
+  (29287119210882726); Facebook Pages CFA Uzbekistan, Green Card Go, MyHelp, One_nation.uz, but NOT the Bilmas Boy Page.
