@@ -1,0 +1,12 @@
+# E07 Remittances — sources (checked 2026-11-17)
+- 2025 total $18.9bn, x3 vs 2020 ($6bn); Kazakhstan/Korea/US/UK/EU figures: https://kun.uz/en/news/2026/03/17/remittances-to-uzbekistan-exceed-189-billion-tripling-in-five-years
+- Russia 78% of Jan–Oct 2025 ($12.3bn of $15.8bn): same article
+- CBU migration review: channels 52/46/2%, $2–4k per recipient, FX $21.6bn bought / $12bn sold, UK +39% EU +37% US/Korea +15%, global $900bn / $680bn: https://cbu.uz/upload/iblock/367/m44ddiv5ibi0qck9n5kadrpxofebimzi/2.-Sharh-migratsiya-ENG.pdf
+- Gold exports 2025 $9.9bn: https://kun.uz/en/news/2026/01/22/record-gold-sales-lift-uzbekistans-exports-in-2025
+- World Bank: poverty 9.6% → 16.8% without remittances; % GDP 2024 TJ 45 / KG 24 / UZ 14; 57% Russia, 15% Kazakhstan, 95% low-skilled: https://kun.uz/en/news/2025/03/07/without-remittances-uzbekistans-poverty-rate-could-nearly-double-world-bank
+- Q1 2026 Russia share 77.6% → 72.4%, reasons: https://kun.uz/en/news/2026/07/07/remittances-to-uzbekistan-rise-13-despite-falling-share-from-russia-7ffbe4
+- H1 2026 UK +62%: https://kun.uz/en/news/2026/08/17/uk-eu-and-us-remittances-to-uzbekistan-surge-as-migration-geography-diversifies
+- Arrivals to Russia H1 2026 −13.2% to 1.18m; Korea 102,200, Turkey ~70,000 (1 July 2026): https://kun.uz/en/news/2026/10/02/labor-migration-from-uzbekistan-to-russia-falls-132-in-h1-2026
+- Russia 2026 rules (Moscow patent 8,900→10,000 rub, quotas 80→50 / 50→40, alcohol/tobacco ban outside Moscow, OMS 3→5 yrs): https://asiaplus.news/en/2026/01/03/what-awaits-migrants-in-russia-in-2026-new-rules-and-restrictions-introduced/
+- Jan–Sep 2026 $15.16bn +8.9%, H1 +13%, Q3 +2.9%: https://kun.uz/en/news/2026/11/02/remittances-to-uzbekistan-top-15-billion-in-nine-months-as-growth-slows-58982
+- World Bank "brain gain": https://www.intellinews.com/turn-brain-drain-into-brain-gain-by-attracting-home-skilled-migrants-world-bank-urges-central-asia-371833
