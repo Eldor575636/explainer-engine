@@ -43,6 +43,9 @@ See `README.md` for commands.
   g'oya uchun obuna bo'ling.").
 - Plain language. **No idioms or sarcasm that break in Uzbek translation.** Light, knowing tone.
 - Hand the owner clean voiceover text only (no production notes), **one sentence per line**.
+- Owner (2026-11-17, E06): pack every episode with as many concrete facts and comparisons as possible (per person, per day,
+  vs a famous building/country/company, then vs now) and link sections with a bridging question or line, never a cold jump.
+  The mid-video subscribe ask goes right after the first content section, between paragraphs, never inside one.
 - Every historical detail must be correct in the script **and in the image prompts**
   (e.g. Athenians voted by raised hands and pottery shards, not paper ballots).
 - Political red lines: global history and ideas are safe. Avoid mocking or attacking current
