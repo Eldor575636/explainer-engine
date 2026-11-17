@@ -304,3 +304,11 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   the Shorts' Related video only work once the episode is public; do them on release day. Set Video language + title language = Uzbek.
 - End screen: 2 video elements on the dashed frames + Subscribe on the red ring, all from the end-screen start (E03: 9:52).
   YouTube's minimum video element is ~20% larger than our 0.27 W frames: make END2 size ~0.32 from E06 on.
+
+## Facebook Reels via Meta Business Suite (2026-11-16)
+
+- vidIQ never imports the Bilmas Boy Page (only Pages the profile manages directly), so FB Reels are scheduled in Business Suite
+  (reels_composer?asset_id=1417098538157897): untick Instagram in "Post to" every time, first suggested thumbnail = cover,
+  turn off auto closed captions, Schedule 06:00 America/Los_Angeles. Caption ends with the @california.uzbek partners line.
+- Meta stalls uploads at 0% after ~20 in a row; wait a few hours and it works again.
+- Status 2026-11-16: every E02-E05 long video and Short is scheduled on all 5 platforms through Dec 10 (E02 TikTok/YouTube by owner).
