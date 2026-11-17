@@ -208,7 +208,7 @@ beat([118, "Ana"], "object", ev=[M([118, "Ana"], "p_scale"), T([118, "oltinda"],
 beat([120, "Keyingi"], "scene", bg="bg_migrant_work", ev=[T([120, "Keyingi"], "KEYINGI QISMDA"), T([120, "o'tkazmalari"], "PUL O'TKAZMALARI", True)])
 beat([121, "O'tkazib"], "end", pose=1, ev=[{"at": [121, "obuna"], "k": "subscribe", "x": .47, "y": .35, "dur": 3.4}])
 
-VF = {}
+VF = {(67, "Bu"): {"vfocus": [0.3, 0.72]}}
 for _d in B:
     if _d['type'] in ('scene', 'portrait', 'map'):
         _d.update(VF.get(tuple(_d['at']), {}))
