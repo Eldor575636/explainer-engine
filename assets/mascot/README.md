@@ -32,3 +32,10 @@ Scenes (16:9, mascot in the left third, right half calm for tags): use as `bg` o
 | s_street | Tashkent street with shopping bags, tired | cost of living |
 
 Add new ones the same way (same prompt prefix, both references) when an episode needs a situation that isn't here, and list them in this table.
+
+Thumbnail poses (3:4, full body, made per episode for the A/B/C thumbnails; use as thumbnail `hero` with part 0, nparts 1):
+| name | what he does | fits |
+|---|---|---|
+| t_gold_hug | hugs a gold bar, sly side glance | gold, hoarding, "who is buying" |
+| t_gold_tower | balances a wobbling tower of gold bars, alarmed | too much in one asset, risk |
+| t_gold_magnifier | magnifying glass on a tiny gold nugget, amazed | rarity, "how much is there", surprising facts |

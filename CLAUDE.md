@@ -261,6 +261,10 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 
 ## Thumbnails and titles (2026-11-08)
 
+- Owner (2026-11-17): never reuse the same mascot sheet poses on every thumbnail. Each of A/B/C gets its own topic pose
+  (emotion + a topic prop, e.g. hugging a gold bar, wobbling tower, magnifier), generated like the library (`t_<topic>_<what>` in
+  assets/mascot, README table) and used as `hero` {part 0, nparts 1}. Same template, different posture/emotion/prop every time.
+
 - Owner's rule: every episode gets **3 titles + 3 thumbnails** (A/B/C, different angles), all run together in YouTube Test & Compare.
   Specs live in `projects/<ep>/thumbs/A.json`, `B.json`, `C.json` (thumbnail.py). Track results in the schedule's "AB tests" tab.
 - Every episode gets **7 Shorts** (one a day until the next Friday episode).

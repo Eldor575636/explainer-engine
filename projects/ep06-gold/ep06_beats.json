@@ -1,0 +1,3988 @@
+{
+ "layers": "layers",
+ "auto_skip": [
+  "Baffet",
+  "Exxon",
+  "2025-yil",
+  "2026-yil"
+ ],
+ "music": {
+  "curious": "../../assets/music/curious.mp3",
+  "dramatic": "../../assets/music/dramatic.mp3",
+  "calm": "../../assets/music/calm.mp3"
+ },
+ "mascot": {
+  "img": "mascot_v2",
+  "parts": 4,
+  "full_body": true,
+  "more": [
+   {
+    "img": "mascot_v3a_0",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3a_1",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3a_2",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3a_3",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_0",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_1",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_2",
+    "parts": 1
+   },
+   {
+    "img": "mascot_v3b_3",
+    "parts": 1
+   }
+  ]
+ },
+ "ui": {
+  "subscribe": "OBUNA BO'LING",
+  "subscribed": "OBUNA BO'LDINGIZ",
+  "like": "LAYK",
+  "next": "KEYINGI VIDEO"
+ },
+ "sentences": [
+  "2026-yil yanvar oyi.",
+  "Tarixda birinchi marta bir unsiya oltin narxi 5 ming dollardan oshdi.",
+  "28-yanvarda esa u 5 ming 590 dollarga yetdi.",
+  "Noyabr o'rtasida esa xuddi shu unsiya 3 ming 900 dollardan ham arzonlashdi, ya'ni narx cho'qqidan qariyb 30 foizga tushdi.",
+  "Shunga qaramay, dunyo markaziy banklari oltin sotib olishni to'xtatmayapti.",
+  "2026-yilning uchinchi choragida ular 321 tonna oltin sotib oldi, bu bir yil oldingidan 42 foiz ko'p.",
+  "Ular orasida O'zbekiston ham bor, bugun mamlakatimiz zaxiralarining 91 foizi oltindan iborat.",
+  "Xo'sh, foiz ham bermaydigan, hech narsa ishlab chiqarmaydigan bir bo'lak metall nega dunyoning eng boy muassasalari uchun bunchalik qadrli?",
+  "Va bu oltin yig'ish poygasi bizning hamyonimizga qanday ta'sir qiladi?",
+  "Mening ismim Bilmas, negadir meni Bilmasboy deb tanishadi.",
+  "Bilganlarim meni boy qilgan bo'lsa, bilmaganlarim ustida hanuzgacha savollar so'rayman, izlanaman.",
+  "Hamda shu yo'lda topganlarimni siz bilan ulashib boraman.",
+  "O'tgan safar narxlar nega har yili oshishini va so'mning qadri qayerga ketishini bilib olgandik.",
+  "Bugun esa ming yillar davomida qadrini yo'qotmagan narsa haqida gaplashamiz.",
+  "Demak, bugungi mavzu: oltin, ya'ni nega dunyo yana oltinga qaytmoqda.",
+  "Avval oddiy savoldan boshlaylik: oltin nega qimmat?",
+  "Birinchi sabab, u juda kam.",
+  "Insoniyat butun tarixi davomida qazib olgan barcha oltin taxminan 220 ming tonnani tashkil qiladi.",
+  "Agar uning hammasini bir joyga yig'sak, tomonlari taxminan 22 metr bo'lgan kub hosil bo'ladi.",
+  "Bu bor-yo'g'i yetti qavatli uyning balandligi.",
+  "Agar shu oltinni Yer yuzidagi barcha odamlarga teng bo'lib bersak, har birimizga atigi 27 grammga yaqin oltin to'g'ri keladi.",
+  "Bugungi narxda esa bu oltinning hammasi taxminan 27 trillion dollar turadi, bu Amerika iqtisodi bir yilda yaratadigan qiymatga yaqin.",
+  "Ikkinchi sabab, oltin zanglamaydi va chirimaydi.",
+  "Ming yillar oldin yasalgan oltin buyumlar bugun ham xuddi yangidek yaltirab turadi.",
+  "Uchinchi sabab, oltinni hech kim bosib chiqara olmaydi.",
+  "Pulni markaziy bank bir kunda ko'paytirishi mumkin, oltinni esa faqat yer ostidan qazib olish mumkin.",
+  "Butun dunyo konlari bir yilda taxminan 3 ming 700 tonna oltin qazib oladi, ya'ni mavjud oltinga yiliga atigi 2 foizga yaqin qo'shiladi.",
+  "Shuning uchun odamlar ming yillar davomida oltinga ishonib kelgan.",
+  "Taxminan miloddan avvalgi 6-asrda Lidiya podsholigida dunyodagi ilk tangalardan biri aynan oltin va kumush qotishmasidan zarb qilingan.",
+  "Aynan shu ishonch tufayli uzoq vaqt davomida pulning o'zi ham oltinga bog'langan edi.",
+  "Buni oltin standarti deyishadi: har bir qog'oz pulni bankka olib borib, ma'lum miqdordagi oltinga almashtirish mumkin edi.",
+  "Birinchi qismda aytganimizdek, Ikkinchi jahon urushidan keyin dunyo valyutalari dollarga, dollar esa oltinga bog'landi.",
+  "O'shanda, bir unsiya oltin 35 dollar deb belgilangan edi.",
+  "Bugungi narx bilan solishtirsak, oltin o'shandan beri 110 barobardan ham ko'proq qimmatlagan.",
+  "Lekin 1971-yilda AQSh prezidenti Richard Nikson dollarni oltinga almashtirishni to'xtatdi.",
+  "Shundan beri pulimiz hech qanday metallga bog'lanmagan, uning qadri faqat ishonchga tayanadi.",
+  "Keyingi o'n yilliklarda ko'plab davlatlar oltinni eski zamonning qoldig'i deb hisoblay boshladi.",
+  "Masalan, Buyuk Britaniya 1999 va 2002-yillar oralig'ida o'z oltinining qariyb yarmini, 395 tonnani sotib yubordi.",
+  "O'shanda bir unsiya o'rtacha 275 dollar atrofida sotilgan edi.",
+  "Bugun xuddi shu oltin qariyb o'n to'rt barobar qimmat turadi.",
+  "Bugun Britaniya omborida bor-yo'g'i 310 tonna oltin qolgan, bu O'zbekiston zaxirasidagi oltindan ham kam.",
+  "Britaniyaning bu xatosi esa iqtisodchilar orasida noto'g'ri vaqtda qilingan savdoning mashhur misoli bo'lib qoldi.",
+  "Shu o'rinda, bir soniya to'xtab: agar bunday mavzular sizga qiziq bo'lsa, kanalga obuna bo'lishni unutmang.",
+  "Davom etamiz.",
+  "Xo'sh, agar oltin eski zamon qoldig'i bo'lsa, nega bugun markaziy banklar uni yana sotib olmoqda?",
+  "2022-yilda Rossiya Ukrainaga bostirib kirgach, G'arb davlatlari Rossiya Markaziy bankining chet eldagi qariyb 300 milliard dollarlik zaxiralarini muzlatib qo'ydi.",
+  "Ikkinchi qismda sanksiyalar haqida gaplashganimizda buni batafsil ko'rgan edik.",
+  "Ko'rishga ulgurmaganlar esa sanksiyalarga atalgan sonimizni YouTube sahifamizda tomosha qilishingiz mumkin.",
+  "Aynan shu voqeadan keyin dunyodagi ko'plab davlatlar bir narsani tushundi: chet el bankidagi dollar yoki yevro aslida boshqa davlatning qaroriga bog'liq.",
+  "O'z omboringizda turgan oltinni esa hech kim bir buyruq bilan muzlatib qo'ya olmaydi.",
+  "Shundan keyin markaziy banklar uch yil ketma-ket, har yili ming tonnadan ortiq oltin sotib oldi.",
+  "Bu avvalgi o'n yillikdagi o'rtacha xariddan ikki barobardan ham ko'p.",
+  "2025-yilda xaridlar biroz sekinlashib, 863 tonnani tashkil qildi.",
+  "Eng katta xaridor ikki yil ketma-ket Polsha bo'ldi, u faqat 2025-yilning o'zida 102 tonna oltin sotib oldi.",
+  "Xitoy, Qozog'iston, Turkiya va Braziliya ham ro'yxatning yuqori qismida.",
+  "Ba'zi davlatlar esa oltinini uyga qaytarishni boshladi.",
+  "Masalan, Germaniya 2013 va 2017-yillar oralig'ida Nyu-York va Parijda saqlanayotgan 674 tonna oltinini Frankfurtga olib keldi.",
+  "Bugun Germaniya 3 ming 350 tonna oltin bilan dunyoda ikkinchi o'rinda turadi.",
+  "Birinchi o'rinda esa 8 ming 133 tonna oltinga ega AQSh.",
+  "Bu xaridlar natijasida katta o'zgarish yuz berdi.",
+  "Yevropa Markaziy banki ma'lumotiga ko'ra, 2025-yil oxirida oltin dunyo markaziy banklari zaxiralarining 27 foizini tashkil qildi.",
+  "Bu AQSh davlat obligatsiyalarining 22 foizlik va yevroning 15 foizlik ulushidan ham ko'p.",
+  "Ya'ni oltin markaziy banklar omboridagi eng katta yagona aktivga aylandi.",
+  "Xo'sh, bu oltin poygasida O'zbekiston qayerda turibdi?",
+  "O'zbekiston oltin bilan bog'liq hikoyada oddiy tomoshabin emas.",
+  "Navoiy viloyatidagi Muruntov koni dunyodagi eng katta ochiq oltin konidir.",
+  "Uning chuqurligi 600 metrdan, kengligi esa 3 kilometrdan ortiq.",
+  "Bu chuqurlik 375 metrli Toshkent teleminorasidan qariyb bir yarim barobar ko'p.",
+  "2025-yilda Muruntovning o'zidan 83 tonnadan ortiq oltin qazib olingan va u dunyodagi eng yirik oltin konlari ro'yxatida ikkinchi o'rinni egallaydi.",
+  "Mamlakatda qazib olingan oltinni avvalo Markaziy bank sotib oladi.",
+  "Shuning uchun O'zbekiston Jahon oltin kengashining hisobotlarida eng faol xaridorlar qatorida tez-tez tilga olinadi.",
+  "2026-yilning avgust, sentabr va oktabr oylarida Markaziy bank o'z zaxiralariga, har oy 7-8 tonnadan oltin qo'shdi.",
+  "Oktabr oxirida mamlakat zaxiralaridagi oltin hajmi 453 tonnadan oshib, rekord darajaga yetdi.",
+  "Bu oltin zaxiralarimizning 91 foizini tashkil qiladi.",
+  "Agar bu oltinni 38 million aholiga bo'lsak, har bir fuqaroga qariyb 12 gramm to'g'ri keladi.",
+  "Taqqoslash uchun, dunyo markaziy banklarida bu ulush o'rtacha 27 foiz atrofida.",
+  "Bunday tuzilmaning yaxshi tomoni bor: oltin narxi oshsa, zaxiralarimiz ham tez o'sadi.",
+  "Lekin buning teskari tomoni ham bor.",
+  "2026-yil sentabr va oktabr oylarida asosan oltin narxi tushgani sababli, zaxiralarimiz atigi ikki oyda 8 milliard 500 million dollarga kamaydi.",
+  "Holbuki, ombordagi oltin miqdori shu vaqtda ko'paygan edi.",
+  "Shuning uchun ba'zi iqtisodchilar zaxiralarning deyarli hammasini bitta aktivda saqlash xavfli, deb hisoblaydi.",
+  "Boshqalar esa oltin qazib oluvchi davlat uchun bu tabiiy holat, deb javob berishadi.",
+  "Aslida, oltin faqat markaziy banklar uchun emas.",
+  "O'zbek oilalarida oltin uzoq vaqtdan beri jamg'arma vositasi bo'lib kelgan.",
+  "To'ylarda kelinga oltin taqinchoq sovg'a qilinadi, ko'pchilik pulini oltin buyumlarga aylantirib saqlaydi.",
+  "Bugun esa Markaziy bank tijorat banklari orqali 5 grammdan 100 grammgacha bo'lgan oltin quymalarini ham sotadi.",
+  "Lekin oltin sotib olishdan oldin uchta narsani bilish kerak.",
+  "Birinchidan, oltin foiz bermaydi.",
+  "Bankdagi omonat har yili foiz olib kelsa, oltin quyma faqat narxi oshgandagina daromad beradi.",
+  "Ikkinchidan, oltin narxi keskin o'zgarishi mumkin.",
+  "Bu yil yanvardan buyon oltin narxi qariyb 30 foizga tushdi.",
+  "Tarixda bundan ham uzoq pasayishlar bo'lgan: 1980-yilning yanvarida bir unsiya oltin 850 dollarga yetgan.",
+  "Shundan keyin bu darajaga qaytish uchun 28 yil kerak bo'lgan.",
+  "Uchinchidan, sotib olish va sotish narxi orasida farq bor.",
+  "Kichik quymalarda bu farq bir necha foizni tashkil qilishi mumkin, ya'ni sotib olgan kuningiz sotsangiz, pulingizning bir qismini yo'qotasiz.",
+  "Shu sababli oltin ko'proq qisqa muddatli daromad uchun emas, uzoq muddatli himoya uchun ishlatiladi.",
+  "Iqtisodchilar orasida oltin haqida qizg'in bahs bor.",
+  "Bir tomon fikricha, oltin inqiroz paytidagi eng ishonchli boylik: urush, sanksiya yoki kuchli inflyatsiya bo'lsa, odamlar birinchi bo'lib oltinga yuguradi.",
+  "Boshqa tomon esa oltin hech narsa ishlab chiqarmaydi, deb hisoblaydi.",
+  "Mashhur investor Uorren Baffet 2011-yilda aksiyadorlariga yozgan maktubida qiziq hisob keltirgan.",
+  "O'sha paytdagi narxda dunyodagi barcha oltin 9 trillion 600 milliard dollar turardi.",
+  "Baffetning hisobicha, shu pulga Amerikadagi barcha ekin yerlarini va dunyodagi eng daromadli kompaniyalardan biri Exxon Mobil kabi 16 ta kompaniyani sotib olib, yana 1 trillion dollar ortib qolardi.",
+  "Uning fikricha, yer va kompaniyalar har yili yangi daromad keltiradi, oltin esa faqat omborda yotadi.",
+  "Aslida ikkala tomon ham o'z qarashlariga ko'ra haq.",
+  "Oltin boylikni ko'paytirish emas, ko'proq uni saqlab qolish vositasidir.",
+  "Xo'sh, bu bizga nima uchun muhim?",
+  "Birinchidan, oltin narxi so'mning barqarorligiga ta'sir qiladi, chunki zaxiralarimizning katta qismi oltinda.",
+  "Ikkinchidan, oltin eksporti O'zbekistonning eng katta daromad manbalaridan biri.",
+  "2025-yilda oltin eksporti 9 milliard 900 million dollarga yetib, umumiy eksportimizning qariyb 30 foizini tashkil qildi.",
+  "Uchinchidan, agar siz jamg'armangizni oltinda saqlamoqchi bo'lsangiz, uning narxi tushishi ham mumkinligini yodda tutishingiz kerak.",
+  "Bu moliyaviy maslahat emas, lekin har qanday jamg'arma qaroridan oldin bilish kerak bo'lgan juda muhim ma'lumotdir.",
+  "Demak, ko'rsatuv avvalidagi savolga qaytsak, markaziy banklar nega yana oltin sotib olmoqda?",
+  "Chunki dunyo tobora notinch bo'lib bormoqda va oltin hech kimga qarzdor bo'lmagan yagona boylikdir.",
+  "Uni muzlatib bo'lmaydi, bosib chiqarib bo'lmaydi va u ming yillar davomida qadrini saqlab kelgan.",
+  "Lekin oltin ham xatarsiz emas: uning narxi ko'tariladi va tushadi, va bu tebranishlar bizning zaxiralarimizda ham seziladi.",
+  "Demak, oltinga qisqa muddatli daromad manbai sifatida emas, balki boylikni uzoq muddat asrash vositasi sifatida qaragan ma'qul.",
+  "Oltin haqida men ham bilmas edim.",
+  "Endi esa hammamiz bilamiz.",
+  "Ana endi sizga savol: sizningcha, jamg'armani oltinda saqlash so'mda saqlashdan yaxshiroqmi yoki yo'q?",
+  "Fikringizni izohlarda yozib qoldiring.",
+  "Keyingi qismda esa chet eldagi yurtdoshlarimiz uyga yuboradigan pul o'tkazmalari O'zbekiston iqtisodi uchun qanchalik muhim ekanini bilib olamiz.",
+  "O'tkazib yubormaslik uchun obuna bo'ling, qo'ng'iroqchani bosing va ko'rsatuvni do'stlaringizga ulashing."
+ ],
+ "beats": [
+  {
+   "at": [
+    0,
+    "2026-yil"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_trading",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      0,
+      "2026-yil"
+     ],
+     "k": "label",
+     "text": "2026 · YANVAR"
+    },
+    {
+     "at": [
+      1,
+      "5"
+     ],
+     "k": "tag",
+     "text": "1 UNSIYA > $5 000"
+    }
+   ]
+  },
+  {
+   "at": [
+    2,
+    "28-yanvarda"
+   ],
+   "type": "number",
+   "prop": "prop_gold",
+   "value": "$5 590",
+   "sub": "REKORD · 28-YANVAR",
+   "show": [
+    2,
+    "590"
+   ]
+  },
+  {
+   "at": [
+    3,
+    "Noyabr"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      3,
+      "Noyabr"
+     ],
+     "k": "label",
+     "text": "1 UNSIYA OLTIN NARXI"
+    },
+    {
+     "at": [
+      3,
+      "Noyabr"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "YANVAR",
+       "value": 5590
+      },
+      {
+       "label": "NOYABR",
+       "value": 3900,
+       "color": "red",
+       "at": [
+        3,
+        "3"
+       ]
+      }
+     ],
+     "prefix": "$"
+    },
+    {
+     "at": [
+      3,
+      "30"
+     ],
+     "k": "stamp",
+     "text": "-30%",
+     "y": 0.2,
+     "x": 0.82
+    }
+   ]
+  },
+  {
+   "at": [
+    4,
+    "Shunga"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_delivery",
+   "ev": [
+    {
+     "at": [
+      4,
+      "markaziy"
+     ],
+     "k": "tag",
+     "text": "MARKAZIY BANKLAR"
+    },
+    {
+     "at": [
+      4,
+      "to'xtatmayapti"
+     ],
+     "k": "tag",
+     "text": "SOTIB OLISHDA DAVOM ETMOQDA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    5,
+    "2026-yilning"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_gold",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.45,
+     "at": [
+      5,
+      "2026-yilning"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      5,
+      "2026-yilning"
+     ],
+     "k": "label",
+     "text": "2026 · 3-CHORAK"
+    },
+    {
+     "at": [
+      5,
+      "321"
+     ],
+     "k": "counter",
+     "to": 321,
+     "x": 0.68,
+     "y": 0.45,
+     "suffix": " TONNA"
+    },
+    {
+     "at": [
+      5,
+      "42"
+     ],
+     "k": "tag",
+     "text": "+42% / 1 YIL",
+     "x": 0.68,
+     "y": 0.62,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    6,
+    "Ular"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      6,
+      "O'zbekiston"
+     ],
+     "k": "flag",
+     "code": "uz"
+    },
+    {
+     "at": [
+      6,
+      "zaxiralarining"
+     ],
+     "k": "label",
+     "text": "O'ZBEKISTON ZAXIRALARI"
+    },
+    {
+     "at": [
+      6,
+      "91"
+     ],
+     "k": "pie",
+     "slices": [
+      {
+       "label": "OLTIN",
+       "value": 91
+      },
+      {
+       "label": "BOSHQA",
+       "value": 9
+      }
+     ],
+     "x": 0.5,
+     "y": 0.55,
+     "r": 0.22
+    }
+   ]
+  },
+  {
+   "at": [
+    7,
+    "Xo'sh"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      7,
+      "Xo'sh"
+     ],
+     "k": "mascot",
+     "pose": "t_gold_magnifier",
+     "side": "right"
+    },
+    {
+     "at": [
+      7,
+      "foiz"
+     ],
+     "k": "tag",
+     "text": "FOIZ BERMAYDI",
+     "x": 0.36,
+     "y": 0.3
+    },
+    {
+     "at": [
+      7,
+      "ishlab"
+     ],
+     "k": "tag",
+     "text": "HECH NARSA ISHLAB CHIQARMAYDI",
+     "x": 0.36,
+     "y": 0.45
+    },
+    {
+     "at": [
+      7,
+      "qadrli"
+     ],
+     "k": "tag",
+     "text": "NEGA BUNCHA QADRLI?",
+     "x": 0.36,
+     "y": 0.62,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    8,
+    "Va"
+   ],
+   "type": "scene",
+   "bg": "s_kitchen",
+   "vfocus": 0.3,
+   "ev": [
+    {
+     "at": [
+      8,
+      "hamyonimizga"
+     ],
+     "k": "tag",
+     "text": "BIZNING HAMYONIMIZGA TA'SIRI?",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    9,
+    "Mening"
+   ],
+   "type": "intro",
+   "pose": 3
+  },
+  {
+   "at": [
+    10,
+    "Bilganlarim"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      10,
+      "Bilganlarim"
+     ],
+     "k": "mascot",
+     "pose": "p_book",
+     "side": "right"
+    },
+    {
+     "at": [
+      10,
+      "Bilganlarim"
+     ],
+     "k": "tag",
+     "text": "BILIM = BOYLIK",
+     "x": 0.32,
+     "y": 0.3
+    },
+    {
+     "at": [
+      10,
+      "savollar"
+     ],
+     "k": "tag",
+     "text": "SO'RAYMAN",
+     "x": 0.32,
+     "y": 0.45
+    },
+    {
+     "at": [
+      10,
+      "izlanaman"
+     ],
+     "k": "tag",
+     "text": "IZLANAMAN",
+     "x": 0.32,
+     "y": 0.58
+    }
+   ]
+  },
+  {
+   "at": [
+    11,
+    "Hamda"
+   ],
+   "type": "scene",
+   "bg": "s_library",
+   "vfocus": 0.33,
+   "ev": [
+    {
+     "at": [
+      11,
+      "topganlarimni"
+     ],
+     "k": "tag",
+     "text": "TOPGANLARIMNI"
+    },
+    {
+     "at": [
+      11,
+      "ulashib"
+     ],
+     "k": "tag",
+     "text": "SIZ BILAN ULASHAMAN",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    12,
+    "O'tgan"
+   ],
+   "type": "scene",
+   "bg": "bg_wallet",
+   "ev": [
+    {
+     "at": [
+      12,
+      "O'tgan"
+     ],
+     "k": "label",
+     "text": "5-QISM: INFLYATSIYA"
+    },
+    {
+     "at": [
+      12,
+      "qadri"
+     ],
+     "k": "tag",
+     "text": "SO'MNING QADRI QAYERGA KETADI?",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    13,
+    "Bugun"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_ancient",
+   "ev": [
+    {
+     "at": [
+      13,
+      "ming"
+     ],
+     "k": "tag",
+     "text": "MING YILLAR DAVOMIDA"
+    },
+    {
+     "at": [
+      13,
+      "yo'qotmagan"
+     ],
+     "k": "tag",
+     "text": "QADRINI YO'QOTMAGAN",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    14,
+    "Demak"
+   ],
+   "type": "title",
+   "title": "BUGUNGI MAVZU",
+   "title2": "OLTIN"
+  },
+  {
+   "at": [
+    14,
+    "nega"
+   ],
+   "type": "scene",
+   "bg": "s_vault",
+   "vfocus": 0.3,
+   "ev": [
+    {
+     "at": [
+      14,
+      "nega"
+     ],
+     "k": "tag",
+     "text": "NEGA DUNYO OLTINGA QAYTMOQDA?",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    15,
+    "Avval"
+   ],
+   "type": "chapter",
+   "num": "1-QISM",
+   "title": "OLTIN NEGA QIMMAT?"
+  },
+  {
+   "at": [
+    16,
+    "Birinchi"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      16,
+      "Birinchi"
+     ],
+     "k": "mascot",
+     "pose": "p_pointer",
+     "side": "right"
+    },
+    {
+     "at": [
+      16,
+      "Birinchi"
+     ],
+     "k": "tag",
+     "text": "3 TA SABAB",
+     "x": 0.36,
+     "y": 0.4,
+     "fg": "red"
+    },
+    {
+     "at": [
+      16,
+      "kam"
+     ],
+     "k": "tag",
+     "text": "1. JUDA KAM",
+     "x": 0.36,
+     "y": 0.56
+    }
+   ]
+  },
+  {
+   "at": [
+    17,
+    "Insoniyat"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_mine_shaft",
+   "ev": [
+    {
+     "at": [
+      17,
+      "Insoniyat"
+     ],
+     "k": "label",
+     "text": "BUTUN TARIX DAVOMIDA"
+    },
+    {
+     "at": [
+      17,
+      "220"
+     ],
+     "k": "bigtext",
+     "text": "220 000 TONNA",
+     "x": 0.5,
+     "y": 0.5
+    }
+   ]
+  },
+  {
+   "at": [
+    18,
+    "Agar"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_cube",
+   "ev": [
+    {
+     "at": [
+      18,
+      "22"
+     ],
+     "k": "tag",
+     "text": "KUB: 22 × 22 × 22 METR",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    19,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_cube",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      19,
+      "yetti"
+     ],
+     "k": "tag",
+     "text": "= 7 QAVATLI UY"
+    },
+    {
+     "at": [
+      19,
+      "balandligi"
+     ],
+     "k": "arrow",
+     "from": [
+      0.42,
+      0.2
+     ],
+     "to": [
+      0.42,
+      0.82
+     ],
+     "straight": true
+    }
+   ]
+  },
+  {
+   "at": [
+    20,
+    "Agar"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_people_world",
+   "ev": [
+    {
+     "at": [
+      20,
+      "barcha"
+     ],
+     "k": "tag",
+     "text": "8 MILLIARD ODAM"
+    },
+    {
+     "at": [
+      20,
+      "27"
+     ],
+     "k": "tag",
+     "text": "HAR BIRIGA ~27 GRAMM",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    21,
+    "Bugungi"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      21,
+      "Bugungi"
+     ],
+     "k": "label",
+     "text": "DUNYODAGI BARCHA OLTIN"
+    },
+    {
+     "at": [
+      21,
+      "Bugungi"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "BARCHA OLTIN",
+       "value": 27,
+       "at": [
+        21,
+        "27"
+       ]
+      },
+      {
+       "label": "AQSH IQTISODI / 1 YIL",
+       "value": 30,
+       "color": "red",
+       "at": [
+        21,
+        "Amerika"
+       ]
+      }
+     ],
+     "suffix": " TRLN $",
+     "novalue": false
+    }
+   ]
+  },
+  {
+   "at": [
+    22,
+    "Ikkinchi"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_ancient",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      22,
+      "Ikkinchi"
+     ],
+     "k": "tag",
+     "text": "2. ZANGLAMAYDI",
+     "fg": "red"
+    },
+    {
+     "at": [
+      22,
+      "chirimaydi"
+     ],
+     "k": "tag",
+     "text": "CHIRIMAYDI"
+    }
+   ]
+  },
+  {
+   "at": [
+    23,
+    "Ming"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_ancient",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      23,
+      "Ming"
+     ],
+     "k": "tag",
+     "text": "MING YILLAR OLDIN"
+    },
+    {
+     "at": [
+      23,
+      "yangidek"
+     ],
+     "k": "tag",
+     "text": "BUGUN HAM YANGIDEK ✓",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    24,
+    "Uchinchi"
+   ],
+   "type": "scene",
+   "bg": "bg_printing_press",
+   "ev": [
+    {
+     "at": [
+      24,
+      "Uchinchi"
+     ],
+     "k": "tag",
+     "text": "3. BOSIB CHIQARIB BO'LMAYDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    25,
+    "Pulni"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_mine_shaft",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      25,
+      "Pulni"
+     ],
+     "k": "tag",
+     "text": "PUL: BIR KUNDA ✓"
+    },
+    {
+     "at": [
+      25,
+      "qazib"
+     ],
+     "k": "tag",
+     "text": "OLTIN: FAQAT QAZIB OLINADI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    26,
+    "Butun"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_gold",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.45,
+     "at": [
+      26,
+      "Butun"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      26,
+      "Butun"
+     ],
+     "k": "label",
+     "text": "BIR YILDA QAZIB OLINADI"
+    },
+    {
+     "at": [
+      26,
+      "700"
+     ],
+     "k": "counter",
+     "to": 3700,
+     "x": 0.68,
+     "y": 0.42,
+     "suffix": " TONNA"
+    },
+    {
+     "at": [
+      26,
+      "2"
+     ],
+     "k": "tag",
+     "text": "+2% / YIL",
+     "x": 0.68,
+     "y": 0.6,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    27,
+    "Shuning"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_bazaar",
+   "ev": [
+    {
+     "at": [
+      27,
+      "ishonib"
+     ],
+     "k": "tag",
+     "text": "MING YILLIK ISHONCH",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    28,
+    "Taxminan"
+   ],
+   "type": "scene",
+   "bg": "bg_lydia_mint",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      28,
+      "Taxminan"
+     ],
+     "k": "label",
+     "text": "MIL. AVV. 6-ASR · LIDIYA"
+    },
+    {
+     "at": [
+      28,
+      "tangalardan"
+     ],
+     "k": "tag",
+     "text": "ILK TANGALARDAN BIRI",
+     "fg": "red"
+    },
+    {
+     "at": [
+      28,
+      "kumush"
+     ],
+     "k": "tag",
+     "text": "OLTIN + KUMUSH"
+    }
+   ]
+  },
+  {
+   "at": [
+    29,
+    "Aynan"
+   ],
+   "type": "chapter",
+   "num": "2-QISM",
+   "title": "OLTIN VA PUL"
+  },
+  {
+   "at": [
+    29,
+    "pulning"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_standard",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      29,
+      "pulning"
+     ],
+     "k": "tag",
+     "text": "PUL = OLTINGA BOG'LANGAN",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    30,
+    "Buni"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_standard",
+   "ev": [
+    {
+     "at": [
+      30,
+      "standarti"
+     ],
+     "k": "label",
+     "text": "OLTIN STANDARTI"
+    },
+    {
+     "at": [
+      30,
+      "qog'oz"
+     ],
+     "k": "tag",
+     "text": "QOG'OZ PUL →"
+    },
+    {
+     "at": [
+      30,
+      "almashtirish"
+     ],
+     "k": "tag",
+     "text": "→ OLTIN",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    31,
+    "Birinchi"
+   ],
+   "type": "scene",
+   "bg": "bg_conference",
+   "ev": [
+    {
+     "at": [
+      31,
+      "Ikkinchi"
+     ],
+     "k": "label",
+     "text": "1944 · BRETTON-VUDS"
+    },
+    {
+     "at": [
+      31,
+      "dollarga"
+     ],
+     "k": "tag",
+     "text": "VALYUTALAR → DOLLAR"
+    },
+    {
+     "at": [
+      31,
+      "oltinga"
+     ],
+     "k": "tag",
+     "text": "DOLLAR → OLTIN",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    32,
+    "O'shanda"
+   ],
+   "type": "number",
+   "prop": "prop_gold",
+   "value": "$35",
+   "sub": "1 UNSIYA · 1944",
+   "show": [
+    32,
+    "35"
+   ]
+  },
+  {
+   "at": [
+    33,
+    "Bugungi"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      33,
+      "Bugungi"
+     ],
+     "k": "label",
+     "text": "1 UNSIYA OLTIN"
+    },
+    {
+     "at": [
+      33,
+      "Bugungi"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "1944",
+       "value": 35
+      },
+      {
+       "label": "BUGUN",
+       "value": 3900,
+       "hl": true,
+       "at": [
+        33,
+        "110"
+       ]
+      }
+     ],
+     "prefix": "$"
+    },
+    {
+     "at": [
+      33,
+      "110"
+     ],
+     "k": "stamp",
+     "text": "×110+",
+     "y": 0.2,
+     "x": 0.82
+    }
+   ]
+  },
+  {
+   "at": [
+    34,
+    "Lekin"
+   ],
+   "type": "portrait",
+   "fig": "fig_nixon",
+   "ev": [
+    {
+     "at": [
+      34,
+      "AQSh"
+     ],
+     "k": "flag",
+     "code": "us",
+     "x": 0.9,
+     "y": 0.15
+    },
+    {
+     "at": [
+      34,
+      "1971-yilda"
+     ],
+     "k": "label",
+     "text": "1971 · RICHARD NIKSON"
+    }
+   ]
+  },
+  {
+   "at": [
+    34,
+    "dollarni"
+   ],
+   "type": "scene",
+   "bg": "bg_tv_1971",
+   "ev": [
+    {
+     "at": [
+      34,
+      "almashtirishni"
+     ],
+     "k": "tag",
+     "text": "DOLLAR → OLTIN ✗",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    35,
+    "Shundan"
+   ],
+   "type": "scene",
+   "bg": "bg_wallet",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      35,
+      "metallga"
+     ],
+     "k": "tag",
+     "text": "METALLGA BOG'LANMAGAN"
+    },
+    {
+     "at": [
+      35,
+      "ishonchga"
+     ],
+     "k": "tag",
+     "text": "FAQAT ISHONCH",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    36,
+    "Keyingi"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      36,
+      "Keyingi"
+     ],
+     "k": "mascot",
+     "pose": "p_newspaper",
+     "side": "right"
+    },
+    {
+     "at": [
+      36,
+      "eski"
+     ],
+     "k": "tag",
+     "text": "\"ESKI ZAMON QOLDIG'I\"",
+     "x": 0.36,
+     "y": 0.5,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    37,
+    "Masalan"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.48,
+    0.27
+   ],
+   "ev": [
+    {
+     "at": [
+      37,
+      "Britaniya"
+     ],
+     "k": "flag",
+     "code": "gb"
+    },
+    {
+     "at": [
+      37,
+      "Britaniya"
+     ],
+     "k": "pin",
+     "x": 0.479,
+     "y": 0.265
+    },
+    {
+     "at": [
+      37,
+      "1999"
+     ],
+     "k": "label",
+     "text": "1999-2002 · BRITANIYA"
+    },
+    {
+     "at": [
+      37,
+      "Britaniya"
+     ],
+     "k": "tag",
+     "text": "OLTINNING YARMI SOTILDI",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    37,
+    "oltinining"
+   ],
+   "type": "scene",
+   "bg": "bg_uk_gold_sale",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      37,
+      "yarmini"
+     ],
+     "k": "tag",
+     "text": "QARIYB YARMI"
+    },
+    {
+     "at": [
+      37,
+      "395"
+     ],
+     "k": "tag",
+     "text": "395 TONNA SOTILDI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    38,
+    "O'shanda"
+   ],
+   "type": "scene",
+   "bg": "bg_uk_gold_sale",
+   "ev": [
+    {
+     "at": [
+      38,
+      "275"
+     ],
+     "k": "tag",
+     "text": "1 UNSIYA ≈ $275"
+    }
+   ]
+  },
+  {
+   "at": [
+    39,
+    "Bugun"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      39,
+      "Bugun"
+     ],
+     "k": "label",
+     "text": "1 UNSIYA OLTIN"
+    },
+    {
+     "at": [
+      39,
+      "Bugun"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "1999-2002",
+       "value": 275
+      },
+      {
+       "label": "BUGUN",
+       "value": 3900,
+       "hl": true,
+       "at": [
+        39,
+        "o'n"
+       ]
+      }
+     ],
+     "prefix": "$"
+    },
+    {
+     "at": [
+      39,
+      "barobar"
+     ],
+     "k": "stamp",
+     "text": "×14",
+     "y": 0.2,
+     "x": 0.82
+    }
+   ]
+  },
+  {
+   "at": [
+    40,
+    "Bugun"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      40,
+      "Bugun"
+     ],
+     "k": "label",
+     "text": "OLTIN ZAXIRASI, TONNA"
+    },
+    {
+     "at": [
+      40,
+      "Bugun"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "BRITANIYA",
+       "value": 310,
+       "at": [
+        40,
+        "310"
+       ]
+      },
+      {
+       "label": "O'ZBEKISTON",
+       "value": 453,
+       "hl": true,
+       "at": [
+        40,
+        "O'zbekiston"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    41,
+    "Britaniyaning"
+   ],
+   "type": "scene",
+   "bg": "bg_uk_gold_sale",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      41,
+      "xatosi"
+     ],
+     "k": "stamp",
+     "text": "NOTO'G'RI VAQT",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    42,
+    "Shu"
+   ],
+   "type": "object",
+   "sfx": [
+    [
+     0,
+     "ding"
+    ]
+   ],
+   "ev": [
+    {
+     "at": [
+      42,
+      "Shu"
+     ],
+     "k": "mascot",
+     "pose": 7,
+     "side": "right"
+    },
+    {
+     "at": [
+      42,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.4,
+     "y": 0.45,
+     "dur": 3.4
+    }
+   ]
+  },
+  {
+   "at": [
+    44,
+    "Xo'sh"
+   ],
+   "type": "chapter",
+   "num": "3-QISM",
+   "title": "NEGA YANA OLTIN?"
+  },
+  {
+   "at": [
+    44,
+    "markaziy"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_delivery",
+   "ev": [
+    {
+     "at": [
+      44,
+      "eski"
+     ],
+     "k": "tag",
+     "text": "\"ESKI ZAMON QOLDIG'I\"?"
+    },
+    {
+     "at": [
+      44,
+      "sotib"
+     ],
+     "k": "tag",
+     "text": "NEGA YANA SOTIB OLISHMOQDA?",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    45,
+    "2022-yilda"
+   ],
+   "type": "scene",
+   "bg": "bg_moscow_vault",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      45,
+      "2022-yilda"
+     ],
+     "k": "label",
+     "text": "2022"
+    },
+    {
+     "at": [
+      45,
+      "Rossiya"
+     ],
+     "k": "flag",
+     "code": "ru"
+    },
+    {
+     "at": [
+      45,
+      "Ukrainaga"
+     ],
+     "k": "tag",
+     "text": "BOSTIRIB KIRISH"
+    }
+   ]
+  },
+  {
+   "at": [
+    45,
+    "G'arb"
+   ],
+   "type": "scene",
+   "bg": "bg_vault_empty",
+   "ev": [
+    {
+     "at": [
+      45,
+      "300"
+     ],
+     "k": "tag",
+     "text": "~$300 MLRD MUZLATILDI",
+     "fg": "red"
+    },
+    {
+     "at": [
+      45,
+      "muzlatib"
+     ],
+     "k": "stamp",
+     "text": "MUZLATILDI",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    46,
+    "Ikkinchi"
+   ],
+   "type": "scene",
+   "bg": "bg_brussels_vault",
+   "ev": [
+    {
+     "at": [
+      46,
+      "Ikkinchi"
+     ],
+     "k": "label",
+     "text": "2-QISM: SANKSIYALAR"
+    }
+   ]
+  },
+  {
+   "at": [
+    47,
+    "Ko'rishga"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      47,
+      "Ko'rishga"
+     ],
+     "k": "mascot",
+     "pose": 5,
+     "side": "right"
+    },
+    {
+     "at": [
+      47,
+      "sanksiyalarga"
+     ],
+     "k": "tag",
+     "text": "2-QISMNI KO'RING",
+     "x": 0.36,
+     "y": 0.45,
+     "fg": "red"
+    },
+    {
+     "at": [
+      47,
+      "YouTube"
+     ],
+     "k": "like",
+     "x": 0.82,
+     "y": 0.2
+    }
+   ]
+  },
+  {
+   "at": [
+    48,
+    "Aynan"
+   ],
+   "type": "scene",
+   "bg": "bg_treasury",
+   "ev": [
+    {
+     "at": [
+      48,
+      "dollar"
+     ],
+     "k": "tag",
+     "text": "CHET ELDAGI DOLLAR / YEVRO"
+    },
+    {
+     "at": [
+      48,
+      "qaroriga"
+     ],
+     "k": "tag",
+     "text": "= BOSHQA DAVLAT QARORI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    48,
+    "chet"
+   ],
+   "type": "scene",
+   "bg": "bg_treasury",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      48,
+      "qaroriga"
+     ],
+     "k": "tag",
+     "text": "BOSHQA DAVLATNING QARORI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    49,
+    "O'z"
+   ],
+   "type": "scene",
+   "bg": "bg_vault",
+   "ev": [
+    {
+     "at": [
+      49,
+      "omboringizda"
+     ],
+     "k": "tag",
+     "text": "O'Z OMBORINGIZDAGI OLTIN"
+    },
+    {
+     "at": [
+      49,
+      "muzlatib"
+     ],
+     "k": "stamp",
+     "text": "MUZLATIB BO'LMAYDI",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    50,
+    "Shundan"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_delivery",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      50,
+      "uch"
+     ],
+     "k": "tag",
+     "text": "3 YIL KETMA-KET"
+    },
+    {
+     "at": [
+      50,
+      "ming"
+     ],
+     "k": "tag",
+     "text": "> 1 000 TONNA / YIL",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    51,
+    "Bu"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      51,
+      "Bu"
+     ],
+     "k": "label",
+     "text": "MARKAZIY BANKLAR XARIDI, TONNA"
+    },
+    {
+     "at": [
+      51,
+      "Bu"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "2010-21",
+       "value": 470
+      },
+      {
+       "label": "2022-24",
+       "value": 1000,
+       "hl": true,
+       "at": [
+        51,
+        "ikki"
+       ]
+      },
+      {
+       "label": "2025",
+       "value": 863,
+       "at": [
+        52,
+        "863"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    53,
+    "Eng"
+   ],
+   "type": "scene",
+   "bg": "bg_warsaw_gold",
+   "ev": [
+    {
+     "at": [
+      53,
+      "Polsha"
+     ],
+     "k": "flag",
+     "code": "pl"
+    },
+    {
+     "at": [
+      53,
+      "Polsha"
+     ],
+     "k": "label",
+     "text": "ENG KATTA XARIDOR · POLSHA"
+    },
+    {
+     "at": [
+      53,
+      "102"
+     ],
+     "k": "tag",
+     "text": "2025: 102 TONNA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    54,
+    "Xitoy"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.55,
+    0.4
+   ],
+   "ev": [
+    {
+     "at": [
+      54,
+      "Xitoy"
+     ],
+     "k": "pin",
+     "x": 0.757,
+     "y": 0.39
+    },
+    {
+     "at": [
+      54,
+      "Qozog'iston"
+     ],
+     "k": "pin",
+     "x": 0.658,
+     "y": 0.3
+    },
+    {
+     "at": [
+      54,
+      "Turkiya"
+     ],
+     "k": "pin",
+     "x": 0.575,
+     "y": 0.364
+    },
+    {
+     "at": [
+      54,
+      "Braziliya"
+     ],
+     "k": "pin",
+     "x": 0.354,
+     "y": 0.7
+    },
+    {
+     "at": [
+      54,
+      "Xitoy"
+     ],
+     "k": "flag",
+     "code": [
+      "cn",
+      "kz",
+      "tr",
+      "br"
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    55,
+    "Ba'zi"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_plane",
+   "ev": [
+    {
+     "at": [
+      55,
+      "uyga"
+     ],
+     "k": "tag",
+     "text": "OLTINNI UYGA QAYTARISH",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    56,
+    "Masalan"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.4,
+    0.3
+   ],
+   "ev": [
+    {
+     "at": [
+      56,
+      "Germaniya"
+     ],
+     "k": "flag",
+     "code": "de"
+    },
+    {
+     "at": [
+      56,
+      "2013"
+     ],
+     "k": "label",
+     "text": "2013-2017 · GERMANIYA"
+    },
+    {
+     "at": [
+      56,
+      "Nyu-York"
+     ],
+     "k": "arrow",
+     "from": [
+      0.26,
+      0.33
+     ],
+     "to": [
+      0.51,
+      0.28
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      56,
+      "Parijda"
+     ],
+     "k": "arrow",
+     "from": [
+      0.485,
+      0.31
+     ],
+     "to": [
+      0.51,
+      0.28
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      56,
+      "Frankfurtga"
+     ],
+     "k": "pin",
+     "x": 0.51,
+     "y": 0.28
+    }
+   ]
+  },
+  {
+   "at": [
+    56,
+    "674"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_plane",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      56,
+      "674"
+     ],
+     "k": "tag",
+     "text": "674 TONNA UYGA",
+     "fg": "red"
+    },
+    {
+     "at": [
+      56,
+      "Frankfurtga"
+     ],
+     "k": "label",
+     "text": "FRANKFURT"
+    }
+   ]
+  },
+  {
+   "at": [
+    57,
+    "Bugun"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      57,
+      "Bugun"
+     ],
+     "k": "label",
+     "text": "ENG KO'P OLTIN, TONNA"
+    },
+    {
+     "at": [
+      57,
+      "Bugun"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "AQSH",
+       "value": 8133,
+       "hl": true,
+       "at": [
+        58,
+        "8"
+       ]
+      },
+      {
+       "label": "GERMANIYA",
+       "value": 3350,
+       "at": [
+        57,
+        "3"
+       ]
+      },
+      {
+       "label": "O'ZBEKISTON",
+       "value": 453,
+       "at": [
+        57,
+        "Bugun"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    59,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_central_bank",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      59,
+      "o'zgarish"
+     ],
+     "k": "tag",
+     "text": "KATTA O'ZGARISH",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    60,
+    "Yevropa"
+   ],
+   "type": "scene",
+   "bg": "bg_central_bank",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      60,
+      "Yevropa"
+     ],
+     "k": "label",
+     "text": "YEVROPA MARKAZIY BANKI"
+    },
+    {
+     "at": [
+      60,
+      "2025-yil"
+     ],
+     "k": "tag",
+     "text": "2025-YIL OXIRI"
+    }
+   ]
+  },
+  {
+   "at": [
+    60,
+    "dunyo"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      60,
+      "dunyo"
+     ],
+     "k": "label",
+     "text": "MARKAZIY BANKLAR ZAXIRASI · 2025"
+    },
+    {
+     "at": [
+      60,
+      "dunyo"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.6,
+     "items": [
+      {
+       "label": "OLTIN",
+       "value": 27,
+       "hl": true,
+       "at": [
+        60,
+        "27"
+       ]
+      },
+      {
+       "label": "AQSH OBLIG.",
+       "value": 22,
+       "at": [
+        61,
+        "22"
+       ]
+      },
+      {
+       "label": "YEVRO",
+       "value": 15,
+       "at": [
+        61,
+        "15"
+       ]
+      }
+     ],
+     "suffix": "%"
+    }
+   ]
+  },
+  {
+   "at": [
+    62,
+    "Ya'ni"
+   ],
+   "type": "scene",
+   "bg": "s_vault",
+   "vfocus": 0.3,
+   "ev": [
+    {
+     "at": [
+      62,
+      "eng"
+     ],
+     "k": "stamp",
+     "text": "1-O'RINDA",
+     "y": 0.3,
+     "x": 0.7
+    }
+   ]
+  },
+  {
+   "at": [
+    63,
+    "Xo'sh"
+   ],
+   "type": "chapter",
+   "num": "4-QISM",
+   "title": "O'ZBEKISTON VA OLTIN"
+  },
+  {
+   "at": [
+    64,
+    "O'zbekiston"
+   ],
+   "type": "map",
+   "bg": "map_central_asia",
+   "ev": [
+    {
+     "at": [
+      64,
+      "O'zbekiston"
+     ],
+     "k": "flag",
+     "code": "uz"
+    },
+    {
+     "at": [
+      64,
+      "tomoshabin"
+     ],
+     "k": "tag",
+     "text": "ODDIY TOMOSHABIN EMAS",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    65,
+    "Navoiy"
+   ],
+   "type": "scene",
+   "bg": "bg_muruntau",
+   "ev": [
+    {
+     "at": [
+      65,
+      "Navoiy"
+     ],
+     "k": "label",
+     "text": "NAVOIY · MURUNTOV"
+    },
+    {
+     "at": [
+      65,
+      "eng"
+     ],
+     "k": "tag",
+     "text": "DUNYODAGI ENG KATTA OCHIQ KON",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    66,
+    "Uning"
+   ],
+   "type": "scene",
+   "bg": "bg_muruntau",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      66,
+      "600"
+     ],
+     "k": "tag",
+     "text": "CHUQURLIGI: 600+ M"
+    },
+    {
+     "at": [
+      66,
+      "3"
+     ],
+     "k": "tag",
+     "text": "KENGLIGI: 3+ KM",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    67,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "bg_pit_vs_tower",
+   "ev": [
+    {
+     "at": [
+      67,
+      "375"
+     ],
+     "k": "tag",
+     "text": "TELEMINORA: 375 M"
+    },
+    {
+     "at": [
+      67,
+      "bir"
+     ],
+     "k": "tag",
+     "text": "KON: ×1,5 CHUQUR",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    68,
+    "2025-yilda"
+   ],
+   "type": "number",
+   "prop": "prop_gold",
+   "value": "83 TONNA",
+   "sub": "MURUNTOV · 2025 · DUNYODA 2-O'RIN",
+   "show": [
+    68,
+    "83"
+   ]
+  },
+  {
+   "at": [
+    68,
+    "dunyodagi"
+   ],
+   "type": "scene",
+   "bg": "bg_muruntau",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      68,
+      "ikkinchi"
+     ],
+     "k": "tag",
+     "text": "DUNYODA 2-O'RIN",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    69,
+    "Mamlakatda"
+   ],
+   "type": "scene",
+   "bg": "bg_refinery",
+   "ev": [
+    {
+     "at": [
+      69,
+      "Markaziy"
+     ],
+     "k": "tag",
+     "text": "QAZIB OLINGAN OLTIN → MARKAZIY BANK",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    70,
+    "Shuning"
+   ],
+   "type": "scene",
+   "bg": "bg_tashkent_cb",
+   "ev": [
+    {
+     "at": [
+      70,
+      "Jahon"
+     ],
+     "k": "label",
+     "text": "JAHON OLTIN KENGASHI"
+    },
+    {
+     "at": [
+      70,
+      "faol"
+     ],
+     "k": "tag",
+     "text": "ENG FAOL XARIDORLARDAN",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    71,
+    "2026-yilning"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      71,
+      "2026-yilning"
+     ],
+     "k": "label",
+     "text": "2026 · OLTIN QO'SHILDI"
+    },
+    {
+     "at": [
+      71,
+      "avgust"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "AVGUST",
+       "value": 8
+      },
+      {
+       "label": "SENTABR",
+       "value": 7
+      },
+      {
+       "label": "OKTABR",
+       "value": 8,
+       "hl": true
+      }
+     ],
+     "suffix": " T"
+    }
+   ]
+  },
+  {
+   "at": [
+    72,
+    "Oktabr"
+   ],
+   "type": "number",
+   "prop": "prop_gold",
+   "value": "453 TONNA",
+   "sub": "O'ZBEKISTON · REKORD",
+   "show": [
+    72,
+    "453"
+   ]
+  },
+  {
+   "at": [
+    73,
+    "Bu"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      73,
+      "Bu"
+     ],
+     "k": "label",
+     "text": "ZAXIRALARDA OLTIN ULUSHI"
+    },
+    {
+     "at": [
+      73,
+      "91"
+     ],
+     "k": "pie",
+     "slices": [
+      {
+       "label": "OLTIN",
+       "value": 91
+      },
+      {
+       "label": "BOSHQA",
+       "value": 9
+      }
+     ],
+     "x": 0.5,
+     "y": 0.55,
+     "r": 0.22
+    }
+   ]
+  },
+  {
+   "at": [
+    74,
+    "Agar"
+   ],
+   "type": "number",
+   "prop": "prop_gold",
+   "value": "≈ 12 GRAMM",
+   "sub": "HAR BIR FUQAROGA · 38 MLN AHOLI",
+   "show": [
+    74,
+    "12"
+   ]
+  },
+  {
+   "at": [
+    75,
+    "Taqqoslash"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      75,
+      "Taqqoslash"
+     ],
+     "k": "label",
+     "text": "ZAXIRALARDA OLTIN ULUSHI"
+    },
+    {
+     "at": [
+      75,
+      "Taqqoslash"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "O'ZBEKISTON",
+       "value": 91,
+       "hl": true
+      },
+      {
+       "label": "DUNYO O'RTACHA",
+       "value": 27,
+       "at": [
+        75,
+        "27"
+       ]
+      }
+     ],
+     "suffix": "%"
+    }
+   ]
+  },
+  {
+   "at": [
+    76,
+    "Bunday"
+   ],
+   "type": "scene",
+   "bg": "bg_tashkent_cb",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      76,
+      "oshsa"
+     ],
+     "k": "tag",
+     "text": "OLTIN ↑ → ZAXIRA ↑ ✓",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    77,
+    "Lekin"
+   ],
+   "type": "scene",
+   "bg": "bg_reserves_fall",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      77,
+      "teskari"
+     ],
+     "k": "tag",
+     "text": "TESKARI TOMONI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    78,
+    "2026-yil"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      78,
+      "2026-yil"
+     ],
+     "k": "label",
+     "text": "O'ZBEKISTON ZAXIRALARI, MLRD $"
+    },
+    {
+     "at": [
+      78,
+      "2026-yil"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "1-SENTABR",
+       "value": 72.1
+      },
+      {
+       "label": "1-OKTABR",
+       "value": 66.6,
+       "at": [
+        78,
+        "oktabr"
+       ]
+      },
+      {
+       "label": "1-NOYABR",
+       "value": 63.6,
+       "color": "red",
+       "at": [
+        78,
+        "8"
+       ]
+      }
+     ]
+    },
+    {
+     "at": [
+      78,
+      "kamaydi"
+     ],
+     "k": "stamp",
+     "text": "-$8,5 MLRD",
+     "y": 0.42,
+     "x": 0.86
+    }
+   ]
+  },
+  {
+   "at": [
+    79,
+    "Holbuki"
+   ],
+   "type": "scene",
+   "bg": "bg_reserves_fall",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      79,
+      "ko'paygan"
+     ],
+     "k": "tag",
+     "text": "OLTIN MIQDORI ↑",
+     "fg": "red"
+    },
+    {
+     "at": [
+      79,
+      "Holbuki"
+     ],
+     "k": "tag",
+     "text": "QIYMATI ↓"
+    }
+   ]
+  },
+  {
+   "at": [
+    80,
+    "Shuning"
+   ],
+   "type": "scene",
+   "bg": "bg_debate_scale",
+   "ev": [
+    {
+     "at": [
+      80,
+      "iqtisodchilar"
+     ],
+     "k": "label",
+     "text": "IQTISODCHILAR"
+    },
+    {
+     "at": [
+      80,
+      "xavfli"
+     ],
+     "k": "tag",
+     "text": "1-FIKR: BITTA AKTIV XAVFLI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    81,
+    "Boshqalar"
+   ],
+   "type": "scene",
+   "bg": "bg_debate_scale",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      81,
+      "tabiiy"
+     ],
+     "k": "tag",
+     "text": "2-FIKR: QAZIB OLUVCHIGA TABIIY"
+    }
+   ]
+  },
+  {
+   "at": [
+    82,
+    "Aslida"
+   ],
+   "type": "chapter",
+   "num": "5-QISM",
+   "title": "OLTIN VA BIZ"
+  },
+  {
+   "at": [
+    83,
+    "O'zbek"
+   ],
+   "type": "scene",
+   "bg": "bg_home_gold",
+   "ev": [
+    {
+     "at": [
+      83,
+      "jamg'arma"
+     ],
+     "k": "tag",
+     "text": "OILAVIY JAMG'ARMA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    84,
+    "To'ylarda"
+   ],
+   "type": "scene",
+   "bg": "bg_uzbek_wedding",
+   "ev": [
+    {
+     "at": [
+      84,
+      "kelinga"
+     ],
+     "k": "tag",
+     "text": "KELINGA OLTIN TAQINCHOQ"
+    }
+   ]
+  },
+  {
+   "at": [
+    84,
+    "ko'pchilik"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_bazaar",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      84,
+      "buyumlarga"
+     ],
+     "k": "tag",
+     "text": "PUL → OLTIN BUYUM",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    85,
+    "Bugun"
+   ],
+   "type": "scene",
+   "bg": "bg_bank_gold_bars",
+   "ev": [
+    {
+     "at": [
+      85,
+      "Markaziy"
+     ],
+     "k": "label",
+     "text": "TIJORAT BANKLARIDA"
+    },
+    {
+     "at": [
+      85,
+      "5"
+     ],
+     "k": "tag",
+     "text": "5 GRAMMDAN 100 GRAMMGACHA",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    86,
+    "Lekin"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      86,
+      "Lekin"
+     ],
+     "k": "mascot",
+     "pose": "p_pointer",
+     "side": "right"
+    },
+    {
+     "at": [
+      86,
+      "uchta"
+     ],
+     "k": "tag",
+     "text": "SOTIB OLISHDAN OLDIN",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      86,
+      "bilish"
+     ],
+     "k": "tag",
+     "text": "3 TA NARSA",
+     "x": 0.36,
+     "y": 0.57,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    87,
+    "Birinchidan"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      87,
+      "Birinchidan"
+     ],
+     "k": "mascot",
+     "pose": "p_piggy",
+     "side": "right"
+    },
+    {
+     "at": [
+      87,
+      "foiz"
+     ],
+     "k": "tag",
+     "text": "1. FOIZ BERMAYDI",
+     "x": 0.36,
+     "y": 0.35,
+     "fg": "red"
+    },
+    {
+     "at": [
+      88,
+      "omonat"
+     ],
+     "k": "tag",
+     "text": "OMONAT: FOIZ ✓",
+     "x": 0.36,
+     "y": 0.5
+    },
+    {
+     "at": [
+      88,
+      "oltin"
+     ],
+     "k": "tag",
+     "text": "OLTIN: FAQAT NARX ↑",
+     "x": 0.36,
+     "y": 0.62
+    }
+   ]
+  },
+  {
+   "at": [
+    89,
+    "Ikkinchidan"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_trading",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      89,
+      "keskin"
+     ],
+     "k": "tag",
+     "text": "2. NARX KESKIN O'ZGARADI",
+     "fg": "red"
+    },
+    {
+     "at": [
+      90,
+      "30"
+     ],
+     "k": "tag",
+     "text": "2026: -30%"
+    }
+   ]
+  },
+  {
+   "at": [
+    91,
+    "Tarixda"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_1980",
+   "ev": [
+    {
+     "at": [
+      91,
+      "1980-yilning"
+     ],
+     "k": "label",
+     "text": "1980 · YANVAR"
+    },
+    {
+     "at": [
+      91,
+      "850"
+     ],
+     "k": "tag",
+     "text": "1 UNSIYA = $850"
+    }
+   ]
+  },
+  {
+   "at": [
+    92,
+    "Shundan"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      92,
+      "Shundan"
+     ],
+     "k": "mascot",
+     "pose": "p_calculator",
+     "side": "right"
+    },
+    {
+     "at": [
+      92,
+      "28"
+     ],
+     "k": "bigtext",
+     "text": "28 YIL",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      92,
+      "qaytish"
+     ],
+     "k": "tag",
+     "text": "SHU NARXGA QAYTISH UCHUN",
+     "x": 0.36,
+     "y": 0.62,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    93,
+    "Uchinchidan"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_spread",
+   "ev": [
+    {
+     "at": [
+      93,
+      "farq"
+     ],
+     "k": "tag",
+     "text": "3. OLISH VA SOTISH NARXI FARQI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    94,
+    "Kichik"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_spread",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      94,
+      "necha"
+     ],
+     "k": "tag",
+     "text": "FARQ: BIR NECHA %"
+    },
+    {
+     "at": [
+      94,
+      "yo'qotasiz"
+     ],
+     "k": "stamp",
+     "text": "PULNING BIR QISMI KETADI",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    95,
+    "Shu"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      95,
+      "Shu"
+     ],
+     "k": "mascot",
+     "pose": "p_gold",
+     "side": "right"
+    },
+    {
+     "at": [
+      95,
+      "qisqa"
+     ],
+     "k": "tag",
+     "text": "QISQA MUDDAT ✗",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      95,
+      "himoya"
+     ],
+     "k": "tag",
+     "text": "UZOQ MUDDATLI HIMOYA ✓",
+     "x": 0.36,
+     "y": 0.57,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    96,
+    "Iqtisodchilar"
+   ],
+   "type": "scene",
+   "bg": "bg_debate_scale",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      96,
+      "bahs"
+     ],
+     "k": "label",
+     "text": "OLTIN HAQIDA BAHS"
+    }
+   ]
+  },
+  {
+   "at": [
+    97,
+    "Bir"
+   ],
+   "type": "scene",
+   "bg": "bg_crisis_gold",
+   "ev": [
+    {
+     "at": [
+      97,
+      "Bir"
+     ],
+     "k": "tag",
+     "text": "1-FIKR: INQIROZDA ENG ISHONCHLI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    97,
+    "urush"
+   ],
+   "type": "scene",
+   "bg": "bg_war",
+   "ev": [
+    {
+     "at": [
+      97,
+      "urush"
+     ],
+     "k": "tag",
+     "text": "URUSH · SANKSIYA · INFLYATSIYA"
+    },
+    {
+     "at": [
+      97,
+      "oltinga"
+     ],
+     "k": "tag",
+     "text": "ODAMLAR OLTINGA YUGURADI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    98,
+    "Boshqa"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      98,
+      "Boshqa"
+     ],
+     "k": "mascot",
+     "pose": "p_scale",
+     "side": "right"
+    },
+    {
+     "at": [
+      98,
+      "ishlab"
+     ],
+     "k": "tag",
+     "text": "2-FIKR: HECH NARSA ISHLAB CHIQARMAYDI",
+     "x": 0.36,
+     "y": 0.5,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    99,
+    "Mashhur"
+   ],
+   "type": "portrait",
+   "fig": "buffett_cut",
+   "ev": [
+    {
+     "at": [
+      99,
+      "Uorren"
+     ],
+     "k": "flag",
+     "code": "us",
+     "x": 0.9,
+     "y": 0.15
+    },
+    {
+     "at": [
+      99,
+      "Uorren"
+     ],
+     "k": "label",
+     "text": "UORREN BAFFET"
+    },
+    {
+     "at": [
+      99,
+      "2011-yilda"
+     ],
+     "k": "tag",
+     "text": "2011 · MAKTUB",
+     "x": 0.3,
+     "y": 0.85
+    }
+   ]
+  },
+  {
+   "at": [
+    100,
+    "O'sha"
+   ],
+   "type": "number",
+   "prop": "prop_gold",
+   "value": "$9,6 TRLN",
+   "sub": "DUNYODAGI BARCHA OLTIN · 2011",
+   "show": [
+    100,
+    "9"
+   ]
+  },
+  {
+   "at": [
+    101,
+    "Baffetning"
+   ],
+   "type": "scene",
+   "bg": "bg_buffett_compare",
+   "ev": [
+    {
+     "at": [
+      101,
+      "ekin"
+     ],
+     "k": "tag",
+     "text": "AQSHDAGI BARCHA EKIN YERLARI"
+    }
+   ]
+  },
+  {
+   "at": [
+    101,
+    "Exxon"
+   ],
+   "type": "scene",
+   "bg": "bg_buffett_compare",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      101,
+      "16"
+     ],
+     "k": "tag",
+     "text": "+ 16 TA EXXON MOBIL"
+    },
+    {
+     "at": [
+      101,
+      "1"
+     ],
+     "k": "tag",
+     "text": "+ $1 TRLN ORTADI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    102,
+    "Uning"
+   ],
+   "type": "scene",
+   "bg": "bg_buffett_compare",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      102,
+      "yer"
+     ],
+     "k": "tag",
+     "text": "YER, KOMPANIYA = DAROMAD ✓"
+    },
+    {
+     "at": [
+      102,
+      "omborda"
+     ],
+     "k": "tag",
+     "text": "OLTIN = OMBORDA YOTADI ✗",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    103,
+    "Aslida"
+   ],
+   "type": "scene",
+   "bg": "bg_debate_scale",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      103,
+      "ikkala"
+     ],
+     "k": "tag",
+     "text": "IKKALA TOMON HAM HAQ"
+    }
+   ]
+  },
+  {
+   "at": [
+    104,
+    "Oltin"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      104,
+      "Oltin"
+     ],
+     "k": "mascot",
+     "pose": "p_gold",
+     "side": "right"
+    },
+    {
+     "at": [
+      104,
+      "ko'paytirish"
+     ],
+     "k": "tag",
+     "text": "KO'PAYTIRISH ✗",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      104,
+      "saqlab"
+     ],
+     "k": "tag",
+     "text": "SAQLAB QOLISH ✓",
+     "x": 0.36,
+     "y": 0.57,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    105,
+    "Xo'sh"
+   ],
+   "type": "chapter",
+   "num": "BIZ UCHUN",
+   "title": "NIMA UCHUN MUHIM?"
+  },
+  {
+   "at": [
+    106,
+    "Birinchidan"
+   ],
+   "type": "scene",
+   "bg": "s_exchange",
+   "vfocus": 0.3,
+   "ev": [
+    {
+     "at": [
+      106,
+      "Birinchidan"
+     ],
+     "k": "tag",
+     "text": "1. OLTIN NARXI → SO'M",
+     "fg": "red"
+    },
+    {
+     "at": [
+      106,
+      "zaxiralarimizning"
+     ],
+     "k": "tag",
+     "text": "ZAXIRANING 91% OLTINDA"
+    }
+   ]
+  },
+  {
+   "at": [
+    107,
+    "Ikkinchidan"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_export",
+   "ev": [
+    {
+     "at": [
+      107,
+      "eksporti"
+     ],
+     "k": "tag",
+     "text": "2. ENG KATTA EKSPORT",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    108,
+    "2025-yilda"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      108,
+      "2025-yilda"
+     ],
+     "k": "label",
+     "text": "O'ZBEKISTON EKSPORTI · 2025"
+    },
+    {
+     "at": [
+      108,
+      "30"
+     ],
+     "k": "pie",
+     "slices": [
+      {
+       "label": "OLTIN $9,9 MLRD",
+       "value": 29
+      },
+      {
+       "label": "BOSHQA",
+       "value": 71
+      }
+     ],
+     "x": 0.5,
+     "y": 0.55,
+     "r": 0.22
+    }
+   ]
+  },
+  {
+   "at": [
+    109,
+    "Uchinchidan"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      109,
+      "Uchinchidan"
+     ],
+     "k": "mascot",
+     "pose": "t_gold_tower",
+     "side": "right"
+    },
+    {
+     "at": [
+      109,
+      "jamg'armangizni"
+     ],
+     "k": "tag",
+     "text": "3. JAMG'ARMA OLTINDA?",
+     "x": 0.36,
+     "y": 0.42,
+     "fg": "red"
+    },
+    {
+     "at": [
+      109,
+      "tushishi"
+     ],
+     "k": "tag",
+     "text": "NARX TUSHISHI MUMKIN",
+     "x": 0.36,
+     "y": 0.57
+    }
+   ]
+  },
+  {
+   "at": [
+    110,
+    "Bu"
+   ],
+   "type": "scene",
+   "bg": "s_bank",
+   "vfocus": 0.3,
+   "ev": [
+    {
+     "at": [
+      110,
+      "maslahat"
+     ],
+     "k": "tag",
+     "text": "MOLIYAVIY MASLAHAT EMAS"
+    },
+    {
+     "at": [
+      110,
+      "bilish"
+     ],
+     "k": "tag",
+     "text": "LEKIN BILISH SHART",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    111,
+    "Demak"
+   ],
+   "type": "title",
+   "title": "JAVOB",
+   "title2": "NEGA BANKLAR OLTIN OLMOQDA?"
+  },
+  {
+   "at": [
+    111,
+    "markaziy"
+   ],
+   "type": "scene",
+   "bg": "s_vault",
+   "vfocus": 0.3,
+   "ev": [
+    {
+     "at": [
+      111,
+      "markaziy"
+     ],
+     "k": "tag",
+     "text": "NEGA YANA OLTIN?",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    112,
+    "Chunki"
+   ],
+   "type": "scene",
+   "bg": "bg_crisis_gold",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      112,
+      "notinch"
+     ],
+     "k": "tag",
+     "text": "DUNYO NOTINCH"
+    },
+    {
+     "at": [
+      112,
+      "qarzdor"
+     ],
+     "k": "tag",
+     "text": "HECH KIMGA QARZDOR EMAS",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    113,
+    "Uni"
+   ],
+   "type": "scene",
+   "bg": "bg_vault",
+   "ev": [
+    {
+     "at": [
+      113,
+      "muzlatib"
+     ],
+     "k": "tag",
+     "text": "MUZLATIB BO'LMAYDI"
+    },
+    {
+     "at": [
+      113,
+      "bosib"
+     ],
+     "k": "tag",
+     "text": "BOSIB BO'LMAYDI"
+    },
+    {
+     "at": [
+      113,
+      "ming"
+     ],
+     "k": "tag",
+     "text": "MING YILLIK QADR",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    114,
+    "Lekin"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_trading",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      114,
+      "xatarsiz"
+     ],
+     "k": "tag",
+     "text": "LEKIN XATARSIZ EMAS",
+     "fg": "red"
+    },
+    {
+     "at": [
+      114,
+      "ko'tariladi"
+     ],
+     "k": "tag",
+     "text": "NARX ↑↓"
+    }
+   ]
+  },
+  {
+   "at": [
+    115,
+    "Demak"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      115,
+      "Demak"
+     ],
+     "k": "mascot",
+     "pose": "t_gold_hug",
+     "side": "right"
+    },
+    {
+     "at": [
+      115,
+      "qisqa"
+     ],
+     "k": "tag",
+     "text": "TEZ DAROMAD ✗",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      115,
+      "asrash"
+     ],
+     "k": "tag",
+     "text": "BOYLIKNI ASRASH ✓",
+     "x": 0.36,
+     "y": 0.57,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    116,
+    "Oltin"
+   ],
+   "type": "title",
+   "title": "OLTIN HAQIDA MEN HAM BILMAS EDIM",
+   "title2": "ENDI ESA HAMMAMIZ BILAMIZ"
+  },
+  {
+   "at": [
+    118,
+    "Ana"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      118,
+      "Ana"
+     ],
+     "k": "mascot",
+     "pose": "p_scale",
+     "side": "right"
+    },
+    {
+     "at": [
+      118,
+      "oltinda"
+     ],
+     "k": "tag",
+     "text": "OLTINDAMI...",
+     "x": 0.36,
+     "y": 0.38
+    },
+    {
+     "at": [
+      118,
+      "so'mda"
+     ],
+     "k": "tag",
+     "text": "...YOKI SO'MDAMI?",
+     "x": 0.36,
+     "y": 0.55,
+     "fg": "red"
+    },
+    {
+     "at": [
+      119,
+      "izohlarda"
+     ],
+     "k": "tag",
+     "text": "IZOHDA YOZING",
+     "x": 0.36,
+     "y": 0.72
+    },
+    {
+     "at": [
+      118,
+      "sizningcha"
+     ],
+     "k": "like",
+     "x": 0.82,
+     "y": 0.2
+    }
+   ]
+  },
+  {
+   "at": [
+    120,
+    "Keyingi"
+   ],
+   "type": "scene",
+   "bg": "bg_migrant_work",
+   "ev": [
+    {
+     "at": [
+      120,
+      "Keyingi"
+     ],
+     "k": "tag",
+     "text": "KEYINGI QISMDA"
+    },
+    {
+     "at": [
+      120,
+      "o'tkazmalari"
+     ],
+     "k": "tag",
+     "text": "PUL O'TKAZMALARI",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    121,
+    "O'tkazib"
+   ],
+   "type": "end",
+   "pose": 1,
+   "ev": [
+    {
+     "at": [
+      121,
+      "obuna"
+     ],
+     "k": "subscribe",
+     "x": 0.47,
+     "y": 0.35,
+     "dur": 3.4
+    }
+   ]
+  }
+ ],
+ "shorts": [
+  {
+   "name": "hook",
+   "from": [
+    0,
+    "2026-yil"
+   ],
+   "to": [
+    8,
+    "Va"
+   ],
+   "hook": ""
+  },
+  {
+   "name": "cube",
+   "from": [
+    16,
+    "Birinchi"
+   ],
+   "to": [
+    21,
+    "Bugungi"
+   ],
+   "hook": "BARCHA OLTIN = 22 METRLI KUB"
+  },
+  {
+   "name": "britain",
+   "from": [
+    36,
+    "Keyingi"
+   ],
+   "to": [
+    41,
+    "Britaniyaning"
+   ],
+   "hook": "TARIXDAGI ENG YOMON SAVDO"
+  },
+  {
+   "name": "freeze",
+   "from": [
+    45,
+    "2022-yilda"
+   ],
+   "to": [
+    53,
+    "Eng"
+   ],
+   "hook": "NEGA BANKLAR OLTIN OLMOQDA?"
+  },
+  {
+   "name": "muruntau",
+   "from": [
+    65,
+    "Navoiy"
+   ],
+   "to": [
+    74,
+    "Agar"
+   ],
+   "hook": "O'ZBEKISTONNING OLTINI"
+  },
+  {
+   "name": "buy",
+   "from": [
+    86,
+    "Lekin"
+   ],
+   "to": [
+    95,
+    "Shu"
+   ],
+   "hook": "OLTIN OLISHDAN OLDIN BILING"
+  },
+  {
+   "name": "buffett",
+   "from": [
+    98,
+    "Boshqa"
+   ],
+   "to": [
+    104,
+    "Oltin"
+   ],
+   "hook": "BAFFET NEGA OLTINNI YOQTIRMAYDI?"
+  }
+ ],
+ "end_hold": 9,
+ "pauses": {
+  "42": 1.2,
+  "44": 1.1
+ },
+ "end_slots": 2,
+ "end_next": "PUL O'TKAZMALARI",
+ "series_label": "6-QISM: OLTIN",
+ "partners": "Hamkorlarimiz: californiauzbek.com va bysmillah.com loyihalari.",
+ "partner_logos": [
+  {
+   "img": "assets/partners/californiauzbek.png",
+   "anim": "assets/partners/californiauzbek_anim.webm",
+   "site": "californiauzbek.com"
+  },
+  {
+   "img": "assets/partners/bysmillah.png",
+   "anim": "assets/partners/bysmillah_anim.mp4",
+   "loop": true,
+   "site": "bysmillah.com",
+   "round": true
+  }
+ ],
+ "handle": "@bilmasboy",
+ "socials": [
+  [
+   "youtube",
+   "@bilmasboy"
+  ],
+  [
+   "instagram",
+   "@bilmas.boy"
+  ],
+  [
+   "tiktok",
+   "@bilmas.boy"
+  ],
+  [
+   "facebook",
+   "@bilmas.boy"
+  ],
+  [
+   "telegram",
+   "@bilmas_boy"
+  ]
+ ]
+}

@@ -153,7 +153,7 @@ class Bars:
         self.w, self.h = e.get("w", 0.62) * W, e.get("h", 0.5) * H
         self.vmax = max(i["value"] for i in self.items) * 1.08
         self.step = e.get("step", 0.55); self.grow = 0.7
-        self.suffix = e.get("suffix", "")
+        self.suffix = e.get("suffix", ""); self.prefix = e.get("prefix", "")
         self.labels = [text_rgba(i["label"], fonts["mont"], 40, NAVY) for i in self.items]
 
     def sounds(self, t0):
@@ -186,7 +186,7 @@ class Bars:
                 cv2.rectangle(c, (int(cx - bw / 2 - 10), int(base - hh - 10)), (int(cx + bw / 2 + 10), int(base + 4)), c01(RED), 6, cv2.LINE_AA)
             if not self.e.get("novalue"):
                 v = it["value"] * p
-                vs = (f"{v:,.0f}".replace(",", " ") if it["value"] >= 10 or p < 1 else f"{v:g}".replace(".", ",")) + self.suffix       # Uzbek decimal comma: 9,8%
+                vs = self.prefix + (f"{v:,.0f}".replace(",", " ") if it["value"] >= 10 or p < 1 else f"{v:g}".replace(".", ",")) + self.suffix       # Uzbek decimal comma: 9,8%
                 paste(c, text_rgba(vs, self.fonts["anton"], 64, col if col != GREY else NAVY), cx, base - hh - 46, 1.0, appear)
             paste(c, self.labels[k], cx, base + 40, 1.0, min(1, p * 3))
 
