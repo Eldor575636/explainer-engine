@@ -1,7 +1,7 @@
 BILMASBOY — EPISODE 6: UPLOAD TEXTS (copy and paste)
 
 ==================================================
-LONG VIDEO (E06_Oltin_FINAL.mp4, {DUR})
+LONG VIDEO (E06_Oltin_FINAL.mp4, 12:46)
 Thumbnails: A, B, C (Test & Compare: all three).
 Schedule: Fri Dec 11, 4:00 AM San Francisco = 17:00 Tashkent.
 Playlists: Bilmasboy - Barcha Qismlar
@@ -16,7 +16,16 @@ DESCRIPTION:
 2026-yil yanvarida bir unsiya oltin tarixda birinchi marta 5 ming dollardan oshdi, keyin esa qariyb 30 foizga arzonlashdi. Shunga qaramay, dunyo markaziy banklari oltin sotib olishda davom etmoqda, O'zbekiston zaxiralarining esa 91 foizi oltindan iborat. Xo'sh, foiz ham bermaydigan bir bo'lak metall nega bunchalik qadrli? Bu videoda oltin nega qimmatligi, oltin standarti va 1971-yil, Britaniyaning mashhur savdosi, Rossiya zaxiralari muzlatilgandan keyingi oltin poygasi, Muruntov koni va oltin sotib olishdan oldin bilish kerak bo'lgan uchta narsa haqida gaplashamiz.
 
 Bu videoda:
-{CHAPTERS}
+00:00 Oltin 5 590 dollar, keyin -30%
+00:56 Men kimman?
+01:28 Oltin nega qimmat?
+02:53 Oltin va pul: 1944, 1971, Britaniya
+04:29 Nega banklar yana oltin olmoqda?
+06:42 O'zbekiston va oltin: Muruntov, 91%
+08:39 Oltin va biz: sotib olishdan oldin 3 narsa
+09:53 Bahs: Uorren Baffet nima deydi?
+10:51 Bu biz uchun nima uchun muhim?
+11:32 Javob
 
 Sizningcha, jamg'armani oltinda saqlash so'mda saqlashdan yaxshiroqmi yoki yo'q? Izohda yozing.
 Keyingi qismda: chet eldagi yurtdoshlarimiz yuboradigan pul o'tkazmalari O'zbekiston uchun qanchalik muhim.
@@ -45,9 +54,9 @@ SETTINGS:
 - Pinned comment: Keyingi qismda kim yoki nima haqida bilishni xohlaysiz? Yozing, eng ko'p layk to'plagan mavzuni albatta yoritamiz 👇
 
 QUIZ (Show at):
-1. (Main, {Q1}) Insoniyat butun tarixi davomida qazib olgan barcha oltinni bir joyga yig'sak, tomonlari qancha bo'lgan kub hosil bo'ladi?
+1. (Main, 1:51) Insoniyat butun tarixi davomida qazib olgan barcha oltinni bir joyga yig'sak, tomonlari qancha bo'lgan kub hosil bo'ladi?
    A) 2 metr  B) 22 metr ✓  C) 220 metr  D) 2 kilometr
-2. ({Q2}) Buyuk Britaniya 1999-2002-yillarda o'z oltinining qancha qismini sotgan?
+2. (4:01) Buyuk Britaniya 1999-2002-yillarda o'z oltinining qancha qismini sotgan?
    A) 10 foizini  B) choragini  C) qariyb yarmini ✓  D) hammasini
-3. ({Q3}) 2026-yil oktabr oxirida O'zbekiston zaxiralarining necha foizi oltindan iborat edi?
+3. (7:51) 2026-yil oktabr oxirida O'zbekiston zaxiralarining necha foizi oltindan iborat edi?
    A) 27%  B) 50%  C) 75%  D) 91% ✓
