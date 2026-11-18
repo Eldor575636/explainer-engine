@@ -222,6 +222,9 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - When a re-recorded line is longer than the original, the splice shifts everything after it: transcribe raw.wav again
   instead of shifting words.json by hand.
 - device_commit_files with stagedPath fails for files over ~200 MB (HTTP 400): send the file with SendUserFile and commit its fileUuid.
+  On a slow link (E06, 2026-11-17) even fileUuid commits over ~50 MB timed out: `split -b 30m` the render, SendUserFile the
+  pieces, commit each one, `cat` them on the Mac, check duration, mv over the old file, delete the pieces. The first piece's
+  first 8 KB differ (signing box added per upload); compare md5 from byte 8192 on.
 
 ## Mascot library and empty scenes (2026-11-14, owner feedback on E05)
 
