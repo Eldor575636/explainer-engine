@@ -165,7 +165,8 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 
 - "Bilmas" / "Bilmasboy" are sent to the voice as IPA with final stress (/bilˈmas/, /bilmasˈboj/), set in lexicon.json.
 - E06 (owner): "kon" is read KON, not "kan": lexicon sends koni/konidir/konlari as IPA with a plain /o/ (/koˈni/); "Muruntov" needs
-  the stress on the last syllable (/muɾunˈtov/, /muɾunˈtovniŋ/). For a single bad word, regenerate only its sentences, splice them
+  the stress on the last syllable (/muɾunˈtov/, /muɾunˈtovniŋ/). Keep a suffixed form as one IPA word: "/muɾunˈtov/ning"
+  put too much weight on TOV (owner rejected it). For a single bad word, regenerate only its sentences, splice them
   into raw.wav (level-matched, same silence padding) and re-transcribe; cheaper than redoing a part.
 - The intro block and sign-off are recorded once in `assets/voice/` (see its README) and spliced into each episode
   instead of being regenerated. E02 uses them.
