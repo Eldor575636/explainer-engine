@@ -328,6 +328,10 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - Connected in vidIQ (2026-11-15): YouTube Bilmas Boy; TikTok bilmas.boy (+ California Uzbek, unused); Instagram bilmas.boy
   (29287119210882726); Facebook Pages CFA Uzbekistan, Green Card Go, MyHelp, One_nation.uz, but NOT the Bilmas Boy Page.
 
+- Posting times (california_uzbek IG insights, 2026-11-18, PST): followers most active 6-9 AM PST (7-10 PM Tashkent), high 3-6 AM
+  and 9 AM-12 PM, dead 12-6 PM PST. Top days Sun, Mon, Wed. Keep long video 04:00 and Shorts 06:00 PST. Uzbekistan has no DST:
+  from US DST (Mar 14, 2027) move everything one hour later (05:00 / 07:00 PDT) to keep the same Tashkent times.
+
 ## Telegram + Studio via Claude in Chrome (2026-11-15)
 
 - Telegram @bilmas_boy is owned by the owner's personal "Eldor Ruziev" account (web.telegram.org account 3). The Auto Sales
