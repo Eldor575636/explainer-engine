@@ -356,4 +356,4 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   to wait a day). Date: open the picker and click the day (typing into the field resets it); time: click the hour, type 06, click the
   minutes, type 00 (the hour doesn't auto-advance). Closed captions = checkbox under "Closed captions" on the Share step.
 - Status 2026-11-18: E06 (YouTube https://youtu.be/IEbjAFRweXM, Dec 11 04:00) + 7 Shorts scheduled on YouTube/TikTok/Instagram
-  (vidIQ, one draft per Short with 3 destinations, IG collaborator california_uzbek), Telegram (8 posts) and FB Reels Dec 11-16.
+  (vidIQ, one draft per Short with 3 destinations, IG collaborator california_uzbek), Telegram (8 posts) and FB Reels Dec 11-17 (Buffett added Nov 18). E06 fully scheduled everywhere.
