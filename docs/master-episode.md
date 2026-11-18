@@ -63,3 +63,26 @@ projects/epNN-<slug>/
 - Pictures: once (~25-50 Higgsfield images, 2 credits each).
 - Voice: twice (~9-10k ElevenLabs credits each); the ~39.5k/month plan covers about 2 episodes in both languages.
 - Render: twice (~1.5 h each on the 2-core container).
+
+## Engagement rules (owner, 2026-11-18: "push engagement as much as possible without being annoying")
+
+Owner delegates English script review to Claude. Every English (and master) script and edit follows these:
+
+Script
+- Hook <= 30 s: a contrast or surprise ("price crashed 30%, central banks bought more"), the episode question, then 2 open loops
+  naming payoffs that come later ("you'll see how one country sold half its gold at the worst moment"). Pay off every loop.
+- A "take a guess" beat in the first 2-3 minutes (2-3 options spoken, then the reveal); no "comment your guess" ask.
+- Re-hook at least every 60-90 s with a bridging line ("But here's the strange part", "And now the number that shows...").
+- Every big number gets a human-scale comparison (per person, vs a building, then vs now).
+- Spoken asks stay at three: short subscribe after the first content section, a two-camp opinion question at the end
+  ("team gold or team Buffett?"), final subscribe. Like button on screen only.
+- Never clickbait: title and thumbnail promise only what the video pays off.
+
+Edit
+- First 5 s: the strongest picture plus a moving number (counter, crash line); no logo or intro before the hook.
+- On-screen "coming up" card when an open loop is named; chapter cards titled as questions.
+- Visual change every 2-3 s; pattern interrupt (zoom, whip, SFX hit) at each re-hook line; guess beat shows the options as
+  cards, holds ~1.5 s silence, then reveals.
+- Not annoying: one like pill, subscribe animation only at the two spoken asks, no SFX more often than ~every 8 s,
+  no fake urgency, music ducked well under the voice.
+- Shorts are cut from the payoffs (each open loop's answer is a ready Short).
