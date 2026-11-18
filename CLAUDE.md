@@ -36,6 +36,16 @@ about political ideas, systems and historical figures (democracy, communism, Sta
 
 See `README.md` for commands.
 
+## Strategy (owner, 2026-11-17)
+
+- Goal is monetization: every decision (topics, length, cadence, Shorts vs long) is judged by how fast it gets the channel
+  into the YouTube Partner Program and earning. Current entry bar: 1,000 subs + 4,000 watch hours (12 mo) or 10M Shorts
+  views (90 days). From 2027-02-01 new channels need 8,000 hours or 20M Shorts views; channels already in YPP are not affected.
+- The same scripts now feed an English channel too: write episodes on global topics with no Uzbekistan-specific references,
+  so one script works in both languages. Local material, if kept at all, goes in a separable segment.
+- YouTube's "inauthentic content" policy targets mass-produced template videos and is judged channel-wide: keep real editorial
+  choices, varied visuals and the owner's voice/likeness.
+
 ## Script rules
 
 - Structure: hook (0–5 s) → what it is → how it's supposed to work → how it actually worked
