@@ -164,9 +164,9 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 ## Voice: name pronunciation and reusable lines (2026-11-06)
 
 - "Bilmas" / "Bilmasboy" are sent to the voice as IPA with final stress (/bilˈmas/, /bilmasˈboj/), set in lexicon.json.
-- E06 (owner): "kon" and "Muruntov" were mispronounced; lexicon.json now sends koni/konidir/konlari and Muruntov(ning) as IPA
-  with the Uzbek open "o" (/kɒˈni/, /muɾunˈtɒv/). For a single bad word, regenerate only its sentences, splice them into raw.wav
-  (level-matched, same silence padding) and re-transcribe; cheaper than redoing a part.
+- E06 (owner): "kon" is read KON, not "kan": lexicon sends koni/konidir/konlari as IPA with a plain /o/ (/koˈni/); "Muruntov" needs
+  the stress on the last syllable (/muɾunˈtov/, /muɾunˈtovniŋ/). For a single bad word, regenerate only its sentences, splice them
+  into raw.wav (level-matched, same silence padding) and re-transcribe; cheaper than redoing a part.
 - The intro block and sign-off are recorded once in `assets/voice/` (see its README) and spliced into each episode
   instead of being regenerated. E02 uses them.
 - ElevenLabs audio tags ([curious], [serious]...) were tested on E02's opening; owner chose no tags for now.
