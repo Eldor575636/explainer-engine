@@ -52,7 +52,7 @@ See `README.md` for commands.
 - Chats: one chat per episode covering both languages; separate chats for English channel setup/branding and for weekly
   publishing. Both channels live in this one repo; never fork the engine.
 - Engine to-do for English: cfg `lang` (uz/en) switching new_alphabet, lexicon, Whisper language, end-screen/CTA text,
-  partners line; English mascot sheet + pose library; Mac folder "Media Projects/Eldor Explains/Season 1/EXX <name>/".
+  partners line; English mascot sheet + pose library; Mac folder "Media Projects/Explainer/Eldor Explains/Season 1/EXX <name>/".
 
 ## Script rules
 
@@ -280,7 +280,9 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 
 ## Delivery (2026-11-12, owner)
 
-- Deliver every file straight into the episode folder on the owner's Mac ("AI Bilmas Boy/Season 1/EXX <name>/1 Script ...
+- Mac layout (2026-11-18): /Users/eldorruziev/Desktop/Media Projects/Explainer/ = `00 Shared` (Masters/EXX <topic>/1 Master script +
+  2 Pictures shared by both channels, Assets, Planning/Main plan.md), `AI Bilmas Boy` (moved here from Media Projects), `Eldor Explains`.
+- Deliver every file straight into the episode folder on the owner's Mac ("Explainer/AI Bilmas Boy/Season 1/EXX <name>/1 Script ...
   6 Shorts"), replacing the old copy (one copy per file). Don't attach files in chat; commit them with
   `device_commit_files` using `stagedPath` (under /mnt/user-data/outputs/) and just say what changed and where.
 

@@ -62,7 +62,7 @@ channel, @california_uzbek), so the new chat can continue without the old one.
 
 ## 4. Practical notes
 
-- Eldor's Mac folder (via the desktop bridge): `/Users/eldorruziev/Desktop/Media Projects/AI Bilmas Boy`
+- Eldor's Mac folder (via the desktop bridge): `/Users/eldorruziev/Desktop/Media Projects/Explainer/AI Bilmas Boy`
   (that one is for the Bilmasboy channel). Large files (>~30 MB) time out over the bridge: send them one at a
   time, or split into 25 MB parts and join on the Mac with `cat`. Deleting there needs his permission.
 - The cloud machine has 2 CPU cores: a 3-minute reel renders in ~8 minutes; render in the background.
