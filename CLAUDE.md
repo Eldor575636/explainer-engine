@@ -51,7 +51,7 @@ See `README.md` for commands.
   https://claude.ai/artifact/LP1C4SshvhaHmyu2JtoX9f (from the "Automated AI YouTube project" chat).
 - Chats: one chat per episode covering both languages; separate chats for English channel setup/branding and for weekly
   publishing. Both channels live in this one repo; never fork the engine.
-- Eldor Explains brand (owner, 2026-11-18): Kit A "Ledger" chosen: paper #F7F5F0, ink #111418, money green #0F7B5A, gold #E3B341 (fills only), loss red #D64545 (losses only); Archivo Black + Inter; Look A character (white shirt, green vest, gold coin pin, tablet; `brand/eldor-explains/char/A_analyst.png`). Same face/build/poses as Bilmasboy, different outfit per channel. Slogan and logo still open. Board: https://claude.ai/artifact/RXhLVzno3waFPqRMG58kmn
+- Eldor Explains brand (owner, 2026-11-18): Kit A "Ledger" chosen: paper #F7F5F0, ink #111418, money green #0F7B5A, gold #E3B341 (fills only), loss red #D64545 (losses only); Archivo Black + Inter; Look A character (white shirt, green vest, gold coin pin, tablet; `brand/eldor-explains/char/A_analyst.png` = master reference, original build kept). Same face/build/poses as Bilmasboy, different outfit per channel. Slogan and logo still open. Board: https://claude.ai/artifact/RXhLVzno3waFPqRMG58kmn
 - Engine to-do for English: cfg `lang` (uz/en) switching new_alphabet, lexicon, Whisper language, end-screen/CTA text,
   partners line; English mascot sheet + pose library; Mac folder "Media Projects/Explainer/Eldor Explains/Season 1/EXX <name>/".
 
@@ -165,8 +165,8 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 - Owner will send 3–5 more reference reels with timestamped notes → add to `docs/reference-analysis.md`.
 - ElevenLabs Uzbek test is pending.
 - Mascot: `layers/mascot_v2.jpg` (Higgsfield job cacb2082, 4 poses: thinking, pointing, surprised,
-  presenting). Face is close to the owner, clean-shaven; build is still shorter/stockier than asked
-  ("slimmer and taller") → owner to judge.
+  presenting). Face is close to the owner, clean-shaven; build stays as is: owner tested a slimmer/taller
+  version (2026-11-18, Eldor Explains A3_tall) and rejected it ("feels like a different person"). Keep this build on both channels.
 
 ## AI narration (2026-11-04)
 
