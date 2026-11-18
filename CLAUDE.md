@@ -326,3 +326,8 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   turn off auto closed captions, Schedule 06:00 America/Los_Angeles. Caption ends with the @california.uzbek partners line.
 - Meta stalls uploads at 0% after ~20 in a row; wait a few hours and it works again.
 - Status 2026-11-16: every E02-E05 long video and Short is scheduled on all 5 platforms through Dec 10 (E02 TikTok/YouTube by owner).
+- Business Suite only schedules 20 min to 29 days ahead: schedule each episode's FB Reels within that window (E06's Dec 17 Reel had
+  to wait a day). Date: open the picker and click the day (typing into the field resets it); time: click the hour, type 06, click the
+  minutes, type 00 (the hour doesn't auto-advance). Closed captions = checkbox under "Closed captions" on the Share step.
+- Status 2026-11-18: E06 (YouTube https://youtu.be/IEbjAFRweXM, Dec 11 04:00) + 7 Shorts scheduled on YouTube/TikTok/Instagram
+  (vidIQ, one draft per Short with 3 destinations, IG collaborator california_uzbek), Telegram (8 posts) and FB Reels Dec 11-16.
