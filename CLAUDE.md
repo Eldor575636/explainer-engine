@@ -45,6 +45,14 @@ See `README.md` for commands.
   so one script works in both languages. Local material, if kept at all, goes in a separable segment.
 - YouTube's "inauthentic content" policy targets mass-produced template videos and is judged channel-wide: keep real editorial
   choices, varied visuals and the owner's voice/likeness.
+- **Two channels, one master episode** (from E07): Bilmasboy (Uzbek) and **Eldor Explains** (English, @EldorExplains, "money and
+  the economy explained with real data", cartoon Eldor + voice clone, no filming, US/UK comparisons, explain never advise).
+  Full template, file layout and per-channel differences: `docs/master-episode.md`. English channel strategy research:
+  https://claude.ai/artifact/LP1C4SshvhaHmyu2JtoX9f (from the "Automated AI YouTube project" chat).
+- Chats: one chat per episode covering both languages; separate chats for English channel setup/branding and for weekly
+  publishing. Both channels live in this one repo; never fork the engine.
+- Engine to-do for English: cfg `lang` (uz/en) switching new_alphabet, lexicon, Whisper language, end-screen/CTA text,
+  partners line; English mascot sheet + pose library; Mac folder "Media Projects/Eldor Explains/Season 1/EXX <name>/".
 
 ## Script rules
 
