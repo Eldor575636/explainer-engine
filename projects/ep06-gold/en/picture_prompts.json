@@ -1,0 +1,77 @@
+{
+ "e_presenting": {
+  "kind": "pose",
+  "aspect": "3:4",
+  "prompt": "Full-body single character standing, centered, whole figure visible from head to shoes with a small margin, on a completely plain flat off-white background (#F7F5F0), no floor, no shadow, no other objects except what he holds. Portrait frame. The character is the cartoon man from the reference image: same face, same dark wavy hair, clean-shaven, friendly smile, same build and proportions, crisp white shirt with sleeves rolled to the forearm, green knit V-neck sweater vest, small gold coin pin on the vest, grey trousers, brown shoes. Same clean modern editorial cartoon style with thick dark ink outlines and flat colours. Never include any text, letters, numbers, logos or labels anywhere, not even on papers, screens, coins or price tags (leave them blank). Pose: standing confidently, one open palm presenting to his left side as if introducing something, warm smile."
+ },
+ "e_pointer": {
+  "kind": "pose",
+  "aspect": "3:4",
+  "prompt": "Full-body single character standing, centered, whole figure visible from head to shoes with a small margin, on a completely plain flat off-white background (#F7F5F0), no floor, no shadow, no other objects except what he holds. Portrait frame. The character is the cartoon man from the reference image: same face, same dark wavy hair, clean-shaven, friendly smile, same build and proportions, crisp white shirt with sleeves rolled to the forearm, green knit V-neck sweater vest, small gold coin pin on the vest, grey trousers, brown shoes. Same clean modern editorial cartoon style with thick dark ink outlines and flat colours. Never include any text, letters, numbers, logos or labels anywhere, not even on papers, screens, coins or price tags (leave them blank). Pose: holding a long wooden pointer stick up and to his left, as if pointing at a list on a board, focused expression."
+ },
+ "e_magnifier": {
+  "kind": "pose",
+  "aspect": "3:4",
+  "prompt": "Full-body single character standing, centered, whole figure visible from head to shoes with a small margin, on a completely plain flat off-white background (#F7F5F0), no floor, no shadow, no other objects except what he holds. Portrait frame. The character is the cartoon man from the reference image: same face, same dark wavy hair, clean-shaven, friendly smile, same build and proportions, crisp white shirt with sleeves rolled to the forearm, green knit V-neck sweater vest, small gold coin pin on the vest, grey trousers, brown shoes. Same clean modern editorial cartoon style with thick dark ink outlines and flat colours. Never include any text, letters, numbers, logos or labels anywhere, not even on papers, screens, coins or price tags (leave them blank). Pose: holding a big magnifying glass up to one eye, looking through it with a curious raised eyebrow."
+ },
+ "e_newspaper": {
+  "kind": "pose",
+  "aspect": "3:4",
+  "prompt": "Full-body single character standing, centered, whole figure visible from head to shoes with a small margin, on a completely plain flat off-white background (#F7F5F0), no floor, no shadow, no other objects except what he holds. Portrait frame. The character is the cartoon man from the reference image: same face, same dark wavy hair, clean-shaven, friendly smile, same build and proportions, crisp white shirt with sleeves rolled to the forearm, green knit V-neck sweater vest, small gold coin pin on the vest, grey trousers, brown shoes. Same clean modern editorial cartoon style with thick dark ink outlines and flat colours. Never include any text, letters, numbers, logos or labels anywhere, not even on papers, screens, coins or price tags (leave them blank). Pose: holding an open newspaper with blank pages, looking over the top of it with a sceptical expression."
+ },
+ "e_surprised": {
+  "kind": "pose",
+  "aspect": "3:4",
+  "prompt": "Full-body single character standing, centered, whole figure visible from head to shoes with a small margin, on a completely plain flat off-white background (#F7F5F0), no floor, no shadow, no other objects except what he holds. Portrait frame. The character is the cartoon man from the reference image: same face, same dark wavy hair, clean-shaven, friendly smile, same build and proportions, crisp white shirt with sleeves rolled to the forearm, green knit V-neck sweater vest, small gold coin pin on the vest, grey trousers, brown shoes. Same clean modern editorial cartoon style with thick dark ink outlines and flat colours. Never include any text, letters, numbers, logos or labels anywhere, not even on papers, screens, coins or price tags (leave them blank). Pose: both hands raised near his face in surprise, mouth open, eyebrows high, leaning back slightly."
+ },
+ "e_piggy": {
+  "kind": "pose",
+  "aspect": "3:4",
+  "prompt": "Full-body single character standing, centered, whole figure visible from head to shoes with a small margin, on a completely plain flat off-white background (#F7F5F0), no floor, no shadow, no other objects except what he holds. Portrait frame. The character is the cartoon man from the reference image: same face, same dark wavy hair, clean-shaven, friendly smile, same build and proportions, crisp white shirt with sleeves rolled to the forearm, green knit V-neck sweater vest, small gold coin pin on the vest, grey trousers, brown shoes. Same clean modern editorial cartoon style with thick dark ink outlines and flat colours. Never include any text, letters, numbers, logos or labels anywhere, not even on papers, screens, coins or price tags (leave them blank). Pose: holding a pink piggy bank in both hands, looking at it with a thoughtful frown."
+ },
+ "e_calculator": {
+  "kind": "pose",
+  "aspect": "3:4",
+  "prompt": "Full-body single character standing, centered, whole figure visible from head to shoes with a small margin, on a completely plain flat off-white background (#F7F5F0), no floor, no shadow, no other objects except what he holds. Portrait frame. The character is the cartoon man from the reference image: same face, same dark wavy hair, clean-shaven, friendly smile, same build and proportions, crisp white shirt with sleeves rolled to the forearm, green knit V-neck sweater vest, small gold coin pin on the vest, grey trousers, brown shoes. Same clean modern editorial cartoon style with thick dark ink outlines and flat colours. Never include any text, letters, numbers, logos or labels anywhere, not even on papers, screens, coins or price tags (leave them blank). Pose: holding a big desk calculator with a blank screen in one hand and pointing at it with the other, eyebrows raised."
+ },
+ "e_gold": {
+  "kind": "pose",
+  "aspect": "3:4",
+  "prompt": "Full-body single character standing, centered, whole figure visible from head to shoes with a small margin, on a completely plain flat off-white background (#F7F5F0), no floor, no shadow, no other objects except what he holds. Portrait frame. The character is the cartoon man from the reference image: same face, same dark wavy hair, clean-shaven, friendly smile, same build and proportions, crisp white shirt with sleeves rolled to the forearm, green knit V-neck sweater vest, small gold coin pin on the vest, grey trousers, brown shoes. Same clean modern editorial cartoon style with thick dark ink outlines and flat colours. Never include any text, letters, numbers, logos or labels anywhere, not even on papers, screens, coins or price tags (leave them blank). Pose: holding a shiny gold bar in both hands close to his chest, protective satisfied smile."
+ },
+ "e_scale": {
+  "kind": "pose",
+  "aspect": "3:4",
+  "prompt": "Full-body single character standing, centered, whole figure visible from head to shoes with a small margin, on a completely plain flat off-white background (#F7F5F0), no floor, no shadow, no other objects except what he holds. Portrait frame. The character is the cartoon man from the reference image: same face, same dark wavy hair, clean-shaven, friendly smile, same build and proportions, crisp white shirt with sleeves rolled to the forearm, green knit V-neck sweater vest, small gold coin pin on the vest, grey trousers, brown shoes. Same clean modern editorial cartoon style with thick dark ink outlines and flat colours. Never include any text, letters, numbers, logos or labels anywhere, not even on papers, screens, coins or price tags (leave them blank). Pose: holding an old brass balance scale in one hand, a gold bar on one pan and a small green plant on the other, the scale tilted, thinking expression."
+ },
+ "bg_fort_knox": {
+  "kind": "scene",
+  "aspect": "16:9",
+  "prompt": "16:9 frame for an explainer video. Bold graphic editorial style: flat vector illustration with clean deep navy (#1B2A4A) linework and fills, off-white cream paper background (#F4EEDF) with subtle halftone dot texture. Limited palette: cream, deep navy, signal red (#C8102E) and mustard yellow (#D4A23A) only. High contrast, no gradients, not photorealistic. A detailed related scene fills the whole frame, background details in pale washed-out navy. Never include any text, letters, numbers, logos or labels anywhere, not even on signs, banknotes, price tags, screens or papers (leave them blank). Scene: the United States Bullion Depository at Fort Knox, Kentucky: a squat two-storey granite and concrete vault building with columns at the entrance and a small central tower, a tall fence and a guard post in front, green lawn, wide empty road, under a clear sky; a vault door slightly open in a small inset circle at the corner showing stacked gold bars."
+ },
+ "bg_costco_gold": {
+  "kind": "scene",
+  "aspect": "16:9",
+  "prompt": "16:9 frame for an explainer video. Bold graphic editorial style: flat vector illustration with clean deep navy (#1B2A4A) linework and fills, off-white cream paper background (#F4EEDF) with subtle halftone dot texture. Limited palette: cream, deep navy, signal red (#C8102E) and mustard yellow (#D4A23A) only. High contrast, no gradients, not photorealistic. A detailed related scene fills the whole frame, background details in pale washed-out navy. Never include any text, letters, numbers, logos or labels anywhere, not even on signs, banknotes, price tags, screens or papers (leave them blank). Scene: inside a huge warehouse store: tall metal shelves stacked with giant packs of toilet paper on one side and, on the next shelf, small boxes of shiny gold bars; a shopper in a hoodie pushing a big flat cart, looking amazed at the gold; bright warehouse ceiling lights."
+ },
+ "bg_boe_vault": {
+  "kind": "scene",
+  "aspect": "16:9",
+  "prompt": "16:9 frame for an explainer video. Bold graphic editorial style: flat vector illustration with clean deep navy (#1B2A4A) linework and fills, off-white cream paper background (#F4EEDF) with subtle halftone dot texture. Limited palette: cream, deep navy, signal red (#C8102E) and mustard yellow (#D4A23A) only. High contrast, no gradients, not photorealistic. A detailed related scene fills the whole frame, background details in pale washed-out navy. Never include any text, letters, numbers, logos or labels anywhere, not even on signs, banknotes, price tags, screens or papers (leave them blank). Scene: a deep underground vault beneath a classical London bank building: long low arched brick ceilings, rows of pale shelves stacked with thousands of trapezoid gold bars, a vault keeper in a suit with a clipboard walking along the aisle; a cutaway at the top shows the street above with a red double-decker bus."
+ },
+ "t_ee_gold_hug": {
+  "kind": "thumb_pose",
+  "aspect": "3:4",
+  "prompt": "Full-body single character standing, centered, whole figure visible from head to shoes with a small margin, on a completely plain flat off-white background (#F7F5F0), no floor, no shadow, no other objects except what he holds. Portrait frame. The character is the cartoon man from the reference image: same face, same dark wavy hair, clean-shaven, friendly smile, same build and proportions, crisp white shirt with sleeves rolled to the forearm, green knit V-neck sweater vest, small gold coin pin on the vest, grey trousers, brown shoes. Same clean modern editorial cartoon style with thick dark ink outlines and flat colours. Never include any text, letters, numbers, logos or labels anywhere, not even on papers, screens, coins or price tags (leave them blank). Pose: hugging a big stack of gold bars tightly with both arms, eyes wide, worried protective expression, leaning to his right."
+ },
+ "t_ee_gold_shock": {
+  "kind": "thumb_pose",
+  "aspect": "3:4",
+  "prompt": "Full-body single character standing, centered, whole figure visible from head to shoes with a small margin, on a completely plain flat off-white background (#F7F5F0), no floor, no shadow, no other objects except what he holds. Portrait frame. The character is the cartoon man from the reference image: same face, same dark wavy hair, clean-shaven, friendly smile, same build and proportions, crisp white shirt with sleeves rolled to the forearm, green knit V-neck sweater vest, small gold coin pin on the vest, grey trousers, brown shoes. Same clean modern editorial cartoon style with thick dark ink outlines and flat colours. Never include any text, letters, numbers, logos or labels anywhere, not even on papers, screens, coins or price tags (leave them blank). Pose: holding one gold bar in an outstretched hand and pointing at it with the other, mouth open in shock, eyebrows high."
+ },
+ "t_ee_gold_vault": {
+  "kind": "thumb_pose",
+  "aspect": "3:4",
+  "prompt": "Full-body single character standing, centered, whole figure visible from head to shoes with a small margin, on a completely plain flat off-white background (#F7F5F0), no floor, no shadow, no other objects except what he holds. Portrait frame. The character is the cartoon man from the reference image: same face, same dark wavy hair, clean-shaven, friendly smile, same build and proportions, crisp white shirt with sleeves rolled to the forearm, green knit V-neck sweater vest, small gold coin pin on the vest, grey trousers, brown shoes. Same clean modern editorial cartoon style with thick dark ink outlines and flat colours. Never include any text, letters, numbers, logos or labels anywhere, not even on papers, screens, coins or price tags (leave them blank). Pose: peeking out from behind a heavy round vault door that is half open, one hand on the door, sly knowing smile."
+ }
+}

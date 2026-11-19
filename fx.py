@@ -6,8 +6,8 @@ import numpy as np, cv2
 from PIL import Image, ImageDraw, ImageFont
 
 SR = 48000
-NAVY, MUSTARD, RED, CREAM = (27, 42, 74), (212, 162, 58), (200, 16, 46), (244, 238, 223)
-INK = (14, 22, 38)
+import theme
+from theme import NAVY, MUSTARD, RED, CREAM, INK, LOSS
 GREY = (150, 150, 150)
 
 
@@ -180,7 +180,7 @@ class Bars:
                 continue
             cx = self.x - self.w / 2 + gap * (k + 0.5)
             hh = self.h * 0.82 * it["value"] / self.vmax * p
-            col = {"red": RED, "mustard": MUSTARD, "grey": GREY}.get(it.get("color"), NAVY)
+            col = {"red": LOSS, "mustard": MUSTARD, "grey": GREY, "green": RED}.get(it.get("color"), NAVY)
             rrect(c, cx - bw / 2, base - hh, cx + bw / 2, base, col, r=10)
             if it.get("hl") and p >= 1:
                 cv2.rectangle(c, (int(cx - bw / 2 - 10), int(base - hh - 10)), (int(cx + bw / 2 + 10), int(base + 4)), c01(RED), 6, cv2.LINE_AA)
@@ -354,7 +354,11 @@ def end_frames(c, lt, W, H, fonts, label, slots=None, size=0.27):
 
 
 def wordmark(fonts, size=230):
-    """'Bilmas' in cream + 'boy' in mustard, one image."""
+    """'Bilmas' in cream + 'boy' in mustard, one image (Eldor Explains: its own wordmark)."""
+    if theme.EN:
+        import sys; sys.path.insert(0, str(theme.FONTS.parent / "brand" / "eldor-explains" / "logo"))
+        import logo_v2
+        return logo_v2.wordmark(int(size * 1.05), ink=CREAM, accent=(63, 181, 138))
     a = text_rgba("Bilmas", fonts["anton"], size, CREAM)
     b = text_rgba("boy", fonts["anton"], size, MUSTARD)
     img = Image.new("RGBA", (a.width + b.width - 8, max(a.height, b.height)), (0, 0, 0, 0))

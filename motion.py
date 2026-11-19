@@ -12,9 +12,9 @@ sys.path.insert(0, str(Path(__file__).parent))
 import build
 
 W, H, FPS, SR = 1080, 1920, 30, 48000
-NAVY = (27, 42, 74); MUSTARD = (212, 162, 58); RED = (200, 16, 46); CREAM = (244, 238, 223)
+from theme import NAVY, MUSTARD, RED, CREAM   # channel palette (theme.py; CHANNEL=ee -> Eldor Explains)
 FONTS = Path(__file__).parent / "fonts"
-ANTON = str(FONTS / "Anton-Regular.ttf"); MONT = str(FONTS / "Montserrat-ExtraBold.ttf")
+from theme import ANTON, MONT
 DISSOLVE = 0.20
 random.seed(7)
 

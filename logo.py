@@ -59,6 +59,12 @@ def _shadow(img, off=(0, 6), blur=6, alpha=0.4):
 
 
 def logo(style="lilita", height=120, theme="dark"):
+    import theme as _th
+    if _th.EN:                                             # Eldor Explains: bubble mark + wordmark
+        sys.path.insert(0, str(HERE / "brand" / "eldor-explains" / "logo"))
+        import logo_v2
+        dark = theme == "dark"
+        return logo_v2.wordmark(int(height), ink=_th.CREAM if dark else _th.NAVY, accent=(63, 181, 138) if dark else _th.RED)
     S = 400                                                # draw big, scale down at the end
     main = CREAM if theme == "dark" else NAVY
     if style == "paytone":                                 # friendly lowercase, red pen underline under "boy"

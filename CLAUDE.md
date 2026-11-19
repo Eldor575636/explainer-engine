@@ -61,7 +61,7 @@ See `README.md` for commands.
 - Structure: hook (0–5 s) → what it is → how it's supposed to work → how it actually worked
   (the reality gap) → why it matters to you → follow call ("Har kuni dunyoni o'zgartirgan bitta
   g'oya uchun obuna bo'ling.").
-- Plain language. **No idioms or sarcasm that break in Uzbek translation.** Light, knowing tone.
+- Plain language. English channel: neutral international English (US spelling on screen, nothing only Brits or only Americans say, US + UK examples side by side); the British clone voice stays. **No idioms or sarcasm that break in Uzbek translation.** Light, knowing tone.
 - Hand the owner clean voiceover text only (no production notes), **one sentence per line**.
 - Owner (2026-11-17, E06): pack every episode with as many concrete facts and comparisons as possible (per person, per day,
   vs a famous building/country/company, then vs now) and link sections with a bridging question or line, never a cold jump.

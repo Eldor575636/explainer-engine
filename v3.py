@@ -19,7 +19,8 @@ import build, motion, fx
 W, H, FPS, SR = 1920, 1080, 25, 48000
 motion.W, motion.H = W, H                       # Sprite.draw / captions read these
 NAVY, MUSTARD, RED, CREAM = motion.NAVY, motion.MUSTARD, motion.RED, motion.CREAM
-INK = (14, 22, 38)
+import theme
+INK = theme.INK
 DISSOLVE = 0.25
 VW, VH = 1080, 1920                              # Shorts / Reels canvas
 FONTS = None
@@ -211,8 +212,8 @@ def camera(c, t, dur, idx, kind, shots=None):
 import re as _re
 _APOS = "'ʻʼ‘’`"
 def new_alphabet(text):
-    if not text:
-        return text
+    if not text or theme.EN:                                  # English channel: text stays as written
+        return text.replace("✓", "✔").replace("✗", "✘") if text else text
     t = _re.sub(f"([oO])[{_APOS}]", lambda m: "ö" if m.group(1) == "o" else "Ö", text)
     t = _re.sub(f"([gG])[{_APOS}]", lambda m: "ğ" if m.group(1) == "g" else "Ğ", t)
     for a, b in (("SH", "Ş"), ("Sh", "Ş"), ("sh", "ş"), ("CH", "Ç"), ("Ch", "Ç"), ("ch", "ç")):
@@ -260,16 +261,16 @@ def short_endcard(series, clip_start, handle, VW=1080, VH=1920, socials=None, pa
     from PIL import ImageDraw
     import logo as _logo
     out = []
-    av = Image.open(HERE / "assets" / "brand" / "avatar.png").convert("RGBA").resize((300, 300), Image.LANCZOS)
+    av = Image.open(theme.AVATAR).convert("RGBA").resize((300, 300), Image.LANCZOS)
     m = Image.new("L", (300, 300), 0); ImageDraw.Draw(m).ellipse((0, 0, 299, 299), fill=255)
     ring = Image.new("RGBA", (320, 320), (0, 0, 0, 0)); ImageDraw.Draw(ring).ellipse((0, 0, 319, 319), fill=(255, 255, 255, 255))
     ring.paste(av, (10, 10), m)
     out.append((motion.Sprite(ring), 520, 0.0))
     out.append((motion.Sprite(_logo.logo("rubik", 104, "dark")), 760, 0.12))
-    out.append((text_sprite(new_alphabet("TO'LIQ VIDEO KANALDA"), motion.ANTON, 104, (255, 255, 255), 6, (14, 22, 38)), 920, 0.24))
+    out.append((text_sprite(new_alphabet(theme.T("full_video")), motion.ANTON, 104, (255, 255, 255), 6, (14, 22, 38)), 920, 0.24))
     out.append((motion.label_sprite(new_alphabet(series), 76), 1065, 0.36))
     mm = int(clip_start // 60); ss = int(clip_start % 60)
-    out.append((motion.tag_sprite(new_alphabet(f"BU LAVHA: {mm:02d}:{ss:02d} DAN"), 50), 1185, 0.48))
+    out.append((motion.tag_sprite(new_alphabet(theme.T("clip_from").format(mm=mm, ss=ss)), 50), 1185, 0.48))
     if socials:
         out.append((socials_sprite(socials, icon=54, font=42, cols=2, gapx=40, gapy=22), 1330, 0.6))
     else:
@@ -429,7 +430,7 @@ class LogoBug:
         if key not in self.cache:
             w = max(self.D, min(self.full, key))
             img = Image.new("RGBA", (w, self.D), (0, 0, 0, 0))
-            ImageDraw.Draw(img).rounded_rectangle((0, 0, w - 1, self.D - 1), self.D // 2, fill=(27, 42, 74, 230))
+            ImageDraw.Draw(img).rounded_rectangle((0, 0, w - 1, self.D - 1), self.D // 2, fill=NAVY + (230,))
             vis = max(self.bub, w - 2 * self.lp)                                 # reveal the logo up to the pill's inner edge
             img.alpha_composite(self.lg.crop((0, 0, min(self.lg.width, vis), self.lg.height)), (self.lp, self.pad))
             self.cache[key] = motion.Sprite(img)
@@ -681,14 +682,20 @@ def main():
             b["_show"] = wt(b["show"]) - b["t0"]
             sfx.append((b["t0"] + b["_show"], "thud"))
         if typ == "title":
-            b["_t1"] = text_sprite(new_alphabet(b["title"]), motion.ANTON, 120, CREAM)
-            b["_t2"] = text_sprite(new_alphabet(b["title2"]), motion.ANTON, 150, MUSTARD)
+            b["_t1"] = text_sprite(new_alphabet(b["title"]), theme.TITLE, 120, CREAM)
+            b["_t2"] = text_sprite(new_alphabet(b["title2"]), theme.TITLE, 150, MUSTARD)
             sfx += [(b["t0"] + 0.05, "riser"), (b["t0"] + 0.15, "thud")]
         if typ == "chapter":
             b["_n"] = text_sprite(new_alphabet(b["num"]), motion.ANTON, 80, MUSTARD)
-            b["_t"] = text_sprite(new_alphabet(b["title"]), motion.ANTON, 220, CREAM)
+            b["_t"] = text_sprite(new_alphabet(b["title"]), theme.TITLE, 220, CREAM)
             sfx += [(b["t0"] + 0.05, "riser"), (b["t0"] + 0.2, "thud")]
-        if typ == "intro":
+        if typ == "intro" and theme.EN:                # Eldor Explains sting: bubble pops, bars rise, arrow draws, name wipes in
+            sys.path.insert(0, str(HERE / "brand" / "eldor-explains" / "logo")); import logo_v2
+            b["_ee"] = logo_v2
+            b["_eetext"] = {}
+            sfx += [(b["t0"] + 0.0, "pop"), (b["t0"] + 0.33, "tick"), (b["t0"] + 0.45, "tick"), (b["t0"] + 0.57, "tick"), (b["t0"] + 0.62, "draw"), (b["t0"] + 1.05, "whoosh")]
+            xsfx += [(b["t0"] + 0.97, "ding", None)]
+        elif typ == "intro":
             b["_wm"] = fx.wordmark(F, 190)
             b["_pose"] = pose(b.get("pose", 3), "center")
             xsfx += [(b["t0"] + 0.1, "swoosh", None), (b["t0"] + 0.55, "hit", None), (b["t0"] + 0.9, "ding", None)]
@@ -756,7 +763,7 @@ def main():
                     if k == "pie":
                         return fx.Pie(dict(ee, slices=[dict(i, label=new_alphabet(i["label"])) for i in ee["slices"]]), F, Wd, Hd)
                     if k == "subscribe":
-                        return fx.Subscribe(ee, F, Wd, Hd, LBL.get("subscribe", "OBUNA"), LBL.get("subscribed", "OBUNA"))
+                        return fx.Subscribe(ee, F, Wd, Hd, LBL.get("subscribe", theme.T("subscribe_btn")), LBL.get("subscribed", theme.T("subscribe_btn")))
                     if k == "like":
                         return fx.Like(ee, F, Wd, Hd, LBL.get("like", "LAYK"))
                     return fx.News(ee, F, Wd, Hd, new_alphabet(ee["text"]))
@@ -964,7 +971,31 @@ def main():
             if V:
                 c = vcrop(c, b, t)
         Wd, Hd = (VW, VH) if V else (W, H)
-        if b["type"] == "intro":
+        if b["type"] == "intro" and "_ee" in b:
+            LV = b["_ee"]; ez = lambda x: 1 - (1 - min(1.0, max(0.0, x))) ** 3
+            MS = int((Hd if not V else Wd) * (0.26 if not V else 0.30))
+            if "word" not in b["_eetext"]:
+                wd = LV.wordmark(MS, ink=CREAM, accent=(63, 181, 138)); b["_eetext"]["word"] = wd
+                b["_eetext"]["text"] = wd.crop((MS, 0, wd.width, wd.height))
+            wd, tx = b["_eetext"]["word"], b["_eetext"]["text"]
+            if V and wd.width > Wd * 0.92:
+                k = Wd * 0.92 / wd.width; tx = tx.resize((int(tx.width * k), int(tx.height * k))); MSv = int(MS * k)
+            else:
+                k = 1.0; MSv = MS
+            s_ = fx.back_out(t / 0.30) if t < 0.30 else 1.0
+            bars = [ez((t - 0.30 - j * 0.12) / 0.25) for j in range(3)]
+            arrow = ez((t - 0.62) / 0.35); slide = ez((t - 1.05) / 0.35); wipe = ez((t - 1.20) / 0.45)
+            size = max(4, int(MSv * 1.25 * s_ - MSv * 0.25 * slide))
+            m_ = LV.mark(size, bars=bars, arrow=arrow)
+            full_w = MSv + tx.width
+            fx_final = Wd / 2 - full_w / 2 + MSv / 2
+            cx = Wd / 2 + (fx_final - Wd / 2) * slide
+            fx.paste(c, m_, cx, Hd / 2)
+            if wipe > 0:
+                tw_ = int(tx.width * wipe)
+                if tw_ > 1:
+                    fx.paste(c, tx.crop((0, 0, tw_, tx.height)), Wd / 2 - full_w / 2 + MSv + tw_ / 2, Hd / 2)
+        elif b["type"] == "intro":
             sp = b["_pose"]
             sp.draw(c, Wd * (0.5 if V else 0.74), Hd * (0.62 if V else 0.16) + sp.h / 2 * (0.8 if V else 1) + (1 - ease_out(t / 0.6)) * Hd * 0.7, 0.8 if V else 1.0)
             wm = b["_wm"]; sc = (0.55 if V else 1.0) * (1.6 - 0.6 * ease_out((t - 0.45) / 0.25))
@@ -976,12 +1007,12 @@ def main():
         if b["type"] == "end":
             sp = b["_pose"]
             if not V and ENDN == 2:
-                fx.end_frames(c, t, W, H, F, LBL.get("next", "KEYINGI VIDEO"), slots=END2["slots"], size=END2["size"])
+                fx.end_frames(c, t, W, H, F, LBL.get("next", theme.T("next")), slots=END2["slots"], size=END2["size"])
                 mx, my, ms = END2["mascot"]
                 (sp.flip() if END2.get("flip") else sp).draw(c, W * mx, H * my - sp.h * ms / 2 + (1 - ease_out(t / 0.6)) * H * 0.7, ms)
             else:
                 if not V:
-                    fx.end_frames(c, t, W, H, F, LBL.get("next", "KEYINGI VIDEO"))
+                    fx.end_frames(c, t, W, H, F, LBL.get("next", theme.T("next")))
                 sp.draw(c, Wd * 0.5, Hd * (0.55 if V else 0.2) + sp.h / 2 + (1 - ease_out(t / 0.6)) * Hd * 0.7, 0.85 if V else 0.9)
         return draw_events(c, b, t, dur, SCREEN, V)
 
@@ -1140,9 +1171,9 @@ def main():
     pcard = (partner_card(cfg["partner_logos"], logo_h=110, font=56, gap=110, frames=12 * FPS, style="strip") if ENDN == 2 else
              partner_card(cfg["partner_logos"], frames=12 * FPS)) if cfg.get("partner_logos") else None
     if ENDN == 2:
-        ring_lab = seeded(motion.tag_sprite, new_alphabet(LBL.get("subscribe", "OBUNA BO'LING")), 40, NAVY)
+        ring_lab = seeded(motion.tag_sprite, new_alphabet(LBL.get("subscribe", theme.T("subscribe"))), 40, NAVY)
         if NEXT_EP:
-            nx_head = seeded(motion.tag_sprite, new_alphabet("KEYINGI QISMDA:"), 40, NAVY)
+            nx_head = seeded(motion.tag_sprite, new_alphabet(theme.T("next_head")), 40, NAVY)
             nx_main = seeded(motion.label_sprite, new_alphabet(NEXT_EP), 96)
 
     def end_overlay(frame, lt, dur, t0=0.0):
@@ -1343,7 +1374,7 @@ def main():
             last = frame
         END = 2.4 if cfg.get("series_label") else 0.0           # end card: darkened, blurred last frame + channel reference
         if END:
-            card = short_endcard(cfg["series_label"], ta, cfg.get("handle", "@bilmasboy"), VW, VH, cfg.get("socials"), cfg.get("partners"), cfg.get("partner_logos"))
+            card = short_endcard(cfg["series_label"], ta, cfg.get("handle", theme.HANDLE), VW, VH, cfg.get("socials"), cfg.get("partners"), cfg.get("partner_logos"))
             base = cv2.GaussianBlur(last, (0, 0), 9)
             for fi in range(int(END * FPS)):
                 lt = fi / FPS; p = ease_out(lt / 0.35)
