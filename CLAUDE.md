@@ -173,6 +173,11 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
 
 - Owner's ElevenLabs clone: "Eldor British" (voice_id 1azPJbJwsAdHELWK7HI3), model eleven_v4, via the ElevenLabs connector.
   ~1 credit per character (a 12-min episode ≈ 10,600 credits for one take). Higgsfield clones did not sound like him.
+- Eldor Explains voice (owner, 2026-11-19): same clone, eleven_v4, every part opens with
+  "[strong General American accent, rhotic R sounds, like a US news anchor]" (repeat "[General American accent]" every ~5
+  sentences so it doesn't drift back to British) + one mood tag per sentence ([serious], [leaning in], [curious], [amused],
+  [warm]...). Owner: "much better than original accent". Never mix British and American parts in one episode.
+  Tested and rejected: plain British, mid-Atlantic tag, v3 American/Canadian, multilingual_v2.
 - `voice_text.py` + `lexicon.json`: text for the voice only (captions keep the script). Years/dates/numbers in Uzbek
   words, "AQSh dollari" → "Amerika dollari" first time then "dollar", "AQSh" → "Amerika Qo'shma Shtatlari" then "Amerika".
 - Voice in ~2,000-char parts (01.mp3…), then `check_voice.py` transcribes each part back and scores every sentence;
