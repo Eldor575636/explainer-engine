@@ -84,10 +84,12 @@ def compose(W, H, safe, wm_h, row_h, char_h=None, char_dx=0, char_dy=0, slogan_p
     gap = int(wm.height * 0.18)
     block_h = wm.height + gap + sl_h + gap * 1.4 + row.height
     by = int(y0 + ((y1 - y0) - block_h) // 2)
-    bx = x0 if char_h else x0 + (sw - max(wm.width, row.width)) // 2
+    blk_w = max(wm.width, row.width, int(wm.height * 1.22 + d.textlength(SLOGAN, font=f)))
+    # The character points to the viewer's right, so he stands on the LEFT and the text sits to his right.
+    bx = x1 - blk_w if char_h else x0 + (sw - blk_w) // 2
     if char_h:
         ch = character(char_h)
-        cx = x1 - ch.width + char_dx
+        cx = x0 - char_dx
         cy = char_top if char_top is not None else H - ch.height + char_dy
         im.alpha_composite(ch, (cx, cy))
     im.alpha_composite(wm, (bx, by))
@@ -98,32 +100,33 @@ def compose(W, H, safe, wm_h, row_h, char_h=None, char_dx=0, char_dy=0, slogan_p
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)
-    # YouTube: 2560x1440, safe area 1546x423 centred; character stands at the right of the safe area
+    # YouTube: 2560x1440, safe area 1546x423 centred; character stands at the left of the safe area
     W, H = 2560, 1440
     sx0, sy0 = (W - 1546) // 2, (H - 423) // 2
-    yt = compose(W, H, (sx0, sy0, sx0 + 1546, sy0 + 423), wm_h=200, row_h=74, char_h=1000, char_dx=200, char_top=sy0 + 18)
+    yt = compose(W, H, (sx0, sy0, sx0 + 1546, sy0 + 423), wm_h=200, row_h=74, char_h=1000, char_dx=60, char_top=sy0 + 18)
     yt.save(os.path.join(OUT, 'YouTube_banner_2560x1440.jpg'), quality=94)
     # Facebook Page cover: 1640x624 (desktop 820x312 @2x); phones crop the sides, so keep the middle 1230 px
-    fb = compose(1640, 624, (205 + 30, 70, 1435 - 10, 560), wm_h=150, row_h=60, char_h=720, char_dx=40, char_dy=300)
+    fb = compose(1640, 624, (205 + 30, 70, 1435 - 10, 560), wm_h=150, row_h=60, char_h=720, char_dx=10, char_dy=300)
     fb.save(os.path.join(OUT, 'Facebook_cover_1640x624.jpg'), quality=94)
     # X header: 1500x500; the profile photo covers the bottom-left, so content sits right of x=420
-    xh = compose(1500, 500, (430, 40, 1460, 460), wm_h=120, row_h=50, char_h=600, char_dx=20, char_dy=330)
+    # (no character: the profile photo would cover him)
+    xh = compose(1500, 500, (430, 40, 1460, 460), wm_h=120, row_h=50)
     xh.save(os.path.join(OUT, 'X_header_1500x500.jpg'), quality=94)
     # Find-me-everywhere card (posts, Stories, Telegram pin): 1080x1350
     card = grid(1080, 1350).copy()
     ch = character(900)
-    card.alpha_composite(ch, (1080 - ch.width + 30, 1350 - ch.height + 40))
+    card.alpha_composite(ch, (-40, 1350 - ch.height + 40))
     wm = fit(L.wordmark(120), 960)
     card.alpha_composite(wm, ((1080 - wm.width) // 2, 70))
     d = ImageDraw.Draw(card)
     f = ImageFont.truetype(INTER, 34)
     tw = d.textlength(SLOGAN, font=f); d.text(((1080 - tw) / 2, 70 + wm.height + 18), SLOGAN, font=f, fill='#3A4047')
-    y = 330
+    y = 420
     fo = ImageFont.truetype(OUTFIT, 46)
     for p in PLATFORMS:
-        d.rounded_rectangle([60, y, 560, y + 92], radius=46, fill='#FFFFFF', outline=L.INK, width=4)
-        card.alpha_composite(chip(p, 72), (72, y + 10))
-        d.text((164, y + 18), HANDLE, font=fo, fill=L.INK)
+        d.rounded_rectangle([520, y, 1020, y + 92], radius=46, fill='#FFFFFF', outline=L.INK, width=4)
+        card.alpha_composite(chip(p, 72), (532, y + 10))
+        d.text((624, y + 18), HANDLE, font=fo, fill=L.INK)
         y += 116
     card.convert('RGB').save(os.path.join(OUT, 'Find_me_everywhere_1080x1350.jpg'), quality=94)
     # Avatars: one image for every platform (all crop to a circle)
