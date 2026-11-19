@@ -197,6 +197,9 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   instead of being regenerated. E02 uses them.
 - ElevenLabs audio tags ([curious], [serious]...) were tested on E02's opening; owner chose no tags for now.
 - ElevenLabs credits are limited (~39.5k/month on the current plan; a 10-min episode is ~9k). Estimate before big runs.
+- Budget (2026-11-19): Creator plan ~100k credits/month, resets on the 7th. Always generations_count 1 (the tool defaults to 2 and
+  doubles the cost). Per episode: Bilmasboy ~11.5k, Eldor Explains ~11k, Bysmillah UZ ~7k (5 min). Owner: Eldor Explains E01
+  American re-voice waits for the Dec 7 reset; until then credits go to Bysmillah UZ long-form and Bilmasboy E07.
 
 ## Calls to action (2026-11-10)
 
