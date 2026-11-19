@@ -159,7 +159,7 @@
     {
      "at": [
       0,
-      "five"
+      "In"
      ],
      "k": "bars",
      "x": 0.5,
@@ -881,8 +881,27 @@
     "That's"
    ],
    "type": "scene",
-   "bg": "bg_lydia_mint",
+   "bg": "bg_gold_bazaar",
    "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      26,
+      "trusted"
+     ],
+     "k": "tag",
+     "text": "2,500+ YEARS OF TRUST",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    26,
+    "ever"
+   ],
+   "type": "scene",
+   "bg": "bg_lydia_mint",
    "ev": [
     {
      "at": [
@@ -2321,14 +2340,6 @@
      "k": "tag",
      "text": "$100-200 MILLION A MONTH",
      "fg": "red"
-    },
-    {
-     "at": [
-      74,
-      "toilet"
-     ],
-     "k": "tag",
-     "text": "NEXT TO THE TOILET PAPER"
     }
    ],
    "sfx": [
@@ -2336,6 +2347,26 @@
      0.5,
      "cash"
     ]
+   ]
+  },
+  {
+   "at": [
+    74,
+    "every"
+   ],
+   "type": "scene",
+   "bg": "bg_costco_gold",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      74,
+      "toilet"
+     ],
+     "k": "tag",
+     "text": "NEXT TO THE TOILET PAPER",
+     "fg": "red"
+    }
    ]
   },
   {

@@ -36,7 +36,7 @@ def beat(at, typ, **kw):
 
 # ---------------- Hook: contrast + question + two open loops ----------------
 beat([0, "In"], "object", mood="curious", ev=[L([0, "In"], "1 OUNCE OF GOLD"),
-     BARS([0, "five"], [{"label": "JAN 2026", "value": 5590}, {"label": "NOV 2026", "value": 3900, "color": "red", "at": [1, "crashed"]}], prefix="$"),
+     BARS([0, "In"], [{"label": "JAN 2026", "value": 5590}, {"label": "NOV 2026", "value": 3900, "color": "red", "at": [1, "crashed"]}], prefix="$"),
      ST([1, "thirty"], "-30%", y=.2, x=.82)])
 beat([2, "Any"], "scene", bg="bg_gold_trading", ev=[T([2, "panic"], "INVESTORS: SELL!"), T([3, "opposite"], "CENTRAL BANKS: BUY", True)], sfx=[[0.1, "whoosh"]])
 beat([4, "In"], "object", props=[P([4, "In"], "prop_gold", .3, .5, .45)], ev=[L([4, "In"], "Q3 2026 · CENTRAL BANKS"),
@@ -68,7 +68,8 @@ beat([23, "Reason"], "scene", bg="bg_printing_press", ev=[T([23, "print"], "3. N
 beat([24, "A"], "scene", bg="bg_printing_press", crop="left", ev=[T([24, "keystrokes"], "MONEY: A FEW KEYSTROKES")])
 beat([25, "Gold"], "object", props=[P([25, "Gold"], "prop_gold", .3, .5, .45)], ev=[L([25, "Gold"], "MINED EVERY YEAR"),
      CNT([25, "mines"], 3700, suffix=" TONNES", x=.68, y=.42), T([25, "two"], "+2% A YEAR", True, x=.68, y=.6)])
-beat([26, "That's"], "scene", bg="bg_lydia_mint", mood="calm", ev=[L([26, "Lydia"], "6TH CENTURY BC · LYDIA"), T([26, "coins"], "ONE OF THE FIRST COINS", True), T([26, "silver"], "GOLD + SILVER")])
+beat([26, "That's"], "scene", bg="bg_gold_bazaar", mood="calm", ev=[T([26, "trusted"], "2,500+ YEARS OF TRUST", True)])
+beat([26, "ever"], "scene", bg="bg_lydia_mint", ev=[L([26, "Lydia"], "6TH CENTURY BC · LYDIA"), T([26, "coins"], "ONE OF THE FIRST COINS", True), T([26, "silver"], "GOLD + SILVER")])
 # ---------------- 2: gold and money ----------------
 beat([27, "That"], "chapter", num="PART 2", title="WHEN MONEY WAS GOLD")
 beat([28, "Under"], "scene", bg="bg_gold_standard", ev=[L([28, "standard"], "THE GOLD STANDARD"), T([28, "paper"], "PAPER NOTE →"), T([28, "swap"], "→ GOLD", True)])
@@ -132,7 +133,8 @@ beat([72, "Most"], "scene", bg="bg_boe_vault", crop="right", ev=[T([72, "other"]
 # ---------------- 5: gold and you ----------------
 beat([73, "But"], "chapter", num="PART 5", title="SHOULD ORDINARY PEOPLE CARE?")
 beat([74, "In"], "scene", bg="bg_costco_gold", ev=[L([74, "Costco"], "COSTCO · 2024"), T([74, "hundred"], "$100-200 MILLION A MONTH", True),
-     T([74, "toilet"], "NEXT TO THE TOILET PAPER")], sfx=[[0.5, "cash"]])
+     ], sfx=[[0.5, "cash"]])
+beat([74, "every"], "scene", bg="bg_costco_gold", crop="right", ev=[T([74, "toilet"], "NEXT TO THE TOILET PAPER", True)])
 beat([75, "So"], "object", ev=[M([75, "So"], "e_pointer"), T([75, "facts"], "3 FACTS", True, x=.36, y=.42), T([75, "ads"], "THE ADS SKIP", x=.36, y=.57)])
 beat([76, "Fact"], "object", ev=[M([76, "Fact"], "e_piggy"), T([76, "nothing"], "1. GOLD PAYS NOTHING", True, x=.36, y=.35),
      T([77, "interest"], "SAVINGS: INTEREST ✓", x=.36, y=.5), T([77, "only"], "GOLD: ONLY IF PRICE ↑", x=.36, y=.62)])

@@ -751,7 +751,7 @@ def main():
             elif k == "counter":
                 lo = e.get("from", 0); stp = max(1, (e["to"] - lo) // 60)
                 vals = list(range(lo, e["to"] + 1, stp)) + ([e["to"]] if (e["to"] - lo) % stp else [])
-                e["_frames"] = [seeded(motion.label_sprite, new_alphabet(f"{e.get('prefix', '')}{v}{e.get('suffix', '')}"), 150) for v in vals]
+                e["_frames"] = [seeded(motion.label_sprite, new_alphabet(f"{e.get('prefix', '')}{(f'{v:,}' if theme.EN else v)}{e.get('suffix', '')}"), 150) for v in vals]
                 sfx += [(b["t0"] + e["t"] + 0.9 * i / 12, "tick") for i in range(12)]
                 xsfx.append((b["t0"] + e["t"] + 0.95, "ding", None))
             elif k in ("bars", "pie", "subscribe", "like", "news"):
