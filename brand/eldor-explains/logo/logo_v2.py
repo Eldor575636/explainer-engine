@@ -7,7 +7,10 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONTS = os.path.join(HERE, '..', '..', '..', 'fonts')
 PAPER, INK, GREEN, GREEN_D, GOLD = '#F7F5F0', '#111418', '#0F7B5A', '#0A5C43', '#E3B341'
-ARCH = os.path.join(FONTS, 'ArchivoBlack-Regular.ttf')
+# Font roles (owner 2026-11-19: test 10 + 4, may change per situation): swap here only.
+WORDMARK_FONT = os.path.join(FONTS, 'Fraunces-Black.ttf')   # logo, banner, chapter titles
+HEADLINE_FONT = os.path.join(FONTS, 'Outfit-Black.ttf')     # thumbnails, on-screen tags
+ARCH = WORDMARK_FONT
 INTER = os.path.join(FONTS, 'Inter-SemiBold.ttf')
 S = 4  # supersample
 
@@ -86,7 +89,7 @@ def avatar(size=1024, dark=True):
 
 
 def wordmark(h, ink=INK, accent=GREEN, bg=None):
-    f = ImageFont.truetype(ARCH, int(h * 0.50))
+    f = ImageFont.truetype(WORDMARK_FONT, int(h * 0.54))
     tmp = ImageDraw.Draw(Image.new('RGB', (10, 10)))
     w1, w2 = tmp.textlength('Eldor ', font=f), tmp.textlength('Explains', font=f)
     ms = int(h * 1.0)
