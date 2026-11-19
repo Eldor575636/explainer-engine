@@ -1,0 +1,2 @@
+e_*.jpg are PLACEHOLDERS (copies of Look A) until the real poses are generated from ../picture_prompts.json
+bg_fort_knox/bg_costco_gold/bg_boe_vault.jpg are PLACEHOLDERS too

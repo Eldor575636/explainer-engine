@@ -1,0 +1,3413 @@
+{
+ "layers": "layers",
+ "lang": "en",
+ "auto_skip": [
+  "Buffett",
+  "Exxon",
+  "Fargo",
+  "Costco",
+  "Knox"
+ ],
+ "music": {
+  "curious": "../../../assets/music/curious.mp3",
+  "dramatic": "../../../assets/music/dramatic.mp3",
+  "calm": "../../../assets/music/calm.mp3"
+ },
+ "mascot": {
+  "img": "e_presenting",
+  "parts": 1,
+  "full_body": true
+ },
+ "ui": {
+  "subscribe": "SUBSCRIBE",
+  "subscribed": "SUBSCRIBED",
+  "like": "LIKE",
+  "next": "WATCH NEXT"
+ },
+ "sentences": [
+  "In January 2026, one ounce of gold cost more than five thousand dollars for the first time in history.",
+  "By November, it had crashed almost thirty percent.",
+  "Any normal investor would panic and sell.",
+  "The world's central banks did the opposite.",
+  "In just three months this summer, they bought three hundred and twenty-one tonnes of gold, forty-two percent more than a year before.",
+  "So why are the richest institutions on Earth hoarding a metal that pays no interest and produces nothing?",
+  "Later in this video, you'll see how one country sold half its gold at the worst possible moment, and how much that mistake is worth today.",
+  "And you'll see a trillion dollars of American gold that, on paper, is worth only eleven billion.",
+  "I'm Eldor, and this is Eldor Explains.",
+  "One money question at a time, answered with real numbers.",
+  "Today: why is the world going back to gold?",
+  "First, a simple question: why is gold so expensive?",
+  "Reason one: there is very little of it.",
+  "Take a guess: if you melted down all the gold ever mined in human history, how big would the block be?",
+  "A football stadium?",
+  "A skyscraper?",
+  "The answer is a cube about twenty-two meters on each side.",
+  "That's roughly a seven-story building.",
+  "That's it, all of it, from the pharaohs until today: about two hundred and twenty thousand tonnes.",
+  "Split equally between everyone on the planet, you would get about twenty-seven grams, less than a single small bar.",
+  "And yet that one cube is worth about twenty-seven trillion dollars, close to what the entire American economy produces in a year.",
+  "Reason two: gold never rusts and never rots.",
+  "Gold jewelry buried for thousands of years comes out of the ground shining like new.",
+  "Reason three, and this is the big one: nobody can print it.",
+  "A central bank can create new money with a few keystrokes.",
+  "Gold has to be dug out of the ground, and all the mines in the world add only about two percent a year to what already exists.",
+  "That's why people have trusted gold for more than two and a half thousand years, ever since the kingdom of Lydia struck some of the world's first coins from a natural mix of gold and silver.",
+  "That trust was so strong that, for a long time, money itself was tied to gold.",
+  "Under the gold standard, you could walk into a bank with a paper note and swap it for a fixed amount of gold.",
+  "After the Second World War, the world's currencies were tied to the dollar, and the dollar was tied to gold, at thirty-five dollars an ounce.",
+  "Today's price is more than a hundred and ten times higher.",
+  "Then, in 1971, President Richard Nixon went on television and ended it.",
+  "Dollars could no longer be swapped for gold.",
+  "From that day on, the money in your wallet has not been backed by any metal at all; its value rests only on trust.",
+  "And once money no longer needed gold, many governments started to see gold as a relic.",
+  "None more than Britain.",
+  "Between 1999 and 2002, the UK Treasury sold three hundred and ninety-five tonnes of gold, about half of everything the country owned.",
+  "And here's the problem: it announced the sales in advance.",
+  "Traders knew a huge seller was coming, and the price, already near a twenty-year low, dropped even further.",
+  "Britain sold at an average of about two hundred and seventy-five dollars an ounce, and raised roughly three and a half billion dollars.",
+  "Today, that same gold would be worth about fifty billion dollars.",
+  "Fourteen times more.",
+  "Britain is now left with three hundred and ten tonnes, about four and a half grams for every person in the country.",
+  "Economists still use this sale as the classic example of selling at exactly the wrong moment.",
+  "If you like finding out where the money really goes, subscribe: every week, one money question, real numbers.",
+  "So if gold is a relic, why are central banks suddenly buying it again?",
+  "The turning point came in 2022.",
+  "After Russia invaded Ukraine, Western countries froze about three hundred billion dollars of the Russian central bank's reserves held abroad.",
+  "Overnight, every government in the world learned a lesson.",
+  "Dollars or euros kept in someone else's bank are only yours as long as that other country agrees.",
+  "Gold in your own vault cannot be frozen with a single order.",
+  "What happened next was a buying spree.",
+  "Central banks bought more than a thousand tonnes a year, three years in a row, more than double the average of the decade before.",
+  "Even in 2025, a slower year, they bought eight hundred and sixty-three tonnes.",
+  "The biggest buyer two years running wasn't China or Russia.",
+  "It was Poland, with one hundred and two tonnes in 2025 alone.",
+  "Some countries didn't just buy more gold; they went and got back the gold they already had.",
+  "Between 2013 and 2017, Germany quietly moved six hundred and seventy-four tonnes of its gold from New York and Paris back home to Frankfurt.",
+  "And now comes the number that shows how big this shift really is.",
+  "According to the European Central Bank, at the end of 2025 gold made up twenty-seven percent of all central bank reserves in the world.",
+  "US Treasury bonds made up twenty-two percent, and the euro fifteen.",
+  "Gold is now the single biggest asset in the world's central bank vaults.",
+  "But the largest pile of gold on Earth doesn't belong to Poland or Germany.",
+  "It belongs to the United States: eight thousand one hundred and thirty-three tonnes.",
+  "About half of it sits in one building, the Bullion Depository at Fort Knox, Kentucky.",
+  "No visitors are allowed inside; over the years, only a few groups of officials and journalists have ever been let in.",
+  "At today's price, America's gold is worth roughly one trillion dollars.",
+  "But here's the strange part.",
+  "On the government's books, it is still valued at a price fixed by law in 1973: forty-two dollars and twenty-two cents an ounce.",
+  "At that price, the whole trillion-dollar pile is worth just eleven billion dollars on paper.",
+  "Shared out among every American, the country's gold comes to about twenty-four grams per person, more than five times the British figure.",
+  "And under the streets of London, the Bank of England guards more than four hundred thousand gold bars, each worth around one and a half million dollars.",
+  "Most of them don't even belong to Britain; the Bank keeps them for other countries' central banks.",
+  "But gold isn't only for governments.",
+  "In 2024, analysts at Wells Fargo estimated that Costco was selling between one hundred and two hundred million dollars of gold bars every month, right next to the bulk toilet paper.",
+  "So before anyone treats gold as a safe bet, here are three facts that rarely make it into the ads.",
+  "Fact one: gold pays nothing.",
+  "Money in a savings account earns interest every year; a gold bar earns you money only if its price goes up.",
+  "Fact two: the price can fall hard, and stay down.",
+  "In January 1980, gold hit eight hundred and fifty dollars an ounce.",
+  "It then took twenty-eight years to get back to that price.",
+  "Someone who bought at the top waited until 2008 just to break even.",
+  "Fact three: there is a gap between the price you buy at and the price you can sell at.",
+  "On small bars and coins, that gap can be several percent, so if you bought and sold on the same day, you would walk away with less.",
+  "That's why gold works less as a way to get rich quickly and more as long-term protection.",
+  "And that is exactly where economists split into two camps.",
+  "Camp one says gold is the most reliable store of wealth there is: in war, sanctions or high inflation, it's the first thing people run to.",
+  "Camp two says gold is a rock that just sits there.",
+  "Its most famous member is Warren Buffett.",
+  "In his 2011 letter to shareholders, he did a calculation.",
+  "Back then, all the gold in the world was worth about nine point six trillion dollars.",
+  "With that money, Buffett said, you could buy all the farmland in the United States, plus sixteen companies the size of Exxon Mobil, one of the most profitable companies on the planet.",
+  "And you would still have about a trillion dollars left over.",
+  "The farms would grow crops every year, the companies would pay profits every year, and the gold would do nothing at all.",
+  "So who's right?",
+  "In a way, both.",
+  "Gold isn't a machine for growing wealth; it's a safe for keeping it.",
+  "So what does all this mean for you?",
+  "First, watch the gold price like a fear gauge: when it jumps, governments and investors are usually worried about wars, debt or inflation.",
+  "Second, every tonne central banks buy instead of US Treasury bonds is a quiet vote of slightly less confidence in the dollar, the currency your pay, your rent and your savings are measured in.",
+  "Third, the next time you see gold advertised as a safe place for your savings, remember 1980, and remember this year's thirty percent drop.",
+  "This isn't financial advice, just the numbers worth knowing before you decide anything.",
+  "So, back to where we started: why are central banks buying gold, even while its price is falling?",
+  "Because the world feels less safe, and gold is the only form of wealth that is nobody else's promise.",
+  "It can't be frozen, it can't be printed, and it has held its value for thousands of years.",
+  "But it isn't risk-free: its price rises and falls, sometimes for decades.",
+  "Gold won't make you rich quickly; what it does best is keep wealth safe for the long run.",
+  "That's the story of gold.",
+  "And now you know the numbers.",
+  "So, which camp are you in: team gold, or team Buffett?",
+  "Tell me in the comments.",
+  "Next time: why prices almost never go back down, and who really decides how fast they rise.",
+  "Subscribe so you don't miss it."
+ ],
+ "beats": [
+  {
+   "at": [
+    0,
+    "In"
+   ],
+   "type": "object",
+   "mood": "curious",
+   "ev": [
+    {
+     "at": [
+      0,
+      "In"
+     ],
+     "k": "label",
+     "text": "1 OUNCE OF GOLD"
+    },
+    {
+     "at": [
+      0,
+      "five"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "JAN 2026",
+       "value": 5590
+      },
+      {
+       "label": "NOV 2026",
+       "value": 3900,
+       "color": "red",
+       "at": [
+        1,
+        "crashed"
+       ]
+      }
+     ],
+     "prefix": "$"
+    },
+    {
+     "at": [
+      1,
+      "thirty"
+     ],
+     "k": "stamp",
+     "text": "-30%",
+     "y": 0.2,
+     "x": 0.82
+    }
+   ]
+  },
+  {
+   "at": [
+    2,
+    "Any"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_trading",
+   "ev": [
+    {
+     "at": [
+      2,
+      "panic"
+     ],
+     "k": "tag",
+     "text": "INVESTORS: SELL!"
+    },
+    {
+     "at": [
+      3,
+      "opposite"
+     ],
+     "k": "tag",
+     "text": "CENTRAL BANKS: BUY",
+     "fg": "red"
+    }
+   ],
+   "sfx": [
+    [
+     0.1,
+     "whoosh"
+    ]
+   ]
+  },
+  {
+   "at": [
+    4,
+    "In"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_gold",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.45,
+     "at": [
+      4,
+      "In"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      4,
+      "In"
+     ],
+     "k": "label",
+     "text": "Q3 2026 · CENTRAL BANKS"
+    },
+    {
+     "at": [
+      4,
+      "twenty-one"
+     ],
+     "k": "counter",
+     "to": 321,
+     "x": 0.68,
+     "y": 0.45,
+     "suffix": " TONNES"
+    },
+    {
+     "at": [
+      4,
+      "forty-two"
+     ],
+     "k": "tag",
+     "text": "+42% IN A YEAR",
+     "x": 0.68,
+     "y": 0.62,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    5,
+    "So"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      5,
+      "So"
+     ],
+     "k": "mascot",
+     "pose": "e_magnifier",
+     "side": "right"
+    },
+    {
+     "at": [
+      5,
+      "interest"
+     ],
+     "k": "tag",
+     "text": "NO INTEREST",
+     "x": 0.36,
+     "y": 0.32
+    },
+    {
+     "at": [
+      5,
+      "nothing"
+     ],
+     "k": "tag",
+     "text": "PRODUCES NOTHING",
+     "x": 0.36,
+     "y": 0.46
+    },
+    {
+     "at": [
+      5,
+      "hoarding"
+     ],
+     "k": "tag",
+     "text": "SO WHY HOARD IT?",
+     "x": 0.36,
+     "y": 0.62,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    6,
+    "Later"
+   ],
+   "type": "scene",
+   "bg": "bg_uk_gold_sale",
+   "ev": [
+    {
+     "at": [
+      6,
+      "Later"
+     ],
+     "k": "label",
+     "text": "COMING UP"
+    },
+    {
+     "at": [
+      6,
+      "half"
+     ],
+     "k": "tag",
+     "text": "ONE COUNTRY SOLD HALF ITS GOLD",
+     "fg": "red"
+    },
+    {
+     "at": [
+      6,
+      "worst"
+     ],
+     "k": "tag",
+     "text": "AT THE WORST MOMENT"
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "swoosh"
+    ]
+   ]
+  },
+  {
+   "at": [
+    7,
+    "And"
+   ],
+   "type": "scene",
+   "bg": "bg_fort_knox",
+   "ev": [
+    {
+     "at": [
+      7,
+      "And"
+     ],
+     "k": "label",
+     "text": "COMING UP"
+    },
+    {
+     "at": [
+      7,
+      "trillion"
+     ],
+     "k": "tag",
+     "text": "$1 TRILLION OF GOLD..."
+    },
+    {
+     "at": [
+      7,
+      "eleven"
+     ],
+     "k": "tag",
+     "text": "...WORTH $11 BILLION ON PAPER?",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    8,
+    "I'm"
+   ],
+   "type": "intro"
+  },
+  {
+   "at": [
+    9,
+    "One"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      9,
+      "One"
+     ],
+     "k": "mascot",
+     "pose": "e_presenting",
+     "side": "right"
+    },
+    {
+     "at": [
+      9,
+      "question"
+     ],
+     "k": "tag",
+     "text": "ONE MONEY QUESTION",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      9,
+      "real"
+     ],
+     "k": "tag",
+     "text": "REAL NUMBERS",
+     "x": 0.36,
+     "y": 0.57,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    10,
+    "Today"
+   ],
+   "type": "title",
+   "title": "TODAY'S QUESTION",
+   "title2": "WHY IS THE WORLD GOING BACK TO GOLD?"
+  },
+  {
+   "at": [
+    11,
+    "First"
+   ],
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "WHY IS GOLD SO EXPENSIVE?"
+  },
+  {
+   "at": [
+    12,
+    "Reason"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      12,
+      "Reason"
+     ],
+     "k": "mascot",
+     "pose": "e_pointer",
+     "side": "right"
+    },
+    {
+     "at": [
+      12,
+      "Reason"
+     ],
+     "k": "tag",
+     "text": "3 REASONS",
+     "x": 0.36,
+     "y": 0.4,
+     "fg": "red"
+    },
+    {
+     "at": [
+      12,
+      "little"
+     ],
+     "k": "tag",
+     "text": "1. THERE IS VERY LITTLE",
+     "x": 0.36,
+     "y": 0.56
+    }
+   ]
+  },
+  {
+   "at": [
+    13,
+    "Take"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_mine_shaft",
+   "ev": [
+    {
+     "at": [
+      13,
+      "Take"
+     ],
+     "k": "label",
+     "text": "TAKE A GUESS"
+    },
+    {
+     "at": [
+      13,
+      "melted"
+     ],
+     "k": "tag",
+     "text": "ALL GOLD EVER MINED, MELTED",
+     "fg": "red"
+    },
+    {
+     "at": [
+      14,
+      "football"
+     ],
+     "k": "tag",
+     "text": "A. A FOOTBALL STADIUM?",
+     "x": 0.5,
+     "y": 0.62
+    },
+    {
+     "at": [
+      15,
+      "skyscraper"
+     ],
+     "k": "tag",
+     "text": "B. A SKYSCRAPER?",
+     "x": 0.5,
+     "y": 0.74
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "tick"
+    ]
+   ]
+  },
+  {
+   "at": [
+    16,
+    "The"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_cube",
+   "ev": [
+    {
+     "at": [
+      16,
+      "cube"
+     ],
+     "k": "tag",
+     "text": "A CUBE: 22 M (~70 FT) EACH SIDE",
+     "fg": "red"
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "ding"
+    ]
+   ]
+  },
+  {
+   "at": [
+    17,
+    "That's"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_cube",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      17,
+      "seven-story"
+     ],
+     "k": "tag",
+     "text": "= A 7-STORY BUILDING"
+    },
+    {
+     "at": [
+      17,
+      "roughly"
+     ],
+     "k": "arrow",
+     "from": [
+      0.42,
+      0.2
+     ],
+     "to": [
+      0.42,
+      0.82
+     ],
+     "straight": true
+    }
+   ],
+   "vfocus": [
+    0.3,
+    0.72
+   ]
+  },
+  {
+   "at": [
+    18,
+    "That's"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_cube",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      18,
+      "pharaohs"
+     ],
+     "k": "label",
+     "text": "FROM THE PHARAOHS TO TODAY"
+    },
+    {
+     "at": [
+      18,
+      "thousand"
+     ],
+     "k": "bigtext",
+     "text": "220,000 TONNES",
+     "x": 0.5,
+     "y": 0.5
+    }
+   ]
+  },
+  {
+   "at": [
+    19,
+    "Split"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_people_world",
+   "ev": [
+    {
+     "at": [
+      19,
+      "everyone"
+     ],
+     "k": "tag",
+     "text": "8 BILLION PEOPLE"
+    },
+    {
+     "at": [
+      19,
+      "twenty-seven"
+     ],
+     "k": "tag",
+     "text": "~27 GRAMS EACH",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    20,
+    "And"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      20,
+      "And"
+     ],
+     "k": "label",
+     "text": "ALL THE GOLD IN THE WORLD"
+    },
+    {
+     "at": [
+      20,
+      "worth"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "ALL GOLD",
+       "value": 27,
+       "at": [
+        20,
+        "trillion"
+       ]
+      },
+      {
+       "label": "US ECONOMY / YEAR",
+       "value": 30,
+       "color": "mustard",
+       "at": [
+        20,
+        "American"
+       ]
+      }
+     ],
+     "suffix": " TRN $"
+    }
+   ]
+  },
+  {
+   "at": [
+    21,
+    "Reason"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_ancient",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      21,
+      "Reason"
+     ],
+     "k": "tag",
+     "text": "2. NEVER RUSTS",
+     "fg": "red"
+    },
+    {
+     "at": [
+      21,
+      "rots"
+     ],
+     "k": "tag",
+     "text": "NEVER ROTS"
+    }
+   ]
+  },
+  {
+   "at": [
+    22,
+    "Gold"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_ancient",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      22,
+      "thousands"
+     ],
+     "k": "tag",
+     "text": "THOUSANDS OF YEARS UNDERGROUND"
+    },
+    {
+     "at": [
+      22,
+      "shining"
+     ],
+     "k": "tag",
+     "text": "STILL SHINES ✓",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    23,
+    "Reason"
+   ],
+   "type": "scene",
+   "bg": "bg_printing_press",
+   "ev": [
+    {
+     "at": [
+      23,
+      "print"
+     ],
+     "k": "tag",
+     "text": "3. NOBODY CAN PRINT IT",
+     "fg": "red"
+    }
+   ],
+   "sfx": [
+    [
+     0.2,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "at": [
+    24,
+    "A"
+   ],
+   "type": "scene",
+   "bg": "bg_printing_press",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      24,
+      "keystrokes"
+     ],
+     "k": "tag",
+     "text": "MONEY: A FEW KEYSTROKES"
+    }
+   ]
+  },
+  {
+   "at": [
+    25,
+    "Gold"
+   ],
+   "type": "object",
+   "props": [
+    {
+     "img": "prop_gold",
+     "x": 0.3,
+     "y": 0.5,
+     "h": 0.45,
+     "at": [
+      25,
+      "Gold"
+     ]
+    }
+   ],
+   "ev": [
+    {
+     "at": [
+      25,
+      "Gold"
+     ],
+     "k": "label",
+     "text": "MINED EVERY YEAR"
+    },
+    {
+     "at": [
+      25,
+      "mines"
+     ],
+     "k": "counter",
+     "to": 3700,
+     "x": 0.68,
+     "y": 0.42,
+     "suffix": " TONNES"
+    },
+    {
+     "at": [
+      25,
+      "two"
+     ],
+     "k": "tag",
+     "text": "+2% A YEAR",
+     "x": 0.68,
+     "y": 0.6,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    26,
+    "That's"
+   ],
+   "type": "scene",
+   "bg": "bg_lydia_mint",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      26,
+      "Lydia"
+     ],
+     "k": "label",
+     "text": "6TH CENTURY BC · LYDIA"
+    },
+    {
+     "at": [
+      26,
+      "coins"
+     ],
+     "k": "tag",
+     "text": "ONE OF THE FIRST COINS",
+     "fg": "red"
+    },
+    {
+     "at": [
+      26,
+      "silver"
+     ],
+     "k": "tag",
+     "text": "GOLD + SILVER"
+    }
+   ]
+  },
+  {
+   "at": [
+    27,
+    "That"
+   ],
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "WHEN MONEY WAS GOLD"
+  },
+  {
+   "at": [
+    28,
+    "Under"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_standard",
+   "ev": [
+    {
+     "at": [
+      28,
+      "standard"
+     ],
+     "k": "label",
+     "text": "THE GOLD STANDARD"
+    },
+    {
+     "at": [
+      28,
+      "paper"
+     ],
+     "k": "tag",
+     "text": "PAPER NOTE →"
+    },
+    {
+     "at": [
+      28,
+      "swap"
+     ],
+     "k": "tag",
+     "text": "→ GOLD",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    29,
+    "After"
+   ],
+   "type": "scene",
+   "bg": "bg_conference",
+   "ev": [
+    {
+     "at": [
+      29,
+      "Second"
+     ],
+     "k": "label",
+     "text": "1944 · BRETTON WOODS"
+    },
+    {
+     "at": [
+      29,
+      "currencies"
+     ],
+     "k": "tag",
+     "text": "CURRENCIES → DOLLAR"
+    },
+    {
+     "at": [
+      29,
+      "tied"
+     ],
+     "k": "tag",
+     "text": "DOLLAR → GOLD",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    29,
+    "thirty-five"
+   ],
+   "type": "number",
+   "prop": "prop_gold",
+   "value": "$35",
+   "sub": "1 OUNCE · 1944",
+   "show": [
+    29,
+    "thirty-five"
+   ]
+  },
+  {
+   "at": [
+    30,
+    "Today's"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      30,
+      "Today's"
+     ],
+     "k": "label",
+     "text": "1 OUNCE OF GOLD"
+    },
+    {
+     "at": [
+      30,
+      "Today's"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "1944",
+       "value": 35
+      },
+      {
+       "label": "TODAY",
+       "value": 3900,
+       "hl": true,
+       "at": [
+        30,
+        "hundred"
+       ]
+      }
+     ],
+     "prefix": "$"
+    },
+    {
+     "at": [
+      30,
+      "times"
+     ],
+     "k": "stamp",
+     "text": "×110+",
+     "y": 0.2,
+     "x": 0.82
+    }
+   ]
+  },
+  {
+   "at": [
+    31,
+    "Then"
+   ],
+   "type": "portrait",
+   "fig": "fig_nixon",
+   "ev": [
+    {
+     "at": [
+      31,
+      "Nixon"
+     ],
+     "k": "flag",
+     "code": "us",
+     "x": 0.9,
+     "y": 0.15
+    },
+    {
+     "at": [
+      31,
+      "1971"
+     ],
+     "k": "label",
+     "text": "1971 · RICHARD NIXON"
+    }
+   ]
+  },
+  {
+   "at": [
+    31,
+    "television"
+   ],
+   "type": "scene",
+   "bg": "bg_tv_1971",
+   "ev": [
+    {
+     "at": [
+      32,
+      "swapped"
+     ],
+     "k": "tag",
+     "text": "DOLLAR → GOLD ✗",
+     "fg": "red"
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "at": [
+    33,
+    "From"
+   ],
+   "type": "scene",
+   "bg": "bg_wallet",
+   "ev": [
+    {
+     "at": [
+      33,
+      "metal"
+     ],
+     "k": "tag",
+     "text": "NOT BACKED BY ANY METAL"
+    },
+    {
+     "at": [
+      33,
+      "trust"
+     ],
+     "k": "tag",
+     "text": "ONLY TRUST",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    34,
+    "And"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      34,
+      "And"
+     ],
+     "k": "mascot",
+     "pose": "e_newspaper",
+     "side": "right"
+    },
+    {
+     "at": [
+      34,
+      "relic"
+     ],
+     "k": "tag",
+     "text": "\"A RELIC\"",
+     "x": 0.36,
+     "y": 0.5,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    35,
+    "None"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.48,
+    0.27
+   ],
+   "ev": [
+    {
+     "at": [
+      35,
+      "Britain"
+     ],
+     "k": "flag",
+     "code": "gb"
+    },
+    {
+     "at": [
+      35,
+      "Britain"
+     ],
+     "k": "pin",
+     "x": 0.479,
+     "y": 0.265
+    },
+    {
+     "at": [
+      36,
+      "Between"
+     ],
+     "k": "label",
+     "text": "1999-2002 · BRITAIN"
+    }
+   ]
+  },
+  {
+   "at": [
+    36,
+    "the"
+   ],
+   "type": "scene",
+   "bg": "bg_uk_gold_sale",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      36,
+      "ninety-five"
+     ],
+     "k": "tag",
+     "text": "395 TONNES SOLD",
+     "fg": "red"
+    },
+    {
+     "at": [
+      36,
+      "half"
+     ],
+     "k": "tag",
+     "text": "HALF THE COUNTRY'S GOLD"
+    }
+   ]
+  },
+  {
+   "at": [
+    37,
+    "And"
+   ],
+   "type": "scene",
+   "bg": "bg_uk_gold_sale",
+   "ev": [
+    {
+     "at": [
+      37,
+      "advance"
+     ],
+     "k": "stamp",
+     "text": "ANNOUNCED IN ADVANCE",
+     "y": 0.78
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "at": [
+    38,
+    "Traders"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_trading",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      38,
+      "seller"
+     ],
+     "k": "tag",
+     "text": "A HUGE SELLER IS COMING"
+    },
+    {
+     "at": [
+      38,
+      "twenty-year"
+     ],
+     "k": "tag",
+     "text": "PRICE: 20-YEAR LOW ↓",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    39,
+    "Britain"
+   ],
+   "type": "number",
+   "prop": "prop_gold",
+   "value": "$275",
+   "sub": "AVERAGE PRICE · 1 OUNCE",
+   "show": [
+    39,
+    "seventy-five"
+   ]
+  },
+  {
+   "at": [
+    39,
+    "raised"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      39,
+      "raised"
+     ],
+     "k": "label",
+     "text": "BRITAIN'S 395 TONNES, $ BILLION"
+    },
+    {
+     "at": [
+      39,
+      "raised"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "SOLD FOR",
+       "value": 3.5,
+       "at": [
+        39,
+        "three"
+       ]
+      },
+      {
+       "label": "WORTH TODAY",
+       "value": 50,
+       "hl": true,
+       "at": [
+        40,
+        "fifty"
+       ]
+      }
+     ]
+    },
+    {
+     "at": [
+      41,
+      "Fourteen"
+     ],
+     "k": "stamp",
+     "text": "×14",
+     "y": 0.2,
+     "x": 0.82
+    }
+   ]
+  },
+  {
+   "at": [
+    42,
+    "Britain"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      42,
+      "Britain"
+     ],
+     "k": "label",
+     "text": "GOLD PER PERSON"
+    },
+    {
+     "at": [
+      42,
+      "four"
+     ],
+     "k": "bigtext",
+     "text": "4.5 GRAMS",
+     "x": 0.5,
+     "y": 0.5
+    },
+    {
+     "at": [
+      42,
+      "left"
+     ],
+     "k": "tag",
+     "text": "BRITAIN NOW: 310 TONNES",
+     "y": 0.7,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    43,
+    "Economists"
+   ],
+   "type": "scene",
+   "bg": "bg_uk_gold_sale",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      43,
+      "wrong"
+     ],
+     "k": "stamp",
+     "text": "THE WRONG MOMENT",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    44,
+    "If"
+   ],
+   "type": "object",
+   "sfx": [
+    [
+     0,
+     "ding"
+    ]
+   ],
+   "ev": [
+    {
+     "at": [
+      44,
+      "If"
+     ],
+     "k": "mascot",
+     "pose": "e_presenting",
+     "side": "right"
+    },
+    {
+     "at": [
+      44,
+      "subscribe"
+     ],
+     "k": "subscribe",
+     "x": 0.4,
+     "y": 0.45,
+     "dur": 3.4
+    }
+   ]
+  },
+  {
+   "at": [
+    45,
+    "So"
+   ],
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "WHY ARE BANKS BUYING AGAIN?"
+  },
+  {
+   "at": [
+    46,
+    "The"
+   ],
+   "type": "scene",
+   "bg": "bg_moscow_vault",
+   "mood": "dramatic",
+   "ev": [
+    {
+     "at": [
+      46,
+      "2022"
+     ],
+     "k": "label",
+     "text": "2022"
+    },
+    {
+     "at": [
+      47,
+      "Russia"
+     ],
+     "k": "flag",
+     "code": "ru"
+    }
+   ]
+  },
+  {
+   "at": [
+    47,
+    "Western"
+   ],
+   "type": "scene",
+   "bg": "bg_vault_empty",
+   "ev": [
+    {
+     "at": [
+      47,
+      "froze"
+     ],
+     "k": "tag",
+     "text": "~$300 BILLION FROZEN",
+     "fg": "red"
+    },
+    {
+     "at": [
+      47,
+      "abroad"
+     ],
+     "k": "stamp",
+     "text": "FROZEN",
+     "y": 0.78
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "at": [
+    48,
+    "Overnight"
+   ],
+   "type": "scene",
+   "bg": "bg_treasury",
+   "ev": [
+    {
+     "at": [
+      48,
+      "lesson"
+     ],
+     "k": "tag",
+     "text": "EVERY GOVERNMENT LEARNED A LESSON",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    49,
+    "Dollars"
+   ],
+   "type": "scene",
+   "bg": "bg_treasury",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      49,
+      "someone"
+     ],
+     "k": "tag",
+     "text": "MONEY IN SOMEONE ELSE'S BANK"
+    },
+    {
+     "at": [
+      49,
+      "agrees"
+     ],
+     "k": "tag",
+     "text": "= THEIR DECISION",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    50,
+    "Gold"
+   ],
+   "type": "scene",
+   "bg": "bg_vault",
+   "ev": [
+    {
+     "at": [
+      50,
+      "own"
+     ],
+     "k": "tag",
+     "text": "GOLD IN YOUR OWN VAULT"
+    },
+    {
+     "at": [
+      50,
+      "frozen"
+     ],
+     "k": "stamp",
+     "text": "CAN'T BE FROZEN",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    51,
+    "What"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_delivery",
+   "ev": [
+    {
+     "at": [
+      51,
+      "spree"
+     ],
+     "k": "tag",
+     "text": "A BUYING SPREE",
+     "fg": "red"
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "cash"
+    ]
+   ]
+  },
+  {
+   "at": [
+    52,
+    "Central"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      52,
+      "Central"
+     ],
+     "k": "label",
+     "text": "CENTRAL BANK BUYING, TONNES / YEAR"
+    },
+    {
+     "at": [
+      52,
+      "Central"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "2010-21",
+       "value": 470,
+       "at": [
+        52,
+        "decade"
+       ]
+      },
+      {
+       "label": "2022-24",
+       "value": 1000,
+       "hl": true,
+       "at": [
+        52,
+        "thousand"
+       ]
+      },
+      {
+       "label": "2025",
+       "value": 863,
+       "at": [
+        53,
+        "sixty-three"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    54,
+    "The"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.6,
+    0.3
+   ],
+   "ev": [
+    {
+     "at": [
+      54,
+      "China"
+     ],
+     "k": "pin",
+     "x": 0.757,
+     "y": 0.39
+    },
+    {
+     "at": [
+      54,
+      "Russia"
+     ],
+     "k": "pin",
+     "x": 0.58,
+     "y": 0.25
+    },
+    {
+     "at": [
+      54,
+      "wasn't"
+     ],
+     "k": "tag",
+     "text": "BIGGEST BUYER?",
+     "x": 0.5,
+     "y": 0.85,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    55,
+    "It"
+   ],
+   "type": "scene",
+   "bg": "bg_warsaw_gold",
+   "ev": [
+    {
+     "at": [
+      55,
+      "Poland"
+     ],
+     "k": "flag",
+     "code": "pl"
+    },
+    {
+     "at": [
+      55,
+      "Poland"
+     ],
+     "k": "label",
+     "text": "BIGGEST BUYER · POLAND"
+    },
+    {
+     "at": [
+      55,
+      "hundred"
+     ],
+     "k": "tag",
+     "text": "2025: 102 TONNES",
+     "fg": "red"
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "ding"
+    ]
+   ]
+  },
+  {
+   "at": [
+    56,
+    "Some"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_plane",
+   "ev": [
+    {
+     "at": [
+      56,
+      "back"
+     ],
+     "k": "tag",
+     "text": "BRINGING THE GOLD HOME",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    57,
+    "Between"
+   ],
+   "type": "map",
+   "bg": "map_world",
+   "zf": [
+    0.4,
+    0.3
+   ],
+   "ev": [
+    {
+     "at": [
+      57,
+      "Germany"
+     ],
+     "k": "flag",
+     "code": "de"
+    },
+    {
+     "at": [
+      57,
+      "Between"
+     ],
+     "k": "label",
+     "text": "2013-2017 · GERMANY"
+    },
+    {
+     "at": [
+      57,
+      "York"
+     ],
+     "k": "arrow",
+     "from": [
+      0.26,
+      0.33
+     ],
+     "to": [
+      0.51,
+      0.28
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      57,
+      "Paris"
+     ],
+     "k": "arrow",
+     "from": [
+      0.485,
+      0.31
+     ],
+     "to": [
+      0.51,
+      0.28
+     ],
+     "straight": false
+    },
+    {
+     "at": [
+      57,
+      "Frankfurt"
+     ],
+     "k": "pin",
+     "x": 0.51,
+     "y": 0.28
+    }
+   ]
+  },
+  {
+   "at": [
+    57,
+    "six"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_plane",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      57,
+      "seventy-four"
+     ],
+     "k": "tag",
+     "text": "674 TONNES HOME",
+     "fg": "red"
+    },
+    {
+     "at": [
+      57,
+      "Frankfurt"
+     ],
+     "k": "label",
+     "text": "FRANKFURT"
+    }
+   ]
+  },
+  {
+   "at": [
+    58,
+    "And"
+   ],
+   "type": "scene",
+   "bg": "bg_central_bank",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      58,
+      "shift"
+     ],
+     "k": "tag",
+     "text": "HOW BIG IS THE SHIFT?",
+     "fg": "red"
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "swoosh"
+    ]
+   ]
+  },
+  {
+   "at": [
+    59,
+    "According"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      59,
+      "According"
+     ],
+     "k": "label",
+     "text": "WORLD CENTRAL BANK RESERVES · END 2025"
+    },
+    {
+     "at": [
+      59,
+      "made"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.6,
+     "items": [
+      {
+       "label": "GOLD",
+       "value": 27,
+       "hl": true,
+       "at": [
+        59,
+        "twenty-seven"
+       ]
+      },
+      {
+       "label": "US TREASURIES",
+       "value": 22,
+       "at": [
+        60,
+        "twenty-two"
+       ]
+      },
+      {
+       "label": "EURO",
+       "value": 15,
+       "at": [
+        60,
+        "fifteen"
+       ]
+      }
+     ],
+     "suffix": "%"
+    }
+   ]
+  },
+  {
+   "at": [
+    61,
+    "Gold"
+   ],
+   "type": "scene",
+   "bg": "bg_vault",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      61,
+      "biggest"
+     ],
+     "k": "stamp",
+     "text": "NO. 1",
+     "y": 0.3,
+     "x": 0.7
+    }
+   ]
+  },
+  {
+   "at": [
+    62,
+    "But"
+   ],
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "WHO HAS THE MOST GOLD?"
+  },
+  {
+   "at": [
+    63,
+    "It"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      63,
+      "It"
+     ],
+     "k": "label",
+     "text": "BIGGEST GOLD RESERVES, TONNES"
+    },
+    {
+     "at": [
+      63,
+      "It"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "USA",
+       "value": 8133,
+       "hl": true,
+       "at": [
+        63,
+        "eight"
+       ]
+      },
+      {
+       "label": "GERMANY",
+       "value": 3350
+      },
+      {
+       "label": "UK",
+       "value": 310
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    64,
+    "About"
+   ],
+   "type": "scene",
+   "bg": "bg_fort_knox",
+   "ev": [
+    {
+     "at": [
+      64,
+      "Knox"
+     ],
+     "k": "label",
+     "text": "FORT KNOX · KENTUCKY"
+    },
+    {
+     "at": [
+      64,
+      "half"
+     ],
+     "k": "tag",
+     "text": "≈ HALF OF AMERICA'S GOLD",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    65,
+    "No"
+   ],
+   "type": "scene",
+   "bg": "bg_fort_knox",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      65,
+      "visitors"
+     ],
+     "k": "stamp",
+     "text": "NO VISITORS",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    66,
+    "At"
+   ],
+   "type": "number",
+   "prop": "prop_gold",
+   "value": "$1 TRILLION",
+   "sub": "US GOLD AT TODAY'S PRICE",
+   "show": [
+    66,
+    "trillion"
+   ]
+  },
+  {
+   "at": [
+    67,
+    "But"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      67,
+      "But"
+     ],
+     "k": "mascot",
+     "pose": "e_surprised",
+     "side": "right"
+    },
+    {
+     "at": [
+      67,
+      "strange"
+     ],
+     "k": "tag",
+     "text": "THE STRANGE PART",
+     "x": 0.36,
+     "y": 0.5,
+     "fg": "red"
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "at": [
+    68,
+    "On"
+   ],
+   "type": "scene",
+   "bg": "bg_treasury",
+   "ev": [
+    {
+     "at": [
+      68,
+      "1973"
+     ],
+     "k": "label",
+     "text": "SET BY LAW · 1973"
+    },
+    {
+     "at": [
+      68,
+      "forty-two"
+     ],
+     "k": "tag",
+     "text": "$42.22 AN OUNCE",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    69,
+    "At"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      69,
+      "At"
+     ],
+     "k": "label",
+     "text": "US GOLD, $ BILLION"
+    },
+    {
+     "at": [
+      69,
+      "At"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "REAL VALUE",
+       "value": 1020
+      },
+      {
+       "label": "ON THE BOOKS",
+       "value": 11,
+       "color": "red",
+       "at": [
+        69,
+        "eleven"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    70,
+    "Shared"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      70,
+      "Shared"
+     ],
+     "k": "label",
+     "text": "GOLD PER PERSON, GRAMS"
+    },
+    {
+     "at": [
+      70,
+      "Shared"
+     ],
+     "k": "bars",
+     "x": 0.5,
+     "w": 0.45,
+     "items": [
+      {
+       "label": "USA",
+       "value": 24,
+       "hl": true,
+       "at": [
+        70,
+        "twenty-four"
+       ]
+      },
+      {
+       "label": "UK",
+       "value": 4.5,
+       "at": [
+        70,
+        "British"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": [
+    71,
+    "And"
+   ],
+   "type": "scene",
+   "bg": "bg_boe_vault",
+   "ev": [
+    {
+     "at": [
+      71,
+      "London"
+     ],
+     "k": "label",
+     "text": "BANK OF ENGLAND · LONDON"
+    },
+    {
+     "at": [
+      71,
+      "thousand"
+     ],
+     "k": "tag",
+     "text": "400,000+ BARS",
+     "fg": "red"
+    },
+    {
+     "at": [
+      71,
+      "million"
+     ],
+     "k": "tag",
+     "text": "EACH ≈ $1.5 MILLION"
+    }
+   ]
+  },
+  {
+   "at": [
+    72,
+    "Most"
+   ],
+   "type": "scene",
+   "bg": "bg_boe_vault",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      72,
+      "other"
+     ],
+     "k": "tag",
+     "text": "MOSTLY OTHER COUNTRIES' GOLD",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    73,
+    "But"
+   ],
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "SHOULD ORDINARY PEOPLE CARE?"
+  },
+  {
+   "at": [
+    74,
+    "In"
+   ],
+   "type": "scene",
+   "bg": "bg_costco_gold",
+   "ev": [
+    {
+     "at": [
+      74,
+      "Costco"
+     ],
+     "k": "label",
+     "text": "COSTCO · 2024"
+    },
+    {
+     "at": [
+      74,
+      "hundred"
+     ],
+     "k": "tag",
+     "text": "$100-200 MILLION A MONTH",
+     "fg": "red"
+    },
+    {
+     "at": [
+      74,
+      "toilet"
+     ],
+     "k": "tag",
+     "text": "NEXT TO THE TOILET PAPER"
+    }
+   ],
+   "sfx": [
+    [
+     0.5,
+     "cash"
+    ]
+   ]
+  },
+  {
+   "at": [
+    75,
+    "So"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      75,
+      "So"
+     ],
+     "k": "mascot",
+     "pose": "e_pointer",
+     "side": "right"
+    },
+    {
+     "at": [
+      75,
+      "facts"
+     ],
+     "k": "tag",
+     "text": "3 FACTS",
+     "x": 0.36,
+     "y": 0.42,
+     "fg": "red"
+    },
+    {
+     "at": [
+      75,
+      "ads"
+     ],
+     "k": "tag",
+     "text": "THE ADS SKIP",
+     "x": 0.36,
+     "y": 0.57
+    }
+   ]
+  },
+  {
+   "at": [
+    76,
+    "Fact"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      76,
+      "Fact"
+     ],
+     "k": "mascot",
+     "pose": "e_piggy",
+     "side": "right"
+    },
+    {
+     "at": [
+      76,
+      "nothing"
+     ],
+     "k": "tag",
+     "text": "1. GOLD PAYS NOTHING",
+     "x": 0.36,
+     "y": 0.35,
+     "fg": "red"
+    },
+    {
+     "at": [
+      77,
+      "interest"
+     ],
+     "k": "tag",
+     "text": "SAVINGS: INTEREST ✓",
+     "x": 0.36,
+     "y": 0.5
+    },
+    {
+     "at": [
+      77,
+      "only"
+     ],
+     "k": "tag",
+     "text": "GOLD: ONLY IF PRICE ↑",
+     "x": 0.36,
+     "y": 0.62
+    }
+   ]
+  },
+  {
+   "at": [
+    78,
+    "Fact"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_trading",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      78,
+      "fall"
+     ],
+     "k": "tag",
+     "text": "2. IT CAN FALL HARD",
+     "fg": "red"
+    },
+    {
+     "at": [
+      78,
+      "stay"
+     ],
+     "k": "tag",
+     "text": "AND STAY DOWN"
+    }
+   ]
+  },
+  {
+   "at": [
+    79,
+    "In"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_1980",
+   "ev": [
+    {
+     "at": [
+      79,
+      "1980"
+     ],
+     "k": "label",
+     "text": "JANUARY 1980"
+    },
+    {
+     "at": [
+      79,
+      "fifty"
+     ],
+     "k": "tag",
+     "text": "1 OUNCE = $850"
+    }
+   ]
+  },
+  {
+   "at": [
+    80,
+    "It"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      80,
+      "It"
+     ],
+     "k": "mascot",
+     "pose": "e_calculator",
+     "side": "right"
+    },
+    {
+     "at": [
+      80,
+      "twenty-eight"
+     ],
+     "k": "bigtext",
+     "text": "28 YEARS",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      81,
+      "2008"
+     ],
+     "k": "tag",
+     "text": "BREAK EVEN: 2008",
+     "x": 0.36,
+     "y": 0.62,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    82,
+    "Fact"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_spread",
+   "ev": [
+    {
+     "at": [
+      82,
+      "gap"
+     ],
+     "k": "tag",
+     "text": "3. BUY PRICE ≠ SELL PRICE",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    83,
+    "On"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_spread",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      83,
+      "several"
+     ],
+     "k": "tag",
+     "text": "GAP: SEVERAL %"
+    },
+    {
+     "at": [
+      83,
+      "less"
+     ],
+     "k": "stamp",
+     "text": "YOU WALK AWAY WITH LESS",
+     "y": 0.78
+    }
+   ]
+  },
+  {
+   "at": [
+    84,
+    "That's"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      84,
+      "That's"
+     ],
+     "k": "mascot",
+     "pose": "e_gold",
+     "side": "right"
+    },
+    {
+     "at": [
+      84,
+      "quickly"
+     ],
+     "k": "tag",
+     "text": "GET RICH QUICK ✗",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      84,
+      "protection"
+     ],
+     "k": "tag",
+     "text": "LONG-TERM PROTECTION ✓",
+     "x": 0.36,
+     "y": 0.57,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    85,
+    "And"
+   ],
+   "type": "scene",
+   "bg": "bg_debate_scale",
+   "mood": "calm",
+   "ev": [
+    {
+     "at": [
+      85,
+      "camps"
+     ],
+     "k": "label",
+     "text": "TWO CAMPS"
+    }
+   ]
+  },
+  {
+   "at": [
+    86,
+    "Camp"
+   ],
+   "type": "scene",
+   "bg": "bg_war",
+   "ev": [
+    {
+     "at": [
+      86,
+      "reliable"
+     ],
+     "k": "tag",
+     "text": "CAMP 1: SAFEST STORE OF WEALTH",
+     "fg": "red"
+    },
+    {
+     "at": [
+      86,
+      "war"
+     ],
+     "k": "tag",
+     "text": "WAR · SANCTIONS · INFLATION"
+    }
+   ]
+  },
+  {
+   "at": [
+    87,
+    "Camp"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      87,
+      "Camp"
+     ],
+     "k": "mascot",
+     "pose": "e_scale",
+     "side": "right"
+    },
+    {
+     "at": [
+      87,
+      "rock"
+     ],
+     "k": "tag",
+     "text": "CAMP 2: \"A ROCK THAT SITS THERE\"",
+     "x": 0.36,
+     "y": 0.5,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    88,
+    "Its"
+   ],
+   "type": "portrait",
+   "fig": "buffett_cut",
+   "ev": [
+    {
+     "at": [
+      88,
+      "Warren"
+     ],
+     "k": "flag",
+     "code": "us",
+     "x": 0.9,
+     "y": 0.15
+    },
+    {
+     "at": [
+      88,
+      "Warren"
+     ],
+     "k": "label",
+     "text": "WARREN BUFFETT"
+    },
+    {
+     "at": [
+      89,
+      "2011"
+     ],
+     "k": "tag",
+     "text": "2011 · SHAREHOLDER LETTER",
+     "x": 0.3,
+     "y": 0.85
+    }
+   ]
+  },
+  {
+   "at": [
+    90,
+    "Back"
+   ],
+   "type": "number",
+   "prop": "prop_gold",
+   "value": "$9.6 TRILLION",
+   "sub": "ALL THE WORLD'S GOLD · 2011",
+   "show": [
+    90,
+    "nine"
+   ]
+  },
+  {
+   "at": [
+    91,
+    "With"
+   ],
+   "type": "scene",
+   "bg": "bg_buffett_compare",
+   "ev": [
+    {
+     "at": [
+      91,
+      "farmland"
+     ],
+     "k": "tag",
+     "text": "ALL US FARMLAND"
+    }
+   ]
+  },
+  {
+   "at": [
+    91,
+    "sixteen"
+   ],
+   "type": "scene",
+   "bg": "bg_buffett_compare",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      91,
+      "sixteen"
+     ],
+     "k": "tag",
+     "text": "+ 16 EXXON MOBILS"
+    },
+    {
+     "at": [
+      92,
+      "trillion"
+     ],
+     "k": "tag",
+     "text": "+ $1 TRILLION LEFT OVER",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    93,
+    "The"
+   ],
+   "type": "scene",
+   "bg": "bg_buffett_compare",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      93,
+      "farms"
+     ],
+     "k": "tag",
+     "text": "LAND, COMPANIES = INCOME ✓"
+    },
+    {
+     "at": [
+      93,
+      "nothing"
+     ],
+     "k": "tag",
+     "text": "GOLD = NOTHING ✗",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    94,
+    "So"
+   ],
+   "type": "scene",
+   "bg": "bg_debate_scale",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      94,
+      "right"
+     ],
+     "k": "tag",
+     "text": "WHO'S RIGHT?",
+     "fg": "red"
+    },
+    {
+     "at": [
+      95,
+      "both"
+     ],
+     "k": "tag",
+     "text": "IN A WAY, BOTH"
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "tick"
+    ]
+   ]
+  },
+  {
+   "at": [
+    96,
+    "Gold"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      96,
+      "Gold"
+     ],
+     "k": "mascot",
+     "pose": "e_gold",
+     "side": "right"
+    },
+    {
+     "at": [
+      96,
+      "machine"
+     ],
+     "k": "tag",
+     "text": "WEALTH MACHINE ✗",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      96,
+      "safe"
+     ],
+     "k": "tag",
+     "text": "A SAFE ✓",
+     "x": 0.36,
+     "y": 0.57,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    97,
+    "So"
+   ],
+   "type": "chapter",
+   "num": "YOUR MONEY",
+   "title": "WHAT DOES THIS MEAN FOR YOU?"
+  },
+  {
+   "at": [
+    98,
+    "First"
+   ],
+   "type": "scene",
+   "bg": "bg_crisis_gold",
+   "ev": [
+    {
+     "at": [
+      98,
+      "gauge"
+     ],
+     "k": "tag",
+     "text": "1. GOLD = A FEAR GAUGE",
+     "fg": "red"
+    },
+    {
+     "at": [
+      98,
+      "wars"
+     ],
+     "k": "tag",
+     "text": "WARS · DEBT · INFLATION"
+    }
+   ]
+  },
+  {
+   "at": [
+    99,
+    "Second"
+   ],
+   "type": "scene",
+   "bg": "bg_treasury",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      99,
+      "instead"
+     ],
+     "k": "tag",
+     "text": "2. GOLD INSTEAD OF US BONDS",
+     "fg": "red"
+    },
+    {
+     "at": [
+      99,
+      "confidence"
+     ],
+     "k": "tag",
+     "text": "LESS CONFIDENCE IN THE DOLLAR"
+    }
+   ]
+  },
+  {
+   "at": [
+    99,
+    "currency"
+   ],
+   "type": "scene",
+   "bg": "bg_wallet",
+   "crop": "right",
+   "ev": [
+    {
+     "at": [
+      99,
+      "pay"
+     ],
+     "k": "tag",
+     "text": "YOUR PAY · RENT · SAVINGS"
+    }
+   ]
+  },
+  {
+   "at": [
+    100,
+    "Third"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      100,
+      "Third"
+     ],
+     "k": "mascot",
+     "pose": "e_magnifier",
+     "side": "right"
+    },
+    {
+     "at": [
+      100,
+      "advertised"
+     ],
+     "k": "tag",
+     "text": "3. \"SAFE\" IN ADS?",
+     "x": 0.36,
+     "y": 0.4,
+     "fg": "red"
+    },
+    {
+     "at": [
+      100,
+      "1980"
+     ],
+     "k": "tag",
+     "text": "REMEMBER 1980",
+     "x": 0.36,
+     "y": 0.55
+    },
+    {
+     "at": [
+      100,
+      "drop"
+     ],
+     "k": "tag",
+     "text": "AND -30% THIS YEAR",
+     "x": 0.36,
+     "y": 0.68
+    }
+   ]
+  },
+  {
+   "at": [
+    101,
+    "This"
+   ],
+   "type": "scene",
+   "bg": "bg_bank_desk",
+   "ev": [
+    {
+     "at": [
+      101,
+      "advice"
+     ],
+     "k": "tag",
+     "text": "NOT FINANCIAL ADVICE"
+    },
+    {
+     "at": [
+      101,
+      "numbers"
+     ],
+     "k": "tag",
+     "text": "JUST THE NUMBERS",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    102,
+    "So"
+   ],
+   "type": "title",
+   "title": "THE ANSWER",
+   "title2": "WHY ARE BANKS BUYING GOLD?"
+  },
+  {
+   "at": [
+    103,
+    "Because"
+   ],
+   "type": "scene",
+   "bg": "bg_crisis_gold",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      103,
+      "safe"
+     ],
+     "k": "tag",
+     "text": "THE WORLD FEELS LESS SAFE"
+    },
+    {
+     "at": [
+      103,
+      "promise"
+     ],
+     "k": "tag",
+     "text": "NOBODY ELSE'S PROMISE",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    104,
+    "It"
+   ],
+   "type": "scene",
+   "bg": "bg_vault",
+   "ev": [
+    {
+     "at": [
+      104,
+      "frozen"
+     ],
+     "k": "tag",
+     "text": "CAN'T BE FROZEN"
+    },
+    {
+     "at": [
+      104,
+      "printed"
+     ],
+     "k": "tag",
+     "text": "CAN'T BE PRINTED"
+    },
+    {
+     "at": [
+      104,
+      "thousands"
+     ],
+     "k": "tag",
+     "text": "THOUSANDS OF YEARS",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    105,
+    "But"
+   ],
+   "type": "scene",
+   "bg": "bg_gold_trading",
+   "crop": "left",
+   "ev": [
+    {
+     "at": [
+      105,
+      "risk-free"
+     ],
+     "k": "tag",
+     "text": "BUT NOT RISK-FREE",
+     "fg": "red"
+    },
+    {
+     "at": [
+      105,
+      "rises"
+     ],
+     "k": "tag",
+     "text": "PRICE ↑↓"
+    }
+   ]
+  },
+  {
+   "at": [
+    106,
+    "Gold"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      106,
+      "Gold"
+     ],
+     "k": "mascot",
+     "pose": "e_gold",
+     "side": "right"
+    },
+    {
+     "at": [
+      106,
+      "quickly"
+     ],
+     "k": "tag",
+     "text": "RICH QUICK ✗",
+     "x": 0.36,
+     "y": 0.42
+    },
+    {
+     "at": [
+      106,
+      "safe"
+     ],
+     "k": "tag",
+     "text": "WEALTH KEPT SAFE ✓",
+     "x": 0.36,
+     "y": 0.57,
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    107,
+    "That's"
+   ],
+   "type": "title",
+   "title": "THAT'S THE STORY OF GOLD",
+   "title2": "AND NOW YOU KNOW THE NUMBERS"
+  },
+  {
+   "at": [
+    109,
+    "So"
+   ],
+   "type": "object",
+   "ev": [
+    {
+     "at": [
+      109,
+      "So"
+     ],
+     "k": "mascot",
+     "pose": "e_scale",
+     "side": "right"
+    },
+    {
+     "at": [
+      109,
+      "gold"
+     ],
+     "k": "tag",
+     "text": "TEAM GOLD...",
+     "x": 0.36,
+     "y": 0.38
+    },
+    {
+     "at": [
+      109,
+      "Buffett"
+     ],
+     "k": "tag",
+     "text": "...OR TEAM BUFFETT?",
+     "x": 0.36,
+     "y": 0.55,
+     "fg": "red"
+    },
+    {
+     "at": [
+      110,
+      "comments"
+     ],
+     "k": "tag",
+     "text": "TELL ME IN THE COMMENTS",
+     "x": 0.36,
+     "y": 0.72
+    },
+    {
+     "at": [
+      109,
+      "camp"
+     ],
+     "k": "like",
+     "x": 0.82,
+     "y": 0.2
+    }
+   ]
+  },
+  {
+   "at": [
+    111,
+    "Next"
+   ],
+   "type": "scene",
+   "bg": "bg_wallet",
+   "ev": [
+    {
+     "at": [
+      111,
+      "Next"
+     ],
+     "k": "tag",
+     "text": "NEXT TIME"
+    },
+    {
+     "at": [
+      111,
+      "prices"
+     ],
+     "k": "tag",
+     "text": "WHY PRICES NEVER COME DOWN",
+     "fg": "red"
+    }
+   ]
+  },
+  {
+   "at": [
+    112,
+    "Subscribe"
+   ],
+   "type": "end",
+   "pose": "e_presenting",
+   "ev": [
+    {
+     "at": [
+      112,
+      "Subscribe"
+     ],
+     "k": "subscribe",
+     "x": 0.47,
+     "y": 0.35,
+     "dur": 3.4
+    }
+   ]
+  }
+ ],
+ "shorts": [
+  {
+   "name": "crash",
+   "from": [
+    0,
+    "In"
+   ],
+   "to": [
+    5,
+    "So"
+   ],
+   "hook": "GOLD CRASHED. BANKS BOUGHT MORE"
+  },
+  {
+   "name": "cube",
+   "from": [
+    12,
+    "Reason"
+   ],
+   "to": [
+    20,
+    "And"
+   ],
+   "hook": "ALL THE GOLD EVER MINED"
+  },
+  {
+   "name": "britain",
+   "from": [
+    35,
+    "None"
+   ],
+   "to": [
+    43,
+    "Economists"
+   ],
+   "hook": "THE WORST GOLD SALE IN HISTORY"
+  },
+  {
+   "name": "freeze",
+   "from": [
+    46,
+    "The"
+   ],
+   "to": [
+    55,
+    "It"
+   ],
+   "hook": "WHY BANKS ARE HOARDING GOLD"
+  },
+  {
+   "name": "fortknox",
+   "from": [
+    62,
+    "But"
+   ],
+   "to": [
+    69,
+    "At"
+   ],
+   "hook": "$1 TRILLION, BOOKED AT $11 BILLION"
+  },
+  {
+   "name": "costco",
+   "from": [
+    74,
+    "In"
+   ],
+   "to": [
+    84,
+    "That's"
+   ],
+   "hook": "BEFORE YOU BUY GOLD"
+  },
+  {
+   "name": "buffett",
+   "from": [
+    87,
+    "Camp"
+   ],
+   "to": [
+    96,
+    "Gold"
+   ],
+   "hook": "WHY BUFFETT HATES GOLD"
+  }
+ ],
+ "end_hold": 9,
+ "pauses": {
+  "15": 1.5,
+  "44": 1.0,
+  "45": 1.0
+ },
+ "end_slots": 2,
+ "end_next": "WHY PRICES NEVER COME DOWN",
+ "series_label": "EP 1: GOLD",
+ "handle": "@EldorExplains",
+ "socials": [
+  [
+   "youtube",
+   "@EldorExplains"
+  ],
+  [
+   "instagram",
+   "@EldorExplains"
+  ],
+  [
+   "tiktok",
+   "@EldorExplains"
+  ],
+  [
+   "facebook",
+   "@EldorExplains"
+  ],
+  [
+   "telegram",
+   "@EldorExplains"
+  ]
+ ]
+}
