@@ -48,7 +48,7 @@ See `README.md` for commands.
 - **Two channels, one master episode** (from E07): Bilmasboy (Uzbek) and **Eldor Explains** (English, @EldorExplains, "money and
   the economy explained with real data", cartoon Eldor + voice clone, no filming, US/UK comparisons, explain never advise).
   Full template, file layout and per-channel differences: `docs/master-episode.md`. English channel strategy research:
-  https://claude.ai/artifact/LP1C4SshvhaHmyu2JtoX9f (from the "Automated AI YouTube project" chat).
+  https://claude.ai/artifact/LP1C4SshvhaHmyu2JtoX9f (copy: projects/eldor-explains-e00-strategy/).
 - Chats: one chat per episode covering both languages; separate chats for English channel setup/branding and for weekly
   publishing. Split done 2026-11-23: start each chat from its handover (docs/handover_bilmasboy.md,
   docs/handover_eldor_explains.md, docs/handover_california_uzbek.md); update that file at the end of each session. Both channels live in this one repo; never fork the engine.
