@@ -18,21 +18,27 @@ channel, @california_uzbek), so the new chat can continue without the old one.
 
 ## 2. California Uzbek reel style (owner's decisions — follow exactly)
 
-- **Captions + pictures only.** No keyword cards, titles or text above his head or on his forehead.
-  The owner said: "too much words; captions and pictures are enough".
+- **Update 2026-11-23 (owner, Jensen/Nvidia reel, `projects/cu-jensen/reel_full.py`): style B approved** — captions +
+  short full-screen pictures (2-4 s, every ~5-8 s) + small pop-up tags/name cards/number counters/stamps on his chest
+  area (y ~1230), one punch-in zoom on the big line, sound effects, **no background music**. Tags are fine now
+  ("tags are good, keep them"); still nothing above his head or on his forehead.
+- Older rule (before 2026-11-23): captions + pictures only, "too much words".
 - Captions: word by word, active word on a red pill, at chest height (0.70 of the height).
 - **Never cover the california_uzbek account card**: it is burned into the bottom of his videos at about
   0.81–0.89 of the frame height. Nothing goes there. On full-screen pictures, re-draw that card on top
   (`overlay` + `overlay_modes: ["full"]` in the config; `ig_card_clean.png` is a clean copy).
-- **No zoom on his face** (`"zoom": false`) — zooming would move the burned-in card.
+- Zoom on his face only when the account card is added after the edit (owner OK'd zoom on 2026-11-23); if the card is
+  already burned in, no zoom (it would move the card).
 - **The ending with his ads/partner accounts stays untouched** (`untouched_from: <seconds>`; detect it by the
   frame going dark).
 - Full-screen pictures change every 3–6 s on the words he says; back to his face between them.
 - **Real photos preferred** for real people/places (owner's request): public-domain images from Wikimedia
   Commons (official White House / Congress photos). Use a User-Agent header; Commons rate-limits hard
   (HTTP 429) — wait 15–60 s between downloads. AI pictures (Higgsfield) only for metaphors and jokes.
-- Music: quiet bed (`music_vol` ~0.14), library tracks in `assets/music/`. The owner sometimes removes
-  music on his side — ask whether to add one.
+- Music: **none** (owner, 2026-11-23: "you don't need to add background music"). Sound effects only.
+- Uzbek Whisper often fails on his phone recordings (gibberish in some stretches): use silence-detected speech
+  regions + the known text there, and DP alignment (`build.align`) where Whisper words are usable.
+- Real-person claims: flag once if a line states an accusation as fact; a small "GUMON: ..." tag on screen softens it.
 - Colours: California Uzbek red `#E2231A`, white, black.
 - The owner does NOT want opinions on his political content when he says so — just edit. Facts can be flagged
   once, briefly.
