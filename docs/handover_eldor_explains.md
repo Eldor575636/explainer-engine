@@ -21,6 +21,8 @@ Strategy research: projects/eldor-explains-e00-strategy/research_brief.md (live 
 - 2026-11-19: fonts Fraunces/Outfit/Inter (testing); logo = green answer bubble with gold chart; voice = same clone,
   eleven_v4, American news-anchor tag + mood tags (CLAUDE.md, AI narration).
 
+- 2026-11-24/25: voice need not be the owner's; free tools first, paid voice last; picked Kokoro blend adam70/onyx30.
+
 ## Style rules
 Shared rules live in CLAUDE.md (script rules, visual style, thumbnails, CTAs, audits). Channel-specific:
 - Explain, never advise; every episode built on its own dataset/finding; vary structure so episodes don't read as one template.
@@ -54,10 +56,13 @@ Nothing published yet. Handles @EldorExplains looked free on YouTube/TikTok/Inst
 ## Next
 1. Generate the 15 pictures in picture_prompts.json (Higgsfield; e_* mascot poses need nano_banana_pro + references
    A_analyst.png, scenes/thumbnail poses can use gpt_image_2_6) and replace the placeholders.
-2. After the ElevenLabs reset on Dec 7: re-voice the whole episode (~11k credits, generations_count 1), transcribe
+2. Voice is DONE for free (2026-11-25): Kokoro blend adam 0.7 / onyx 0.3 via `voice_kokoro.py` ->
+   projects/ep06-gold/en/voice/kokoro/raw.wav (9:53, 113 sentences; not in git: re-run the script, ~8 min, or take the
+   MP3 sent in chat). Whisper check: only digit-formatting diffs; owner still to listen to the full take. Next: transcribe
    (CHANNEL=ee), re-check beat_times / slow spots, visual audit, render, 7 Shorts, 3 thumbnails + titles, upload texts.
+   No ElevenLabs credits needed for Eldor Explains any more (owner: free first, paid last).
 3. After launch: 90-day checkpoint (avg view % >= 40, CTR >= 5%, one video > 10k views; otherwise change topics, not format).
 
 ## Credits used
-- Setup/strategy chat (2026-11-17): 0 ElevenLabs, 0 Higgsfield (web research and browser checks only).
+- Setup/strategy chat (2026-11-17 to 25): 0 ElevenLabs, 0 Higgsfield (web research, browser checks, free voice tests).
 - Later chats: see git log for EE01 test takes (British take + expressive hook test), not tallied here.

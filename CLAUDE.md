@@ -179,6 +179,11 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   sentences so it doesn't drift back to British) + one mood tag per sentence ([serious], [leaning in], [curious], [amused],
   [warm]...). Owner: "much better than original accent". Never mix British and American parts in one episode.
   Tested and rejected: plain British, mid-Atlantic tag, v3 American/Canadian, multilingual_v2.
+- Eldor Explains voice CHANGED (owner, 2026-11-25): free Kokoro-82M (Apache-2.0, commercial OK), blend am_adam 0.7 + am_onyx 0.3,
+  speed 0.95, via `voice_kokoro.py` (0 credits, ~8 min CPU per 10-min episode). The voice no longer has to be the owner's.
+  Owner rule: free tools first, paid voice (ElevenLabs/Higgsfield) only as the last option. Kokoro has no mood tags: carry
+  energy with pacing, pauses and SFX. Rejected by ear 2026-11-24: default Kokoro/Chatterbox/Piper/Pocket clips, Chatterbox
+  Turbo with CC0 donated voices. Own-voice options (Inno Clone Tuner, KVoiceWalk, Chatterbox voice conversion) untested.
 - `voice_text.py` + `lexicon.json`: text for the voice only (captions keep the script). Years/dates/numbers in Uzbek
   words, "AQSh dollari" → "Amerika dollari" first time then "dollar", "AQSh" → "Amerika Qo'shma Shtatlari" then "Amerika".
 - Voice in ~2,000-char parts (01.mp3…), then `check_voice.py` transcribes each part back and scores every sentence;
