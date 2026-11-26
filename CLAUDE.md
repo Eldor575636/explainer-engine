@@ -355,6 +355,9 @@ spelling, editable). Full prompt templates: `docs/style-guide.md`.
   the upload tool caps at 10 MB; files must sit under /home/claude), captions pasted from the schedule's Telegram column with the
   real episode link, announcement at 4:15 AM with thumbnail A, Shorts at 6:00 AM. Telegram picks its own preview frame (no cover option on web).
   Wait ~8 s after each schedule click before the next upload, or captions merge into the draft. E03-E05 done (24 posts).
+- 2026-11-26: extra link-only posts (Short's YouTube link + same caption, ~06:08-06:11) appeared on Nov 16 and Nov 26. Not from
+  our schedule (queue checked: one video post per day). Only other channel admin = the owner's VPS agent "Ava · CEO — HQ";
+  it is the likely source (Nov 26 post came right after Ava's server came back from an outage). Fix is on Ava's side.
 - YouTube Studio must be on the Bilmas Boy account (California Uzbek has no edit rights). Thumbnail Test & Compare, quizzes and
   the Shorts' Related video only work once the episode is public; do them on release day. Set Video language + title language = Uzbek.
 - End screen: 2 video elements on the dashed frames + Subscribe on the red ring, all from the end-screen start (E03: 9:52).
