@@ -57,6 +57,11 @@ See `README.md` for commands.
 - Engine to-do for English: cfg `lang` (uz/en) switching new_alphabet, lexicon, Whisper language, end-screen/CTA text,
   partners line; English mascot sheet + pose library; Mac folder "Media Projects/Explainer/Eldor Explains/Season 1/EXX <name>/".
 
+## Operating plan (2026-11-26)
+
+- What we make, how often and with which tools: `docs/operating_plan.md` (Bilmasboy Fri + Eldor Explains Tue, one shared
+  master a week, English backlog from E01-E06). Check it before planning new work.
+
 ## Script rules
 
 - Structure: hook (0–5 s) → what it is → how it's supposed to work → how it actually worked
